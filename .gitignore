@@ -13,3 +13,8 @@ matchs-amicaux/medias/enregistrement/x-*.mp4*
 matchs-amicaux/snapshots/
 matchs-amicaux/rendus/*-brut.mp4
 matchs-amicaux/rendus/brouillon-*.mp4
+# world-cup : fichiers regenerables
+world-cup/medias/video/source.mp4
+world-cup/snapshots/
+world-cup/rendus/*-brut.mp4
+world-cup/rendus/brouillon-*.mp4

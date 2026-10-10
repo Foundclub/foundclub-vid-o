@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="gsap.min.js"></script>
+    <style>
+/*POLICES*/
+/*STYLES*/
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="__DUREE__" data-width="1080" data-height="1920">
+
+      <div id="fond" class="clip plein" data-start="0" data-duration="__DUREE__" data-track-index="0"><div id="fond-halo"></div></div>
+      <div id="cadre-video">
+        <video id="video-orateur" src="medias/video/source.mp4" playsinline
+          data-start="0" data-duration="__DUREE_VIDEO__" data-track-index="1" data-has-audio="true"></video>
+      </div>
+      <div id="degrades" class="clip plein" data-start="0" data-duration="__DUREE__" data-track-index="2">
+        <div id="degrade-haut"></div><div id="degrade-bas"></div>
+      </div>
+      <div id="medaillon-anneau"></div>
+
+      <!-- PLEIN CADRE : scènes 1 à 3, 8-9, 12-13 (titres en haut) -->
+      <div id="plein" class="plein">
+        <div id="j365"><div class="boite"><span class="j">J-</span><span id="j365-n">365</span></div></div>
+        <div id="s1-titre" class="titre" style="top: 270px; font-size: 64px;"><span class="ligne">La 1<sup style="font-size: .55em;">re</sup> Coupe du monde</span><span class="surligne"><span class="fond"></span><span class="mot">du foot amateur</span></span></div>
+        <div id="s2-rang" class="rang" style="top: 170px;"><span class="puce"><span class="point"></span>Avec ton club</span><span class="puce"><span class="point"></span>Ou tes potes</span></div>
+        <div id="s3-titre" class="titre" style="top: 130px; font-size: 76px;"><span class="ligne">Un défi</span><span class="surligne"><span class="fond"></span><span class="mot">un peu fou</span></span></div>
+        <div id="s3b-titre" class="titre" style="top: 130px; font-size: 70px;"><span class="ligne">Un Mondial en 1 an</span><span class="surligne vert"><span class="fond"></span><span class="mot">ouvert à tous</span></span></div>
+        <div id="s3-niveaux" class="rang" style="top: 360px;"><span class="puce">Loisir</span><span class="puce">Départemental</span><span class="puce">Régional</span><span class="puce">National</span></div>
+        <div id="s8-titre" class="titre" style="top: 150px; font-size: 120px;"><span class="ligne">Pourquoi ?</span></div>
+        <div id="s9-titre" class="titre" style="top: 130px; font-size: 76px;"><span class="ligne">Le sport</span><span class="surligne"><span class="fond"></span><span class="mot">plus accessible</span></span></div>
+        <div id="s9b-titre" class="titre" style="top: 130px; font-size: 76px;"><span class="ligne">365 jours</span><span class="surligne vert"><span class="fond"></span><span class="mot">on a besoin de vous</span></span></div>
+        <div id="envoie"><div class="pastille">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#001218" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg>
+          Envoie-la</div></div>
+        <div id="s12-rang" class="rang" style="top: 290px;"><span class="puce"><span class="point"></span>Ton coach</span><span class="puce"><span class="point"></span>Tes coéquipiers</span><span class="puce"><span class="point"></span>Tes potes</span></div>
+        <div id="s13-titre" class="titre" style="top: 130px; font-size: 64px;"><span class="ligne">Un an pour créer un Mondial</span><span class="surligne"><span class="fond"></span><span class="mot">à vous de jouer</span></span></div>
+      </div>
+
+      <!-- MODE ÉCRAN : scènes 4 à 7 (carte, tableau, France, inscriptions, téléphone) -->
+      <div id="ecran1" class="plein cache">
+        <div id="c-rub" class="rubrique">Le principe</div>
+        <div class="titre-g"><span id="c-l1" class="ligne">Qualifications</span><span id="c-l2" class="ligne bleu">pays par pays</span></div>
+        <div id="f-rub" class="rubrique">Rendez-vous</div>
+        <div class="titre-g"><span id="f-l1" class="ligne">Phases finales</span><span id="f-l2" class="ligne vert">en France</span></div>
+        <div id="i-rub" class="rubrique">Inscriptions</div>
+        <div class="titre-g"><span id="i-l1" class="ligne">Inscris</span><span id="i-l2" class="ligne bleu">ton équipe</span></div>
+        <div class="titre-g"><span id="i-l3" class="ligne">Ou crée</span><span id="i-l4" class="ligne vert">la tienne</span></div>
+        <svg id="carte" viewBox="0 0 1000 520" width="1000" height="520">
+          <g id="carte-points">
+<!--POINTS-->
+          </g>
+          <g id="france-fine" opacity="0">
+<!--FRANCE-->
+          </g>
+        </svg>
+        <div id="epingle"></div>
+        <svg id="tableau" viewBox="0 0 900 380" width="900" height="380">
+<!--TABLEAU-->
+        </svg>
+        <div id="tampon-ouvert" class="tampon">Inscriptions<br />ouvertes</div>
+
+        <div id="tel" class="tel">
+          <div class="ecran">
+<!--MAQUETTES-->
+            <img id="cap-nom" class="capture" src="medias/captures/equipe-nom.webp" alt="" />
+            <img id="cap-section" class="capture" src="medias/captures/equipe-section.webp" alt="" />
+            <img id="cap-sport" class="capture" src="medias/captures/equipe-sport.webp" alt="" />
+            <img id="cap-categorie" class="capture" src="medias/captures/equipe-categorie.webp" alt="" />
+            <img id="cap-niveau" class="capture" src="medias/captures/equipe-niveau.webp" alt="" />
+          </div>
+        </div>
+        <div id="tag-rejoins" class="etiquette" style="left: 34px; top: 760px;"><span class="point"></span>Rejoins une équipe</div>
+        <div id="tag-coach" class="etiquette" style="right: 34px; top: 620px;"><span class="point"></span>Le coach inscrit</div>
+        <div id="tag-invite" class="etiquette" style="left: 34px; top: 1000px;"><span class="point"></span>Invite ses joueurs</div>
+        <div id="tag-potes" class="etiquette" style="right: 34px; top: 760px;"><span class="point"></span>Avec tes potes</div>
+        <div id="tag-inscris" class="etiquette" style="left: 34px; top: 620px;"><span class="point"></span>Inscris-toi</div>
+        <div id="tag-equipe" class="etiquette" style="right: 34px; top: 800px;"><span class="point"></span>Inscris ton équipe</div>
+        <div id="tag-partage" class="etiquette" style="left: 34px; top: 980px;"><span class="point"></span>Partage la vidéo</div>
+        <div id="appui-inscrire" class="appui" style="left: 540px; top: 1193px;"></div>
+        <div id="appui-choix" class="appui" style="left: 540px; top: 968px;"></div>
+        <div id="appui-valider" class="appui" style="left: 540px; top: 1323px;"></div>
+        <div id="appui-inviter" class="appui" style="left: 540px; top: 973px;"></div>
+      </div>
+
+      <!-- MODE ÉCRAN : scènes 10 et 11 -->
+      <div id="ecran2" class="plein cache">
+        <div id="b-rub" class="rubrique">Pour réussir</div>
+        <div class="titre-g"><span id="b-l1" class="ligne">On a besoin</span><span id="b-l2" class="ligne bleu">de vous</span></div>
+        <div id="besoins">
+<!--BESOINS-->
+        </div>
+        <div id="e-rub" class="rubrique">Prochain épisode</div>
+        <div class="titre-g"><span id="e-l1" class="ligne">Étape</span><span id="e-l2" class="ligne bleu">par étape</span></div>
+        <div id="episode">
+          <div class="lecture"><svg width="54" height="54" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#001218"/></svg></div>
+          <div class="t">Comment on organise tout</div>
+          <div class="d">La prochaine vidéo, étape par étape</div>
+          <div class="etapes"><span class="pt fait"></span><span class="trait"></span><span class="pt"></span><span class="trait"></span><span class="pt"></span><span class="trait"></span><span class="pt"></span></div>
+        </div>
+      </div>
+
+      <!-- CARTON FINAL -->
+      <div id="carton" class="clip plein" data-start="__DEBUT_CARTON__" data-duration="__DUREE_CARTON__" data-track-index="9">
+        <div id="fin-voile" class="plein"></div>
+        <div id="fin">
+          <div class="icone-fc"><span class="f">F</span><span class="c">C</span></div>
+          <div class="marque"><span class="found">FOUND</span><span class="club">CLUB</span><span class="reflet"></span></div>
+          <div class="phrase">Télécharge FoundClub</div>
+          <div class="badges">
+            <img src="medias/badges/app-store.svg" alt="Download on the App Store" />
+            <img class="gp" src="medias/badges/google-play.svg" alt="Get it on Google Play" />
+          </div>
+          <div class="site">foundclub.app</div>
+        </div>
+      </div>
+
+      <div id="sous-titres" class="clip plein" data-start="0" data-duration="__DUREE__" data-track-index="10">
+<!--SOUSTITRES-->
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const T = /*T*/;
+      const SOUS_TITRES = /*ST*/;
+      const HUBS = /*HUBS*/;
+/*JS*/
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
