@@ -76,3 +76,26 @@ curl -LO https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sile
 - **Badge App Store** : fichier officiel d'Apple (`developer.apple.com/assets/elements/badges/download-on-the-app-store.svg`).
 - **Badge Google Play** : copie SVG du badge officiel ([steverichey/google-play-badge-svg](https://github.com/steverichey/google-play-badge-svg)). Le site de Google n'était pas joignable depuis la session cloud.
 - **Messages et noms des scènes 2 et 5** : inventés. Aucun vrai nom, aucun emoji.
+
+## `matchs-amicaux/` — la vidéo « matchs amicaux »
+
+Vidéo verticale de **52,7 s** (1080×1920, 30 images/s, son à -14 LUFS), validée par Adel le 10/10/2026 : `matchs-amicaux/rendus/matchs-amicaux-final.mp4`. Elle est rendue depuis l'original (`a-monter/matchs-amicaux.mp4`).
+
+Le message : les pros jouent tous les 3 jours, les amateurs passent parfois un mois sans match, et FoundClub permet au coach de trouver un adversaire près de chez lui. Les 11 scènes :
+1. le calendrier des pros ;
+2. le même calendrier, vide, pour les amateurs ;
+3. les tampons COUPE, TRÊVE, REPORTÉ ;
+4. la licence à 350 € ;
+5. « Pourquoi pas un match amical ? » ;
+6. les deux galères du coach ;
+7. le logo ;
+8. l'enregistrement d'écran d'Adel dans le téléphone, recalé sur la voix ;
+9. « C'est tout. » ;
+10. l'acceptation, puis le planning et les compos ;
+11. « Envoie-la à ton coach », puis le carton final.
+
+Fabriquer : `cd matchs-amicaux ; outils/preparer-video.sh ; outils/rendre.sh matchs-amicaux-final 18`. `outils/assembler.py` découpe aussi les extraits de l'enregistrement d'écran à la bonne vitesse.
+
+À revérifier avant de publier :
+- la mention « Collaboration commerciale », si la personne qui parle est rémunérée ;
+- le point rouge d'enregistrement de l'iPhone, visible en haut du téléphone de 29 à 36 s (laissé tel quel).
