@@ -21,3 +21,6 @@ world-cup/snapshots/
 world-cup/rendus/*-brut.mp4
 world-cup/rendus/brouillon-*.mp4
 world-cup/rendus/apercu-*.mp4
+# dossiers temporaires du rendu HyperFrames (disparaissent a la fin du rendu)
+*/rendus/.*.hf-transaction-*/
+*/rendus/work-*/
