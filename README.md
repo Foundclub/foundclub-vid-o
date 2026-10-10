@@ -6,7 +6,7 @@ Projets vidéo de FoundClub montés avec [HyperFrames](https://github.com/heygen
 
 Vidéo verticale de **57,5 s** (1080×1920, 30 images/s) : ach10 parle face caméra, et l'app arrive en motion design à partir de **vraies captures d'écran**, avec le design system FoundClub (Montserrat, bleu `#01B3F4`, bleu nuit `#001218`, vert `#27D6A3`). Les sous-titres sont incrustés et le son est réglé à **-14 LUFS**.
 
-Rendu validé par Adel le 10/10/2026 : `ach10/rendus/ach10-complet-v2.mp4`, fait à partir de la **version légère** de sa vidéo. Le rendu final en pleine qualité attend l'original (voir plus bas).
+**Rendu final** (10/10/2026) : `ach10/rendus/ach10-final.mp4`, fait à partir de **l'original** (`medias/video/ach10-original.mov`, 15 Mbit/s). Le montage est le même que `ach10-complet-v2.mp4`, la version validée par Adel, rendue depuis la version légère (4 Mbit/s).
 
 ### Les 9 scènes
 
