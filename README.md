@@ -163,7 +163,9 @@ Vidéo verticale d'ach10 pour la marque **Ergysport by Nutergia** (micronutritio
 - **La mention « Collaboration commerciale »** reste à l'écran **du début à la fin**. Elle est obligatoire (loi du 9 juin 2023 sur l'influence commerciale).
 - **Sound design** : la bibliothèque synthétisée d'`ach10/` (`outils/sons.py`). `sons.json` liste 45 bruitages, réglés à la mesure (`outils/mesurer-sons.py sons.json medias/video/source.mp4`).
 
-Fabriquer : `cd ergysport ; outils/preparer-video.sh ; outils/rendre.sh ergysport-v1 18`.
+**Rendu final** (10/10/2026, « v1 ok » d'Adel) : `ergysport/rendus/ergysport-final.mp4`, 33,4 s, -14 LUFS, identique octet pour octet à `ergysport-v1.mp4`.
+
+Fabriquer : `cd ergysport ; outils/preparer-video.sh ; outils/rendre.sh ergysport-final 18`.
 
 À revérifier avant de publier :
 - **Les allégations santé** : ach10 parle de « crampes et courbatures » et de « vitalité ». Ces mots restent dans les sous-titres seulement, et aucun titre ne les reprend. C'est à faire valider par la marque, car les allégations sur les compléments alimentaires sont encadrées.
