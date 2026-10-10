@@ -2,6 +2,14 @@
 
 Projets vidéo de FoundClub montés avec [HyperFrames](https://github.com/heygen-com/hyperframes) : la vidéo est une page HTML animée avec GSAP, filmée image par image dans Chrome, puis encodée par ffmpeg.
 
+## Démarrer une session cloud
+
+```bash
+./installer-cloud.sh     # environ 3 min : outils, Whisper en local (modeles/, non versionné), compétences HyperFrames
+```
+
+Une **nouvelle vidéo à monter** se dépose dans `a-monter/` (moins de 100 Mo, la limite de GitHub par fichier), poussée depuis le PC d'Adel. La session crée ensuite son propre dossier de projet à côté de `ach10/`, en reprenant `ach10/outils/` (transcription, calage mot à mot, assemblage, rendu).
+
 ## `ach10/` — la vidéo d'ach10 (ambassadeur FoundClub)
 
 Vidéo verticale de **57,5 s** (1080×1920, 30 images/s) : ach10 parle face caméra, et l'app arrive en motion design à partir de **vraies captures d'écran**, avec le design system FoundClub (Montserrat, bleu `#01B3F4`, bleu nuit `#001218`, vert `#27D6A3`). Les sous-titres sont incrustés et le son est réglé à **-14 LUFS**.
@@ -31,7 +39,7 @@ Vidéo verticale de **57,5 s** (1080×1920, 30 images/s) : ach10 parle face cam�
 
 ### Fabriquer la vidéo
 
-Il faut Node 22, ffmpeg, Python 3 et Chrome Headless Shell (`npx hyperframes browser ensure`, ou une copie locale désignée par `HYPERFRAMES_BROWSER_PATH`).
+Il faut Node 22, ffmpeg, Python 3 et Chrome Headless Shell (`npx hyperframes browser ensure`, ou une copie locale désignée par `HYPERFRAMES_BROWSER_PATH`, trouvée toute seule en session cloud).
 
 ```bash
 npm install                        # à la racine du dépôt : hyperframes, gsap, Montserrat

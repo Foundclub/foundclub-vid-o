@@ -3,6 +3,9 @@
 # Usage : outils/rendre.sh <nom-de-sortie> [qualite CRF, defaut 18]
 set -euo pipefail
 cd "$(dirname "$0")/.."
+# En session cloud, le navigateur de rendu est deja installe dans /opt/pw-browsers
+: "${HYPERFRAMES_BROWSER_PATH:=$(ls /opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell 2>/dev/null | head -1 || true)}"
+export HYPERFRAMES_BROWSER_PATH
 NOM=${1:?nom de sortie, ex. ach10-final}; CRF=${2:-18}
 python3 -I outils/assembler.py
 npx hyperframes lint   # bloque sur une erreur de composition (les chevauchements de la scène 2 sont voulus)
