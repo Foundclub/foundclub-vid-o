@@ -108,22 +108,23 @@
       // Scène 10 : l'autre coach accepte → le match est au planning → la compo
       const montrer = (sel, t) => tl.fromTo(sel, { opacity: 0, x: 500 }, { opacity: 1, x: 0, duration: 0.35, ease: "power2.out" }, t);
       const cacher = (sel, t) => tl.to(sel, { opacity: 0, duration: 0.25 }, t);
+      // les écrans avancent à leur rythme ; les étiquettes suivent ses mots
       montrer("#cap-proposition", T.tout + 0.55);
       apparaitre("#t-rubrique-2", T.tout + 0.65, { x: -40 });
+      appuyer("#appui-accepter", T.treve - 0.05);
+      cacher("#cap-proposition", T.treve + 0.4);
+      montrer("#cap-accepter", T.treve + 0.4);
+      appuyer("#appui-confirmer", T.treve + 1.1);
+      cacher("#cap-accepter", T.treve + 1.5);
+      montrer("#cap-planning", T.treve + 1.5);
       etiquette("#tag-treve", T.treve - 0.4, -1);
-      appuyer("#appui-accepter", T.coupe10 - 0.1);
       etiquette("#tag-coupe", T.coupe10 - 0.4, 1);
-      cacher("#cap-proposition", T.coupe10 + 0.35);
-      montrer("#cap-accepter", T.coupe10 + 0.35);
       etiquette("#tag-annule", T.annule - 0.4, -1);
-      appuyer("#appui-confirmer", T.annule + 0.15);
-      cacher("#cap-accepter", T.semaine - 0.45);
-      montrer("#cap-planning", T.semaine - 0.45);
       etiquette("#tag-semaine", T.semaine - 0.4, 1);
       // la compo (planche des 5 sports), puis « continuer à jouer et garder le rythme »
       tl.to(["#tag-treve", "#tag-coupe", "#tag-annule", "#tag-semaine"], { opacity: 0, scale: 0.7, duration: 0.25, stagger: 0.04 }, T.preparer + 0.3);
-      tl.to("#tel", { opacity: 0.18, scale: 0.94, duration: 0.4 }, T.preparer + 0.4);
-      tl.fromTo("#compos", { opacity: 0, x: 700, rotation: 3 }, { opacity: 1, x: 0, rotation: 0, duration: 0.5, ease: "power3.out" }, T.preparer + 0.4);
+      tl.to("#tel", { opacity: 0.18, scale: 0.94, duration: 0.4 }, T.preparer + 0.2);
+      tl.fromTo("#compos", { opacity: 0, x: 700, rotation: 3 }, { opacity: 1, x: 0, rotation: 0, duration: 0.5, ease: "power3.out" }, T.preparer + 0.2);
       tl.to("#t-rubrique-2", { opacity: 0, duration: 0.2 }, T.jouer10 - 0.7);
       tl.set("#t-titre-2", { opacity: 1 }, T.jouer10 - 0.5);
       apparaitre("#t2-l1", T.jouer10 - 0.5);

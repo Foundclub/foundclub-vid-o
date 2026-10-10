@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Montserrat"; font-weight: 300; font-display: block; src: url("fonts/montserrat-latin-300-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 400; font-display: block; src: url("fonts/montserrat-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 300; font-display: block; src: url("fonts/montserrat-latin-ext-300-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 400; font-display: block; src: url("fonts/montserrat-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 500; font-display: block; src: url("fonts/montserrat-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 500; font-display: block; src: url("fonts/montserrat-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 600; font-display: block; src: url("fonts/montserrat-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 600; font-display: block; src: url("fonts/montserrat-latin-ext-600-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 700; font-display: block; src: url("fonts/montserrat-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 700; font-display: block; src: url("fonts/montserrat-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 800; font-display: block; src: url("fonts/montserrat-latin-800-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 800; font-display: block; src: url("fonts/montserrat-latin-ext-800-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 900; font-display: block; src: url("fonts/montserrat-latin-900-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 900; font-display: block; src: url("fonts/montserrat-latin-ext-900-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      :root { --bleu: #01b3f4; --nuit: #001218; --nuit-2: #173844; --vert: #27d6a3; --rouge: #f0384e; --orange: #ffa115; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #001218; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: "Montserrat", sans-serif; }
+      .plein { position: absolute; inset: 0; }
+
+      /* Fond du « mode écran » et la vidéo qui rétrécit en médaillon */
+      #fond-halo { position: absolute; inset: 0;
+        background: radial-gradient(900px 700px at 20% 18%, rgba(1,179,244,.16), rgba(1,179,244,0) 70%),
+                    radial-gradient(1000px 900px at 85% 80%, rgba(39,214,163,.08), rgba(39,214,163,0) 70%), #001218; }
+      #cadre-video { position: absolute; inset: 0; transform-origin: 540px 800px; clip-path: circle(2300px at 540px 800px); }
+      #video-orateur { width: 1080px; height: 1920px; object-fit: cover; }
+      #medaillon-anneau { position: absolute; left: 744px; top: 94px; width: 312px; height: 312px; border-radius: 50%;
+        border: 6px solid var(--bleu); box-shadow: 0 0 40px rgba(1,179,244,.55); opacity: 0; }
+      /* Plein cadre : titres en haut (au-dessus de sa tête), sous-titres en bas (sur le t-shirt) */
+      #degrade-haut { position: absolute; left: 0; right: 0; top: 0; height: 520px;
+        background: linear-gradient(to bottom, rgba(0,18,24,.72) 0%, rgba(0,18,24,.35) 55%, rgba(0,18,24,0) 100%); }
+      #degrade-bas { position: absolute; left: 0; right: 0; top: 1280px; bottom: 0;
+        background: linear-gradient(to bottom, rgba(0,18,24,0) 0%, rgba(0,18,24,.55) 45%, rgba(0,18,24,.8) 100%); }
+
+      /* Titres */
+      .titre { position: absolute; left: 0; right: 0; text-align: center; text-transform: uppercase; font-weight: 900;
+        color: #fff; letter-spacing: -0.01em; line-height: 1; text-shadow: 0 6px 24px rgba(0,18,24,.45); }
+      .ligne { display: block; }
+      .surligne { display: inline-block; position: relative; padding: 8px 24px 10px; color: var(--nuit); text-shadow: none; }
+      .surligne .fond { position: absolute; inset: 0; background: var(--bleu); border-radius: 14px; transform-origin: left center; }
+      .surligne .mot { position: relative; display: inline-block; }
+      .rubrique { position: absolute; left: 70px; top: 128px; font-size: 30px; font-weight: 700; letter-spacing: .22em; color: var(--bleu); text-transform: uppercase; }
+      .titre-g { position: absolute; left: 70px; top: 172px; width: 640px; font-size: 62px; font-weight: 900; line-height: 1.02; color: #fff; text-transform: uppercase; }
+      .titre-g .bleu { color: var(--bleu); } .titre-g .rouge { color: var(--rouge); } .titre-g .vert { color: var(--vert); }
+
+      /* Scènes 1 à 3 : le calendrier du mois */
+      #calendrier { position: absolute; left: 70px; top: 470px; width: 940px; height: 860px; border-radius: 40px;
+        background: linear-gradient(160deg, #173844, #0b2129); border: 2px solid rgba(1,179,244,.4);
+        box-shadow: 0 0 70px rgba(1,179,244,.25), 0 40px 90px rgba(0,0,0,.55); padding: 34px 34px; }
+      #calendrier .mois { color: #fff; font-weight: 800; font-size: 40px; text-transform: uppercase; letter-spacing: .08em; display: flex; justify-content: space-between; align-items: center; }
+      #calendrier .compteur { color: var(--bleu); font-weight: 900; font-size: 40px; }
+      #calendrier .jours-semaine, #calendrier .grille { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; }
+      #calendrier .jours-semaine { margin-top: 22px; color: #8fb3c0; font-weight: 700; font-size: 24px; text-align: center; }
+      #calendrier .grille { margin-top: 12px; }
+      .case { position: relative; height: 128px; border-radius: 16px; background: rgba(255,255,255,.05); }
+      .case.vide { background: transparent; }
+      .case.we { background: rgba(1,179,244,.10); }
+      .case .num { position: absolute; left: 12px; top: 8px; color: #cfe3ea; font-weight: 700; font-size: 24px; }
+      .ballon { position: absolute; left: 50%; top: 58%; width: 62px; height: 62px; margin: -31px 0 0 -31px; border-radius: 50%;
+        background: var(--bleu); box-shadow: 0 0 22px rgba(1,179,244,.8); opacity: 0; }
+      .ballon::after { content: ""; position: absolute; inset: 17px; border-radius: 50%; border: 5px solid var(--nuit); }
+      .amical { position: absolute; left: 6px; right: 6px; bottom: 10px; border-radius: 10px; background: var(--vert); color: var(--nuit);
+        font-weight: 900; font-size: 17px; text-align: center; padding: 6px 0; text-transform: uppercase; opacity: 0; }
+      .tampon { position: absolute; padding: 10px 22px; border: 6px solid var(--rouge); border-radius: 14px; color: var(--rouge);
+        font-weight: 900; font-size: 46px; text-transform: uppercase; background: rgba(0,18,24,.6); opacity: 0; letter-spacing: .04em; }
+      #sans-match { position: absolute; left: 0; right: 0; top: 1360px; text-align: center; }
+      #sans-match .surligne { font-size: 76px; font-weight: 900; text-transform: uppercase; color: #fff; }
+      #sans-match .surligne .fond { background: var(--rouge); }
+
+      /* Scène 4 : la licence à 350 € et la phrase */
+      #licence { position: absolute; left: 140px; top: 150px; width: 800px; height: 250px; border-radius: 34px;
+        background: linear-gradient(120deg, #173844, #0b2129); border: 3px solid rgba(255,255,255,.25);
+        box-shadow: 0 30px 70px rgba(0,0,0,.5); display: flex; align-items: center; padding: 0 44px; gap: 34px; opacity: 0; }
+      #licence .etiq { color: #8fb3c0; font-weight: 800; font-size: 30px; letter-spacing: .2em; text-transform: uppercase; }
+      #licence .saison { color: #fff; font-weight: 700; font-size: 30px; margin-top: 6px; }
+      #licence .prix { margin-left: auto; color: var(--orange); font-weight: 900; font-size: 120px; letter-spacing: -0.02em; }
+      .bulle-phrase { position: absolute; background: #fff; color: var(--nuit); border-radius: 36px; padding: 26px 36px;
+        font-weight: 900; font-size: 50px; line-height: 1.05; text-transform: uppercase; box-shadow: 0 24px 60px rgba(0,0,0,.45); opacity: 0; }
+      .bulle-phrase::after { content: ""; position: absolute; left: 90px; bottom: -26px; border-width: 28px 22px 0 22px; border-style: solid;
+        border-color: #fff transparent transparent transparent; }
+
+      /* Scène 6 : les deux galères du coach */
+      .galere { position: absolute; left: 110px; width: 860px; height: 108px; border-radius: 26px; background: rgba(0,18,24,.85);
+        border: 3px solid var(--rouge); display: flex; align-items: center; gap: 24px; padding: 0 30px; color: #fff;
+        font-weight: 800; font-size: 40px; text-transform: uppercase; box-shadow: 0 18px 40px rgba(0,0,0,.4); opacity: 0; }
+      .galere .croix { width: 54px; height: 54px; border-radius: 50%; background: var(--rouge); display: flex; align-items: center; justify-content: center; flex: none; }
+
+      /* Scène 7 : le logo */
+      #logo { position: absolute; left: 0; right: 0; top: 120px; display: flex; flex-direction: column; align-items: center; }
+      .icone-fc { width: 180px; height: 180px; border-radius: 42px; background: #000d12; border: 3px solid rgba(255,255,255,.18);
+        display: flex; align-items: center; justify-content: center; font-size: 120px; letter-spacing: -0.09em; line-height: 1;
+        box-shadow: 0 0 60px rgba(1,179,244,.45), 0 24px 60px rgba(0,0,0,.5); }
+      .icone-fc .f { color: var(--bleu); font-weight: 600; } .icone-fc .c { color: #fff; font-weight: 300; }
+      .marque { margin-top: 26px; font-size: 104px; line-height: 1; letter-spacing: 0.01em; position: relative; overflow: hidden; padding: 0 10px; }
+      .marque .found { color: var(--bleu); font-weight: 800; } .marque .club { color: #fff; font-weight: 400; }
+      .marque .reflet { position: absolute; top: -20%; bottom: -20%; width: 180px; left: -220px;
+        background: linear-gradient(100deg, rgba(255,255,255,0), rgba(255,255,255,.55), rgba(255,255,255,0)); }
+
+      /* Scènes 8 à 10 : le téléphone */
+      .tel { position: absolute; left: 276px; top: 290px; width: 528px; height: 1111px; border-radius: 76px; background: #081318; padding: 14px;
+        box-shadow: 0 0 0 2px rgba(1,179,244,.45), 0 0 70px rgba(1,179,244,.28), 0 40px 90px rgba(0,0,0,.6); }
+      .ecran { position: relative; width: 500px; height: 1083px; border-radius: 62px; overflow: hidden; background: #0d1a20; }
+      .capture, .extrait { position: absolute; left: 0; top: 0; width: 500px; height: 1083px; opacity: 0; }
+      .extrait video { width: 500px; height: 1083px; display: block; }
+      .etiquette { position: absolute; display: flex; align-items: center; gap: 14px; padding: 18px 30px; border-radius: 999px; background: #173844;
+        border: 3px solid var(--bleu); color: #fff; font-weight: 800; font-size: 36px; text-transform: uppercase; white-space: nowrap;
+        box-shadow: 0 0 34px rgba(1,179,244,.35), 0 18px 40px rgba(0,0,0,.45); opacity: 0; }
+      .etiquette .point { width: 18px; height: 18px; border-radius: 50%; background: var(--vert); }
+      .appui { position: absolute; width: 110px; height: 110px; margin: -55px 0 0 -55px; border-radius: 50%;
+        background: rgba(255,255,255,.28); border: 4px solid rgba(255,255,255,.85); box-shadow: 0 0 30px rgba(1,179,244,.6); opacity: 0; }
+      #cest-tout { position: absolute; left: 0; right: 0; top: 760px; text-align: center; opacity: 0; }
+      #cest-tout span { display: inline-block; padding: 18px 40px; border: 8px solid var(--vert); border-radius: 22px; color: var(--vert);
+        background: rgba(0,18,24,.82); font-weight: 900; font-size: 96px; text-transform: uppercase; transform: rotate(-8deg); }
+      #compos { position: absolute; left: 40px; top: 600px; width: 1000px; border-radius: 34px; overflow: hidden; opacity: 0;
+        box-shadow: 0 0 0 2px rgba(1,179,244,.45), 0 0 70px rgba(1,179,244,.3), 0 40px 90px rgba(0,0,0,.6); background: #eef3f2; }
+      #compos img { display: block; width: 1000px; height: auto; }
+
+      /* Scène 11 et carton final */
+      #envoie { position: absolute; left: 0; right: 0; top: 190px; display: flex; justify-content: center; }
+      #envoie .pastille { display: flex; align-items: center; gap: 18px; background: #fff; color: var(--nuit); font-weight: 900; font-size: 48px;
+        text-transform: uppercase; padding: 22px 38px; border-radius: 999px; box-shadow: 0 18px 44px rgba(0,18,24,.45); opacity: 0; }
+      #fin-voile { background: #001218; opacity: 0; }
+      #fin { position: absolute; left: 0; right: 0; top: 560px; display: flex; flex-direction: column; align-items: center; }
+      #fin .icone-fc { width: 220px; height: 220px; border-radius: 50px; font-size: 146px; }
+      #fin .marque { margin-top: 40px; font-size: 128px; }
+      #fin .phrase { margin-top: 46px; color: #fff; font-weight: 700; font-size: 50px; }
+      #fin .badges { margin-top: 44px; display: flex; gap: 34px; align-items: center; }
+      #fin .badges img { height: 110px; display: block; }
+      #fin .badges .gp { height: 144px; margin: -17px -10px; }
+      #fin .site { margin-top: 46px; color: var(--bleu); font-weight: 800; font-size: 50px; letter-spacing: .02em; }
+
+      /* Sous-titres */
+      .st { position: absolute; left: 90px; right: 90px; bottom: 290px; text-align: center; color: #fff; font-weight: 700;
+        font-size: 46px; line-height: 1.22; text-shadow: 0 3px 14px rgba(0,18,24,.9), 0 0 3px rgba(0,18,24,.8); opacity: 0; }
+
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="52.60" data-width="1080" data-height="1920">
+
+      <div id="fond" class="clip plein" data-start="0" data-duration="52.60" data-track-index="0"><div id="fond-halo"></div></div>
+
+      <div id="cadre-video">
+        <video id="video-orateur" src="medias/video/source.mp4" playsinline
+          data-start="0" data-duration="49.78" data-track-index="1" data-has-audio="true"></video>
+      </div>
+
+      <div id="degrades" class="clip plein" data-start="0" data-duration="52.60" data-track-index="2">
+        <div id="degrade-haut"></div><div id="degrade-bas"></div>
+      </div>
+      <div id="medaillon-anneau"></div>
+
+      <!-- SCÈNES 1 À 3 — le calendrier : les pros jouent tous les 3 jours, les amateurs un mois sans match -->
+      <div id="mode-cal" class="plein" style="opacity: 0;">
+        <div id="c-rubrique-pros" class="rubrique">Les pros</div>
+        <div id="c-titre-pros" class="titre-g"><span class="ligne">Un match</span><span class="ligne bleu">tous les 3 jours</span></div>
+        <div id="c-rubrique-amat" class="rubrique" style="opacity: 0;">Nous, les amateurs</div>
+        <div id="c-titre-amat" class="titre-g" style="opacity: 0;"><span class="ligne">Parfois un mois</span><span class="ligne rouge">sans match</span></div>
+        <div id="calendrier">
+          <div class="mois"><span>Octobre</span><span class="compteur"><span id="nb-matchs">0</span> match<span id="pluriel">s</span></span></div>
+          <div class="jours-semaine"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div>
+          <div class="grille">
+            <div class="case vide"></div>
+            <div class="case vide"></div>
+            <div class="case vide"></div>
+            <div class="case"><span class="num">1</span><span id="b-1" class="ballon"></span></div>
+            <div class="case"><span class="num">2</span></div>
+            <div class="case we"><span class="num">3</span></div>
+            <div class="case we"><span class="num">4</span><span id="b-4" class="ballon"></span></div>
+            <div class="case"><span class="num">5</span></div>
+            <div class="case"><span class="num">6</span></div>
+            <div class="case"><span class="num">7</span><span id="b-7" class="ballon"></span></div>
+            <div class="case"><span class="num">8</span></div>
+            <div class="case"><span class="num">9</span></div>
+            <div class="case we"><span class="num">10</span><span id="b-10" class="ballon"></span></div>
+            <div class="case we"><span class="num">11</span></div>
+            <div class="case"><span class="num">12</span></div>
+            <div class="case"><span class="num">13</span><span id="b-13" class="ballon"></span></div>
+            <div class="case"><span class="num">14</span></div>
+            <div class="case"><span class="num">15</span></div>
+            <div class="case"><span class="num">16</span><span id="b-16" class="ballon"></span></div>
+            <div class="case we"><span class="num">17</span></div>
+            <div class="case we"><span class="num">18</span></div>
+            <div class="case"><span class="num">19</span><span id="b-19" class="ballon"></span></div>
+            <div class="case"><span class="num">20</span></div>
+            <div class="case"><span class="num">21</span></div>
+            <div class="case"><span class="num">22</span><span id="b-22" class="ballon"></span></div>
+            <div class="case"><span class="num">23</span></div>
+            <div class="case we"><span class="num">24</span></div>
+            <div class="case we"><span class="num">25</span><span id="b-25" class="ballon"></span></div>
+            <div class="case"><span class="num">26</span></div>
+            <div class="case"><span class="num">27</span></div>
+            <div class="case"><span class="num">28</span><span id="b-28" class="ballon"></span></div>
+            <div class="case"><span class="num">29</span></div>
+            <div class="case"><span class="num">30</span></div>
+            <div class="case we"><span class="num">31</span><span id="b-31" class="ballon"></span></div>
+          </div>
+          <div id="t-coupe" class="tampon" style="left:785px;top:210px;">Coupe</div>
+          <div id="t-treve" class="tampon" style="left:785px;top:348px;">Trêve</div>
+          <div id="t-reporte" class="tampon" style="left:785px;top:486px;">Reporté</div>
+        </div>
+        <div id="sans-match"><span class="surligne"><span class="fond"></span><span class="mot">Un mois sans match</span></span></div>
+      </div>
+
+      <!-- SCÈNE 4 — « ils paient leur licence jusqu'à 350 € » -->
+      <div id="s4" class="clip plein" data-start="11.9" data-duration="5.3" data-track-index="4">
+        <div id="licence">
+          <div><div class="etiq">Licence</div><div class="saison">Saison 2026 – 2027</div></div>
+          <div class="prix"><span id="prix">0</span>&nbsp;€</div>
+        </div>
+        <div id="bulle-1" class="bulle-phrase" style="left: 90px; top: 150px;">« La tête de ma mère,<br />je vais jouer ! »</div>
+      </div>
+
+      <!-- SCÈNE 5 — « pourquoi on ne joue pas des matchs amicaux ? » -->
+      <div id="s5" class="clip plein" data-start="17.1" data-duration="4.2" data-track-index="5">
+        <div id="s5-titre" class="titre" style="top: 160px; font-size: 76px;">
+          <span class="ligne">Pourquoi pas</span>
+          <span class="surligne" style="margin-top: 14px;"><span class="fond"></span><span class="mot">un match amical ?</span></span>
+        </div>
+      </div>
+
+      <!-- SCÈNE 6 — « il faut tout le temps trouver une équipe en face, et s'organiser » -->
+      <div id="s6" class="clip plein" data-start="21.2" data-duration="4.6" data-track-index="6">
+        <div id="galere-equipe" class="galere" style="top: 150px;"><span class="croix"><svg width="26" height="26" viewBox="0 0 24 24" stroke="#fff" stroke-width="4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></span>Trouver une équipe en face</div>
+        <div id="galere-orga" class="galere" style="top: 280px;"><span class="croix"><svg width="26" height="26" viewBox="0 0 24 24" stroke="#fff" stroke-width="4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></span>S'organiser</div>
+      </div>
+
+      <!-- SCÈNE 7 — « c'est là qu'un outil intervient : FoundClub » -->
+      <div id="s7" class="clip plein" data-start="25.8" data-duration="3.9" data-track-index="7">
+        <div id="logo">
+          <div class="icone-fc" style="width: 150px; height: 150px; border-radius: 36px; font-size: 100px;"><span class="f">F</span><span class="c">C</span></div>
+          <div class="marque" style="font-size: 92px;"><span class="found">FOUND</span><span class="club">CLUB</span><span class="reflet"></span></div>
+        </div>
+      </div>
+
+      <!-- SCÈNES 8 À 10 — le téléphone : l'enregistrement d'écran, puis l'autre coach accepte -->
+      <div id="mode-tel" class="plein" style="opacity: 0;">
+        <div id="t-rubrique-1" class="rubrique" style="opacity: 0;">Le coach</div>
+        <div id="t-titre-1" class="titre-g" style="opacity: 0;"><span id="t1-l1" class="ligne">Trouve</span><span id="t1-l2" class="ligne bleu">un adversaire</span></div>
+        <div id="t-rubrique-2" class="rubrique" style="opacity: 0;">En face, on accepte</div>
+        <div id="t-titre-2" class="titre-g" style="opacity: 0;"><span id="t2-l1" class="ligne">Continuer à jouer</span><span id="t2-l2" class="ligne vert">&amp; garder le rythme</span></div>
+        <div id="tel" class="tel">
+          <div class="ecran">
+            <div id="x-0" class="extrait"><video id="v-x-0" src="medias/enregistrement/x-0.mp4" muted playsinline data-start="29.280" data-duration="1.400" data-track-index="3"></video></div>
+            <div id="x-1" class="extrait"><video id="v-x-1" src="medias/enregistrement/x-1.mp4" muted playsinline data-start="30.680" data-duration="1.660" data-track-index="3"></video></div>
+            <div id="x-2" class="extrait"><video id="v-x-2" src="medias/enregistrement/x-2.mp4" muted playsinline data-start="32.340" data-duration="1.030" data-track-index="3"></video></div>
+            <div id="x-3" class="extrait"><video id="v-x-3" src="medias/enregistrement/x-3.mp4" muted playsinline data-start="33.370" data-duration="1.630" data-track-index="3"></video></div>
+            <div id="x-4" class="extrait"><video id="v-x-4" src="medias/enregistrement/x-4.mp4" muted playsinline data-start="35.000" data-duration="1.450" data-track-index="3"></video></div>
+            <img id="cap-proposition" class="capture" src="medias/captures/proposition-adverse.webp" alt="" />
+            <img id="cap-accepter" class="capture" src="medias/captures/accepter-proposition.webp" alt="" />
+            <img id="cap-planning" class="capture" src="medias/captures/planning-match.webp" alt="" />
+          </div>
+        </div>
+        <div id="tag-pres" class="etiquette" style="left: 34px; top: 700px;"><span class="point"></span>Près de chez vous</div>
+        <div id="tag-deplace" class="etiquette" style="right: 34px; top: 880px;"><span class="point"></span>Se déplace</div>
+        <div id="tag-recoit" class="etiquette" style="left: 34px; top: 1040px;"><span class="point"></span>Ou reçoit</div>
+        <div id="cest-tout"><span>C'est tout.</span></div>
+        <div id="tag-treve" class="etiquette" style="left: 34px; top: 560px;"><span class="point"></span>Trêve</div>
+        <div id="tag-coupe" class="etiquette" style="right: 34px; top: 720px;"><span class="point"></span>Week-end de coupe</div>
+        <div id="tag-annule" class="etiquette" style="left: 34px; top: 880px;"><span class="point"></span>Match annulé</div>
+        <div id="tag-semaine" class="etiquette" style="right: 34px; top: 1040px;"><span class="point"></span>En semaine</div>
+        <div id="appui-accepter" class="appui" style="left: 544px; top: 1132px;"></div>
+        <div id="appui-confirmer" class="appui" style="left: 540px; top: 872px;"></div>
+        <div id="compos"><img src="medias/captures/compos-5-sports.png" alt="" /></div>
+      </div>
+
+      <!-- SCÈNE 11 — « envoie cette vidéo à ton coach… la tête de ma mère, je vais jouer ! » -->
+      <div id="s11" class="clip plein" data-start="43.9" data-duration="5.85" data-track-index="8">
+        <div id="envoie"><div class="pastille">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#001218" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg>
+          Envoie-la à ton coach</div></div>
+        <div id="bulle-2" class="bulle-phrase" style="left: 90px; top: 150px;">« 350 €… la tête de ma mère,<br />je vais jouer ! »</div>
+      </div>
+
+      <!-- CARTON FINAL -->
+      <div id="carton" class="clip plein" data-start="49.5" data-duration="3.10" data-track-index="9">
+        <div id="fin-voile" class="plein"></div>
+        <div id="fin">
+          <div class="icone-fc"><span class="f">F</span><span class="c">C</span></div>
+          <div class="marque"><span class="found">FOUND</span><span class="club">CLUB</span><span class="reflet"></span></div>
+          <div class="phrase">Télécharge FoundClub</div>
+          <div class="badges">
+            <img src="medias/badges/app-store.svg" alt="Download on the App Store" />
+            <img class="gp" src="medias/badges/google-play.svg" alt="Get it on Google Play" />
+          </div>
+          <div class="site">foundclub.app</div>
+        </div>
+      </div>
+
+      <!-- SOUS-TITRES -->
+      <div id="sous-titres" class="clip plein" data-start="0" data-duration="52.60" data-track-index="10">
+        <p id="st-0" class="st">On se plaint parce que les footballeurs professionnels jouent tous les trois jours.</p>
+        <p id="st-1" class="st">Mais nous, dans le football amateur, parfois, on peut passer un mois sans jouer un seul match.</p>
+        <p id="st-2" class="st">Entre les week-ends de coupe, les trêves, les matchs reportés… un mois sans match.</p>
+        <p id="st-3" class="st">Mais attendez, il y en a, ils paient leur licence jusqu&#x27;à 350 € !</p>
+        <p id="st-4" class="st">« La tête de ma mère, je vais jouer ! »</p>
+        <p id="st-5" class="st">Mais en fait, pourquoi on ne joue pas des matchs amicaux le week-end où on n&#x27;a pas de match de championnat ?</p>
+        <p id="st-6" class="st">Les coachs font une réponse simple : il faut tout le temps trouver une équipe en face, et s&#x27;organiser.</p>
+        <p id="st-7" class="st">Justement, c&#x27;est là qu&#x27;un outil intervient : FoundClub.</p>
+        <p id="st-8" class="st">Ton coach va sur FoundClub,</p>
+        <p id="st-9" class="st">il cherche une équipe disponible près de chez vous,</p>
+        <p id="st-10" class="st">il organise un match amical : il se déplace, ou il reçoit.</p>
+        <p id="st-11" class="st">C&#x27;est tout.</p>
+        <p id="st-12" class="st">Que ce soit pendant une trêve, un week-end de coupe, un match annulé,</p>
+        <p id="st-13" class="st">même en semaine pour préparer un match, vous pouvez continuer à jouer et garder le rythme.</p>
+        <p id="st-14" class="st">Donc maintenant, toi-même tu peux aller voir, mais envoie cette vidéo à ton coach.</p>
+        <p id="st-15" class="st">Parce que 350 €… la tête de ma mère, je vais jouer !</p>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const T = {"professionnels": 1.92, "jours": 2.91, "amateur": 4.34, "mois": 5.68, "match": 6.88, "coupe": 8.85, "treves": 9.25, "reportes": 9.84, "mois2": 10.82, "attendez": 12.51, "licence": 13.84, "350": 14.61, "mere": 15.95, "jouer": 16.71, "amicaux": 19.23, "championnat": 20.62, "reponse": 22.4, "equipe": 23.71, "organiser": 24.58, "outil": 27.44, "fond": 28.33, "coach8": 29.63, "disponible": 31.43, "chez": 31.84, "amical": 33.09, "deplace": 34.02, "recoit": 34.65, "tout": 35.9, "treve": 37.94, "coupe10": 39.41, "annule": 39.91, "semaine": 40.39, "preparer": 40.79, "jouer10": 42.19, "rythme": 43.23, "voir": 45.13, "coach11": 46.45, "350b": 47.4, "mere2": 48.66, "jouer2": 49.45};
+      const SOUS_TITRES = [[0.61, 3.0], [3.0, 7.26], [7.72, 11.64], [12.2, 14.75], [14.75, 16.86], [17.25, 20.86], [21.45, 25.37], [26.09, 28.7], [29.32, 31.4], [31.4, 33.2], [33.2, 34.97], [35.43, 36.38], [36.9, 40.3], [40.3, 43.61], [44.04, 46.85], [46.85, 49.76]];
+      const PROS = [1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31];
+      const EXTRAITS = [{"debut": 29.28, "duree": 1.4}, {"debut": 30.68, "duree": 1.66}, {"debut": 32.34, "duree": 1.03}, {"debut": 33.37, "duree": 1.63}, {"debut": 35.0, "duree": 1.45}];
+      // Sous-titres
+      SOUS_TITRES.forEach(([debut, fin], i) => {
+        tl.fromTo(`#st-${i}`, { opacity: 0 }, { opacity: 1, duration: 0.08, ease: "none" }, debut);
+        tl.to(`#st-${i}`, { opacity: 0, duration: 0.08, ease: "none" }, fin - 0.08);
+      });
+
+      // Passage plein cadre ⇄ médaillon (l'orateur en haut à droite)
+      const versMedaillon = (t) => {
+        tl.to("#degrade-bas", { opacity: 0, duration: 0.4 }, t);
+        tl.to("#cadre-video", { clipPath: "circle(440px at 540px 800px)", scale: 0.35, x: 360, y: -550, duration: 0.8, ease: "power3.inOut" }, t);
+        tl.to("#medaillon-anneau", { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, t + 0.7);
+      };
+      const versPleinCadre = (t) => {
+        tl.to("#medaillon-anneau", { opacity: 0, scale: 0.6, duration: 0.25 }, t);
+        tl.to("#cadre-video", { clipPath: "circle(2300px at 540px 800px)", scale: 1, x: 0, y: 0, duration: 0.7, ease: "power3.inOut" }, t);
+        tl.to("#degrade-bas", { opacity: 1, duration: 0.5 }, t + 0.3);
+      };
+      tl.set("#medaillon-anneau", { scale: 0.6 }, 0);
+      const surligner = (sel, t) => {
+        tl.fromTo(`${sel} .fond`, { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, t);
+        tl.fromTo(`${sel} .mot`, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, t + 0.1);
+      };
+      const apparaitre = (sel, t, de = { y: 40 }) => tl.fromTo(sel, { opacity: 0, ...de }, { opacity: 1, x: 0, y: 0, duration: 0.35, ease: "power3.out" }, t);
+      const etiquette = (sel, t, cote) => tl.fromTo(sel, { opacity: 0, x: cote * 160, scale: 0.8 }, { opacity: 1, x: 0, scale: 1, duration: 0.32, ease: "back.out(1.7)" }, t);
+      const appuyer = (sel, t) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.5 }, { opacity: 1, scale: 0.85, duration: 0.22, ease: "power2.out" }, t);
+        tl.to(sel, { opacity: 0, scale: 1.25, duration: 0.3, ease: "power1.in" }, t + 0.32);
+      };
+
+      // ── SCÈNES 1 À 3 : le calendrier ─────────────────────────────
+      const CAL = T.professionnels - 0.55;
+      versMedaillon(CAL);
+      tl.to("#mode-cal", { opacity: 1, duration: 0.4 }, CAL + 0.3);
+      apparaitre("#calendrier", CAL + 0.3, { y: 300 });
+      apparaitre("#c-rubrique-pros", CAL + 0.35, { x: -40 });
+      apparaitre("#c-titre-pros", CAL + 0.5);
+      // Les pros : un match tous les 3 jours, le compteur monte
+      const nb = document.getElementById("nb-matchs"), pl = document.getElementById("pluriel");
+      const compter = (v) => { const n = Math.round(v); nb.textContent = String(n); pl.textContent = n > 1 ? "s" : ""; };
+      const compte = { v: 0 };
+      PROS.forEach((jour, i) => {
+        tl.fromTo(`#b-${jour}`, { opacity: 0, scale: 0.2 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2.2)" }, T.jours - 0.6 + i * 0.1);
+      });
+      tl.fromTo(compte, { v: 0 }, { v: PROS.length, duration: PROS.length * 0.1, ease: "none", onUpdate: () => compter(compte.v) }, T.jours - 0.6);
+      // Nous, les amateurs : tout s'éteint, le compteur retombe à 0
+      tl.to(["#c-rubrique-pros", "#c-titre-pros"], { opacity: 0, x: -40, duration: 0.25 }, T.amateur - 0.7);
+      apparaitre("#c-rubrique-amat", T.amateur - 0.5, { x: -40 });
+      tl.to(PROS.map((j) => `#b-${j}`), { opacity: 0, scale: 0.2, duration: 0.18, stagger: 0.04, ease: "power2.in" }, T.mois - 0.9);
+      tl.to(compte, { v: 0, duration: 0.6, ease: "power2.in", onUpdate: () => compter(compte.v) }, T.mois - 0.9);
+      apparaitre("#c-titre-amat", T.mois - 0.5);
+      // Coupe, trêves, reportés : trois tampons sur les week-ends
+      [["#t-coupe", T.coupe], ["#t-treve", T.treves], ["#t-reporte", T.reportes]].forEach(([sel, t]) => {
+        tl.fromTo(sel, { opacity: 0, scale: 2.2, rotation: -20, xPercent: -50, yPercent: -50 }, { opacity: 1, scale: 1, rotation: -8, xPercent: -50, yPercent: -50, duration: 0.22, ease: "power3.in" }, t - 0.35);
+      });
+      tl.to("#calendrier", { x: 8, duration: 0.05, yoyo: true, repeat: 3, ease: "none" }, T.reportes - 0.13);
+      surligner("#sans-match", T.mois2 - 0.55);
+      tl.to("#mode-cal", { opacity: 0, duration: 0.3 }, T.attendez - 0.6);
+      versPleinCadre(T.attendez - 0.6);
+
+      // ── SCÈNE 4 : la licence à 350 €, puis « la tête de ma mère, je vais jouer ! » ──
+      apparaitre("#licence", T.attendez - 0.1, { y: -60 });
+      const prix = { v: 0 }, elPrix = document.getElementById("prix");
+      tl.fromTo(prix, { v: 0 }, { v: 350, duration: 0.9, ease: "power2.out", onUpdate: () => { elPrix.textContent = String(Math.round(prix.v)); } }, T["350"] - 0.9);
+      tl.to("#licence", { scale: 1.06, duration: 0.12, yoyo: true, repeat: 1 }, T["350"]);
+      tl.to("#licence", { opacity: 0, y: -40, duration: 0.25 }, T.mere - 0.95);
+      tl.fromTo("#bulle-1", { opacity: 0, scale: 0.5, rotation: -6 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.3, ease: "back.out(2)" }, T.mere - 0.8);
+      tl.to("#bulle-1", { x: 10, duration: 0.05, yoyo: true, repeat: 5, ease: "none" }, T.jouer - 0.3);
+
+      // ── SCÈNE 5 : « pourquoi pas un match amical ? » ──
+      apparaitre("#s5-titre .ligne", T.amicaux - 1.1);
+      surligner("#s5-titre", T.amicaux - 0.55);
+
+      // ── SCÈNE 6 : les deux galères du coach ──
+      apparaitre("#galere-equipe", T.equipe - 0.6, { x: -200 });
+      apparaitre("#galere-orga", T.organiser - 0.6, { x: 200 });
+      tl.to(["#galere-equipe .croix", "#galere-orga .croix"], { scale: 1.2, duration: 0.12, yoyo: true, repeat: 1 }, T.organiser);
+
+      // ── SCÈNE 7 : FoundClub ──
+      tl.fromTo("#logo .icone-fc", { opacity: 0, scale: 0.3, rotation: -12 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.45, ease: "back.out(1.8)" }, T.fond - 0.9);
+      tl.fromTo("#logo .marque", { opacity: 0, y: 30, scale: 1.15 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "power3.out" }, T.fond - 0.55);
+      tl.fromTo("#logo .reflet", { x: 0 }, { x: 900, duration: 0.7, ease: "power2.inOut" }, T.fond);
+
+      // ── SCÈNES 8 À 10 : le téléphone ─────────────────────────────
+      const TEL = EXTRAITS[0].debut - 0.75;
+      tl.to("#logo", { opacity: 0, duration: 0.3 }, TEL);
+      versMedaillon(TEL);
+      tl.to("#mode-tel", { opacity: 1, duration: 0.3 }, TEL + 0.3);
+      tl.fromTo("#tel", { opacity: 0, y: 500, rotation: 6 }, { opacity: 1, y: 0, rotation: 0, duration: 0.6, ease: "power3.out" }, TEL + 0.45);
+      // Les extraits de l'enregistrement d'écran, l'un après l'autre
+      EXTRAITS.forEach((x, i) => {
+        tl.fromTo(`#x-${i}`, { opacity: 0 }, { opacity: 1, duration: i === 0 ? 0.01 : 0.12 }, x.debut);
+        tl.to(`#x-${i}`, { opacity: 0, duration: 0.01 }, x.debut + x.duree - 0.01);
+      });
+      apparaitre("#t-rubrique-1", TEL + 0.6, { x: -40 });
+      apparaitre("#t1-l1", T.coach8 - 0.2);
+      apparaitre("#t1-l2", T.disponible - 0.45);
+      tl.set("#t-titre-1", { opacity: 1 }, T.coach8 - 0.2);
+      etiquette("#tag-pres", T.chez - 0.4, -1);
+      etiquette("#tag-deplace", T.deplace - 0.4, 1);
+      etiquette("#tag-recoit", T.recoit - 0.4, -1);
+      // « C'est tout. »
+      tl.to(["#tag-pres", "#tag-deplace", "#tag-recoit"], { opacity: 0, scale: 0.7, duration: 0.25, stagger: 0.04 }, T.tout - 0.6);
+      tl.fromTo("#cest-tout", { opacity: 0, scale: 2.4 }, { opacity: 1, scale: 1, duration: 0.22, ease: "power3.in" }, T.tout - 0.45);
+      tl.to("#tel", { x: 10, duration: 0.05, yoyo: true, repeat: 3, ease: "none" }, T.tout - 0.23);
+      tl.to("#cest-tout", { opacity: 0, duration: 0.25 }, T.tout + 0.5);
+      tl.to(["#t-rubrique-1", "#t-titre-1"], { opacity: 0, x: -40, duration: 0.25 }, T.tout + 0.4);
+
+      // Scène 10 : l'autre coach accepte → le match est au planning → la compo
+      const montrer = (sel, t) => tl.fromTo(sel, { opacity: 0, x: 500 }, { opacity: 1, x: 0, duration: 0.35, ease: "power2.out" }, t);
+      const cacher = (sel, t) => tl.to(sel, { opacity: 0, duration: 0.25 }, t);
+      // les écrans avancent à leur rythme ; les étiquettes suivent ses mots
+      montrer("#cap-proposition", T.tout + 0.55);
+      apparaitre("#t-rubrique-2", T.tout + 0.65, { x: -40 });
+      appuyer("#appui-accepter", T.treve - 0.05);
+      cacher("#cap-proposition", T.treve + 0.4);
+      montrer("#cap-accepter", T.treve + 0.4);
+      appuyer("#appui-confirmer", T.treve + 1.1);
+      cacher("#cap-accepter", T.treve + 1.5);
+      montrer("#cap-planning", T.treve + 1.5);
+      etiquette("#tag-treve", T.treve - 0.4, -1);
+      etiquette("#tag-coupe", T.coupe10 - 0.4, 1);
+      etiquette("#tag-annule", T.annule - 0.4, -1);
+      etiquette("#tag-semaine", T.semaine - 0.4, 1);
+      // la compo (planche des 5 sports), puis « continuer à jouer et garder le rythme »
+      tl.to(["#tag-treve", "#tag-coupe", "#tag-annule", "#tag-semaine"], { opacity: 0, scale: 0.7, duration: 0.25, stagger: 0.04 }, T.preparer + 0.3);
+      tl.to("#tel", { opacity: 0.18, scale: 0.94, duration: 0.4 }, T.preparer + 0.2);
+      tl.fromTo("#compos", { opacity: 0, x: 700, rotation: 3 }, { opacity: 1, x: 0, rotation: 0, duration: 0.5, ease: "power3.out" }, T.preparer + 0.2);
+      tl.to("#t-rubrique-2", { opacity: 0, duration: 0.2 }, T.jouer10 - 0.7);
+      tl.set("#t-titre-2", { opacity: 1 }, T.jouer10 - 0.5);
+      apparaitre("#t2-l1", T.jouer10 - 0.5);
+      apparaitre("#t2-l2", T.rythme - 0.5);
+      // Retour plein cadre
+      const SORTIE = T.rythme + 0.15;
+      tl.to(["#compos", "#t-titre-2"], { opacity: 0, duration: 0.25 }, SORTIE);
+      tl.to("#tel", { opacity: 0, y: 500, duration: 0.45, ease: "power3.in" }, SORTIE);
+      tl.to("#mode-tel", { opacity: 0, duration: 0.3 }, SORTIE + 0.25);
+      versPleinCadre(SORTIE);
+
+      // ── SCÈNE 11 : « envoie cette vidéo à ton coach… je vais jouer ! » ──
+      tl.fromTo("#envoie .pastille", { opacity: 0, scale: 0.6, rotation: -6 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.4, ease: "back.out(1.8)" }, T.coach11 - 0.9);
+      tl.to("#envoie .pastille", { opacity: 0, duration: 0.25 }, T["350b"] - 0.75);
+      tl.fromTo("#bulle-2", { opacity: 0, scale: 0.5, rotation: -6 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.3, ease: "back.out(2)" }, T["350b"] - 0.6);
+      tl.to("#bulle-2", { x: 10, duration: 0.05, yoyo: true, repeat: 5, ease: "none" }, T.jouer2 - 0.3);
+
+      // ── CARTON FINAL ──
+      const FIN = 49.55;
+      tl.fromTo("#fin-voile", { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "power2.out" }, FIN);
+      tl.fromTo("#fin .icone-fc", { opacity: 0, scale: 0.3, rotation: -12 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(1.8)" }, FIN + 0.25);
+      tl.fromTo("#fin .marque", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, FIN + 0.45);
+      tl.fromTo("#fin .reflet", { x: 0 }, { x: 1100, duration: 0.8, ease: "power2.inOut" }, FIN + 0.9);
+      tl.fromTo("#fin .phrase", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, FIN + 0.8);
+      tl.fromTo("#fin .badges", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, FIN + 1.05);
+      tl.fromTo("#fin .site", { opacity: 0 }, { opacity: 1, duration: 0.4 }, FIN + 1.3);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

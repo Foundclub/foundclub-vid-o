@@ -34,7 +34,7 @@ TAMPONS = [("t-coupe", "Coupe", 0), ("t-treve", "Trêve", 1), ("t-reporte", "Rep
 EXTRAITS = [
     ("x-0", 0.0, 3.0, T["coach8"] - 0.35, T["disponible"] - 0.75),        # l'accueil, puis la recherche
     ("x-1", 3.0, 5.4, T["disponible"] - 0.75, T["amical"] - 0.75),        # « Trouver un adversaire » près de chez toi
-    ("x-2", 13.3, 16.0, T["amical"] - 0.75, T["deplace"] - 0.65),          # la fiche de l'équipe, « Proposer un match »
+    ("x-2", 14.0, 16.0, T["amical"] - 0.75, T["deplace"] - 0.65),          # la fiche de l'équipe, « Proposer un match »
     ("x-3", 18.6, 21.25, T["deplace"] - 0.65, T["recoit"] + 0.35),         # Senior 1, « Je reçois »
     ("x-4", 21.25, 23.4, T["recoit"] + 0.35, T["tout"] + 0.55),            # « Félicitations, proposition envoyée ! »
 ]
