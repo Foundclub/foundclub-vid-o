@@ -24,3 +24,5 @@ world-cup/rendus/apercu-*.mp4
 # dossiers temporaires du rendu HyperFrames (disparaissent a la fin du rendu)
 */rendus/.*.hf-transaction-*/
 */rendus/work-*/
+# bruitages : regeneres par outils/sons.py a partir de sons.json
+*/medias/sons/sons.wav

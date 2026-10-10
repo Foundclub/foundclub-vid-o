@@ -1,0 +1,571 @@
+[
+{
+"t": 1.22,
+"son": "swish",
+"quoi": "titre #s1-annee"
+},
+{
+"t": 3.05,
+"son": "swish",
+"quoi": "titre #s1-encore"
+},
+{
+"t": 3.7,
+"son": "zip",
+"quoi": "surligneur"
+},
+{
+"t": 4.15,
+"son": "tap",
+"quoi": "le surligneur penche",
+"db": -6
+},
+{
+"t": 5,
+"son": "souffle",
+"quoi": "sortie #s1-annee,#s1-encore,#s1-whatsapp"
+},
+{
+"t": 5.42,
+"son": "bulle",
+"quoi": "message du groupe #b-convoc",
+"note": 0
+},
+{
+"t": 6.32,
+"son": "bulle",
+"quoi": "message du groupe #b-entrain",
+"note": 0
+},
+{
+"t": 7.16,
+"son": "bulle",
+"quoi": "message du groupe #b-matchs",
+"note": 0
+},
+{
+"t": 7.95,
+"son": "bulle",
+"quoi": "message #m-0",
+"note": 0,
+"db": -5
+},
+{
+"t": 8.12,
+"son": "bulle",
+"quoi": "message #m-1",
+"note": 2,
+"db": -5
+},
+{
+"t": 8.29,
+"son": "bulle",
+"quoi": "message #m-2",
+"note": 4,
+"db": -5
+},
+{
+"t": 8.46,
+"son": "bulle",
+"quoi": "message #m-3",
+"note": 7,
+"db": -5
+},
+{
+"t": 8.63,
+"son": "bulle",
+"quoi": "message #m-4",
+"note": 9,
+"db": -5
+},
+{
+"t": 8.8,
+"son": "bulle",
+"quoi": "message #m-5",
+"note": 12,
+"db": -5
+},
+{
+"t": 8.97,
+"son": "bulle",
+"quoi": "message #m-6",
+"note": 14,
+"db": -5
+},
+{
+"t": 9.14,
+"son": "bulle",
+"quoi": "message #m-7",
+"note": 16,
+"db": -5
+},
+{
+"t": 9.31,
+"son": "bulle",
+"quoi": "message #m-8",
+"note": 19,
+"db": -5
+},
+{
+"t": 9.467,
+"son": "coupe",
+"quoi": "changement de plan",
+"db": 0
+},
+{
+"t": 9.48,
+"son": "bulle",
+"quoi": "message #m-9",
+"note": 21,
+"db": -5
+},
+{
+"t": 9.65,
+"son": "bulle",
+"quoi": "message #m-10",
+"note": 24,
+"db": -5
+},
+{
+"t": 9.82,
+"son": "bulle",
+"quoi": "message #m-11",
+"note": 24,
+"db": -5
+},
+{
+"t": 9.99,
+"son": "bulle",
+"quoi": "message #m-12",
+"note": 24,
+"db": -5
+},
+{
+"t": 10.16,
+"son": "bulle",
+"quoi": "message #m-13",
+"note": 24,
+"db": -5
+},
+{
+"t": 10.45,
+"son": "souffle",
+"quoi": "la tempête se brouille",
+"db": 3
+},
+{
+"t": 10.85,
+"son": "impact",
+"quoi": "ON S'Y PERD",
+"db": -4
+},
+{
+"t": 11.12,
+"son": "zip",
+"quoi": "surligneur"
+},
+{
+"t": 11.3,
+"son": "secousse",
+"quoi": "le texte tremble"
+},
+{
+"t": 11.6,
+"son": "souffle",
+"quoi": "la tempête se brouille",
+"db": 3
+},
+{
+"t": 11.767,
+"son": "coupe",
+"quoi": "changement de plan",
+"db": 0
+},
+{
+"t": 15.19,
+"son": "swish",
+"quoi": "titre #s3-change .ligne"
+},
+{
+"t": 16.01,
+"son": "zip",
+"quoi": "surligneur"
+},
+{
+"t": 16.7,
+"son": "coupe",
+"quoi": "changement de plan",
+"db": 0
+},
+{
+"t": 16.93,
+"son": "souffle",
+"quoi": "sortie #s3-change"
+},
+{
+"t": 17.52,
+"son": "montee",
+"quoi": "montée vers le logo",
+"db": -2
+},
+{
+"t": 17.52,
+"son": "impact",
+"quoi": "le logo tombe"
+},
+{
+"t": 17.87,
+"son": "swish",
+"quoi": "FOUNDCLUB",
+"db": -1
+},
+{
+"t": 18.42,
+"son": "scintille",
+"quoi": "reflet sur le logo"
+},
+{
+"t": 19.02,
+"son": "whoosh",
+"quoi": "médaillon entre",
+"db": 2
+},
+{
+"t": 19.32,
+"son": "tick",
+"quoi": "rubrique #s4-rubrique",
+"db": 2
+},
+{
+"t": 19.62,
+"son": "whoosh",
+"quoi": "le téléphone arrive",
+"db": -4
+},
+{
+"t": 19.62,
+"son": "tick",
+"quoi": "écran accueil-haut"
+},
+{
+"t": 19.77,
+"son": "pop",
+"quoi": "anneau du médaillon",
+"note": 7,
+"db": -5
+},
+{
+"t": 21.43,
+"son": "swish",
+"quoi": "titre #s4-l1"
+},
+{
+"t": 22.12,
+"son": "swish",
+"quoi": "titre #s4-l2"
+},
+{
+"t": 23.7,
+"son": "pop",
+"quoi": "étiquette club",
+"note": 0
+},
+{
+"t": 24.43,
+"son": "pop",
+"quoi": "étiquette joueurs",
+"note": 2
+},
+{
+"t": 25.59,
+"son": "pop",
+"quoi": "étiquette dirigeants",
+"note": 4
+},
+{
+"t": 26.52,
+"son": "pop",
+"quoi": "étiquette parents",
+"note": 7
+},
+{
+"t": 27.17,
+"son": "souffle",
+"quoi": "sortie #s4-rubrique,#s4-titre"
+},
+{
+"t": 27.37,
+"son": "tick",
+"quoi": "écran messagerie"
+},
+{
+"t": 27.65,
+"son": "bulle",
+"quoi": "message #e-0",
+"note": 0,
+"db": -2
+},
+{
+"t": 28.2,
+"son": "bulle",
+"quoi": "message #e-1",
+"note": 2,
+"db": -2
+},
+{
+"t": 28.75,
+"son": "bulle",
+"quoi": "message #e-2",
+"note": 4,
+"db": -2
+},
+{
+"t": 29.3,
+"son": "bulle",
+"quoi": "message #e-3",
+"note": 7,
+"db": -2
+},
+{
+"t": 29.85,
+"son": "bulle",
+"quoi": "message #e-4",
+"note": 9,
+"db": -2
+},
+{
+"t": 30.4,
+"son": "bulle",
+"quoi": "message #e-5",
+"note": 12,
+"db": -2
+},
+{
+"t": 31.267,
+"son": "coupe",
+"quoi": "changement de plan",
+"db": -6
+},
+{
+"t": 31.74,
+"son": "whoosh",
+"quoi": "les messages sont aspirés",
+"db": -3
+},
+{
+"t": 31.94,
+"son": "tick",
+"quoi": "rubrique #s5-rubrique",
+"db": 2
+},
+{
+"t": 32.39,
+"son": "tap",
+"quoi": "le téléphone avale les messages",
+"db": -3
+},
+{
+"t": 32.73,
+"son": "zip",
+"quoi": "surligneur"
+},
+{
+"t": 33.43,
+"son": "tick",
+"quoi": "écran appel"
+},
+{
+"t": 34.05,
+"son": "souffle",
+"quoi": "sortie #s5-rubrique,#s5-titre"
+},
+{
+"t": 34.25,
+"son": "tick",
+"quoi": "rubrique #s6-rubrique",
+"db": 2
+},
+{
+"t": 35.68,
+"son": "swish",
+"quoi": "titre #s6-l1"
+},
+{
+"t": 36.24,
+"son": "whoosh",
+"quoi": "planche des compos entre",
+"db": -4
+},
+{
+"t": 36.34,
+"son": "swish",
+"quoi": "titre #s6-l2"
+},
+{
+"t": 38.78,
+"son": "whoosh",
+"quoi": "planche des compos sort",
+"db": -8
+},
+{
+"t": 39.08,
+"son": "swish",
+"quoi": "le téléphone revient",
+"db": -2
+},
+{
+"t": 40.21,
+"son": "tick",
+"quoi": "écran fiche"
+},
+{
+"t": 40.71,
+"son": "tap",
+"quoi": "doigt rejoindre"
+},
+{
+"t": 41.03,
+"son": "swish",
+"quoi": "titre #s6b-l1"
+},
+{
+"t": 41.18,
+"son": "tick",
+"quoi": "écran recrutement"
+},
+{
+"t": 41.73,
+"son": "tap",
+"quoi": "doigt postuler"
+},
+{
+"t": 42.05,
+"son": "tick",
+"quoi": "écran affiche"
+},
+{
+"t": 42.95,
+"son": "souffle",
+"quoi": "sortie #s6b-rubrique,#s6b-titre"
+},
+{
+"t": 43.05,
+"son": "tick",
+"quoi": "rubrique #s7-rubrique",
+"db": 2
+},
+{
+"t": 43.2,
+"son": "pop",
+"quoi": "étiquette joueur",
+"note": 0
+},
+{
+"t": 43.82,
+"son": "pop",
+"quoi": "étiquette educateur",
+"note": 2
+},
+{
+"t": 44.41,
+"son": "pop",
+"quoi": "étiquette president",
+"note": 4
+},
+{
+"t": 45.13,
+"son": "pop",
+"quoi": "étiquette dirigeant",
+"note": 7
+},
+{
+"t": 45.77,
+"son": "pop",
+"quoi": "étiquette parent",
+"note": 9
+},
+{
+"t": 46.42,
+"son": "whoosh",
+"quoi": "médaillon sort",
+"db": 2
+},
+{
+"t": 46.85,
+"son": "pop",
+"quoi": "carte App Store",
+"note": -5
+},
+{
+"t": 49.35,
+"son": "pop",
+"quoi": "DIS-LE EN COMMENTAIRE",
+"note": -3,
+"db": 2
+},
+{
+"t": 50.94,
+"son": "swish",
+"quoi": "choix whatsapp",
+"db": -1
+},
+{
+"t": 52.58,
+"son": "swish",
+"quoi": "choix app",
+"db": -1
+},
+{
+"t": 53.03,
+"son": "choix",
+"quoi": "l'application gagne"
+},
+{
+"t": 53.95,
+"son": "souffle",
+"quoi": "sortie #s9-sticker,#choix-whatsapp,#choix-app"
+},
+{
+"t": 54.25,
+"son": "montee",
+"quoi": "montée vers le logo",
+"db": -8
+},
+{
+"t": 54.25,
+"son": "impact",
+"quoi": "le logo tombe",
+"db": -6
+},
+{
+"t": 54.45,
+"son": "swish",
+"quoi": "FOUNDCLUB",
+"db": -1
+},
+{
+"t": 54.8,
+"son": "swish",
+"quoi": "Télécharge FoundClub",
+"db": -3
+},
+{
+"t": 54.9,
+"son": "scintille",
+"quoi": "reflet sur le logo",
+"db": -6
+},
+{
+"t": 55.05,
+"son": "pop",
+"quoi": "badges",
+"note": 4,
+"db": -2
+},
+{
+"t": 55.3,
+"son": "tick",
+"quoi": "foundclub.app",
+"db": 2
+}
+]

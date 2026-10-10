@@ -38,6 +38,21 @@ Les versions : `ach10-complet-v3.mp4` n'a que la phrase de 18 s ; `ach10-complet
 | 8 | 46–49 s | « c'est le moment de venir découvrir FoundClub » | Carte App Store aux couleurs FoundClub posée sur sa bannière blanche (47,03–49,25 s) | FAIT |
 | 9 | 49–57,5 s | « dis-moi en commentaire… Ciao mes petits potes ! » | DIS-LE EN COMMENTAIRE, sondage ENCORE WHATSAPP / UNE APPLICATION, carton final (badges App Store et Google Play, foundclub.app) | FAIT |
 
+### Sound design (10/10/2026)
+
+La version `ach10/rendus/ach10-complet-v5.mp4` reprend l'image de la v4 et ajoute **96 bruitages**, posés sur les animations et sur les changements de plan (les coupes d'ach10).
+
+Les bruitages sont **synthétisés par `outils/sons.py`** : aucun fichier tiers, aucun droit à payer. Il y en a 14 familles :
+- **mouvements** : whoosh, swish, souffle, montée ;
+- **pops et notifications** : pop, bulle de message, choix du sondage ;
+- **interface** : clic d'écran, appui du doigt, surligneur, coupe de plan ;
+- **effets** : impact du logo, scintillement du reflet, secousse.
+
+- **Où et quand** : `sons.json` liste chaque bruitage avec son instant, sa famille et un réglage fin (`db`, `note`). On le modifie à la main.
+- **Le premier jet** de cette liste vient de l'inventaire des 152 animations de la timeline et des 8 coupes repérées dans la vidéo.
+- **Les niveaux** : `outils/mesurer-sons.py` mesure chaque bruitage face à la voix. Ils sont réglés de 8 dB (impacts) à 18 dB (petits clics) sous la voix.
+- **Le mélange** : `outils/rendre.sh` fabrique la piste, la mélange sous la voix (limiteur à -1 dBFS) puis règle le tout à -14 LUFS.
+
 ### Avant de publier : à revérifier
 
 - **« Collaboration commerciale »** : elle n'est pas dans la vidéo, sur décision d'Adel (« pas pour l'instant »). Elle est **obligatoire** si ach10 reçoit une contrepartie (loi du 9 juin 2023, art. 5). C'est à trancher avant toute publication.
