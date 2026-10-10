@@ -1,0 +1,39 @@
+#1
+           potes : fini a   1.10 s
+        football : fini a   2.41 s
+         terrain : fini a   4.12 s
+     preparation : fini a   4.92 s
+     hydratation : fini a   5.88 s
+    recuperation : fini a   6.66 s
+#2
+       important : fini a   8.25 s
+       presenter : fini a   9.76 s
+           sport : fini a  10.75 s
+#3
+           sport : fini a  10.75 s
+           gamme : fini a  11.51 s
+       nutrition : fini a  11.98 s
+        sportive : fini a  12.40 s
+        retrouve : fini a  13.19 s
+#4
+        creatine : fini a  15.36 s
+         gelules : fini a  16.08 s
+    recuperation : fini a  17.16 s
+         crampes : fini a  19.61 s
+     courbatures : fini a  20.13 s
+#5
+  multivitamines : fini a  21.81 s
+        vitalite : fini a  22.78 s
+          effort : fini a  23.88 s
+          barres : fini a  24.85 s
+        cereales : fini a  24.80 s
+           boost : fini a  25.56 s
+         energie : fini a  26.31 s
+#6
+     performance : fini a  27.60 s
+         terrain : fini a  28.28 s
+         prepare : fini a  29.06 s
+          dehors : fini a  29.49 s
+           sport : fini a  30.47 s
+
+[exited with code 0]

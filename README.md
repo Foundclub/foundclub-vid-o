@@ -149,3 +149,22 @@ Fabriquer : `cd world-cup ; outils/preparer-video.sh ; outils/rendre.sh world-cu
 - **« Coupe du monde » et « World Cup » sont des marques de la FIFA** : à faire vérifier par un juriste avant de diffuser ;
 - l'écran réel des liens d'invitation n'a pas été fourni : le bouton « Inviter mes joueurs » de la maquette le remplace ;
 - la mention « Collaboration commerciale », si la personne qui parle est rémunérée.
+
+## `ergysport/` — ach10 x Ergysport (collaboration commerciale)
+
+Vidéo verticale d'ach10 pour la marque **Ergysport by Nutergia** (micronutrition sportive) : 31 s de parole, puis un carton final de 3 s. L'original (`a-monter/ach10-ergysport.mov`) est déjà monté par ach10 : la loupe d'ouverture, les coupes et le logo incrusté vers 10 s sont à lui. On ne fait qu'habiller par-dessus.
+
+- **Direction artistique** : relevée sur les captures d'ergysport.com envoyées par Adel, le site n'étant pas joignable depuis la session cloud.
+  - **Couleurs** : orange `#FF6B00`, dégradé `#FD7407` → `#FBB12B`, bleu marine `#0A3457`, blanc.
+  - **Formes** : cartes blanches aux coins arrondis, dont un coin plus serré.
+  - **Police** : Fira Sans Condensed, très grasse et en capitales. Elle est **proche** de celle du site, sans être forcément la même.
+  - **Logo officiel** : fourni par Adel, dans `medias/marque/`.
+- **Ce qu'on voit** : les titres en haut, les trois piliers (préparation, hydratation, récupération), une étiquette sous chaque produit qu'ach10 montre (whey, créatine, gélules récupération, multivitamines, barres, boosts), les sous-titres et le carton « Performez sainement ! » (la phrase du site).
+- **La mention « Collaboration commerciale »** reste à l'écran **du début à la fin**. Elle est obligatoire (loi du 9 juin 2023 sur l'influence commerciale).
+- **Sound design** : la bibliothèque synthétisée d'`ach10/` (`outils/sons.py`). `sons.json` liste 45 bruitages, réglés à la mesure (`outils/mesurer-sons.py sons.json medias/video/source.mp4`).
+
+Fabriquer : `cd ergysport ; outils/preparer-video.sh ; outils/rendre.sh ergysport-v1 18`.
+
+À revérifier avant de publier :
+- **Les allégations santé** : ach10 parle de « crampes et courbatures » et de « vitalité ». Ces mots restent dans les sous-titres seulement, et aucun titre ne les reprend. C'est à faire valider par la marque, car les allégations sur les compléments alimentaires sont encadrées.
+- **Les noms de produits** dans les étiquettes (« Protein' », « Bar' », « Natural Boost ») sont lus sur les emballages et sur le site. La marque doit les valider.

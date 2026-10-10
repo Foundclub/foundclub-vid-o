@@ -1,0 +1,9 @@
+      @font-face { font-family: "Fira Sans Condensed"; font-weight: 600; font-display: block; src: url("fonts/fira-sans-condensed-latin-600-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fira Sans Condensed"; font-weight: 700; font-display: block; src: url("fonts/fira-sans-condensed-latin-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fira Sans Condensed"; font-weight: 800; font-display: block; src: url("fonts/fira-sans-condensed-latin-800-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fira Sans Condensed"; font-weight: 900; font-display: block; src: url("fonts/fira-sans-condensed-latin-900-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fira Sans Condensed"; font-weight: 800; font-style: italic; font-display: block; src: url("fonts/fira-sans-condensed-latin-800-italic.woff2") format("woff2"); }
+      @font-face { font-family: "Fira Sans Condensed"; font-weight: 900; font-style: italic; font-display: block; src: url("fonts/fira-sans-condensed-latin-900-italic.woff2") format("woff2"); }
+      @font-face { font-family: "Fira Sans"; font-weight: 400; font-display: block; src: url("fonts/fira-sans-latin-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fira Sans"; font-weight: 500; font-display: block; src: url("fonts/fira-sans-latin-500-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fira Sans"; font-weight: 600; font-display: block; src: url("fonts/fira-sans-latin-600-normal.woff2") format("woff2"); }

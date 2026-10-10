@@ -1,8 +1,11 @@
 """Pour chaque bruitage pris seul : son niveau le plus fort (100 ms) face au niveau de la voix autour (400 ms).
-Usage : python3 -I outils/mesurer-sons.py [sons.json]"""
-import sys, json, numpy as np, soundfile as sf
+Usage : python3 -I outils/mesurer-sons.py [sons.json] [voix.wav ou vidéo]"""
+import sys, json, subprocess, numpy as np, soundfile as sf
 sys.path.insert(0, "outils"); import sons as B
-v, sr = sf.read("medias/video/ach10-voix.wav"); vm = v.mean(1)
+voix = sys.argv[2] if len(sys.argv) > 2 else "medias/video/ach10-voix.wav"
+sr = 48000
+vm = np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-i", voix, "-map", "0:a:0", "-ac", "2", "-ar", str(sr), "-f", "f32le", "-"],
+                   capture_output=True, check=True).stdout, dtype="<f4").astype(np.float64).reshape(-1, 2).mean(1)   # comme la mesure des bruitages
 L = json.load(open(sys.argv[1] if len(sys.argv) > 1 else "sons.json"))
 def court(x, n):  # niveau RMS glissant
     e = np.convolve(x ** 2, np.ones(n) / n, mode="valid"); return 10 * np.log10(e + 1e-12)

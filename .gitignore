@@ -27,3 +27,8 @@ world-cup/rendus/apercu-*.mp4
 # bruitages : regeneres par outils/sons.py a partir de sons.json
 */medias/sons/sons.wav
 __pycache__/
+# ergysport : fichiers regenerables
+ergysport/medias/video/source.mp4
+ergysport/snapshots/
+ergysport/rendus/*-brut.mp4
+ergysport/rendus/apercu-*.mp4

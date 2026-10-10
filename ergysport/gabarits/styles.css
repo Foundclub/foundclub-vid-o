@@ -1,0 +1,77 @@
+      /* Charte Ergysport, relevée sur ergysport.com (captures d'Adel, 10/10/2026) et sur le logo officiel */
+      :root {
+        --orange: #ff6b00;          /* logo */
+        --orange-vif: #fd7407;      /* bouton, début du dégradé */
+        --ambre: #fbb12b;           /* bouton, fin du dégradé */
+        --marine: #0a3457;          /* ronds de prix, textes forts */
+        --marine-doux: #4c718b;
+        --blanc: #ffffff;
+        --gris: #f4f4f4;
+        --degrade: linear-gradient(100deg, var(--orange-vif) 0%, #fe8a12 45%, var(--ambre) 100%);
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+      body { font-family: "Fira Sans Condensed", "Fira Sans", sans-serif; color: var(--blanc); }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+      .plein { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+      #cadre-video { position: absolute; inset: 0; }
+      #video-ach10 { width: 1080px; height: 1920px; object-fit: cover; }
+
+      /* La mention légale, visible pendant toute la vidéo */
+      #collab { position: absolute; left: 36px; top: 150px; display: flex; align-items: center; gap: 12px;
+        padding: 10px 20px 10px 16px; border-radius: 999px; background: rgba(10, 52, 87, .86);
+        font: 600 28px/1 "Fira Sans", sans-serif; letter-spacing: .01em; color: var(--blanc);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, .25); }
+      #collab .pt { width: 12px; height: 12px; border-radius: 50%; background: var(--orange); }
+
+      /* Titres : une ligne blanche (texte marine), une ligne orange (texte blanc), comme les cartes du site */
+      .titre { position: absolute; left: 0; right: 0; top: 232px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+      .titre .l { display: inline-block; padding: 8px 26px 10px; font-weight: 800; font-size: 66px; line-height: 1.02;
+        text-transform: uppercase; letter-spacing: .005em; white-space: nowrap; box-shadow: 0 10px 28px rgba(0, 0, 0, .22); }
+      .titre .l.b { background: var(--blanc); color: var(--marine); border-radius: 22px 22px 22px 6px; }
+      .titre .l.o { background: var(--degrade); color: var(--blanc); font-style: italic; font-weight: 900;
+        border-radius: 6px 22px 22px 22px; text-shadow: 0 2px 0 rgba(10, 52, 87, .18); }
+      .titre .l.o.gros { font-size: 78px; }
+
+      /* Les trois piliers : préparation, hydratation, récupération */
+      #piliers { position: absolute; left: 0; right: 0; top: 232px; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+      .pilier { display: flex; align-items: center; gap: 18px; padding: 10px 30px 10px 12px; background: var(--blanc);
+        border-radius: 999px; box-shadow: 0 10px 26px rgba(0, 0, 0, .22); }
+      .pilier .ic { width: 70px; height: 70px; border-radius: 50%; background: var(--degrade); display: flex; align-items: center; justify-content: center; }
+      .pilier .nom { font-weight: 800; font-size: 50px; color: var(--marine); text-transform: uppercase; }
+
+      /* Étiquettes produit : carte blanche, barre orange, pointe vers le produit tenu */
+      .produit { position: absolute; display: flex; align-items: stretch; background: var(--blanc);
+        border-radius: 26px 26px 26px 6px; box-shadow: 0 14px 34px rgba(0, 0, 0, .28); overflow: visible; }
+      .produit .barre { width: 16px; border-radius: 26px 0 0 6px; background: var(--degrade); }
+      .produit .txt { padding: 14px 28px 16px 20px; }
+      .produit .k { font: 700 26px/1 "Fira Sans", sans-serif; letter-spacing: .08em; color: var(--orange); text-transform: uppercase; }
+      .produit .n { margin-top: 6px; font-weight: 900; font-style: italic; font-size: 60px; line-height: 1; color: var(--marine); text-transform: uppercase; }
+      .produit .s { margin-top: 8px; font: 600 26px/1.1 "Fira Sans", sans-serif; color: var(--marine-doux); }
+      .produit .pointe { position: absolute; top: -18px; width: 0; height: 0; border-left: 18px solid transparent;
+        border-right: 18px solid transparent; border-bottom: 20px solid var(--blanc); }
+
+      /* Sous-titres : pastille blanche, texte marine */
+      #sous-titres { pointer-events: none; }
+      .st { position: absolute; left: 70px; right: 70px; top: 1540px; text-align: center; opacity: 0; }
+      .st span { display: inline; padding: 6px 18px 8px; background: rgba(255, 255, 255, .95); color: var(--marine);
+        font-weight: 700; font-size: 44px; line-height: 1.5; border-radius: 14px;
+        -webkit-box-decoration-break: clone; box-decoration-break: clone; box-shadow: 0 6px 18px rgba(0, 0, 0, .18); }
+
+      /* Éclat orange quand ach10 dit « Ergysport » (le logo est déjà incrusté dans sa vidéo) */
+      #eclat { background: radial-gradient(700px 520px at 50% 18%, rgba(255, 140, 20, .38), rgba(255, 140, 20, 0) 70%); opacity: 0; }
+
+      /* Carton final */
+      #fin { overflow: hidden; }
+      #fin-fond { position: absolute; inset: -40px; background: linear-gradient(160deg, var(--orange-vif) 0%, #fe8a12 50%, var(--ambre) 100%);
+        border-radius: 0 0 0 420px; }
+      #fin-courbe { position: absolute; left: 0; right: 0; bottom: 0; height: 520px; background: var(--blanc); border-radius: 420px 0 0 0; }
+      #fin-logo { position: absolute; left: 140px; top: 560px; width: 800px; }
+      #fin-phrase { position: absolute; left: 0; right: 0; top: 930px; text-align: center; font-weight: 900; font-style: italic;
+        font-size: 92px; line-height: 1; color: var(--blanc); text-transform: none; text-shadow: 0 4px 0 rgba(10, 52, 87, .16); }
+      #fin-site { position: absolute; left: 0; right: 0; top: 1520px; text-align: center; }
+      #fin-site span { display: inline-block; padding: 16px 40px 18px; border-radius: 999px; background: var(--marine);
+        font: 600 44px/1 "Fira Sans", sans-serif; color: var(--blanc); letter-spacing: .01em; }
+      #fin-nutergia { position: absolute; left: 0; right: 0; top: 1650px; text-align: center; font: 500 30px/1 "Fira Sans", sans-serif; color: var(--marine-doux); }
+      /* état de départ : tout est caché, la timeline fait entrer chaque élément */
+      .titre .l, .pilier, .produit, .produit .s { opacity: 0; }

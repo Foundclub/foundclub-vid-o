@@ -1,0 +1,264 @@
+[
+{
+"t": 1.96,
+"son": "swish",
+"quoi": "titre le foot"
+},
+{
+"t": 3.52,
+"son": "zip",
+"quoi": "titre sur le terrain",
+"db": 2
+},
+{
+"t": 4.37,
+"son": "souffle",
+"quoi": "sortie titre 1"
+},
+{
+"t": 4.42,
+"son": "pop",
+"quoi": "pilier préparation",
+"note": 0
+},
+{
+"t": 4.567,
+"son": "coupe",
+"quoi": "changement de plan",
+"db": 3
+},
+{
+"t": 5.38,
+"son": "pop",
+"quoi": "pilier hydratation",
+"note": 4
+},
+{
+"t": 5.533,
+"son": "coupe",
+"quoi": "changement de plan",
+"db": 3
+},
+{
+"t": 6.16,
+"son": "pop",
+"quoi": "pilier récupération",
+"note": 7
+},
+{
+"t": 6.333,
+"son": "coupe",
+"quoi": "changement de plan",
+"db": 3
+},
+{
+"t": 7.567,
+"son": "coupe",
+"quoi": "changement de plan",
+"db": 3
+},
+{
+"t": 7.9,
+"son": "choix",
+"quoi": "les piliers s'allument",
+"note": 0,
+"db": -3
+},
+{
+"t": 8.5,
+"son": "souffle",
+"quoi": "sortie piliers"
+},
+{
+"t": 8.767,
+"son": "coupe",
+"quoi": "changement de plan",
+"db": 3
+},
+{
+"t": 10.0,
+"son": "scintille",
+"quoi": "éclat sur le logo d'ach10",
+"db": -3
+},
+{
+"t": 11.31,
+"son": "swish",
+"quoi": "titre une gamme"
+},
+{
+"t": 11.63,
+"son": "zip",
+"quoi": "titre nutrition sportive",
+"db": 2
+},
+{
+"t": 12.833,
+"son": "coupe",
+"quoi": "changement de plan",
+"db": 3
+},
+{
+"t": 13.19,
+"son": "souffle",
+"quoi": "sortie titre 2"
+},
+{
+"t": 13.34,
+"son": "pop",
+"quoi": "étiquette whey",
+"note": 0
+},
+{
+"t": 14.4,
+"son": "souffle",
+"quoi": "whey sort",
+"db": -3
+},
+{
+"t": 14.76,
+"son": "pop",
+"quoi": "étiquette créatine",
+"note": 2
+},
+{
+"t": 15.63,
+"son": "souffle",
+"quoi": "créatine sort",
+"db": -3
+},
+{
+"t": 15.73,
+"son": "pop",
+"quoi": "étiquette gélules récupération",
+"note": 4
+},
+{
+"t": 20.28,
+"son": "souffle",
+"quoi": "gélules sortent",
+"db": -3
+},
+{
+"t": 21.06,
+"son": "pop",
+"quoi": "étiquette multivitamines",
+"note": 7
+},
+{
+"t": 22.28,
+"son": "tick",
+"quoi": "pour la vitalité",
+"db": -2
+},
+{
+"t": 23.08,
+"son": "souffle",
+"quoi": "multivitamines sort",
+"db": -3
+},
+{
+"t": 23.31,
+"son": "zip",
+"quoi": "titre pendant l'effort",
+"db": 4
+},
+{
+"t": 24.0,
+"son": "pop",
+"quoi": "étiquette barres",
+"note": 9
+},
+{
+"t": 25.16,
+"son": "pop",
+"quoi": "étiquette boosts",
+"note": 12
+},
+{
+"t": 25.81,
+"son": "tick",
+"quoi": "pour un plein d'énergie",
+"db": -2
+},
+{
+"t": 26.61,
+"son": "souffle",
+"quoi": "barres et boosts sortent",
+"db": -3
+},
+{
+"t": 27.1,
+"son": "swish",
+"quoi": "titre la performance"
+},
+{
+"t": 27.78,
+"son": "zip",
+"quoi": "titre sur le terrain",
+"db": 2
+},
+{
+"t": 28.61,
+"son": "souffle",
+"quoi": "sortie titre 4"
+},
+{
+"t": 28.71,
+"son": "swish",
+"quoi": "titre ça se prépare"
+},
+{
+"t": 29.09,
+"son": "zip",
+"quoi": "titre aussi dehors",
+"db": 2
+},
+{
+"t": 29.47,
+"son": "tap",
+"quoi": "AUSSI DEHORS tape",
+"db": -2
+},
+{
+"t": 30.22,
+"son": "montee",
+"quoi": "montée vers le carton",
+"db": -6
+},
+{
+"t": 30.22,
+"son": "whoosh",
+"quoi": "le carton orange monte",
+"db": -4
+},
+{
+"t": 30.62,
+"son": "impact",
+"quoi": "logo Ergysport",
+"db": -6
+},
+{
+"t": 31.02,
+"son": "swish",
+"quoi": "Performez sainement !"
+},
+{
+"t": 31.07,
+"son": "scintille",
+"quoi": "reflet sur la phrase",
+"db": -6
+},
+{
+"t": 31.32,
+"son": "pop",
+"quoi": "ergysport.com",
+"note": 4,
+"db": -2
+},
+{
+"t": 31.52,
+"son": "tick",
+"quoi": "Groupe Nutergia"
+}
+]
