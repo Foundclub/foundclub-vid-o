@@ -26,3 +26,4 @@ world-cup/rendus/apercu-*.mp4
 */rendus/work-*/
 # bruitages : regeneres par outils/sons.py a partir de sons.json
 */medias/sons/sons.wav
+__pycache__/
