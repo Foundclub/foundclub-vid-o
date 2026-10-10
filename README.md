@@ -99,3 +99,30 @@ Fabriquer : `cd matchs-amicaux ; outils/preparer-video.sh ; outils/rendre.sh mat
 À revérifier avant de publier :
 - la mention « Collaboration commerciale », si la personne qui parle est rémunérée ;
 - le point rouge d'enregistrement de l'iPhone, visible en haut du téléphone de 29 à 36 s (laissé tel quel).
+
+## `world-cup/` — la vidéo « World Cup »
+
+Vidéo verticale de **84,2 s** (1080×1920, 30 images/s, son à -14 LUFS), validée par Adel le 10/10/2026 : `world-cup/rendus/world-cup-final.mp4`. Elle est rendue depuis l'original (`a-monter/world-cup.mp4`), dont la prise en double (24,43–28,07 s) est coupée sur le changement de plan.
+
+Le message : dans un an, la première Coupe du monde du foot amateur, avec des qualifications pays par pays et des phases finales en France. Les inscriptions sont ouvertes sur FoundClub. Les 13 scènes :
+1. J-365 et le titre ;
+2. « avec ton club ou tes potes » ;
+3. « un défi un peu fou », « ouvert à tous » et les niveaux ;
+4. la carte du monde en points, sans aucun pays nommé ;
+5. le tableau du tournoi (8, 4, 2, puis le vainqueur) ;
+6. le zoom sur la France et le tampon INSCRIPTIONS OUVERTES ;
+7. le téléphone : 3 écrans World Cup **dessinés** (compte à rebours de 365 jours, choix de l'équipe, équipe inscrite), puis les 5 vraies captures de la création d'équipe ;
+8. « Pourquoi ? » ;
+9. « le sport plus accessible » et « 365 jours, on a besoin de vous » ;
+10. les 5 cartes des besoins ;
+11. le prochain épisode ;
+12. « Envoie-la » ;
+13. le titre final, puis le carton.
+
+Fabriquer : `cd world-cup ; outils/preparer-video.sh ; outils/rendre.sh world-cup-final 18`.
+
+À revérifier avant de publier :
+- **Les écrans World Cup sont des maquettes** : la vidéo dit « les inscriptions sont déjà ouvertes », il faut que ce soit vrai dans l'app le jour de la publication ;
+- **« Coupe du monde » et « World Cup » sont des marques de la FIFA** : à faire vérifier par un juriste avant de diffuser ;
+- l'écran réel des liens d'invitation n'a pas été fourni : le bouton « Inviter mes joueurs » de la maquette le remplace ;
+- la mention « Collaboration commerciale », si la personne qui parle est rémunérée.
