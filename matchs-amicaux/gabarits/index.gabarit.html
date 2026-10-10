@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="gsap.min.js"></script>
+    <style>
+/*POLICES*/
+/*STYLES*/
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="__DUREE__" data-width="1080" data-height="1920">
+
+      <div id="fond" class="clip plein" data-start="0" data-duration="__DUREE__" data-track-index="0"><div id="fond-halo"></div></div>
+
+      <div id="cadre-video">
+        <video id="video-orateur" src="medias/video/source.mp4" playsinline
+          data-start="0" data-duration="__DUREE_VIDEO__" data-track-index="1" data-has-audio="true"></video>
+      </div>
+
+      <div id="degrades" class="clip plein" data-start="0" data-duration="__DUREE__" data-track-index="2">
+        <div id="degrade-haut"></div><div id="degrade-bas"></div>
+      </div>
+      <div id="medaillon-anneau"></div>
+
+      <!-- SCÈNES 1 À 3 — le calendrier : les pros jouent tous les 3 jours, les amateurs un mois sans match -->
+      <div id="mode-cal" class="plein" style="opacity: 0;">
+        <div id="c-rubrique-pros" class="rubrique">Les pros</div>
+        <div id="c-titre-pros" class="titre-g"><span class="ligne">Un match</span><span class="ligne bleu">tous les 3 jours</span></div>
+        <div id="c-rubrique-amat" class="rubrique" style="opacity: 0;">Nous, les amateurs</div>
+        <div id="c-titre-amat" class="titre-g" style="opacity: 0;"><span class="ligne">Parfois un mois</span><span class="ligne rouge">sans match</span></div>
+        <div id="calendrier">
+          <div class="mois"><span>Octobre</span><span class="compteur"><span id="nb-matchs">0</span> match<span id="pluriel">s</span></span></div>
+          <div class="jours-semaine"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div>
+          <div class="grille">
+<!--CASES-->
+          </div>
+<!--TAMPONS-->
+        </div>
+        <div id="sans-match"><span class="surligne"><span class="fond"></span><span class="mot">Un mois sans match</span></span></div>
+      </div>
+
+      <!-- SCÈNE 4 — « ils paient leur licence jusqu'à 350 € » -->
+      <div id="s4" class="clip plein" data-start="11.9" data-duration="5.3" data-track-index="4">
+        <div id="licence">
+          <div><div class="etiq">Licence</div><div class="saison">Saison 2026 – 2027</div></div>
+          <div class="prix"><span id="prix">0</span>&nbsp;€</div>
+        </div>
+        <div id="bulle-1" class="bulle-phrase" style="left: 90px; top: 150px;">« La tête de ma mère,<br />je vais jouer ! »</div>
+      </div>
+
+      <!-- SCÈNE 5 — « pourquoi on ne joue pas des matchs amicaux ? » -->
+      <div id="s5" class="clip plein" data-start="17.1" data-duration="4.2" data-track-index="5">
+        <div id="s5-titre" class="titre" style="top: 160px; font-size: 76px;">
+          <span class="ligne">Pourquoi pas</span>
+          <span class="surligne" style="margin-top: 14px;"><span class="fond"></span><span class="mot">un match amical ?</span></span>
+        </div>
+      </div>
+
+      <!-- SCÈNE 6 — « il faut tout le temps trouver une équipe en face, et s'organiser » -->
+      <div id="s6" class="clip plein" data-start="21.2" data-duration="4.6" data-track-index="6">
+        <div id="galere-equipe" class="galere" style="top: 150px;"><span class="croix"><svg width="26" height="26" viewBox="0 0 24 24" stroke="#fff" stroke-width="4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></span>Trouver une équipe en face</div>
+        <div id="galere-orga" class="galere" style="top: 280px;"><span class="croix"><svg width="26" height="26" viewBox="0 0 24 24" stroke="#fff" stroke-width="4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></span>S'organiser</div>
+      </div>
+
+      <!-- SCÈNE 7 — « c'est là qu'un outil intervient : FoundClub » -->
+      <div id="s7" class="clip plein" data-start="25.8" data-duration="3.9" data-track-index="7">
+        <div id="logo">
+          <div class="icone-fc" style="width: 150px; height: 150px; border-radius: 36px; font-size: 100px;"><span class="f">F</span><span class="c">C</span></div>
+          <div class="marque" style="font-size: 92px;"><span class="found">FOUND</span><span class="club">CLUB</span><span class="reflet"></span></div>
+        </div>
+      </div>
+
+      <!-- SCÈNES 8 À 10 — le téléphone : l'enregistrement d'écran, puis l'autre coach accepte -->
+      <div id="mode-tel" class="plein" style="opacity: 0;">
+        <div id="t-rubrique-1" class="rubrique" style="opacity: 0;">Le coach</div>
+        <div id="t-titre-1" class="titre-g" style="opacity: 0;"><span id="t1-l1" class="ligne">Trouve</span><span id="t1-l2" class="ligne bleu">un adversaire</span></div>
+        <div id="t-rubrique-2" class="rubrique" style="opacity: 0;">En face, on accepte</div>
+        <div id="t-titre-2" class="titre-g" style="opacity: 0;"><span id="t2-l1" class="ligne">Continuer à jouer</span><span id="t2-l2" class="ligne vert">&amp; garder le rythme</span></div>
+        <div id="tel" class="tel">
+          <div class="ecran">
+<!--EXTRAITS-->
+            <img id="cap-proposition" class="capture" src="medias/captures/proposition-adverse.webp" alt="" />
+            <img id="cap-accepter" class="capture" src="medias/captures/accepter-proposition.webp" alt="" />
+            <img id="cap-planning" class="capture" src="medias/captures/planning-match.webp" alt="" />
+          </div>
+        </div>
+        <div id="tag-pres" class="etiquette" style="left: 34px; top: 700px;"><span class="point"></span>Près de chez vous</div>
+        <div id="tag-deplace" class="etiquette" style="right: 34px; top: 880px;"><span class="point"></span>Se déplace</div>
+        <div id="tag-recoit" class="etiquette" style="left: 34px; top: 1040px;"><span class="point"></span>Ou reçoit</div>
+        <div id="cest-tout"><span>C'est tout.</span></div>
+        <div id="tag-treve" class="etiquette" style="left: 34px; top: 560px;"><span class="point"></span>Trêve</div>
+        <div id="tag-coupe" class="etiquette" style="right: 34px; top: 720px;"><span class="point"></span>Week-end de coupe</div>
+        <div id="tag-annule" class="etiquette" style="left: 34px; top: 880px;"><span class="point"></span>Match annulé</div>
+        <div id="tag-semaine" class="etiquette" style="right: 34px; top: 1040px;"><span class="point"></span>En semaine</div>
+        <div id="appui-accepter" class="appui" style="left: 544px; top: 1132px;"></div>
+        <div id="appui-confirmer" class="appui" style="left: 540px; top: 872px;"></div>
+        <div id="compos"><img src="medias/captures/compos-5-sports.png" alt="" /></div>
+      </div>
+
+      <!-- SCÈNE 11 — « envoie cette vidéo à ton coach… la tête de ma mère, je vais jouer ! » -->
+      <div id="s11" class="clip plein" data-start="43.9" data-duration="5.85" data-track-index="8">
+        <div id="envoie"><div class="pastille">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#001218" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg>
+          Envoie-la à ton coach</div></div>
+        <div id="bulle-2" class="bulle-phrase" style="left: 90px; top: 150px;">« 350 €… la tête de ma mère,<br />je vais jouer ! »</div>
+      </div>
+
+      <!-- CARTON FINAL -->
+      <div id="carton" class="clip plein" data-start="49.5" data-duration="__DUREE_CARTON__" data-track-index="9">
+        <div id="fin-voile" class="plein"></div>
+        <div id="fin">
+          <div class="icone-fc"><span class="f">F</span><span class="c">C</span></div>
+          <div class="marque"><span class="found">FOUND</span><span class="club">CLUB</span><span class="reflet"></span></div>
+          <div class="phrase">Télécharge FoundClub</div>
+          <div class="badges">
+            <img src="medias/badges/app-store.svg" alt="Download on the App Store" />
+            <img class="gp" src="medias/badges/google-play.svg" alt="Get it on Google Play" />
+          </div>
+          <div class="site">foundclub.app</div>
+        </div>
+      </div>
+
+      <!-- SOUS-TITRES -->
+      <div id="sous-titres" class="clip plein" data-start="0" data-duration="__DUREE__" data-track-index="10">
+<!--SOUSTITRES-->
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const T = /*T*/;
+      const SOUS_TITRES = /*ST*/;
+      const PROS = /*PROS*/;
+      const EXTRAITS = /*EXTRAITS*/;
+/*JS*/
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
