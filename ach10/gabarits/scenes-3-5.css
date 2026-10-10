@@ -1,0 +1,43 @@
+      /* Fond du « mode écran » (bleu nuit du design system, deux halos bleus) */
+      #fond-halo { position: absolute; inset: 0;
+        background: radial-gradient(900px 700px at 20% 18%, rgba(1,179,244,.16), rgba(1,179,244,0) 70%),
+                    radial-gradient(1000px 900px at 85% 80%, rgba(39,214,163,.08), rgba(39,214,163,0) 70%), #001218; }
+      #cadre-video { transform-origin: 540px 700px; clip-path: circle(2300px at 540px 700px); }
+      #medaillon-anneau { position: absolute; left: 744px; top: 94px; width: 312px; height: 312px; border-radius: 50%;
+        border: 6px solid var(--bleu); box-shadow: 0 0 40px rgba(1,179,244,.55); }
+
+      /* Scène 3 : « c'est FoundClub » */
+      #s3-change { top: 1110px; font-size: 110px; }
+      #s3-logo { position: absolute; left: 0; right: 0; top: 1040px; display: flex; flex-direction: column; align-items: center; }
+      .icone-fc { width: 200px; height: 200px; border-radius: 46px; background: #000d12; border: 3px solid rgba(255,255,255,.18);
+        display: flex; align-items: center; justify-content: center; font-size: 132px; letter-spacing: -0.09em; line-height: 1;
+        box-shadow: 0 0 60px rgba(1,179,244,.45), 0 24px 60px rgba(0,0,0,.5); }
+      .icone-fc .f { color: var(--bleu); font-weight: 600; } .icone-fc .c { color: #fff; font-weight: 300; }
+      .marque { margin-top: 34px; font-size: 118px; line-height: 1; letter-spacing: 0.01em; position: relative; overflow: hidden; padding: 0 10px; }
+      .marque .found { color: var(--bleu); font-weight: 800; } .marque .club { color: #fff; font-weight: 400; }
+      .marque .reflet { position: absolute; top: -20%; bottom: -20%; width: 180px; left: -220px;
+        background: linear-gradient(100deg, rgba(255,255,255,0), rgba(255,255,255,.55), rgba(255,255,255,0)); }
+
+      /* Téléphone du « mode écran » */
+      .tel { position: absolute; left: 276px; top: 290px; width: 528px; height: 1111px; border-radius: 76px; background: #081318; padding: 14px;
+        box-shadow: 0 0 0 2px rgba(1,179,244,.45), 0 0 70px rgba(1,179,244,.28), 0 40px 90px rgba(0,0,0,.6); }
+      .ecran { position: relative; width: 500px; height: 1083px; border-radius: 62px; overflow: hidden; background: #0d1a20; }
+      .capture { position: absolute; left: 0; top: 0; width: 500px; height: 1083px; opacity: 0; }
+
+      /* Titres du « mode écran » : en haut à gauche, comme la vidéo de référence */
+      .rubrique { position: absolute; left: 70px; top: 128px; font-size: 30px; font-weight: 700; letter-spacing: .22em; color: var(--bleu); text-transform: uppercase; }
+      .titre-g { position: absolute; left: 70px; top: 172px; width: 640px; font-size: 62px; font-weight: 900; line-height: 1.02; color: #fff; text-transform: uppercase; }
+      .titre-g .bleu { color: var(--bleu); }
+
+      /* Étiquettes autour du téléphone */
+      .etiquette { position: absolute; display: flex; align-items: center; gap: 14px; padding: 18px 30px; border-radius: 999px; background: #173844;
+        border: 3px solid var(--bleu); color: #fff; font-weight: 800; font-size: 38px; text-transform: uppercase; white-space: nowrap;
+        box-shadow: 0 0 34px rgba(1,179,244,.35), 0 18px 40px rgba(0,0,0,.45); }
+      .etiquette .point { width: 18px; height: 18px; border-radius: 50%; background: var(--vert); }
+
+      /* Scène 5 : les messages éparpillés qui rentrent dans le téléphone */
+      .eparpille { position: absolute; background: #fff; border-radius: 24px; padding: 12px 22px 14px; color: #0b1a20;
+        box-shadow: 0 14px 32px rgba(0,0,0,.45); white-space: nowrap; }
+      .eparpille .qui { font-weight: 700; font-size: 20px; margin-bottom: 2px; }
+      .eparpille .quoi { font-weight: 600; font-size: 30px; }
+      #s5-titre .surligne { margin-top: 10px; padding: 6px 18px 8px; }

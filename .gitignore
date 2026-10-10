@@ -1,0 +1,8 @@
+node_modules/
+ach10/snapshots/
+ach10/rendus/*-brut.mp4
+ach10/rendus/brouillon-*.mp4
+# regenerable : outils/preparer-video.sh
+ach10/medias/video/ach10-source.mp4
+# modele Whisper (1 Go) : voir README
+modeles/

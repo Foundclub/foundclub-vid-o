@@ -1,0 +1,57 @@
+      /* Scène 6 : les compositions des 5 sports, puis la connexion joueurs ⇄ clubs */
+      #compos { position: absolute; left: 40px; top: 600px; width: 1000px; border-radius: 34px; overflow: hidden;
+        box-shadow: 0 0 0 2px rgba(1,179,244,.45), 0 0 70px rgba(1,179,244,.3), 0 40px 90px rgba(0,0,0,.6); background: #eef3f2; }
+      #compos img { display: block; width: 1000px; height: auto; }
+      #compos-legende { position: absolute; left: 0; right: 0; top: 1060px; text-align: center; color: #fff; font-weight: 800;
+        font-size: 36px; letter-spacing: .12em; text-transform: uppercase; }
+      .surcouche { position: absolute; opacity: 0; }
+      /* Logo FC dessiné à la place de l'image cassée « Logo club » de l'affiche */
+      #logo-affiche { left: 49px; top: 297px; width: 44px; height: 44px; border-radius: 10px; background: #000d12;
+        border: 1px solid rgba(255,255,255,.25); display: flex; align-items: center; justify-content: center;
+        font-size: 28px; letter-spacing: -0.09em; line-height: 1; }
+      #logo-affiche .f { color: var(--bleu); font-weight: 600; } #logo-affiche .c { color: #fff; font-weight: 300; }
+      /* Numéro de téléphone de la fiche club : flouté */
+      #flou-tel { left: 212px; top: 448px; width: 108px; height: 26px; border-radius: 8px; backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px); background: rgba(27,58,71,.35); }
+      /* Le doigt qui appuie */
+      .appui { position: absolute; width: 110px; height: 110px; margin: -55px 0 0 -55px; border-radius: 50%;
+        background: rgba(255,255,255,.28); border: 4px solid rgba(255,255,255,.85); box-shadow: 0 0 30px rgba(1,179,244,.6); opacity: 0; }
+      /* Scène 7 : le cadre qui se pose sur le bon statut */
+      #statut-cadre { position: absolute; left: 318px; top: 629px; width: 444px; height: 74px; border-radius: 20px;
+        border: 5px solid var(--vert); box-shadow: 0 0 34px rgba(39,214,163,.6); opacity: 0; }
+
+      /* Scène 8 : la carte App Store, posée exactement sur la bannière blanche de sa vidéo */
+      #carte-store { position: absolute; left: 36px; top: 766px; width: 1008px; height: 388px; border-radius: 40px;
+        background: linear-gradient(160deg, #173844, #0b2129); border: 3px solid rgba(1,179,244,.55);
+        box-shadow: 0 0 60px rgba(1,179,244,.35), 0 30px 80px rgba(0,0,0,.55); padding: 44px 50px; }
+      #carte-store .haut { display: flex; align-items: center; gap: 34px; }
+      #carte-store .icone { width: 170px; height: 170px; border-radius: 38px; overflow: hidden; flex: none; }
+      #carte-store .icone img { width: 170px; height: 170px; display: block; }
+      #carte-store .nom { font-weight: 800; font-size: 60px; color: #fff; line-height: 1; }
+      #carte-store .cat { font-weight: 600; font-size: 34px; color: #8fb3c0; margin-top: 10px; }
+      #carte-store .bouton { margin-left: auto; flex: none; background: var(--bleu); color: var(--nuit); font-weight: 900; font-size: 30px;
+        padding: 20px 28px; border-radius: 999px; text-transform: uppercase; }
+      #carte-store .bas { display: flex; align-items: center; justify-content: space-between; margin-top: 40px; color: #cfe3ea; font-weight: 700; font-size: 32px; }
+      #carte-store .etoiles { color: #ffc93c; letter-spacing: .08em; }
+
+      /* Scène 9 : « dis-moi en commentaire » */
+      #s9-sticker { position: absolute; left: 0; right: 0; top: 1000px; display: flex; justify-content: center; }
+      #s9-sticker .pastille { display: flex; align-items: center; gap: 18px; background: #fff; color: var(--nuit); font-weight: 900; font-size: 46px;
+        text-transform: uppercase; padding: 20px 36px; border-radius: 999px; box-shadow: 0 18px 44px rgba(0,18,24,.45); }
+      .choix { position: absolute; left: 150px; width: 780px; height: 104px; border-radius: 26px; background: rgba(0,18,24,.82);
+        border: 3px solid rgba(255,255,255,.35); display: flex; align-items: center; padding: 0 34px; gap: 24px;
+        color: #fff; font-weight: 800; font-size: 42px; text-transform: uppercase; box-shadow: 0 18px 40px rgba(0,0,0,.4); }
+      .choix .rond { width: 46px; height: 46px; border-radius: 50%; border: 4px solid rgba(255,255,255,.7); flex: none; }
+      #choix-app { border-color: var(--bleu); }
+      #choix-app .rond { border-color: var(--bleu); background: radial-gradient(circle, var(--bleu) 0 45%, transparent 48%); }
+      #choix-whatsapp { top: 1120px; } #choix-app { top: 1244px; }
+
+      /* Carton final */
+      #fin-voile { background: #001218; }
+      #fin { position: absolute; left: 0; right: 0; top: 560px; display: flex; flex-direction: column; align-items: center; }
+      #fin .icone-fc { width: 220px; height: 220px; border-radius: 50px; font-size: 146px; }
+      #fin .marque { margin-top: 40px; font-size: 128px; }
+      #fin .phrase { margin-top: 46px; color: #fff; font-weight: 700; font-size: 50px; }
+      #fin .badges { margin-top: 44px; display: flex; gap: 34px; align-items: center; }
+      #fin .badges img { height: 110px; display: block; }
+      #fin .badges .gp { height: 144px; margin: -17px -10px; }
+      #fin .site { margin-top: 46px; color: var(--bleu); font-weight: 800; font-size: 50px; letter-spacing: .02em; }

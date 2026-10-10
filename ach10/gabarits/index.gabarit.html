@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="gsap.min.js"></script>
+    <style>
+/*POLICES*/
+      :root {
+        --bleu: #01b3f4;
+        --nuit: #001218;
+        --nuit-2: #173844;
+        --vert: #27d6a3;
+        --rouge: #f0384e;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #001218; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: "Montserrat", sans-serif; }
+
+      /* La vidéo d'ach10, plein cadre */
+      #cadre-video { position: absolute; inset: 0; }
+      #video-ach10 { width: 1080px; height: 1920px; object-fit: cover; }
+
+      /* Dégradé bleu nuit en bas : lisibilité des titres et des sous-titres */
+      .plein { position: absolute; inset: 0; }
+      #degrade-fond { position: absolute; left: 0; right: 0; top: 960px; bottom: 0;
+        background: linear-gradient(to bottom, rgba(0,18,24,0) 0%, rgba(0,18,24,.45) 40%, rgba(0,18,24,.78) 100%); }
+
+      /* Titres */
+      .titre { position: absolute; left: 0; right: 0; text-align: center; text-transform: uppercase; font-weight: 900;
+        color: #fff; letter-spacing: -0.01em; line-height: 1; text-shadow: 0 6px 24px rgba(0,18,24,.45); }
+      .ligne { display: block; }
+      .surligne { display: inline-block; position: relative; padding: 10px 26px 12px; color: var(--nuit); text-shadow: none; }
+      .surligne .fond { position: absolute; inset: 0; background: var(--bleu); border-radius: 14px; transform-origin: left center; }
+      .surligne .mot { position: relative; display: inline-block; }
+
+      /* Scène 1 */
+      #s1-annee { top: 1078px; font-size: 64px; font-weight: 800; color: var(--bleu); }
+      #s1-encore { top: 1150px; font-size: 118px; }
+      #s1-whatsapp { top: 1282px; font-size: 118px; }
+
+      /* Scène 2 : l'en-tête du groupe */
+      #s2-entete { position: absolute; left: 150px; top: 196px; width: 780px; height: 116px; background: #fff;
+        border-radius: 58px; box-shadow: 0 18px 44px rgba(0,18,24,.35); display: flex; align-items: center; padding: 0 22px; }
+      #s2-entete .avatar { width: 76px; height: 76px; border-radius: 38px; background: #d9e1e5; display: flex; align-items: center; justify-content: center; }
+      #s2-entete .textes { margin-left: 20px; flex: 1; }
+      #s2-entete .nom { font-weight: 800; font-size: 34px; color: #0b1a20; }
+      #s2-entete .membres { font-weight: 600; font-size: 24px; color: #6b7a80; margin-top: 2px; }
+      #s2-pastille { position: absolute; right: 18px; top: 50%; margin-top: -40px; min-width: 80px; height: 80px; border-radius: 40px;
+        padding: 0 16px; background: var(--rouge); color: #fff; font-weight: 900; font-size: 40px; display: flex; align-items: center; justify-content: center; }
+
+      /* Scène 2 : les bulles de messages */
+      .bulle { position: absolute; top: 1280px; background: #fff; border-radius: 30px; padding: 16px 30px 18px; color: #0b1a20;
+        box-shadow: 0 18px 40px rgba(0,18,24,.35); white-space: nowrap; }
+      .bulle.g { left: 70px; border-bottom-left-radius: 8px; }
+      .bulle.d { right: 70px; border-bottom-right-radius: 8px; }
+      .bulle .qui { font-weight: 700; font-size: 24px; margin-bottom: 4px; }
+      .bulle .quoi { font-weight: 900; font-size: 64px; text-transform: uppercase; letter-spacing: -0.01em; line-height: 1.02; }
+      .mini { position: absolute; background: #fff; border-radius: 24px; padding: 12px 22px 14px; color: #0b1a20;
+        box-shadow: 0 14px 32px rgba(0,18,24,.35); white-space: nowrap; }
+      .mini .qui { font-weight: 700; font-size: 20px; margin-bottom: 2px; }
+      .mini .quoi { font-weight: 600; font-size: 30px; }
+      .c1 { color: #d9480f; } .c2 { color: #1971c2; } .c3 { color: #2f9e44; } .c4 { color: #9c36b5; } .c5 { color: #c2255c; } .c6 { color: #0c8599; }
+
+      #s2-voile { background: rgba(0,18,24,.55); }
+      #s2-perd { top: 1150px; font-size: 128px; }
+
+/*CSS-3-5*/
+      /* Sous-titres */
+      .st { position: absolute; left: 90px; right: 90px; bottom: 360px; text-align: center; color: #fff; font-weight: 700;
+        font-size: 46px; line-height: 1.22; text-shadow: 0 3px 14px rgba(0,18,24,.9), 0 0 3px rgba(0,18,24,.8); opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="__DUREE__" data-width="1080" data-height="1920">
+
+      <div id="fond" class="clip plein" data-start="0" data-duration="__DUREE__" data-track-index="0">
+        <div id="fond-halo"></div>
+      </div>
+
+      <div id="cadre-video">
+        <video id="video-ach10" src="medias/video/ach10-source.mp4" playsinline
+          data-start="0" data-duration="__DUREE__" data-track-index="0" data-has-audio="true"></video>
+      </div>
+
+      <div id="degrade" class="clip plein" data-start="0" data-duration="__DUREE__" data-track-index="1">
+        <div id="degrade-fond"></div>
+      </div>
+
+      <!-- SCÈNE 1 — « encore les groupes WhatsApp ? » -->
+      <div id="s1" class="clip plein" data-start="1.0" data-duration="4.45" data-track-index="2">
+        <div id="s1-annee" class="titre"><span class="ligne">En 2026,</span></div>
+        <div id="s1-encore" class="titre"><span class="ligne">Encore sur</span></div>
+        <div id="s1-whatsapp" class="titre"><span class="surligne"><span class="fond"></span><span class="mot">WhatsApp ?</span></span></div>
+      </div>
+
+      <!-- SCÈNE 2 — « convocations, entraînements, matchs… on s'y perd » -->
+      <div id="s2" class="clip plein" data-start="5.3" data-duration="6.6" data-track-index="3">
+        <div id="s2-entete">
+          <div class="avatar">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#6b7a80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c3.1.2 5.5 2.4 5.5 5.8"/></svg>
+          </div>
+          <div class="textes">
+            <div class="nom">Seniors · Groupe du club</div>
+            <div class="membres">Coachs, joueurs, parents · 143 membres</div>
+          </div>
+          <div id="s2-pastille"><span id="s2-compteur">1</span></div>
+        </div>
+
+        <div id="b-convoc" class="bulle g"><div class="qui c1">Coach Karim</div><div class="quoi">Convocations</div></div>
+        <div id="b-entrain" class="bulle d"><div class="qui c2">Le président</div><div class="quoi">Entraînements</div></div>
+        <div id="b-matchs" class="bulle g"><div class="qui c3">Maman de Léo</div><div class="quoi">Matchs</div></div>
+
+        <div id="tempete">
+<!--TEMPETE-->
+        </div>
+
+        <div id="s2-voile" class="plein"></div>
+        <div id="s2-perd" class="titre">
+          <span class="ligne">On s'y</span>
+          <span class="surligne" style="margin-top: 14px;"><span class="fond"></span><span class="mot">perd.</span></span>
+        </div>
+      </div>
+
+<!--HTML-3-5-->
+      <!-- SOUS-TITRES -->
+      <div id="sous-titres" class="clip plein" data-start="0" data-duration="__DUREE__" data-track-index="9">
+<!--SOUSTITRES-->
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const SOUS_TITRES = /*ST*/;
+      const TEMPETE = /*TP*/;
+      const T = /*T*/;
+
+      // Sous-titres : chaque morceau s'allume à son début et s'éteint à sa fin
+      SOUS_TITRES.forEach(([debut, fin], i) => {
+        tl.fromTo(`#st-${i}`, { opacity: 0 }, { opacity: 1, duration: 0.08, ease: "none" }, debut);
+        tl.to(`#st-${i}`, { opacity: 0, duration: 0.08, ease: "none" }, fin - 0.08);
+      });
+
+      // Fond dégradé
+      tl.fromTo("#degrade-fond", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, 0.9);
+
+      // ── SCÈNE 1 ──────────────────────────────────────────────
+      tl.fromTo("#s1-annee", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 1.22);
+      tl.fromTo("#s1-encore", { opacity: 0, y: 70, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 3.05);
+      tl.fromTo("#s1-whatsapp .fond", { scaleX: 0 }, { scaleX: 1, duration: 0.32, ease: "power3.out" }, 3.7);
+      tl.fromTo("#s1-whatsapp .mot", { opacity: 0, y: 26 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 3.82);
+      tl.to("#s1-whatsapp .surligne", { rotation: -2.5, duration: 0.18, ease: "power2.out" }, 4.15);
+      tl.to(["#s1-annee", "#s1-encore", "#s1-whatsapp"], { opacity: 0, y: 60, duration: 0.3, ease: "power2.in", stagger: 0.04 }, 5.0);
+
+      // ── SCÈNE 2 ──────────────────────────────────────────────
+      tl.fromTo("#s2-entete", { opacity: 0, y: -60 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.4)" }, 5.35);
+      // Les trois mots arrivent comme des messages ; le plus récent pousse les autres vers le haut
+      const PAS = 150;
+      const arrivee = (id, t) => tl.fromTo(id, { opacity: 0, y: 60, scale: 0.85 }, { opacity: 1, y: 0, scale: 1, duration: 0.32, ease: "back.out(1.7)" }, t);
+      arrivee("#b-convoc", 5.42);
+      arrivee("#b-entrain", 6.32);
+      tl.to("#b-convoc", { y: -PAS, duration: 0.3, ease: "power2.out" }, 6.32);
+      arrivee("#b-matchs", 7.16);
+      tl.to("#b-entrain", { y: -PAS, duration: 0.3, ease: "power2.out" }, 7.16);
+      tl.to("#b-convoc", { y: -2 * PAS, opacity: 0, duration: 0.3, ease: "power2.out" }, 7.16);
+      // Le compteur de messages non lus
+      const compteur = document.getElementById("s2-compteur");
+      const afficher = (v) => { compteur.textContent = v >= 99 ? "99+" : String(Math.max(1, Math.round(v))); };
+      const nonLus = { v: 1 };
+      tl.fromTo(nonLus, { v: 1 }, { v: 3, duration: 1.8, ease: "steps(2)", onUpdate: () => afficher(nonLus.v) }, 5.42);
+      tl.to(nonLus, { v: 99, duration: 2.4, ease: "power2.in", onUpdate: () => afficher(nonLus.v) }, 7.9);
+      tl.to("#s2-pastille", { scale: 1.18, duration: 0.12, yoyo: true, repeat: 1, ease: "power1.out" }, 6.32);
+      tl.to("#s2-pastille", { scale: 1.18, duration: 0.12, yoyo: true, repeat: 1, ease: "power1.out" }, 7.16);
+
+      // La tempête : les messages déferlent de partout
+      tl.to(["#b-entrain", "#b-matchs"], { opacity: 0.35, duration: 0.4 }, 8.0);
+      TEMPETE.forEach((m, i) => {
+        tl.fromTo(`#m-${i}`, { opacity: 0, scale: 0.6, rotation: m.r * 2 }, { opacity: 1, scale: 1, rotation: m.r, duration: 0.24, ease: "back.out(2)" }, m.t);
+      });
+      // « et au final… on s'y perd » : tout se brouille
+      tl.to("#tempete .mini, #b-entrain, #b-matchs, #s2-entete", { filter: "blur(9px)", opacity: 0.55, duration: 0.5, ease: "power2.in" }, 10.45);
+      tl.fromTo("#s2-voile", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 10.6);
+      tl.fromTo("#s2-perd .ligne", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 10.85);
+      tl.fromTo("#s2-perd .fond", { scaleX: 0 }, { scaleX: 1, duration: 0.28, ease: "power3.out" }, 11.12);
+      tl.fromTo("#s2-perd .mot", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 11.2);
+      tl.fromTo("#s2-perd", { x: 0 }, { x: 10, duration: 0.05, yoyo: true, repeat: 5, ease: "none" }, 11.3);
+      tl.to("#s2 > *", { opacity: 0, duration: 0.3, ease: "power2.in" }, 11.6);
+
+/*JS-3-5*/
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

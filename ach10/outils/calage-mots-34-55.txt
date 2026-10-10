@@ -1,0 +1,20 @@
+     interessant : fini a  34.35 s
+       seulement : fini a  36.13 s
+         gestion : fini a  36.74 s
+          equipe : fini a  37.58 s
+        ambition : fini a  39.33 s
+       connexion : fini a  40.56 s
+         joueurs : fini a  41.48 s
+           clubs : fini a  42.20 s
+          joueur : fini a  43.55 s
+       educateur : fini a  44.17 s
+       president : fini a  44.76 s
+       dirigeant : fini a  45.48 s
+          parent : fini a  46.12 s
+          moment : fini a  46.90 s
+       decouvrir : fini a  47.48 s
+     commentaire : fini a  49.52 s
+        whatsapp : fini a  51.39 s
+     application : fini a  53.13 s
+           potes : fini a  54.49 s
+FINI

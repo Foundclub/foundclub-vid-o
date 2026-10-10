@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Montserrat"; font-weight: 300; font-display: block; src: url("fonts/montserrat-latin-300-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 400; font-display: block; src: url("fonts/montserrat-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 300; font-display: block; src: url("fonts/montserrat-latin-ext-300-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 400; font-display: block; src: url("fonts/montserrat-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 500; font-display: block; src: url("fonts/montserrat-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 500; font-display: block; src: url("fonts/montserrat-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 600; font-display: block; src: url("fonts/montserrat-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 600; font-display: block; src: url("fonts/montserrat-latin-ext-600-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 700; font-display: block; src: url("fonts/montserrat-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 700; font-display: block; src: url("fonts/montserrat-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 800; font-display: block; src: url("fonts/montserrat-latin-800-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 800; font-display: block; src: url("fonts/montserrat-latin-ext-800-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 900; font-display: block; src: url("fonts/montserrat-latin-900-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 900; font-display: block; src: url("fonts/montserrat-latin-ext-900-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      :root {
+        --bleu: #01b3f4;
+        --nuit: #001218;
+        --nuit-2: #173844;
+        --vert: #27d6a3;
+        --rouge: #f0384e;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #001218; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: "Montserrat", sans-serif; }
+
+      /* La vidéo d'ach10, plein cadre */
+      #cadre-video { position: absolute; inset: 0; }
+      #video-ach10 { width: 1080px; height: 1920px; object-fit: cover; }
+
+      /* Dégradé bleu nuit en bas : lisibilité des titres et des sous-titres */
+      .plein { position: absolute; inset: 0; }
+      #degrade-fond { position: absolute; left: 0; right: 0; top: 960px; bottom: 0;
+        background: linear-gradient(to bottom, rgba(0,18,24,0) 0%, rgba(0,18,24,.45) 40%, rgba(0,18,24,.78) 100%); }
+
+      /* Titres */
+      .titre { position: absolute; left: 0; right: 0; text-align: center; text-transform: uppercase; font-weight: 900;
+        color: #fff; letter-spacing: -0.01em; line-height: 1; text-shadow: 0 6px 24px rgba(0,18,24,.45); }
+      .ligne { display: block; }
+      .surligne { display: inline-block; position: relative; padding: 10px 26px 12px; color: var(--nuit); text-shadow: none; }
+      .surligne .fond { position: absolute; inset: 0; background: var(--bleu); border-radius: 14px; transform-origin: left center; }
+      .surligne .mot { position: relative; display: inline-block; }
+
+      /* Scène 1 */
+      #s1-annee { top: 1078px; font-size: 64px; font-weight: 800; color: var(--bleu); }
+      #s1-encore { top: 1150px; font-size: 118px; }
+      #s1-whatsapp { top: 1282px; font-size: 118px; }
+
+      /* Scène 2 : l'en-tête du groupe */
+      #s2-entete { position: absolute; left: 150px; top: 196px; width: 780px; height: 116px; background: #fff;
+        border-radius: 58px; box-shadow: 0 18px 44px rgba(0,18,24,.35); display: flex; align-items: center; padding: 0 22px; }
+      #s2-entete .avatar { width: 76px; height: 76px; border-radius: 38px; background: #d9e1e5; display: flex; align-items: center; justify-content: center; }
+      #s2-entete .textes { margin-left: 20px; flex: 1; }
+      #s2-entete .nom { font-weight: 800; font-size: 34px; color: #0b1a20; }
+      #s2-entete .membres { font-weight: 600; font-size: 24px; color: #6b7a80; margin-top: 2px; }
+      #s2-pastille { position: absolute; right: 18px; top: 50%; margin-top: -40px; min-width: 80px; height: 80px; border-radius: 40px;
+        padding: 0 16px; background: var(--rouge); color: #fff; font-weight: 900; font-size: 40px; display: flex; align-items: center; justify-content: center; }
+
+      /* Scène 2 : les bulles de messages */
+      .bulle { position: absolute; top: 1280px; background: #fff; border-radius: 30px; padding: 16px 30px 18px; color: #0b1a20;
+        box-shadow: 0 18px 40px rgba(0,18,24,.35); white-space: nowrap; }
+      .bulle.g { left: 70px; border-bottom-left-radius: 8px; }
+      .bulle.d { right: 70px; border-bottom-right-radius: 8px; }
+      .bulle .qui { font-weight: 700; font-size: 24px; margin-bottom: 4px; }
+      .bulle .quoi { font-weight: 900; font-size: 64px; text-transform: uppercase; letter-spacing: -0.01em; line-height: 1.02; }
+      .mini { position: absolute; background: #fff; border-radius: 24px; padding: 12px 22px 14px; color: #0b1a20;
+        box-shadow: 0 14px 32px rgba(0,18,24,.35); white-space: nowrap; }
+      .mini .qui { font-weight: 700; font-size: 20px; margin-bottom: 2px; }
+      .mini .quoi { font-weight: 600; font-size: 30px; }
+      .c1 { color: #d9480f; } .c2 { color: #1971c2; } .c3 { color: #2f9e44; } .c4 { color: #9c36b5; } .c5 { color: #c2255c; } .c6 { color: #0c8599; }
+
+      #s2-voile { background: rgba(0,18,24,.55); }
+      #s2-perd { top: 1150px; font-size: 128px; }
+
+      /* Fond du « mode écran » (bleu nuit du design system, deux halos bleus) */
+      #fond-halo { position: absolute; inset: 0;
+        background: radial-gradient(900px 700px at 20% 18%, rgba(1,179,244,.16), rgba(1,179,244,0) 70%),
+                    radial-gradient(1000px 900px at 85% 80%, rgba(39,214,163,.08), rgba(39,214,163,0) 70%), #001218; }
+      #cadre-video { transform-origin: 540px 700px; clip-path: circle(2300px at 540px 700px); }
+      #medaillon-anneau { position: absolute; left: 744px; top: 94px; width: 312px; height: 312px; border-radius: 50%;
+        border: 6px solid var(--bleu); box-shadow: 0 0 40px rgba(1,179,244,.55); }
+
+      /* Scène 3 : « c'est FoundClub » */
+      #s3-change { top: 1110px; font-size: 110px; }
+      #s3-logo { position: absolute; left: 0; right: 0; top: 1040px; display: flex; flex-direction: column; align-items: center; }
+      .icone-fc { width: 200px; height: 200px; border-radius: 46px; background: #000d12; border: 3px solid rgba(255,255,255,.18);
+        display: flex; align-items: center; justify-content: center; font-size: 132px; letter-spacing: -0.09em; line-height: 1;
+        box-shadow: 0 0 60px rgba(1,179,244,.45), 0 24px 60px rgba(0,0,0,.5); }
+      .icone-fc .f { color: var(--bleu); font-weight: 600; } .icone-fc .c { color: #fff; font-weight: 300; }
+      .marque { margin-top: 34px; font-size: 118px; line-height: 1; letter-spacing: 0.01em; position: relative; overflow: hidden; padding: 0 10px; }
+      .marque .found { color: var(--bleu); font-weight: 800; } .marque .club { color: #fff; font-weight: 400; }
+      .marque .reflet { position: absolute; top: -20%; bottom: -20%; width: 180px; left: -220px;
+        background: linear-gradient(100deg, rgba(255,255,255,0), rgba(255,255,255,.55), rgba(255,255,255,0)); }
+
+      /* Téléphone du « mode écran » */
+      .tel { position: absolute; left: 276px; top: 290px; width: 528px; height: 1111px; border-radius: 76px; background: #081318; padding: 14px;
+        box-shadow: 0 0 0 2px rgba(1,179,244,.45), 0 0 70px rgba(1,179,244,.28), 0 40px 90px rgba(0,0,0,.6); }
+      .ecran { position: relative; width: 500px; height: 1083px; border-radius: 62px; overflow: hidden; background: #0d1a20; }
+      .capture { position: absolute; left: 0; top: 0; width: 500px; height: 1083px; opacity: 0; }
+
+      /* Titres du « mode écran » : en haut à gauche, comme la vidéo de référence */
+      .rubrique { position: absolute; left: 70px; top: 128px; font-size: 30px; font-weight: 700; letter-spacing: .22em; color: var(--bleu); text-transform: uppercase; }
+      .titre-g { position: absolute; left: 70px; top: 172px; width: 640px; font-size: 62px; font-weight: 900; line-height: 1.02; color: #fff; text-transform: uppercase; }
+      .titre-g .bleu { color: var(--bleu); }
+
+      /* Étiquettes autour du téléphone */
+      .etiquette { position: absolute; display: flex; align-items: center; gap: 14px; padding: 18px 30px; border-radius: 999px; background: #173844;
+        border: 3px solid var(--bleu); color: #fff; font-weight: 800; font-size: 38px; text-transform: uppercase; white-space: nowrap;
+        box-shadow: 0 0 34px rgba(1,179,244,.35), 0 18px 40px rgba(0,0,0,.45); }
+      .etiquette .point { width: 18px; height: 18px; border-radius: 50%; background: var(--vert); }
+
+      /* Scène 5 : les messages éparpillés qui rentrent dans le téléphone */
+      .eparpille { position: absolute; background: #fff; border-radius: 24px; padding: 12px 22px 14px; color: #0b1a20;
+        box-shadow: 0 14px 32px rgba(0,0,0,.45); white-space: nowrap; }
+      .eparpille .qui { font-weight: 700; font-size: 20px; margin-bottom: 2px; }
+      .eparpille .quoi { font-weight: 600; font-size: 30px; }
+      #s5-titre .surligne { margin-top: 10px; padding: 6px 18px 8px; }
+
+      /* Scène 6 : les compositions des 5 sports, puis la connexion joueurs ⇄ clubs */
+      #compos { position: absolute; left: 40px; top: 600px; width: 1000px; border-radius: 34px; overflow: hidden;
+        box-shadow: 0 0 0 2px rgba(1,179,244,.45), 0 0 70px rgba(1,179,244,.3), 0 40px 90px rgba(0,0,0,.6); background: #eef3f2; }
+      #compos img { display: block; width: 1000px; height: auto; }
+      #compos-legende { position: absolute; left: 0; right: 0; top: 1060px; text-align: center; color: #fff; font-weight: 800;
+        font-size: 36px; letter-spacing: .12em; text-transform: uppercase; }
+      .surcouche { position: absolute; opacity: 0; }
+      /* Logo FC dessiné à la place de l'image cassée « Logo club » de l'affiche */
+      #logo-affiche { left: 49px; top: 297px; width: 44px; height: 44px; border-radius: 10px; background: #000d12;
+        border: 1px solid rgba(255,255,255,.25); display: flex; align-items: center; justify-content: center;
+        font-size: 28px; letter-spacing: -0.09em; line-height: 1; }
+      #logo-affiche .f { color: var(--bleu); font-weight: 600; } #logo-affiche .c { color: #fff; font-weight: 300; }
+      /* Numéro de téléphone de la fiche club : flouté */
+      #flou-tel { left: 212px; top: 448px; width: 108px; height: 26px; border-radius: 8px; backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px); background: rgba(27,58,71,.35); }
+      /* Le doigt qui appuie */
+      .appui { position: absolute; width: 110px; height: 110px; margin: -55px 0 0 -55px; border-radius: 50%;
+        background: rgba(255,255,255,.28); border: 4px solid rgba(255,255,255,.85); box-shadow: 0 0 30px rgba(1,179,244,.6); opacity: 0; }
+      /* Scène 7 : le cadre qui se pose sur le bon statut */
+      #statut-cadre { position: absolute; left: 318px; top: 629px; width: 444px; height: 74px; border-radius: 20px;
+        border: 5px solid var(--vert); box-shadow: 0 0 34px rgba(39,214,163,.6); opacity: 0; }
+
+      /* Scène 8 : la carte App Store, posée exactement sur la bannière blanche de sa vidéo */
+      #carte-store { position: absolute; left: 36px; top: 766px; width: 1008px; height: 388px; border-radius: 40px;
+        background: linear-gradient(160deg, #173844, #0b2129); border: 3px solid rgba(1,179,244,.55);
+        box-shadow: 0 0 60px rgba(1,179,244,.35), 0 30px 80px rgba(0,0,0,.55); padding: 44px 50px; }
+      #carte-store .haut { display: flex; align-items: center; gap: 34px; }
+      #carte-store .icone { width: 170px; height: 170px; border-radius: 38px; overflow: hidden; flex: none; }
+      #carte-store .icone img { width: 170px; height: 170px; display: block; }
+      #carte-store .nom { font-weight: 800; font-size: 60px; color: #fff; line-height: 1; }
+      #carte-store .cat { font-weight: 600; font-size: 34px; color: #8fb3c0; margin-top: 10px; }
+      #carte-store .bouton { margin-left: auto; flex: none; background: var(--bleu); color: var(--nuit); font-weight: 900; font-size: 30px;
+        padding: 20px 28px; border-radius: 999px; text-transform: uppercase; }
+      #carte-store .bas { display: flex; align-items: center; justify-content: space-between; margin-top: 40px; color: #cfe3ea; font-weight: 700; font-size: 32px; }
+      #carte-store .etoiles { color: #ffc93c; letter-spacing: .08em; }
+
+      /* Scène 9 : « dis-moi en commentaire » */
+      #s9-sticker { position: absolute; left: 0; right: 0; top: 1000px; display: flex; justify-content: center; }
+      #s9-sticker .pastille { display: flex; align-items: center; gap: 18px; background: #fff; color: var(--nuit); font-weight: 900; font-size: 46px;
+        text-transform: uppercase; padding: 20px 36px; border-radius: 999px; box-shadow: 0 18px 44px rgba(0,18,24,.45); }
+      .choix { position: absolute; left: 150px; width: 780px; height: 104px; border-radius: 26px; background: rgba(0,18,24,.82);
+        border: 3px solid rgba(255,255,255,.35); display: flex; align-items: center; padding: 0 34px; gap: 24px;
+        color: #fff; font-weight: 800; font-size: 42px; text-transform: uppercase; box-shadow: 0 18px 40px rgba(0,0,0,.4); }
+      .choix .rond { width: 46px; height: 46px; border-radius: 50%; border: 4px solid rgba(255,255,255,.7); flex: none; }
+      #choix-app { border-color: var(--bleu); }
+      #choix-app .rond { border-color: var(--bleu); background: radial-gradient(circle, var(--bleu) 0 45%, transparent 48%); }
+      #choix-whatsapp { top: 1120px; } #choix-app { top: 1244px; }
+
+      /* Carton final */
+      #fin-voile { background: #001218; }
+      #fin { position: absolute; left: 0; right: 0; top: 560px; display: flex; flex-direction: column; align-items: center; }
+      #fin .icone-fc { width: 220px; height: 220px; border-radius: 50px; font-size: 146px; }
+      #fin .marque { margin-top: 40px; font-size: 128px; }
+      #fin .phrase { margin-top: 46px; color: #fff; font-weight: 700; font-size: 50px; }
+      #fin .badges { margin-top: 44px; display: flex; gap: 34px; align-items: center; }
+      #fin .badges img { height: 110px; display: block; }
+      #fin .badges .gp { height: 144px; margin: -17px -10px; }
+      #fin .site { margin-top: 46px; color: var(--bleu); font-weight: 800; font-size: 50px; letter-spacing: .02em; }
+
+      /* Sous-titres */
+      .st { position: absolute; left: 90px; right: 90px; bottom: 360px; text-align: center; color: #fff; font-weight: 700;
+        font-size: 46px; line-height: 1.22; text-shadow: 0 3px 14px rgba(0,18,24,.9), 0 0 3px rgba(0,18,24,.8); opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="57.50" data-width="1080" data-height="1920">
+
+      <div id="fond" class="clip plein" data-start="0" data-duration="57.50" data-track-index="0">
+        <div id="fond-halo"></div>
+      </div>
+
+      <div id="cadre-video">
+        <video id="video-ach10" src="medias/video/ach10-source.mp4" playsinline
+          data-start="0" data-duration="54.83" data-track-index="0" data-has-audio="true"></video>
+      </div>
+
+      <div id="degrade" class="clip plein" data-start="0" data-duration="57.50" data-track-index="1">
+        <div id="degrade-fond"></div>
+      </div>
+
+      <!-- SCÈNE 1 — « encore les groupes WhatsApp ? » -->
+      <div id="s1" class="clip plein" data-start="1.0" data-duration="4.45" data-track-index="2">
+        <div id="s1-annee" class="titre"><span class="ligne">En 2026,</span></div>
+        <div id="s1-encore" class="titre"><span class="ligne">Encore sur</span></div>
+        <div id="s1-whatsapp" class="titre"><span class="surligne"><span class="fond"></span><span class="mot">WhatsApp ?</span></span></div>
+      </div>
+
+      <!-- SCÈNE 2 — « convocations, entraînements, matchs… on s'y perd » -->
+      <div id="s2" class="clip plein" data-start="5.3" data-duration="6.6" data-track-index="3">
+        <div id="s2-entete">
+          <div class="avatar">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#6b7a80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c3.1.2 5.5 2.4 5.5 5.8"/></svg>
+          </div>
+          <div class="textes">
+            <div class="nom">Seniors · Groupe du club</div>
+            <div class="membres">Coachs, joueurs, parents · 143 membres</div>
+          </div>
+          <div id="s2-pastille"><span id="s2-compteur">1</span></div>
+        </div>
+
+        <div id="b-convoc" class="bulle g"><div class="qui c1">Coach Karim</div><div class="quoi">Convocations</div></div>
+        <div id="b-entrain" class="bulle d"><div class="qui c2">Le président</div><div class="quoi">Entraînements</div></div>
+        <div id="b-matchs" class="bulle g"><div class="qui c3">Maman de Léo</div><div class="quoi">Matchs</div></div>
+
+        <div id="tempete">
+          <div id="m-0" class="mini" style="left:120px;top:360px;"><div class="qui c2">Yanis</div><div class="quoi">Qui est dispo samedi ?</div></div>
+          <div id="m-1" class="mini" style="left:470px;top:470px;"><div class="qui c3">Maman de Léo</div><div class="quoi">C&#x27;est à quelle heure la convoc ??</div></div>
+          <div id="m-2" class="mini" style="left:40px;top:600px;"><div class="qui c4">Sofiane</div><div class="quoi">Entraînement annulé ou pas ?</div></div>
+          <div id="m-3" class="mini" style="left:500px;top:740px;"><div class="qui c1">Papa d&#x27;Adam</div><div class="quoi">Quelqu&#x27;un a l&#x27;adresse du terrain ?</div></div>
+          <div id="m-4" class="mini" style="left:120px;top:860px;"><div class="qui c5">Ilyes</div><div class="quoi">Je peux pas venir mercredi</div></div>
+          <div id="m-5" class="mini" style="left:600px;top:980px;"><div class="qui c6">Nathan</div><div class="quoi">On joue contre qui ?</div></div>
+          <div id="m-6" class="mini" style="left:140px;top:1100px;"><div class="qui c1">Coach Karim</div><div class="quoi">Vous avez vu mon message d&#x27;hier ?</div></div>
+          <div id="m-7" class="mini" style="left:560px;top:1220px;"><div class="qui c3">Maman d&#x27;Inès</div><div class="quoi">Le covoit part d&#x27;où ?</div></div>
+          <div id="m-8" class="mini" style="left:120px;top:1340px;"><div class="qui c2">Le président</div><div class="quoi">Cotisation avant vendredi svp</div></div>
+          <div id="m-9" class="mini" style="left:470px;top:300px;"><div class="qui c4">Mehdi</div><div class="quoi">Le planning de la semaine svp</div></div>
+          <div id="m-10" class="mini" style="left:780px;top:640px;"><div class="qui c6">Hugo</div><div class="quoi">???</div></div>
+          <div id="m-11" class="mini" style="left:650px;top:1650px;"><div class="qui c5">Lucas</div><div class="quoi">Je l&#x27;ai pas reçu</div></div>
+          <div id="m-12" class="mini" style="left:130px;top:1700px;"><div class="qui c1">Enzo</div><div class="quoi">C&#x27;est reporté ?</div></div>
+          <div id="m-13" class="mini" style="left:380px;top:1040px;"><div class="qui c1">Coach Karim</div><div class="quoi">Qui ramène les maillots ?</div></div>
+        </div>
+
+        <div id="s2-voile" class="plein"></div>
+        <div id="s2-perd" class="titre">
+          <span class="ligne">On s'y</span>
+          <span class="surligne" style="margin-top: 14px;"><span class="fond"></span><span class="mot">perd.</span></span>
+        </div>
+      </div>
+
+      <!-- SCÈNE 3 — « une application… c'est FoundClub » -->
+      <div id="s3" class="clip plein" data-start="11.8" data-duration="7.5" data-track-index="4">
+        <div id="s3-change" class="titre">
+          <span class="ligne">Organiser</span>
+          <span class="surligne" style="margin-top: 14px;"><span class="fond"></span><span class="mot">ton club</span></span>
+        </div>
+        <div id="s3-logo">
+          <div class="icone-fc"><span class="f">F</span><span class="c">C</span></div>
+          <div class="marque"><span class="found">FOUND</span><span class="club">CLUB</span><span class="reflet"></span></div>
+        </div>
+      </div>
+
+      <!-- MODE ÉCRAN (scènes 4 à 6) — ach10 en médaillon, l'app dans le téléphone -->
+      <div id="ecran" class="clip plein" data-start="18.9" data-duration="28.10" data-track-index="5">
+        <div id="medaillon-anneau"></div>
+
+        <div id="tel" class="tel">
+          <div class="ecran">
+            <img id="cap-accueil-haut" class="capture" src="medias/captures/accueil-haut.webp" alt="" />
+            <img id="cap-accueil-grille" class="capture" src="medias/captures/accueil-dirigeant-grille.webp" alt="" />
+            <img id="cap-accueil-joueur" class="capture" src="medias/captures/accueil-joueur.webp" alt="" />
+            <img id="cap-accueil-gerer" class="capture" src="medias/captures/accueil-gerer-mon-club.webp" alt="" />
+            <img id="cap-accueil-parent" class="capture" src="medias/captures/accueil-parent.webp" alt="" />
+            <img id="cap-messagerie" class="capture" src="medias/captures/messagerie-canal.webp" alt="" />
+            <img id="cap-planning" class="capture" src="medias/captures/planning-3-jours.webp" alt="" />
+            <img id="cap-appel" class="capture" src="medias/captures/foundclub-attendance-roll-call.png" alt="" />
+            <img id="cap-clubs" class="capture" src="medias/captures/recherche-clubs.webp" alt="" />
+            <img id="cap-fiche" class="capture" src="medias/captures/fiche-club.webp" alt="" />
+            <div id="flou-tel" class="surcouche"></div>
+            <img id="cap-recrutement" class="capture" src="medias/captures/recrutement-opportunites.webp" alt="" />
+            <img id="cap-affiche" class="capture" src="medias/captures/affiche-detection.webp" alt="" />
+            <div id="logo-affiche" class="surcouche"><span class="f">F</span><span class="c">C</span></div>
+            <img id="cap-statut" class="capture" src="medias/captures/statut.webp" alt="" />
+          </div>
+        </div>
+
+        <!-- Scène 4 : « faciliter la communication… club, joueurs, dirigeants, parents » -->
+        <div id="s4-rubrique" class="rubrique">L'objectif</div>
+        <div id="s4-titre" class="titre-g"><span id="s4-l1" class="ligne">Communiquer</span><span id="s4-l2" class="ligne bleu">&amp; s'organiser</span></div>
+        <div id="tag-club" class="etiquette" style="left: 34px; top: 560px;"><span class="point"></span>Le club</div>
+        <div id="tag-joueurs" class="etiquette" style="right: 34px; top: 730px;"><span class="point"></span>Les joueurs</div>
+        <div id="tag-dirigeants" class="etiquette" style="left: 34px; top: 900px;"><span class="point"></span>Les dirigeants</div>
+        <div id="tag-parents" class="etiquette" style="right: 34px; top: 1070px;"><span class="point"></span>Les parents</div>
+
+        <!-- Scène 5 : « plutôt que de multiplier les groupes… tout centraliser au même endroit » -->
+        <div id="e-0" class="eparpille" style="left:30px;top:470px;"><div class="qui c2">Yanis</div><div class="quoi">Qui est dispo samedi ?</div></div>
+        <div id="e-1" class="eparpille" style="right:30px;top:600px;"><div class="qui c3">Maman de Léo</div><div class="quoi">C&#x27;est à quelle heure ??</div></div>
+        <div id="e-2" class="eparpille" style="left:40px;top:760px;"><div class="qui c1">Coach Karim</div><div class="quoi">Le planning svp</div></div>
+        <div id="e-3" class="eparpille" style="right:26px;top:920px;"><div class="qui c4">Le président</div><div class="quoi">Cotisation avant vendredi</div></div>
+        <div id="e-4" class="eparpille" style="left:30px;top:1090px;"><div class="qui c6">Nathan</div><div class="quoi">On joue où samedi ?</div></div>
+        <div id="e-5" class="eparpille" style="right:34px;top:1240px;"><div class="qui c5">Sofiane</div><div class="quoi">Entraînement annulé ?</div></div>
+        <div id="s5-rubrique" class="rubrique">Tout centraliser</div>
+        <div id="s5-titre" class="titre-g"><span id="s5-l1" class="ligne">Au même</span><span class="surligne"><span class="fond"></span><span class="mot">endroit</span></span></div>
+
+        <!-- Scène 6 : « ne s'arrête pas à la gestion de ton équipe… la connexion entre les joueurs et les clubs » -->
+        <div id="s6-rubrique" class="rubrique">Et ce n'est pas tout</div>
+        <div id="s6-titre" class="titre-g"><span id="s6-l1" class="ligne">Pas seulement</span><span id="s6-l2" class="ligne bleu">la gestion</span></div>
+        <div id="compos"><img src="medias/captures/compos-5-sports.png" alt="" /></div>
+        <div id="s6b-rubrique" class="rubrique">La connexion</div>
+        <div id="s6b-titre" class="titre-g"><span id="s6b-l1" class="ligne">Joueurs</span><span id="s6b-l2" class="ligne bleu">&amp; clubs</span></div>
+        <div id="appui-rejoindre" class="appui" style="left: 540px; top: 1196px;"></div>
+        <div id="appui-postuler" class="appui" style="left: 540px; top: 990px;"></div>
+
+        <!-- Scène 7 : « que tu sois joueur, éducateur, président, dirigeant, parent » -->
+        <div id="s7-rubrique" class="rubrique">Pour chacun</div>
+        <div id="statut-cadre"></div>
+        <div id="r-joueur" class="etiquette" style="left: 34px; top: 520px;"><span class="point"></span>Joueur</div>
+        <div id="r-educateur" class="etiquette" style="right: 34px; top: 660px;"><span class="point"></span>Éducateur</div>
+        <div id="r-president" class="etiquette" style="left: 34px; top: 800px;"><span class="point"></span>Président</div>
+        <div id="r-dirigeant" class="etiquette" style="right: 34px; top: 940px;"><span class="point"></span>Dirigeant</div>
+        <div id="r-parent" class="etiquette" style="left: 34px; top: 1080px;"><span class="point"></span>Parent</div>
+      </div>
+
+      <!-- SCÈNE 8 — « c'est le moment de venir découvrir FoundClub » : carte App Store propre -->
+      <div id="s8" class="clip plein" data-start="46.4" data-duration="3.2" data-track-index="6">
+        <div id="carte-store">
+          <div class="haut">
+            <div class="icone"><img src="medias/captures/icone-app-store.png" alt="" /></div>
+            <div><div class="nom">FoundClub</div><div class="cat">Sports</div></div>
+            <div class="bouton">Télécharger</div>
+          </div>
+          <div class="bas"><span><span class="etoiles">★★★★★</span>&nbsp; 5,0</span><span>iPhone · Android · Web</span></div>
+        </div>
+      </div>
+
+      <!-- SCÈNE 9 — « dis-moi en commentaire… WhatsApp ou une application ? » -->
+      <div id="s9" class="clip plein" data-start="49.3" data-duration="5.0" data-track-index="7">
+        <div id="s9-sticker"><div class="pastille">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#001218" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 21 12z"/></svg>
+          Dis-le en commentaire</div></div>
+        <div id="choix-whatsapp" class="choix"><span class="rond"></span>Encore WhatsApp</div>
+        <div id="choix-app" class="choix"><span class="rond"></span>Une application</div>
+      </div>
+
+      <!-- CARTON FINAL -->
+      <div id="carton" class="clip plein" data-start="54.0" data-duration="3.50" data-track-index="8">
+        <div id="fin-voile" class="plein"></div>
+        <div id="fin">
+          <div class="icone-fc"><span class="f">F</span><span class="c">C</span></div>
+          <div class="marque"><span class="found">FOUND</span><span class="club">CLUB</span><span class="reflet"></span></div>
+          <div class="phrase">Télécharge FoundClub</div>
+          <div class="badges">
+            <img src="medias/badges/app-store.svg" alt="Download on the App Store" />
+            <img class="gp" src="medias/badges/google-play.svg" alt="Get it on Google Play" />
+          </div>
+          <div class="site">foundclub.app</div>
+        </div>
+      </div>
+
+      <!-- SOUS-TITRES -->
+      <div id="sous-titres" class="clip plein" data-start="0" data-duration="57.50" data-track-index="9">
+        <p id="st-0" class="st">Toi aussi, dans ton club en 2026,</p>
+        <p id="st-1" class="st">vous utilisez encore les groupes WhatsApp pour tout organiser ?</p>
+        <p id="st-2" class="st">Les convocations, les entraînements, les matchs,</p>
+        <p id="st-3" class="st">toutes les informations importantes :</p>
+        <p id="st-4" class="st">tout passe par WhatsApp,</p>
+        <p id="st-5" class="st">et au final, on s&#x27;y perd.</p>
+        <p id="st-6" class="st">Mais aujourd&#x27;hui, j&#x27;ai une application à vous présenter</p>
+        <p id="st-7" class="st">qui pourrait changer l&#x27;organisation de ton club.</p>
+        <p id="st-8" class="st">Cette application, c&#x27;est FoundClub.</p>
+        <p id="st-9" class="st">L&#x27;objectif est très simple :</p>
+        <p id="st-10" class="st">faciliter la communication et l&#x27;organisation</p>
+        <p id="st-11" class="st">entre le club, les joueurs, les dirigeants, et même les parents.</p>
+        <p id="st-12" class="st">Plutôt que de multiplier les groupes WhatsApp</p>
+        <p id="st-13" class="st">et de chercher les informations un peu partout,</p>
+        <p id="st-14" class="st">vous pouvez tout centraliser au même endroit.</p>
+        <p id="st-15" class="st">Et ce qui est intéressant, c&#x27;est que FoundClub</p>
+        <p id="st-16" class="st">ne s&#x27;arrête pas seulement à la gestion de ton équipe :</p>
+        <p id="st-17" class="st">l&#x27;application a aussi pour ambition</p>
+        <p id="st-18" class="st">de faciliter la connexion entre les joueurs et les clubs.</p>
+        <p id="st-19" class="st">Alors, que tu sois joueur, éducateur, président, dirigeant, parent…</p>
+        <p id="st-20" class="st">C&#x27;est le moment de venir découvrir FoundClub.</p>
+        <p id="st-21" class="st">Et dis-moi en commentaire si vous utilisez encore les groupes WhatsApp,</p>
+        <p id="st-22" class="st">ou si vous utilisez une application.</p>
+        <p id="st-23" class="st">Ciao mes petits potes !</p>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const SOUS_TITRES = [[0.16, 2.4], [2.45, 5.05], [5.1, 7.8], [7.8, 9.3], [9.3, 10.4], [10.4, 11.85], [11.87, 13.95], [13.95, 16.7], [16.76, 18.85], [19.0, 20.75], [20.95, 23.42], [23.48, 27.2], [27.55, 29.470000000000002], [29.470000000000002, 31.25], [31.45, 33.6], [33.65, 35.3], [35.3, 37.9], [37.95, 39.45], [39.45, 42.4], [42.45, 46.45], [46.55, 48.5], [48.6, 51.8], [52.0, 53.75], [53.89, 54.85]];
+      const TEMPETE = [{"t": 7.95, "r": -3}, {"t": 8.12, "r": 2}, {"t": 8.29, "r": 2}, {"t": 8.46, "r": -2}, {"t": 8.63, "r": -2}, {"t": 8.8, "r": 3}, {"t": 8.97, "r": 1}, {"t": 9.14, "r": -3}, {"t": 9.31, "r": 2}, {"t": 9.48, "r": 2}, {"t": 9.65, "r": -4}, {"t": 9.82, "r": -2}, {"t": 9.99, "r": 3}, {"t": 10.16, "r": -1}];
+      const EPARPILLES = [{"t": 27.65, "dx": 312, "dy": 335}, {"t": 28.2, "dx": -304, "dy": 205}, {"t": 28.75, "dx": 358, "dy": 45}, {"t": 29.3, "dx": -292, "dy": -115}, {"t": 29.85, "dx": 336, "dy": -285}, {"t": 30.4, "dx": -316, "dy": -435}];
+      const T = {"auj": 12.16, "application": 13.29, "presenter": 13.85, "changer": 15.24, "organisation1": 15.64, "club1": 16.41, "app2": 17.43, "foundclub": 18.52, "objectif": 19.62, "simple": 20.19, "communication": 21.88, "organisation2": 22.57, "club": 24.1, "joueurs": 24.83, "dirigeants": 25.99, "parents": 26.92, "multiplier": 28.17, "whatsapp": 29.35, "partout": 30.88, "centraliser": 32.34, "endroit": 33.18, "interessant": 34.35, "seulement": 36.13, "gestion": 36.74, "equipe": 37.58, "ambition": 39.33, "connexion": 40.56, "joueurs6": 41.48, "clubs6": 42.2, "joueur": 43.55, "educateur": 44.17, "president": 44.76, "dirigeant": 45.48, "parent": 46.12, "moment": 46.9, "decouvrir": 47.48, "commentaire": 49.52, "whatsapp9": 51.39, "application9": 53.13, "potes": 54.49};
+
+      // Sous-titres : chaque morceau s'allume à son début et s'éteint à sa fin
+      SOUS_TITRES.forEach(([debut, fin], i) => {
+        tl.fromTo(`#st-${i}`, { opacity: 0 }, { opacity: 1, duration: 0.08, ease: "none" }, debut);
+        tl.to(`#st-${i}`, { opacity: 0, duration: 0.08, ease: "none" }, fin - 0.08);
+      });
+
+      // Fond dégradé
+      tl.fromTo("#degrade-fond", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, 0.9);
+
+      // ── SCÈNE 1 ──────────────────────────────────────────────
+      tl.fromTo("#s1-annee", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 1.22);
+      tl.fromTo("#s1-encore", { opacity: 0, y: 70, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 3.05);
+      tl.fromTo("#s1-whatsapp .fond", { scaleX: 0 }, { scaleX: 1, duration: 0.32, ease: "power3.out" }, 3.7);
+      tl.fromTo("#s1-whatsapp .mot", { opacity: 0, y: 26 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 3.82);
+      tl.to("#s1-whatsapp .surligne", { rotation: -2.5, duration: 0.18, ease: "power2.out" }, 4.15);
+      tl.to(["#s1-annee", "#s1-encore", "#s1-whatsapp"], { opacity: 0, y: 60, duration: 0.3, ease: "power2.in", stagger: 0.04 }, 5.0);
+
+      // ── SCÈNE 2 ──────────────────────────────────────────────
+      tl.fromTo("#s2-entete", { opacity: 0, y: -60 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.4)" }, 5.35);
+      // Les trois mots arrivent comme des messages ; le plus récent pousse les autres vers le haut
+      const PAS = 150;
+      const arrivee = (id, t) => tl.fromTo(id, { opacity: 0, y: 60, scale: 0.85 }, { opacity: 1, y: 0, scale: 1, duration: 0.32, ease: "back.out(1.7)" }, t);
+      arrivee("#b-convoc", 5.42);
+      arrivee("#b-entrain", 6.32);
+      tl.to("#b-convoc", { y: -PAS, duration: 0.3, ease: "power2.out" }, 6.32);
+      arrivee("#b-matchs", 7.16);
+      tl.to("#b-entrain", { y: -PAS, duration: 0.3, ease: "power2.out" }, 7.16);
+      tl.to("#b-convoc", { y: -2 * PAS, opacity: 0, duration: 0.3, ease: "power2.out" }, 7.16);
+      // Le compteur de messages non lus
+      const compteur = document.getElementById("s2-compteur");
+      const afficher = (v) => { compteur.textContent = v >= 99 ? "99+" : String(Math.max(1, Math.round(v))); };
+      const nonLus = { v: 1 };
+      tl.fromTo(nonLus, { v: 1 }, { v: 3, duration: 1.8, ease: "steps(2)", onUpdate: () => afficher(nonLus.v) }, 5.42);
+      tl.to(nonLus, { v: 99, duration: 2.4, ease: "power2.in", onUpdate: () => afficher(nonLus.v) }, 7.9);
+      tl.to("#s2-pastille", { scale: 1.18, duration: 0.12, yoyo: true, repeat: 1, ease: "power1.out" }, 6.32);
+      tl.to("#s2-pastille", { scale: 1.18, duration: 0.12, yoyo: true, repeat: 1, ease: "power1.out" }, 7.16);
+
+      // La tempête : les messages déferlent de partout
+      tl.to(["#b-entrain", "#b-matchs"], { opacity: 0.35, duration: 0.4 }, 8.0);
+      TEMPETE.forEach((m, i) => {
+        tl.fromTo(`#m-${i}`, { opacity: 0, scale: 0.6, rotation: m.r * 2 }, { opacity: 1, scale: 1, rotation: m.r, duration: 0.24, ease: "back.out(2)" }, m.t);
+      });
+      // « et au final… on s'y perd » : tout se brouille
+      tl.to("#tempete .mini, #b-entrain, #b-matchs, #s2-entete", { filter: "blur(9px)", opacity: 0.55, duration: 0.5, ease: "power2.in" }, 10.45);
+      tl.fromTo("#s2-voile", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 10.6);
+      tl.fromTo("#s2-perd .ligne", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 10.85);
+      tl.fromTo("#s2-perd .fond", { scaleX: 0 }, { scaleX: 1, duration: 0.28, ease: "power3.out" }, 11.12);
+      tl.fromTo("#s2-perd .mot", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 11.2);
+      tl.fromTo("#s2-perd", { x: 0 }, { x: 10, duration: 0.05, yoyo: true, repeat: 5, ease: "none" }, 11.3);
+      tl.to("#s2 > *", { opacity: 0, duration: 0.3, ease: "power2.in" }, 11.6);
+
+      // ── SCÈNE 3 : « Mais aujourd'hui… une appli qui change ton club… c'est FoundClub » ──
+      tl.fromTo("#s3-change .ligne", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, T.organisation1 - 0.45);
+      tl.fromTo("#s3-change .fond", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, T.club1 - 0.4);
+      tl.fromTo("#s3-change .mot", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, T.club1 - 0.3);
+      tl.to("#s3-change", { opacity: 0, y: 50, duration: 0.3, ease: "power2.in", stagger: 0.05 }, T.app2 - 0.5);
+      tl.fromTo("#s3-logo .icone-fc", { opacity: 0, scale: 0.3, rotation: -12 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(1.8)" }, T.foundclub - 1.0);
+      tl.fromTo("#s3-logo .marque", { opacity: 0, y: 40, scale: 1.18 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: "power3.out" }, T.foundclub - 0.65);
+      tl.fromTo("#s3-logo .reflet", { x: 0 }, { x: 1000, duration: 0.7, ease: "power2.inOut" }, T.foundclub - 0.1);
+      tl.to("#s3-logo", { opacity: 0, scale: 0.85, duration: 0.3, ease: "power2.in" }, T.foundclub + 0.45);
+
+      // ── PASSAGE EN « MODE ÉCRAN » : ach10 rétrécit en médaillon, le téléphone monte ──
+      const ENTREE = T.foundclub + 0.5;
+      tl.to("#degrade-fond", { opacity: 0, duration: 0.5 }, ENTREE);
+      tl.fromTo("#cadre-video", { clipPath: "circle(2300px at 540px 700px)", scale: 1, x: 0, y: 0 },
+        { clipPath: "circle(430px at 540px 700px)", scale: 0.35, x: 360, y: -450, duration: 0.8, ease: "power3.inOut" }, ENTREE);
+      tl.fromTo("#medaillon-anneau", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, ENTREE + 0.75);
+      tl.fromTo("#tel", { opacity: 0, y: 500, rotation: 6 }, { opacity: 1, y: 0, rotation: 0, duration: 0.6, ease: "power3.out" }, ENTREE + 0.6);
+
+      // Les écrans de l'app : chacun remplace le précédent
+      const montrer = (id, t, effet) => {
+        const depart = effet === "glisse" ? { opacity: 0, x: 500 } : effet === "defile" ? { opacity: 0, y: 260 } : { opacity: 0 };
+        tl.fromTo(id, depart, { opacity: 1, x: 0, y: 0, duration: 0.35, ease: "power2.out" }, t);
+      };
+      const cacher = (id, t) => tl.to(id, { opacity: 0, duration: 0.25 }, t);
+      montrer("#cap-accueil-haut", ENTREE + 0.6, "fondu");   // l'accueil d'abord (retour d'Adel)
+
+      // ── SCÈNE 4 : « faciliter la communication et l'organisation entre le club, les joueurs… » ──
+      tl.fromTo("#s4-rubrique", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, T.objectif - 0.3);
+      tl.fromTo("#s4-l1", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, T.communication - 0.45);
+      tl.fromTo("#s4-l2", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, T.organisation2 - 0.45);
+      [["#tag-club", T.club, -1], ["#tag-joueurs", T.joueurs, 1], ["#tag-dirigeants", T.dirigeants, -1], ["#tag-parents", T.parents, 1]].forEach(([id, t, cote]) => {
+        tl.fromTo(id, { opacity: 0, x: cote * 160, scale: 0.8 }, { opacity: 1, x: 0, scale: 1, duration: 0.35, ease: "back.out(1.7)" }, t - 0.4);
+      });
+      // Chaque étiquette affiche l'accueil correspondant
+      cacher("#cap-accueil-haut", T.club - 0.4);       montrer("#cap-accueil-grille", T.club - 0.4, "defile");
+      cacher("#cap-accueil-grille", T.joueurs - 0.4);  montrer("#cap-accueil-joueur", T.joueurs - 0.4, "glisse");
+      cacher("#cap-accueil-joueur", T.dirigeants - 0.4); montrer("#cap-accueil-gerer", T.dirigeants - 0.4, "glisse");
+      cacher("#cap-accueil-gerer", T.parents - 0.4); montrer("#cap-accueil-parent", T.parents - 0.4, "glisse");
+      tl.to(["#s4-rubrique", "#s4-titre"], { opacity: 0, x: -40, duration: 0.3, ease: "power2.in" }, T.parents + 0.25);
+      tl.to(["#tag-club", "#tag-joueurs", "#tag-dirigeants", "#tag-parents"], { opacity: 0, scale: 0.7, duration: 0.3, ease: "power2.in", stagger: 0.05 }, T.parents + 0.3);
+
+      // ── SCÈNE 5 : les messages éparpillés… puis aspirés dans le téléphone ──
+      cacher("#cap-accueil-parent", T.parents + 0.45);
+      montrer("#cap-messagerie", T.parents + 0.45, "fondu");   // le canal du club remplace les groupes
+      EPARPILLES.forEach((m, i) => {
+        tl.fromTo(`#e-${i}`, { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(2)" }, m.t);
+      });
+      // Aspiration : chaque message file vers le centre de l'écran du téléphone
+      EPARPILLES.forEach((m, i) => {
+        tl.to(`#e-${i}`, { x: m.dx, y: m.dy, scale: 0.1, opacity: 0, duration: 0.45, ease: "power3.in" }, T.centraliser - 0.6 + i * 0.05);
+      });
+      tl.to("#tel", { scale: 1.04, duration: 0.15, yoyo: true, repeat: 1, ease: "power1.out" }, T.centraliser + 0.05);
+      cacher("#cap-messagerie", T.centraliser + 0.1);
+      montrer("#cap-planning", T.centraliser + 0.1, "glisse");
+      tl.fromTo("#s5-rubrique", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, T.centraliser - 0.4);
+      tl.fromTo("#s5-l1", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, T.endroit - 0.75);
+      tl.fromTo("#s5-titre .fond", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, T.endroit - 0.45);
+      tl.fromTo("#s5-titre .mot", { opacity: 0 }, { opacity: 1, duration: 0.2 }, T.endroit - 0.35);
+      cacher("#cap-planning", T.endroit + 0.25);
+      montrer("#cap-appel", T.endroit + 0.25, "glisse");
+
+      // ── SCÈNE 6a : « ne s'arrête pas seulement à la gestion de ton équipe » → les compos des 5 sports ──
+      tl.to(["#s5-rubrique", "#s5-titre"], { opacity: 0, x: -40, duration: 0.3, ease: "power2.in" }, T.interessant - 0.3);
+      tl.fromTo("#s6-rubrique", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, T.interessant - 0.1);
+      tl.fromTo("#s6-l1", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, T.seulement - 0.45);
+      tl.fromTo("#s6-l2", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, T.gestion - 0.4);
+      tl.to("#tel", { opacity: 0.18, scale: 0.94, duration: 0.4, ease: "power2.out" }, T.gestion - 0.5);
+      tl.fromTo("#compos", { opacity: 0, x: 700, rotation: 3 }, { opacity: 1, x: 0, rotation: 0, duration: 0.55, ease: "power3.out" }, T.gestion - 0.5);
+      tl.to("#compos", { opacity: 0, x: -700, rotation: -3, duration: 0.45, ease: "power3.in" }, T.ambition - 0.55);
+      tl.to(["#s6-rubrique", "#s6-titre"], { opacity: 0, x: -40, duration: 0.3, ease: "power2.in" }, T.ambition - 0.55);
+      tl.to("#tel", { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" }, T.ambition - 0.25);
+
+      // ── SCÈNE 6b : « faciliter la connexion entre les joueurs et les clubs » ──
+      const appuyer = (id, t) => {
+        tl.fromTo(id, { opacity: 0, scale: 1.5 }, { opacity: 1, scale: 0.85, duration: 0.22, ease: "power2.out" }, t);
+        tl.to(id, { opacity: 0, scale: 1.25, duration: 0.3, ease: "power1.in" }, t + 0.32);
+      };
+      tl.fromTo("#s6b-rubrique", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, T.ambition - 0.2);
+      tl.fromTo("#s6b-l1", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, T.joueurs6 - 0.45);
+      tl.fromTo("#s6b-l2", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, T.clubs6 - 0.45);
+      cacher("#cap-appel", T.ambition - 0.25);
+      montrer("#cap-clubs", T.ambition - 0.25, "glisse");
+      // la fiche du club, avec son numéro de téléphone flouté
+      cacher("#cap-clubs", T.connexion - 0.35);
+      montrer("#cap-fiche", T.connexion - 0.35, "fondu");
+      montrer("#flou-tel", T.connexion - 0.35, "fondu");
+      appuyer("#appui-rejoindre", T.connexion + 0.15);
+      cacher(["#cap-fiche", "#flou-tel"], T.joueurs6 - 0.3);
+      montrer("#cap-recrutement", T.joueurs6 - 0.3, "glisse");
+      appuyer("#appui-postuler", T.joueurs6 + 0.25);
+      // l'affiche de détection, avec le logo FC posé à la place de l'image cassée
+      cacher("#cap-recrutement", T.clubs6 - 0.15);
+      montrer("#cap-affiche", T.clubs6 - 0.15, "fondu");
+      montrer("#logo-affiche", T.clubs6 - 0.15, "fondu");
+      tl.to(["#s6b-rubrique", "#s6b-titre"], { opacity: 0, x: -40, duration: 0.3, ease: "power2.in" }, T.joueur - 0.6);
+
+      // ── SCÈNE 7 : « que tu sois joueur, éducateur, président, dirigeant, parent » ──
+      cacher(["#cap-affiche", "#logo-affiche"], T.joueur - 0.55);
+      montrer("#cap-statut", T.joueur - 0.55, "glisse");
+      tl.fromTo("#s7-rubrique", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, T.joueur - 0.5);
+      // Ordonnées des 4 statuts de l'écran : Joueur·se, Entraîneur·e, Dirigeant·e, Parent
+      const LIGNE_STATUT = { joueur: 0, educateur: 86, president: 173, dirigeant: 173, parent: 259 };
+      tl.fromTo("#statut-cadre", { opacity: 0, scale: 1.1 }, { opacity: 1, scale: 1, duration: 0.2 }, T.joueur - 0.3);
+      ["joueur", "educateur", "president", "dirigeant", "parent"].forEach((role, i) => {
+        const cote = i % 2 === 0 ? -1 : 1;
+        tl.fromTo(`#r-${role}`, { opacity: 0, x: cote * 160, scale: 0.8 }, { opacity: 1, x: 0, scale: 1, duration: 0.3, ease: "back.out(1.7)" }, T[role] - 0.35);
+        if (i > 0) tl.to("#statut-cadre", { y: LIGNE_STATUT[role], duration: 0.22, ease: "power2.inOut" }, T[role] - 0.35);
+      });
+
+      // ── RETOUR PLEIN CADRE : le médaillon se rouvre sur ach10 ──
+      const SORTIE = T.parent + 0.3;
+      tl.to(["#s7-rubrique", "#statut-cadre", "#r-joueur", "#r-educateur", "#r-president", "#r-dirigeant", "#r-parent"], { opacity: 0, duration: 0.25 }, SORTIE - 0.1);
+      tl.to("#tel", { opacity: 0, y: 500, rotation: 6, duration: 0.5, ease: "power3.in" }, SORTIE - 0.1);
+      tl.to("#medaillon-anneau", { opacity: 0, scale: 0.6, duration: 0.25 }, SORTIE);
+      tl.to("#cadre-video", { clipPath: "circle(2300px at 540px 700px)", scale: 1, x: 0, y: 0, duration: 0.7, ease: "power3.inOut" }, SORTIE);
+      tl.to("#degrade-fond", { opacity: 1, duration: 0.5 }, SORTIE + 0.3);
+
+      // ── SCÈNE 8 : la carte App Store recouvre sa bannière blanche (visible de 47,03 à 49,25 s) ──
+      tl.fromTo("#carte-store", { opacity: 0, scale: 0.92 }, { opacity: 1, scale: 1, duration: 0.16, ease: "power2.out" }, 46.85);
+      tl.to("#carte-store", { opacity: 0, scale: 0.95, duration: 0.18, ease: "power2.in" }, 49.27);
+
+      // ── SCÈNE 9 : « dis-moi en commentaire… encore WhatsApp, ou une application ? » ──
+      tl.fromTo("#s9-sticker .pastille", { opacity: 0, scale: 0.6, rotation: -6 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.4, ease: "back.out(1.8)" }, Math.max(T.commentaire - 0.55, 49.35));
+      tl.fromTo("#choix-whatsapp", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, T.whatsapp9 - 0.45);
+      tl.fromTo("#choix-app", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, T.application9 - 0.55);
+      tl.to("#choix-app", { scale: 1.05, duration: 0.15, yoyo: true, repeat: 1, ease: "power1.out" }, T.application9 - 0.1);
+      tl.to(["#s9-sticker", "#choix-whatsapp", "#choix-app"], { opacity: 0, duration: 0.3 }, 53.95);
+
+      // ── CARTON FINAL : « Ciao mes petits potes ! » ──
+      tl.fromTo("#fin-voile", { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "power2.out" }, 54.0);
+      tl.fromTo("#fin .icone-fc", { opacity: 0, scale: 0.3, rotation: -12 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(1.8)" }, 54.25);
+      tl.fromTo("#fin .marque", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 54.45);
+      tl.fromTo("#fin .reflet", { x: 0 }, { x: 1100, duration: 0.8, ease: "power2.inOut" }, 54.9);
+      tl.fromTo("#fin .phrase", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 54.8);
+      tl.fromTo("#fin .badges", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 55.05);
+      tl.fromTo("#fin .site", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 55.3);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
