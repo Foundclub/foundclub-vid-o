@@ -4,6 +4,7 @@
 # couleurs HDR d'iPhone ramenees en SDR. Part de l'original s'il est la, sinon de la version legere.
 # Le son : la voix d'origine, sauf « Cette application, c'est FoundClub » (16,7-18,9 s), repris de la
 # prise refaite a-monter/ach10-foundclub.mov (FoundClub prononce a l'anglaise). PRISE=1|2|3, defaut 1.
+# Les deux autres FoundClub (vers 34 et 48 s) recoivent le FoundClub de la prise 1 (greffes).
 set -euo pipefail
 cd "$(dirname "$0")/.."
 SRC=medias/video/ach10-original.mov

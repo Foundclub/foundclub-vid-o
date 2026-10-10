@@ -4,6 +4,7 @@ L'image ne change pas : la prise est posée sur les lèvres de l'ancienne, en de
 (« Cette application » / « c'est FoundClub ») recalés chacun sur la base, puis égalisée et mise au
 même niveau que le reste de la voix. Fondus de 80 ms dans les silences,
 crêtes limitées à -1 dBFS.
+Puis les deux autres « FoundClub » (vers 34 et 48 s) reçoivent le « FoundClub » de la prise 1 (greffes).
 Usage : python3 -I outils/remplacer-foundclub.py <video-base> <prise.mov> <sortie.wav> [prise 1|2|3]"""
 import sys, subprocess
 import numpy as np, soundfile as sf
@@ -52,7 +53,7 @@ neuf = np.stack([np.convolve(neuf[:, c], h, mode="same") for c in range(2)], 1)
 # 2) Limiteur à -1 dBFS (anticipation 3 ms, relâchement 20 ms) : la base est écrêtée vers 0 dBFS.
 #    Il fait baisser l'énergie : on règle le gain de nouveau jusqu'à ce qu'il tienne.
 # 3) Dans les silences de la prise, le souffle est ramené au niveau de celui de la base.
-# Les fondus se font dans les silences ; hors de 16,62–18,98 s, la voix d'origine est intacte, échantillon pour échantillon.
+# Les fondus se font dans les silences ; hors de 16,62–18,98 s et des deux greffes, la voix d'origine est intacte, échantillon pour échantillon.
 rms = lambda x: np.sqrt((x ** 2).mean())
 def lisser(cible, att, rel):
     a, r = np.exp(-1 / (att * SR)), np.exp(-1 / (rel * SR)); out, v = np.empty_like(cible), cible[0]
@@ -95,8 +96,46 @@ a = np.clip((t - (DEBUT - FONDU / 2)) / FONDU, 0, 1) * np.clip(((FIN + FONDU / 2
 j = np.round(t * SR).astype(int)
 sortie_audio = base.copy()
 sortie_audio[j] = base[j] * (1 - a[:, None]) + neuf * a[:, None]
+
+# Greffes : les deux autres « FoundClub » (vers 34 et 48 s), pris dans la prise 1.
+# - 34 s, « c'est que FoundClub ne s'arrête pas » : seulement « -ound », la voyelle qui porte l'accent. Le « F »
+#   d'avant et le « Club » d'après restent d'origine (le « Club », en milieu de phrase, garde sa mélodie).
+#   La voyelle commence 30 ms avant l'ancienne et déborde dans la fermeture « d/C », invisible sur les lèvres.
+# - 48 s, « venir découvrir FoundClub. » : fin de phrase, comme dans la prise ; on prend « -oundClub » entier.
+# Chaque morceau est recalé (rubberband, hauteur conservée), ramené à la hauteur de voix du passage
+# (moyenne mesurée), égalisé, mis au même niveau, limité. Fondus de 20 ms.
+# Choix mesurés le 10/10/2026 (Whisper sur la phrase entière : « Found Club » à 34 s ; « Faunclub » à 48 s).
+GREFFES = [(35.03, 35.225, 8.575, 8.775, 1.025),   # (base début, fin, prise début, fin, hauteur)
+           (47.97, 48.455, 8.575, 9.06, 1.0)]  # vitesse 1 : le « b » final tombe 20 ms après les lèvres
+MARGE, F_G = 0.15, 0.02
+def rubberband(x, tempo, hauteur):
+    p = subprocess.run(["ffmpeg", "-v", "error", "-f", "f32le", "-ar", str(SR), "-ac", "2", "-i", "-", "-af",
+                        f"rubberband=tempo={tempo:.4f}:pitch={hauteur:.4f}:formant=preserved:transients=crisp:window=short",
+                        "-f", "f32le", "-"], input=x.astype("<f4").tobytes(), capture_output=True, check=True)
+    return np.frombuffer(p.stdout, dtype="<f4").reshape(-1, 2).astype(np.float64)
+greffes = []
+for b0, b1, s0, s1, hauteur in GREFFES:
+    tempo = (s1 - s0) / (b1 - b0)
+    x = prise[int((s0 - MARGE) * SR):int((s1 + MARGE) * SR)]
+    x = np.stack([np.convolve(x[:, c], h, mode="same") for c in range(2)], 1)
+    y = rubberband(x, tempo, hauteur)
+    tt = b0 - MARGE / tempo + np.arange(len(y)) / SR             # temps, sur l'axe de la base
+    garde = (tt >= b0 - F_G) & (tt <= b1 + F_G / 2)
+    y, tt = y[garde], tt[garde]
+    dedans = (tt >= b0) & (tt <= b1)
+    G = 1.0
+    for _ in range(5):
+        z, gg = limiter(y * G)
+        G *= rms(base[int(b0 * SR):int(b1 * SR)]) / rms(z[dedans])
+    z, gg = limiter(y * G)
+    a = np.clip((tt - (b0 - F_G)) / F_G, 0, 1) * np.clip(((b1 + F_G / 2) - tt) / F_G, 0, 1)
+    j = np.round(tt * SR).astype(int)
+    sortie_audio[j] = sortie_audio[j] * (1 - a[:, None]) + z * a[:, None]
+    greffes.append(f"{b0:.2f} s : vitesse x{tempo:.2f}, hauteur x{hauteur:.3f}, gain {20 * np.log10(G):+.1f} dB, limiteur {20 * np.log10(gg.min()):.1f} dB")
+
 sf.write(sortie, sortie_audio.astype(np.float32), SR, subtype="FLOAT")
 fond_base = 20 * np.log10(rms(base[int(18.84 * SR):int(18.96 * SR)]))
 fond_neuf = 20 * np.log10(rms(neuf[(t >= 18.84) & (t <= 18.88)]))
 print(f"prise {NUM} : gain {20 * np.log10(g1):+.1f} / {20 * np.log10(g2):+.1f} dB, égalisation {corr_db[(fq>100)&(fq<8000)].min():+.1f}/{corr_db[(fq>100)&(fq<8000)].max():+.1f} dB, "
       f"limiteur {20 * np.log10(g.min()):.1f} dB au plus fort, pause {20 * np.log10(gp):+.1f} dB, bruit de fond base {fond_base:.1f} dB / prise {fond_neuf:.1f} dB -> {sortie}")
+print("greffes : " + " ; ".join(greffes))
