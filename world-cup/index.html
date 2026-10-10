@@ -78,9 +78,10 @@
       #tableau { position: absolute; left: 90px; top: 1040px; width: 900px; height: 380px; }
       #tableau path { fill: none; stroke: var(--p500); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
       #tableau .equipe { fill: var(--p700); stroke: var(--p500); stroke-width: 3; }
-      #tableau .vainqueur { fill: var(--vert); }
+      #tableau .vainqueur { fill: var(--vert); opacity: 0; }
+      #tableau .coupe { fill: var(--p900); stroke: none; }
       .tampon { position: absolute; left: 540px; top: 1180px; padding: 14px 30px; border: 8px solid var(--vert); border-radius: 20px;
-        color: var(--vert); background: rgba(0,18,24,.85); font-weight: 900; font-size: 74px; text-transform: uppercase; white-space: nowrap; opacity: 0; }
+        color: var(--vert); background: rgba(0,18,24,.85); font-weight: 900; font-size: 84px; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; opacity: 0; }
 
       /* Le téléphone */
       .tel { position: absolute; left: 276px; top: 290px; width: 528px; height: 1111px; border-radius: 76px; background: #081318; padding: 14px; opacity: 0;
@@ -185,14 +186,14 @@
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="84.50" data-width="1080" data-height="1920">
+    <div id="root" data-composition-id="main" data-start="0" data-duration="84.07" data-width="1080" data-height="1920">
 
-      <div id="fond" class="clip plein" data-start="0" data-duration="84.50" data-track-index="0"><div id="fond-halo"></div></div>
+      <div id="fond" class="clip plein" data-start="0" data-duration="84.07" data-track-index="0"><div id="fond-halo"></div></div>
       <div id="cadre-video">
         <video id="video-orateur" src="medias/video/source.mp4" playsinline
           data-start="0" data-duration="81.44" data-track-index="1" data-has-audio="true"></video>
       </div>
-      <div id="degrades" class="clip plein" data-start="0" data-duration="84.50" data-track-index="2">
+      <div id="degrades" class="clip plein" data-start="0" data-duration="84.07" data-track-index="2">
         <div id="degrade-haut"></div><div id="degrade-bas"></div>
       </div>
       <div id="medaillon-anneau"></div>
@@ -1896,9 +1897,9 @@
           <path class="tour3" stroke-dasharray="300" d="M670 96.0 H730 V188.0 H786"/>
           <path class="tour3" stroke-dasharray="300" d="M670 280.0 H730 V188.0 H786"/>
           <circle class="vainqueur" cx="820" cy="188.0" r="34"/>
-          <path d="M806 176.0h28v8a14 14 0 0 1-28 0z" fill="#001218" stroke="none"/>
+          <path class="vainqueur coupe" d="M806 176.0h28v8a14 14 0 0 1-28 0z"/>
         </svg>
-        <div id="tampon-ouvert" class="tampon">Inscriptions ouvertes</div>
+        <div id="tampon-ouvert" class="tampon">Inscriptions<br />ouvertes</div>
 
         <div id="tel" class="tel">
           <div class="ecran">
@@ -1999,7 +2000,7 @@
       </div>
 
       <!-- CARTON FINAL -->
-      <div id="carton" class="clip plein" data-start="81.50" data-duration="3.00" data-track-index="9">
+      <div id="carton" class="clip plein" data-start="81.07" data-duration="3.00" data-track-index="9">
         <div id="fin-voile" class="plein"></div>
         <div id="fin">
           <div class="icone-fc"><span class="f">F</span><span class="c">C</span></div>
@@ -2013,7 +2014,7 @@
         </div>
       </div>
 
-      <div id="sous-titres" class="clip plein" data-start="0" data-duration="84.50" data-track-index="10">
+      <div id="sous-titres" class="clip plein" data-start="0" data-duration="84.07" data-track-index="10">
         <p id="st-0" class="st">Dans pile un an, notre première Coupe du monde de football amateur</p>
         <p id="st-1" class="st">commence, et tu vas pouvoir y participer,</p>
         <p id="st-2" class="st">avec ton club, ou simplement avec tes potes.</p>
@@ -2042,7 +2043,7 @@
     <script>
       window.__timelines = window.__timelines || {};
       const tl = gsap.timeline({ paused: true });
-      const T = {"an": 1.4, "coupe": 2.24, "amateur": 3.18, "participer": 4.83, "club": 7.34, "potes": 8.46, "defi": 10.26, "fou": 10.66, "mondial": 12.61, "tous": 14.16, "niveau": 15.05, "simple": 17.12, "qualification": 19.48, "pays": 20.27, "affronter": 21.27, "tours": 22.14, "meilleur": 23.4, "chaque": 24.0, "france": 26.3, "finales": 27.5, "mondial3": 28.2, "nouvelle": 30.2, "inscriptions": 31.1, "ouvertes": 31.7, "participer2": 33.2, "inscrire": 34.2, "equipe": 35.6, "coach": 37.0, "inscrire2": 38.0, "joueurs": 39.2, "potes2": 40.8, "creer": 41.6, "equipe2": 42.4, "maintenant": 43.8, "inscris": 44.5, "equipe3": 45.6, "partage": 46.5, "participer3": 48.6, "pourquoi": 50.0, "accessible": 52.9, "evenement": 54.6, "lumiere": 55.6, "365": 58.2, "besoin": 59.9, "equipes": 61.9, "terrains": 62.5, "arbitres": 63.0, "partenaires": 63.7, "communaute": 64.8, "entier": 66.3, "prochaine": 68.2, "etape": 70.8, "coach3": 74.5, "coequipiers": 75.2, "potes3": 75.8, "maximum": 76.9, "mondial4": 79.6, "maintenant2": 80.3, "jouer": 81.3};
+      const T = {"an": 1.4, "coupe": 2.24, "amateur": 3.18, "participer": 4.83, "club": 7.34, "potes": 8.46, "defi": 10.26, "fou": 10.66, "mondial": 12.61, "tous": 14.16, "niveau": 15.05, "simple": 17.12, "qualification": 19.48, "pays": 20.27, "affronter": 21.27, "tours": 22.14, "meilleur": 23.71, "chaque": 23.89, "france": 26.2, "finales": 27.46, "mondial3": 28.14, "nouvelle": 29.76, "inscriptions": 30.6, "ouvertes": 31.22, "participer2": 32.88, "inscrire": 33.65, "equipe": 35.16, "coach": 36.64, "inscrire2": 37.47, "joueurs": 39.53, "potes2": 40.94, "creer": 41.42, "equipe2": 42.35, "maintenant": 43.45, "inscris": 44.13, "equipe3": 44.97, "partage": 45.55, "participer3": 47.69, "pourquoi": 49.38, "accessible": 52.71, "evenement": 54.5, "lumiere": 55.42, "365": 59.06, "besoin": 59.97, "equipes": 61.79, "terrains": 62.03, "arbitres": 62.54, "partenaires": 62.94, "communaute": 63.8, "entier": 65.88, "prochaine": 67.77, "etape": 70.6, "coach3": 74.32, "coequipiers": 75.03, "potes3": 75.47, "maximum": 76.63, "mondial4": 79.04, "maintenant2": 80.13, "jouer": 80.87};
       const SOUS_TITRES = [[0.71, 3.3], [3.3, 5.24], [6.92, 8.76], [9.51, 10.97], [11.14, 15.45], [16.13, 17.56], [17.99, 20.6], [20.6, 24.43], [24.82, 28.49], [29.34, 31.85], [32.47, 35.79], [36.34, 39.3], [39.3, 42.6], [42.94, 48.75], [49.14, 50.28], [50.62, 53.4], [53.4, 57.2], [57.2, 60.56], [61.24, 66.44], [67.06, 71.02], [71.67, 76.97], [77.98, 81.43]];
       const HUBS = [[520, 150], [470, 250], [230, 200], [330, 330], [560, 300], [610, 210], [690, 240], [800, 190], [870, 370], [180, 160], [540, 135], [720, 170]];
       // ── Outils communs ─────────────────────────────────────────────

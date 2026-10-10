@@ -1,0 +1,77 @@
+#1
+              an : fini a   1.40 s
+           coupe : fini a   2.24 s
+         amateur : fini a   3.18 s
+      participer : fini a   4.83 s
+#2
+            club : fini a   7.34 s
+           potes : fini a   8.46 s
+#3
+            defi : fini a  10.26 s
+             fou : fini a  10.66 s
+#4
+         mondial : fini a  12.61 s
+            tous : fini a  14.16 s
+          niveau : fini a  15.05 s
+#5
+          simple : fini a  17.12 s
+#6
+   qualification : fini a  19.48 s
+            pays : fini a  20.27 s
+       affronter : fini a  21.27 s
+           tours : fini a  22.14 s
+        meilleur : fini a  23.71 s
+          chaque : fini a  23.89 s
+#8
+          france : fini a  26.20 s
+         finales : fini a  27.46 s
+         mondial : fini a  28.14 s
+#9
+        nouvelle : fini a  29.76 s
+    inscriptions : fini a  30.60 s
+        ouvertes : fini a  31.22 s
+#10
+      participer : fini a  32.88 s
+        inscrire : fini a  33.65 s
+          equipe : fini a  35.16 s
+#11
+           coach : fini a  36.64 s
+        inscrire : fini a  37.47 s
+         joueurs : fini a  39.53 s
+           potes : fini a  40.94 s
+           creer : fini a  41.42 s
+          equipe : fini a  40.85 s
+#12
+      maintenant : fini a  43.45 s
+         inscris : fini a  44.13 s
+          equipe : fini a  44.97 s
+         partage : fini a  45.55 s
+      participer : fini a  47.69 s
+#13
+        pourquoi : fini a  49.38 s
+#14
+      accessible : fini a  52.71 s
+       evenement : fini a  54.50 s
+         lumiere : fini a  55.42 s
+             365 : fini a  59.06 s
+          besoin : fini a  59.97 s
+#15
+         equipes : fini a  61.79 s
+        terrains : fini a  62.03 s
+        arbitres : fini a  62.54 s
+     partenaires : fini a  62.94 s
+      communaute : fini a  63.80 s
+          entier : fini a  65.88 s
+#16
+       prochaine : fini a  67.77 s
+           etape : fini a  70.60 s
+#17
+           coach : fini a  74.32 s
+     coequipiers : fini a  75.03 s
+           potes : fini a  75.47 s
+         maximum : fini a  76.63 s
+#18
+         mondial : fini a  79.04 s
+      maintenant : fini a  80.13 s
+           jouer : fini a  80.87 s
+FINI
