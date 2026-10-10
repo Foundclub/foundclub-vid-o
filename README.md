@@ -16,7 +16,13 @@ Vidéo verticale de **57,5 s** (1080×1920, 30 images/s) : ach10 parle face cam�
 
 **Rendu final** (10/10/2026) : `ach10/rendus/ach10-final.mp4`, fait à partir de **l'original** (`medias/video/ach10-original.mov`, 15 Mbit/s). Le montage est le même que `ach10-complet-v2.mp4`, la version validée par Adel, rendue depuis la version légère (4 Mbit/s).
 
-**Nouvelle prise « FoundClub »** (10/10/2026) : à 18 s, ach10 prononçait « FoundClub » à la française. Il a refait la phrase « Cette application, c'est FoundClub » (`a-monter/ach10-foundclub.mov`, 3 prises). `outils/remplacer-foundclub.py` prend **seulement le son** de la prise 1 et le colle de 16,7 à 18,9 s, sur les lèvres de l'ancienne prise. La phrase est coupée en deux morceaux recalés chacun, à 20 ms près. Le son est ensuite égalisé, mis au même niveau et limité. Hors de ce passage, la voix d'origine est intacte, échantillon pour échantillon. `outils/preparer-video.sh` l'applique tout seul ; `PRISE=2` ou `PRISE=3` choisit une autre prise. Les deux autres « FoundClub », vers 34 et 48 s, n'ont pas été refaits. Version avec la nouvelle prise : `ach10/rendus/ach10-complet-v3.mp4`.
+**Nouvelle prise « FoundClub »** (10/10/2026) : à 18 s, ach10 prononçait « FoundClub » à la française. Il a refait la phrase « Cette application, c'est FoundClub » (`a-monter/ach10-foundclub.mov`, 3 prises). `outils/remplacer-foundclub.py` prend **seulement le son** de la prise 1 et le colle de 16,7 à 18,9 s, sur les lèvres de l'ancienne prise. La phrase est coupée en deux morceaux recalés chacun, à 20 ms près. Le son est ensuite égalisé, mis au même niveau et limité. Hors de ce passage, la voix d'origine est intacte, échantillon pour échantillon. `outils/preparer-video.sh` l'applique tout seul ; `PRISE=2` ou `PRISE=3` choisit une autre prise. Prise 1 validée par Adel (« prise 1 ok »). Les deux autres « FoundClub » reçoivent des **greffes** prises dans la même prise (« B essaye ») :
+- vers 34 s, seule la voyelle « -ound » est remplacée, à vitesse presque normale ;
+- vers 48 s, en fin de phrase, c'est le mot entier, à vitesse normale.
+
+Whisper entendait « Foon Club » et « FUNCLUB » ; il entend maintenant « Found Club » et « FoundClub ».
+
+Les versions : `ach10-complet-v3.mp4` n'a que la phrase de 18 s ; `ach10-complet-v4.mp4` a les trois « FoundClub ».
 
 ### Les 9 scènes
 
