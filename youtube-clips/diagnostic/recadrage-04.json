@@ -1,0 +1,310 @@
+{
+  "numero": 4,
+  "mode": "visage",
+  "raison": "Visage unique",
+  "fraction_visage_unique": 1.0,
+  "images_plusieurs_visages": 0,
+  "methode": "MediaPipe BlazeFace à 4 images/s; médiane, amortissement et interpolation continue",
+  "echantillons": [
+    {
+      "t": 0.0,
+      "visages": 1,
+      "centre_x": 907.5
+    },
+    {
+      "t": 0.25,
+      "visages": 1,
+      "centre_x": 895.5
+    },
+    {
+      "t": 0.5,
+      "visages": 1,
+      "centre_x": 883.5
+    },
+    {
+      "t": 0.75,
+      "visages": 1,
+      "centre_x": 916.5
+    },
+    {
+      "t": 1.0,
+      "visages": 1,
+      "centre_x": 927.0
+    },
+    {
+      "t": 1.25,
+      "visages": 1,
+      "centre_x": 940.5
+    },
+    {
+      "t": 1.5,
+      "visages": 1,
+      "centre_x": 934.5
+    },
+    {
+      "t": 1.75,
+      "visages": 1,
+      "centre_x": 901.5
+    },
+    {
+      "t": 2.0,
+      "visages": 1,
+      "centre_x": 874.5
+    },
+    {
+      "t": 2.25,
+      "visages": 1,
+      "centre_x": 853.5
+    },
+    {
+      "t": 2.5,
+      "visages": 1,
+      "centre_x": 855.0
+    },
+    {
+      "t": 2.75,
+      "visages": 1,
+      "centre_x": 855.0
+    },
+    {
+      "t": 3.0,
+      "visages": 1,
+      "centre_x": 876.0
+    },
+    {
+      "t": 3.25,
+      "visages": 1,
+      "centre_x": 888.0
+    },
+    {
+      "t": 3.5,
+      "visages": 1,
+      "centre_x": 930.0
+    },
+    {
+      "t": 3.75,
+      "visages": 1,
+      "centre_x": 942.0
+    },
+    {
+      "t": 4.0,
+      "visages": 1,
+      "centre_x": 937.5
+    },
+    {
+      "t": 4.25,
+      "visages": 1,
+      "centre_x": 954.0
+    },
+    {
+      "t": 4.5,
+      "visages": 1,
+      "centre_x": 946.5
+    },
+    {
+      "t": 4.75,
+      "visages": 1,
+      "centre_x": 948.0
+    },
+    {
+      "t": 5.0,
+      "visages": 1,
+      "centre_x": 958.5
+    },
+    {
+      "t": 5.25,
+      "visages": 1,
+      "centre_x": 934.5
+    },
+    {
+      "t": 5.5,
+      "visages": 1,
+      "centre_x": 922.5
+    },
+    {
+      "t": 5.75,
+      "visages": 1,
+      "centre_x": 886.5
+    },
+    {
+      "t": 6.0,
+      "visages": 1,
+      "centre_x": 868.5
+    },
+    {
+      "t": 6.25,
+      "visages": 1,
+      "centre_x": 844.5
+    },
+    {
+      "t": 6.5,
+      "visages": 1,
+      "centre_x": 840.0
+    },
+    {
+      "t": 6.75,
+      "visages": 1,
+      "centre_x": 864.0
+    },
+    {
+      "t": 7.0,
+      "visages": 1,
+      "centre_x": 873.0
+    },
+    {
+      "t": 7.25,
+      "visages": 1,
+      "centre_x": 933.0
+    },
+    {
+      "t": 7.5,
+      "visages": 1,
+      "centre_x": 942.0
+    },
+    {
+      "t": 7.75,
+      "visages": 1,
+      "centre_x": 928.5
+    },
+    {
+      "t": 8.0,
+      "visages": 1,
+      "centre_x": 925.5
+    },
+    {
+      "t": 8.25,
+      "visages": 1,
+      "centre_x": 877.5
+    },
+    {
+      "t": 8.5,
+      "visages": 1,
+      "centre_x": 870.0
+    },
+    {
+      "t": 8.75,
+      "visages": 1,
+      "centre_x": 876.0
+    },
+    {
+      "t": 9.0,
+      "visages": 1,
+      "centre_x": 888.0
+    },
+    {
+      "t": 9.25,
+      "visages": 1,
+      "centre_x": 910.5
+    },
+    {
+      "t": 9.5,
+      "visages": 1,
+      "centre_x": 931.5
+    },
+    {
+      "t": 9.75,
+      "visages": 1,
+      "centre_x": 946.5
+    },
+    {
+      "t": 10.0,
+      "visages": 1,
+      "centre_x": 945.0
+    },
+    {
+      "t": 10.25,
+      "visages": 1,
+      "centre_x": 912.0
+    },
+    {
+      "t": 10.5,
+      "visages": 1,
+      "centre_x": 943.5
+    },
+    {
+      "t": 10.75,
+      "visages": 1,
+      "centre_x": 972.0
+    },
+    {
+      "t": 11.0,
+      "visages": 1,
+      "centre_x": 978.0
+    },
+    {
+      "t": 11.25,
+      "visages": 1,
+      "centre_x": 990.0
+    },
+    {
+      "t": 11.5,
+      "visages": 1,
+      "centre_x": 999.0
+    },
+    {
+      "t": 11.75,
+      "visages": 1,
+      "centre_x": 994.5
+    },
+    {
+      "t": 12.0,
+      "visages": 1,
+      "centre_x": 999.0
+    },
+    {
+      "t": 12.25,
+      "visages": 1,
+      "centre_x": 922.5
+    },
+    {
+      "t": 12.5,
+      "visages": 1,
+      "centre_x": 892.5
+    },
+    {
+      "t": 12.75,
+      "visages": 1,
+      "centre_x": 849.0
+    },
+    {
+      "t": 13.0,
+      "visages": 1,
+      "centre_x": 864.0
+    },
+    {
+      "t": 13.25,
+      "visages": 1,
+      "centre_x": 883.5
+    },
+    {
+      "t": 13.5,
+      "visages": 1,
+      "centre_x": 912.0
+    },
+    {
+      "t": 13.75,
+      "visages": 1,
+      "centre_x": 934.5
+    },
+    {
+      "t": 14.0,
+      "visages": 1,
+      "centre_x": 943.5
+    },
+    {
+      "t": 14.25,
+      "visages": 1,
+      "centre_x": 948.0
+    },
+    {
+      "t": 14.5,
+      "visages": 1,
+      "centre_x": 948.0
+    },
+    {
+      "t": 14.75,
+      "visages": 1,
+      "centre_x": 955.5
+    }
+  ]
+}

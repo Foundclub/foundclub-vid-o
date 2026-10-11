@@ -1,0 +1,731 @@
+{
+  "numero": 12,
+  "format": "vertical",
+  "sha256": "0c1ca9223c2fc99baff0ca8a5c803d75fb516db3e37c0f53a20a1cc80920943e",
+  "texte_prevu_sha256": "3c9db9ddcf2f963b1d947a65858a43ee364c028311591c2b70096ff0cab69002",
+  "verification": "Premiers mots différents dans la retranscription; Derniers mots différents dans la retranscription",
+  "modele_verification": "large-v3",
+  "vad": false,
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "par",
+    "contre",
+    "l",
+    "instinct"
+  ],
+  "derniers_mots_attendus": [
+    "a",
+    "atlas",
+    "ok",
+    "allez"
+  ],
+  "premiers_mots_reconnus": [
+    "par",
+    "contre",
+    "les",
+    "steaks"
+  ],
+  "derniers_mots_reconnus": [
+    "il",
+    "est",
+    "a",
+    "place"
+  ],
+  "debut_correspond": false,
+  "fin_correspond": false,
+  "transcription": [
+    {
+      "debut": 0.0,
+      "fin": 4.86,
+      "texte": "Par contre, les steaks, ce n'est pas la tête, c'est le cœur. Le cœur, c'est la place.",
+      "mots": [
+        {
+          "mot": " Par",
+          "debut": 0.0,
+          "fin": 0.2
+        },
+        {
+          "mot": " contre,",
+          "debut": 0.2,
+          "fin": 0.48
+        },
+        {
+          "mot": " les",
+          "debut": 0.68,
+          "fin": 1.66
+        },
+        {
+          "mot": " steaks,",
+          "debut": 1.66,
+          "fin": 2.08
+        },
+        {
+          "mot": " ce",
+          "debut": 2.08,
+          "fin": 2.18
+        },
+        {
+          "mot": " n",
+          "debut": 2.18,
+          "fin": 2.28
+        },
+        {
+          "mot": "'est",
+          "debut": 2.28,
+          "fin": 2.28
+        },
+        {
+          "mot": " pas",
+          "debut": 2.28,
+          "fin": 2.38
+        },
+        {
+          "mot": " la",
+          "debut": 2.38,
+          "fin": 2.44
+        },
+        {
+          "mot": " tête,",
+          "debut": 2.44,
+          "fin": 2.62
+        },
+        {
+          "mot": " c",
+          "debut": 2.78,
+          "fin": 3.12
+        },
+        {
+          "mot": "'est",
+          "debut": 3.12,
+          "fin": 3.24
+        },
+        {
+          "mot": " le",
+          "debut": 3.24,
+          "fin": 3.28
+        },
+        {
+          "mot": " cœur.",
+          "debut": 3.28,
+          "fin": 3.52
+        },
+        {
+          "mot": " Le",
+          "debut": 3.78,
+          "fin": 4.1
+        },
+        {
+          "mot": " cœur,",
+          "debut": 4.1,
+          "fin": 4.38
+        },
+        {
+          "mot": " c",
+          "debut": 4.42,
+          "fin": 4.48
+        },
+        {
+          "mot": "'est",
+          "debut": 4.48,
+          "fin": 4.6
+        },
+        {
+          "mot": " la",
+          "debut": 4.6,
+          "fin": 4.64
+        },
+        {
+          "mot": " place.",
+          "debut": 4.64,
+          "fin": 4.86
+        }
+      ]
+    },
+    {
+      "debut": 7.12,
+      "fin": 10.56,
+      "texte": "Personne sur ça, qui s'en vient avec une gueule de cheval, n'a pas un sourire.",
+      "mots": [
+        {
+          "mot": " Personne",
+          "debut": 7.12,
+          "fin": 7.44
+        },
+        {
+          "mot": " sur",
+          "debut": 7.44,
+          "fin": 7.76
+        },
+        {
+          "mot": " ça,",
+          "debut": 7.76,
+          "fin": 8.02
+        },
+        {
+          "mot": " qui",
+          "debut": 8.08,
+          "fin": 8.34
+        },
+        {
+          "mot": " s",
+          "debut": 8.34,
+          "fin": 8.48
+        },
+        {
+          "mot": "'en",
+          "debut": 8.48,
+          "fin": 8.58
+        },
+        {
+          "mot": " vient",
+          "debut": 8.58,
+          "fin": 8.68
+        },
+        {
+          "mot": " avec",
+          "debut": 8.68,
+          "fin": 8.82
+        },
+        {
+          "mot": " une",
+          "debut": 8.82,
+          "fin": 8.98
+        },
+        {
+          "mot": " gueule",
+          "debut": 8.98,
+          "fin": 9.14
+        },
+        {
+          "mot": " de",
+          "debut": 9.14,
+          "fin": 9.2
+        },
+        {
+          "mot": " cheval,",
+          "debut": 9.2,
+          "fin": 9.38
+        },
+        {
+          "mot": " n",
+          "debut": 9.54,
+          "fin": 9.96
+        },
+        {
+          "mot": "'a",
+          "debut": 9.96,
+          "fin": 10.04
+        },
+        {
+          "mot": " pas",
+          "debut": 10.04,
+          "fin": 10.14
+        },
+        {
+          "mot": " un",
+          "debut": 10.14,
+          "fin": 10.2
+        },
+        {
+          "mot": " sourire.",
+          "debut": 10.2,
+          "fin": 10.56
+        }
+      ]
+    },
+    {
+      "debut": 12.3,
+      "fin": 14.82,
+      "texte": "Personne n'est bien connu dans l'engagement avec le cœur.",
+      "mots": [
+        {
+          "mot": " Personne",
+          "debut": 12.3,
+          "fin": 12.62
+        },
+        {
+          "mot": " n",
+          "debut": 12.62,
+          "fin": 12.7
+        },
+        {
+          "mot": "'est",
+          "debut": 12.7,
+          "fin": 12.78
+        },
+        {
+          "mot": " bien",
+          "debut": 12.78,
+          "fin": 12.92
+        },
+        {
+          "mot": " connu",
+          "debut": 12.92,
+          "fin": 13.3
+        },
+        {
+          "mot": " dans",
+          "debut": 13.3,
+          "fin": 13.66
+        },
+        {
+          "mot": " l",
+          "debut": 13.66,
+          "fin": 13.7
+        },
+        {
+          "mot": "'engagement",
+          "debut": 13.7,
+          "fin": 14.1
+        },
+        {
+          "mot": " avec",
+          "debut": 14.1,
+          "fin": 14.46
+        },
+        {
+          "mot": " le",
+          "debut": 14.46,
+          "fin": 14.64
+        },
+        {
+          "mot": " cœur.",
+          "debut": 14.64,
+          "fin": 14.82
+        }
+      ]
+    },
+    {
+      "debut": 15.7,
+      "fin": 17.42,
+      "texte": "Compris tout le monde ? Nassim, c'est compris.",
+      "mots": [
+        {
+          "mot": " Compris",
+          "debut": 15.7,
+          "fin": 16.02
+        },
+        {
+          "mot": " tout",
+          "debut": 16.02,
+          "fin": 16.08
+        },
+        {
+          "mot": " le",
+          "debut": 16.08,
+          "fin": 16.18
+        },
+        {
+          "mot": " monde",
+          "debut": 16.18,
+          "fin": 16.28
+        },
+        {
+          "mot": " ?",
+          "debut": 16.28,
+          "fin": 16.38
+        },
+        {
+          "mot": " Nassim,",
+          "debut": 16.38,
+          "fin": 16.74
+        },
+        {
+          "mot": " c",
+          "debut": 16.78,
+          "fin": 17.12
+        },
+        {
+          "mot": "'est",
+          "debut": 17.12,
+          "fin": 17.22
+        },
+        {
+          "mot": " compris.",
+          "debut": 17.22,
+          "fin": 17.42
+        }
+      ]
+    },
+    {
+      "debut": 17.7,
+      "fin": 18.72,
+      "texte": "Naïf, c'est compris.",
+      "mots": [
+        {
+          "mot": " Naïf,",
+          "debut": 17.7,
+          "fin": 18.02
+        },
+        {
+          "mot": " c",
+          "debut": 18.1,
+          "fin": 18.46
+        },
+        {
+          "mot": "'est",
+          "debut": 18.46,
+          "fin": 18.54
+        },
+        {
+          "mot": " compris.",
+          "debut": 18.54,
+          "fin": 18.72
+        }
+      ]
+    },
+    {
+      "debut": 19.66,
+      "fin": 21.46,
+      "texte": "Le cœur, le cœur il est à place.",
+      "mots": [
+        {
+          "mot": " Le",
+          "debut": 19.66,
+          "fin": 19.98
+        },
+        {
+          "mot": " cœur,",
+          "debut": 19.98,
+          "fin": 20.3
+        },
+        {
+          "mot": " le",
+          "debut": 20.36,
+          "fin": 20.8
+        },
+        {
+          "mot": " cœur",
+          "debut": 20.8,
+          "fin": 21.04
+        },
+        {
+          "mot": " il",
+          "debut": 21.04,
+          "fin": 21.16
+        },
+        {
+          "mot": " est",
+          "debut": 21.16,
+          "fin": 21.24
+        },
+        {
+          "mot": " à",
+          "debut": 21.24,
+          "fin": 21.3
+        },
+        {
+          "mot": " place.",
+          "debut": 21.3,
+          "fin": 21.46
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {
+    "debut": [
+      {
+        "debut": 0.0,
+        "fin": 7.58,
+        "texte": "Par contre, les steaks, ce n'est pas la tête, c'est le cœur, le cœur c'est la place, le cœur c'est la place, personne, personne, personne.",
+        "mots": [
+          {
+            "mot": " Par",
+            "debut": 0.0,
+            "fin": 0.22
+          },
+          {
+            "mot": " contre,",
+            "debut": 0.22,
+            "fin": 0.44
+          },
+          {
+            "mot": " les",
+            "debut": 0.66,
+            "fin": 1.68
+          },
+          {
+            "mot": " steaks,",
+            "debut": 1.68,
+            "fin": 2.1
+          },
+          {
+            "mot": " ce",
+            "debut": 2.1,
+            "fin": 2.24
+          },
+          {
+            "mot": " n",
+            "debut": 2.24,
+            "fin": 2.26
+          },
+          {
+            "mot": "'est",
+            "debut": 2.26,
+            "fin": 2.34
+          },
+          {
+            "mot": " pas",
+            "debut": 2.34,
+            "fin": 2.4
+          },
+          {
+            "mot": " la",
+            "debut": 2.4,
+            "fin": 2.46
+          },
+          {
+            "mot": " tête,",
+            "debut": 2.46,
+            "fin": 2.62
+          },
+          {
+            "mot": " c",
+            "debut": 2.76,
+            "fin": 3.1
+          },
+          {
+            "mot": "'est",
+            "debut": 3.1,
+            "fin": 3.26
+          },
+          {
+            "mot": " le",
+            "debut": 3.26,
+            "fin": 3.26
+          },
+          {
+            "mot": " cœur,",
+            "debut": 3.26,
+            "fin": 3.54
+          },
+          {
+            "mot": " le",
+            "debut": 3.64,
+            "fin": 4.08
+          },
+          {
+            "mot": " cœur",
+            "debut": 4.08,
+            "fin": 4.36
+          },
+          {
+            "mot": " c",
+            "debut": 4.36,
+            "fin": 4.5
+          },
+          {
+            "mot": "'est",
+            "debut": 4.5,
+            "fin": 4.6
+          },
+          {
+            "mot": " la",
+            "debut": 4.6,
+            "fin": 4.66
+          },
+          {
+            "mot": " place,",
+            "debut": 4.66,
+            "fin": 4.88
+          },
+          {
+            "mot": " le",
+            "debut": 5.0,
+            "fin": 5.24
+          },
+          {
+            "mot": " cœur",
+            "debut": 5.24,
+            "fin": 5.58
+          },
+          {
+            "mot": " c",
+            "debut": 5.58,
+            "fin": 5.86
+          },
+          {
+            "mot": "'est",
+            "debut": 5.86,
+            "fin": 6.18
+          },
+          {
+            "mot": " la",
+            "debut": 6.18,
+            "fin": 6.32
+          },
+          {
+            "mot": " place,",
+            "debut": 6.32,
+            "fin": 6.44
+          },
+          {
+            "mot": " personne,",
+            "debut": 6.44,
+            "fin": 6.44
+          },
+          {
+            "mot": " personne,",
+            "debut": 6.44,
+            "fin": 6.62
+          },
+          {
+            "mot": " personne.",
+            "debut": 7.14,
+            "fin": 7.58
+          }
+        ]
+      }
+    ],
+    "fin": [
+      {
+        "debut": 1.04,
+        "fin": 4.92,
+        "texte": "Compris tout le monde ? Nassim, c'est compris ? Naïf, c'est compris ?",
+        "mots": [
+          {
+            "mot": " Compris",
+            "debut": 1.04,
+            "fin": 1.34
+          },
+          {
+            "mot": " tout",
+            "debut": 1.34,
+            "fin": 1.42
+          },
+          {
+            "mot": " le",
+            "debut": 1.42,
+            "fin": 1.5
+          },
+          {
+            "mot": " monde",
+            "debut": 1.5,
+            "fin": 1.6
+          },
+          {
+            "mot": " ?",
+            "debut": 1.6,
+            "fin": 1.68
+          },
+          {
+            "mot": " Nassim,",
+            "debut": 1.68,
+            "fin": 2.08
+          },
+          {
+            "mot": " c",
+            "debut": 2.08,
+            "fin": 2.42
+          },
+          {
+            "mot": "'est",
+            "debut": 2.42,
+            "fin": 2.54
+          },
+          {
+            "mot": " compris",
+            "debut": 2.54,
+            "fin": 2.72
+          },
+          {
+            "mot": " ?",
+            "debut": 2.72,
+            "fin": 2.86
+          },
+          {
+            "mot": " Naïf,",
+            "debut": 2.86,
+            "fin": 3.36
+          },
+          {
+            "mot": " c",
+            "debut": 3.44,
+            "fin": 3.76
+          },
+          {
+            "mot": "'est",
+            "debut": 3.76,
+            "fin": 3.86
+          },
+          {
+            "mot": " compris",
+            "debut": 3.86,
+            "fin": 4.06
+          },
+          {
+            "mot": " ?",
+            "debut": 4.06,
+            "fin": 4.92
+          }
+        ]
+      },
+      {
+        "debut": 4.92,
+        "fin": 7.46,
+        "texte": "Le cœur, le cœur il est à place, ok ? Naïf.",
+        "mots": [
+          {
+            "mot": " Le",
+            "debut": 4.92,
+            "fin": 5.24
+          },
+          {
+            "mot": " cœur,",
+            "debut": 5.24,
+            "fin": 5.5
+          },
+          {
+            "mot": " le",
+            "debut": 5.68,
+            "fin": 6.12
+          },
+          {
+            "mot": " cœur",
+            "debut": 6.12,
+            "fin": 6.36
+          },
+          {
+            "mot": " il",
+            "debut": 6.36,
+            "fin": 6.48
+          },
+          {
+            "mot": " est",
+            "debut": 6.48,
+            "fin": 6.58
+          },
+          {
+            "mot": " à",
+            "debut": 6.58,
+            "fin": 6.64
+          },
+          {
+            "mot": " place,",
+            "debut": 6.64,
+            "fin": 6.76
+          },
+          {
+            "mot": " ok",
+            "debut": 6.88,
+            "fin": 7.04
+          },
+          {
+            "mot": " ?",
+            "debut": 7.04,
+            "fin": 7.16
+          },
+          {
+            "mot": " Naïf.",
+            "debut": 7.16,
+            "fin": 7.46
+          }
+        ]
+      }
+    ]
+  },
+  "lufs": -14.07,
+  "pic_vrai_db": -1.11,
+  "duree": 22.7,
+  "taille_octets": 12900983
+}

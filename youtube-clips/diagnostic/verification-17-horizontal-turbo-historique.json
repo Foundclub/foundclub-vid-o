@@ -1,0 +1,160 @@
+{
+  "numero": 17,
+  "format": "horizontal",
+  "sha256": "4fe89172379eb95b17fd9aaf3f2338558e65dfbc1c46a31997eabdac1d8224e2",
+  "texte_prevu_sha256": "0afb297970bb1281350a95edb78c0e600e91c864759167ba7bbbd23fd85b4c59",
+  "verification": "Derniers mots différents dans la retranscription",
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "on",
+    "n",
+    "a",
+    "aucun"
+  ],
+  "derniers_mots_attendus": [
+    "fait",
+    "pas",
+    "les",
+    "efforts"
+  ],
+  "premiers_mots_reconnus": [
+    "on",
+    "n",
+    "a",
+    "aucun"
+  ],
+  "derniers_mots_reconnus": [
+    "on",
+    "n",
+    "a",
+    "aucun"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": false,
+  "transcription": [
+    {
+      "debut": 0.11,
+      "fin": 0.91,
+      "texte": "On n'a aucun...",
+      "mots": [
+        {
+          "mot": " On",
+          "debut": 0.11,
+          "fin": 0.61
+        },
+        {
+          "mot": " n",
+          "debut": 0.61,
+          "fin": 0.65
+        },
+        {
+          "mot": "'a",
+          "debut": 0.65,
+          "fin": 0.75
+        },
+        {
+          "mot": " aucun...",
+          "debut": 0.75,
+          "fin": 0.91
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {
+    "fin": [
+      {
+        "debut": 0.0,
+        "fin": 1.94,
+        "texte": "Parce que là, c'est fini, il y a ce qu'on a...",
+        "mots": [
+          {
+            "mot": " Parce",
+            "debut": 0.0,
+            "fin": 0.12
+          },
+          {
+            "mot": " que",
+            "debut": 0.12,
+            "fin": 0.24
+          },
+          {
+            "mot": " là,",
+            "debut": 0.24,
+            "fin": 0.32
+          },
+          {
+            "mot": " c",
+            "debut": 0.38,
+            "fin": 0.42
+          },
+          {
+            "mot": "'est",
+            "debut": 0.42,
+            "fin": 0.52
+          },
+          {
+            "mot": " fini,",
+            "debut": 0.52,
+            "fin": 0.7
+          },
+          {
+            "mot": " il",
+            "debut": 0.8,
+            "fin": 0.86
+          },
+          {
+            "mot": " y",
+            "debut": 0.86,
+            "fin": 0.92
+          },
+          {
+            "mot": " a",
+            "debut": 0.92,
+            "fin": 0.94
+          },
+          {
+            "mot": " ce",
+            "debut": 0.94,
+            "fin": 1.04
+          },
+          {
+            "mot": " qu",
+            "debut": 1.04,
+            "fin": 1.18
+          },
+          {
+            "mot": "'on",
+            "debut": 1.18,
+            "fin": 1.28
+          },
+          {
+            "mot": " a...",
+            "debut": 1.28,
+            "fin": 1.94
+          }
+        ]
+      },
+      {
+        "debut": 1.94,
+        "fin": 2.48,
+        "texte": "On a...",
+        "mots": [
+          {
+            "mot": " On",
+            "debut": 1.94,
+            "fin": 2.08
+          },
+          {
+            "mot": " a...",
+            "debut": 2.08,
+            "fin": 2.48
+          }
+        ]
+      }
+    ]
+  },
+  "lufs": -14.03,
+  "pic_vrai_db": -6.84,
+  "duree": 28.866666,
+  "taille_octets": 17168682
+}

@@ -1,0 +1,1599 @@
+[
+  {
+    "debut": 233.68,
+    "fin": 238.04,
+    "texte": "Ensuite, on a deux équipes de la région qui sont le stade bokehrois et l'Olympique d'Alès.",
+    "mots": [
+      {
+        "mot": " Ensuite,",
+        "debut": 233.68,
+        "fin": 234.16,
+        "probabilite": 0.7652
+      },
+      {
+        "mot": " on",
+        "debut": 234.34,
+        "fin": 234.34,
+        "probabilite": 0.9853
+      },
+      {
+        "mot": " a",
+        "debut": 234.34,
+        "fin": 234.5,
+        "probabilite": 0.9989
+      },
+      {
+        "mot": " deux",
+        "debut": 234.5,
+        "fin": 234.72,
+        "probabilite": 0.8804
+      },
+      {
+        "mot": " équipes",
+        "debut": 234.72,
+        "fin": 235.06,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " de",
+        "debut": 235.06,
+        "fin": 235.16,
+        "probabilite": 0.9984
+      },
+      {
+        "mot": " la",
+        "debut": 235.16,
+        "fin": 235.28,
+        "probabilite": 0.9977
+      },
+      {
+        "mot": " région",
+        "debut": 235.28,
+        "fin": 235.58,
+        "probabilite": 0.9963
+      },
+      {
+        "mot": " qui",
+        "debut": 235.58,
+        "fin": 235.82,
+        "probabilite": 0.9311
+      },
+      {
+        "mot": " sont",
+        "debut": 235.82,
+        "fin": 235.98,
+        "probabilite": 0.9986
+      },
+      {
+        "mot": " le",
+        "debut": 235.98,
+        "fin": 236.14,
+        "probabilite": 0.9876
+      },
+      {
+        "mot": " stade",
+        "debut": 236.14,
+        "fin": 236.38,
+        "probabilite": 0.8648
+      },
+      {
+        "mot": " bokehrois",
+        "debut": 236.38,
+        "fin": 236.94,
+        "probabilite": 0.7465
+      },
+      {
+        "mot": " et",
+        "debut": 236.94,
+        "fin": 237.26,
+        "probabilite": 0.9954
+      },
+      {
+        "mot": " l",
+        "debut": 237.26,
+        "fin": 237.38,
+        "probabilite": 0.9862
+      },
+      {
+        "mot": "'Olympique",
+        "debut": 237.38,
+        "fin": 237.68,
+        "probabilite": 0.9313
+      },
+      {
+        "mot": " d",
+        "debut": 237.68,
+        "fin": 237.8,
+        "probabilite": 0.9595
+      },
+      {
+        "mot": "'Alès.",
+        "debut": 237.8,
+        "fin": 238.04,
+        "probabilite": 0.8486
+      }
+    ]
+  },
+  {
+    "debut": 238.22,
+    "fin": 240.08,
+    "texte": "Les deux équipes, on les a jouées en prépa.",
+    "mots": [
+      {
+        "mot": " Les",
+        "debut": 238.22,
+        "fin": 238.44,
+        "probabilite": 0.9255
+      },
+      {
+        "mot": " deux",
+        "debut": 238.44,
+        "fin": 238.58,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " équipes,",
+        "debut": 238.58,
+        "fin": 238.9,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " on",
+        "debut": 238.98,
+        "fin": 239.0,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " les",
+        "debut": 239.0,
+        "fin": 239.12,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " a",
+        "debut": 239.12,
+        "fin": 239.24,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " jouées",
+        "debut": 239.24,
+        "fin": 239.52,
+        "probabilite": 0.9307
+      },
+      {
+        "mot": " en",
+        "debut": 239.52,
+        "fin": 239.76,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " prépa.",
+        "debut": 239.76,
+        "fin": 240.08,
+        "probabilite": 0.9746
+      }
+    ]
+  },
+  {
+    "debut": 240.3,
+    "fin": 246.14,
+    "texte": "On a trois équipes de Côte d'Azur qui sont l'US Monde de Lieux, le Canet Rocheville et Rivera.",
+    "mots": [
+      {
+        "mot": " On",
+        "debut": 240.3,
+        "fin": 240.46,
+        "probabilite": 0.9989
+      },
+      {
+        "mot": " a",
+        "debut": 240.46,
+        "fin": 240.62,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " trois",
+        "debut": 240.62,
+        "fin": 240.94,
+        "probabilite": 0.9961
+      },
+      {
+        "mot": " équipes",
+        "debut": 240.94,
+        "fin": 241.46,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " de",
+        "debut": 241.46,
+        "fin": 241.58,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " Côte",
+        "debut": 241.58,
+        "fin": 241.78,
+        "probabilite": 0.9369
+      },
+      {
+        "mot": " d",
+        "debut": 241.78,
+        "fin": 241.86,
+        "probabilite": 0.9987
+      },
+      {
+        "mot": "'Azur",
+        "debut": 241.86,
+        "fin": 242.2,
+        "probabilite": 0.9919
+      },
+      {
+        "mot": " qui",
+        "debut": 242.2,
+        "fin": 242.74,
+        "probabilite": 0.9916
+      },
+      {
+        "mot": " sont",
+        "debut": 242.74,
+        "fin": 242.96,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " l",
+        "debut": 242.96,
+        "fin": 243.08,
+        "probabilite": 0.9925
+      },
+      {
+        "mot": "'US",
+        "debut": 243.08,
+        "fin": 243.24,
+        "probabilite": 0.9672
+      },
+      {
+        "mot": " Monde",
+        "debut": 243.24,
+        "fin": 243.5,
+        "probabilite": 0.6723
+      },
+      {
+        "mot": " de",
+        "debut": 243.5,
+        "fin": 243.64,
+        "probabilite": 0.3636
+      },
+      {
+        "mot": " Lieux,",
+        "debut": 243.64,
+        "fin": 243.88,
+        "probabilite": 0.7229
+      },
+      {
+        "mot": " le",
+        "debut": 244.28,
+        "fin": 244.34,
+        "probabilite": 0.9988
+      },
+      {
+        "mot": " Canet",
+        "debut": 244.34,
+        "fin": 244.7,
+        "probabilite": 0.8725
+      },
+      {
+        "mot": " Rocheville",
+        "debut": 244.7,
+        "fin": 245.16,
+        "probabilite": 0.9304
+      },
+      {
+        "mot": " et",
+        "debut": 245.16,
+        "fin": 245.64,
+        "probabilite": 0.9984
+      },
+      {
+        "mot": " Rivera.",
+        "debut": 245.64,
+        "fin": 246.14,
+        "probabilite": 0.775
+      }
+    ]
+  },
+  {
+    "debut": 246.44,
+    "fin": 252.82,
+    "texte": "Ensuite, il y a trois équipes qui se situent en Provence avec l'étoile sportive fosséenne, Berre et le FC Rousset.",
+    "mots": [
+      {
+        "mot": " Ensuite,",
+        "debut": 246.44,
+        "fin": 246.68,
+        "probabilite": 0.9972
+      },
+      {
+        "mot": " il",
+        "debut": 246.84,
+        "fin": 246.86,
+        "probabilite": 0.999
+      },
+      {
+        "mot": " y",
+        "debut": 246.86,
+        "fin": 246.9,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " a",
+        "debut": 246.9,
+        "fin": 246.96,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " trois",
+        "debut": 246.96,
+        "fin": 247.28,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " équipes",
+        "debut": 247.28,
+        "fin": 248.02,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " qui",
+        "debut": 248.02,
+        "fin": 248.2,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " se",
+        "debut": 248.2,
+        "fin": 248.4,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " situent",
+        "debut": 248.4,
+        "fin": 248.74,
+        "probabilite": 0.9918
+      },
+      {
+        "mot": " en",
+        "debut": 248.74,
+        "fin": 248.9,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " Provence",
+        "debut": 248.9,
+        "fin": 249.34,
+        "probabilite": 0.987
+      },
+      {
+        "mot": " avec",
+        "debut": 249.34,
+        "fin": 249.6,
+        "probabilite": 0.9896
+      },
+      {
+        "mot": " l",
+        "debut": 249.6,
+        "fin": 249.78,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": "'étoile",
+        "debut": 249.78,
+        "fin": 249.96,
+        "probabilite": 0.8732
+      },
+      {
+        "mot": " sportive",
+        "debut": 249.96,
+        "fin": 250.4,
+        "probabilite": 0.9842
+      },
+      {
+        "mot": " fosséenne,",
+        "debut": 250.4,
+        "fin": 251.04,
+        "probabilite": 0.703
+      },
+      {
+        "mot": " Berre",
+        "debut": 251.52,
+        "fin": 251.92,
+        "probabilite": 0.6457
+      },
+      {
+        "mot": " et",
+        "debut": 251.92,
+        "fin": 252.14,
+        "probabilite": 0.9973
+      },
+      {
+        "mot": " le",
+        "debut": 252.14,
+        "fin": 252.24,
+        "probabilite": 0.7537
+      },
+      {
+        "mot": " FC",
+        "debut": 252.24,
+        "fin": 252.46,
+        "probabilite": 0.9934
+      },
+      {
+        "mot": " Rousset.",
+        "debut": 252.46,
+        "fin": 252.82,
+        "probabilite": 0.9502
+      }
+    ]
+  },
+  {
+    "debut": 252.98,
+    "fin": 261.8,
+    "texte": "Et ensuite, on a encore deux équipes qui se situent à d'autres endroits un peu particuliers avec Espali en Haute-Loire et Luciana qui se situe en Corse.",
+    "mots": [
+      {
+        "mot": " Et",
+        "debut": 252.98,
+        "fin": 253.02,
+        "probabilite": 0.8425
+      },
+      {
+        "mot": " ensuite,",
+        "debut": 253.02,
+        "fin": 253.34,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " on",
+        "debut": 253.62,
+        "fin": 253.7,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " a",
+        "debut": 253.7,
+        "fin": 253.84,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " encore",
+        "debut": 253.84,
+        "fin": 254.12,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " deux",
+        "debut": 254.12,
+        "fin": 254.44,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " équipes",
+        "debut": 254.44,
+        "fin": 254.96,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " qui",
+        "debut": 254.96,
+        "fin": 255.3,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " se",
+        "debut": 255.3,
+        "fin": 255.46,
+        "probabilite": 0.9977
+      },
+      {
+        "mot": " situent",
+        "debut": 255.46,
+        "fin": 255.84,
+        "probabilite": 0.998
+      },
+      {
+        "mot": " à",
+        "debut": 255.84,
+        "fin": 255.9,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " d",
+        "debut": 255.9,
+        "fin": 256.04,
+        "probabilite": 0.9981
+      },
+      {
+        "mot": "'autres",
+        "debut": 256.04,
+        "fin": 256.12,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " endroits",
+        "debut": 256.12,
+        "fin": 256.42,
+        "probabilite": 0.9983
+      },
+      {
+        "mot": " un",
+        "debut": 256.42,
+        "fin": 256.54,
+        "probabilite": 0.991
+      },
+      {
+        "mot": " peu",
+        "debut": 256.54,
+        "fin": 256.6,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " particuliers",
+        "debut": 256.6,
+        "fin": 257.24,
+        "probabilite": 0.9959
+      },
+      {
+        "mot": " avec",
+        "debut": 257.24,
+        "fin": 257.62,
+        "probabilite": 0.9371
+      },
+      {
+        "mot": " Espali",
+        "debut": 257.62,
+        "fin": 258.14,
+        "probabilite": 0.5205
+      },
+      {
+        "mot": " en",
+        "debut": 258.14,
+        "fin": 258.44,
+        "probabilite": 0.9802
+      },
+      {
+        "mot": " Haute",
+        "debut": 258.44,
+        "fin": 258.72,
+        "probabilite": 0.9868
+      },
+      {
+        "mot": "-Loire",
+        "debut": 258.72,
+        "fin": 259.08,
+        "probabilite": 0.9597
+      },
+      {
+        "mot": " et",
+        "debut": 259.08,
+        "fin": 259.7,
+        "probabilite": 0.9983
+      },
+      {
+        "mot": " Luciana",
+        "debut": 259.7,
+        "fin": 260.32,
+        "probabilite": 0.9137
+      },
+      {
+        "mot": " qui",
+        "debut": 260.32,
+        "fin": 260.62,
+        "probabilite": 0.9978
+      },
+      {
+        "mot": " se",
+        "debut": 260.62,
+        "fin": 260.78,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " situe",
+        "debut": 260.78,
+        "fin": 261.18,
+        "probabilite": 0.9758
+      },
+      {
+        "mot": " en",
+        "debut": 261.18,
+        "fin": 261.5,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " Corse.",
+        "debut": 261.5,
+        "fin": 261.8,
+        "probabilite": 0.9991
+      }
+    ]
+  },
+  {
+    "debut": 261.8,
+    "fin": 266.12,
+    "texte": "Il faut savoir que dans cette poule, il y a une seule équipe qui descend du niveau d'au-dessus",
+    "mots": [
+      {
+        "mot": " Il",
+        "debut": 261.8,
+        "fin": 261.98,
+        "probabilite": 0.8228
+      },
+      {
+        "mot": " faut",
+        "debut": 261.98,
+        "fin": 262.08,
+        "probabilite": 0.999
+      },
+      {
+        "mot": " savoir",
+        "debut": 262.08,
+        "fin": 262.42,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " que",
+        "debut": 262.42,
+        "fin": 262.6,
+        "probabilite": 0.9969
+      },
+      {
+        "mot": " dans",
+        "debut": 262.6,
+        "fin": 262.72,
+        "probabilite": 0.997
+      },
+      {
+        "mot": " cette",
+        "debut": 262.72,
+        "fin": 262.98,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " poule,",
+        "debut": 262.98,
+        "fin": 263.28,
+        "probabilite": 0.913
+      },
+      {
+        "mot": " il",
+        "debut": 263.56,
+        "fin": 263.56,
+        "probabilite": 0.9947
+      },
+      {
+        "mot": " y",
+        "debut": 263.56,
+        "fin": 263.64,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " a",
+        "debut": 263.64,
+        "fin": 263.82,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " une",
+        "debut": 263.82,
+        "fin": 263.98,
+        "probabilite": 0.9984
+      },
+      {
+        "mot": " seule",
+        "debut": 263.98,
+        "fin": 264.18,
+        "probabilite": 0.9985
+      },
+      {
+        "mot": " équipe",
+        "debut": 264.18,
+        "fin": 264.56,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " qui",
+        "debut": 264.56,
+        "fin": 264.74,
+        "probabilite": 0.9677
+      },
+      {
+        "mot": " descend",
+        "debut": 264.74,
+        "fin": 265.2,
+        "probabilite": 0.9927
+      },
+      {
+        "mot": " du",
+        "debut": 265.2,
+        "fin": 265.52,
+        "probabilite": 0.9911
+      },
+      {
+        "mot": " niveau",
+        "debut": 265.52,
+        "fin": 265.76,
+        "probabilite": 0.9974
+      },
+      {
+        "mot": " d",
+        "debut": 265.76,
+        "fin": 265.92,
+        "probabilite": 0.4359
+      },
+      {
+        "mot": "'au",
+        "debut": 265.92,
+        "fin": 265.96,
+        "probabilite": 0.7407
+      },
+      {
+        "mot": "-dessus",
+        "debut": 265.96,
+        "fin": 266.12,
+        "probabilite": 0.985
+      }
+    ]
+  },
+  {
+    "debut": 266.12,
+    "fin": 269.48,
+    "texte": "Qui est anciennement la N2 et maintenant la N1, c'est le FC Rousset",
+    "mots": [
+      {
+        "mot": " Qui",
+        "debut": 266.12,
+        "fin": 266.36,
+        "probabilite": 0.0903
+      },
+      {
+        "mot": " est",
+        "debut": 266.36,
+        "fin": 266.56,
+        "probabilite": 0.9955
+      },
+      {
+        "mot": " anciennement",
+        "debut": 266.56,
+        "fin": 267.04,
+        "probabilite": 0.997
+      },
+      {
+        "mot": " la",
+        "debut": 267.04,
+        "fin": 267.2,
+        "probabilite": 0.9986
+      },
+      {
+        "mot": " N2",
+        "debut": 267.2,
+        "fin": 267.58,
+        "probabilite": 0.9953
+      },
+      {
+        "mot": " et",
+        "debut": 267.58,
+        "fin": 267.74,
+        "probabilite": 0.9079
+      },
+      {
+        "mot": " maintenant",
+        "debut": 267.74,
+        "fin": 268.0,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " la",
+        "debut": 268.0,
+        "fin": 268.16,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " N1,",
+        "debut": 268.16,
+        "fin": 268.56,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " c",
+        "debut": 268.64,
+        "fin": 268.7,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": "'est",
+        "debut": 268.7,
+        "fin": 268.74,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " le",
+        "debut": 268.74,
+        "fin": 268.84,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " FC",
+        "debut": 268.84,
+        "fin": 269.14,
+        "probabilite": 0.9943
+      },
+      {
+        "mot": " Rousset",
+        "debut": 269.14,
+        "fin": 269.48,
+        "probabilite": 0.9594
+      }
+    ]
+  },
+  {
+    "debut": 269.48,
+    "fin": 271.88,
+    "texte": "Et du coup, il y a 4 équipes qui sont promues",
+    "mots": [
+      {
+        "mot": " Et",
+        "debut": 269.48,
+        "fin": 269.72,
+        "probabilite": 0.9891
+      },
+      {
+        "mot": " du",
+        "debut": 269.72,
+        "fin": 269.92,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " coup,",
+        "debut": 269.92,
+        "fin": 270.04,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " il",
+        "debut": 270.22,
+        "fin": 270.24,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " y",
+        "debut": 270.24,
+        "fin": 270.3,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " a",
+        "debut": 270.3,
+        "fin": 270.54,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " 4",
+        "debut": 270.54,
+        "fin": 270.8,
+        "probabilite": 0.7892
+      },
+      {
+        "mot": " équipes",
+        "debut": 270.8,
+        "fin": 271.16,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " qui",
+        "debut": 271.16,
+        "fin": 271.28,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " sont",
+        "debut": 271.28,
+        "fin": 271.46,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " promues",
+        "debut": 271.46,
+        "fin": 271.88,
+        "probabilite": 0.961
+      }
+    ]
+  },
+  {
+    "debut": 271.88,
+    "fin": 274.02,
+    "texte": "Nous, bien évidemment, l'Atlas Payad",
+    "mots": [
+      {
+        "mot": " Nous,",
+        "debut": 271.88,
+        "fin": 272.44,
+        "probabilite": 0.992
+      },
+      {
+        "mot": " bien",
+        "debut": 272.56,
+        "fin": 272.64,
+        "probabilite": 0.9976
+      },
+      {
+        "mot": " évidemment,",
+        "debut": 272.64,
+        "fin": 273.06,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " l",
+        "debut": 273.16,
+        "fin": 273.3,
+        "probabilite": 0.8546
+      },
+      {
+        "mot": "'Atlas",
+        "debut": 273.3,
+        "fin": 273.56,
+        "probabilite": 0.9938
+      },
+      {
+        "mot": " Payad",
+        "debut": 273.56,
+        "fin": 274.02,
+        "probabilite": 0.8274
+      }
+    ]
+  },
+  {
+    "debut": 274.02,
+    "fin": 275.2,
+    "texte": "Il y a l'équipe de Berre",
+    "mots": [
+      {
+        "mot": " Il",
+        "debut": 274.02,
+        "fin": 274.22,
+        "probabilite": 0.8927
+      },
+      {
+        "mot": " y",
+        "debut": 274.22,
+        "fin": 274.22,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " a",
+        "debut": 274.22,
+        "fin": 274.26,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " l",
+        "debut": 274.26,
+        "fin": 274.36,
+        "probabilite": 1.0
+      },
+      {
+        "mot": "'équipe",
+        "debut": 274.36,
+        "fin": 274.6,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " de",
+        "debut": 274.6,
+        "fin": 274.76,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " Berre",
+        "debut": 274.76,
+        "fin": 275.2,
+        "probabilite": 0.6022
+      }
+    ]
+  },
+  {
+    "debut": 275.2,
+    "fin": 276.1,
+    "texte": "Il y a Espagie",
+    "mots": [
+      {
+        "mot": " Il",
+        "debut": 275.2,
+        "fin": 275.34,
+        "probabilite": 0.4433
+      },
+      {
+        "mot": " y",
+        "debut": 275.34,
+        "fin": 275.42,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " a",
+        "debut": 275.42,
+        "fin": 275.48,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " Espagie",
+        "debut": 275.48,
+        "fin": 276.1,
+        "probabilite": 0.5034
+      }
+    ]
+  },
+  {
+    "debut": 276.1,
+    "fin": 277.24,
+    "texte": "Et l'US Mondelieu",
+    "mots": [
+      {
+        "mot": " Et",
+        "debut": 276.1,
+        "fin": 276.3,
+        "probabilite": 0.3808
+      },
+      {
+        "mot": " l",
+        "debut": 276.3,
+        "fin": 276.54,
+        "probabilite": 0.9953
+      },
+      {
+        "mot": "'US",
+        "debut": 276.54,
+        "fin": 276.74,
+        "probabilite": 0.9917
+      },
+      {
+        "mot": " Mondelieu",
+        "debut": 276.74,
+        "fin": 277.24,
+        "probabilite": 0.8065
+      }
+    ]
+  },
+  {
+    "debut": 277.24,
+    "fin": 280.62,
+    "texte": "Donc voilà, je pense que la poule, elle est quand même très très très costaud",
+    "mots": [
+      {
+        "mot": " Donc",
+        "debut": 277.24,
+        "fin": 277.52,
+        "probabilite": 0.8261
+      },
+      {
+        "mot": " voilà,",
+        "debut": 277.52,
+        "fin": 277.78,
+        "probabilite": 0.9956
+      },
+      {
+        "mot": " je",
+        "debut": 277.88,
+        "fin": 277.98,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " pense",
+        "debut": 277.98,
+        "fin": 278.16,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " que",
+        "debut": 278.16,
+        "fin": 278.3,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " la",
+        "debut": 278.3,
+        "fin": 278.44,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " poule,",
+        "debut": 278.44,
+        "fin": 278.64,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " elle",
+        "debut": 278.66,
+        "fin": 278.74,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " est",
+        "debut": 278.74,
+        "fin": 278.94,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " quand",
+        "debut": 278.94,
+        "fin": 279.12,
+        "probabilite": 0.9978
+      },
+      {
+        "mot": " même",
+        "debut": 279.12,
+        "fin": 279.32,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " très",
+        "debut": 279.32,
+        "fin": 279.78,
+        "probabilite": 0.9967
+      },
+      {
+        "mot": " très",
+        "debut": 279.78,
+        "fin": 280.04,
+        "probabilite": 0.9734
+      },
+      {
+        "mot": " très",
+        "debut": 280.04,
+        "fin": 280.24,
+        "probabilite": 0.9969
+      },
+      {
+        "mot": " costaud",
+        "debut": 280.24,
+        "fin": 280.62,
+        "probabilite": 0.978
+      }
+    ]
+  },
+  {
+    "debut": 280.62,
+    "fin": 282.28,
+    "texte": "Dites-moi en commentaire ce que vous en pensez",
+    "mots": [
+      {
+        "mot": " Dites",
+        "debut": 280.62,
+        "fin": 280.88,
+        "probabilite": 0.9776
+      },
+      {
+        "mot": "-moi",
+        "debut": 280.88,
+        "fin": 280.98,
+        "probabilite": 0.9851
+      },
+      {
+        "mot": " en",
+        "debut": 280.98,
+        "fin": 281.1,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " commentaire",
+        "debut": 281.1,
+        "fin": 281.48,
+        "probabilite": 0.9966
+      },
+      {
+        "mot": " ce",
+        "debut": 281.48,
+        "fin": 281.6,
+        "probabilite": 0.9981
+      },
+      {
+        "mot": " que",
+        "debut": 281.6,
+        "fin": 281.66,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " vous",
+        "debut": 281.66,
+        "fin": 281.76,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " en",
+        "debut": 281.76,
+        "fin": 281.9,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " pensez",
+        "debut": 281.9,
+        "fin": 282.28,
+        "probabilite": 0.9999
+      }
+    ]
+  },
+  {
+    "debut": 282.28,
+    "fin": 284.62,
+    "texte": "Sérieusement, j'ai fait beaucoup de N3",
+    "mots": [
+      {
+        "mot": " Sérieusement,",
+        "debut": 282.28,
+        "fin": 283.0,
+        "probabilite": 0.9838
+      },
+      {
+        "mot": " j",
+        "debut": 283.26,
+        "fin": 283.36,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": "'ai",
+        "debut": 283.36,
+        "fin": 283.46,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " fait",
+        "debut": 283.46,
+        "fin": 283.7,
+        "probabilite": 0.9979
+      },
+      {
+        "mot": " beaucoup",
+        "debut": 283.7,
+        "fin": 284.02,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " de",
+        "debut": 284.02,
+        "fin": 284.2,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " N3",
+        "debut": 284.2,
+        "fin": 284.62,
+        "probabilite": 0.9997
+      }
+    ]
+  },
+  {
+    "debut": 285.28,
+    "fin": 286.08,
+    "texte": "Maintenant N2",
+    "mots": [
+      {
+        "mot": " Maintenant",
+        "debut": 285.28,
+        "fin": 285.68,
+        "probabilite": 0.9261
+      },
+      {
+        "mot": " N2",
+        "debut": 285.68,
+        "fin": 286.08,
+        "probabilite": 0.9286
+      }
+    ]
+  },
+  {
+    "debut": 286.08,
+    "fin": 289.98,
+    "texte": "Et honnêtement, ça fait partie des poules les plus dures dans lesquelles j'ai joué",
+    "mots": [
+      {
+        "mot": " Et",
+        "debut": 286.08,
+        "fin": 286.86,
+        "probabilite": 0.9974
+      },
+      {
+        "mot": " honnêtement,",
+        "debut": 286.86,
+        "fin": 287.32,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " ça",
+        "debut": 287.72,
+        "fin": 287.92,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " fait",
+        "debut": 287.92,
+        "fin": 288.06,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " partie",
+        "debut": 288.06,
+        "fin": 288.34,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " des",
+        "debut": 288.34,
+        "fin": 288.52,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " poules",
+        "debut": 288.52,
+        "fin": 288.7,
+        "probabilite": 0.9954
+      },
+      {
+        "mot": " les",
+        "debut": 288.7,
+        "fin": 288.82,
+        "probabilite": 0.998
+      },
+      {
+        "mot": " plus",
+        "debut": 288.82,
+        "fin": 289.0,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " dures",
+        "debut": 289.0,
+        "fin": 289.26,
+        "probabilite": 0.7718
+      },
+      {
+        "mot": " dans",
+        "debut": 289.26,
+        "fin": 289.38,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " lesquelles",
+        "debut": 289.38,
+        "fin": 289.6,
+        "probabilite": 0.996
+      },
+      {
+        "mot": " j",
+        "debut": 289.6,
+        "fin": 289.74,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": "'ai",
+        "debut": 289.74,
+        "fin": 289.78,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " joué",
+        "debut": 289.78,
+        "fin": 289.98,
+        "probabilite": 0.9992
+      }
+    ]
+  },
+  {
+    "debut": 289.98,
+    "fin": 295.06,
+    "texte": "Je vous remets le calendrier pour cette saison, comme ça vous cochez la petite case",
+    "mots": [
+      {
+        "mot": " Je",
+        "debut": 289.98,
+        "fin": 290.4,
+        "probabilite": 0.8213
+      },
+      {
+        "mot": " vous",
+        "debut": 290.4,
+        "fin": 290.58,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " remets",
+        "debut": 290.58,
+        "fin": 290.94,
+        "probabilite": 0.9931
+      },
+      {
+        "mot": " le",
+        "debut": 290.94,
+        "fin": 291.12,
+        "probabilite": 0.9987
+      },
+      {
+        "mot": " calendrier",
+        "debut": 291.12,
+        "fin": 291.76,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " pour",
+        "debut": 291.76,
+        "fin": 291.96,
+        "probabilite": 0.9918
+      },
+      {
+        "mot": " cette",
+        "debut": 291.96,
+        "fin": 292.16,
+        "probabilite": 0.9988
+      },
+      {
+        "mot": " saison,",
+        "debut": 292.16,
+        "fin": 292.48,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " comme",
+        "debut": 292.6,
+        "fin": 292.68,
+        "probabilite": 0.9932
+      },
+      {
+        "mot": " ça",
+        "debut": 292.68,
+        "fin": 292.8,
+        "probabilite": 0.9796
+      },
+      {
+        "mot": " vous",
+        "debut": 292.8,
+        "fin": 292.96,
+        "probabilite": 0.9313
+      },
+      {
+        "mot": " cochez",
+        "debut": 292.96,
+        "fin": 293.48,
+        "probabilite": 0.9972
+      },
+      {
+        "mot": " la",
+        "debut": 293.48,
+        "fin": 294.32,
+        "probabilite": 0.9955
+      },
+      {
+        "mot": " petite",
+        "debut": 294.32,
+        "fin": 294.64,
+        "probabilite": 0.9985
+      },
+      {
+        "mot": " case",
+        "debut": 294.64,
+        "fin": 295.06,
+        "probabilite": 0.9984
+      }
+    ]
+  },
+  {
+    "debut": 295.06,
+    "fin": 299.62,
+    "texte": "où vous pourrez peut-être faire un déplacement pour venir me voir jouer moi et toute l'équipe.",
+    "mots": [
+      {
+        "mot": " où",
+        "debut": 295.06,
+        "fin": 295.7,
+        "probabilite": 0.7113
+      },
+      {
+        "mot": " vous",
+        "debut": 295.7,
+        "fin": 296.14,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " pourrez",
+        "debut": 296.14,
+        "fin": 296.38,
+        "probabilite": 0.9967
+      },
+      {
+        "mot": " peut",
+        "debut": 296.38,
+        "fin": 296.52,
+        "probabilite": 0.994
+      },
+      {
+        "mot": "-être",
+        "debut": 296.52,
+        "fin": 296.62,
+        "probabilite": 0.9884
+      },
+      {
+        "mot": " faire",
+        "debut": 296.62,
+        "fin": 296.8,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " un",
+        "debut": 296.8,
+        "fin": 296.9,
+        "probabilite": 0.9794
+      },
+      {
+        "mot": " déplacement",
+        "debut": 296.9,
+        "fin": 297.34,
+        "probabilite": 0.6885
+      },
+      {
+        "mot": " pour",
+        "debut": 297.34,
+        "fin": 297.62,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " venir",
+        "debut": 297.62,
+        "fin": 297.84,
+        "probabilite": 0.9984
+      },
+      {
+        "mot": " me",
+        "debut": 297.84,
+        "fin": 298.02,
+        "probabilite": 0.9962
+      },
+      {
+        "mot": " voir",
+        "debut": 298.02,
+        "fin": 298.2,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " jouer",
+        "debut": 298.2,
+        "fin": 298.42,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " moi",
+        "debut": 298.42,
+        "fin": 298.74,
+        "probabilite": 0.6952
+      },
+      {
+        "mot": " et",
+        "debut": 298.74,
+        "fin": 299.02,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " toute",
+        "debut": 299.02,
+        "fin": 299.18,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " l",
+        "debut": 299.18,
+        "fin": 299.3,
+        "probabilite": 1.0
+      },
+      {
+        "mot": "'équipe.",
+        "debut": 299.3,
+        "fin": 299.62,
+        "probabilite": 0.9999
+      }
+    ]
+  }
+]

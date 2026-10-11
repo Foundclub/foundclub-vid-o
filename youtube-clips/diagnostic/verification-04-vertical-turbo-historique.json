@@ -1,0 +1,768 @@
+{
+  "numero": 4,
+  "format": "vertical",
+  "sha256": "5e0a63ff661f9bc814d71b23af2694ffd9865eddefbf93b290e6a75de51809a0",
+  "texte_prevu_sha256": "3246ac0c3588bb44149bd5ce8570f4197607de4eb92d1c907138fd88e0177849",
+  "verification": "OK",
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "en",
+    "tout",
+    "cas",
+    "nous"
+  ],
+  "derniers_mots_attendus": [
+    "match",
+    "faites",
+    "vous",
+    "plaisir"
+  ],
+  "premiers_mots_reconnus": [
+    "en",
+    "tout",
+    "cas",
+    "nous"
+  ],
+  "derniers_mots_reconnus": [
+    "match",
+    "faites",
+    "vous",
+    "plaisir"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": true,
+  "transcription": [
+    {
+      "debut": 0.0,
+      "fin": 3.02,
+      "texte": "En tout cas, nous de notre côté, pour le premier match de championnat,",
+      "mots": [
+        {
+          "mot": " En",
+          "debut": 0.0,
+          "fin": 0.2
+        },
+        {
+          "mot": " tout",
+          "debut": 0.2,
+          "fin": 0.36
+        },
+        {
+          "mot": " cas,",
+          "debut": 0.36,
+          "fin": 0.54
+        },
+        {
+          "mot": " nous",
+          "debut": 0.8,
+          "fin": 0.86
+        },
+        {
+          "mot": " de",
+          "debut": 0.86,
+          "fin": 1.0
+        },
+        {
+          "mot": " notre",
+          "debut": 1.0,
+          "fin": 1.18
+        },
+        {
+          "mot": " côté,",
+          "debut": 1.18,
+          "fin": 1.46
+        },
+        {
+          "mot": " pour",
+          "debut": 1.74,
+          "fin": 1.82
+        },
+        {
+          "mot": " le",
+          "debut": 1.82,
+          "fin": 1.96
+        },
+        {
+          "mot": " premier",
+          "debut": 1.96,
+          "fin": 2.2
+        },
+        {
+          "mot": " match",
+          "debut": 2.2,
+          "fin": 2.4
+        },
+        {
+          "mot": " de",
+          "debut": 2.4,
+          "fin": 2.54
+        },
+        {
+          "mot": " championnat,",
+          "debut": 2.54,
+          "fin": 3.02
+        }
+      ]
+    },
+    {
+      "debut": 3.18,
+      "fin": 6.46,
+      "texte": "ça sera à l'extérieur face à Baird, équipe qui est promue également.",
+      "mots": [
+        {
+          "mot": " ça",
+          "debut": 3.18,
+          "fin": 3.4
+        },
+        {
+          "mot": " sera",
+          "debut": 3.4,
+          "fin": 3.58
+        },
+        {
+          "mot": " à",
+          "debut": 3.58,
+          "fin": 3.7
+        },
+        {
+          "mot": " l",
+          "debut": 3.7,
+          "fin": 3.72
+        },
+        {
+          "mot": "'extérieur",
+          "debut": 3.72,
+          "fin": 4.16
+        },
+        {
+          "mot": " face",
+          "debut": 4.16,
+          "fin": 4.46
+        },
+        {
+          "mot": " à",
+          "debut": 4.46,
+          "fin": 4.64
+        },
+        {
+          "mot": " Baird,",
+          "debut": 4.64,
+          "fin": 4.94
+        },
+        {
+          "mot": " équipe",
+          "debut": 5.02,
+          "fin": 5.36
+        },
+        {
+          "mot": " qui",
+          "debut": 5.36,
+          "fin": 5.54
+        },
+        {
+          "mot": " est",
+          "debut": 5.54,
+          "fin": 5.74
+        },
+        {
+          "mot": " promue",
+          "debut": 5.74,
+          "fin": 6.06
+        },
+        {
+          "mot": " également.",
+          "debut": 6.06,
+          "fin": 6.46
+        }
+      ]
+    },
+    {
+      "debut": 6.76,
+      "fin": 8.84,
+      "texte": "Donc je pense que ça va être un match plutôt intéressant.",
+      "mots": [
+        {
+          "mot": " Donc",
+          "debut": 6.76,
+          "fin": 6.94
+        },
+        {
+          "mot": " je",
+          "debut": 6.94,
+          "fin": 7.04
+        },
+        {
+          "mot": " pense",
+          "debut": 7.04,
+          "fin": 7.18
+        },
+        {
+          "mot": " que",
+          "debut": 7.18,
+          "fin": 7.3
+        },
+        {
+          "mot": " ça",
+          "debut": 7.3,
+          "fin": 7.4
+        },
+        {
+          "mot": " va",
+          "debut": 7.4,
+          "fin": 7.52
+        },
+        {
+          "mot": " être",
+          "debut": 7.52,
+          "fin": 7.6
+        },
+        {
+          "mot": " un",
+          "debut": 7.6,
+          "fin": 7.74
+        },
+        {
+          "mot": " match",
+          "debut": 7.74,
+          "fin": 7.92
+        },
+        {
+          "mot": " plutôt",
+          "debut": 7.92,
+          "fin": 8.28
+        },
+        {
+          "mot": " intéressant.",
+          "debut": 8.28,
+          "fin": 8.84
+        }
+      ]
+    },
+    {
+      "debut": 9.24,
+      "fin": 12.14,
+      "texte": "Pour ma part, malheureusement, je ne vais pas pouvoir jouer ce premier match",
+      "mots": [
+        {
+          "mot": " Pour",
+          "debut": 9.24,
+          "fin": 9.46
+        },
+        {
+          "mot": " ma",
+          "debut": 9.46,
+          "fin": 9.66
+        },
+        {
+          "mot": " part,",
+          "debut": 9.66,
+          "fin": 9.86
+        },
+        {
+          "mot": " malheureusement,",
+          "debut": 9.96,
+          "fin": 10.46
+        },
+        {
+          "mot": " je",
+          "debut": 10.58,
+          "fin": 10.8
+        },
+        {
+          "mot": " ne",
+          "debut": 10.8,
+          "fin": 10.92
+        },
+        {
+          "mot": " vais",
+          "debut": 10.92,
+          "fin": 10.92
+        },
+        {
+          "mot": " pas",
+          "debut": 10.92,
+          "fin": 11.0
+        },
+        {
+          "mot": " pouvoir",
+          "debut": 11.0,
+          "fin": 11.24
+        },
+        {
+          "mot": " jouer",
+          "debut": 11.24,
+          "fin": 11.44
+        },
+        {
+          "mot": " ce",
+          "debut": 11.44,
+          "fin": 11.62
+        },
+        {
+          "mot": " premier",
+          "debut": 11.62,
+          "fin": 11.86
+        },
+        {
+          "mot": " match",
+          "debut": 11.86,
+          "fin": 12.14
+        }
+      ]
+    },
+    {
+      "debut": 12.14,
+      "fin": 16.12,
+      "texte": "parce que l'année dernière, j'étais en fédéral et j'ai été reclassé fédéral cette année.",
+      "mots": [
+        {
+          "mot": " parce",
+          "debut": 12.14,
+          "fin": 12.48
+        },
+        {
+          "mot": " que",
+          "debut": 12.48,
+          "fin": 12.6
+        },
+        {
+          "mot": " l",
+          "debut": 12.6,
+          "fin": 12.68
+        },
+        {
+          "mot": "'année",
+          "debut": 12.68,
+          "fin": 12.76
+        },
+        {
+          "mot": " dernière,",
+          "debut": 12.76,
+          "fin": 13.02
+        },
+        {
+          "mot": " j",
+          "debut": 13.14,
+          "fin": 13.16
+        },
+        {
+          "mot": "'étais",
+          "debut": 13.16,
+          "fin": 13.26
+        },
+        {
+          "mot": " en",
+          "debut": 13.26,
+          "fin": 13.4
+        },
+        {
+          "mot": " fédéral",
+          "debut": 13.4,
+          "fin": 13.88
+        },
+        {
+          "mot": " et",
+          "debut": 13.88,
+          "fin": 14.3
+        },
+        {
+          "mot": " j",
+          "debut": 14.3,
+          "fin": 14.42
+        },
+        {
+          "mot": "'ai",
+          "debut": 14.42,
+          "fin": 14.52
+        },
+        {
+          "mot": " été",
+          "debut": 14.52,
+          "fin": 14.62
+        },
+        {
+          "mot": " reclassé",
+          "debut": 14.62,
+          "fin": 15.26
+        },
+        {
+          "mot": " fédéral",
+          "debut": 15.26,
+          "fin": 15.66
+        },
+        {
+          "mot": " cette",
+          "debut": 15.66,
+          "fin": 15.9
+        },
+        {
+          "mot": " année.",
+          "debut": 15.9,
+          "fin": 16.12
+        }
+      ]
+    },
+    {
+      "debut": 16.46,
+      "fin": 19.24,
+      "texte": "Et vu que mon contrat l'année dernière, je l'avais signé au 1er septembre,",
+      "mots": [
+        {
+          "mot": " Et",
+          "debut": 16.46,
+          "fin": 16.6
+        },
+        {
+          "mot": " vu",
+          "debut": 16.6,
+          "fin": 16.8
+        },
+        {
+          "mot": " que",
+          "debut": 16.8,
+          "fin": 16.92
+        },
+        {
+          "mot": " mon",
+          "debut": 16.92,
+          "fin": 17.08
+        },
+        {
+          "mot": " contrat",
+          "debut": 17.08,
+          "fin": 17.38
+        },
+        {
+          "mot": " l",
+          "debut": 17.38,
+          "fin": 17.5
+        },
+        {
+          "mot": "'année",
+          "debut": 17.5,
+          "fin": 17.58
+        },
+        {
+          "mot": " dernière,",
+          "debut": 17.58,
+          "fin": 17.86
+        },
+        {
+          "mot": " je",
+          "debut": 17.92,
+          "fin": 18.0
+        },
+        {
+          "mot": " l",
+          "debut": 18.0,
+          "fin": 18.06
+        },
+        {
+          "mot": "'avais",
+          "debut": 18.06,
+          "fin": 18.16
+        },
+        {
+          "mot": " signé",
+          "debut": 18.16,
+          "fin": 18.42
+        },
+        {
+          "mot": " au",
+          "debut": 18.42,
+          "fin": 18.52
+        },
+        {
+          "mot": " 1er",
+          "debut": 18.52,
+          "fin": 18.76
+        },
+        {
+          "mot": " septembre,",
+          "debut": 18.76,
+          "fin": 19.24
+        }
+      ]
+    },
+    {
+      "debut": 19.3,
+      "fin": 21.04,
+      "texte": "je pourrais jouer qu'à partir du 1er septembre.",
+      "mots": [
+        {
+          "mot": " je",
+          "debut": 19.3,
+          "fin": 19.42
+        },
+        {
+          "mot": " pourrais",
+          "debut": 19.42,
+          "fin": 19.6
+        },
+        {
+          "mot": " jouer",
+          "debut": 19.6,
+          "fin": 19.8
+        },
+        {
+          "mot": " qu",
+          "debut": 19.8,
+          "fin": 19.92
+        },
+        {
+          "mot": "'à",
+          "debut": 19.92,
+          "fin": 19.98
+        },
+        {
+          "mot": " partir",
+          "debut": 19.98,
+          "fin": 20.18
+        },
+        {
+          "mot": " du",
+          "debut": 20.18,
+          "fin": 20.36
+        },
+        {
+          "mot": " 1er",
+          "debut": 20.36,
+          "fin": 20.68
+        },
+        {
+          "mot": " septembre.",
+          "debut": 20.68,
+          "fin": 21.04
+        }
+      ]
+    },
+    {
+      "debut": 21.18,
+      "fin": 23.84,
+      "texte": "Donc il n'y a que ce match-là, malheureusement, que je ne pourrais pas jouer.",
+      "mots": [
+        {
+          "mot": " Donc",
+          "debut": 21.18,
+          "fin": 21.36
+        },
+        {
+          "mot": " il",
+          "debut": 21.36,
+          "fin": 21.48
+        },
+        {
+          "mot": " n",
+          "debut": 21.48,
+          "fin": 21.54
+        },
+        {
+          "mot": "'y",
+          "debut": 21.54,
+          "fin": 21.56
+        },
+        {
+          "mot": " a",
+          "debut": 21.56,
+          "fin": 21.58
+        },
+        {
+          "mot": " que",
+          "debut": 21.58,
+          "fin": 21.72
+        },
+        {
+          "mot": " ce",
+          "debut": 21.72,
+          "fin": 21.92
+        },
+        {
+          "mot": " match",
+          "debut": 21.92,
+          "fin": 22.16
+        },
+        {
+          "mot": "-là,",
+          "debut": 22.16,
+          "fin": 22.3
+        },
+        {
+          "mot": " malheureusement,",
+          "debut": 22.38,
+          "fin": 22.78
+        },
+        {
+          "mot": " que",
+          "debut": 22.86,
+          "fin": 22.96
+        },
+        {
+          "mot": " je",
+          "debut": 22.96,
+          "fin": 23.08
+        },
+        {
+          "mot": " ne",
+          "debut": 23.08,
+          "fin": 23.2
+        },
+        {
+          "mot": " pourrais",
+          "debut": 23.2,
+          "fin": 23.44
+        },
+        {
+          "mot": " pas",
+          "debut": 23.44,
+          "fin": 23.58
+        },
+        {
+          "mot": " jouer.",
+          "debut": 23.58,
+          "fin": 23.84
+        }
+      ]
+    },
+    {
+      "debut": 24.5,
+      "fin": 27.5,
+      "texte": "Et après, ne vous inquiétez pas, on va réintégrer le groupe tranquillement.",
+      "mots": [
+        {
+          "mot": " Et",
+          "debut": 24.5,
+          "fin": 24.58
+        },
+        {
+          "mot": " après,",
+          "debut": 24.58,
+          "fin": 24.86
+        },
+        {
+          "mot": " ne",
+          "debut": 25.04,
+          "fin": 25.2
+        },
+        {
+          "mot": " vous",
+          "debut": 25.2,
+          "fin": 25.2
+        },
+        {
+          "mot": " inquiétez",
+          "debut": 25.2,
+          "fin": 25.5
+        },
+        {
+          "mot": " pas,",
+          "debut": 25.5,
+          "fin": 25.64
+        },
+        {
+          "mot": " on",
+          "debut": 25.7,
+          "fin": 25.78
+        },
+        {
+          "mot": " va",
+          "debut": 25.78,
+          "fin": 25.92
+        },
+        {
+          "mot": " réintégrer",
+          "debut": 25.92,
+          "fin": 26.42
+        },
+        {
+          "mot": " le",
+          "debut": 26.42,
+          "fin": 26.54
+        },
+        {
+          "mot": " groupe",
+          "debut": 26.54,
+          "fin": 26.78
+        },
+        {
+          "mot": " tranquillement.",
+          "debut": 26.78,
+          "fin": 27.5
+        }
+      ]
+    },
+    {
+      "debut": 27.64,
+      "fin": 29.28,
+      "texte": "Bref, je vous laisse le résumé du match.",
+      "mots": [
+        {
+          "mot": " Bref,",
+          "debut": 27.64,
+          "fin": 27.84
+        },
+        {
+          "mot": " je",
+          "debut": 28.04,
+          "fin": 28.12
+        },
+        {
+          "mot": " vous",
+          "debut": 28.12,
+          "fin": 28.22
+        },
+        {
+          "mot": " laisse",
+          "debut": 28.22,
+          "fin": 28.36
+        },
+        {
+          "mot": " le",
+          "debut": 28.36,
+          "fin": 28.52
+        },
+        {
+          "mot": " résumé",
+          "debut": 28.52,
+          "fin": 28.86
+        },
+        {
+          "mot": " du",
+          "debut": 28.86,
+          "fin": 29.0
+        },
+        {
+          "mot": " match.",
+          "debut": 29.0,
+          "fin": 29.28
+        }
+      ]
+    },
+    {
+      "debut": 29.28,
+      "fin": 30.04,
+      "texte": "faites vous plaisir",
+      "mots": [
+        {
+          "mot": " faites",
+          "debut": 29.28,
+          "fin": 29.7
+        },
+        {
+          "mot": " vous",
+          "debut": 29.7,
+          "fin": 29.78
+        },
+        {
+          "mot": " plaisir",
+          "debut": 29.78,
+          "fin": 30.04
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {},
+  "lufs": -14.04,
+  "pic_vrai_db": -1.09,
+  "duree": 30.2,
+  "taille_octets": 26012081
+}

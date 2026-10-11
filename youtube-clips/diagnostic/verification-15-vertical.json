@@ -1,0 +1,856 @@
+{
+  "numero": 15,
+  "format": "vertical",
+  "sha256": "c634a3c9640f5c869ade51771757233f3c6e50c36267827500c90829016f2e68",
+  "texte_prevu_sha256": "a4029654f549b2b181d08e6a112024ea10959ad014ef366ea7b92661e5649054",
+  "verification": "OK",
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "oh",
+    "soyez",
+    "plus",
+    "vicieux"
+  ],
+  "derniers_mots_attendus": [
+    "mais",
+    "oui",
+    "mais",
+    "oui"
+  ],
+  "premiers_mots_reconnus": [
+    "soyez",
+    "plus",
+    "vicieux",
+    "les"
+  ],
+  "derniers_mots_reconnus": [
+    "mais",
+    "oui",
+    "mais",
+    "oui"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": true,
+  "transcription": [
+    {
+      "debut": 0.56,
+      "fin": 5.3,
+      "texte": "Soyez plus vicieux les mecs, ils font que parler, ils font que les couilles, mettez des coups, rentrez leur dedans !",
+      "mots": [
+        {
+          "mot": " Soyez",
+          "debut": 0.56,
+          "fin": 0.88
+        },
+        {
+          "mot": " plus",
+          "debut": 0.88,
+          "fin": 1.06
+        },
+        {
+          "mot": " vicieux",
+          "debut": 1.06,
+          "fin": 1.38
+        },
+        {
+          "mot": " les",
+          "debut": 1.38,
+          "fin": 1.52
+        },
+        {
+          "mot": " mecs,",
+          "debut": 1.52,
+          "fin": 1.76
+        },
+        {
+          "mot": " ils",
+          "debut": 1.86,
+          "fin": 1.96
+        },
+        {
+          "mot": " font",
+          "debut": 1.96,
+          "fin": 2.04
+        },
+        {
+          "mot": " que",
+          "debut": 2.04,
+          "fin": 2.2
+        },
+        {
+          "mot": " parler,",
+          "debut": 2.2,
+          "fin": 2.54
+        },
+        {
+          "mot": " ils",
+          "debut": 2.7,
+          "fin": 2.7
+        },
+        {
+          "mot": " font",
+          "debut": 2.7,
+          "fin": 2.8
+        },
+        {
+          "mot": " que",
+          "debut": 2.8,
+          "fin": 2.86
+        },
+        {
+          "mot": " les",
+          "debut": 2.86,
+          "fin": 2.94
+        },
+        {
+          "mot": " couilles,",
+          "debut": 2.94,
+          "fin": 3.24
+        },
+        {
+          "mot": " mettez",
+          "debut": 3.46,
+          "fin": 3.9
+        },
+        {
+          "mot": " des",
+          "debut": 3.9,
+          "fin": 4.02
+        },
+        {
+          "mot": " coups,",
+          "debut": 4.02,
+          "fin": 4.3
+        },
+        {
+          "mot": " rentrez",
+          "debut": 4.3,
+          "fin": 4.46
+        },
+        {
+          "mot": " leur",
+          "debut": 4.46,
+          "fin": 4.58
+        },
+        {
+          "mot": " dedans",
+          "debut": 4.58,
+          "fin": 4.84
+        },
+        {
+          "mot": " !",
+          "debut": 4.84,
+          "fin": 5.3
+        }
+      ]
+    },
+    {
+      "debut": 5.3,
+      "fin": 7.78,
+      "texte": "Quand on perd le pendant le gars dans la surface ça va, cassez le jeu !",
+      "mots": [
+        {
+          "mot": " Quand",
+          "debut": 5.3,
+          "fin": 5.44
+        },
+        {
+          "mot": " on",
+          "debut": 5.44,
+          "fin": 5.5
+        },
+        {
+          "mot": " perd",
+          "debut": 5.5,
+          "fin": 5.6
+        },
+        {
+          "mot": " le",
+          "debut": 5.6,
+          "fin": 5.72
+        },
+        {
+          "mot": " pendant",
+          "debut": 5.72,
+          "fin": 5.88
+        },
+        {
+          "mot": " le",
+          "debut": 5.88,
+          "fin": 6.04
+        },
+        {
+          "mot": " gars",
+          "debut": 6.04,
+          "fin": 6.12
+        },
+        {
+          "mot": " dans",
+          "debut": 6.12,
+          "fin": 6.2
+        },
+        {
+          "mot": " la",
+          "debut": 6.2,
+          "fin": 6.3
+        },
+        {
+          "mot": " surface",
+          "debut": 6.3,
+          "fin": 6.54
+        },
+        {
+          "mot": " ça",
+          "debut": 6.54,
+          "fin": 6.68
+        },
+        {
+          "mot": " va,",
+          "debut": 6.68,
+          "fin": 6.78
+        },
+        {
+          "mot": " cassez",
+          "debut": 6.86,
+          "fin": 7.2
+        },
+        {
+          "mot": " le",
+          "debut": 7.2,
+          "fin": 7.26
+        },
+        {
+          "mot": " jeu",
+          "debut": 7.26,
+          "fin": 7.42
+        },
+        {
+          "mot": " !",
+          "debut": 7.42,
+          "fin": 7.78
+        }
+      ]
+    },
+    {
+      "debut": 7.78,
+      "fin": 10.22,
+      "texte": "Et laissez pas partir le contre-attaque aussi les frères !",
+      "mots": [
+        {
+          "mot": " Et",
+          "debut": 7.78,
+          "fin": 8.0
+        },
+        {
+          "mot": " laissez",
+          "debut": 8.0,
+          "fin": 8.26
+        },
+        {
+          "mot": " pas",
+          "debut": 8.26,
+          "fin": 8.32
+        },
+        {
+          "mot": " partir",
+          "debut": 8.32,
+          "fin": 8.56
+        },
+        {
+          "mot": " le",
+          "debut": 8.56,
+          "fin": 8.7
+        },
+        {
+          "mot": " contre",
+          "debut": 8.7,
+          "fin": 8.9
+        },
+        {
+          "mot": "-attaque",
+          "debut": 8.9,
+          "fin": 9.18
+        },
+        {
+          "mot": " aussi",
+          "debut": 9.18,
+          "fin": 9.36
+        },
+        {
+          "mot": " les",
+          "debut": 9.36,
+          "fin": 9.54
+        },
+        {
+          "mot": " frères",
+          "debut": 9.54,
+          "fin": 9.78
+        },
+        {
+          "mot": " !",
+          "debut": 9.78,
+          "fin": 10.22
+        }
+      ]
+    },
+    {
+      "debut": 11.48,
+      "fin": 14.12,
+      "texte": "Et en deuxième mi-temps les mecs, on a intérimé à gagner les frères !",
+      "mots": [
+        {
+          "mot": " Et",
+          "debut": 11.48,
+          "fin": 11.8
+        },
+        {
+          "mot": " en",
+          "debut": 11.8,
+          "fin": 11.88
+        },
+        {
+          "mot": " deuxième",
+          "debut": 11.88,
+          "fin": 12.1
+        },
+        {
+          "mot": " mi",
+          "debut": 12.1,
+          "fin": 12.34
+        },
+        {
+          "mot": "-temps",
+          "debut": 12.34,
+          "fin": 12.4
+        },
+        {
+          "mot": " les",
+          "debut": 12.4,
+          "fin": 12.5
+        },
+        {
+          "mot": " mecs,",
+          "debut": 12.5,
+          "fin": 12.62
+        },
+        {
+          "mot": " on",
+          "debut": 12.7,
+          "fin": 12.72
+        },
+        {
+          "mot": " a",
+          "debut": 12.72,
+          "fin": 12.78
+        },
+        {
+          "mot": " intérimé",
+          "debut": 12.78,
+          "fin": 13.02
+        },
+        {
+          "mot": " à",
+          "debut": 13.02,
+          "fin": 13.12
+        },
+        {
+          "mot": " gagner",
+          "debut": 13.12,
+          "fin": 13.36
+        },
+        {
+          "mot": " les",
+          "debut": 13.36,
+          "fin": 13.48
+        },
+        {
+          "mot": " frères",
+          "debut": 13.48,
+          "fin": 13.7
+        },
+        {
+          "mot": " !",
+          "debut": 13.7,
+          "fin": 14.12
+        }
+      ]
+    },
+    {
+      "debut": 14.54,
+      "fin": 18.56,
+      "texte": "Je vous le dis, ça y est là, on est trop gentil, trop gentil, trop gentil !",
+      "mots": [
+        {
+          "mot": " Je",
+          "debut": 14.54,
+          "fin": 14.86
+        },
+        {
+          "mot": " vous",
+          "debut": 14.86,
+          "fin": 14.96
+        },
+        {
+          "mot": " le",
+          "debut": 14.96,
+          "fin": 15.04
+        },
+        {
+          "mot": " dis,",
+          "debut": 15.04,
+          "fin": 15.2
+        },
+        {
+          "mot": " ça",
+          "debut": 15.48,
+          "fin": 15.6
+        },
+        {
+          "mot": " y",
+          "debut": 15.6,
+          "fin": 15.7
+        },
+        {
+          "mot": " est",
+          "debut": 15.7,
+          "fin": 15.76
+        },
+        {
+          "mot": " là,",
+          "debut": 15.76,
+          "fin": 15.88
+        },
+        {
+          "mot": " on",
+          "debut": 16.04,
+          "fin": 16.04
+        },
+        {
+          "mot": " est",
+          "debut": 16.04,
+          "fin": 16.44
+        },
+        {
+          "mot": " trop",
+          "debut": 16.44,
+          "fin": 16.64
+        },
+        {
+          "mot": " gentil,",
+          "debut": 16.64,
+          "fin": 17.02
+        },
+        {
+          "mot": " trop",
+          "debut": 17.12,
+          "fin": 17.26
+        },
+        {
+          "mot": " gentil,",
+          "debut": 17.26,
+          "fin": 17.58
+        },
+        {
+          "mot": " trop",
+          "debut": 17.68,
+          "fin": 17.78
+        },
+        {
+          "mot": " gentil",
+          "debut": 17.78,
+          "fin": 18.22
+        },
+        {
+          "mot": " !",
+          "debut": 18.22,
+          "fin": 18.56
+        }
+      ]
+    },
+    {
+      "debut": 18.56,
+      "fin": 20.3,
+      "texte": "Pas d'impact, rien !",
+      "mots": [
+        {
+          "mot": " Pas",
+          "debut": 18.56,
+          "fin": 18.86
+        },
+        {
+          "mot": " d",
+          "debut": 18.86,
+          "fin": 18.96
+        },
+        {
+          "mot": "'impact,",
+          "debut": 18.96,
+          "fin": 19.3
+        },
+        {
+          "mot": " rien",
+          "debut": 19.36,
+          "fin": 19.68
+        },
+        {
+          "mot": " !",
+          "debut": 19.68,
+          "fin": 20.3
+        }
+      ]
+    },
+    {
+      "debut": 20.3,
+      "fin": 23.7,
+      "texte": "C'est pas une tirage de maillot, rien, rien les frères !",
+      "mots": [
+        {
+          "mot": " C",
+          "debut": 20.3,
+          "fin": 20.4
+        },
+        {
+          "mot": "'est",
+          "debut": 20.4,
+          "fin": 20.44
+        },
+        {
+          "mot": " pas",
+          "debut": 20.44,
+          "fin": 20.52
+        },
+        {
+          "mot": " une",
+          "debut": 20.52,
+          "fin": 20.64
+        },
+        {
+          "mot": " tirage",
+          "debut": 20.64,
+          "fin": 20.92
+        },
+        {
+          "mot": " de",
+          "debut": 20.92,
+          "fin": 21.04
+        },
+        {
+          "mot": " maillot,",
+          "debut": 21.04,
+          "fin": 21.32
+        },
+        {
+          "mot": " rien,",
+          "debut": 21.44,
+          "fin": 21.7
+        },
+        {
+          "mot": " rien",
+          "debut": 22.6,
+          "fin": 22.74
+        },
+        {
+          "mot": " les",
+          "debut": 22.74,
+          "fin": 22.98
+        },
+        {
+          "mot": " frères",
+          "debut": 22.98,
+          "fin": 23.22
+        },
+        {
+          "mot": " !",
+          "debut": 23.22,
+          "fin": 23.7
+        }
+      ]
+    },
+    {
+      "debut": 23.7,
+      "fin": 25.52,
+      "texte": "C'est pas normal, mais oui, mais oui !",
+      "mots": [
+        {
+          "mot": " C",
+          "debut": 23.7,
+          "fin": 24.0
+        },
+        {
+          "mot": "'est",
+          "debut": 24.0,
+          "fin": 24.08
+        },
+        {
+          "mot": " pas",
+          "debut": 24.08,
+          "fin": 24.22
+        },
+        {
+          "mot": " normal,",
+          "debut": 24.22,
+          "fin": 24.58
+        },
+        {
+          "mot": " mais",
+          "debut": 24.72,
+          "fin": 24.8
+        },
+        {
+          "mot": " oui,",
+          "debut": 24.8,
+          "fin": 24.98
+        },
+        {
+          "mot": " mais",
+          "debut": 25.12,
+          "fin": 25.28
+        },
+        {
+          "mot": " oui",
+          "debut": 25.28,
+          "fin": 25.44
+        },
+        {
+          "mot": " !",
+          "debut": 25.44,
+          "fin": 25.52
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {
+    "debut": [
+      {
+        "debut": 0.14,
+        "fin": 3.5,
+        "texte": "Oh, soyez plus vicieux les mecs ! Il faut que parler, il faut que les couilles !",
+        "mots": [
+          {
+            "mot": " Oh,",
+            "debut": 0.14,
+            "fin": 0.62
+          },
+          {
+            "mot": " soyez",
+            "debut": 0.7,
+            "fin": 0.88
+          },
+          {
+            "mot": " plus",
+            "debut": 0.88,
+            "fin": 1.06
+          },
+          {
+            "mot": " vicieux",
+            "debut": 1.06,
+            "fin": 1.4
+          },
+          {
+            "mot": " les",
+            "debut": 1.4,
+            "fin": 1.5
+          },
+          {
+            "mot": " mecs",
+            "debut": 1.5,
+            "fin": 1.74
+          },
+          {
+            "mot": " !",
+            "debut": 1.74,
+            "fin": 1.84
+          },
+          {
+            "mot": " Il",
+            "debut": 1.84,
+            "fin": 1.96
+          },
+          {
+            "mot": " faut",
+            "debut": 1.96,
+            "fin": 2.06
+          },
+          {
+            "mot": " que",
+            "debut": 2.06,
+            "fin": 2.2
+          },
+          {
+            "mot": " parler,",
+            "debut": 2.2,
+            "fin": 2.56
+          },
+          {
+            "mot": " il",
+            "debut": 2.72,
+            "fin": 2.72
+          },
+          {
+            "mot": " faut",
+            "debut": 2.72,
+            "fin": 2.78
+          },
+          {
+            "mot": " que",
+            "debut": 2.78,
+            "fin": 2.86
+          },
+          {
+            "mot": " les",
+            "debut": 2.86,
+            "fin": 2.94
+          },
+          {
+            "mot": " couilles",
+            "debut": 2.94,
+            "fin": 3.26
+          },
+          {
+            "mot": " !",
+            "debut": 3.26,
+            "fin": 3.5
+          }
+        ]
+      },
+      {
+        "debut": 3.5,
+        "fin": 5.28,
+        "texte": "Oh, mettez des coups, rentrez-le-en dedans !",
+        "mots": [
+          {
+            "mot": " Oh,",
+            "debut": 3.5,
+            "fin": 3.6
+          },
+          {
+            "mot": " mettez",
+            "debut": 3.66,
+            "fin": 3.9
+          },
+          {
+            "mot": " des",
+            "debut": 3.9,
+            "fin": 4.04
+          },
+          {
+            "mot": " coups,",
+            "debut": 4.04,
+            "fin": 4.3
+          },
+          {
+            "mot": " rentrez",
+            "debut": 4.3,
+            "fin": 4.48
+          },
+          {
+            "mot": "-le",
+            "debut": 4.48,
+            "fin": 4.56
+          },
+          {
+            "mot": "-en",
+            "debut": 4.56,
+            "fin": 4.64
+          },
+          {
+            "mot": " dedans",
+            "debut": 4.64,
+            "fin": 4.88
+          },
+          {
+            "mot": " !",
+            "debut": 4.88,
+            "fin": 5.28
+          }
+        ]
+      },
+      {
+        "debut": 5.28,
+        "fin": 7.68,
+        "texte": "Quand on perd notre ordinateur dans la surface, ça va ? Cassez le jeu !",
+        "mots": [
+          {
+            "mot": " Quand",
+            "debut": 5.28,
+            "fin": 5.46
+          },
+          {
+            "mot": " on",
+            "debut": 5.46,
+            "fin": 5.52
+          },
+          {
+            "mot": " perd",
+            "debut": 5.52,
+            "fin": 5.6
+          },
+          {
+            "mot": " notre",
+            "debut": 5.6,
+            "fin": 5.8
+          },
+          {
+            "mot": " ordinateur",
+            "debut": 5.8,
+            "fin": 6.08
+          },
+          {
+            "mot": " dans",
+            "debut": 6.08,
+            "fin": 6.18
+          },
+          {
+            "mot": " la",
+            "debut": 6.18,
+            "fin": 6.28
+          },
+          {
+            "mot": " surface,",
+            "debut": 6.28,
+            "fin": 6.54
+          },
+          {
+            "mot": " ça",
+            "debut": 6.68,
+            "fin": 6.7
+          },
+          {
+            "mot": " va",
+            "debut": 6.7,
+            "fin": 6.74
+          },
+          {
+            "mot": " ?",
+            "debut": 6.74,
+            "fin": 6.84
+          },
+          {
+            "mot": " Cassez",
+            "debut": 6.84,
+            "fin": 7.22
+          },
+          {
+            "mot": " le",
+            "debut": 7.22,
+            "fin": 7.26
+          },
+          {
+            "mot": " jeu",
+            "debut": 7.26,
+            "fin": 7.42
+          },
+          {
+            "mot": " !",
+            "debut": 7.42,
+            "fin": 7.68
+          }
+        ]
+      }
+    ]
+  },
+  "lufs": -14.1,
+  "pic_vrai_db": -1.76,
+  "duree": 25.566666,
+  "taille_octets": 16995917
+}

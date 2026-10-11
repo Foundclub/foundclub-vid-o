@@ -1,0 +1,905 @@
+[
+  {
+    "debut": 675.34,
+    "fin": 678.9,
+    "texte": "Quand tu manges, tu utilises les 3 doigts ici, comme ça.",
+    "mots": [
+      {
+        "mot": " Quand",
+        "debut": 675.34,
+        "fin": 675.7,
+        "probabilite": 0.1699
+      },
+      {
+        "mot": " tu",
+        "debut": 675.7,
+        "fin": 675.9,
+        "probabilite": 0.9262
+      },
+      {
+        "mot": " manges,",
+        "debut": 675.9,
+        "fin": 676.74,
+        "probabilite": 0.8773
+      },
+      {
+        "mot": " tu",
+        "debut": 676.84,
+        "fin": 676.92,
+        "probabilite": 0.888
+      },
+      {
+        "mot": " utilises",
+        "debut": 676.92,
+        "fin": 677.24,
+        "probabilite": 0.9512
+      },
+      {
+        "mot": " les",
+        "debut": 677.24,
+        "fin": 677.42,
+        "probabilite": 0.1928
+      },
+      {
+        "mot": " 3",
+        "debut": 677.42,
+        "fin": 678.06,
+        "probabilite": 0.439
+      },
+      {
+        "mot": " doigts",
+        "debut": 678.06,
+        "fin": 678.3,
+        "probabilite": 0.9972
+      },
+      {
+        "mot": " ici,",
+        "debut": 678.3,
+        "fin": 678.48,
+        "probabilite": 0.3154
+      },
+      {
+        "mot": " comme",
+        "debut": 678.58,
+        "fin": 678.78,
+        "probabilite": 0.5512
+      },
+      {
+        "mot": " ça.",
+        "debut": 678.78,
+        "fin": 678.9,
+        "probabilite": 0.9894
+      }
+    ]
+  },
+  {
+    "debut": 679.16,
+    "fin": 681.78,
+    "texte": "Quand tu manges, peu importe, 3 doigts.",
+    "mots": [
+      {
+        "mot": " Quand",
+        "debut": 679.16,
+        "fin": 679.52,
+        "probabilite": 0.6986
+      },
+      {
+        "mot": " tu",
+        "debut": 679.52,
+        "fin": 679.7,
+        "probabilite": 0.9625
+      },
+      {
+        "mot": " manges,",
+        "debut": 679.7,
+        "fin": 679.98,
+        "probabilite": 0.8933
+      },
+      {
+        "mot": " peu",
+        "debut": 680.08,
+        "fin": 680.54,
+        "probabilite": 0.8365
+      },
+      {
+        "mot": " importe,",
+        "debut": 680.54,
+        "fin": 681.18,
+        "probabilite": 0.994
+      },
+      {
+        "mot": " 3",
+        "debut": 681.24,
+        "fin": 681.42,
+        "probabilite": 0.9077
+      },
+      {
+        "mot": " doigts.",
+        "debut": 681.42,
+        "fin": 681.78,
+        "probabilite": 0.9988
+      }
+    ]
+  },
+  {
+    "debut": 682.28,
+    "fin": 683.94,
+    "texte": "Quand tu joues à la play, 4 doigts.",
+    "mots": [
+      {
+        "mot": " Quand",
+        "debut": 682.28,
+        "fin": 682.64,
+        "probabilite": 0.8865
+      },
+      {
+        "mot": " tu",
+        "debut": 682.64,
+        "fin": 682.92,
+        "probabilite": 0.9905
+      },
+      {
+        "mot": " joues",
+        "debut": 682.92,
+        "fin": 683.02,
+        "probabilite": 0.9776
+      },
+      {
+        "mot": " à",
+        "debut": 683.02,
+        "fin": 683.08,
+        "probabilite": 0.9732
+      },
+      {
+        "mot": " la",
+        "debut": 683.08,
+        "fin": 683.14,
+        "probabilite": 0.9891
+      },
+      {
+        "mot": " play,",
+        "debut": 683.14,
+        "fin": 683.32,
+        "probabilite": 0.4312
+      },
+      {
+        "mot": " 4",
+        "debut": 683.4,
+        "fin": 683.58,
+        "probabilite": 0.9922
+      },
+      {
+        "mot": " doigts.",
+        "debut": 683.58,
+        "fin": 683.94,
+        "probabilite": 0.9996
+      }
+    ]
+  },
+  {
+    "debut": 686.48,
+    "fin": 689.0,
+    "texte": "Quand tu fais l'oreille, 2 doigts.",
+    "mots": [
+      {
+        "mot": " Quand",
+        "debut": 686.48,
+        "fin": 686.84,
+        "probabilite": 0.9561
+      },
+      {
+        "mot": " tu",
+        "debut": 686.84,
+        "fin": 687.2,
+        "probabilite": 0.8817
+      },
+      {
+        "mot": " fais",
+        "debut": 687.2,
+        "fin": 687.46,
+        "probabilite": 0.9593
+      },
+      {
+        "mot": " l",
+        "debut": 687.46,
+        "fin": 688.1,
+        "probabilite": 0.9688
+      },
+      {
+        "mot": "'oreille,",
+        "debut": 688.1,
+        "fin": 688.32,
+        "probabilite": 0.9975
+      },
+      {
+        "mot": " 2",
+        "debut": 688.44,
+        "fin": 688.7,
+        "probabilite": 0.9435
+      },
+      {
+        "mot": " doigts.",
+        "debut": 688.7,
+        "fin": 689.0,
+        "probabilite": 0.9998
+      }
+    ]
+  },
+  {
+    "debut": 690.04,
+    "fin": 692.54,
+    "texte": "Faut être l'oreille, l'oreille c'est avec le petit doigt.",
+    "mots": [
+      {
+        "mot": " Faut",
+        "debut": 690.04,
+        "fin": 690.4,
+        "probabilite": 0.3826
+      },
+      {
+        "mot": " être",
+        "debut": 690.4,
+        "fin": 690.76,
+        "probabilite": 0.3559
+      },
+      {
+        "mot": " l",
+        "debut": 690.76,
+        "fin": 690.86,
+        "probabilite": 0.9673
+      },
+      {
+        "mot": "'oreille,",
+        "debut": 690.86,
+        "fin": 691.06,
+        "probabilite": 0.9979
+      },
+      {
+        "mot": " l",
+        "debut": 691.06,
+        "fin": 691.14,
+        "probabilite": 0.7587
+      },
+      {
+        "mot": "'oreille",
+        "debut": 691.14,
+        "fin": 691.32,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " c",
+        "debut": 691.32,
+        "fin": 691.44,
+        "probabilite": 0.5267
+      },
+      {
+        "mot": "'est",
+        "debut": 691.44,
+        "fin": 691.52,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " avec",
+        "debut": 691.52,
+        "fin": 691.74,
+        "probabilite": 0.8808
+      },
+      {
+        "mot": " le",
+        "debut": 691.74,
+        "fin": 692.22,
+        "probabilite": 0.9314
+      },
+      {
+        "mot": " petit",
+        "debut": 692.22,
+        "fin": 692.32,
+        "probabilite": 0.9234
+      },
+      {
+        "mot": " doigt.",
+        "debut": 692.32,
+        "fin": 692.54,
+        "probabilite": 0.5595
+      }
+    ]
+  },
+  {
+    "debut": 692.54,
+    "fin": 694.76,
+    "texte": "Mais t'es un fou toi, si tu fais avec ton doigt.",
+    "mots": [
+      {
+        "mot": " Mais",
+        "debut": 692.54,
+        "fin": 692.66,
+        "probabilite": 0.9146
+      },
+      {
+        "mot": " t",
+        "debut": 692.66,
+        "fin": 692.76,
+        "probabilite": 0.9567
+      },
+      {
+        "mot": "'es",
+        "debut": 692.76,
+        "fin": 692.84,
+        "probabilite": 0.9686
+      },
+      {
+        "mot": " un",
+        "debut": 692.84,
+        "fin": 692.84,
+        "probabilite": 0.9882
+      },
+      {
+        "mot": " fou",
+        "debut": 692.84,
+        "fin": 693.06,
+        "probabilite": 0.9951
+      },
+      {
+        "mot": " toi,",
+        "debut": 693.06,
+        "fin": 693.24,
+        "probabilite": 0.8878
+      },
+      {
+        "mot": " si",
+        "debut": 693.36,
+        "fin": 693.78,
+        "probabilite": 0.9189
+      },
+      {
+        "mot": " tu",
+        "debut": 693.78,
+        "fin": 694.2,
+        "probabilite": 0.9956
+      },
+      {
+        "mot": " fais",
+        "debut": 694.2,
+        "fin": 694.3,
+        "probabilite": 0.988
+      },
+      {
+        "mot": " avec",
+        "debut": 694.3,
+        "fin": 694.42,
+        "probabilite": 0.9928
+      },
+      {
+        "mot": " ton",
+        "debut": 694.42,
+        "fin": 694.52,
+        "probabilite": 0.9796
+      },
+      {
+        "mot": " doigt.",
+        "debut": 694.52,
+        "fin": 694.76,
+        "probabilite": 0.9991
+      }
+    ]
+  },
+  {
+    "debut": 694.86,
+    "fin": 696.38,
+    "texte": "Faut faire le dos, comme ça.",
+    "mots": [
+      {
+        "mot": " Faut",
+        "debut": 694.86,
+        "fin": 694.96,
+        "probabilite": 0.5704
+      },
+      {
+        "mot": " faire",
+        "debut": 694.96,
+        "fin": 695.06,
+        "probabilite": 0.4361
+      },
+      {
+        "mot": " le",
+        "debut": 695.06,
+        "fin": 695.16,
+        "probabilite": 0.3864
+      },
+      {
+        "mot": " dos,",
+        "debut": 695.16,
+        "fin": 695.28,
+        "probabilite": 0.8719
+      },
+      {
+        "mot": " comme",
+        "debut": 695.5,
+        "fin": 696.16,
+        "probabilite": 0.9837
+      },
+      {
+        "mot": " ça.",
+        "debut": 696.16,
+        "fin": 696.38,
+        "probabilite": 0.9995
+      }
+    ]
+  },
+  {
+    "debut": 699.28,
+    "fin": 700.52,
+    "texte": "On voit là que ça sert à rien.",
+    "mots": [
+      {
+        "mot": " On",
+        "debut": 699.28,
+        "fin": 699.64,
+        "probabilite": 0.0464
+      },
+      {
+        "mot": " voit",
+        "debut": 699.64,
+        "fin": 699.84,
+        "probabilite": 0.0047
+      },
+      {
+        "mot": " là",
+        "debut": 699.84,
+        "fin": 699.94,
+        "probabilite": 0.6786
+      },
+      {
+        "mot": " que",
+        "debut": 699.94,
+        "fin": 700.0,
+        "probabilite": 0.9306
+      },
+      {
+        "mot": " ça",
+        "debut": 700.0,
+        "fin": 700.14,
+        "probabilite": 0.9383
+      },
+      {
+        "mot": " sert",
+        "debut": 700.14,
+        "fin": 700.3,
+        "probabilite": 0.9327
+      },
+      {
+        "mot": " à",
+        "debut": 700.3,
+        "fin": 700.38,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " rien.",
+        "debut": 700.38,
+        "fin": 700.52,
+        "probabilite": 0.9994
+      }
+    ]
+  },
+  {
+    "debut": 700.68,
+    "fin": 701.76,
+    "texte": "Faut mettre une patate dans tous les calmes.",
+    "mots": [
+      {
+        "mot": " Faut",
+        "debut": 700.68,
+        "fin": 700.74,
+        "probabilite": 0.6062
+      },
+      {
+        "mot": " mettre",
+        "debut": 700.74,
+        "fin": 700.86,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " une",
+        "debut": 700.86,
+        "fin": 700.98,
+        "probabilite": 0.9969
+      },
+      {
+        "mot": " patate",
+        "debut": 700.98,
+        "fin": 701.32,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " dans",
+        "debut": 701.32,
+        "fin": 701.4,
+        "probabilite": 0.997
+      },
+      {
+        "mot": " tous",
+        "debut": 701.4,
+        "fin": 701.5,
+        "probabilite": 0.7264
+      },
+      {
+        "mot": " les",
+        "debut": 701.5,
+        "fin": 701.6,
+        "probabilite": 0.9381
+      },
+      {
+        "mot": " calmes.",
+        "debut": 701.6,
+        "fin": 701.76,
+        "probabilite": 0.4353
+      }
+    ]
+  },
+  {
+    "debut": 701.76,
+    "fin": 704.8,
+    "texte": "Bah du coup 200.000, 200.000. 200.000, les deux petits doigts alors.",
+    "mots": [
+      {
+        "mot": " Bah",
+        "debut": 701.76,
+        "fin": 701.94,
+        "probabilite": 0.4339
+      },
+      {
+        "mot": " du",
+        "debut": 701.94,
+        "fin": 702.12,
+        "probabilite": 0.9424
+      },
+      {
+        "mot": " coup",
+        "debut": 702.12,
+        "fin": 702.18,
+        "probabilite": 0.9972
+      },
+      {
+        "mot": " 200",
+        "debut": 702.18,
+        "fin": 702.4,
+        "probabilite": 0.6691
+      },
+      {
+        "mot": ".000,",
+        "debut": 702.4,
+        "fin": 702.72,
+        "probabilite": 0.5733
+      },
+      {
+        "mot": " 200",
+        "debut": 702.72,
+        "fin": 702.84,
+        "probabilite": 0.9015
+      },
+      {
+        "mot": ".000.",
+        "debut": 702.84,
+        "fin": 703.22,
+        "probabilite": 0.9972
+      },
+      {
+        "mot": " 200",
+        "debut": 703.4,
+        "fin": 703.78,
+        "probabilite": 0.8644
+      },
+      {
+        "mot": ".000,",
+        "debut": 703.78,
+        "fin": 704.12,
+        "probabilite": 0.9956
+      },
+      {
+        "mot": " les",
+        "debut": 704.16,
+        "fin": 704.18,
+        "probabilite": 0.9601
+      },
+      {
+        "mot": " deux",
+        "debut": 704.18,
+        "fin": 704.28,
+        "probabilite": 0.8247
+      },
+      {
+        "mot": " petits",
+        "debut": 704.28,
+        "fin": 704.46,
+        "probabilite": 0.9415
+      },
+      {
+        "mot": " doigts",
+        "debut": 704.46,
+        "fin": 704.72,
+        "probabilite": 0.9983
+      },
+      {
+        "mot": " alors.",
+        "debut": 704.72,
+        "fin": 704.8,
+        "probabilite": 0.877
+      }
+    ]
+  },
+  {
+    "debut": 705.02,
+    "fin": 707.08,
+    "texte": "Il y en a beaucoup pour 200.000, ils se coupent les petits doigts.",
+    "mots": [
+      {
+        "mot": " Il",
+        "debut": 705.02,
+        "fin": 705.2,
+        "probabilite": 0.2118
+      },
+      {
+        "mot": " y",
+        "debut": 705.2,
+        "fin": 705.28,
+        "probabilite": 0.9808
+      },
+      {
+        "mot": " en",
+        "debut": 705.28,
+        "fin": 705.32,
+        "probabilite": 0.9769
+      },
+      {
+        "mot": " a",
+        "debut": 705.32,
+        "fin": 705.36,
+        "probabilite": 0.9863
+      },
+      {
+        "mot": " beaucoup",
+        "debut": 705.36,
+        "fin": 705.58,
+        "probabilite": 0.9962
+      },
+      {
+        "mot": " pour",
+        "debut": 705.58,
+        "fin": 705.8,
+        "probabilite": 0.9299
+      },
+      {
+        "mot": " 200",
+        "debut": 705.8,
+        "fin": 706.0,
+        "probabilite": 0.9779
+      },
+      {
+        "mot": ".000,",
+        "debut": 706.0,
+        "fin": 706.34,
+        "probabilite": 0.9961
+      },
+      {
+        "mot": " ils",
+        "debut": 706.34,
+        "fin": 706.42,
+        "probabilite": 0.5577
+      },
+      {
+        "mot": " se",
+        "debut": 706.42,
+        "fin": 706.46,
+        "probabilite": 0.9531
+      },
+      {
+        "mot": " coupent",
+        "debut": 706.46,
+        "fin": 706.64,
+        "probabilite": 0.9934
+      },
+      {
+        "mot": " les",
+        "debut": 706.64,
+        "fin": 706.68,
+        "probabilite": 0.8156
+      },
+      {
+        "mot": " petits",
+        "debut": 706.68,
+        "fin": 706.88,
+        "probabilite": 0.9128
+      },
+      {
+        "mot": " doigts.",
+        "debut": 706.88,
+        "fin": 707.08,
+        "probabilite": 0.9996
+      }
+    ]
+  },
+  {
+    "debut": 707.08,
+    "fin": 707.96,
+    "texte": "Bah les deux petits doigts alors.",
+    "mots": [
+      {
+        "mot": " Bah",
+        "debut": 707.08,
+        "fin": 707.22,
+        "probabilite": 0.8276
+      },
+      {
+        "mot": " les",
+        "debut": 707.22,
+        "fin": 707.34,
+        "probabilite": 0.9551
+      },
+      {
+        "mot": " deux",
+        "debut": 707.34,
+        "fin": 707.46,
+        "probabilite": 0.9854
+      },
+      {
+        "mot": " petits",
+        "debut": 707.46,
+        "fin": 707.62,
+        "probabilite": 0.9904
+      },
+      {
+        "mot": " doigts",
+        "debut": 707.62,
+        "fin": 707.92,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " alors.",
+        "debut": 707.92,
+        "fin": 707.96,
+        "probabilite": 0.9513
+      }
+    ]
+  },
+  {
+    "debut": 708.46,
+    "fin": 709.56,
+    "texte": "Bah 400.000.",
+    "mots": [
+      {
+        "mot": " Bah",
+        "debut": 708.46,
+        "fin": 708.84,
+        "probabilite": 0.5621
+      },
+      {
+        "mot": " 400",
+        "debut": 708.84,
+        "fin": 709.22,
+        "probabilite": 0.9102
+      },
+      {
+        "mot": ".000.",
+        "debut": 709.22,
+        "fin": 709.56,
+        "probabilite": 0.9979
+      }
+    ]
+  },
+  {
+    "debut": 714.26,
+    "fin": 716.18,
+    "texte": "Ouais, 400.000, c'est presque un demi-million.",
+    "mots": [
+      {
+        "mot": " Ouais,",
+        "debut": 714.26,
+        "fin": 714.64,
+        "probabilite": 0.4685
+      },
+      {
+        "mot": " 400",
+        "debut": 714.64,
+        "fin": 715.02,
+        "probabilite": 0.927
+      },
+      {
+        "mot": ".000,",
+        "debut": 715.02,
+        "fin": 715.32,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " c",
+        "debut": 715.32,
+        "fin": 715.38,
+        "probabilite": 0.9989
+      },
+      {
+        "mot": "'est",
+        "debut": 715.38,
+        "fin": 715.44,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " presque",
+        "debut": 715.44,
+        "fin": 715.54,
+        "probabilite": 0.9969
+      },
+      {
+        "mot": " un",
+        "debut": 715.54,
+        "fin": 715.74,
+        "probabilite": 0.9925
+      },
+      {
+        "mot": " demi",
+        "debut": 715.74,
+        "fin": 715.94,
+        "probabilite": 0.9986
+      },
+      {
+        "mot": "-million.",
+        "debut": 715.94,
+        "fin": 716.18,
+        "probabilite": 0.979
+      }
+    ]
+  },
+  {
+    "debut": 716.36,
+    "fin": 718.46,
+    "texte": "Voilà qu'en vrai, je reste comme ça.",
+    "mots": [
+      {
+        "mot": " Voilà",
+        "debut": 716.36,
+        "fin": 716.6,
+        "probabilite": 0.2397
+      },
+      {
+        "mot": " qu",
+        "debut": 716.6,
+        "fin": 716.82,
+        "probabilite": 0.7389
+      },
+      {
+        "mot": "'en",
+        "debut": 716.82,
+        "fin": 717.18,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " vrai,",
+        "debut": 717.18,
+        "fin": 717.44,
+        "probabilite": 0.9984
+      },
+      {
+        "mot": " je",
+        "debut": 717.56,
+        "fin": 717.62,
+        "probabilite": 0.9949
+      },
+      {
+        "mot": " reste",
+        "debut": 717.62,
+        "fin": 718.06,
+        "probabilite": 0.9987
+      },
+      {
+        "mot": " comme",
+        "debut": 718.06,
+        "fin": 718.2,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " ça.",
+        "debut": 718.2,
+        "fin": 718.46,
+        "probabilite": 0.9993
+      }
+    ]
+  }
+]

@@ -1,0 +1,786 @@
+[
+  {
+    "debut": 1280.0,
+    "fin": 1282.02,
+    "texte": "3 à 0, vous voulez que je vous dise le truc ?",
+    "mots": [
+      {
+        "mot": " 3",
+        "debut": 1280.0,
+        "fin": 1280.1,
+        "probabilite": 0.0583
+      },
+      {
+        "mot": " à",
+        "debut": 1280.1,
+        "fin": 1280.22,
+        "probabilite": 0.192
+      },
+      {
+        "mot": " 0,",
+        "debut": 1280.22,
+        "fin": 1280.4,
+        "probabilite": 0.9134
+      },
+      {
+        "mot": " vous",
+        "debut": 1280.56,
+        "fin": 1280.96,
+        "probabilite": 0.5345
+      },
+      {
+        "mot": " voulez",
+        "debut": 1280.96,
+        "fin": 1281.1,
+        "probabilite": 0.9629
+      },
+      {
+        "mot": " que",
+        "debut": 1281.1,
+        "fin": 1281.16,
+        "probabilite": 0.782
+      },
+      {
+        "mot": " je",
+        "debut": 1281.16,
+        "fin": 1281.22,
+        "probabilite": 0.9466
+      },
+      {
+        "mot": " vous",
+        "debut": 1281.22,
+        "fin": 1281.24,
+        "probabilite": 0.9926
+      },
+      {
+        "mot": " dise",
+        "debut": 1281.24,
+        "fin": 1281.42,
+        "probabilite": 0.9628
+      },
+      {
+        "mot": " le",
+        "debut": 1281.42,
+        "fin": 1281.52,
+        "probabilite": 0.4142
+      },
+      {
+        "mot": " truc",
+        "debut": 1281.52,
+        "fin": 1281.72,
+        "probabilite": 0.9946
+      },
+      {
+        "mot": " ?",
+        "debut": 1281.72,
+        "fin": 1282.02,
+        "probabilite": 0.5313
+      }
+    ]
+  },
+  {
+    "debut": 1283.08,
+    "fin": 1285.04,
+    "texte": "Marquez, vous allez voir comment ça va se transformer.",
+    "mots": [
+      {
+        "mot": " Marquez,",
+        "debut": 1283.08,
+        "fin": 1283.44,
+        "probabilite": 0.7728
+      },
+      {
+        "mot": " vous",
+        "debut": 1283.5,
+        "fin": 1283.6,
+        "probabilite": 0.9005
+      },
+      {
+        "mot": " allez",
+        "debut": 1283.6,
+        "fin": 1283.74,
+        "probabilite": 0.9535
+      },
+      {
+        "mot": " voir",
+        "debut": 1283.74,
+        "fin": 1284.0,
+        "probabilite": 0.9923
+      },
+      {
+        "mot": " comment",
+        "debut": 1284.0,
+        "fin": 1284.18,
+        "probabilite": 0.7936
+      },
+      {
+        "mot": " ça",
+        "debut": 1284.18,
+        "fin": 1284.32,
+        "probabilite": 0.5674
+      },
+      {
+        "mot": " va",
+        "debut": 1284.32,
+        "fin": 1284.36,
+        "probabilite": 0.711
+      },
+      {
+        "mot": " se",
+        "debut": 1284.36,
+        "fin": 1284.58,
+        "probabilite": 0.8314
+      },
+      {
+        "mot": " transformer.",
+        "debut": 1284.58,
+        "fin": 1285.04,
+        "probabilite": 0.9124
+      }
+    ]
+  },
+  {
+    "debut": 1285.5,
+    "fin": 1288.1,
+    "texte": "Allez, il faut inverser tout ça, les gars, les réseaux, il faut inverser tout ça.",
+    "mots": [
+      {
+        "mot": " Allez,",
+        "debut": 1285.5,
+        "fin": 1285.86,
+        "probabilite": 0.5826
+      },
+      {
+        "mot": " il",
+        "debut": 1285.88,
+        "fin": 1285.96,
+        "probabilite": 0.7351
+      },
+      {
+        "mot": " faut",
+        "debut": 1285.96,
+        "fin": 1286.04,
+        "probabilite": 0.9947
+      },
+      {
+        "mot": " inverser",
+        "debut": 1286.04,
+        "fin": 1286.4,
+        "probabilite": 0.9342
+      },
+      {
+        "mot": " tout",
+        "debut": 1286.4,
+        "fin": 1286.48,
+        "probabilite": 0.9756
+      },
+      {
+        "mot": " ça,",
+        "debut": 1286.48,
+        "fin": 1286.68,
+        "probabilite": 0.9916
+      },
+      {
+        "mot": " les",
+        "debut": 1286.68,
+        "fin": 1286.76,
+        "probabilite": 0.9082
+      },
+      {
+        "mot": " gars,",
+        "debut": 1286.76,
+        "fin": 1286.9,
+        "probabilite": 0.5425
+      },
+      {
+        "mot": " les",
+        "debut": 1286.94,
+        "fin": 1287.04,
+        "probabilite": 0.7551
+      },
+      {
+        "mot": " réseaux,",
+        "debut": 1287.04,
+        "fin": 1287.28,
+        "probabilite": 0.9541
+      },
+      {
+        "mot": " il",
+        "debut": 1287.34,
+        "fin": 1287.44,
+        "probabilite": 0.9404
+      },
+      {
+        "mot": " faut",
+        "debut": 1287.44,
+        "fin": 1287.5,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " inverser",
+        "debut": 1287.5,
+        "fin": 1287.82,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " tout",
+        "debut": 1287.82,
+        "fin": 1287.94,
+        "probabilite": 0.9966
+      },
+      {
+        "mot": " ça.",
+        "debut": 1287.94,
+        "fin": 1288.1,
+        "probabilite": 0.9995
+      }
+    ]
+  },
+  {
+    "debut": 1288.38,
+    "fin": 1292.66,
+    "texte": "Est-ce que vous y croyez ? Oh, regardez-moi ! Est-ce que vous y croyez ?",
+    "mots": [
+      {
+        "mot": " Est",
+        "debut": 1288.38,
+        "fin": 1288.74,
+        "probabilite": 0.9928
+      },
+      {
+        "mot": "-ce",
+        "debut": 1288.74,
+        "fin": 1288.8,
+        "probabilite": 0.9976
+      },
+      {
+        "mot": " que",
+        "debut": 1288.8,
+        "fin": 1288.84,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " vous",
+        "debut": 1288.84,
+        "fin": 1288.98,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " y",
+        "debut": 1288.98,
+        "fin": 1289.1,
+        "probabilite": 0.9971
+      },
+      {
+        "mot": " croyez",
+        "debut": 1289.1,
+        "fin": 1289.42,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " ?",
+        "debut": 1289.42,
+        "fin": 1289.68,
+        "probabilite": 0.9981
+      },
+      {
+        "mot": " Oh,",
+        "debut": 1289.68,
+        "fin": 1290.0,
+        "probabilite": 0.5537
+      },
+      {
+        "mot": " regardez",
+        "debut": 1290.04,
+        "fin": 1290.38,
+        "probabilite": 0.9989
+      },
+      {
+        "mot": "-moi",
+        "debut": 1290.38,
+        "fin": 1290.66,
+        "probabilite": 0.9985
+      },
+      {
+        "mot": " !",
+        "debut": 1290.66,
+        "fin": 1290.98,
+        "probabilite": 0.779
+      },
+      {
+        "mot": " Est",
+        "debut": 1290.98,
+        "fin": 1291.52,
+        "probabilite": 0.9986
+      },
+      {
+        "mot": "-ce",
+        "debut": 1291.52,
+        "fin": 1291.62,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " que",
+        "debut": 1291.62,
+        "fin": 1291.66,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " vous",
+        "debut": 1291.66,
+        "fin": 1291.78,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " y",
+        "debut": 1291.78,
+        "fin": 1291.9,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " croyez",
+        "debut": 1291.9,
+        "fin": 1292.2,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " ?",
+        "debut": 1292.2,
+        "fin": 1292.66,
+        "probabilite": 0.9988
+      }
+    ]
+  },
+  {
+    "debut": 1293.2,
+    "fin": 1293.92,
+    "texte": "Oh !",
+    "mots": [
+      {
+        "mot": " Oh",
+        "debut": 1293.2,
+        "fin": 1293.56,
+        "probabilite": 0.7126
+      },
+      {
+        "mot": " !",
+        "debut": 1293.56,
+        "fin": 1293.92,
+        "probabilite": 0.9975
+      }
+    ]
+  },
+  {
+    "debut": 1297.26,
+    "fin": 1299.12,
+    "texte": "Pourquoi ne le ferez pas, vous ?",
+    "mots": [
+      {
+        "mot": " Pourquoi",
+        "debut": 1297.26,
+        "fin": 1297.62,
+        "probabilite": 0.9352
+      },
+      {
+        "mot": " ne",
+        "debut": 1297.62,
+        "fin": 1297.8,
+        "probabilite": 0.2619
+      },
+      {
+        "mot": " le",
+        "debut": 1297.8,
+        "fin": 1297.88,
+        "probabilite": 0.2376
+      },
+      {
+        "mot": " ferez",
+        "debut": 1297.88,
+        "fin": 1298.04,
+        "probabilite": 0.5976
+      },
+      {
+        "mot": " pas,",
+        "debut": 1298.04,
+        "fin": 1298.28,
+        "probabilite": 0.9446
+      },
+      {
+        "mot": " vous",
+        "debut": 1298.3,
+        "fin": 1298.48,
+        "probabilite": 0.5083
+      },
+      {
+        "mot": " ?",
+        "debut": 1298.48,
+        "fin": 1299.12,
+        "probabilite": 0.9989
+      }
+    ]
+  },
+  {
+    "debut": 1301.72,
+    "fin": 1306.04,
+    "texte": "On va essayer ! Je ne dis pas qu'on va y arriver ! Il ne faut pas rêver !",
+    "mots": [
+      {
+        "mot": " On",
+        "debut": 1301.72,
+        "fin": 1302.08,
+        "probabilite": 0.3697
+      },
+      {
+        "mot": " va",
+        "debut": 1302.08,
+        "fin": 1302.44,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " essayer",
+        "debut": 1302.44,
+        "fin": 1302.68,
+        "probabilite": 0.9989
+      },
+      {
+        "mot": " !",
+        "debut": 1302.68,
+        "fin": 1303.14,
+        "probabilite": 0.5792
+      },
+      {
+        "mot": " Je",
+        "debut": 1303.14,
+        "fin": 1303.56,
+        "probabilite": 0.9929
+      },
+      {
+        "mot": " ne",
+        "debut": 1303.56,
+        "fin": 1303.64,
+        "probabilite": 0.9566
+      },
+      {
+        "mot": " dis",
+        "debut": 1303.64,
+        "fin": 1303.76,
+        "probabilite": 0.997
+      },
+      {
+        "mot": " pas",
+        "debut": 1303.76,
+        "fin": 1303.9,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " qu",
+        "debut": 1303.9,
+        "fin": 1304.0,
+        "probabilite": 0.9792
+      },
+      {
+        "mot": "'on",
+        "debut": 1304.0,
+        "fin": 1304.08,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " va",
+        "debut": 1304.08,
+        "fin": 1304.18,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " y",
+        "debut": 1304.18,
+        "fin": 1304.26,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " arriver",
+        "debut": 1304.26,
+        "fin": 1304.54,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " !",
+        "debut": 1304.54,
+        "fin": 1304.84,
+        "probabilite": 0.5224
+      },
+      {
+        "mot": " Il",
+        "debut": 1304.84,
+        "fin": 1305.06,
+        "probabilite": 0.6399
+      },
+      {
+        "mot": " ne",
+        "debut": 1305.06,
+        "fin": 1305.12,
+        "probabilite": 0.9946
+      },
+      {
+        "mot": " faut",
+        "debut": 1305.12,
+        "fin": 1305.12,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " pas",
+        "debut": 1305.12,
+        "fin": 1305.28,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " rêver",
+        "debut": 1305.28,
+        "fin": 1305.56,
+        "probabilite": 0.9618
+      },
+      {
+        "mot": " !",
+        "debut": 1305.56,
+        "fin": 1306.04,
+        "probabilite": 0.9994
+      }
+    ]
+  },
+  {
+    "debut": 1306.04,
+    "fin": 1308.62,
+    "texte": "On va mettre un, on va mettre deux !",
+    "mots": [
+      {
+        "mot": " On",
+        "debut": 1306.04,
+        "fin": 1306.38,
+        "probabilite": 0.9979
+      },
+      {
+        "mot": " va",
+        "debut": 1306.38,
+        "fin": 1306.5,
+        "probabilite": 0.9646
+      },
+      {
+        "mot": " mettre",
+        "debut": 1306.5,
+        "fin": 1306.72,
+        "probabilite": 0.9973
+      },
+      {
+        "mot": " un,",
+        "debut": 1306.72,
+        "fin": 1306.94,
+        "probabilite": 0.7949
+      },
+      {
+        "mot": " on",
+        "debut": 1307.1,
+        "fin": 1307.3,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " va",
+        "debut": 1307.3,
+        "fin": 1307.42,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " mettre",
+        "debut": 1307.42,
+        "fin": 1307.66,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " deux",
+        "debut": 1307.66,
+        "fin": 1307.86,
+        "probabilite": 0.9982
+      },
+      {
+        "mot": " !",
+        "debut": 1307.86,
+        "fin": 1308.62,
+        "probabilite": 0.9992
+      }
+    ]
+  },
+  {
+    "debut": 1309.0,
+    "fin": 1312.26,
+    "texte": "Allez ça va te ramener des étoiles les gars, faut y aller, faut y aller",
+    "mots": [
+      {
+        "mot": " Allez",
+        "debut": 1309.0,
+        "fin": 1309.36,
+        "probabilite": 0.1155
+      },
+      {
+        "mot": " ça",
+        "debut": 1309.36,
+        "fin": 1309.44,
+        "probabilite": 0.4682
+      },
+      {
+        "mot": " va",
+        "debut": 1309.44,
+        "fin": 1309.56,
+        "probabilite": 0.9727
+      },
+      {
+        "mot": " te",
+        "debut": 1309.56,
+        "fin": 1309.6,
+        "probabilite": 0.4101
+      },
+      {
+        "mot": " ramener",
+        "debut": 1309.6,
+        "fin": 1309.82,
+        "probabilite": 0.7896
+      },
+      {
+        "mot": " des",
+        "debut": 1309.82,
+        "fin": 1309.88,
+        "probabilite": 0.5936
+      },
+      {
+        "mot": " étoiles",
+        "debut": 1309.88,
+        "fin": 1310.18,
+        "probabilite": 0.7068
+      },
+      {
+        "mot": " les",
+        "debut": 1310.18,
+        "fin": 1310.3,
+        "probabilite": 0.8775
+      },
+      {
+        "mot": " gars,",
+        "debut": 1310.3,
+        "fin": 1310.42,
+        "probabilite": 0.9896
+      },
+      {
+        "mot": " faut",
+        "debut": 1310.48,
+        "fin": 1311.28,
+        "probabilite": 0.6836
+      },
+      {
+        "mot": " y",
+        "debut": 1311.28,
+        "fin": 1311.42,
+        "probabilite": 0.9957
+      },
+      {
+        "mot": " aller,",
+        "debut": 1311.42,
+        "fin": 1311.58,
+        "probabilite": 0.9885
+      },
+      {
+        "mot": " faut",
+        "debut": 1311.68,
+        "fin": 1311.98,
+        "probabilite": 0.9786
+      },
+      {
+        "mot": " y",
+        "debut": 1311.98,
+        "fin": 1312.12,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " aller",
+        "debut": 1312.12,
+        "fin": 1312.26,
+        "probabilite": 0.997
+      }
+    ]
+  },
+  {
+    "debut": 1312.88,
+    "fin": 1315.96,
+    "texte": "Faites les courses les petits, et vous allez voir, allez les enfants",
+    "mots": [
+      {
+        "mot": " Faites",
+        "debut": 1312.88,
+        "fin": 1313.24,
+        "probabilite": 0.5457
+      },
+      {
+        "mot": " les",
+        "debut": 1313.24,
+        "fin": 1313.32,
+        "probabilite": 0.546
+      },
+      {
+        "mot": " courses",
+        "debut": 1313.32,
+        "fin": 1313.56,
+        "probabilite": 0.8442
+      },
+      {
+        "mot": " les",
+        "debut": 1313.56,
+        "fin": 1313.74,
+        "probabilite": 0.9146
+      },
+      {
+        "mot": " petits,",
+        "debut": 1313.74,
+        "fin": 1313.92,
+        "probabilite": 0.7942
+      },
+      {
+        "mot": " et",
+        "debut": 1314.14,
+        "fin": 1314.36,
+        "probabilite": 0.9534
+      },
+      {
+        "mot": " vous",
+        "debut": 1314.36,
+        "fin": 1314.52,
+        "probabilite": 0.9782
+      },
+      {
+        "mot": " allez",
+        "debut": 1314.52,
+        "fin": 1314.7,
+        "probabilite": 0.4237
+      },
+      {
+        "mot": " voir,",
+        "debut": 1314.7,
+        "fin": 1314.94,
+        "probabilite": 0.911
+      },
+      {
+        "mot": " allez",
+        "debut": 1315.12,
+        "fin": 1315.64,
+        "probabilite": 0.8639
+      },
+      {
+        "mot": " les",
+        "debut": 1315.64,
+        "fin": 1315.78,
+        "probabilite": 0.4931
+      },
+      {
+        "mot": " enfants",
+        "debut": 1315.78,
+        "fin": 1315.96,
+        "probabilite": 0.9322
+      }
+    ]
+  }
+]

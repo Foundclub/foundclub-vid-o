@@ -1,0 +1,430 @@
+{
+  "numero": 13,
+  "format": "horizontal",
+  "sha256": "305f5015e9c091d81bad3076e8d749ad2983cb700ae783ab5fa87072940df381",
+  "texte_prevu_sha256": "aa4ad224a67d58ffa19187a3822d757febd63534ce60bfa8f198051da1031e7c",
+  "verification": "OK",
+  "modele_verification": "turbo",
+  "vad": true,
+  "aide_vestiaire": false,
+  "aide_dialogue": false,
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "allez",
+    "allez",
+    "on",
+    "leve"
+  ],
+  "derniers_mots_attendus": [
+    "il",
+    "reste",
+    "45",
+    "minutes"
+  ],
+  "premiers_mots_reconnus": [
+    "allez",
+    "allez",
+    "on",
+    "leve"
+  ],
+  "derniers_mots_reconnus": [
+    "il",
+    "reste",
+    "45",
+    "minutes"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": true,
+  "transcription": [
+    {
+      "debut": 0.11,
+      "fin": 7.01,
+      "texte": "Allez, allez, on lève la tête, on est en retard, on n'a pas su répondre au sol en l'air.",
+      "mots": [
+        {
+          "mot": " Allez,",
+          "debut": 0.11,
+          "fin": 0.61
+        },
+        {
+          "mot": " allez,",
+          "debut": 0.71,
+          "fin": 0.75
+        },
+        {
+          "mot": " on",
+          "debut": 0.79,
+          "fin": 1.33
+        },
+        {
+          "mot": " lève",
+          "debut": 1.33,
+          "fin": 1.49
+        },
+        {
+          "mot": " la",
+          "debut": 1.49,
+          "fin": 1.59
+        },
+        {
+          "mot": " tête,",
+          "debut": 1.59,
+          "fin": 1.87
+        },
+        {
+          "mot": " on",
+          "debut": 2.07,
+          "fin": 2.25
+        },
+        {
+          "mot": " est",
+          "debut": 2.25,
+          "fin": 2.35
+        },
+        {
+          "mot": " en",
+          "debut": 2.35,
+          "fin": 2.53
+        },
+        {
+          "mot": " retard,",
+          "debut": 2.53,
+          "fin": 3.11
+        },
+        {
+          "mot": " on",
+          "debut": 3.77,
+          "fin": 4.07
+        },
+        {
+          "mot": " n",
+          "debut": 4.07,
+          "fin": 4.17
+        },
+        {
+          "mot": "'a",
+          "debut": 4.17,
+          "fin": 4.17
+        },
+        {
+          "mot": " pas",
+          "debut": 4.17,
+          "fin": 4.31
+        },
+        {
+          "mot": " su",
+          "debut": 4.31,
+          "fin": 4.41
+        },
+        {
+          "mot": " répondre",
+          "debut": 4.41,
+          "fin": 4.67
+        },
+        {
+          "mot": " au",
+          "debut": 4.67,
+          "fin": 5.51
+        },
+        {
+          "mot": " sol",
+          "debut": 5.51,
+          "fin": 6.07
+        },
+        {
+          "mot": " en",
+          "debut": 6.07,
+          "fin": 6.65
+        },
+        {
+          "mot": " l",
+          "debut": 6.65,
+          "fin": 6.79
+        },
+        {
+          "mot": "'air.",
+          "debut": 6.79,
+          "fin": 7.01
+        }
+      ]
+    },
+    {
+      "debut": 8.27,
+      "fin": 9.93,
+      "texte": "T'es puni, à ce niveau t'es puni.",
+      "mots": [
+        {
+          "mot": " T",
+          "debut": 8.27,
+          "fin": 8.57
+        },
+        {
+          "mot": "'es",
+          "debut": 8.57,
+          "fin": 8.67
+        },
+        {
+          "mot": " puni,",
+          "debut": 8.67,
+          "fin": 8.95
+        },
+        {
+          "mot": " à",
+          "debut": 9.03,
+          "fin": 9.11
+        },
+        {
+          "mot": " ce",
+          "debut": 9.11,
+          "fin": 9.23
+        },
+        {
+          "mot": " niveau",
+          "debut": 9.23,
+          "fin": 9.45
+        },
+        {
+          "mot": " t",
+          "debut": 9.45,
+          "fin": 9.57
+        },
+        {
+          "mot": "'es",
+          "debut": 9.57,
+          "fin": 9.61
+        },
+        {
+          "mot": " puni.",
+          "debut": 9.61,
+          "fin": 9.93
+        }
+      ]
+    },
+    {
+      "debut": 10.13,
+      "fin": 13.61,
+      "texte": "Je changerai beaucoup de choses, c'est sûrement ce qu'on va faire.",
+      "mots": [
+        {
+          "mot": " Je",
+          "debut": 10.13,
+          "fin": 10.51
+        },
+        {
+          "mot": " changerai",
+          "debut": 10.51,
+          "fin": 10.87
+        },
+        {
+          "mot": " beaucoup",
+          "debut": 10.87,
+          "fin": 11.07
+        },
+        {
+          "mot": " de",
+          "debut": 11.07,
+          "fin": 11.23
+        },
+        {
+          "mot": " choses,",
+          "debut": 11.23,
+          "fin": 11.47
+        },
+        {
+          "mot": " c",
+          "debut": 12.29,
+          "fin": 12.69
+        },
+        {
+          "mot": "'est",
+          "debut": 12.69,
+          "fin": 12.73
+        },
+        {
+          "mot": " sûrement",
+          "debut": 12.73,
+          "fin": 12.97
+        },
+        {
+          "mot": " ce",
+          "debut": 12.97,
+          "fin": 13.07
+        },
+        {
+          "mot": " qu",
+          "debut": 13.07,
+          "fin": 13.15
+        },
+        {
+          "mot": "'on",
+          "debut": 13.15,
+          "fin": 13.19
+        },
+        {
+          "mot": " va",
+          "debut": 13.19,
+          "fin": 13.29
+        },
+        {
+          "mot": " faire.",
+          "debut": 13.29,
+          "fin": 13.61
+        }
+      ]
+    },
+    {
+      "debut": 14.39,
+      "fin": 19.57,
+      "texte": "Je vous laisse 10 minutes pour agir, après je change.",
+      "mots": [
+        {
+          "mot": " Je",
+          "debut": 14.39,
+          "fin": 14.51
+        },
+        {
+          "mot": " vous",
+          "debut": 14.51,
+          "fin": 14.63
+        },
+        {
+          "mot": " laisse",
+          "debut": 14.63,
+          "fin": 14.79
+        },
+        {
+          "mot": " 10",
+          "debut": 14.79,
+          "fin": 15.09
+        },
+        {
+          "mot": " minutes",
+          "debut": 15.09,
+          "fin": 15.45
+        },
+        {
+          "mot": " pour",
+          "debut": 15.45,
+          "fin": 17.53
+        },
+        {
+          "mot": " agir,",
+          "debut": 17.53,
+          "fin": 18.05
+        },
+        {
+          "mot": " après",
+          "debut": 18.83,
+          "fin": 19.03
+        },
+        {
+          "mot": " je",
+          "debut": 19.03,
+          "fin": 19.29
+        },
+        {
+          "mot": " change.",
+          "debut": 19.29,
+          "fin": 19.57
+        }
+      ]
+    },
+    {
+      "debut": 20.21,
+      "fin": 25.51,
+      "texte": "On va pas reverser la table maintenant, on se dira les choses après, il reste 45 minutes.",
+      "mots": [
+        {
+          "mot": " On",
+          "debut": 20.21,
+          "fin": 20.61
+        },
+        {
+          "mot": " va",
+          "debut": 20.61,
+          "fin": 20.71
+        },
+        {
+          "mot": " pas",
+          "debut": 20.71,
+          "fin": 20.85
+        },
+        {
+          "mot": " reverser",
+          "debut": 20.85,
+          "fin": 21.21
+        },
+        {
+          "mot": " la",
+          "debut": 21.21,
+          "fin": 21.31
+        },
+        {
+          "mot": " table",
+          "debut": 21.31,
+          "fin": 21.55
+        },
+        {
+          "mot": " maintenant,",
+          "debut": 21.55,
+          "fin": 21.95
+        },
+        {
+          "mot": " on",
+          "debut": 23.11,
+          "fin": 23.31
+        },
+        {
+          "mot": " se",
+          "debut": 23.31,
+          "fin": 23.47
+        },
+        {
+          "mot": " dira",
+          "debut": 23.47,
+          "fin": 23.57
+        },
+        {
+          "mot": " les",
+          "debut": 23.57,
+          "fin": 23.69
+        },
+        {
+          "mot": " choses",
+          "debut": 23.69,
+          "fin": 23.85
+        },
+        {
+          "mot": " après,",
+          "debut": 23.85,
+          "fin": 24.19
+        },
+        {
+          "mot": " il",
+          "debut": 24.51,
+          "fin": 24.65
+        },
+        {
+          "mot": " reste",
+          "debut": 24.65,
+          "fin": 24.83
+        },
+        {
+          "mot": " 45",
+          "debut": 24.83,
+          "fin": 25.21
+        },
+        {
+          "mot": " minutes.",
+          "debut": 25.21,
+          "fin": 25.51
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {},
+  "lufs": -14.05,
+  "pic_vrai_db": -1.42,
+  "duree": 25.666667,
+  "taille_octets": 14471951
+}

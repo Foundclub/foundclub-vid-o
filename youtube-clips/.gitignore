@@ -1,0 +1,6 @@
+.cache/
+travail/
+source/*
+!source/provenance.json
+!source/ffprobe.json
+*.part

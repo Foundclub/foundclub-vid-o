@@ -1,0 +1,933 @@
+[
+  {
+    "debut": 373.36,
+    "fin": 399.14,
+    "texte": "Et oui, défaite 3-2 malheureusement après avoir mené deux buts à zéro. C'est vraiment très très très compliqué. Malheureusement, moi je n'ai pas pu aller au match parce que c'était quand même à l'extérieur et c'était assez loin. Mais je suivais un peu de loin. Quand j'ai vu 2-0 pour nous, j'étais assez content et assez confiant parce que je savais que l'équipe c'était costaud. On a fait des gros matchs de prépa et que voilà, on était prêts. Mais bon, comme quoi à ce niveau-là, chaque erreur compte.",
+    "mots": [
+      {
+        "mot": " Et",
+        "debut": 373.36,
+        "fin": 373.72,
+        "probabilite": 0.6523
+      },
+      {
+        "mot": " oui,",
+        "debut": 373.72,
+        "fin": 374.04,
+        "probabilite": 0.982
+      },
+      {
+        "mot": " défaite",
+        "debut": 374.4,
+        "fin": 374.78,
+        "probabilite": 0.9019
+      },
+      {
+        "mot": " 3",
+        "debut": 374.78,
+        "fin": 375.04,
+        "probabilite": 0.9891
+      },
+      {
+        "mot": "-2",
+        "debut": 375.04,
+        "fin": 375.24,
+        "probabilite": 0.9956
+      },
+      {
+        "mot": " malheureusement",
+        "debut": 375.24,
+        "fin": 375.8,
+        "probabilite": 0.969
+      },
+      {
+        "mot": " après",
+        "debut": 375.8,
+        "fin": 376.2,
+        "probabilite": 0.6005
+      },
+      {
+        "mot": " avoir",
+        "debut": 376.2,
+        "fin": 376.48,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " mené",
+        "debut": 376.48,
+        "fin": 376.88,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " deux",
+        "debut": 376.88,
+        "fin": 377.3,
+        "probabilite": 0.4445
+      },
+      {
+        "mot": " buts",
+        "debut": 377.3,
+        "fin": 377.52,
+        "probabilite": 0.9982
+      },
+      {
+        "mot": " à",
+        "debut": 377.52,
+        "fin": 377.6,
+        "probabilite": 0.9988
+      },
+      {
+        "mot": " zéro.",
+        "debut": 377.6,
+        "fin": 377.94,
+        "probabilite": 0.9505
+      },
+      {
+        "mot": " C",
+        "debut": 378.16,
+        "fin": 378.26,
+        "probabilite": 0.8833
+      },
+      {
+        "mot": "'est",
+        "debut": 378.26,
+        "fin": 378.26,
+        "probabilite": 0.9979
+      },
+      {
+        "mot": " vraiment",
+        "debut": 378.26,
+        "fin": 378.44,
+        "probabilite": 0.9826
+      },
+      {
+        "mot": " très",
+        "debut": 378.44,
+        "fin": 379.04,
+        "probabilite": 0.8113
+      },
+      {
+        "mot": " très",
+        "debut": 379.04,
+        "fin": 379.36,
+        "probabilite": 0.1931
+      },
+      {
+        "mot": " très",
+        "debut": 379.36,
+        "fin": 379.6,
+        "probabilite": 0.5923
+      },
+      {
+        "mot": " compliqué.",
+        "debut": 379.6,
+        "fin": 380.18,
+        "probabilite": 0.7185
+      },
+      {
+        "mot": " Malheureusement,",
+        "debut": 380.54,
+        "fin": 380.9,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " moi",
+        "debut": 381.0,
+        "fin": 381.36,
+        "probabilite": 0.8553
+      },
+      {
+        "mot": " je",
+        "debut": 381.36,
+        "fin": 381.5,
+        "probabilite": 0.6639
+      },
+      {
+        "mot": " n",
+        "debut": 381.5,
+        "fin": 381.58,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": "'ai",
+        "debut": 381.58,
+        "fin": 381.58,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " pas",
+        "debut": 381.58,
+        "fin": 381.66,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " pu",
+        "debut": 381.66,
+        "fin": 381.8,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " aller",
+        "debut": 381.8,
+        "fin": 381.96,
+        "probabilite": 0.9987
+      },
+      {
+        "mot": " au",
+        "debut": 381.96,
+        "fin": 382.08,
+        "probabilite": 0.9839
+      },
+      {
+        "mot": " match",
+        "debut": 382.08,
+        "fin": 382.28,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " parce",
+        "debut": 382.28,
+        "fin": 382.6,
+        "probabilite": 0.9082
+      },
+      {
+        "mot": " que",
+        "debut": 382.6,
+        "fin": 382.7,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " c",
+        "debut": 382.7,
+        "fin": 382.8,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": "'était",
+        "debut": 382.8,
+        "fin": 382.88,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " quand",
+        "debut": 382.88,
+        "fin": 383.02,
+        "probabilite": 0.9939
+      },
+      {
+        "mot": " même",
+        "debut": 383.02,
+        "fin": 383.12,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " à",
+        "debut": 383.12,
+        "fin": 383.22,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " l",
+        "debut": 383.22,
+        "fin": 383.3,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": "'extérieur",
+        "debut": 383.3,
+        "fin": 383.64,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " et",
+        "debut": 383.64,
+        "fin": 383.82,
+        "probabilite": 0.9599
+      },
+      {
+        "mot": " c",
+        "debut": 383.82,
+        "fin": 383.86,
+        "probabilite": 0.9973
+      },
+      {
+        "mot": "'était",
+        "debut": 383.86,
+        "fin": 383.92,
+        "probabilite": 0.9962
+      },
+      {
+        "mot": " assez",
+        "debut": 383.92,
+        "fin": 384.08,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " loin.",
+        "debut": 384.08,
+        "fin": 384.34,
+        "probabilite": 0.9988
+      },
+      {
+        "mot": " Mais",
+        "debut": 384.52,
+        "fin": 384.64,
+        "probabilite": 0.9911
+      },
+      {
+        "mot": " je",
+        "debut": 384.64,
+        "fin": 384.98,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " suivais",
+        "debut": 384.98,
+        "fin": 385.3,
+        "probabilite": 0.9795
+      },
+      {
+        "mot": " un",
+        "debut": 385.3,
+        "fin": 385.4,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " peu",
+        "debut": 385.4,
+        "fin": 385.58,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " de",
+        "debut": 385.58,
+        "fin": 385.9,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " loin.",
+        "debut": 385.9,
+        "fin": 386.14,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " Quand",
+        "debut": 386.34,
+        "fin": 386.46,
+        "probabilite": 0.9989
+      },
+      {
+        "mot": " j",
+        "debut": 386.46,
+        "fin": 386.54,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": "'ai",
+        "debut": 386.54,
+        "fin": 386.58,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " vu",
+        "debut": 386.58,
+        "fin": 386.68,
+        "probabilite": 0.9979
+      },
+      {
+        "mot": " 2",
+        "debut": 386.68,
+        "fin": 386.86,
+        "probabilite": 0.8282
+      },
+      {
+        "mot": "-0",
+        "debut": 386.86,
+        "fin": 387.02,
+        "probabilite": 0.9976
+      },
+      {
+        "mot": " pour",
+        "debut": 387.02,
+        "fin": 387.2,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " nous,",
+        "debut": 387.2,
+        "fin": 387.34,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " j",
+        "debut": 387.5,
+        "fin": 387.54,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": "'étais",
+        "debut": 387.54,
+        "fin": 387.68,
+        "probabilite": 0.9767
+      },
+      {
+        "mot": " assez",
+        "debut": 387.68,
+        "fin": 387.94,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " content",
+        "debut": 387.94,
+        "fin": 388.22,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " et",
+        "debut": 388.22,
+        "fin": 388.38,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " assez",
+        "debut": 388.38,
+        "fin": 388.58,
+        "probabilite": 0.9979
+      },
+      {
+        "mot": " confiant",
+        "debut": 388.58,
+        "fin": 388.96,
+        "probabilite": 0.9982
+      },
+      {
+        "mot": " parce",
+        "debut": 388.96,
+        "fin": 389.78,
+        "probabilite": 0.3955
+      },
+      {
+        "mot": " que",
+        "debut": 389.78,
+        "fin": 389.9,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " je",
+        "debut": 389.9,
+        "fin": 390.0,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " savais",
+        "debut": 390.0,
+        "fin": 390.2,
+        "probabilite": 0.999
+      },
+      {
+        "mot": " que",
+        "debut": 390.2,
+        "fin": 390.28,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " l",
+        "debut": 390.28,
+        "fin": 390.38,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": "'équipe",
+        "debut": 390.38,
+        "fin": 390.68,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " c",
+        "debut": 390.68,
+        "fin": 391.48,
+        "probabilite": 0.7577
+      },
+      {
+        "mot": "'était",
+        "debut": 391.48,
+        "fin": 391.56,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " costaud.",
+        "debut": 391.56,
+        "fin": 391.98,
+        "probabilite": 0.9985
+      },
+      {
+        "mot": " On",
+        "debut": 392.04,
+        "fin": 392.12,
+        "probabilite": 0.9985
+      },
+      {
+        "mot": " a",
+        "debut": 392.12,
+        "fin": 392.2,
+        "probabilite": 0.9981
+      },
+      {
+        "mot": " fait",
+        "debut": 392.2,
+        "fin": 392.3,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " des",
+        "debut": 392.3,
+        "fin": 392.42,
+        "probabilite": 0.9956
+      },
+      {
+        "mot": " gros",
+        "debut": 392.42,
+        "fin": 392.6,
+        "probabilite": 0.9989
+      },
+      {
+        "mot": " matchs",
+        "debut": 392.6,
+        "fin": 392.92,
+        "probabilite": 0.9896
+      },
+      {
+        "mot": " de",
+        "debut": 392.92,
+        "fin": 392.98,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " prépa",
+        "debut": 392.98,
+        "fin": 393.36,
+        "probabilite": 0.9871
+      },
+      {
+        "mot": " et",
+        "debut": 393.36,
+        "fin": 394.08,
+        "probabilite": 0.9801
+      },
+      {
+        "mot": " que",
+        "debut": 394.08,
+        "fin": 394.28,
+        "probabilite": 0.6862
+      },
+      {
+        "mot": " voilà,",
+        "debut": 394.28,
+        "fin": 394.94,
+        "probabilite": 0.9557
+      },
+      {
+        "mot": " on",
+        "debut": 395.1,
+        "fin": 395.12,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " était",
+        "debut": 395.12,
+        "fin": 395.38,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " prêts.",
+        "debut": 395.38,
+        "fin": 396.34,
+        "probabilite": 0.843
+      },
+      {
+        "mot": " Mais",
+        "debut": 396.54,
+        "fin": 396.7,
+        "probabilite": 0.9969
+      },
+      {
+        "mot": " bon,",
+        "debut": 396.7,
+        "fin": 396.88,
+        "probabilite": 0.9896
+      },
+      {
+        "mot": " comme",
+        "debut": 397.02,
+        "fin": 397.08,
+        "probabilite": 0.9851
+      },
+      {
+        "mot": " quoi",
+        "debut": 397.08,
+        "fin": 397.3,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " à",
+        "debut": 397.3,
+        "fin": 397.56,
+        "probabilite": 0.4409
+      },
+      {
+        "mot": " ce",
+        "debut": 397.56,
+        "fin": 397.68,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " niveau",
+        "debut": 397.68,
+        "fin": 397.92,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": "-là,",
+        "debut": 397.92,
+        "fin": 398.1,
+        "probabilite": 0.9797
+      },
+      {
+        "mot": " chaque",
+        "debut": 398.42,
+        "fin": 398.6,
+        "probabilite": 0.9983
+      },
+      {
+        "mot": " erreur",
+        "debut": 398.6,
+        "fin": 398.9,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " compte.",
+        "debut": 398.9,
+        "fin": 399.14,
+        "probabilite": 0.998
+      }
+    ]
+  },
+  {
+    "debut": 399.14,
+    "fin": 401.08,
+    "texte": "On prend un troisième but à la fin.",
+    "mots": [
+      {
+        "mot": " On",
+        "debut": 399.14,
+        "fin": 399.26,
+        "probabilite": 0.7517
+      },
+      {
+        "mot": " prend",
+        "debut": 399.26,
+        "fin": 399.4,
+        "probabilite": 0.9948
+      },
+      {
+        "mot": " un",
+        "debut": 399.4,
+        "fin": 399.56,
+        "probabilite": 0.9113
+      },
+      {
+        "mot": " troisième",
+        "debut": 399.56,
+        "fin": 399.76,
+        "probabilite": 0.7965
+      },
+      {
+        "mot": " but",
+        "debut": 399.76,
+        "fin": 400.06,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " à",
+        "debut": 400.06,
+        "fin": 400.32,
+        "probabilite": 0.9715
+      },
+      {
+        "mot": " la",
+        "debut": 400.32,
+        "fin": 400.9,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " fin.",
+        "debut": 400.9,
+        "fin": 401.08,
+        "probabilite": 0.9997
+      }
+    ]
+  },
+  {
+    "debut": 401.26,
+    "fin": 402.36,
+    "texte": "Laissez le football, c'est comme ça.",
+    "mots": [
+      {
+        "mot": " Laissez",
+        "debut": 401.26,
+        "fin": 401.52,
+        "probabilite": 0.837
+      },
+      {
+        "mot": " le",
+        "debut": 401.52,
+        "fin": 401.58,
+        "probabilite": 0.9959
+      },
+      {
+        "mot": " football,",
+        "debut": 401.58,
+        "fin": 401.9,
+        "probabilite": 0.9953
+      },
+      {
+        "mot": " c",
+        "debut": 402.02,
+        "fin": 402.04,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": "'est",
+        "debut": 402.04,
+        "fin": 402.12,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " comme",
+        "debut": 402.12,
+        "fin": 402.2,
+        "probabilite": 0.982
+      },
+      {
+        "mot": " ça.",
+        "debut": 402.2,
+        "fin": 402.36,
+        "probabilite": 0.9982
+      }
+    ]
+  },
+  {
+    "debut": 402.44,
+    "fin": 404.04,
+    "texte": "C'est dommage de commencer par une défaite.",
+    "mots": [
+      {
+        "mot": " C",
+        "debut": 402.44,
+        "fin": 402.5,
+        "probabilite": 0.9985
+      },
+      {
+        "mot": "'est",
+        "debut": 402.5,
+        "fin": 402.56,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " dommage",
+        "debut": 402.56,
+        "fin": 402.82,
+        "probabilite": 0.9983
+      },
+      {
+        "mot": " de",
+        "debut": 402.82,
+        "fin": 402.94,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " commencer",
+        "debut": 402.94,
+        "fin": 403.24,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " par",
+        "debut": 403.24,
+        "fin": 403.48,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " une",
+        "debut": 403.48,
+        "fin": 403.62,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " défaite.",
+        "debut": 403.62,
+        "fin": 404.04,
+        "probabilite": 0.9993
+      }
+    ]
+  },
+  {
+    "debut": 404.18,
+    "fin": 406.02,
+    "texte": "C'est embêtant, mais il va falloir se rattraper",
+    "mots": [
+      {
+        "mot": " C",
+        "debut": 404.18,
+        "fin": 404.32,
+        "probabilite": 0.999
+      },
+      {
+        "mot": "'est",
+        "debut": 404.32,
+        "fin": 404.42,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " embêtant,",
+        "debut": 404.42,
+        "fin": 404.8,
+        "probabilite": 0.9986
+      },
+      {
+        "mot": " mais",
+        "debut": 404.86,
+        "fin": 404.94,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " il",
+        "debut": 404.94,
+        "fin": 405.12,
+        "probabilite": 0.3923
+      },
+      {
+        "mot": " va",
+        "debut": 405.12,
+        "fin": 405.2,
+        "probabilite": 0.9978
+      },
+      {
+        "mot": " falloir",
+        "debut": 405.2,
+        "fin": 405.46,
+        "probabilite": 0.9989
+      },
+      {
+        "mot": " se",
+        "debut": 405.46,
+        "fin": 405.56,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " rattraper",
+        "debut": 405.56,
+        "fin": 406.02,
+        "probabilite": 0.9995
+      }
+    ]
+  },
+  {
+    "debut": 406.02,
+    "fin": 407.66,
+    "texte": "dès la semaine prochaine face à Rousset.",
+    "mots": [
+      {
+        "mot": " dès",
+        "debut": 406.02,
+        "fin": 406.36,
+        "probabilite": 0.9948
+      },
+      {
+        "mot": " la",
+        "debut": 406.36,
+        "fin": 406.5,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " semaine",
+        "debut": 406.5,
+        "fin": 406.66,
+        "probabilite": 0.9956
+      },
+      {
+        "mot": " prochaine",
+        "debut": 406.66,
+        "fin": 406.98,
+        "probabilite": 0.9978
+      },
+      {
+        "mot": " face",
+        "debut": 406.98,
+        "fin": 407.2,
+        "probabilite": 0.986
+      },
+      {
+        "mot": " à",
+        "debut": 407.2,
+        "fin": 407.38,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " Rousset.",
+        "debut": 407.38,
+        "fin": 407.66,
+        "probabilite": 0.9811
+      }
+    ]
+  },
+  {
+    "debut": 408.04,
+    "fin": 410.02,
+    "texte": "Et justement, on y est cette semaine.",
+    "mots": [
+      {
+        "mot": " Et",
+        "debut": 408.04,
+        "fin": 408.08,
+        "probabilite": 0.7281
+      },
+      {
+        "mot": " justement,",
+        "debut": 408.08,
+        "fin": 408.48,
+        "probabilite": 0.9987
+      },
+      {
+        "mot": " on",
+        "debut": 408.7,
+        "fin": 408.78,
+        "probabilite": 0.9987
+      },
+      {
+        "mot": " y",
+        "debut": 408.78,
+        "fin": 408.94,
+        "probabilite": 0.9967
+      },
+      {
+        "mot": " est",
+        "debut": 408.94,
+        "fin": 409.06,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " cette",
+        "debut": 409.06,
+        "fin": 409.5,
+        "probabilite": 0.9415
+      },
+      {
+        "mot": " semaine.",
+        "debut": 409.5,
+        "fin": 410.02,
+        "probabilite": 0.9999
+      }
+    ]
+  }
+]

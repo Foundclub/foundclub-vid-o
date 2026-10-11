@@ -1,0 +1,843 @@
+[
+  {
+    "debut": 1218.5,
+    "fin": 1223.32,
+    "texte": "On ne peut pas dire qu'on s'est ouvert quand on a perdu 2-0. Au bout de 0-0, on a fait déjà la face-à-face.",
+    "mots": [
+      {
+        "mot": " On",
+        "debut": 1218.5,
+        "fin": 1218.82,
+        "probabilite": 0.4979
+      },
+      {
+        "mot": " ne",
+        "debut": 1218.82,
+        "fin": 1218.86,
+        "probabilite": 0.3197
+      },
+      {
+        "mot": " peut",
+        "debut": 1218.86,
+        "fin": 1218.92,
+        "probabilite": 0.9442
+      },
+      {
+        "mot": " pas",
+        "debut": 1218.92,
+        "fin": 1219.04,
+        "probabilite": 0.9927
+      },
+      {
+        "mot": " dire",
+        "debut": 1219.04,
+        "fin": 1219.22,
+        "probabilite": 0.8278
+      },
+      {
+        "mot": " qu",
+        "debut": 1219.22,
+        "fin": 1219.24,
+        "probabilite": 0.3349
+      },
+      {
+        "mot": "'on",
+        "debut": 1219.24,
+        "fin": 1219.32,
+        "probabilite": 0.9758
+      },
+      {
+        "mot": " s",
+        "debut": 1219.32,
+        "fin": 1219.44,
+        "probabilite": 0.7261
+      },
+      {
+        "mot": "'est",
+        "debut": 1219.44,
+        "fin": 1219.5,
+        "probabilite": 0.9957
+      },
+      {
+        "mot": " ouvert",
+        "debut": 1219.5,
+        "fin": 1219.66,
+        "probabilite": 0.8014
+      },
+      {
+        "mot": " quand",
+        "debut": 1219.66,
+        "fin": 1219.84,
+        "probabilite": 0.5627
+      },
+      {
+        "mot": " on",
+        "debut": 1219.84,
+        "fin": 1219.94,
+        "probabilite": 0.9653
+      },
+      {
+        "mot": " a",
+        "debut": 1219.94,
+        "fin": 1220.0,
+        "probabilite": 0.7461
+      },
+      {
+        "mot": " perdu",
+        "debut": 1220.0,
+        "fin": 1220.24,
+        "probabilite": 0.8152
+      },
+      {
+        "mot": " 2",
+        "debut": 1220.24,
+        "fin": 1220.48,
+        "probabilite": 0.8383
+      },
+      {
+        "mot": "-0.",
+        "debut": 1220.48,
+        "fin": 1220.72,
+        "probabilite": 0.8851
+      },
+      {
+        "mot": " Au",
+        "debut": 1221.36,
+        "fin": 1221.6,
+        "probabilite": 0.9498
+      },
+      {
+        "mot": " bout",
+        "debut": 1221.6,
+        "fin": 1221.76,
+        "probabilite": 0.9961
+      },
+      {
+        "mot": " de",
+        "debut": 1221.76,
+        "fin": 1221.9,
+        "probabilite": 0.91
+      },
+      {
+        "mot": " 0",
+        "debut": 1221.9,
+        "fin": 1222.06,
+        "probabilite": 0.6691
+      },
+      {
+        "mot": "-0,",
+        "debut": 1222.06,
+        "fin": 1222.28,
+        "probabilite": 0.977
+      },
+      {
+        "mot": " on",
+        "debut": 1222.32,
+        "fin": 1222.42,
+        "probabilite": 0.8637
+      },
+      {
+        "mot": " a",
+        "debut": 1222.42,
+        "fin": 1222.44,
+        "probabilite": 0.9285
+      },
+      {
+        "mot": " fait",
+        "debut": 1222.44,
+        "fin": 1222.56,
+        "probabilite": 0.3426
+      },
+      {
+        "mot": " déjà",
+        "debut": 1222.56,
+        "fin": 1222.76,
+        "probabilite": 0.6614
+      },
+      {
+        "mot": " la",
+        "debut": 1222.76,
+        "fin": 1222.86,
+        "probabilite": 0.2188
+      },
+      {
+        "mot": " face",
+        "debut": 1222.86,
+        "fin": 1223.0,
+        "probabilite": 0.9814
+      },
+      {
+        "mot": "-à",
+        "debut": 1223.0,
+        "fin": 1223.14,
+        "probabilite": 0.5564
+      },
+      {
+        "mot": "-face.",
+        "debut": 1223.14,
+        "fin": 1223.32,
+        "probabilite": 0.9927
+      }
+    ]
+  },
+  {
+    "debut": 1223.76,
+    "fin": 1227.0,
+    "texte": "Donc mettez bien parti les mecs, on n'a plus rien à perdre, on a juste une deuxième étape à gagner.",
+    "mots": [
+      {
+        "mot": " Donc",
+        "debut": 1223.76,
+        "fin": 1224.0,
+        "probabilite": 0.3803
+      },
+      {
+        "mot": " mettez",
+        "debut": 1224.0,
+        "fin": 1224.24,
+        "probabilite": 0.9029
+      },
+      {
+        "mot": " bien",
+        "debut": 1224.24,
+        "fin": 1224.34,
+        "probabilite": 0.2256
+      },
+      {
+        "mot": " parti",
+        "debut": 1224.34,
+        "fin": 1224.64,
+        "probabilite": 0.1497
+      },
+      {
+        "mot": " les",
+        "debut": 1224.64,
+        "fin": 1224.82,
+        "probabilite": 0.7038
+      },
+      {
+        "mot": " mecs,",
+        "debut": 1224.82,
+        "fin": 1224.92,
+        "probabilite": 0.9942
+      },
+      {
+        "mot": " on",
+        "debut": 1224.92,
+        "fin": 1225.12,
+        "probabilite": 0.2498
+      },
+      {
+        "mot": " n",
+        "debut": 1225.12,
+        "fin": 1225.34,
+        "probabilite": 0.8027
+      },
+      {
+        "mot": "'a",
+        "debut": 1225.34,
+        "fin": 1225.34,
+        "probabilite": 0.9831
+      },
+      {
+        "mot": " plus",
+        "debut": 1225.34,
+        "fin": 1225.48,
+        "probabilite": 0.9966
+      },
+      {
+        "mot": " rien",
+        "debut": 1225.48,
+        "fin": 1225.58,
+        "probabilite": 0.8708
+      },
+      {
+        "mot": " à",
+        "debut": 1225.58,
+        "fin": 1225.7,
+        "probabilite": 0.9906
+      },
+      {
+        "mot": " perdre,",
+        "debut": 1225.7,
+        "fin": 1225.88,
+        "probabilite": 0.9744
+      },
+      {
+        "mot": " on",
+        "debut": 1225.94,
+        "fin": 1226.02,
+        "probabilite": 0.8724
+      },
+      {
+        "mot": " a",
+        "debut": 1226.02,
+        "fin": 1226.04,
+        "probabilite": 0.8986
+      },
+      {
+        "mot": " juste",
+        "debut": 1226.04,
+        "fin": 1226.18,
+        "probabilite": 0.9575
+      },
+      {
+        "mot": " une",
+        "debut": 1226.18,
+        "fin": 1226.32,
+        "probabilite": 0.8741
+      },
+      {
+        "mot": " deuxième",
+        "debut": 1226.32,
+        "fin": 1226.46,
+        "probabilite": 0.9388
+      },
+      {
+        "mot": " étape",
+        "debut": 1226.46,
+        "fin": 1226.66,
+        "probabilite": 0.6385
+      },
+      {
+        "mot": " à",
+        "debut": 1226.66,
+        "fin": 1226.78,
+        "probabilite": 0.9828
+      },
+      {
+        "mot": " gagner.",
+        "debut": 1226.78,
+        "fin": 1227.0,
+        "probabilite": 0.996
+      }
+    ]
+  },
+  {
+    "debut": 1227.3,
+    "fin": 1230.32,
+    "texte": "Et si on a gagné les mecs, on va les faire trembler. C'est marqué dans le premier quart d'heure, vous allez voir.",
+    "mots": [
+      {
+        "mot": " Et",
+        "debut": 1227.3,
+        "fin": 1227.54,
+        "probabilite": 0.7868
+      },
+      {
+        "mot": " si",
+        "debut": 1227.54,
+        "fin": 1227.62,
+        "probabilite": 0.9902
+      },
+      {
+        "mot": " on",
+        "debut": 1227.62,
+        "fin": 1227.72,
+        "probabilite": 0.9965
+      },
+      {
+        "mot": " a",
+        "debut": 1227.72,
+        "fin": 1227.8,
+        "probabilite": 0.5081
+      },
+      {
+        "mot": " gagné",
+        "debut": 1227.8,
+        "fin": 1228.06,
+        "probabilite": 0.9628
+      },
+      {
+        "mot": " les",
+        "debut": 1228.06,
+        "fin": 1228.12,
+        "probabilite": 0.334
+      },
+      {
+        "mot": " mecs,",
+        "debut": 1228.12,
+        "fin": 1228.22,
+        "probabilite": 0.9988
+      },
+      {
+        "mot": " on",
+        "debut": 1228.22,
+        "fin": 1228.32,
+        "probabilite": 0.9938
+      },
+      {
+        "mot": " va",
+        "debut": 1228.32,
+        "fin": 1228.38,
+        "probabilite": 0.9729
+      },
+      {
+        "mot": " les",
+        "debut": 1228.38,
+        "fin": 1228.46,
+        "probabilite": 0.9814
+      },
+      {
+        "mot": " faire",
+        "debut": 1228.46,
+        "fin": 1228.56,
+        "probabilite": 0.9893
+      },
+      {
+        "mot": " trembler.",
+        "debut": 1228.56,
+        "fin": 1228.92,
+        "probabilite": 0.9717
+      },
+      {
+        "mot": " C",
+        "debut": 1229.02,
+        "fin": 1229.12,
+        "probabilite": 0.6883
+      },
+      {
+        "mot": "'est",
+        "debut": 1229.12,
+        "fin": 1229.14,
+        "probabilite": 0.9938
+      },
+      {
+        "mot": " marqué",
+        "debut": 1229.14,
+        "fin": 1229.38,
+        "probabilite": 0.9804
+      },
+      {
+        "mot": " dans",
+        "debut": 1229.38,
+        "fin": 1229.46,
+        "probabilite": 0.9887
+      },
+      {
+        "mot": " le",
+        "debut": 1229.46,
+        "fin": 1229.54,
+        "probabilite": 0.9296
+      },
+      {
+        "mot": " premier",
+        "debut": 1229.54,
+        "fin": 1229.7,
+        "probabilite": 0.9797
+      },
+      {
+        "mot": " quart",
+        "debut": 1229.7,
+        "fin": 1229.84,
+        "probabilite": 0.2027
+      },
+      {
+        "mot": " d",
+        "debut": 1229.84,
+        "fin": 1229.9,
+        "probabilite": 0.9868
+      },
+      {
+        "mot": "'heure,",
+        "debut": 1229.9,
+        "fin": 1230.0,
+        "probabilite": 0.9934
+      },
+      {
+        "mot": " vous",
+        "debut": 1230.04,
+        "fin": 1230.1,
+        "probabilite": 0.9937
+      },
+      {
+        "mot": " allez",
+        "debut": 1230.1,
+        "fin": 1230.16,
+        "probabilite": 0.9847
+      },
+      {
+        "mot": " voir.",
+        "debut": 1230.16,
+        "fin": 1230.32,
+        "probabilite": 0.9516
+      }
+    ]
+  },
+  {
+    "debut": 1231.22,
+    "fin": 1235.58,
+    "texte": "Les dernières situations, on les a eues. On a tapé le ponton, on a tapé la barre, on a fait des arrières-parties.",
+    "mots": [
+      {
+        "mot": " Les",
+        "debut": 1231.22,
+        "fin": 1231.46,
+        "probabilite": 0.4527
+      },
+      {
+        "mot": " dernières",
+        "debut": 1231.46,
+        "fin": 1231.66,
+        "probabilite": 0.7432
+      },
+      {
+        "mot": " situations,",
+        "debut": 1231.66,
+        "fin": 1231.92,
+        "probabilite": 0.7032
+      },
+      {
+        "mot": " on",
+        "debut": 1231.96,
+        "fin": 1232.04,
+        "probabilite": 0.488
+      },
+      {
+        "mot": " les",
+        "debut": 1232.04,
+        "fin": 1232.04,
+        "probabilite": 0.8657
+      },
+      {
+        "mot": " a",
+        "debut": 1232.04,
+        "fin": 1232.14,
+        "probabilite": 0.9603
+      },
+      {
+        "mot": " eues.",
+        "debut": 1232.14,
+        "fin": 1232.3,
+        "probabilite": 0.9071
+      },
+      {
+        "mot": " On",
+        "debut": 1232.4,
+        "fin": 1232.58,
+        "probabilite": 0.985
+      },
+      {
+        "mot": " a",
+        "debut": 1232.58,
+        "fin": 1232.62,
+        "probabilite": 0.9155
+      },
+      {
+        "mot": " tapé",
+        "debut": 1232.62,
+        "fin": 1232.92,
+        "probabilite": 0.9682
+      },
+      {
+        "mot": " le",
+        "debut": 1232.92,
+        "fin": 1232.96,
+        "probabilite": 0.8478
+      },
+      {
+        "mot": " ponton,",
+        "debut": 1232.96,
+        "fin": 1233.24,
+        "probabilite": 0.239
+      },
+      {
+        "mot": " on",
+        "debut": 1233.32,
+        "fin": 1233.38,
+        "probabilite": 0.9633
+      },
+      {
+        "mot": " a",
+        "debut": 1233.38,
+        "fin": 1233.4,
+        "probabilite": 0.9898
+      },
+      {
+        "mot": " tapé",
+        "debut": 1233.4,
+        "fin": 1233.64,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " la",
+        "debut": 1233.64,
+        "fin": 1233.72,
+        "probabilite": 0.9632
+      },
+      {
+        "mot": " barre,",
+        "debut": 1233.72,
+        "fin": 1233.98,
+        "probabilite": 0.9675
+      },
+      {
+        "mot": " on",
+        "debut": 1234.14,
+        "fin": 1234.18,
+        "probabilite": 0.7574
+      },
+      {
+        "mot": " a",
+        "debut": 1234.18,
+        "fin": 1234.2,
+        "probabilite": 0.8596
+      },
+      {
+        "mot": " fait",
+        "debut": 1234.2,
+        "fin": 1234.52,
+        "probabilite": 0.2757
+      },
+      {
+        "mot": " des",
+        "debut": 1234.52,
+        "fin": 1234.8,
+        "probabilite": 0.6938
+      },
+      {
+        "mot": " arrières",
+        "debut": 1234.8,
+        "fin": 1235.2,
+        "probabilite": 0.6608
+      },
+      {
+        "mot": "-parties.",
+        "debut": 1235.2,
+        "fin": 1235.58,
+        "probabilite": 0.6852
+      }
+    ]
+  },
+  {
+    "debut": 1235.64,
+    "fin": 1237.5,
+    "texte": "Et les mecs servent les coups, on a besoin que ça en forme.",
+    "mots": [
+      {
+        "mot": " Et",
+        "debut": 1235.64,
+        "fin": 1235.88,
+        "probabilite": 0.3543
+      },
+      {
+        "mot": " les",
+        "debut": 1235.88,
+        "fin": 1235.98,
+        "probabilite": 0.9874
+      },
+      {
+        "mot": " mecs",
+        "debut": 1235.98,
+        "fin": 1236.2,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " servent",
+        "debut": 1236.2,
+        "fin": 1236.48,
+        "probabilite": 0.706
+      },
+      {
+        "mot": " les",
+        "debut": 1236.48,
+        "fin": 1236.56,
+        "probabilite": 0.6807
+      },
+      {
+        "mot": " coups,",
+        "debut": 1236.56,
+        "fin": 1236.7,
+        "probabilite": 0.6051
+      },
+      {
+        "mot": " on",
+        "debut": 1236.74,
+        "fin": 1236.86,
+        "probabilite": 0.6125
+      },
+      {
+        "mot": " a",
+        "debut": 1236.86,
+        "fin": 1236.92,
+        "probabilite": 0.1851
+      },
+      {
+        "mot": " besoin",
+        "debut": 1236.92,
+        "fin": 1237.04,
+        "probabilite": 0.4886
+      },
+      {
+        "mot": " que",
+        "debut": 1237.04,
+        "fin": 1237.12,
+        "probabilite": 0.281
+      },
+      {
+        "mot": " ça",
+        "debut": 1237.12,
+        "fin": 1237.2,
+        "probabilite": 0.6844
+      },
+      {
+        "mot": " en",
+        "debut": 1237.2,
+        "fin": 1237.28,
+        "probabilite": 0.3797
+      },
+      {
+        "mot": " forme.",
+        "debut": 1237.28,
+        "fin": 1237.5,
+        "probabilite": 0.9494
+      }
+    ]
+  },
+  {
+    "debut": 1239.4,
+    "fin": 1241.44,
+    "texte": "La semaine dernière, on a subi, on a gagné 2-0.",
+    "mots": [
+      {
+        "mot": " La",
+        "debut": 1239.4,
+        "fin": 1239.64,
+        "probabilite": 0.5536
+      },
+      {
+        "mot": " semaine",
+        "debut": 1239.64,
+        "fin": 1239.88,
+        "probabilite": 0.9851
+      },
+      {
+        "mot": " dernière,",
+        "debut": 1239.88,
+        "fin": 1240.2,
+        "probabilite": 0.9987
+      },
+      {
+        "mot": " on",
+        "debut": 1240.26,
+        "fin": 1240.36,
+        "probabilite": 0.9987
+      },
+      {
+        "mot": " a",
+        "debut": 1240.36,
+        "fin": 1240.44,
+        "probabilite": 0.8713
+      },
+      {
+        "mot": " subi,",
+        "debut": 1240.44,
+        "fin": 1240.78,
+        "probabilite": 0.989
+      },
+      {
+        "mot": " on",
+        "debut": 1240.78,
+        "fin": 1240.9,
+        "probabilite": 0.9871
+      },
+      {
+        "mot": " a",
+        "debut": 1240.9,
+        "fin": 1240.92,
+        "probabilite": 0.8213
+      },
+      {
+        "mot": " gagné",
+        "debut": 1240.92,
+        "fin": 1241.04,
+        "probabilite": 0.9885
+      },
+      {
+        "mot": " 2",
+        "debut": 1241.04,
+        "fin": 1241.14,
+        "probabilite": 0.4261
+      },
+      {
+        "mot": "-0.",
+        "debut": 1241.14,
+        "fin": 1241.44,
+        "probabilite": 0.9973
+      }
+    ]
+  },
+  {
+    "debut": 1241.92,
+    "fin": 1243.6,
+    "texte": "C'est à vous d'aller chercher quelque chose les gars.",
+    "mots": [
+      {
+        "mot": " C",
+        "debut": 1241.92,
+        "fin": 1242.16,
+        "probabilite": 0.9001
+      },
+      {
+        "mot": "'est",
+        "debut": 1242.16,
+        "fin": 1242.38,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " à",
+        "debut": 1242.38,
+        "fin": 1242.38,
+        "probabilite": 0.998
+      },
+      {
+        "mot": " vous",
+        "debut": 1242.38,
+        "fin": 1242.48,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " d",
+        "debut": 1242.48,
+        "fin": 1242.56,
+        "probabilite": 0.9495
+      },
+      {
+        "mot": "'aller",
+        "debut": 1242.56,
+        "fin": 1242.62,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " chercher",
+        "debut": 1242.62,
+        "fin": 1242.84,
+        "probabilite": 0.999
+      },
+      {
+        "mot": " quelque",
+        "debut": 1242.84,
+        "fin": 1243.08,
+        "probabilite": 0.9925
+      },
+      {
+        "mot": " chose",
+        "debut": 1243.08,
+        "fin": 1243.28,
+        "probabilite": 0.9952
+      },
+      {
+        "mot": " les",
+        "debut": 1243.28,
+        "fin": 1243.42,
+        "probabilite": 0.5229
+      },
+      {
+        "mot": " gars.",
+        "debut": 1243.42,
+        "fin": 1243.6,
+        "probabilite": 0.9983
+      }
+    ]
+  }
+]

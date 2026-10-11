@@ -1,0 +1,560 @@
+{
+  "numero": 10,
+  "format": "vertical",
+  "sha256": "284589a0bd3e778c02bb279ade290427f36f9f18367713d15ba6271f535b83dc",
+  "texte_prevu_sha256": "0c2577b30497fc72902274d289d0058f99ffb93a26ebad757493883850fb76b4",
+  "verification": "OK",
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "les",
+    "gars",
+    "tout",
+    "le"
+  ],
+  "derniers_mots_attendus": [
+    "engagement",
+    "mental",
+    "et",
+    "physique"
+  ],
+  "premiers_mots_reconnus": [
+    "les",
+    "gars",
+    "tout",
+    "le"
+  ],
+  "derniers_mots_reconnus": [
+    "engagement",
+    "mental",
+    "et",
+    "physique"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": true,
+  "transcription": [
+    {
+      "debut": 0.14,
+      "fin": 6.86,
+      "texte": "Les gars, tout le monde est responsable de tout de ses équipes, d'attaquer, de défendre et de récupérer le ballon.",
+      "mots": [
+        {
+          "mot": " Les",
+          "debut": 0.14,
+          "fin": 0.62
+        },
+        {
+          "mot": " gars,",
+          "debut": 0.62,
+          "fin": 0.76
+        },
+        {
+          "mot": " tout",
+          "debut": 1.0,
+          "fin": 1.44
+        },
+        {
+          "mot": " le",
+          "debut": 1.44,
+          "fin": 1.6
+        },
+        {
+          "mot": " monde",
+          "debut": 1.6,
+          "fin": 1.9
+        },
+        {
+          "mot": " est",
+          "debut": 1.9,
+          "fin": 2.92
+        },
+        {
+          "mot": " responsable",
+          "debut": 2.92,
+          "fin": 3.4
+        },
+        {
+          "mot": " de",
+          "debut": 3.4,
+          "fin": 3.52
+        },
+        {
+          "mot": " tout",
+          "debut": 3.52,
+          "fin": 3.62
+        },
+        {
+          "mot": " de",
+          "debut": 3.62,
+          "fin": 3.72
+        },
+        {
+          "mot": " ses",
+          "debut": 3.72,
+          "fin": 3.82
+        },
+        {
+          "mot": " équipes,",
+          "debut": 3.82,
+          "fin": 4.24
+        },
+        {
+          "mot": " d",
+          "debut": 4.36,
+          "fin": 4.6
+        },
+        {
+          "mot": "'attaquer,",
+          "debut": 4.6,
+          "fin": 4.98
+        },
+        {
+          "mot": " de",
+          "debut": 5.24,
+          "fin": 5.34
+        },
+        {
+          "mot": " défendre",
+          "debut": 5.34,
+          "fin": 5.86
+        },
+        {
+          "mot": " et",
+          "debut": 5.86,
+          "fin": 6.02
+        },
+        {
+          "mot": " de",
+          "debut": 6.02,
+          "fin": 6.14
+        },
+        {
+          "mot": " récupérer",
+          "debut": 6.14,
+          "fin": 6.52
+        },
+        {
+          "mot": " le",
+          "debut": 6.52,
+          "fin": 6.62
+        },
+        {
+          "mot": " ballon.",
+          "debut": 6.62,
+          "fin": 6.86
+        }
+      ]
+    },
+    {
+      "debut": 7.16,
+      "fin": 14.06,
+      "texte": "Tout le monde, de notre âge de mettre offensivement jusqu'au contrat dernier mètre, tout le monde est responsable, défendre, attaquer.",
+      "mots": [
+        {
+          "mot": " Tout",
+          "debut": 7.16,
+          "fin": 7.44
+        },
+        {
+          "mot": " le",
+          "debut": 7.44,
+          "fin": 7.56
+        },
+        {
+          "mot": " monde,",
+          "debut": 7.56,
+          "fin": 7.86
+        },
+        {
+          "mot": " de",
+          "debut": 8.7,
+          "fin": 8.92
+        },
+        {
+          "mot": " notre",
+          "debut": 8.92,
+          "fin": 9.12
+        },
+        {
+          "mot": " âge",
+          "debut": 9.12,
+          "fin": 9.34
+        },
+        {
+          "mot": " de",
+          "debut": 9.34,
+          "fin": 9.48
+        },
+        {
+          "mot": " mettre",
+          "debut": 9.48,
+          "fin": 10.12
+        },
+        {
+          "mot": " offensivement",
+          "debut": 10.12,
+          "fin": 10.78
+        },
+        {
+          "mot": " jusqu",
+          "debut": 10.78,
+          "fin": 10.98
+        },
+        {
+          "mot": "'au",
+          "debut": 10.98,
+          "fin": 11.2
+        },
+        {
+          "mot": " contrat",
+          "debut": 11.2,
+          "fin": 11.32
+        },
+        {
+          "mot": " dernier",
+          "debut": 11.32,
+          "fin": 11.56
+        },
+        {
+          "mot": " mètre,",
+          "debut": 11.56,
+          "fin": 11.84
+        },
+        {
+          "mot": " tout",
+          "debut": 12.0,
+          "fin": 12.16
+        },
+        {
+          "mot": " le",
+          "debut": 12.16,
+          "fin": 12.28
+        },
+        {
+          "mot": " monde",
+          "debut": 12.28,
+          "fin": 12.48
+        },
+        {
+          "mot": " est",
+          "debut": 12.48,
+          "fin": 12.66
+        },
+        {
+          "mot": " responsable,",
+          "debut": 12.66,
+          "fin": 13.14
+        },
+        {
+          "mot": " défendre,",
+          "debut": 13.26,
+          "fin": 13.62
+        },
+        {
+          "mot": " attaquer.",
+          "debut": 13.7,
+          "fin": 14.06
+        }
+      ]
+    },
+    {
+      "debut": 14.82,
+      "fin": 17.24,
+      "texte": "Le code pressing, ce n'est pas une option, c'est une obligation.",
+      "mots": [
+        {
+          "mot": " Le",
+          "debut": 14.82,
+          "fin": 15.22
+        },
+        {
+          "mot": " code",
+          "debut": 15.22,
+          "fin": 15.42
+        },
+        {
+          "mot": " pressing,",
+          "debut": 15.42,
+          "fin": 15.72
+        },
+        {
+          "mot": " ce",
+          "debut": 15.8,
+          "fin": 15.92
+        },
+        {
+          "mot": " n",
+          "debut": 15.92,
+          "fin": 15.98
+        },
+        {
+          "mot": "'est",
+          "debut": 15.98,
+          "fin": 15.98
+        },
+        {
+          "mot": " pas",
+          "debut": 15.98,
+          "fin": 16.08
+        },
+        {
+          "mot": " une",
+          "debut": 16.08,
+          "fin": 16.22
+        },
+        {
+          "mot": " option,",
+          "debut": 16.22,
+          "fin": 16.58
+        },
+        {
+          "mot": " c",
+          "debut": 16.74,
+          "fin": 16.78
+        },
+        {
+          "mot": "'est",
+          "debut": 16.78,
+          "fin": 16.8
+        },
+        {
+          "mot": " une",
+          "debut": 16.8,
+          "fin": 16.9
+        },
+        {
+          "mot": " obligation.",
+          "debut": 16.9,
+          "fin": 17.24
+        }
+      ]
+    },
+    {
+      "debut": 17.66,
+      "fin": 20.78,
+      "texte": "Celui-là qui fait pas le code pressing, à un moment donné, quand je demanderai si c'est vraiment bon.",
+      "mots": [
+        {
+          "mot": " Celui",
+          "debut": 17.66,
+          "fin": 17.88
+        },
+        {
+          "mot": "-là",
+          "debut": 17.88,
+          "fin": 17.92
+        },
+        {
+          "mot": " qui",
+          "debut": 17.92,
+          "fin": 18.0
+        },
+        {
+          "mot": " fait",
+          "debut": 18.0,
+          "fin": 18.12
+        },
+        {
+          "mot": " pas",
+          "debut": 18.12,
+          "fin": 18.22
+        },
+        {
+          "mot": " le",
+          "debut": 18.22,
+          "fin": 18.28
+        },
+        {
+          "mot": " code",
+          "debut": 18.28,
+          "fin": 18.44
+        },
+        {
+          "mot": " pressing,",
+          "debut": 18.44,
+          "fin": 18.68
+        },
+        {
+          "mot": " à",
+          "debut": 18.82,
+          "fin": 19.0
+        },
+        {
+          "mot": " un",
+          "debut": 19.0,
+          "fin": 19.08
+        },
+        {
+          "mot": " moment",
+          "debut": 19.08,
+          "fin": 19.2
+        },
+        {
+          "mot": " donné,",
+          "debut": 19.2,
+          "fin": 19.4
+        },
+        {
+          "mot": " quand",
+          "debut": 19.48,
+          "fin": 19.54
+        },
+        {
+          "mot": " je",
+          "debut": 19.54,
+          "fin": 19.66
+        },
+        {
+          "mot": " demanderai",
+          "debut": 19.66,
+          "fin": 20.1
+        },
+        {
+          "mot": " si",
+          "debut": 20.1,
+          "fin": 20.24
+        },
+        {
+          "mot": " c",
+          "debut": 20.24,
+          "fin": 20.4
+        },
+        {
+          "mot": "'est",
+          "debut": 20.4,
+          "fin": 20.44
+        },
+        {
+          "mot": " vraiment",
+          "debut": 20.44,
+          "fin": 20.6
+        },
+        {
+          "mot": " bon.",
+          "debut": 20.6,
+          "fin": 20.78
+        }
+      ]
+    },
+    {
+      "debut": 21.34,
+      "fin": 22.56,
+      "texte": "C'est une obligation.",
+      "mots": [
+        {
+          "mot": " C",
+          "debut": 21.34,
+          "fin": 21.74
+        },
+        {
+          "mot": "'est",
+          "debut": 21.74,
+          "fin": 21.84
+        },
+        {
+          "mot": " une",
+          "debut": 21.84,
+          "fin": 22.0
+        },
+        {
+          "mot": " obligation.",
+          "debut": 22.0,
+          "fin": 22.56
+        }
+      ]
+    },
+    {
+      "debut": 23.38,
+      "fin": 27.72,
+      "texte": "Intensité, agressivité, mentalité, tout ça est lié à la concentration.",
+      "mots": [
+        {
+          "mot": " Intensité,",
+          "debut": 23.38,
+          "fin": 23.78
+        },
+        {
+          "mot": " agressivité,",
+          "debut": 23.78,
+          "fin": 24.18
+        },
+        {
+          "mot": " mentalité,",
+          "debut": 24.3,
+          "fin": 24.86
+        },
+        {
+          "mot": " tout",
+          "debut": 25.02,
+          "fin": 25.34
+        },
+        {
+          "mot": " ça",
+          "debut": 25.34,
+          "fin": 25.54
+        },
+        {
+          "mot": " est",
+          "debut": 25.54,
+          "fin": 25.8
+        },
+        {
+          "mot": " lié",
+          "debut": 25.8,
+          "fin": 26.02
+        },
+        {
+          "mot": " à",
+          "debut": 26.02,
+          "fin": 26.14
+        },
+        {
+          "mot": " la",
+          "debut": 26.14,
+          "fin": 27.24
+        },
+        {
+          "mot": " concentration.",
+          "debut": 27.24,
+          "fin": 27.72
+        }
+      ]
+    },
+    {
+      "debut": 27.92,
+      "fin": 29.6,
+      "texte": "Un engagement mental et physique.",
+      "mots": [
+        {
+          "mot": " Un",
+          "debut": 27.92,
+          "fin": 28.04
+        },
+        {
+          "mot": " engagement",
+          "debut": 28.04,
+          "fin": 28.44
+        },
+        {
+          "mot": " mental",
+          "debut": 28.44,
+          "fin": 28.96
+        },
+        {
+          "mot": " et",
+          "debut": 28.96,
+          "fin": 29.36
+        },
+        {
+          "mot": " physique.",
+          "debut": 29.36,
+          "fin": 29.6
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {},
+  "lufs": -14.07,
+  "pic_vrai_db": -1.33,
+  "duree": 29.8,
+  "taille_octets": 20615869
+}

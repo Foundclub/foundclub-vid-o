@@ -1,0 +1,483 @@
+[
+  {
+    "debut": 1166.48,
+    "fin": 1191.56,
+    "texte": "Faites-vous violence, trouvez les mots, les regards, les petits gestes, il y a eu des situations, on peut marquer un but, il suffit d'un, rendez ce match court, ça c'est pas possible les gars, c'est pas possible, c'est pas votre visage, c'est pas notre visage, c'est dur, ça fait mal au casque, pour eux c'est acquis, on n'en parle plus les gars, je suis détesté de prendre un but, putain.",
+    "mots": [
+      {
+        "mot": " Faites",
+        "debut": 1166.48,
+        "fin": 1166.8,
+        "probabilite": 0.738
+      },
+      {
+        "mot": "-vous",
+        "debut": 1166.8,
+        "fin": 1166.9,
+        "probabilite": 0.7426
+      },
+      {
+        "mot": " violence,",
+        "debut": 1166.9,
+        "fin": 1167.16,
+        "probabilite": 0.8174
+      },
+      {
+        "mot": " trouvez",
+        "debut": 1167.46,
+        "fin": 1168.04,
+        "probabilite": 0.9528
+      },
+      {
+        "mot": " les",
+        "debut": 1168.04,
+        "fin": 1168.16,
+        "probabilite": 0.8585
+      },
+      {
+        "mot": " mots,",
+        "debut": 1168.16,
+        "fin": 1168.36,
+        "probabilite": 0.9982
+      },
+      {
+        "mot": " les",
+        "debut": 1168.52,
+        "fin": 1170.0,
+        "probabilite": 0.9653
+      },
+      {
+        "mot": " regards,",
+        "debut": 1170.0,
+        "fin": 1170.32,
+        "probabilite": 0.9781
+      },
+      {
+        "mot": " les",
+        "debut": 1170.42,
+        "fin": 1170.5,
+        "probabilite": 0.9821
+      },
+      {
+        "mot": " petits",
+        "debut": 1170.5,
+        "fin": 1170.66,
+        "probabilite": 0.985
+      },
+      {
+        "mot": " gestes,",
+        "debut": 1170.66,
+        "fin": 1171.12,
+        "probabilite": 0.9984
+      },
+      {
+        "mot": " il",
+        "debut": 1171.12,
+        "fin": 1173.76,
+        "probabilite": 0.6486
+      },
+      {
+        "mot": " y",
+        "debut": 1173.76,
+        "fin": 1173.82,
+        "probabilite": 0.9647
+      },
+      {
+        "mot": " a",
+        "debut": 1173.82,
+        "fin": 1173.86,
+        "probabilite": 0.8467
+      },
+      {
+        "mot": " eu",
+        "debut": 1173.86,
+        "fin": 1173.88,
+        "probabilite": 0.665
+      },
+      {
+        "mot": " des",
+        "debut": 1173.88,
+        "fin": 1174.0,
+        "probabilite": 0.9453
+      },
+      {
+        "mot": " situations,",
+        "debut": 1174.0,
+        "fin": 1174.38,
+        "probabilite": 0.9913
+      },
+      {
+        "mot": " on",
+        "debut": 1174.64,
+        "fin": 1174.8,
+        "probabilite": 0.9394
+      },
+      {
+        "mot": " peut",
+        "debut": 1174.8,
+        "fin": 1174.98,
+        "probabilite": 0.9893
+      },
+      {
+        "mot": " marquer",
+        "debut": 1174.98,
+        "fin": 1175.3,
+        "probabilite": 0.9742
+      },
+      {
+        "mot": " un",
+        "debut": 1175.3,
+        "fin": 1175.38,
+        "probabilite": 0.8489
+      },
+      {
+        "mot": " but,",
+        "debut": 1175.38,
+        "fin": 1175.48,
+        "probabilite": 0.6539
+      },
+      {
+        "mot": " il",
+        "debut": 1175.56,
+        "fin": 1175.7,
+        "probabilite": 0.9439
+      },
+      {
+        "mot": " suffit",
+        "debut": 1175.7,
+        "fin": 1176.02,
+        "probabilite": 0.9943
+      },
+      {
+        "mot": " d",
+        "debut": 1176.02,
+        "fin": 1176.08,
+        "probabilite": 0.9262
+      },
+      {
+        "mot": "'un,",
+        "debut": 1176.08,
+        "fin": 1176.16,
+        "probabilite": 0.9909
+      },
+      {
+        "mot": " rendez",
+        "debut": 1176.28,
+        "fin": 1176.76,
+        "probabilite": 0.6676
+      },
+      {
+        "mot": " ce",
+        "debut": 1176.76,
+        "fin": 1177.46,
+        "probabilite": 0.8524
+      },
+      {
+        "mot": " match",
+        "debut": 1177.46,
+        "fin": 1177.68,
+        "probabilite": 0.9931
+      },
+      {
+        "mot": " court,",
+        "debut": 1177.68,
+        "fin": 1177.94,
+        "probabilite": 0.7263
+      },
+      {
+        "mot": " ça",
+        "debut": 1178.1,
+        "fin": 1178.38,
+        "probabilite": 0.6485
+      },
+      {
+        "mot": " c",
+        "debut": 1178.38,
+        "fin": 1178.48,
+        "probabilite": 0.8018
+      },
+      {
+        "mot": "'est",
+        "debut": 1178.48,
+        "fin": 1178.56,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " pas",
+        "debut": 1178.56,
+        "fin": 1178.62,
+        "probabilite": 0.9966
+      },
+      {
+        "mot": " possible",
+        "debut": 1178.62,
+        "fin": 1178.98,
+        "probabilite": 0.9985
+      },
+      {
+        "mot": " les",
+        "debut": 1178.98,
+        "fin": 1179.1,
+        "probabilite": 0.9244
+      },
+      {
+        "mot": " gars,",
+        "debut": 1179.1,
+        "fin": 1179.26,
+        "probabilite": 0.9981
+      },
+      {
+        "mot": " c",
+        "debut": 1179.34,
+        "fin": 1179.78,
+        "probabilite": 0.9837
+      },
+      {
+        "mot": "'est",
+        "debut": 1179.78,
+        "fin": 1179.86,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " pas",
+        "debut": 1179.86,
+        "fin": 1179.98,
+        "probabilite": 0.9986
+      },
+      {
+        "mot": " possible,",
+        "debut": 1179.98,
+        "fin": 1180.3,
+        "probabilite": 0.9861
+      },
+      {
+        "mot": " c",
+        "debut": 1180.52,
+        "fin": 1181.24,
+        "probabilite": 0.9822
+      },
+      {
+        "mot": "'est",
+        "debut": 1181.24,
+        "fin": 1181.38,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " pas",
+        "debut": 1181.38,
+        "fin": 1181.44,
+        "probabilite": 0.9985
+      },
+      {
+        "mot": " votre",
+        "debut": 1181.44,
+        "fin": 1181.62,
+        "probabilite": 0.9401
+      },
+      {
+        "mot": " visage,",
+        "debut": 1181.62,
+        "fin": 1182.14,
+        "probabilite": 0.9907
+      },
+      {
+        "mot": " c",
+        "debut": 1182.18,
+        "fin": 1182.58,
+        "probabilite": 0.9978
+      },
+      {
+        "mot": "'est",
+        "debut": 1182.58,
+        "fin": 1182.66,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " pas",
+        "debut": 1182.66,
+        "fin": 1182.72,
+        "probabilite": 0.994
+      },
+      {
+        "mot": " notre",
+        "debut": 1182.72,
+        "fin": 1182.9,
+        "probabilite": 0.984
+      },
+      {
+        "mot": " visage,",
+        "debut": 1182.9,
+        "fin": 1183.36,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " c",
+        "debut": 1183.48,
+        "fin": 1183.82,
+        "probabilite": 0.9925
+      },
+      {
+        "mot": "'est",
+        "debut": 1183.82,
+        "fin": 1183.92,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " dur,",
+        "debut": 1183.92,
+        "fin": 1184.08,
+        "probabilite": 0.99
+      },
+      {
+        "mot": " ça",
+        "debut": 1184.1,
+        "fin": 1184.24,
+        "probabilite": 0.846
+      },
+      {
+        "mot": " fait",
+        "debut": 1184.24,
+        "fin": 1184.3,
+        "probabilite": 0.9125
+      },
+      {
+        "mot": " mal",
+        "debut": 1184.3,
+        "fin": 1184.48,
+        "probabilite": 0.9975
+      },
+      {
+        "mot": " au",
+        "debut": 1184.48,
+        "fin": 1184.62,
+        "probabilite": 0.9105
+      },
+      {
+        "mot": " casque,",
+        "debut": 1184.62,
+        "fin": 1185.02,
+        "probabilite": 0.9985
+      },
+      {
+        "mot": " pour",
+        "debut": 1185.04,
+        "fin": 1185.94,
+        "probabilite": 0.9952
+      },
+      {
+        "mot": " eux",
+        "debut": 1185.94,
+        "fin": 1186.12,
+        "probabilite": 0.993
+      },
+      {
+        "mot": " c",
+        "debut": 1186.12,
+        "fin": 1186.22,
+        "probabilite": 0.9885
+      },
+      {
+        "mot": "'est",
+        "debut": 1186.22,
+        "fin": 1186.3,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " acquis,",
+        "debut": 1186.3,
+        "fin": 1186.42,
+        "probabilite": 0.98
+      },
+      {
+        "mot": " on",
+        "debut": 1186.72,
+        "fin": 1188.22,
+        "probabilite": 0.9961
+      },
+      {
+        "mot": " n",
+        "debut": 1188.22,
+        "fin": 1188.28,
+        "probabilite": 0.8917
+      },
+      {
+        "mot": "'en",
+        "debut": 1188.28,
+        "fin": 1188.38,
+        "probabilite": 0.9868
+      },
+      {
+        "mot": " parle",
+        "debut": 1188.38,
+        "fin": 1188.54,
+        "probabilite": 0.4663
+      },
+      {
+        "mot": " plus",
+        "debut": 1188.54,
+        "fin": 1188.74,
+        "probabilite": 0.999
+      },
+      {
+        "mot": " les",
+        "debut": 1188.74,
+        "fin": 1188.82,
+        "probabilite": 0.986
+      },
+      {
+        "mot": " gars,",
+        "debut": 1188.82,
+        "fin": 1188.98,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " je",
+        "debut": 1189.04,
+        "fin": 1189.1,
+        "probabilite": 0.2128
+      },
+      {
+        "mot": " suis",
+        "debut": 1189.1,
+        "fin": 1189.3,
+        "probabilite": 0.5705
+      },
+      {
+        "mot": " détesté",
+        "debut": 1189.3,
+        "fin": 1190.36,
+        "probabilite": 0.8898
+      },
+      {
+        "mot": " de",
+        "debut": 1190.36,
+        "fin": 1190.42,
+        "probabilite": 0.9883
+      },
+      {
+        "mot": " prendre",
+        "debut": 1190.42,
+        "fin": 1190.62,
+        "probabilite": 0.9893
+      },
+      {
+        "mot": " un",
+        "debut": 1190.62,
+        "fin": 1190.78,
+        "probabilite": 0.87
+      },
+      {
+        "mot": " but,",
+        "debut": 1190.78,
+        "fin": 1191.02,
+        "probabilite": 0.9985
+      },
+      {
+        "mot": " putain.",
+        "debut": 1191.08,
+        "fin": 1191.56,
+        "probabilite": 0.979
+      }
+    ]
+  }
+]

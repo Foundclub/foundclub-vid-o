@@ -1,0 +1,681 @@
+[
+  {
+    "debut": 123.0,
+    "fin": 129.42,
+    "texte": "Mes petits potes, comme vous avez pu le voir dans l'épisode précédent, on a gagné le trophée des champions.",
+    "mots": [
+      {
+        "mot": " Mes",
+        "debut": 123.0,
+        "fin": 123.92,
+        "probabilite": 0.6975
+      },
+      {
+        "mot": " petits",
+        "debut": 123.92,
+        "fin": 124.12,
+        "probabilite": 0.9236
+      },
+      {
+        "mot": " potes,",
+        "debut": 124.12,
+        "fin": 124.46,
+        "probabilite": 0.9919
+      },
+      {
+        "mot": " comme",
+        "debut": 124.54,
+        "fin": 124.64,
+        "probabilite": 0.9981
+      },
+      {
+        "mot": " vous",
+        "debut": 124.64,
+        "fin": 124.8,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " avez",
+        "debut": 124.8,
+        "fin": 124.96,
+        "probabilite": 0.9762
+      },
+      {
+        "mot": " pu",
+        "debut": 124.96,
+        "fin": 125.18,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " le",
+        "debut": 125.18,
+        "fin": 125.26,
+        "probabilite": 0.9975
+      },
+      {
+        "mot": " voir",
+        "debut": 125.26,
+        "fin": 125.52,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " dans",
+        "debut": 125.52,
+        "fin": 125.74,
+        "probabilite": 0.9735
+      },
+      {
+        "mot": " l",
+        "debut": 125.74,
+        "fin": 125.86,
+        "probabilite": 0.9986
+      },
+      {
+        "mot": "'épisode",
+        "debut": 125.86,
+        "fin": 126.2,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " précédent,",
+        "debut": 126.2,
+        "fin": 126.78,
+        "probabilite": 0.9989
+      },
+      {
+        "mot": " on",
+        "debut": 127.04,
+        "fin": 127.16,
+        "probabilite": 0.9939
+      },
+      {
+        "mot": " a",
+        "debut": 127.16,
+        "fin": 127.46,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " gagné",
+        "debut": 127.46,
+        "fin": 128.0,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " le",
+        "debut": 128.0,
+        "fin": 128.3,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " trophée",
+        "debut": 128.3,
+        "fin": 128.78,
+        "probabilite": 0.967
+      },
+      {
+        "mot": " des",
+        "debut": 128.78,
+        "fin": 129.0,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " champions.",
+        "debut": 129.0,
+        "fin": 129.42,
+        "probabilite": 0.9922
+      }
+    ]
+  },
+  {
+    "debut": 130.3,
+    "fin": 132.3,
+    "texte": "Ah non, ça c'est la canne qu'on a gagné avec le Maroc.",
+    "mots": [
+      {
+        "mot": " Ah",
+        "debut": 130.3,
+        "fin": 130.7,
+        "probabilite": 0.9135
+      },
+      {
+        "mot": " non,",
+        "debut": 130.7,
+        "fin": 130.8,
+        "probabilite": 0.9915
+      },
+      {
+        "mot": " ça",
+        "debut": 130.92,
+        "fin": 130.96,
+        "probabilite": 0.9618
+      },
+      {
+        "mot": " c",
+        "debut": 130.96,
+        "fin": 131.08,
+        "probabilite": 0.714
+      },
+      {
+        "mot": "'est",
+        "debut": 131.08,
+        "fin": 131.14,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " la",
+        "debut": 131.14,
+        "fin": 131.24,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " canne",
+        "debut": 131.24,
+        "fin": 131.44,
+        "probabilite": 0.9408
+      },
+      {
+        "mot": " qu",
+        "debut": 131.44,
+        "fin": 131.52,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": "'on",
+        "debut": 131.52,
+        "fin": 131.54,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " a",
+        "debut": 131.54,
+        "fin": 131.62,
+        "probabilite": 0.9982
+      },
+      {
+        "mot": " gagné",
+        "debut": 131.62,
+        "fin": 131.8,
+        "probabilite": 0.7601
+      },
+      {
+        "mot": " avec",
+        "debut": 131.8,
+        "fin": 131.92,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " le",
+        "debut": 131.92,
+        "fin": 131.98,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " Maroc.",
+        "debut": 131.98,
+        "fin": 132.3,
+        "probabilite": 0.997
+      }
+    ]
+  },
+  {
+    "debut": 136.0,
+    "fin": 142.16,
+    "texte": "Bon, plus sérieusement, premier match officiel et premier trophée déjà, c'est juste incroyable.",
+    "mots": [
+      {
+        "mot": " Bon,",
+        "debut": 136.0,
+        "fin": 136.44,
+        "probabilite": 0.9131
+      },
+      {
+        "mot": " plus",
+        "debut": 136.74,
+        "fin": 136.8,
+        "probabilite": 0.9985
+      },
+      {
+        "mot": " sérieusement,",
+        "debut": 136.8,
+        "fin": 137.28,
+        "probabilite": 0.9896
+      },
+      {
+        "mot": " premier",
+        "debut": 137.62,
+        "fin": 137.9,
+        "probabilite": 0.991
+      },
+      {
+        "mot": " match",
+        "debut": 137.9,
+        "fin": 138.16,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " officiel",
+        "debut": 138.16,
+        "fin": 138.8,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " et",
+        "debut": 138.8,
+        "fin": 139.16,
+        "probabilite": 0.9871
+      },
+      {
+        "mot": " premier",
+        "debut": 139.16,
+        "fin": 139.78,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " trophée",
+        "debut": 139.78,
+        "fin": 140.22,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " déjà,",
+        "debut": 140.22,
+        "fin": 140.5,
+        "probabilite": 0.9971
+      },
+      {
+        "mot": " c",
+        "debut": 140.72,
+        "fin": 140.78,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": "'est",
+        "debut": 140.78,
+        "fin": 140.84,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " juste",
+        "debut": 140.84,
+        "fin": 141.12,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " incroyable.",
+        "debut": 141.12,
+        "fin": 142.16,
+        "probabilite": 0.9995
+      }
+    ]
+  },
+  {
+    "debut": 142.5,
+    "fin": 150.32,
+    "texte": "Donc félicitations à l'équipe, félicitations à tout club, félicitations également à tous les joueurs qui ont participé à cette montée l'année dernière.",
+    "mots": [
+      {
+        "mot": " Donc",
+        "debut": 142.5,
+        "fin": 142.6,
+        "probabilite": 0.9466
+      },
+      {
+        "mot": " félicitations",
+        "debut": 142.6,
+        "fin": 143.3,
+        "probabilite": 0.9608
+      },
+      {
+        "mot": " à",
+        "debut": 143.3,
+        "fin": 143.68,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " l",
+        "debut": 143.68,
+        "fin": 143.74,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": "'équipe,",
+        "debut": 143.74,
+        "fin": 144.04,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " félicitations",
+        "debut": 144.18,
+        "fin": 144.62,
+        "probabilite": 0.9985
+      },
+      {
+        "mot": " à",
+        "debut": 144.62,
+        "fin": 144.78,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " tout",
+        "debut": 144.78,
+        "fin": 145.0,
+        "probabilite": 0.9925
+      },
+      {
+        "mot": " club,",
+        "debut": 145.0,
+        "fin": 145.3,
+        "probabilite": 0.6309
+      },
+      {
+        "mot": " félicitations",
+        "debut": 145.5,
+        "fin": 146.24,
+        "probabilite": 0.9987
+      },
+      {
+        "mot": " également",
+        "debut": 146.24,
+        "fin": 146.62,
+        "probabilite": 0.9979
+      },
+      {
+        "mot": " à",
+        "debut": 146.62,
+        "fin": 146.96,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " tous",
+        "debut": 146.96,
+        "fin": 147.24,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " les",
+        "debut": 147.24,
+        "fin": 147.38,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " joueurs",
+        "debut": 147.38,
+        "fin": 147.8,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " qui",
+        "debut": 147.8,
+        "fin": 148.22,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " ont",
+        "debut": 148.22,
+        "fin": 148.34,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " participé",
+        "debut": 148.34,
+        "fin": 149.0,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " à",
+        "debut": 149.0,
+        "fin": 149.24,
+        "probabilite": 0.9909
+      },
+      {
+        "mot": " cette",
+        "debut": 149.24,
+        "fin": 149.46,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " montée",
+        "debut": 149.46,
+        "fin": 149.74,
+        "probabilite": 0.999
+      },
+      {
+        "mot": " l",
+        "debut": 149.74,
+        "fin": 149.84,
+        "probabilite": 0.9973
+      },
+      {
+        "mot": "'année",
+        "debut": 149.84,
+        "fin": 149.96,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " dernière.",
+        "debut": 149.96,
+        "fin": 150.32,
+        "probabilite": 0.9998
+      }
+    ]
+  },
+  {
+    "debut": 150.32,
+    "fin": 153.38,
+    "texte": "parce que sans eux, on n'aurait pas pu faire ce match incroyable.",
+    "mots": [
+      {
+        "mot": " parce",
+        "debut": 150.32,
+        "fin": 150.58,
+        "probabilite": 0.6093
+      },
+      {
+        "mot": " que",
+        "debut": 150.58,
+        "fin": 150.7,
+        "probabilite": 0.996
+      },
+      {
+        "mot": " sans",
+        "debut": 150.7,
+        "fin": 150.9,
+        "probabilite": 0.9978
+      },
+      {
+        "mot": " eux,",
+        "debut": 150.9,
+        "fin": 151.08,
+        "probabilite": 0.9971
+      },
+      {
+        "mot": " on",
+        "debut": 151.24,
+        "fin": 151.56,
+        "probabilite": 0.9955
+      },
+      {
+        "mot": " n",
+        "debut": 151.56,
+        "fin": 151.64,
+        "probabilite": 0.9724
+      },
+      {
+        "mot": "'aurait",
+        "debut": 151.64,
+        "fin": 151.74,
+        "probabilite": 0.995
+      },
+      {
+        "mot": " pas",
+        "debut": 151.74,
+        "fin": 151.84,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " pu",
+        "debut": 151.84,
+        "fin": 151.98,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " faire",
+        "debut": 151.98,
+        "fin": 152.16,
+        "probabilite": 0.9976
+      },
+      {
+        "mot": " ce",
+        "debut": 152.16,
+        "fin": 152.32,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " match",
+        "debut": 152.32,
+        "fin": 152.52,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " incroyable.",
+        "debut": 152.52,
+        "fin": 153.38,
+        "probabilite": 0.9955
+      }
+    ]
+  },
+  {
+    "debut": 153.7,
+    "fin": 157.04,
+    "texte": "Mais maintenant, voilà, ce trophée, il est à la maison, il restera à la maison.",
+    "mots": [
+      {
+        "mot": " Mais",
+        "debut": 153.7,
+        "fin": 153.76,
+        "probabilite": 0.9579
+      },
+      {
+        "mot": " maintenant,",
+        "debut": 153.76,
+        "fin": 154.08,
+        "probabilite": 0.9967
+      },
+      {
+        "mot": " voilà,",
+        "debut": 154.3,
+        "fin": 154.4,
+        "probabilite": 0.7286
+      },
+      {
+        "mot": " ce",
+        "debut": 154.56,
+        "fin": 154.66,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " trophée,",
+        "debut": 154.66,
+        "fin": 155.16,
+        "probabilite": 0.9975
+      },
+      {
+        "mot": " il",
+        "debut": 155.16,
+        "fin": 155.44,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " est",
+        "debut": 155.44,
+        "fin": 155.5,
+        "probabilite": 0.9854
+      },
+      {
+        "mot": " à",
+        "debut": 155.5,
+        "fin": 155.58,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " la",
+        "debut": 155.58,
+        "fin": 155.68,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " maison,",
+        "debut": 155.68,
+        "fin": 155.98,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " il",
+        "debut": 156.08,
+        "fin": 156.16,
+        "probabilite": 0.9974
+      },
+      {
+        "mot": " restera",
+        "debut": 156.16,
+        "fin": 156.5,
+        "probabilite": 0.9988
+      },
+      {
+        "mot": " à",
+        "debut": 156.5,
+        "fin": 156.6,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " la",
+        "debut": 156.6,
+        "fin": 156.68,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " maison.",
+        "debut": 156.68,
+        "fin": 157.04,
+        "probabilite": 1.0
+      }
+    ]
+  },
+  {
+    "debut": 157.3,
+    "fin": 159.58,
+    "texte": "Et maintenant, place au championnat.",
+    "mots": [
+      {
+        "mot": " Et",
+        "debut": 157.3,
+        "fin": 157.36,
+        "probabilite": 0.9947
+      },
+      {
+        "mot": " maintenant,",
+        "debut": 157.36,
+        "fin": 157.76,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " place",
+        "debut": 158.0,
+        "fin": 158.46,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " au",
+        "debut": 158.46,
+        "fin": 158.84,
+        "probabilite": 0.9978
+      },
+      {
+        "mot": " championnat.",
+        "debut": 158.84,
+        "fin": 159.58,
+        "probabilite": 0.9982
+      }
+    ]
+  }
+]

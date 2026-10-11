@@ -1,0 +1,269 @@
+{
+  "numero": 12,
+  "format": "vertical",
+  "sha256": "0c1ca9223c2fc99baff0ca8a5c803d75fb516db3e37c0f53a20a1cc80920943e",
+  "texte_prevu_sha256": "5e7c5fa4bd32620417ddc8bdd00135a8294823d63367baf7d3ca847168007be3",
+  "verification": "Premiers mots différents dans la retranscription; Derniers mots différents dans la retranscription",
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "par",
+    "contre",
+    "l",
+    "instinct"
+  ],
+  "derniers_mots_attendus": [
+    "la",
+    "face",
+    "ok",
+    "allez"
+  ],
+  "premiers_mots_reconnus": [
+    "parcours",
+    "restez",
+    "c",
+    "est"
+  ],
+  "derniers_mots_reconnus": [
+    "est",
+    "pas",
+    "la",
+    "tete"
+  ],
+  "debut_correspond": false,
+  "fin_correspond": false,
+  "transcription": [
+    {
+      "debut": 1.52,
+      "fin": 2.98,
+      "texte": "Parcours, restez, c'est pas la tête !",
+      "mots": [
+        {
+          "mot": " Parcours,",
+          "debut": 1.52,
+          "fin": 1.8
+        },
+        {
+          "mot": " restez,",
+          "debut": 1.8,
+          "fin": 2.08
+        },
+        {
+          "mot": " c",
+          "debut": 2.16,
+          "fin": 2.2
+        },
+        {
+          "mot": "'est",
+          "debut": 2.2,
+          "fin": 2.32
+        },
+        {
+          "mot": " pas",
+          "debut": 2.32,
+          "fin": 2.42
+        },
+        {
+          "mot": " la",
+          "debut": 2.42,
+          "fin": 2.54
+        },
+        {
+          "mot": " tête",
+          "debut": 2.54,
+          "fin": 2.7
+        },
+        {
+          "mot": " !",
+          "debut": 2.7,
+          "fin": 2.98
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {
+    "debut": [
+      {
+        "debut": 1.52,
+        "fin": 2.98,
+        "texte": "Parcours, restez, c'est pas la tête !",
+        "mots": [
+          {
+            "mot": " Parcours,",
+            "debut": 1.52,
+            "fin": 1.8
+          },
+          {
+            "mot": " restez,",
+            "debut": 1.8,
+            "fin": 2.08
+          },
+          {
+            "mot": " c",
+            "debut": 2.16,
+            "fin": 2.2
+          },
+          {
+            "mot": "'est",
+            "debut": 2.2,
+            "fin": 2.32
+          },
+          {
+            "mot": " pas",
+            "debut": 2.32,
+            "fin": 2.42
+          },
+          {
+            "mot": " la",
+            "debut": 2.42,
+            "fin": 2.54
+          },
+          {
+            "mot": " tête",
+            "debut": 2.54,
+            "fin": 2.7
+          },
+          {
+            "mot": " !",
+            "debut": 2.7,
+            "fin": 2.98
+          }
+        ]
+      }
+    ],
+    "fin": [
+      {
+        "debut": 1.78,
+        "fin": 4.92,
+        "texte": "Nassim, c'est compris ? Naïf, c'est compris ?",
+        "mots": [
+          {
+            "mot": " Nassim,",
+            "debut": 1.78,
+            "fin": 2.14
+          },
+          {
+            "mot": " c",
+            "debut": 2.42,
+            "fin": 2.48
+          },
+          {
+            "mot": "'est",
+            "debut": 2.48,
+            "fin": 2.56
+          },
+          {
+            "mot": " compris",
+            "debut": 2.56,
+            "fin": 2.82
+          },
+          {
+            "mot": " ?",
+            "debut": 2.82,
+            "fin": 3.08
+          },
+          {
+            "mot": " Naïf,",
+            "debut": 3.08,
+            "fin": 3.52
+          },
+          {
+            "mot": " c",
+            "debut": 3.64,
+            "fin": 3.82
+          },
+          {
+            "mot": "'est",
+            "debut": 3.82,
+            "fin": 3.88
+          },
+          {
+            "mot": " compris",
+            "debut": 3.88,
+            "fin": 4.16
+          },
+          {
+            "mot": " ?",
+            "debut": 4.16,
+            "fin": 4.92
+          }
+        ]
+      },
+      {
+        "debut": 4.92,
+        "fin": 7.72,
+        "texte": "Le cœur ! Le cœur, il est en place, ok ? Naïf !",
+        "mots": [
+          {
+            "mot": " Le",
+            "debut": 4.92,
+            "fin": 5.44
+          },
+          {
+            "mot": " cœur",
+            "debut": 5.44,
+            "fin": 5.62
+          },
+          {
+            "mot": " !",
+            "debut": 5.62,
+            "fin": 5.9
+          },
+          {
+            "mot": " Le",
+            "debut": 5.9,
+            "fin": 6.26
+          },
+          {
+            "mot": " cœur,",
+            "debut": 6.26,
+            "fin": 6.4
+          },
+          {
+            "mot": " il",
+            "debut": 6.46,
+            "fin": 6.54
+          },
+          {
+            "mot": " est",
+            "debut": 6.54,
+            "fin": 6.62
+          },
+          {
+            "mot": " en",
+            "debut": 6.62,
+            "fin": 6.7
+          },
+          {
+            "mot": " place,",
+            "debut": 6.7,
+            "fin": 6.88
+          },
+          {
+            "mot": " ok",
+            "debut": 6.94,
+            "fin": 7.12
+          },
+          {
+            "mot": " ?",
+            "debut": 7.12,
+            "fin": 7.22
+          },
+          {
+            "mot": " Naïf",
+            "debut": 7.22,
+            "fin": 7.52
+          },
+          {
+            "mot": " !",
+            "debut": 7.52,
+            "fin": 7.72
+          }
+        ]
+      }
+    ]
+  },
+  "lufs": -14.07,
+  "pic_vrai_db": -1.11,
+  "duree": 22.7,
+  "taille_octets": 12900983
+}

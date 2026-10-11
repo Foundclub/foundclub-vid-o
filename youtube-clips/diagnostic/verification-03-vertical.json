@@ -1,0 +1,434 @@
+{
+  "numero": 3,
+  "format": "vertical",
+  "sha256": "1cd193b2548df654311abc21e02cd7ce3e856c47a6bd9f906fabe18b8a3e2f11",
+  "texte_prevu_sha256": "6ec89f08c2c85f091cb8ed141f69e0fef910be86dccd0a7c21aae5ec835b8696",
+  "verification": "OK",
+  "modele_verification": "turbo",
+  "vad": true,
+  "aide_vestiaire": false,
+  "aide_dialogue": false,
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "pour",
+    "commencer",
+    "bien",
+    "evidemment"
+  ],
+  "derniers_mots_attendus": [
+    "sera",
+    "parmi",
+    "nous",
+    "aussi"
+  ],
+  "premiers_mots_reconnus": [
+    "pour",
+    "commencer",
+    "bien",
+    "evidemment"
+  ],
+  "derniers_mots_reconnus": [
+    "sera",
+    "parmi",
+    "nous",
+    "aussi"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": true,
+  "transcription": [
+    {
+      "debut": 0,
+      "fin": 13.6,
+      "texte": "Pour commencer, bien évidemment, la réserve du MHSC qui sera présente où on va peut-être rencontrer le frérot Napsou qui a signé l'année dernière avec la Ligue 2 et qui fait quelques apparitions avec l'équipe réserve.",
+      "mots": [
+        {
+          "mot": " Pour",
+          "debut": 0,
+          "fin": 0.92
+        },
+        {
+          "mot": " commencer,",
+          "debut": 0.92,
+          "fin": 1.32
+        },
+        {
+          "mot": " bien",
+          "debut": 1.76,
+          "fin": 1.84
+        },
+        {
+          "mot": " évidemment,",
+          "debut": 1.84,
+          "fin": 2.3
+        },
+        {
+          "mot": " la",
+          "debut": 2.5,
+          "fin": 2.94
+        },
+        {
+          "mot": " réserve",
+          "debut": 2.94,
+          "fin": 3.52
+        },
+        {
+          "mot": " du",
+          "debut": 3.52,
+          "fin": 3.94
+        },
+        {
+          "mot": " MHSC",
+          "debut": 3.94,
+          "fin": 4.62
+        },
+        {
+          "mot": " qui",
+          "debut": 4.62,
+          "fin": 4.84
+        },
+        {
+          "mot": " sera",
+          "debut": 4.84,
+          "fin": 5.08
+        },
+        {
+          "mot": " présente",
+          "debut": 5.08,
+          "fin": 5.6
+        },
+        {
+          "mot": " où",
+          "debut": 5.6,
+          "fin": 6.02
+        },
+        {
+          "mot": " on",
+          "debut": 6.02,
+          "fin": 6.16
+        },
+        {
+          "mot": " va",
+          "debut": 6.16,
+          "fin": 6.28
+        },
+        {
+          "mot": " peut",
+          "debut": 6.28,
+          "fin": 6.42
+        },
+        {
+          "mot": "-être",
+          "debut": 6.42,
+          "fin": 6.6
+        },
+        {
+          "mot": " rencontrer",
+          "debut": 6.6,
+          "fin": 7.14
+        },
+        {
+          "mot": " le",
+          "debut": 7.14,
+          "fin": 7.7
+        },
+        {
+          "mot": " frérot",
+          "debut": 7.7,
+          "fin": 8.1
+        },
+        {
+          "mot": " Napsou",
+          "debut": 8.1,
+          "fin": 8.66
+        },
+        {
+          "mot": " qui",
+          "debut": 8.66,
+          "fin": 9.14
+        },
+        {
+          "mot": " a",
+          "debut": 9.14,
+          "fin": 9.28
+        },
+        {
+          "mot": " signé",
+          "debut": 9.28,
+          "fin": 9.54
+        },
+        {
+          "mot": " l",
+          "debut": 9.54,
+          "fin": 9.62
+        },
+        {
+          "mot": "'année",
+          "debut": 9.62,
+          "fin": 9.7
+        },
+        {
+          "mot": " dernière",
+          "debut": 9.7,
+          "fin": 10.14
+        },
+        {
+          "mot": " avec",
+          "debut": 10.14,
+          "fin": 10.6
+        },
+        {
+          "mot": " la",
+          "debut": 10.6,
+          "fin": 10.78
+        },
+        {
+          "mot": " Ligue",
+          "debut": 10.78,
+          "fin": 10.94
+        },
+        {
+          "mot": " 2",
+          "debut": 10.94,
+          "fin": 11.12
+        },
+        {
+          "mot": " et",
+          "debut": 11.12,
+          "fin": 11.6
+        },
+        {
+          "mot": " qui",
+          "debut": 11.6,
+          "fin": 11.74
+        },
+        {
+          "mot": " fait",
+          "debut": 11.74,
+          "fin": 11.88
+        },
+        {
+          "mot": " quelques",
+          "debut": 11.88,
+          "fin": 12.16
+        },
+        {
+          "mot": " apparitions",
+          "debut": 12.16,
+          "fin": 12.68
+        },
+        {
+          "mot": " avec",
+          "debut": 12.68,
+          "fin": 12.86
+        },
+        {
+          "mot": " l",
+          "debut": 12.86,
+          "fin": 12.98
+        },
+        {
+          "mot": "'équipe",
+          "debut": 12.98,
+          "fin": 13.22
+        },
+        {
+          "mot": " réserve.",
+          "debut": 13.22,
+          "fin": 13.6
+        }
+      ]
+    },
+    {
+      "debut": 13.78,
+      "fin": 26.42,
+      "texte": "Ensuite, on a la réserve de l'Olympique Marseille qui sera également dans la poule. Et pour finir, en tant que Lyonnais, bien évidemment, la réserve de l'AS Saint-Etienne qui sera parmi nous aussi.",
+      "mots": [
+        {
+          "mot": " Ensuite,",
+          "debut": 13.78,
+          "fin": 14.14
+        },
+        {
+          "mot": " on",
+          "debut": 14.32,
+          "fin": 14.64
+        },
+        {
+          "mot": " a",
+          "debut": 14.64,
+          "fin": 14.74
+        },
+        {
+          "mot": " la",
+          "debut": 14.74,
+          "fin": 14.88
+        },
+        {
+          "mot": " réserve",
+          "debut": 14.88,
+          "fin": 15.38
+        },
+        {
+          "mot": " de",
+          "debut": 15.38,
+          "fin": 15.56
+        },
+        {
+          "mot": " l",
+          "debut": 15.56,
+          "fin": 15.7
+        },
+        {
+          "mot": "'Olympique",
+          "debut": 15.7,
+          "fin": 16.16
+        },
+        {
+          "mot": " Marseille",
+          "debut": 16.16,
+          "fin": 16.58
+        },
+        {
+          "mot": " qui",
+          "debut": 16.58,
+          "fin": 16.72
+        },
+        {
+          "mot": " sera",
+          "debut": 16.72,
+          "fin": 16.98
+        },
+        {
+          "mot": " également",
+          "debut": 16.98,
+          "fin": 17.38
+        },
+        {
+          "mot": " dans",
+          "debut": 17.38,
+          "fin": 18.16
+        },
+        {
+          "mot": " la",
+          "debut": 18.16,
+          "fin": 18.34
+        },
+        {
+          "mot": " poule.",
+          "debut": 18.34,
+          "fin": 18.68
+        },
+        {
+          "mot": " Et",
+          "debut": 18.82,
+          "fin": 19.18
+        },
+        {
+          "mot": " pour",
+          "debut": 19.18,
+          "fin": 19.36
+        },
+        {
+          "mot": " finir,",
+          "debut": 19.36,
+          "fin": 19.82
+        },
+        {
+          "mot": " en",
+          "debut": 20.16,
+          "fin": 20.36
+        },
+        {
+          "mot": " tant",
+          "debut": 20.36,
+          "fin": 20.48
+        },
+        {
+          "mot": " que",
+          "debut": 20.48,
+          "fin": 20.64
+        },
+        {
+          "mot": " Lyonnais,",
+          "debut": 20.64,
+          "fin": 21.1
+        },
+        {
+          "mot": " bien",
+          "debut": 21.42,
+          "fin": 21.52
+        },
+        {
+          "mot": " évidemment,",
+          "debut": 21.52,
+          "fin": 22.0
+        },
+        {
+          "mot": " la",
+          "debut": 22.52,
+          "fin": 22.66
+        },
+        {
+          "mot": " réserve",
+          "debut": 22.66,
+          "fin": 23.22
+        },
+        {
+          "mot": " de",
+          "debut": 23.22,
+          "fin": 23.36
+        },
+        {
+          "mot": " l",
+          "debut": 23.36,
+          "fin": 23.5
+        },
+        {
+          "mot": "'AS",
+          "debut": 23.5,
+          "fin": 23.84
+        },
+        {
+          "mot": " Saint",
+          "debut": 23.84,
+          "fin": 24.26
+        },
+        {
+          "mot": "-Etienne",
+          "debut": 24.26,
+          "fin": 24.74
+        },
+        {
+          "mot": " qui",
+          "debut": 24.74,
+          "fin": 25.12
+        },
+        {
+          "mot": " sera",
+          "debut": 25.12,
+          "fin": 25.5
+        },
+        {
+          "mot": " parmi",
+          "debut": 25.5,
+          "fin": 26.06
+        },
+        {
+          "mot": " nous",
+          "debut": 26.06,
+          "fin": 26.18
+        },
+        {
+          "mot": " aussi.",
+          "debut": 26.18,
+          "fin": 26.42
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {},
+  "lufs": -14.04,
+  "pic_vrai_db": -2.54,
+  "duree": 26.633333,
+  "taille_octets": 12526253
+}

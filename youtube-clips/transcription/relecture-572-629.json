@@ -1,0 +1,143 @@
+[
+  {
+    "debut": 589.88,
+    "fin": 590.12,
+    "texte": "Sous-titrage ST' 501",
+    "mots": [
+      {
+        "mot": " Sous",
+        "debut": 589.88,
+        "fin": 589.96,
+        "probabilite": 0.4875
+      },
+      {
+        "mot": "-titrage",
+        "debut": 589.96,
+        "fin": 590.04,
+        "probabilite": 0.6567
+      },
+      {
+        "mot": " ST'",
+        "debut": 590.04,
+        "fin": 590.06,
+        "probabilite": 0.331
+      },
+      {
+        "mot": " 501",
+        "debut": 590.08,
+        "fin": 590.12,
+        "probabilite": 0.9783
+      }
+    ]
+  },
+  {
+    "debut": 603.86,
+    "fin": 609.14,
+    "texte": "pour la 200 milles je coupe ce doigt juste un desquels se doit",
+    "mots": [
+      {
+        "mot": " pour",
+        "debut": 603.86,
+        "fin": 604.38,
+        "probabilite": 0.0256
+      },
+      {
+        "mot": " la",
+        "debut": 604.38,
+        "fin": 604.52,
+        "probabilite": 0.8108
+      },
+      {
+        "mot": " 200",
+        "debut": 604.52,
+        "fin": 604.84,
+        "probabilite": 0.8159
+      },
+      {
+        "mot": " milles",
+        "debut": 604.84,
+        "fin": 605.14,
+        "probabilite": 0.4812
+      },
+      {
+        "mot": " je",
+        "debut": 605.14,
+        "fin": 605.24,
+        "probabilite": 0.7173
+      },
+      {
+        "mot": " coupe",
+        "debut": 605.24,
+        "fin": 605.5,
+        "probabilite": 0.9769
+      },
+      {
+        "mot": " ce",
+        "debut": 605.5,
+        "fin": 606.26,
+        "probabilite": 0.7408
+      },
+      {
+        "mot": " doigt",
+        "debut": 606.26,
+        "fin": 606.52,
+        "probabilite": 0.6669
+      },
+      {
+        "mot": " juste",
+        "debut": 606.52,
+        "fin": 607.6,
+        "probabilite": 0.4176
+      },
+      {
+        "mot": " un",
+        "debut": 607.6,
+        "fin": 607.76,
+        "probabilite": 0.3137
+      },
+      {
+        "mot": " desquels",
+        "debut": 607.76,
+        "fin": 608.64,
+        "probabilite": 0.5381
+      },
+      {
+        "mot": " se",
+        "debut": 608.64,
+        "fin": 608.9,
+        "probabilite": 0.2421
+      },
+      {
+        "mot": " doit",
+        "debut": 608.9,
+        "fin": 609.14,
+        "probabilite": 0.9652
+      }
+    ]
+  },
+  {
+    "debut": 615.32,
+    "fin": 616.18,
+    "texte": "coupla et là",
+    "mots": [
+      {
+        "mot": " coupla",
+        "debut": 615.32,
+        "fin": 615.84,
+        "probabilite": 0.2588
+      },
+      {
+        "mot": " et",
+        "debut": 615.84,
+        "fin": 616.04,
+        "probabilite": 0.6042
+      },
+      {
+        "mot": " là",
+        "debut": 616.04,
+        "fin": 616.18,
+        "probabilite": 0.6843
+      }
+    ]
+  }
+]

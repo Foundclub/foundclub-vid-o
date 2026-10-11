@@ -1,0 +1,834 @@
+{
+  "numero": 11,
+  "format": "vertical",
+  "sha256": "59f681a7cc21fdf7c1d8a406a2fdc6ac336ef809d91c21d4ba78990d44db0b05",
+  "texte_prevu_sha256": "9be5c00a1eac2923d9a1a133d312702896c4e0755161e605cc1b29255f049f3c",
+  "verification": "Premiers mots différents dans la retranscription; Derniers mots différents dans la retranscription",
+  "modele_verification": "large-v3",
+  "vad": false,
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "l",
+    "instinct",
+    "et",
+    "de"
+  ],
+  "derniers_mots_attendus": [
+    "c",
+    "est",
+    "le",
+    "coeur"
+  ],
+  "premiers_mots_reconnus": [
+    "donner",
+    "des",
+    "steaks",
+    "et"
+  ],
+  "derniers_mots_reconnus": [
+    "est",
+    "pas",
+    "la",
+    "tete"
+  ],
+  "debut_correspond": false,
+  "fin_correspond": false,
+  "transcription": [
+    {
+      "debut": 0.0,
+      "fin": 4.52,
+      "texte": "Donner des steaks et de l'intuition, c'est votre enfance, c'est des joueurs de qualité.",
+      "mots": [
+        {
+          "mot": " Donner",
+          "debut": 0.0,
+          "fin": 0.3
+        },
+        {
+          "mot": " des",
+          "debut": 0.3,
+          "fin": 0.36
+        },
+        {
+          "mot": " steaks",
+          "debut": 0.36,
+          "fin": 0.64
+        },
+        {
+          "mot": " et",
+          "debut": 0.64,
+          "fin": 0.8
+        },
+        {
+          "mot": " de",
+          "debut": 0.8,
+          "fin": 0.92
+        },
+        {
+          "mot": " l",
+          "debut": 0.92,
+          "fin": 0.98
+        },
+        {
+          "mot": "'intuition,",
+          "debut": 0.98,
+          "fin": 1.32
+        },
+        {
+          "mot": " c",
+          "debut": 1.48,
+          "fin": 1.92
+        },
+        {
+          "mot": "'est",
+          "debut": 1.92,
+          "fin": 1.98
+        },
+        {
+          "mot": " votre",
+          "debut": 1.98,
+          "fin": 2.1
+        },
+        {
+          "mot": " enfance,",
+          "debut": 2.1,
+          "fin": 2.56
+        },
+        {
+          "mot": " c",
+          "debut": 2.58,
+          "fin": 3.24
+        },
+        {
+          "mot": "'est",
+          "debut": 3.24,
+          "fin": 3.52
+        },
+        {
+          "mot": " des",
+          "debut": 3.52,
+          "fin": 4.0
+        },
+        {
+          "mot": " joueurs",
+          "debut": 4.0,
+          "fin": 4.14
+        },
+        {
+          "mot": " de",
+          "debut": 4.14,
+          "fin": 4.24
+        },
+        {
+          "mot": " qualité.",
+          "debut": 4.24,
+          "fin": 4.52
+        }
+      ]
+    },
+    {
+      "debut": 6.02,
+      "fin": 7.34,
+      "texte": "Il faut laisser parler les steaks.",
+      "mots": [
+        {
+          "mot": " Il",
+          "debut": 6.02,
+          "fin": 6.34
+        },
+        {
+          "mot": " faut",
+          "debut": 6.34,
+          "fin": 6.52
+        },
+        {
+          "mot": " laisser",
+          "debut": 6.52,
+          "fin": 6.68
+        },
+        {
+          "mot": " parler",
+          "debut": 6.68,
+          "fin": 6.94
+        },
+        {
+          "mot": " les",
+          "debut": 6.94,
+          "fin": 7.1
+        },
+        {
+          "mot": " steaks.",
+          "debut": 7.1,
+          "fin": 7.34
+        }
+      ]
+    },
+    {
+      "debut": 8.08,
+      "fin": 10.56,
+      "texte": "C'est le matin d'homicide, vous vous réveillez de toutes les formes.",
+      "mots": [
+        {
+          "mot": " C",
+          "debut": 8.08,
+          "fin": 8.4
+        },
+        {
+          "mot": "'est",
+          "debut": 8.4,
+          "fin": 8.48
+        },
+        {
+          "mot": " le",
+          "debut": 8.48,
+          "fin": 8.5
+        },
+        {
+          "mot": " matin",
+          "debut": 8.5,
+          "fin": 8.66
+        },
+        {
+          "mot": " d",
+          "debut": 8.66,
+          "fin": 8.8
+        },
+        {
+          "mot": "'homicide,",
+          "debut": 8.8,
+          "fin": 9.14
+        },
+        {
+          "mot": " vous",
+          "debut": 9.3,
+          "fin": 9.58
+        },
+        {
+          "mot": " vous",
+          "debut": 9.58,
+          "fin": 9.66
+        },
+        {
+          "mot": " réveillez",
+          "debut": 9.66,
+          "fin": 9.9
+        },
+        {
+          "mot": " de",
+          "debut": 9.9,
+          "fin": 9.96
+        },
+        {
+          "mot": " toutes",
+          "debut": 9.96,
+          "fin": 10.1
+        },
+        {
+          "mot": " les",
+          "debut": 10.1,
+          "fin": 10.24
+        },
+        {
+          "mot": " formes.",
+          "debut": 10.24,
+          "fin": 10.56
+        }
+      ]
+    },
+    {
+      "debut": 10.6,
+      "fin": 11.92,
+      "texte": "Ce n'est pas la maison, ce n'est pas grave.",
+      "mots": [
+        {
+          "mot": " Ce",
+          "debut": 10.6,
+          "fin": 10.86
+        },
+        {
+          "mot": " n",
+          "debut": 10.86,
+          "fin": 10.86
+        },
+        {
+          "mot": "'est",
+          "debut": 10.86,
+          "fin": 10.86
+        },
+        {
+          "mot": " pas",
+          "debut": 10.86,
+          "fin": 10.9
+        },
+        {
+          "mot": " la",
+          "debut": 10.9,
+          "fin": 10.98
+        },
+        {
+          "mot": " maison,",
+          "debut": 10.98,
+          "fin": 11.16
+        },
+        {
+          "mot": " ce",
+          "debut": 11.3,
+          "fin": 11.46
+        },
+        {
+          "mot": " n",
+          "debut": 11.46,
+          "fin": 11.56
+        },
+        {
+          "mot": "'est",
+          "debut": 11.56,
+          "fin": 11.56
+        },
+        {
+          "mot": " pas",
+          "debut": 11.56,
+          "fin": 11.62
+        },
+        {
+          "mot": " grave.",
+          "debut": 11.62,
+          "fin": 11.92
+        }
+      ]
+    },
+    {
+      "debut": 12.08,
+      "fin": 14.92,
+      "texte": "Vous êtes tournés dans la maison, vous vous allez aborder, vous vous allez aborder.",
+      "mots": [
+        {
+          "mot": " Vous",
+          "debut": 12.08,
+          "fin": 12.4
+        },
+        {
+          "mot": " êtes",
+          "debut": 12.4,
+          "fin": 12.42
+        },
+        {
+          "mot": " tournés",
+          "debut": 12.42,
+          "fin": 12.7
+        },
+        {
+          "mot": " dans",
+          "debut": 12.7,
+          "fin": 12.84
+        },
+        {
+          "mot": " la",
+          "debut": 12.84,
+          "fin": 12.92
+        },
+        {
+          "mot": " maison,",
+          "debut": 12.92,
+          "fin": 13.1
+        },
+        {
+          "mot": " vous",
+          "debut": 13.2,
+          "fin": 13.28
+        },
+        {
+          "mot": " vous",
+          "debut": 13.28,
+          "fin": 13.38
+        },
+        {
+          "mot": " allez",
+          "debut": 13.38,
+          "fin": 13.48
+        },
+        {
+          "mot": " aborder,",
+          "debut": 13.48,
+          "fin": 13.98
+        },
+        {
+          "mot": " vous",
+          "debut": 14.06,
+          "fin": 14.18
+        },
+        {
+          "mot": " vous",
+          "debut": 14.18,
+          "fin": 14.18
+        },
+        {
+          "mot": " allez",
+          "debut": 14.18,
+          "fin": 14.34
+        },
+        {
+          "mot": " aborder.",
+          "debut": 14.34,
+          "fin": 14.92
+        }
+      ]
+    },
+    {
+      "debut": 15.14,
+      "fin": 18.12,
+      "texte": "Faites parler des steaks, parce que c'est un événement coach.",
+      "mots": [
+        {
+          "mot": " Faites",
+          "debut": 15.14,
+          "fin": 15.46
+        },
+        {
+          "mot": " parler",
+          "debut": 15.46,
+          "fin": 15.58
+        },
+        {
+          "mot": " des",
+          "debut": 15.58,
+          "fin": 15.8
+        },
+        {
+          "mot": " steaks,",
+          "debut": 15.8,
+          "fin": 16.18
+        },
+        {
+          "mot": " parce",
+          "debut": 16.18,
+          "fin": 16.54
+        },
+        {
+          "mot": " que",
+          "debut": 16.54,
+          "fin": 16.66
+        },
+        {
+          "mot": " c",
+          "debut": 16.66,
+          "fin": 17.04
+        },
+        {
+          "mot": "'est",
+          "debut": 17.04,
+          "fin": 17.12
+        },
+        {
+          "mot": " un",
+          "debut": 17.12,
+          "fin": 17.18
+        },
+        {
+          "mot": " événement",
+          "debut": 17.18,
+          "fin": 17.8
+        },
+        {
+          "mot": " coach.",
+          "debut": 17.8,
+          "fin": 18.12
+        }
+      ]
+    },
+    {
+      "debut": 18.46,
+      "fin": 21.28,
+      "texte": "Les steaks, l'intuition, des fois, ce sont des joueurs qu'on ne comprend pas.",
+      "mots": [
+        {
+          "mot": " Les",
+          "debut": 18.46,
+          "fin": 18.78
+        },
+        {
+          "mot": " steaks,",
+          "debut": 18.78,
+          "fin": 19.04
+        },
+        {
+          "mot": " l",
+          "debut": 19.08,
+          "fin": 19.12
+        },
+        {
+          "mot": "'intuition,",
+          "debut": 19.12,
+          "fin": 19.44
+        },
+        {
+          "mot": " des",
+          "debut": 19.5,
+          "fin": 19.62
+        },
+        {
+          "mot": " fois,",
+          "debut": 19.62,
+          "fin": 19.82
+        },
+        {
+          "mot": " ce",
+          "debut": 19.86,
+          "fin": 19.94
+        },
+        {
+          "mot": " sont",
+          "debut": 19.94,
+          "fin": 20.04
+        },
+        {
+          "mot": " des",
+          "debut": 20.04,
+          "fin": 20.46
+        },
+        {
+          "mot": " joueurs",
+          "debut": 20.46,
+          "fin": 20.66
+        },
+        {
+          "mot": " qu",
+          "debut": 20.66,
+          "fin": 20.76
+        },
+        {
+          "mot": "'on",
+          "debut": 20.76,
+          "fin": 20.78
+        },
+        {
+          "mot": " ne",
+          "debut": 20.78,
+          "fin": 20.84
+        },
+        {
+          "mot": " comprend",
+          "debut": 20.84,
+          "fin": 21.1
+        },
+        {
+          "mot": " pas.",
+          "debut": 21.1,
+          "fin": 21.28
+        }
+      ]
+    },
+    {
+      "debut": 22.04,
+      "fin": 24.68,
+      "texte": "Mais il faut se laisser guider, ne pas se laisser submerger.",
+      "mots": [
+        {
+          "mot": " Mais",
+          "debut": 22.04,
+          "fin": 22.36
+        },
+        {
+          "mot": " il",
+          "debut": 22.36,
+          "fin": 22.68
+        },
+        {
+          "mot": " faut",
+          "debut": 22.68,
+          "fin": 22.9
+        },
+        {
+          "mot": " se",
+          "debut": 22.9,
+          "fin": 22.98
+        },
+        {
+          "mot": " laisser",
+          "debut": 22.98,
+          "fin": 23.22
+        },
+        {
+          "mot": " guider,",
+          "debut": 23.22,
+          "fin": 23.4
+        },
+        {
+          "mot": " ne",
+          "debut": 23.48,
+          "fin": 23.64
+        },
+        {
+          "mot": " pas",
+          "debut": 23.64,
+          "fin": 23.7
+        },
+        {
+          "mot": " se",
+          "debut": 23.7,
+          "fin": 23.86
+        },
+        {
+          "mot": " laisser",
+          "debut": 23.86,
+          "fin": 24.08
+        },
+        {
+          "mot": " submerger.",
+          "debut": 24.08,
+          "fin": 24.68
+        }
+      ]
+    },
+    {
+      "debut": 25.52,
+      "fin": 28.3,
+      "texte": "Par contre, les steaks, ce n'est pas la tête.",
+      "mots": [
+        {
+          "mot": " Par",
+          "debut": 25.52,
+          "fin": 25.84
+        },
+        {
+          "mot": " contre,",
+          "debut": 25.84,
+          "fin": 26.16
+        },
+        {
+          "mot": " les",
+          "debut": 26.36,
+          "fin": 27.34
+        },
+        {
+          "mot": " steaks,",
+          "debut": 27.34,
+          "fin": 27.76
+        },
+        {
+          "mot": " ce",
+          "debut": 27.78,
+          "fin": 27.88
+        },
+        {
+          "mot": " n",
+          "debut": 27.88,
+          "fin": 27.94
+        },
+        {
+          "mot": "'est",
+          "debut": 27.94,
+          "fin": 27.94
+        },
+        {
+          "mot": " pas",
+          "debut": 27.94,
+          "fin": 28.04
+        },
+        {
+          "mot": " la",
+          "debut": 28.04,
+          "fin": 28.12
+        },
+        {
+          "mot": " tête.",
+          "debut": 28.12,
+          "fin": 28.3
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {
+    "debut": [
+      {
+        "debut": 0.0,
+        "fin": 2.36,
+        "texte": "De l'inspect et de l'inscription, c'est votre force.",
+        "mots": [
+          {
+            "mot": " De",
+            "debut": 0.0,
+            "fin": 0.18
+          },
+          {
+            "mot": " l",
+            "debut": 0.18,
+            "fin": 0.24
+          },
+          {
+            "mot": "'inspect",
+            "debut": 0.24,
+            "fin": 0.64
+          },
+          {
+            "mot": " et",
+            "debut": 0.64,
+            "fin": 0.8
+          },
+          {
+            "mot": " de",
+            "debut": 0.8,
+            "fin": 0.92
+          },
+          {
+            "mot": " l",
+            "debut": 0.92,
+            "fin": 0.98
+          },
+          {
+            "mot": "'inscription,",
+            "debut": 0.98,
+            "fin": 1.36
+          },
+          {
+            "mot": " c",
+            "debut": 1.48,
+            "fin": 1.9
+          },
+          {
+            "mot": "'est",
+            "debut": 1.9,
+            "fin": 1.98
+          },
+          {
+            "mot": " votre",
+            "debut": 1.98,
+            "fin": 2.08
+          },
+          {
+            "mot": " force.",
+            "debut": 2.08,
+            "fin": 2.36
+          }
+        ]
+      },
+      {
+        "debut": 2.94,
+        "fin": 4.52,
+        "texte": "Vous me dites, tu vois, c'est des joueurs de qualité.",
+        "mots": [
+          {
+            "mot": " Vous",
+            "debut": 2.94,
+            "fin": 3.2
+          },
+          {
+            "mot": " me",
+            "debut": 3.2,
+            "fin": 3.36
+          },
+          {
+            "mot": " dites,",
+            "debut": 3.36,
+            "fin": 3.58
+          },
+          {
+            "mot": " tu",
+            "debut": 3.6,
+            "fin": 3.66
+          },
+          {
+            "mot": " vois,",
+            "debut": 3.66,
+            "fin": 3.72
+          },
+          {
+            "mot": " c",
+            "debut": 3.8,
+            "fin": 3.9
+          },
+          {
+            "mot": "'est",
+            "debut": 3.9,
+            "fin": 3.98
+          },
+          {
+            "mot": " des",
+            "debut": 3.98,
+            "fin": 4.04
+          },
+          {
+            "mot": " joueurs",
+            "debut": 4.04,
+            "fin": 4.18
+          },
+          {
+            "mot": " de",
+            "debut": 4.18,
+            "fin": 4.24
+          },
+          {
+            "mot": " qualité.",
+            "debut": 4.24,
+            "fin": 4.52
+          }
+        ]
+      },
+      {
+        "debut": 6.02,
+        "fin": 7.04,
+        "texte": "Il faut les séparer.",
+        "mots": [
+          {
+            "mot": " Il",
+            "debut": 6.02,
+            "fin": 6.28
+          },
+          {
+            "mot": " faut",
+            "debut": 6.28,
+            "fin": 6.54
+          },
+          {
+            "mot": " les",
+            "debut": 6.54,
+            "fin": 6.62
+          },
+          {
+            "mot": " séparer.",
+            "debut": 6.62,
+            "fin": 7.04
+          }
+        ]
+      }
+    ],
+    "fin": [
+      {
+        "debut": 0.0,
+        "fin": 5.72,
+        "texte": "Sous-titrage Société Radio-Canada",
+        "mots": [
+          {
+            "mot": " Sous",
+            "debut": 0.0,
+            "fin": 1.98
+          },
+          {
+            "mot": "-titrage",
+            "debut": 1.98,
+            "fin": 4.06
+          },
+          {
+            "mot": " Société",
+            "debut": 4.06,
+            "fin": 4.12
+          },
+          {
+            "mot": " Radio",
+            "debut": 4.12,
+            "fin": 4.66
+          },
+          {
+            "mot": "-Canada",
+            "debut": 4.66,
+            "fin": 5.72
+          }
+        ]
+      }
+    ]
+  },
+  "lufs": -14.07,
+  "pic_vrai_db": -1.07,
+  "duree": 29.333333,
+  "taille_octets": 18528056
+}

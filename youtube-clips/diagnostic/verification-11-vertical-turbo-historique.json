@@ -1,0 +1,119 @@
+{
+  "numero": 11,
+  "format": "vertical",
+  "sha256": "54a0155421aef002a6506a2be484656590fc310c6039760fc0872c7ec17c71be",
+  "texte_prevu_sha256": "15582947f93b010e06ae0db7dbf44265e8febd7704ed7519903d608d33d7912c",
+  "verification": "Premiers mots différents dans la retranscription; Derniers mots différents dans la retranscription; Durée différente",
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "les",
+    "gars",
+    "je",
+    "vais"
+  ],
+  "derniers_mots_attendus": [
+    "est",
+    "le",
+    "c",
+    "ur"
+  ],
+  "premiers_mots_reconnus": [
+    "c",
+    "est",
+    "parti",
+    "c"
+  ],
+  "derniers_mots_reconnus": [
+    "parti",
+    "c",
+    "est",
+    "parti"
+  ],
+  "debut_correspond": false,
+  "fin_correspond": false,
+  "transcription": [
+    {
+      "debut": 0.24,
+      "fin": 0.96,
+      "texte": "C'est parti, c'est parti.",
+      "mots": [
+        {
+          "mot": " C",
+          "debut": 0.24,
+          "fin": 0.56
+        },
+        {
+          "mot": "'est",
+          "debut": 0.56,
+          "fin": 0.56
+        },
+        {
+          "mot": " parti,",
+          "debut": 0.56,
+          "fin": 0.72
+        },
+        {
+          "mot": " c",
+          "debut": 0.72,
+          "fin": 0.72
+        },
+        {
+          "mot": "'est",
+          "debut": 0.72,
+          "fin": 0.96
+        },
+        {
+          "mot": " parti.",
+          "debut": 0.96,
+          "fin": 0.96
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {
+    "debut": [
+      {
+        "debut": 0.24,
+        "fin": 0.96,
+        "texte": "C'est parti, c'est parti.",
+        "mots": [
+          {
+            "mot": " C",
+            "debut": 0.24,
+            "fin": 0.56
+          },
+          {
+            "mot": "'est",
+            "debut": 0.56,
+            "fin": 0.56
+          },
+          {
+            "mot": " parti,",
+            "debut": 0.56,
+            "fin": 0.72
+          },
+          {
+            "mot": " c",
+            "debut": 0.72,
+            "fin": 0.72
+          },
+          {
+            "mot": "'est",
+            "debut": 0.72,
+            "fin": 0.96
+          },
+          {
+            "mot": " parti.",
+            "debut": 0.96,
+            "fin": 0.96
+          }
+        ]
+      }
+    ],
+    "fin": []
+  },
+  "lufs": -14.19,
+  "pic_vrai_db": -1.48,
+  "duree": 29.333333,
+  "taille_octets": 18525023
+}

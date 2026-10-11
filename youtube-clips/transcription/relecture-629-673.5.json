@@ -1,0 +1,769 @@
+[
+  {
+    "debut": 629.56,
+    "fin": 631.1,
+    "texte": "Putain, t'en coupes ça avec 200 000 ?",
+    "mots": [
+      {
+        "mot": " Putain,",
+        "debut": 629.56,
+        "fin": 629.92,
+        "probabilite": 0.4432
+      },
+      {
+        "mot": " t",
+        "debut": 630.04,
+        "fin": 630.04,
+        "probabilite": 0.7644
+      },
+      {
+        "mot": "'en",
+        "debut": 630.04,
+        "fin": 630.12,
+        "probabilite": 0.9865
+      },
+      {
+        "mot": " coupes",
+        "debut": 630.12,
+        "fin": 630.3,
+        "probabilite": 0.8338
+      },
+      {
+        "mot": " ça",
+        "debut": 630.3,
+        "fin": 630.46,
+        "probabilite": 0.8614
+      },
+      {
+        "mot": " avec",
+        "debut": 630.46,
+        "fin": 630.58,
+        "probabilite": 0.4717
+      },
+      {
+        "mot": " 200",
+        "debut": 630.58,
+        "fin": 630.76,
+        "probabilite": 0.8853
+      },
+      {
+        "mot": " 000",
+        "debut": 630.76,
+        "fin": 630.94,
+        "probabilite": 0.5428
+      },
+      {
+        "mot": " ?",
+        "debut": 630.94,
+        "fin": 631.1,
+        "probabilite": 0.5516
+      }
+    ]
+  },
+  {
+    "debut": 631.1,
+    "fin": 632.38,
+    "texte": "Non, jamais. Arrête de mentir.",
+    "mots": [
+      {
+        "mot": " Non,",
+        "debut": 631.1,
+        "fin": 631.26,
+        "probabilite": 0.5367
+      },
+      {
+        "mot": " jamais.",
+        "debut": 631.36,
+        "fin": 631.58,
+        "probabilite": 0.892
+      },
+      {
+        "mot": " Arrête",
+        "debut": 631.72,
+        "fin": 631.96,
+        "probabilite": 0.8511
+      },
+      {
+        "mot": " de",
+        "debut": 631.96,
+        "fin": 632.06,
+        "probabilite": 0.8881
+      },
+      {
+        "mot": " mentir.",
+        "debut": 632.06,
+        "fin": 632.38,
+        "probabilite": 0.9691
+      }
+    ]
+  },
+  {
+    "debut": 632.62,
+    "fin": 634.06,
+    "texte": "Voilà que jamais, frère. T'es fou, quoi.",
+    "mots": [
+      {
+        "mot": " Voilà",
+        "debut": 632.62,
+        "fin": 632.88,
+        "probabilite": 0.0889
+      },
+      {
+        "mot": " que",
+        "debut": 632.88,
+        "fin": 633.04,
+        "probabilite": 0.7659
+      },
+      {
+        "mot": " jamais,",
+        "debut": 633.04,
+        "fin": 633.22,
+        "probabilite": 0.8784
+      },
+      {
+        "mot": " frère.",
+        "debut": 633.4,
+        "fin": 633.44,
+        "probabilite": 0.7508
+      },
+      {
+        "mot": " T",
+        "debut": 633.54,
+        "fin": 633.64,
+        "probabilite": 0.7619
+      },
+      {
+        "mot": "'es",
+        "debut": 633.64,
+        "fin": 633.7,
+        "probabilite": 0.9974
+      },
+      {
+        "mot": " fou,",
+        "debut": 633.7,
+        "fin": 633.9,
+        "probabilite": 0.9811
+      },
+      {
+        "mot": " quoi.",
+        "debut": 633.98,
+        "fin": 634.06,
+        "probabilite": 0.7961
+      }
+    ]
+  },
+  {
+    "debut": 634.18,
+    "fin": 635.4,
+    "texte": "200 patates, mon frère.",
+    "mots": [
+      {
+        "mot": " 200",
+        "debut": 634.18,
+        "fin": 634.44,
+        "probabilite": 0.9851
+      },
+      {
+        "mot": " patates,",
+        "debut": 634.44,
+        "fin": 635.04,
+        "probabilite": 0.9668
+      },
+      {
+        "mot": " mon",
+        "debut": 635.12,
+        "fin": 635.24,
+        "probabilite": 0.9142
+      },
+      {
+        "mot": " frère.",
+        "debut": 635.24,
+        "fin": 635.4,
+        "probabilite": 0.9954
+      }
+    ]
+  },
+  {
+    "debut": 635.62,
+    "fin": 636.54,
+    "texte": "Voilà que j'en coupe un.",
+    "mots": [
+      {
+        "mot": " Voilà",
+        "debut": 635.62,
+        "fin": 635.88,
+        "probabilite": 0.6857
+      },
+      {
+        "mot": " que",
+        "debut": 635.88,
+        "fin": 636.1,
+        "probabilite": 0.8645
+      },
+      {
+        "mot": " j",
+        "debut": 636.1,
+        "fin": 636.18,
+        "probabilite": 0.9679
+      },
+      {
+        "mot": "'en",
+        "debut": 636.18,
+        "fin": 636.22,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " coupe",
+        "debut": 636.22,
+        "fin": 636.4,
+        "probabilite": 0.7324
+      },
+      {
+        "mot": " un.",
+        "debut": 636.4,
+        "fin": 636.54,
+        "probabilite": 0.3554
+      }
+    ]
+  },
+  {
+    "debut": 637.0,
+    "fin": 638.42,
+    "texte": "Je te la vache comme ça, mon frère.",
+    "mots": [
+      {
+        "mot": " Je",
+        "debut": 637.0,
+        "fin": 637.22,
+        "probabilite": 0.771
+      },
+      {
+        "mot": " te",
+        "debut": 637.22,
+        "fin": 637.34,
+        "probabilite": 0.7536
+      },
+      {
+        "mot": " la",
+        "debut": 637.34,
+        "fin": 637.42,
+        "probabilite": 0.9255
+      },
+      {
+        "mot": " vache",
+        "debut": 637.42,
+        "fin": 637.6,
+        "probabilite": 0.6221
+      },
+      {
+        "mot": " comme",
+        "debut": 637.6,
+        "fin": 637.84,
+        "probabilite": 0.9932
+      },
+      {
+        "mot": " ça,",
+        "debut": 637.84,
+        "fin": 638.02,
+        "probabilite": 0.9849
+      },
+      {
+        "mot": " mon",
+        "debut": 638.32,
+        "fin": 638.42,
+        "probabilite": 0.3258
+      },
+      {
+        "mot": " frère.",
+        "debut": 638.42,
+        "fin": 638.42,
+        "probabilite": 0.9982
+      }
+    ]
+  },
+  {
+    "debut": 639.64,
+    "fin": 643.0,
+    "texte": "Tu fais quoi avec 200 000 après ?",
+    "mots": [
+      {
+        "mot": " Tu",
+        "debut": 639.64,
+        "fin": 640.0,
+        "probabilite": 0.4856
+      },
+      {
+        "mot": " fais",
+        "debut": 640.0,
+        "fin": 640.0,
+        "probabilite": 0.8526
+      },
+      {
+        "mot": " quoi",
+        "debut": 640.0,
+        "fin": 641.9,
+        "probabilite": 0.9847
+      },
+      {
+        "mot": " avec",
+        "debut": 641.9,
+        "fin": 642.02,
+        "probabilite": 0.9965
+      },
+      {
+        "mot": " 200",
+        "debut": 642.02,
+        "fin": 642.24,
+        "probabilite": 0.9947
+      },
+      {
+        "mot": " 000",
+        "debut": 642.24,
+        "fin": 642.4,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " après",
+        "debut": 642.4,
+        "fin": 642.62,
+        "probabilite": 0.5936
+      },
+      {
+        "mot": " ?",
+        "debut": 642.62,
+        "fin": 643.0,
+        "probabilite": 0.9877
+      }
+    ]
+  },
+  {
+    "debut": 643.96,
+    "fin": 644.68,
+    "texte": "Ça, je...",
+    "mots": [
+      {
+        "mot": " Ça,",
+        "debut": 643.96,
+        "fin": 644.32,
+        "probabilite": 0.9363
+      },
+      {
+        "mot": " je...",
+        "debut": 644.32,
+        "fin": 644.68,
+        "probabilite": 0.7081
+      }
+    ]
+  },
+  {
+    "debut": 644.68,
+    "fin": 646.36,
+    "texte": "Je prends une part à Marrakech.",
+    "mots": [
+      {
+        "mot": " Je",
+        "debut": 644.68,
+        "fin": 645.24,
+        "probabilite": 0.8612
+      },
+      {
+        "mot": " prends",
+        "debut": 645.24,
+        "fin": 645.48,
+        "probabilite": 0.4906
+      },
+      {
+        "mot": " une",
+        "debut": 645.48,
+        "fin": 645.64,
+        "probabilite": 0.9848
+      },
+      {
+        "mot": " part",
+        "debut": 645.64,
+        "fin": 645.76,
+        "probabilite": 0.2631
+      },
+      {
+        "mot": " à",
+        "debut": 645.76,
+        "fin": 645.9,
+        "probabilite": 0.9115
+      },
+      {
+        "mot": " Marrakech.",
+        "debut": 645.9,
+        "fin": 646.36,
+        "probabilite": 0.9738
+      }
+    ]
+  },
+  {
+    "debut": 646.88,
+    "fin": 647.62,
+    "texte": "Je pense, voilà.",
+    "mots": [
+      {
+        "mot": " Je",
+        "debut": 646.88,
+        "fin": 647.06,
+        "probabilite": 0.977
+      },
+      {
+        "mot": " pense,",
+        "debut": 647.06,
+        "fin": 647.32,
+        "probabilite": 0.997
+      },
+      {
+        "mot": " voilà.",
+        "debut": 647.48,
+        "fin": 647.62,
+        "probabilite": 0.344
+      }
+    ]
+  },
+  {
+    "debut": 652.84,
+    "fin": 655.32,
+    "texte": "Il m'a fait trop...",
+    "mots": [
+      {
+        "mot": " Il",
+        "debut": 652.84,
+        "fin": 653.2,
+        "probabilite": 0.7323
+      },
+      {
+        "mot": " m",
+        "debut": 653.2,
+        "fin": 653.4,
+        "probabilite": 0.701
+      },
+      {
+        "mot": "'a",
+        "debut": 653.4,
+        "fin": 653.46,
+        "probabilite": 0.9488
+      },
+      {
+        "mot": " fait",
+        "debut": 653.46,
+        "fin": 653.62,
+        "probabilite": 0.7459
+      },
+      {
+        "mot": " trop...",
+        "debut": 653.62,
+        "fin": 655.32,
+        "probabilite": 0.4293
+      }
+    ]
+  },
+  {
+    "debut": 659.04,
+    "fin": 662.56,
+    "texte": "Ok, petit doigt, même pour nettoyer l'oreille, tu vas faire comment ?",
+    "mots": [
+      {
+        "mot": " Ok,",
+        "debut": 659.04,
+        "fin": 659.44,
+        "probabilite": 0.044
+      },
+      {
+        "mot": " petit",
+        "debut": 659.62,
+        "fin": 659.82,
+        "probabilite": 0.3563
+      },
+      {
+        "mot": " doigt,",
+        "debut": 659.82,
+        "fin": 660.04,
+        "probabilite": 0.6429
+      },
+      {
+        "mot": " même",
+        "debut": 660.26,
+        "fin": 660.68,
+        "probabilite": 0.2264
+      },
+      {
+        "mot": " pour",
+        "debut": 660.68,
+        "fin": 660.9,
+        "probabilite": 0.9695
+      },
+      {
+        "mot": " nettoyer",
+        "debut": 660.9,
+        "fin": 661.34,
+        "probabilite": 0.82
+      },
+      {
+        "mot": " l",
+        "debut": 661.34,
+        "fin": 661.38,
+        "probabilite": 0.9831
+      },
+      {
+        "mot": "'oreille,",
+        "debut": 661.38,
+        "fin": 661.56,
+        "probabilite": 0.9944
+      },
+      {
+        "mot": " tu",
+        "debut": 661.62,
+        "fin": 661.66,
+        "probabilite": 0.9273
+      },
+      {
+        "mot": " vas",
+        "debut": 661.66,
+        "fin": 661.74,
+        "probabilite": 0.9816
+      },
+      {
+        "mot": " faire",
+        "debut": 661.74,
+        "fin": 661.84,
+        "probabilite": 0.9793
+      },
+      {
+        "mot": " comment",
+        "debut": 661.84,
+        "fin": 662.1,
+        "probabilite": 0.9607
+      },
+      {
+        "mot": " ?",
+        "debut": 662.1,
+        "fin": 662.56,
+        "probabilite": 0.8437
+      }
+    ]
+  },
+  {
+    "debut": 662.56,
+    "fin": 662.94,
+    "texte": "Comme ça.",
+    "mots": [
+      {
+        "mot": " Comme",
+        "debut": 662.56,
+        "fin": 662.78,
+        "probabilite": 0.8071
+      },
+      {
+        "mot": " ça.",
+        "debut": 662.78,
+        "fin": 662.94,
+        "probabilite": 0.9878
+      }
+    ]
+  },
+  {
+    "debut": 664.44,
+    "fin": 665.74,
+    "texte": "C'est ça ou pas ?",
+    "mots": [
+      {
+        "mot": " C",
+        "debut": 664.44,
+        "fin": 664.84,
+        "probabilite": 0.7873
+      },
+      {
+        "mot": "'est",
+        "debut": 664.84,
+        "fin": 664.92,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " ça",
+        "debut": 664.92,
+        "fin": 665.04,
+        "probabilite": 0.9884
+      },
+      {
+        "mot": " ou",
+        "debut": 665.04,
+        "fin": 665.16,
+        "probabilite": 0.9835
+      },
+      {
+        "mot": " pas",
+        "debut": 665.16,
+        "fin": 665.34,
+        "probabilite": 0.997
+      },
+      {
+        "mot": " ?",
+        "debut": 665.34,
+        "fin": 665.74,
+        "probabilite": 0.9872
+      }
+    ]
+  },
+  {
+    "debut": 665.74,
+    "fin": 667.06,
+    "texte": "A deux doigts, mon frère, voilà.",
+    "mots": [
+      {
+        "mot": " A",
+        "debut": 665.74,
+        "fin": 665.96,
+        "probabilite": 0.5673
+      },
+      {
+        "mot": " deux",
+        "debut": 665.96,
+        "fin": 666.16,
+        "probabilite": 0.9213
+      },
+      {
+        "mot": " doigts,",
+        "debut": 666.16,
+        "fin": 666.38,
+        "probabilite": 0.9776
+      },
+      {
+        "mot": " mon",
+        "debut": 666.52,
+        "fin": 666.52,
+        "probabilite": 0.7782
+      },
+      {
+        "mot": " frère,",
+        "debut": 666.52,
+        "fin": 666.78,
+        "probabilite": 0.9932
+      },
+      {
+        "mot": " voilà.",
+        "debut": 667.06,
+        "fin": 667.06,
+        "probabilite": 0.2592
+      }
+    ]
+  },
+  {
+    "debut": 668.36,
+    "fin": 670.36,
+    "texte": "Demande, pose la question, ou la frère,",
+    "mots": [
+      {
+        "mot": " Demande,",
+        "debut": 668.36,
+        "fin": 668.76,
+        "probabilite": 0.4647
+      },
+      {
+        "mot": " pose",
+        "debut": 668.92,
+        "fin": 669.06,
+        "probabilite": 0.9868
+      },
+      {
+        "mot": " la",
+        "debut": 669.06,
+        "fin": 669.18,
+        "probabilite": 0.9818
+      },
+      {
+        "mot": " question,",
+        "debut": 669.18,
+        "fin": 669.5,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " ou",
+        "debut": 669.72,
+        "fin": 669.74,
+        "probabilite": 0.2563
+      },
+      {
+        "mot": " la",
+        "debut": 669.74,
+        "fin": 669.94,
+        "probabilite": 0.4183
+      },
+      {
+        "mot": " frère,",
+        "debut": 669.94,
+        "fin": 670.36,
+        "probabilite": 0.9585
+      }
+    ]
+  },
+  {
+    "debut": 671.2,
+    "fin": 673.38,
+    "texte": "à 95% il ne sera rien, le petit doigt.",
+    "mots": [
+      {
+        "mot": " à",
+        "debut": 671.2,
+        "fin": 671.34,
+        "probabilite": 0.9116
+      },
+      {
+        "mot": " 95",
+        "debut": 671.34,
+        "fin": 671.96,
+        "probabilite": 0.998
+      },
+      {
+        "mot": "%",
+        "debut": 671.96,
+        "fin": 672.32,
+        "probabilite": 0.6715
+      },
+      {
+        "mot": " il",
+        "debut": 672.32,
+        "fin": 672.5,
+        "probabilite": 0.9213
+      },
+      {
+        "mot": " ne",
+        "debut": 672.5,
+        "fin": 672.54,
+        "probabilite": 0.6245
+      },
+      {
+        "mot": " sera",
+        "debut": 672.54,
+        "fin": 672.64,
+        "probabilite": 0.9137
+      },
+      {
+        "mot": " rien,",
+        "debut": 672.64,
+        "fin": 672.86,
+        "probabilite": 0.9965
+      },
+      {
+        "mot": " le",
+        "debut": 673.02,
+        "fin": 673.04,
+        "probabilite": 0.8185
+      },
+      {
+        "mot": " petit",
+        "debut": 673.04,
+        "fin": 673.18,
+        "probabilite": 0.9953
+      },
+      {
+        "mot": " doigt.",
+        "debut": 673.18,
+        "fin": 673.38,
+        "probabilite": 0.9938
+      }
+    ]
+  }
+]

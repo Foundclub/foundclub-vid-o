@@ -1,0 +1,636 @@
+[
+  {
+    "debut": 747.0,
+    "fin": 750.96,
+    "texte": "Les gars, tout le monde est responsable de tous les objectifs.",
+    "mots": [
+      {
+        "mot": " Les",
+        "debut": 747.0,
+        "fin": 747.38,
+        "probabilite": 0.4002
+      },
+      {
+        "mot": " gars,",
+        "debut": 747.38,
+        "fin": 747.54,
+        "probabilite": 0.9524
+      },
+      {
+        "mot": " tout",
+        "debut": 747.64,
+        "fin": 748.18,
+        "probabilite": 0.9441
+      },
+      {
+        "mot": " le",
+        "debut": 748.18,
+        "fin": 748.34,
+        "probabilite": 0.9973
+      },
+      {
+        "mot": " monde",
+        "debut": 748.34,
+        "fin": 748.7,
+        "probabilite": 0.9989
+      },
+      {
+        "mot": " est",
+        "debut": 748.7,
+        "fin": 749.64,
+        "probabilite": 0.8969
+      },
+      {
+        "mot": " responsable",
+        "debut": 749.64,
+        "fin": 750.2,
+        "probabilite": 0.992
+      },
+      {
+        "mot": " de",
+        "debut": 750.2,
+        "fin": 750.3,
+        "probabilite": 0.9832
+      },
+      {
+        "mot": " tous",
+        "debut": 750.3,
+        "fin": 750.44,
+        "probabilite": 0.7883
+      },
+      {
+        "mot": " les",
+        "debut": 750.44,
+        "fin": 750.52,
+        "probabilite": 0.5745
+      },
+      {
+        "mot": " objectifs.",
+        "debut": 750.52,
+        "fin": 750.96,
+        "probabilite": 0.893
+      }
+    ]
+  },
+  {
+    "debut": 751.1,
+    "fin": 753.6,
+    "texte": "D'attaquer, de défendre et de récupérer le ballon.",
+    "mots": [
+      {
+        "mot": " D",
+        "debut": 751.1,
+        "fin": 751.36,
+        "probabilite": 0.8927
+      },
+      {
+        "mot": "'attaquer,",
+        "debut": 751.36,
+        "fin": 751.74,
+        "probabilite": 0.9932
+      },
+      {
+        "mot": " de",
+        "debut": 751.8,
+        "fin": 752.08,
+        "probabilite": 0.9907
+      },
+      {
+        "mot": " défendre",
+        "debut": 752.08,
+        "fin": 752.66,
+        "probabilite": 0.9974
+      },
+      {
+        "mot": " et",
+        "debut": 752.66,
+        "fin": 752.74,
+        "probabilite": 0.9121
+      },
+      {
+        "mot": " de",
+        "debut": 752.74,
+        "fin": 752.88,
+        "probabilite": 0.9943
+      },
+      {
+        "mot": " récupérer",
+        "debut": 752.88,
+        "fin": 753.3,
+        "probabilite": 0.9945
+      },
+      {
+        "mot": " le",
+        "debut": 753.3,
+        "fin": 753.42,
+        "probabilite": 0.9609
+      },
+      {
+        "mot": " ballon.",
+        "debut": 753.42,
+        "fin": 753.6,
+        "probabilite": 0.9973
+      }
+    ]
+  },
+  {
+    "debut": 753.82,
+    "fin": 754.72,
+    "texte": "Tout le monde !",
+    "mots": [
+      {
+        "mot": " Tout",
+        "debut": 753.82,
+        "fin": 754.2,
+        "probabilite": 0.9733
+      },
+      {
+        "mot": " le",
+        "debut": 754.2,
+        "fin": 754.3,
+        "probabilite": 0.9988
+      },
+      {
+        "mot": " monde",
+        "debut": 754.3,
+        "fin": 754.66,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " !",
+        "debut": 754.66,
+        "fin": 754.72,
+        "probabilite": 0.4105
+      }
+    ]
+  },
+  {
+    "debut": 755.3,
+    "fin": 758.6,
+    "texte": "De notre 30e mètre offensivement jusqu'au 30e mètre.",
+    "mots": [
+      {
+        "mot": " De",
+        "debut": 755.3,
+        "fin": 755.68,
+        "probabilite": 0.9137
+      },
+      {
+        "mot": " notre",
+        "debut": 755.68,
+        "fin": 755.84,
+        "probabilite": 0.5597
+      },
+      {
+        "mot": " 30e",
+        "debut": 755.84,
+        "fin": 756.24,
+        "probabilite": 0.2098
+      },
+      {
+        "mot": " mètre",
+        "debut": 756.24,
+        "fin": 756.98,
+        "probabilite": 0.7575
+      },
+      {
+        "mot": " offensivement",
+        "debut": 756.98,
+        "fin": 757.58,
+        "probabilite": 0.9865
+      },
+      {
+        "mot": " jusqu",
+        "debut": 757.58,
+        "fin": 757.78,
+        "probabilite": 0.7537
+      },
+      {
+        "mot": "'au",
+        "debut": 757.78,
+        "fin": 758.0,
+        "probabilite": 0.9742
+      },
+      {
+        "mot": " 30e",
+        "debut": 758.0,
+        "fin": 758.22,
+        "probabilite": 0.752
+      },
+      {
+        "mot": " mètre.",
+        "debut": 758.22,
+        "fin": 758.6,
+        "probabilite": 0.906
+      }
+    ]
+  },
+  {
+    "debut": 758.64,
+    "fin": 760.76,
+    "texte": "Tout le monde est responsable. Défendre, attaquer.",
+    "mots": [
+      {
+        "mot": " Tout",
+        "debut": 758.64,
+        "fin": 758.9,
+        "probabilite": 0.9835
+      },
+      {
+        "mot": " le",
+        "debut": 758.9,
+        "fin": 759.02,
+        "probabilite": 0.9987
+      },
+      {
+        "mot": " monde",
+        "debut": 759.02,
+        "fin": 759.26,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " est",
+        "debut": 759.26,
+        "fin": 759.4,
+        "probabilite": 0.9946
+      },
+      {
+        "mot": " responsable.",
+        "debut": 759.4,
+        "fin": 759.96,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " Défendre,",
+        "debut": 760.04,
+        "fin": 760.42,
+        "probabilite": 0.9946
+      },
+      {
+        "mot": " attaquer.",
+        "debut": 760.44,
+        "fin": 760.76,
+        "probabilite": 0.9906
+      }
+    ]
+  },
+  {
+    "debut": 761.5,
+    "fin": 763.94,
+    "texte": "Le contre-pressing, ce n'est pas une option, c'est une obligation.",
+    "mots": [
+      {
+        "mot": " Le",
+        "debut": 761.5,
+        "fin": 761.88,
+        "probabilite": 0.3321
+      },
+      {
+        "mot": " contre",
+        "debut": 761.88,
+        "fin": 762.22,
+        "probabilite": 0.0069
+      },
+      {
+        "mot": "-pressing,",
+        "debut": 762.22,
+        "fin": 762.58,
+        "probabilite": 0.7542
+      },
+      {
+        "mot": " ce",
+        "debut": 762.58,
+        "fin": 762.7,
+        "probabilite": 0.714
+      },
+      {
+        "mot": " n",
+        "debut": 762.7,
+        "fin": 762.8,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": "'est",
+        "debut": 762.8,
+        "fin": 762.8,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " pas",
+        "debut": 762.8,
+        "fin": 762.92,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " une",
+        "debut": 762.92,
+        "fin": 763.0,
+        "probabilite": 0.9823
+      },
+      {
+        "mot": " option,",
+        "debut": 763.0,
+        "fin": 763.36,
+        "probabilite": 0.8841
+      },
+      {
+        "mot": " c",
+        "debut": 763.44,
+        "fin": 763.56,
+        "probabilite": 0.9944
+      },
+      {
+        "mot": "'est",
+        "debut": 763.56,
+        "fin": 763.58,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " une",
+        "debut": 763.58,
+        "fin": 763.64,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " obligation.",
+        "debut": 763.64,
+        "fin": 763.94,
+        "probabilite": 0.9996
+      }
+    ]
+  },
+  {
+    "debut": 764.28,
+    "fin": 767.52,
+    "texte": "Ceux qui ne veulent pas le contre-pressing, à un moment donné, quand je demanderai, c'est justement bon.",
+    "mots": [
+      {
+        "mot": " Ceux",
+        "debut": 764.28,
+        "fin": 764.66,
+        "probabilite": 0.5736
+      },
+      {
+        "mot": " qui",
+        "debut": 764.66,
+        "fin": 764.76,
+        "probabilite": 0.8441
+      },
+      {
+        "mot": " ne",
+        "debut": 764.76,
+        "fin": 764.86,
+        "probabilite": 0.9888
+      },
+      {
+        "mot": " veulent",
+        "debut": 764.86,
+        "fin": 764.92,
+        "probabilite": 0.7471
+      },
+      {
+        "mot": " pas",
+        "debut": 764.92,
+        "fin": 765.0,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " le",
+        "debut": 765.0,
+        "fin": 765.06,
+        "probabilite": 0.9073
+      },
+      {
+        "mot": " contre",
+        "debut": 765.06,
+        "fin": 765.2,
+        "probabilite": 0.9414
+      },
+      {
+        "mot": "-pressing,",
+        "debut": 765.2,
+        "fin": 765.48,
+        "probabilite": 0.9922
+      },
+      {
+        "mot": " à",
+        "debut": 765.54,
+        "fin": 765.8,
+        "probabilite": 0.8973
+      },
+      {
+        "mot": " un",
+        "debut": 765.8,
+        "fin": 765.82,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " moment",
+        "debut": 765.82,
+        "fin": 765.96,
+        "probabilite": 0.999
+      },
+      {
+        "mot": " donné,",
+        "debut": 765.96,
+        "fin": 766.2,
+        "probabilite": 0.9989
+      },
+      {
+        "mot": " quand",
+        "debut": 766.22,
+        "fin": 766.34,
+        "probabilite": 0.9175
+      },
+      {
+        "mot": " je",
+        "debut": 766.34,
+        "fin": 766.42,
+        "probabilite": 0.9941
+      },
+      {
+        "mot": " demanderai,",
+        "debut": 766.42,
+        "fin": 766.9,
+        "probabilite": 0.8854
+      },
+      {
+        "mot": " c",
+        "debut": 766.98,
+        "fin": 767.02,
+        "probabilite": 0.8724
+      },
+      {
+        "mot": "'est",
+        "debut": 767.02,
+        "fin": 767.08,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " justement",
+        "debut": 767.08,
+        "fin": 767.28,
+        "probabilite": 0.2588
+      },
+      {
+        "mot": " bon.",
+        "debut": 767.28,
+        "fin": 767.52,
+        "probabilite": 0.7485
+      }
+    ]
+  },
+  {
+    "debut": 767.92,
+    "fin": 769.22,
+    "texte": "C'est une obligation.",
+    "mots": [
+      {
+        "mot": " C",
+        "debut": 767.92,
+        "fin": 768.3,
+        "probabilite": 0.9237
+      },
+      {
+        "mot": "'est",
+        "debut": 768.3,
+        "fin": 768.62,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " une",
+        "debut": 768.62,
+        "fin": 768.74,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " obligation.",
+        "debut": 768.74,
+        "fin": 769.22,
+        "probabilite": 0.9999
+      }
+    ]
+  },
+  {
+    "debut": 770.2,
+    "fin": 773.46,
+    "texte": "Intensité, agressivité, mentalité, tout ça est lié à l'agressivité.",
+    "mots": [
+      {
+        "mot": " Intensité,",
+        "debut": 770.2,
+        "fin": 770.58,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " agressivité,",
+        "debut": 770.58,
+        "fin": 770.96,
+        "probabilite": 0.9983
+      },
+      {
+        "mot": " mentalité,",
+        "debut": 771.06,
+        "fin": 771.62,
+        "probabilite": 0.999
+      },
+      {
+        "mot": " tout",
+        "debut": 771.72,
+        "fin": 772.04,
+        "probabilite": 0.9987
+      },
+      {
+        "mot": " ça",
+        "debut": 772.04,
+        "fin": 772.3,
+        "probabilite": 0.9878
+      },
+      {
+        "mot": " est",
+        "debut": 772.3,
+        "fin": 772.54,
+        "probabilite": 0.9808
+      },
+      {
+        "mot": " lié",
+        "debut": 772.54,
+        "fin": 772.78,
+        "probabilite": 0.9986
+      },
+      {
+        "mot": " à",
+        "debut": 772.78,
+        "fin": 772.9,
+        "probabilite": 0.9018
+      },
+      {
+        "mot": " l",
+        "debut": 772.9,
+        "fin": 772.96,
+        "probabilite": 0.4257
+      },
+      {
+        "mot": "'agressivité.",
+        "debut": 772.96,
+        "fin": 773.46,
+        "probabilite": 0.7983
+      }
+    ]
+  },
+  {
+    "debut": 773.46,
+    "fin": 776.36,
+    "texte": "à la concentration, un engagement mental et physique.",
+    "mots": [
+      {
+        "mot": " à",
+        "debut": 773.46,
+        "fin": 773.96,
+        "probabilite": 0.6192
+      },
+      {
+        "mot": " la",
+        "debut": 773.96,
+        "fin": 773.98,
+        "probabilite": 0.9687
+      },
+      {
+        "mot": " concentration,",
+        "debut": 773.98,
+        "fin": 774.4,
+        "probabilite": 0.9824
+      },
+      {
+        "mot": " un",
+        "debut": 774.58,
+        "fin": 774.8,
+        "probabilite": 0.9704
+      },
+      {
+        "mot": " engagement",
+        "debut": 774.8,
+        "fin": 775.18,
+        "probabilite": 0.9948
+      },
+      {
+        "mot": " mental",
+        "debut": 775.18,
+        "fin": 775.66,
+        "probabilite": 0.9858
+      },
+      {
+        "mot": " et",
+        "debut": 775.66,
+        "fin": 776.08,
+        "probabilite": 0.9887
+      },
+      {
+        "mot": " physique.",
+        "debut": 776.08,
+        "fin": 776.36,
+        "probabilite": 0.9927
+      }
+    ]
+  }
+]

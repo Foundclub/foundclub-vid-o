@@ -1,0 +1,9 @@
+{
+  "mots": 2333,
+  "segments": 81,
+  "source_duree": 1566.97542,
+  "modele_integral": "large-v3-turbo, CPU int8, français, horodatage par mot",
+  "relectures": "large-v3-turbo puis large-v3 sur les dialogues et vestiaires difficiles",
+  "horodatages_manuels": "Temps de l’expression initiale conservés et répartis lors des corrections ; alignement estimé",
+  "limite": "Plusieurs phrases secondaires restent incertaines ; ne pas utiliser le SRT comme sous-titrage final sans écoute"
+}

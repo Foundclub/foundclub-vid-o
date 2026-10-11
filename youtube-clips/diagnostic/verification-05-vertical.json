@@ -1,0 +1,767 @@
+{
+  "numero": 5,
+  "format": "vertical",
+  "sha256": "5b60be9f72b49836c7dfe60230a4dd39dc547e1c74e11ab68d375c81fe87a937",
+  "texte_prevu_sha256": "03494573c21f47fc0be417f12bd6090c6bd7ed07bcdaf4a2d989b46b4de6b6a0",
+  "verification": "OK",
+  "modele_verification": "turbo",
+  "vad": true,
+  "aide_vestiaire": false,
+  "aide_dialogue": false,
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "defaite",
+    "3",
+    "2",
+    "malheureusement"
+  ],
+  "derniers_mots_attendus": [
+    "prochaine",
+    "face",
+    "a",
+    "rousset"
+  ],
+  "premiers_mots_reconnus": [
+    "defaite",
+    "3",
+    "2",
+    "malheureusement"
+  ],
+  "derniers_mots_reconnus": [
+    "prochaine",
+    "face",
+    "a",
+    "rousset"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": true,
+  "transcription": [
+    {
+      "debut": 0,
+      "fin": 5.84,
+      "texte": "Défaite 3-2, malheureusement, après avoir mené deux buts à zéro, c'est vraiment très compliqué.",
+      "mots": [
+        {
+          "mot": " Défaite",
+          "debut": 0,
+          "fin": 0.56
+        },
+        {
+          "mot": " 3",
+          "debut": 0.56,
+          "fin": 0.82
+        },
+        {
+          "mot": "-2,",
+          "debut": 0.82,
+          "fin": 1.02
+        },
+        {
+          "mot": " malheureusement,",
+          "debut": 1.12,
+          "fin": 1.58
+        },
+        {
+          "mot": " après",
+          "debut": 1.78,
+          "fin": 2.0
+        },
+        {
+          "mot": " avoir",
+          "debut": 2.0,
+          "fin": 2.28
+        },
+        {
+          "mot": " mené",
+          "debut": 2.28,
+          "fin": 2.66
+        },
+        {
+          "mot": " deux",
+          "debut": 2.66,
+          "fin": 3.08
+        },
+        {
+          "mot": " buts",
+          "debut": 3.08,
+          "fin": 3.28
+        },
+        {
+          "mot": " à",
+          "debut": 3.28,
+          "fin": 3.38
+        },
+        {
+          "mot": " zéro,",
+          "debut": 3.38,
+          "fin": 3.7
+        },
+        {
+          "mot": " c",
+          "debut": 3.92,
+          "fin": 4.04
+        },
+        {
+          "mot": "'est",
+          "debut": 4.04,
+          "fin": 4.04
+        },
+        {
+          "mot": " vraiment",
+          "debut": 4.04,
+          "fin": 4.2
+        },
+        {
+          "mot": " très",
+          "debut": 4.2,
+          "fin": 4.82
+        },
+        {
+          "mot": " compliqué.",
+          "debut": 4.82,
+          "fin": 5.84
+        }
+      ]
+    },
+    {
+      "debut": 6.32,
+      "fin": 10.1,
+      "texte": "Malheureusement, moi, je n'ai pas pu aller au match parce que c'était quand même à l'extérieur et c'était assez loin.",
+      "mots": [
+        {
+          "mot": " Malheureusement,",
+          "debut": 6.32,
+          "fin": 6.68
+        },
+        {
+          "mot": " moi,",
+          "debut": 7.04,
+          "fin": 7.14
+        },
+        {
+          "mot": " je",
+          "debut": 7.26,
+          "fin": 7.28
+        },
+        {
+          "mot": " n",
+          "debut": 7.28,
+          "fin": 7.36
+        },
+        {
+          "mot": "'ai",
+          "debut": 7.36,
+          "fin": 7.36
+        },
+        {
+          "mot": " pas",
+          "debut": 7.36,
+          "fin": 7.44
+        },
+        {
+          "mot": " pu",
+          "debut": 7.44,
+          "fin": 7.58
+        },
+        {
+          "mot": " aller",
+          "debut": 7.58,
+          "fin": 7.74
+        },
+        {
+          "mot": " au",
+          "debut": 7.74,
+          "fin": 7.86
+        },
+        {
+          "mot": " match",
+          "debut": 7.86,
+          "fin": 8.06
+        },
+        {
+          "mot": " parce",
+          "debut": 8.06,
+          "fin": 8.38
+        },
+        {
+          "mot": " que",
+          "debut": 8.38,
+          "fin": 8.48
+        },
+        {
+          "mot": " c",
+          "debut": 8.48,
+          "fin": 8.58
+        },
+        {
+          "mot": "'était",
+          "debut": 8.58,
+          "fin": 8.66
+        },
+        {
+          "mot": " quand",
+          "debut": 8.66,
+          "fin": 8.8
+        },
+        {
+          "mot": " même",
+          "debut": 8.8,
+          "fin": 8.9
+        },
+        {
+          "mot": " à",
+          "debut": 8.9,
+          "fin": 9.0
+        },
+        {
+          "mot": " l",
+          "debut": 9.0,
+          "fin": 9.08
+        },
+        {
+          "mot": "'extérieur",
+          "debut": 9.08,
+          "fin": 9.42
+        },
+        {
+          "mot": " et",
+          "debut": 9.42,
+          "fin": 9.56
+        },
+        {
+          "mot": " c",
+          "debut": 9.56,
+          "fin": 9.62
+        },
+        {
+          "mot": "'était",
+          "debut": 9.62,
+          "fin": 9.7
+        },
+        {
+          "mot": " assez",
+          "debut": 9.7,
+          "fin": 9.88
+        },
+        {
+          "mot": " loin.",
+          "debut": 9.88,
+          "fin": 10.1
+        }
+      ]
+    },
+    {
+      "debut": 10.28,
+      "fin": 17.76,
+      "texte": "Mais je suivais un peu de loin. Quand j'ai vu 2-0 pour nous, j'étais assez content et assez confiant parce que je savais que l'équipe, c'était costaud.",
+      "mots": [
+        {
+          "mot": " Mais",
+          "debut": 10.28,
+          "fin": 10.42
+        },
+        {
+          "mot": " je",
+          "debut": 10.42,
+          "fin": 10.76
+        },
+        {
+          "mot": " suivais",
+          "debut": 10.76,
+          "fin": 11.06
+        },
+        {
+          "mot": " un",
+          "debut": 11.06,
+          "fin": 11.22
+        },
+        {
+          "mot": " peu",
+          "debut": 11.22,
+          "fin": 11.36
+        },
+        {
+          "mot": " de",
+          "debut": 11.36,
+          "fin": 11.68
+        },
+        {
+          "mot": " loin.",
+          "debut": 11.68,
+          "fin": 11.9
+        },
+        {
+          "mot": " Quand",
+          "debut": 12.1,
+          "fin": 12.24
+        },
+        {
+          "mot": " j",
+          "debut": 12.24,
+          "fin": 12.36
+        },
+        {
+          "mot": "'ai",
+          "debut": 12.36,
+          "fin": 12.38
+        },
+        {
+          "mot": " vu",
+          "debut": 12.38,
+          "fin": 12.46
+        },
+        {
+          "mot": " 2",
+          "debut": 12.46,
+          "fin": 12.64
+        },
+        {
+          "mot": "-0",
+          "debut": 12.64,
+          "fin": 12.78
+        },
+        {
+          "mot": " pour",
+          "debut": 12.78,
+          "fin": 12.98
+        },
+        {
+          "mot": " nous,",
+          "debut": 12.98,
+          "fin": 13.12
+        },
+        {
+          "mot": " j",
+          "debut": 13.24,
+          "fin": 13.32
+        },
+        {
+          "mot": "'étais",
+          "debut": 13.32,
+          "fin": 13.48
+        },
+        {
+          "mot": " assez",
+          "debut": 13.48,
+          "fin": 13.72
+        },
+        {
+          "mot": " content",
+          "debut": 13.72,
+          "fin": 14.0
+        },
+        {
+          "mot": " et",
+          "debut": 14.0,
+          "fin": 14.16
+        },
+        {
+          "mot": " assez",
+          "debut": 14.16,
+          "fin": 14.36
+        },
+        {
+          "mot": " confiant",
+          "debut": 14.36,
+          "fin": 14.74
+        },
+        {
+          "mot": " parce",
+          "debut": 14.74,
+          "fin": 15.56
+        },
+        {
+          "mot": " que",
+          "debut": 15.56,
+          "fin": 15.68
+        },
+        {
+          "mot": " je",
+          "debut": 15.68,
+          "fin": 15.78
+        },
+        {
+          "mot": " savais",
+          "debut": 15.78,
+          "fin": 15.96
+        },
+        {
+          "mot": " que",
+          "debut": 15.96,
+          "fin": 16.06
+        },
+        {
+          "mot": " l",
+          "debut": 16.06,
+          "fin": 16.16
+        },
+        {
+          "mot": "'équipe,",
+          "debut": 16.16,
+          "fin": 16.46
+        },
+        {
+          "mot": " c",
+          "debut": 16.66,
+          "fin": 17.22
+        },
+        {
+          "mot": "'était",
+          "debut": 17.22,
+          "fin": 17.34
+        },
+        {
+          "mot": " costaud.",
+          "debut": 17.34,
+          "fin": 17.76
+        }
+      ]
+    },
+    {
+      "debut": 17.82,
+      "fin": 24.9,
+      "texte": "On a fait des gros matchs de prépa et qu'on était prêts. Mais bon, comme quoi, à ce niveau-là, chaque erreur compte.",
+      "mots": [
+        {
+          "mot": " On",
+          "debut": 17.82,
+          "fin": 17.9
+        },
+        {
+          "mot": " a",
+          "debut": 17.9,
+          "fin": 17.98
+        },
+        {
+          "mot": " fait",
+          "debut": 17.98,
+          "fin": 18.08
+        },
+        {
+          "mot": " des",
+          "debut": 18.08,
+          "fin": 18.2
+        },
+        {
+          "mot": " gros",
+          "debut": 18.2,
+          "fin": 18.38
+        },
+        {
+          "mot": " matchs",
+          "debut": 18.38,
+          "fin": 18.66
+        },
+        {
+          "mot": " de",
+          "debut": 18.66,
+          "fin": 18.78
+        },
+        {
+          "mot": " prépa",
+          "debut": 18.78,
+          "fin": 19.14
+        },
+        {
+          "mot": " et",
+          "debut": 19.14,
+          "fin": 19.86
+        },
+        {
+          "mot": " qu",
+          "debut": 19.86,
+          "fin": 20.04
+        },
+        {
+          "mot": "'on",
+          "debut": 20.04,
+          "fin": 20.88
+        },
+        {
+          "mot": " était",
+          "debut": 20.88,
+          "fin": 21.14
+        },
+        {
+          "mot": " prêts.",
+          "debut": 21.14,
+          "fin": 22.1
+        },
+        {
+          "mot": " Mais",
+          "debut": 22.36,
+          "fin": 22.5
+        },
+        {
+          "mot": " bon,",
+          "debut": 22.5,
+          "fin": 22.66
+        },
+        {
+          "mot": " comme",
+          "debut": 22.8,
+          "fin": 22.86
+        },
+        {
+          "mot": " quoi,",
+          "debut": 22.86,
+          "fin": 23.08
+        },
+        {
+          "mot": " à",
+          "debut": 23.18,
+          "fin": 23.36
+        },
+        {
+          "mot": " ce",
+          "debut": 23.36,
+          "fin": 23.48
+        },
+        {
+          "mot": " niveau",
+          "debut": 23.48,
+          "fin": 23.68
+        },
+        {
+          "mot": "-là,",
+          "debut": 23.68,
+          "fin": 23.88
+        },
+        {
+          "mot": " chaque",
+          "debut": 24.16,
+          "fin": 24.38
+        },
+        {
+          "mot": " erreur",
+          "debut": 24.38,
+          "fin": 24.72
+        },
+        {
+          "mot": " compte.",
+          "debut": 24.72,
+          "fin": 24.9
+        }
+      ]
+    },
+    {
+      "debut": 25.0,
+      "fin": 29.8,
+      "texte": "On prend un troisième but à la fin. Laissez le football, c'est comme ça. C'est dommage de commencer par une défaite.",
+      "mots": [
+        {
+          "mot": " On",
+          "debut": 25.0,
+          "fin": 25.04
+        },
+        {
+          "mot": " prend",
+          "debut": 25.04,
+          "fin": 25.16
+        },
+        {
+          "mot": " un",
+          "debut": 25.16,
+          "fin": 25.34
+        },
+        {
+          "mot": " troisième",
+          "debut": 25.34,
+          "fin": 25.58
+        },
+        {
+          "mot": " but",
+          "debut": 25.58,
+          "fin": 25.84
+        },
+        {
+          "mot": " à",
+          "debut": 25.84,
+          "fin": 26.5
+        },
+        {
+          "mot": " la",
+          "debut": 26.5,
+          "fin": 26.68
+        },
+        {
+          "mot": " fin.",
+          "debut": 26.68,
+          "fin": 26.86
+        },
+        {
+          "mot": " Laissez",
+          "debut": 27.02,
+          "fin": 27.3
+        },
+        {
+          "mot": " le",
+          "debut": 27.3,
+          "fin": 27.36
+        },
+        {
+          "mot": " football,",
+          "debut": 27.36,
+          "fin": 27.64
+        },
+        {
+          "mot": " c",
+          "debut": 27.8,
+          "fin": 27.82
+        },
+        {
+          "mot": "'est",
+          "debut": 27.82,
+          "fin": 27.88
+        },
+        {
+          "mot": " comme",
+          "debut": 27.88,
+          "fin": 28.0
+        },
+        {
+          "mot": " ça.",
+          "debut": 28.0,
+          "fin": 28.12
+        },
+        {
+          "mot": " C",
+          "debut": 28.22,
+          "fin": 28.28
+        },
+        {
+          "mot": "'est",
+          "debut": 28.28,
+          "fin": 28.32
+        },
+        {
+          "mot": " dommage",
+          "debut": 28.32,
+          "fin": 28.6
+        },
+        {
+          "mot": " de",
+          "debut": 28.6,
+          "fin": 28.72
+        },
+        {
+          "mot": " commencer",
+          "debut": 28.72,
+          "fin": 29.02
+        },
+        {
+          "mot": " par",
+          "debut": 29.02,
+          "fin": 29.24
+        },
+        {
+          "mot": " une",
+          "debut": 29.24,
+          "fin": 29.4
+        },
+        {
+          "mot": " défaite.",
+          "debut": 29.4,
+          "fin": 29.8
+        }
+      ]
+    },
+    {
+      "debut": 30.0,
+      "fin": 33.44,
+      "texte": "C'est embêtant, mais bon, il va falloir se rattraper dès la semaine prochaine face à Rousset.",
+      "mots": [
+        {
+          "mot": " C",
+          "debut": 30.0,
+          "fin": 30.12
+        },
+        {
+          "mot": "'est",
+          "debut": 30.12,
+          "fin": 30.2
+        },
+        {
+          "mot": " embêtant,",
+          "debut": 30.2,
+          "fin": 30.58
+        },
+        {
+          "mot": " mais",
+          "debut": 30.64,
+          "fin": 30.72
+        },
+        {
+          "mot": " bon,",
+          "debut": 30.72,
+          "fin": 30.86
+        },
+        {
+          "mot": " il",
+          "debut": 30.92,
+          "fin": 30.98
+        },
+        {
+          "mot": " va",
+          "debut": 30.98,
+          "fin": 30.98
+        },
+        {
+          "mot": " falloir",
+          "debut": 30.98,
+          "fin": 31.26
+        },
+        {
+          "mot": " se",
+          "debut": 31.26,
+          "fin": 31.34
+        },
+        {
+          "mot": " rattraper",
+          "debut": 31.34,
+          "fin": 31.78
+        },
+        {
+          "mot": " dès",
+          "debut": 31.78,
+          "fin": 32.14
+        },
+        {
+          "mot": " la",
+          "debut": 32.14,
+          "fin": 32.28
+        },
+        {
+          "mot": " semaine",
+          "debut": 32.28,
+          "fin": 32.42
+        },
+        {
+          "mot": " prochaine",
+          "debut": 32.42,
+          "fin": 32.78
+        },
+        {
+          "mot": " face",
+          "debut": 32.78,
+          "fin": 33.0
+        },
+        {
+          "mot": " à",
+          "debut": 33.0,
+          "fin": 33.12
+        },
+        {
+          "mot": " Rousset.",
+          "debut": 33.12,
+          "fin": 33.44
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {},
+  "lufs": -14.03,
+  "pic_vrai_db": -2.59,
+  "duree": 33.633333,
+  "taille_octets": 18349270
+}

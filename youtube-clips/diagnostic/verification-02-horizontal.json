@@ -1,0 +1,744 @@
+{
+  "numero": 2,
+  "format": "horizontal",
+  "sha256": "75d66ce45e7b5dbf1762c1eadf01840487a450643055e60e8cde4e3d75178ac5",
+  "texte_prevu_sha256": "85f976a57d8729889ae392fca52672d1a5c2032a1934469f41c8786e0cf3d2a1",
+  "verification": "OK",
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "c",
+    "est",
+    "la",
+    "poule"
+  ],
+  "derniers_mots_attendus": [
+    "net",
+    "pro",
+    "les",
+    "gars"
+  ],
+  "premiers_mots_reconnus": [
+    "c",
+    "est",
+    "la",
+    "poule"
+  ],
+  "derniers_mots_reconnus": [
+    "etre",
+    "pro",
+    "les",
+    "gars"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": true,
+  "transcription": [
+    {
+      "debut": 0.0,
+      "fin": 2.64,
+      "texte": "C'est la poule la plus dure de National 2",
+      "mots": [
+        {
+          "mot": " C",
+          "debut": 0.0,
+          "fin": 0.5
+        },
+        {
+          "mot": "'est",
+          "debut": 0.5,
+          "fin": 0.6
+        },
+        {
+          "mot": " la",
+          "debut": 0.6,
+          "fin": 0.72
+        },
+        {
+          "mot": " poule",
+          "debut": 0.72,
+          "fin": 1.06
+        },
+        {
+          "mot": " la",
+          "debut": 1.06,
+          "fin": 1.2
+        },
+        {
+          "mot": " plus",
+          "debut": 1.2,
+          "fin": 1.48
+        },
+        {
+          "mot": " dure",
+          "debut": 1.48,
+          "fin": 1.82
+        },
+        {
+          "mot": " de",
+          "debut": 1.82,
+          "fin": 2.0
+        },
+        {
+          "mot": " National",
+          "debut": 2.0,
+          "fin": 2.36
+        },
+        {
+          "mot": " 2",
+          "debut": 2.36,
+          "fin": 2.64
+        }
+      ]
+    },
+    {
+      "debut": 2.64,
+      "fin": 4.94,
+      "texte": "Ah oui, National 3 n'existe plus",
+      "mots": [
+        {
+          "mot": " Ah",
+          "debut": 2.64,
+          "fin": 2.8
+        },
+        {
+          "mot": " oui,",
+          "debut": 2.8,
+          "fin": 3.0
+        },
+        {
+          "mot": " National",
+          "debut": 3.24,
+          "fin": 3.84
+        },
+        {
+          "mot": " 3",
+          "debut": 3.84,
+          "fin": 4.12
+        },
+        {
+          "mot": " n",
+          "debut": 4.12,
+          "fin": 4.3
+        },
+        {
+          "mot": "'existe",
+          "debut": 4.3,
+          "fin": 4.66
+        },
+        {
+          "mot": " plus",
+          "debut": 4.66,
+          "fin": 4.94
+        }
+      ]
+    },
+    {
+      "debut": 4.94,
+      "fin": 6.56,
+      "texte": "Maintenant c'est National 2",
+      "mots": [
+        {
+          "mot": " Maintenant",
+          "debut": 4.94,
+          "fin": 5.54
+        },
+        {
+          "mot": " c",
+          "debut": 5.54,
+          "fin": 5.78
+        },
+        {
+          "mot": "'est",
+          "debut": 5.78,
+          "fin": 5.84
+        },
+        {
+          "mot": " National",
+          "debut": 5.84,
+          "fin": 6.22
+        },
+        {
+          "mot": " 2",
+          "debut": 6.22,
+          "fin": 6.56
+        }
+      ]
+    },
+    {
+      "debut": 6.56,
+      "fin": 9.98,
+      "texte": "Depuis la réforme avec la Ligue 3 qui est rentrée en vigueur",
+      "mots": [
+        {
+          "mot": " Depuis",
+          "debut": 6.56,
+          "fin": 7.18
+        },
+        {
+          "mot": " la",
+          "debut": 7.18,
+          "fin": 7.3
+        },
+        {
+          "mot": " réforme",
+          "debut": 7.3,
+          "fin": 7.7
+        },
+        {
+          "mot": " avec",
+          "debut": 7.7,
+          "fin": 8.02
+        },
+        {
+          "mot": " la",
+          "debut": 8.02,
+          "fin": 8.54
+        },
+        {
+          "mot": " Ligue",
+          "debut": 8.54,
+          "fin": 8.74
+        },
+        {
+          "mot": " 3",
+          "debut": 8.74,
+          "fin": 8.92
+        },
+        {
+          "mot": " qui",
+          "debut": 8.92,
+          "fin": 9.12
+        },
+        {
+          "mot": " est",
+          "debut": 9.12,
+          "fin": 9.22
+        },
+        {
+          "mot": " rentrée",
+          "debut": 9.22,
+          "fin": 9.48
+        },
+        {
+          "mot": " en",
+          "debut": 9.48,
+          "fin": 9.56
+        },
+        {
+          "mot": " vigueur",
+          "debut": 9.56,
+          "fin": 9.98
+        }
+      ]
+    },
+    {
+      "debut": 9.98,
+      "fin": 13.76,
+      "texte": "Et du coup la Ligue 3 qui est maintenant professionnelle en France",
+      "mots": [
+        {
+          "mot": " Et",
+          "debut": 9.98,
+          "fin": 10.68
+        },
+        {
+          "mot": " du",
+          "debut": 10.68,
+          "fin": 11.14
+        },
+        {
+          "mot": " coup",
+          "debut": 11.14,
+          "fin": 11.3
+        },
+        {
+          "mot": " la",
+          "debut": 11.3,
+          "fin": 11.44
+        },
+        {
+          "mot": " Ligue",
+          "debut": 11.44,
+          "fin": 11.62
+        },
+        {
+          "mot": " 3",
+          "debut": 11.62,
+          "fin": 11.78
+        },
+        {
+          "mot": " qui",
+          "debut": 11.78,
+          "fin": 11.92
+        },
+        {
+          "mot": " est",
+          "debut": 11.92,
+          "fin": 12.02
+        },
+        {
+          "mot": " maintenant",
+          "debut": 12.02,
+          "fin": 12.42
+        },
+        {
+          "mot": " professionnelle",
+          "debut": 12.42,
+          "fin": 13.3
+        },
+        {
+          "mot": " en",
+          "debut": 13.3,
+          "fin": 13.42
+        },
+        {
+          "mot": " France",
+          "debut": 13.42,
+          "fin": 13.76
+        }
+      ]
+    },
+    {
+      "debut": 13.76,
+      "fin": 20.38,
+      "texte": "Voilà je vous mets un peu la fiche de comment se constituent aujourd'hui les championnats français",
+      "mots": [
+        {
+          "mot": " Voilà",
+          "debut": 13.76,
+          "fin": 14.28
+        },
+        {
+          "mot": " je",
+          "debut": 14.28,
+          "fin": 14.46
+        },
+        {
+          "mot": " vous",
+          "debut": 14.46,
+          "fin": 14.56
+        },
+        {
+          "mot": " mets",
+          "debut": 14.56,
+          "fin": 14.68
+        },
+        {
+          "mot": " un",
+          "debut": 14.68,
+          "fin": 14.78
+        },
+        {
+          "mot": " peu",
+          "debut": 14.78,
+          "fin": 14.96
+        },
+        {
+          "mot": " la",
+          "debut": 14.96,
+          "fin": 15.6
+        },
+        {
+          "mot": " fiche",
+          "debut": 15.6,
+          "fin": 15.94
+        },
+        {
+          "mot": " de",
+          "debut": 15.94,
+          "fin": 16.14
+        },
+        {
+          "mot": " comment",
+          "debut": 16.14,
+          "fin": 16.7
+        },
+        {
+          "mot": " se",
+          "debut": 16.7,
+          "fin": 16.92
+        },
+        {
+          "mot": " constituent",
+          "debut": 16.92,
+          "fin": 17.5
+        },
+        {
+          "mot": " aujourd",
+          "debut": 17.5,
+          "fin": 17.66
+        },
+        {
+          "mot": "'hui",
+          "debut": 17.66,
+          "fin": 17.98
+        },
+        {
+          "mot": " les",
+          "debut": 17.98,
+          "fin": 19.48
+        },
+        {
+          "mot": " championnats",
+          "debut": 19.48,
+          "fin": 20.0
+        },
+        {
+          "mot": " français",
+          "debut": 20.0,
+          "fin": 20.38
+        }
+      ]
+    },
+    {
+      "debut": 20.38,
+      "fin": 25.26,
+      "texte": "Et nous du coup on était dans l'ancienne N3 qui est maintenant la National 2",
+      "mots": [
+        {
+          "mot": " Et",
+          "debut": 20.38,
+          "fin": 20.88
+        },
+        {
+          "mot": " nous",
+          "debut": 20.88,
+          "fin": 21.08
+        },
+        {
+          "mot": " du",
+          "debut": 21.08,
+          "fin": 21.4
+        },
+        {
+          "mot": " coup",
+          "debut": 21.4,
+          "fin": 21.58
+        },
+        {
+          "mot": " on",
+          "debut": 21.58,
+          "fin": 22.12
+        },
+        {
+          "mot": " était",
+          "debut": 22.12,
+          "fin": 22.36
+        },
+        {
+          "mot": " dans",
+          "debut": 22.36,
+          "fin": 22.54
+        },
+        {
+          "mot": " l",
+          "debut": 22.54,
+          "fin": 22.72
+        },
+        {
+          "mot": "'ancienne",
+          "debut": 22.72,
+          "fin": 23.28
+        },
+        {
+          "mot": " N3",
+          "debut": 23.28,
+          "fin": 23.72
+        },
+        {
+          "mot": " qui",
+          "debut": 23.72,
+          "fin": 24.0
+        },
+        {
+          "mot": " est",
+          "debut": 24.0,
+          "fin": 24.12
+        },
+        {
+          "mot": " maintenant",
+          "debut": 24.12,
+          "fin": 24.38
+        },
+        {
+          "mot": " la",
+          "debut": 24.38,
+          "fin": 24.56
+        },
+        {
+          "mot": " National",
+          "debut": 24.56,
+          "fin": 24.98
+        },
+        {
+          "mot": " 2",
+          "debut": 24.98,
+          "fin": 25.26
+        }
+      ]
+    },
+    {
+      "debut": 25.26,
+      "fin": 28.12,
+      "texte": "Donc dites vous je ne suis plus qu'à deux niveaux d'être pro les gars",
+      "mots": [
+        {
+          "mot": " Donc",
+          "debut": 25.26,
+          "fin": 25.76
+        },
+        {
+          "mot": " dites",
+          "debut": 25.76,
+          "fin": 25.98
+        },
+        {
+          "mot": " vous",
+          "debut": 25.98,
+          "fin": 26.16
+        },
+        {
+          "mot": " je",
+          "debut": 26.16,
+          "fin": 26.3
+        },
+        {
+          "mot": " ne",
+          "debut": 26.3,
+          "fin": 26.4
+        },
+        {
+          "mot": " suis",
+          "debut": 26.4,
+          "fin": 26.4
+        },
+        {
+          "mot": " plus",
+          "debut": 26.4,
+          "fin": 26.56
+        },
+        {
+          "mot": " qu",
+          "debut": 26.56,
+          "fin": 26.7
+        },
+        {
+          "mot": "'à",
+          "debut": 26.7,
+          "fin": 26.86
+        },
+        {
+          "mot": " deux",
+          "debut": 26.86,
+          "fin": 27.12
+        },
+        {
+          "mot": " niveaux",
+          "debut": 27.12,
+          "fin": 27.46
+        },
+        {
+          "mot": " d",
+          "debut": 27.46,
+          "fin": 27.56
+        },
+        {
+          "mot": "'être",
+          "debut": 27.56,
+          "fin": 27.66
+        },
+        {
+          "mot": " pro",
+          "debut": 27.66,
+          "fin": 27.84
+        },
+        {
+          "mot": " les",
+          "debut": 27.84,
+          "fin": 27.98
+        },
+        {
+          "mot": " gars",
+          "debut": 27.98,
+          "fin": 28.12
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {
+    "fin": [
+      {
+        "debut": 0.0,
+        "fin": 5.82,
+        "texte": "et nous du coup bah on était dans l'ancienne n3 qui est maintenant la national 2 donc dites vous",
+        "mots": [
+          {
+            "mot": " et",
+            "debut": 0.0,
+            "fin": 0.54
+          },
+          {
+            "mot": " nous",
+            "debut": 0.54,
+            "fin": 0.72
+          },
+          {
+            "mot": " du",
+            "debut": 0.72,
+            "fin": 1.08
+          },
+          {
+            "mot": " coup",
+            "debut": 1.08,
+            "fin": 1.24
+          },
+          {
+            "mot": " bah",
+            "debut": 1.24,
+            "fin": 1.44
+          },
+          {
+            "mot": " on",
+            "debut": 1.44,
+            "fin": 1.8
+          },
+          {
+            "mot": " était",
+            "debut": 1.8,
+            "fin": 2.02
+          },
+          {
+            "mot": " dans",
+            "debut": 2.02,
+            "fin": 2.22
+          },
+          {
+            "mot": " l",
+            "debut": 2.22,
+            "fin": 2.38
+          },
+          {
+            "mot": "'ancienne",
+            "debut": 2.38,
+            "fin": 2.94
+          },
+          {
+            "mot": " n3",
+            "debut": 2.94,
+            "fin": 3.38
+          },
+          {
+            "mot": " qui",
+            "debut": 3.38,
+            "fin": 3.68
+          },
+          {
+            "mot": " est",
+            "debut": 3.68,
+            "fin": 3.82
+          },
+          {
+            "mot": " maintenant",
+            "debut": 3.82,
+            "fin": 4.04
+          },
+          {
+            "mot": " la",
+            "debut": 4.04,
+            "fin": 4.26
+          },
+          {
+            "mot": " national",
+            "debut": 4.26,
+            "fin": 4.64
+          },
+          {
+            "mot": " 2",
+            "debut": 4.64,
+            "fin": 4.9
+          },
+          {
+            "mot": " donc",
+            "debut": 4.9,
+            "fin": 5.42
+          },
+          {
+            "mot": " dites",
+            "debut": 5.42,
+            "fin": 5.64
+          },
+          {
+            "mot": " vous",
+            "debut": 5.64,
+            "fin": 5.82
+          }
+        ]
+      },
+      {
+        "debut": 5.82,
+        "fin": 7.78,
+        "texte": "je suis plus qu'à deux niveaux net pro les gars",
+        "mots": [
+          {
+            "mot": " je",
+            "debut": 5.82,
+            "fin": 5.98
+          },
+          {
+            "mot": " suis",
+            "debut": 5.98,
+            "fin": 6.08
+          },
+          {
+            "mot": " plus",
+            "debut": 6.08,
+            "fin": 6.22
+          },
+          {
+            "mot": " qu",
+            "debut": 6.22,
+            "fin": 6.38
+          },
+          {
+            "mot": "'à",
+            "debut": 6.38,
+            "fin": 6.5
+          },
+          {
+            "mot": " deux",
+            "debut": 6.5,
+            "fin": 6.78
+          },
+          {
+            "mot": " niveaux",
+            "debut": 6.78,
+            "fin": 7.14
+          },
+          {
+            "mot": " net",
+            "debut": 7.14,
+            "fin": 7.28
+          },
+          {
+            "mot": " pro",
+            "debut": 7.28,
+            "fin": 7.5
+          },
+          {
+            "mot": " les",
+            "debut": 7.5,
+            "fin": 7.68
+          },
+          {
+            "mot": " gars",
+            "debut": 7.68,
+            "fin": 7.78
+          }
+        ]
+      }
+    ]
+  },
+  "lufs": -14.03,
+  "pic_vrai_db": -1.82,
+  "duree": 28.333333,
+  "taille_octets": 15213993
+}

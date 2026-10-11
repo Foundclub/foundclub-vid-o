@@ -1,0 +1,29 @@
+{
+  "premiere_passe": {
+    "input_i": "-17.03",
+    "input_tp": "-3.46",
+    "input_lra": "9.50",
+    "input_thresh": "-28.26",
+    "output_i": "-13.34",
+    "output_tp": "-1.50",
+    "output_lra": "7.10",
+    "output_thresh": "-24.30",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.66"
+  },
+  "seconde_passe": {
+    "input_i": "-17.03",
+    "input_tp": "-3.46",
+    "input_lra": "9.50",
+    "input_thresh": "-28.26",
+    "output_i": "-13.64",
+    "output_tp": "-1.50",
+    "output_lra": "7.50",
+    "output_thresh": "-24.68",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.36"
+  },
+  "fondus_ms": 30,
+  "ajustement_final_gain_db": -0.29,
+  "niveau_aac_avant_ajustement": -13.71
+}

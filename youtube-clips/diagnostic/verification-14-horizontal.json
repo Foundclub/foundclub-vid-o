@@ -1,0 +1,504 @@
+{
+  "numero": 14,
+  "format": "horizontal",
+  "sha256": "b3a5eea2fd6d3d69fd3615e174773301965db1ec9f80160ab84a77902cdc01f6",
+  "texte_prevu_sha256": "749748efa702be28a073efbe2f8489ccafe117e3d2cf9452ac65b16a57d1deaf",
+  "verification": "OK",
+  "modele_verification": "large-v3",
+  "vad": false,
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "faites",
+    "vous",
+    "violence",
+    "trouvez"
+  ],
+  "derniers_mots_attendus": [
+    "prendre",
+    "un",
+    "but",
+    "putain"
+  ],
+  "premiers_mots_reconnus": [
+    "faites",
+    "vous",
+    "violence",
+    "trouvez"
+  ],
+  "derniers_mots_reconnus": [
+    "prendre",
+    "un",
+    "but",
+    "putain"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": true,
+  "transcription": [
+    {
+      "debut": 0.0,
+      "fin": 4.84,
+      "texte": "Faites-vous violence, trouvez les mots, les regards, les petits gestes.",
+      "mots": [
+        {
+          "mot": " Faites",
+          "debut": 0.0,
+          "fin": 0.48
+        },
+        {
+          "mot": "-vous",
+          "debut": 0.48,
+          "fin": 0.64
+        },
+        {
+          "mot": " violence,",
+          "debut": 0.64,
+          "fin": 0.86
+        },
+        {
+          "mot": " trouvez",
+          "debut": 1.2,
+          "fin": 1.76
+        },
+        {
+          "mot": " les",
+          "debut": 1.76,
+          "fin": 1.9
+        },
+        {
+          "mot": " mots,",
+          "debut": 1.9,
+          "fin": 2.08
+        },
+        {
+          "mot": " les",
+          "debut": 2.24,
+          "fin": 3.72
+        },
+        {
+          "mot": " regards,",
+          "debut": 3.72,
+          "fin": 4.04
+        },
+        {
+          "mot": " les",
+          "debut": 4.16,
+          "fin": 4.26
+        },
+        {
+          "mot": " petits",
+          "debut": 4.26,
+          "fin": 4.38
+        },
+        {
+          "mot": " gestes.",
+          "debut": 4.38,
+          "fin": 4.84
+        }
+      ]
+    },
+    {
+      "debut": 7.2,
+      "fin": 9.9,
+      "texte": "Il y a eu des situations, on peut marquer un but, il suffit d'un.",
+      "mots": [
+        {
+          "mot": " Il",
+          "debut": 7.2,
+          "fin": 7.48
+        },
+        {
+          "mot": " y",
+          "debut": 7.48,
+          "fin": 7.56
+        },
+        {
+          "mot": " a",
+          "debut": 7.56,
+          "fin": 7.6
+        },
+        {
+          "mot": " eu",
+          "debut": 7.6,
+          "fin": 7.64
+        },
+        {
+          "mot": " des",
+          "debut": 7.64,
+          "fin": 7.74
+        },
+        {
+          "mot": " situations,",
+          "debut": 7.74,
+          "fin": 8.12
+        },
+        {
+          "mot": " on",
+          "debut": 8.36,
+          "fin": 8.56
+        },
+        {
+          "mot": " peut",
+          "debut": 8.56,
+          "fin": 8.7
+        },
+        {
+          "mot": " marquer",
+          "debut": 8.7,
+          "fin": 9.04
+        },
+        {
+          "mot": " un",
+          "debut": 9.04,
+          "fin": 9.1
+        },
+        {
+          "mot": " but,",
+          "debut": 9.1,
+          "fin": 9.24
+        },
+        {
+          "mot": " il",
+          "debut": 9.3,
+          "fin": 9.42
+        },
+        {
+          "mot": " suffit",
+          "debut": 9.42,
+          "fin": 9.74
+        },
+        {
+          "mot": " d",
+          "debut": 9.74,
+          "fin": 9.82
+        },
+        {
+          "mot": "'un.",
+          "debut": 9.82,
+          "fin": 9.9
+        }
+      ]
+    },
+    {
+      "debut": 10.64,
+      "fin": 12.98,
+      "texte": "Rendez ce match fou, ça c'est pas possible les gars.",
+      "mots": [
+        {
+          "mot": " Rendez",
+          "debut": 10.64,
+          "fin": 10.92
+        },
+        {
+          "mot": " ce",
+          "debut": 10.92,
+          "fin": 11.2
+        },
+        {
+          "mot": " match",
+          "debut": 11.2,
+          "fin": 11.4
+        },
+        {
+          "mot": " fou,",
+          "debut": 11.4,
+          "fin": 11.62
+        },
+        {
+          "mot": " ça",
+          "debut": 11.74,
+          "fin": 12.08
+        },
+        {
+          "mot": " c",
+          "debut": 12.08,
+          "fin": 12.2
+        },
+        {
+          "mot": "'est",
+          "debut": 12.2,
+          "fin": 12.28
+        },
+        {
+          "mot": " pas",
+          "debut": 12.28,
+          "fin": 12.32
+        },
+        {
+          "mot": " possible",
+          "debut": 12.32,
+          "fin": 12.68
+        },
+        {
+          "mot": " les",
+          "debut": 12.68,
+          "fin": 12.84
+        },
+        {
+          "mot": " gars.",
+          "debut": 12.84,
+          "fin": 12.98
+        }
+      ]
+    },
+    {
+      "debut": 13.22,
+      "fin": 17.04,
+      "texte": "C'est pas possible, c'est pas votre visage, c'est pas notre visage.",
+      "mots": [
+        {
+          "mot": " C",
+          "debut": 13.22,
+          "fin": 13.5
+        },
+        {
+          "mot": "'est",
+          "debut": 13.5,
+          "fin": 13.6
+        },
+        {
+          "mot": " pas",
+          "debut": 13.6,
+          "fin": 13.7
+        },
+        {
+          "mot": " possible,",
+          "debut": 13.7,
+          "fin": 14.02
+        },
+        {
+          "mot": " c",
+          "debut": 14.24,
+          "fin": 14.96
+        },
+        {
+          "mot": "'est",
+          "debut": 14.96,
+          "fin": 15.1
+        },
+        {
+          "mot": " pas",
+          "debut": 15.1,
+          "fin": 15.12
+        },
+        {
+          "mot": " votre",
+          "debut": 15.12,
+          "fin": 15.36
+        },
+        {
+          "mot": " visage,",
+          "debut": 15.36,
+          "fin": 15.88
+        },
+        {
+          "mot": " c",
+          "debut": 15.92,
+          "fin": 16.28
+        },
+        {
+          "mot": "'est",
+          "debut": 16.28,
+          "fin": 16.38
+        },
+        {
+          "mot": " pas",
+          "debut": 16.38,
+          "fin": 16.46
+        },
+        {
+          "mot": " notre",
+          "debut": 16.46,
+          "fin": 16.64
+        },
+        {
+          "mot": " visage.",
+          "debut": 16.64,
+          "fin": 17.04
+        }
+      ]
+    },
+    {
+      "debut": 17.28,
+      "fin": 18.74,
+      "texte": "C'est dur, ça fait mal au casque.",
+      "mots": [
+        {
+          "mot": " C",
+          "debut": 17.28,
+          "fin": 17.54
+        },
+        {
+          "mot": "'est",
+          "debut": 17.54,
+          "fin": 17.66
+        },
+        {
+          "mot": " dur,",
+          "debut": 17.66,
+          "fin": 17.8
+        },
+        {
+          "mot": " ça",
+          "debut": 17.82,
+          "fin": 17.96
+        },
+        {
+          "mot": " fait",
+          "debut": 17.96,
+          "fin": 18.04
+        },
+        {
+          "mot": " mal",
+          "debut": 18.04,
+          "fin": 18.2
+        },
+        {
+          "mot": " au",
+          "debut": 18.2,
+          "fin": 18.34
+        },
+        {
+          "mot": " casque.",
+          "debut": 18.34,
+          "fin": 18.74
+        }
+      ]
+    },
+    {
+      "debut": 19.4,
+      "fin": 20.16,
+      "texte": "Pour eux c'est acquis.",
+      "mots": [
+        {
+          "mot": " Pour",
+          "debut": 19.4,
+          "fin": 19.68
+        },
+        {
+          "mot": " eux",
+          "debut": 19.68,
+          "fin": 19.84
+        },
+        {
+          "mot": " c",
+          "debut": 19.84,
+          "fin": 19.92
+        },
+        {
+          "mot": "'est",
+          "debut": 19.92,
+          "fin": 20.04
+        },
+        {
+          "mot": " acquis.",
+          "debut": 20.04,
+          "fin": 20.16
+        }
+      ]
+    },
+    {
+      "debut": 21.66,
+      "fin": 23.14,
+      "texte": "On n'en parle plus les gars, on refuse.",
+      "mots": [
+        {
+          "mot": " On",
+          "debut": 21.66,
+          "fin": 21.94
+        },
+        {
+          "mot": " n",
+          "debut": 21.94,
+          "fin": 22.0
+        },
+        {
+          "mot": "'en",
+          "debut": 22.0,
+          "fin": 22.12
+        },
+        {
+          "mot": " parle",
+          "debut": 22.12,
+          "fin": 22.26
+        },
+        {
+          "mot": " plus",
+          "debut": 22.26,
+          "fin": 22.46
+        },
+        {
+          "mot": " les",
+          "debut": 22.46,
+          "fin": 22.54
+        },
+        {
+          "mot": " gars,",
+          "debut": 22.54,
+          "fin": 22.72
+        },
+        {
+          "mot": " on",
+          "debut": 22.74,
+          "fin": 22.84
+        },
+        {
+          "mot": " refuse.",
+          "debut": 22.84,
+          "fin": 23.14
+        }
+      ]
+    },
+    {
+      "debut": 23.14,
+      "fin": 25.2,
+      "texte": "J'ai détesté de prendre un but, putain.",
+      "mots": [
+        {
+          "mot": " J",
+          "debut": 23.14,
+          "fin": 23.4
+        },
+        {
+          "mot": "'ai",
+          "debut": 23.4,
+          "fin": 23.44
+        },
+        {
+          "mot": " détesté",
+          "debut": 23.44,
+          "fin": 24.1
+        },
+        {
+          "mot": " de",
+          "debut": 24.1,
+          "fin": 24.14
+        },
+        {
+          "mot": " prendre",
+          "debut": 24.14,
+          "fin": 24.34
+        },
+        {
+          "mot": " un",
+          "debut": 24.34,
+          "fin": 24.52
+        },
+        {
+          "mot": " but,",
+          "debut": 24.52,
+          "fin": 24.74
+        },
+        {
+          "mot": " putain.",
+          "debut": 24.8,
+          "fin": 25.2
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {},
+  "lufs": -14.07,
+  "pic_vrai_db": -0.95,
+  "duree": 25.533333,
+  "taille_octets": 13121754
+}

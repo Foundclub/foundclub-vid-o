@@ -1,1 +1,1001 @@
-[]
+[
+  {
+    "numero": 1,
+    "debut": 137.45,
+    "fin": 159.8,
+    "duree": 22.35,
+    "titre_propose": "Premier match officiel et premier trophée",
+    "accroche": "premier match officiel et premier trophée",
+    "theme": "Réussite collective",
+    "pourquoi_ca_marche": "Une réussite immédiate puis une gratitude envers ceux qui ont rendu la montée possible.",
+    "note_sur_10": 8.1,
+    "texte_complet": "premier match officiel et premier trophée déjà, c'est juste incroyable. Donc félicitations à l'équipe, félicitations à tout club, félicitations également à tous les joueurs qui ont participé à cette montée l'année dernière. parce que sans eux, on n'aurait pas pu faire ce match incroyable. Mais maintenant, voilà, ce trophée, il est à la maison, il restera à la maison. Et maintenant, place au championnat.",
+    "risques": [
+      "Animation d'abonnement YouTube déjà incrustée dans la source et conservée",
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": true,
+    "raison_fond_flou": "Photos de groupe et inserts dans la source",
+    "recadrage": "fond flou",
+    "verification": "OK",
+    "type": "extrait court",
+    "tailles_octets": {
+      "horizontal": 19293447,
+      "vertical": 18981575
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Photos de groupe et inserts dans la source",
+    "duree_calcul": 57.79,
+    "verification_details": {
+      "horizontal": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -13.94,
+        "pic_vrai_db": -1.67,
+        "duree": 22.366666,
+        "taille_octets": 19293447,
+        "sha256": "59c9eee4b52a566c9e488202a604a59d3917c7dfcfc83f89dd51cc30c75b5905",
+        "modele": "turbo"
+      },
+      "vertical": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -13.94,
+        "pic_vrai_db": -1.67,
+        "duree": 22.366666,
+        "taille_octets": 18981575,
+        "sha256": "54b5721589f6313d7fc5b6a9ad48b028c44801c9d8784900a9516d10aaacbcda",
+        "modele": "turbo"
+      }
+    }
+  },
+  {
+    "numero": 2,
+    "debut": 165.34,
+    "fin": 193.66,
+    "duree": 28.32,
+    "titre_propose": "La poule la plus dure",
+    "accroche": "c'est la poule la plus dure de National 2. Ah oui,",
+    "theme": "Ambition et niveau",
+    "pourquoi_ca_marche": "Une opinion forte sur la poule, puis une chute personnelle sur la proximité du football professionnel.",
+    "note_sur_10": 8.2,
+    "texte_complet": "c'est la poule la plus dure de National 2. Ah oui, National 3 n'existe plus. Maintenant, c'est National 2. Depuis la réforme avec la Ligue 3 qui est rentrée en vigueur et du coup, la Ligue 3 qui est maintenant professionnelle en France. Voilà, je vous mets un peu l'affiche de comment se constituent aujourd'hui les championnats français. et nous du coup bah on était dans l'ancienne n3 qui est maintenant la national 2 donc dites vous je suis plus qu'à deux niveaux net pro les gars",
+    "risques": [
+      "Présentation des divisions et de leur réforme : exactitude sportive non vérifiée",
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": true,
+    "raison_fond_flou": "Tableau des divisions à préserver",
+    "recadrage": "fond flou",
+    "verification": "OK",
+    "type": "extrait court",
+    "tailles_octets": {
+      "horizontal": 15213993,
+      "vertical": 14728071
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Tableau des divisions à préserver",
+    "duree_calcul": 65.25,
+    "verification_details": {
+      "horizontal": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.03,
+        "pic_vrai_db": -1.82,
+        "duree": 28.333333,
+        "taille_octets": 15213993,
+        "sha256": "75d66ce45e7b5dbf1762c1eadf01840487a450643055e60e8cde4e3d75178ac5",
+        "modele": "turbo"
+      },
+      "vertical": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.03,
+        "pic_vrai_db": -1.82,
+        "duree": 28.333333,
+        "taille_octets": 14728071,
+        "sha256": "b3dde8516dc7f08adf7846a46567c2fc74dddbccc93407fd6734d3579a7fbd0e",
+        "modele": "turbo"
+      }
+    }
+  },
+  {
+    "numero": 3,
+    "debut": 203.2,
+    "fin": 229.83,
+    "duree": 26.63,
+    "titre_propose": "La réserve du MHSC",
+    "accroche": "pour commencer bien évidemment la",
+    "theme": "Adversaires professionnels",
+    "pourquoi_ca_marche": "Trois réserves professionnelles connues rendent le niveau du championnat concret.",
+    "note_sur_10": 6.8,
+    "texte_complet": "pour commencer bien évidemment la réserve du MHSC qui sera présente où on va peut-être rencontrer le frérot napsou qui a signé l'année dernière avec la ligue 2 et qui fait quelques apparitions avec l'équipe réserve ensuite on a la réserve de l' olympique marseille qui sera également dans la poule et pour finir en tant que lyonnais bien évidemment la réserve de l’AS Saint-Étienne qui sera parmi nous aussi",
+    "risques": [
+      "Accroche progressive ; ouvre par Pour commencer",
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": true,
+    "raison_fond_flou": "Photos, logos et inserts à préserver",
+    "recadrage": "fond flou",
+    "verification": "OK",
+    "type": "extrait court",
+    "tailles_octets": {
+      "horizontal": 11673774,
+      "vertical": 12526253
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Photos, logos et inserts à préserver",
+    "duree_calcul": 61.83,
+    "verification_details": {
+      "horizontal": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.04,
+        "pic_vrai_db": -2.54,
+        "duree": 26.633333,
+        "taille_octets": 11673774,
+        "sha256": "81112f74dd802b365ccd4963cd8d2ebf825906858b9f1ce77d393a90390e1f2c",
+        "modele": "turbo"
+      },
+      "vertical": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.04,
+        "pic_vrai_db": -2.54,
+        "duree": 26.633333,
+        "taille_octets": 12526253,
+        "sha256": "1cd193b2548df654311abc21e02cd7ce3e856c47a6bd9f906fabe18b8a3e2f11",
+        "modele": "turbo"
+      }
+    }
+  },
+  {
+    "numero": 4,
+    "debut": 308.74,
+    "fin": 323.64,
+    "duree": 14.9,
+    "titre_propose": "Je ne vais pas pouvoir jouer",
+    "accroche": "Pour ma part, malheureusement, je ne vais pas pouvoir jouer ce premier",
+    "theme": "Coulisses administratives",
+    "pourquoi_ca_marche": "Une absence au premier match expliquée par une date de contrat et de qualification, sans le renvoi au résumé.",
+    "note_sur_10": 7.9,
+    "texte_complet": "Pour ma part, malheureusement, je ne vais pas pouvoir jouer ce premier match parce que l'année dernière, j'étais en fédéral et j'ai été reclassé amateur cette année. Et vu que mon contrat l'année dernière, je l'avais signé au 1er septembre, je ne pourrais jouer qu'à partir du 1er septembre. Donc il n'y a que ce match-là, malheureusement, que je ne pourrais pas jouer.",
+    "risques": [
+      "Micro-extrait de 14,90 s, en complément des 17 extraits de 20 à 60 s",
+      "Le recadrage sur le visage coupe une partie des sous-titres déjà incrustés dans la source ; utiliser l'horizontal pour refaire l'habillage",
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": false,
+    "raison_fond_flou": "",
+    "recadrage": "visage",
+    "verification": "OK",
+    "type": "micro-extrait",
+    "tailles_octets": {
+      "horizontal": 6146443,
+      "vertical": 13104747
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Visage unique",
+    "duree_calcul": 40.53,
+    "verification_details": {
+      "horizontal": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.05,
+        "pic_vrai_db": -1.19,
+        "duree": 14.9,
+        "taille_octets": 6146443,
+        "sha256": "9b58a6e527ba4fa19c54c58fa353d828ddcbbbba0f0c24316d08fd75f5ee7116",
+        "modele": "large-v3"
+      },
+      "vertical": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.05,
+        "pic_vrai_db": -1.19,
+        "duree": 14.9,
+        "taille_octets": 13104747,
+        "sha256": "3ddd6282a2a83a4203db76713d94428b46e493fd2f7cf71e4c6a71e26ce1b081",
+        "modele": "large-v3"
+      }
+    }
+  },
+  {
+    "numero": 5,
+    "debut": 374.22,
+    "fin": 407.85,
+    "duree": 33.63,
+    "titre_propose": "Chaque erreur compte",
+    "accroche": "défaite 3-2 malheureusement après avoir mené",
+    "theme": "Défaite et lucidité",
+    "pourquoi_ca_marche": "L'équipe mène deux à zéro et perd trois à deux : renversement clair, émotion et leçon.",
+    "note_sur_10": 8.9,
+    "texte_complet": "défaite 3-2 malheureusement après avoir mené deux buts à zéro. C'est vraiment très très très compliqué. Malheureusement, moi je n'ai pas pu aller au match parce que c'était quand même à l'extérieur et c'était assez loin. Mais je suivais un peu de loin. Quand j'ai vu 2-0 pour nous, j'étais assez content et assez confiant parce que je savais que l'équipe c'était costaud. On a fait des gros matchs de prépa et que voilà, on était prêts. Mais bon, comme quoi à ce niveau-là, chaque erreur compte. On prend un troisième but à la fin. Laissez le football, c'est comme ça. C'est dommage de commencer par une défaite. C'est embêtant, mais il va falloir se rattraper dès la semaine prochaine face à Rousset.",
+    "risques": [
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": true,
+    "raison_fond_flou": "Insertion d'images du match à garder entière",
+    "recadrage": "fond flou",
+    "verification": "OK",
+    "type": "extrait court",
+    "tailles_octets": {
+      "horizontal": 20758058,
+      "vertical": 18349270
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Insertion d'images du match à garder entière",
+    "duree_calcul": 95.89,
+    "verification_details": {
+      "horizontal": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.03,
+        "pic_vrai_db": -2.59,
+        "duree": 33.633333,
+        "taille_octets": 20758058,
+        "sha256": "cd1cf3e18be35280698461d2b7161c2219b6f4aa3a48ef9357255a257d327089",
+        "modele": "turbo"
+      },
+      "vertical": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.03,
+        "pic_vrai_db": -2.59,
+        "duree": 33.633333,
+        "taille_octets": 18349270,
+        "sha256": "5b60be9f72b49836c7dfe60230a4dd39dc547e1c74e11ab68d375c81fe87a937",
+        "modele": "turbo"
+      }
+    }
+  },
+  {
+    "numero": 6,
+    "debut": 410.33,
+    "fin": 442.7,
+    "duree": 32.37,
+    "titre_propose": "Pas encore aux normes",
+    "accroche": "Match face à Rousset, équipe qui vient de",
+    "theme": "Coulisses du club",
+    "pourquoi_ca_marche": "Un match à domicile déplacé parce que le terrain n'est pas aux normes, puis un objectif concret.",
+    "note_sur_10": 8.0,
+    "texte_complet": "Match face à Rousset, équipe qui vient de descendre de National 2. Ce week-end, il va falloir être prêt. C'est un gros choc encore une fois. À domicile, malheureusement, on ne va pas pouvoir jouer chez nous à la Mosson. On va jouer à Sussargue et c'est un match un peu délocalisé parce que notre terrain n'est pas encore aux normes. Ça devrait arriver d'ici peu. Il va falloir rebondir après cette première défaite. Il va falloir vite passer à autre chose et gagner lors de ce premier match à domicile et aller chercher les 3 points parce que chaque point dans cette poule vont être très très très importants",
+    "risques": [
+      "Le recadrage sur le visage coupe une partie des sous-titres déjà incrustés dans la source ; utiliser l'horizontal pour refaire l'habillage",
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": false,
+    "raison_fond_flou": "",
+    "recadrage": "visage",
+    "verification": "OK",
+    "type": "extrait court",
+    "tailles_octets": {
+      "horizontal": 13313700,
+      "vertical": 27842954
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Visage unique",
+    "duree_calcul": 98.75,
+    "verification_details": {
+      "horizontal": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.02,
+        "pic_vrai_db": -0.31,
+        "duree": 32.4,
+        "taille_octets": 13313700,
+        "sha256": "02080eb3ae8231556fdbe36a8fd2b9b23a3861a6fd3b9390640a689437ee0552",
+        "modele": "turbo"
+      },
+      "vertical": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.02,
+        "pic_vrai_db": -0.31,
+        "duree": 32.4,
+        "taille_octets": 27842954,
+        "sha256": "8150c662e293a11293ebec035f541c3985e7045d4998bd5e8bb5e7ca5445201a",
+        "modele": "turbo"
+      }
+    }
+  },
+  {
+    "numero": 7,
+    "debut": 605.0,
+    "fin": 635.56,
+    "duree": 30.56,
+    "titre_propose": "200 patates mon frère",
+    "accroche": "je coupe ce doigt. Juste un ?",
+    "theme": "Humour entre joueurs",
+    "pourquoi_ca_marche": "Un débat absurde sur le prix d'un doigt, conclu sur deux cents patates ; amorce et réponse finale brouillées retirées.",
+    "note_sur_10": 8.4,
+    "texte_complet": "je coupe ce doigt. Juste un ? Lesquels ? Et ce doigt. Non, je peux plus faire le signe. On la coupe les deux, là. Eh ben, coupe-la et là. Non, on la, 200 000, on la, j'en coupe. Tu coupes lesquels ? Tu coupes ces deux-là, là ? Non, le tout petit, il sert à rien, lui. On la, même sur la plaie et tout, il sert à rien, il est juste posé. Putain, t'en coupes ça, 200 000 ? Non, jamais. Arrête de mentir. On la, jamais, frère, il fout quoi. 200 patates, mon frère.",
+    "risques": [
+      "Débat hypothétique sur la perte d'un doigt",
+      "Gros mot : putain",
+      "Paroles familières et certaines réponses difficiles à distinguer",
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": true,
+    "raison_fond_flou": "Plusieurs interlocuteurs et caméra mobile",
+    "recadrage": "fond flou",
+    "verification": "horizontal : Derniers mots différents dans la retranscription; vertical : Derniers mots différents dans la retranscription",
+    "type": "extrait court",
+    "tailles_octets": {
+      "horizontal": 18345641,
+      "vertical": 18630694
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Plusieurs interlocuteurs et caméra mobile",
+    "duree_calcul": 38.08,
+    "verification_details": {
+      "horizontal": {
+        "verification": "Derniers mots différents dans la retranscription",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": false,
+        "lufs": -14.01,
+        "pic_vrai_db": -1.25,
+        "duree": 30.566667,
+        "taille_octets": 18345641,
+        "sha256": "b41ab95429f7c76be72a28173adbb5f438f7a4642e795d6e5cd245dc70dfc290",
+        "modele": "turbo"
+      },
+      "vertical": {
+        "verification": "Derniers mots différents dans la retranscription",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": false,
+        "lufs": -14.01,
+        "pic_vrai_db": -1.25,
+        "duree": 30.566667,
+        "taille_octets": 18630694,
+        "sha256": "08fad2f1ccb917e373670856c2c48e09a470b3029327a8c010efd999a15a9480",
+        "modele": "turbo"
+      }
+    }
+  },
+  {
+    "numero": 8,
+    "debut": 639.7,
+    "fin": 673.6,
+    "duree": 33.9,
+    "titre_propose": "Tu fais quoi avec 200000",
+    "accroche": "Tu fais quoi avec 200 000 après",
+    "theme": "Humour et argent",
+    "pourquoi_ca_marche": "Une question concrète sur l'argent mène à Marrakech puis à l'utilité du petit doigt.",
+    "note_sur_10": 7.8,
+    "texte_complet": "Tu fais quoi avec 200 000 après ? Ça, je prends une dar à Marrakech Je pense, voilà Mais moi, c'est trop Vache Ok, petit dos, c'est à dire Mais pour nettoyer l'oreille, tu vas faire comment ? Comme ça C'est ça ou pas ? A deux doigts, mon frère La demande pose la question Là frère, à 95% il sera rien le petit doigt",
+    "risques": [
+      "Contexte du débat hypothétique sur la perte d'un doigt",
+      "Voix et rires superposés",
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": true,
+    "raison_fond_flou": "Plusieurs interlocuteurs et caméra mobile",
+    "recadrage": "fond flou",
+    "verification": "OK",
+    "type": "extrait court",
+    "tailles_octets": {
+      "horizontal": 15131632,
+      "vertical": 17755990
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Plusieurs interlocuteurs et caméra mobile",
+    "duree_calcul": 54.32,
+    "verification_details": {
+      "horizontal": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.02,
+        "pic_vrai_db": -1.3,
+        "duree": 33.9,
+        "taille_octets": 15131632,
+        "sha256": "f4d1af9739adde00794390f12579fc3483eb110e5994399b8a9a9137af5725ff",
+        "modele": "turbo"
+      },
+      "vertical": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.02,
+        "pic_vrai_db": -1.3,
+        "duree": 33.9,
+        "taille_octets": 17755990,
+        "sha256": "3f1a3ee61f3b2ebe6aa064a2fb122282e6d7331f3616adcfc923df721c943fdb",
+        "modele": "turbo"
+      }
+    }
+  },
+  {
+    "numero": 9,
+    "debut": 675.15,
+    "fin": 718.65,
+    "duree": 43.5,
+    "titre_propose": "Presque un demi-million",
+    "accroche": "Quand tu manges, tu utilises les 3",
+    "theme": "Humour et chute",
+    "pourquoi_ca_marche": "Une démonstration des doigts utiles au quotidien se termine sur le calcul de quatre cent mille euros.",
+    "note_sur_10": 8.3,
+    "texte_complet": "Quand tu manges, tu utilises les 3 doigts ici, comme ça. Quand tu manges, peu importe, 3 doigts. Quand tu joues à la play, 4 doigts. Quand tu fais l'oreille, 2 doigts. Faut être l'oreille, l'oreille c'est avec le petit doigt. Mais t'es un fou toi, si tu fais avec ton doigt. Faut faire le dos, comme ça. On voit là que ça sert à rien. Faut mettre une patate dans tous les calmes. Bah du coup 200.000, 200.000. 200.000, les deux petits doigts alors. Il y en a beaucoup pour 200.000, ils se coupent les petits doigts. Bah les deux petits doigts alors. Bah 400.000. Ouais, 400.000, c'est presque un demi-million. Voilà qu'en vrai, je reste comme ça.",
+    "risques": [
+      "Débat hypothétique sur la perte d'un doigt",
+      "Référence au débat précédent : comprendre la proposition nécessite le contexte visuel",
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": true,
+    "raison_fond_flou": "Plusieurs interlocuteurs et caméra mobile",
+    "recadrage": "fond flou",
+    "verification": "OK",
+    "type": "extrait court",
+    "tailles_octets": {
+      "horizontal": 16235430,
+      "vertical": 20276823
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Plusieurs interlocuteurs et caméra mobile",
+    "duree_calcul": 75.09,
+    "verification_details": {
+      "horizontal": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.0,
+        "pic_vrai_db": -1.66,
+        "duree": 43.5,
+        "taille_octets": 16235430,
+        "sha256": "347a6419f784d6072325a7f5127120132cdbb45fc52ae267183b9eac2b44b815",
+        "modele": "turbo"
+      },
+      "vertical": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.0,
+        "pic_vrai_db": -1.66,
+        "duree": 43.5,
+        "taille_octets": 20276823,
+        "sha256": "1eeae7e73e653787a95e16ce80e147fdcb7ce981940c2caf30d9038bf810849d",
+        "modele": "turbo"
+      }
+    }
+  },
+  {
+    "numero": 10,
+    "debut": 746.83,
+    "fin": 776.62,
+    "duree": 29.79,
+    "titre_propose": "C'est une obligation",
+    "accroche": "Les gars, tout le monde est",
+    "theme": "Tactique et responsabilités",
+    "pourquoi_ca_marche": "Un conseil directement réutilisable : attaquer, défendre et contre-presser concernent tout le monde.",
+    "note_sur_10": 9.0,
+    "texte_complet": "Les gars, tout le monde est responsable de tous les objectifs. D'attaquer, de défendre et de récupérer le ballon. Tout le monde ! De notre 30e mètre offensivement jusqu'au 30e mètre. Tout le monde est responsable. Défendre, attaquer. Le contre-pressing, ce n'est pas une option, c'est une obligation. Ceux qui ne veulent pas le contre-pressing, à un moment donné, quand je demanderai, c'est justement bon. C'est une obligation. Intensité, agressivité, mentalité, tout ça est lié à l'agressivité. à la concentration, un engagement mental et physique.",
+    "risques": [
+      "Quelques mots du milieu du discours restent incertains",
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": true,
+    "raison_fond_flou": "Vestiaire avec entraîneur et joueurs",
+    "recadrage": "fond flou",
+    "verification": "OK",
+    "type": "extrait court",
+    "tailles_octets": {
+      "horizontal": 22556189,
+      "vertical": 20615869
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Vestiaire avec entraîneur et joueurs",
+    "duree_calcul": 82.31,
+    "verification_details": {
+      "horizontal": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.07,
+        "pic_vrai_db": -1.33,
+        "duree": 29.8,
+        "taille_octets": 22556189,
+        "sha256": "476b54da16e9fdc5112a71a3196591841d3606cc7cba0cc8ac4eb19f80463247",
+        "modele": "turbo"
+      },
+      "vertical": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.07,
+        "pic_vrai_db": -1.33,
+        "duree": 29.8,
+        "taille_octets": 20615869,
+        "sha256": "284589a0bd3e778c02bb279ade290427f36f9f18367713d15ba6271f535b83dc",
+        "modele": "turbo"
+      }
+    }
+  },
+  {
+    "numero": 11,
+    "debut": 779.81,
+    "fin": 809.14,
+    "duree": 29.33,
+    "titre_propose": "L'instinct et l'intuition",
+    "accroche": "de l'instinct et de l'intuition, c'est votre force,",
+    "theme": "Confiance et instinct",
+    "pourquoi_ca_marche": "Un appel à faire confiance à l'instinct, conclu par la formule sur la tête et le cœur ; introduction molle retirée.",
+    "note_sur_10": 8.0,
+    "texte_complet": "de l'instinct et de l'intuition, c'est votre force, c'est des joueurs de qualité, il faut laisser parler l'instinct, c'est un match à domicile, si vous n'avez pas la maison, c'est pas grave, mais tout le temps, vous allez apprendre encore les noms derrière, vous allez apprendre, faites parler l'instinct, parce que c'est les mêmes moments de coach, l'instinct, l'intuition, des fois c'est des joueurs qu'on ne comprend pas, mais il faut se laisser, il ne faut pas se laisser submerger, mais tout ce qui... Par contre, l'instinct ce n'est pas la tête, c'est le cœur.",
+    "risques": [
+      "Plusieurs formulations du milieu du discours sont peu intelligibles",
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": true,
+    "raison_fond_flou": "Plusieurs personnes dans le vestiaire",
+    "recadrage": "fond flou",
+    "verification": "OK",
+    "type": "extrait court",
+    "tailles_octets": {
+      "horizontal": 22160720,
+      "vertical": 18528056
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Plusieurs personnes dans le vestiaire",
+    "duree_calcul": 80.58,
+    "verification_details": {
+      "horizontal": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.07,
+        "pic_vrai_db": -1.07,
+        "duree": 29.333333,
+        "taille_octets": 22160720,
+        "sha256": "cd6ab4ef6ab428bc70a5062ee15700027bb3abe793360644220ac9e7c6272d05",
+        "modele": "large-v3"
+      },
+      "vertical": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.07,
+        "pic_vrai_db": -1.07,
+        "duree": 29.333333,
+        "taille_octets": 18528056,
+        "sha256": "59f681a7cc21fdf7c1d8a406a2fdc6ac336ef809d91c21d4ba78990d44db0b05",
+        "modele": "large-v3"
+      }
+    }
+  },
+  {
+    "numero": 12,
+    "debut": 805.48,
+    "fin": 828.15,
+    "duree": 22.67,
+    "titre_propose": "C'est le cœur",
+    "accroche": "Par contre, l'instinct ce n'est pas la tête,",
+    "theme": "Identité du club",
+    "pourquoi_ca_marche": "La tête et le cœur opposés, puis un rappel de l'identité et de l'engagement du club.",
+    "note_sur_10": 8.8,
+    "texte_complet": "Par contre, l'instinct ce n'est pas la tête, c'est le cœur. Le cœur c'est l’Atlas. Et maintenant, je ne veux personne sur ça qui s'emmerde avec le cœur, je ne veux pas. Je vais t'assurer, je ne vais pas faire personne émerder dans l'engagement avec le cœur. Compris tout le monde ? Nassim, j'ai compris. Naïf, j'ai compris. Le cœur, le cœur il est à Atlas, ok ? Allez",
+    "risques": [
+      "Chevauchement de 3,66 s avec le clip 11 : choisir l'un des deux dans une même compilation",
+      "Quelques réponses et noms de joueurs restent incertains",
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": true,
+    "raison_fond_flou": "Plusieurs personnes dans le vestiaire",
+    "recadrage": "fond flou",
+    "verification": "horizontal : Premiers mots différents dans la retranscription; Derniers mots différents dans la retranscription; vertical : Premiers mots différents dans la retranscription; Derniers mots différents dans la retranscription",
+    "type": "extrait court",
+    "tailles_octets": {
+      "horizontal": 15212965,
+      "vertical": 12900983
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Plusieurs personnes dans le vestiaire",
+    "duree_calcul": 58.93,
+    "verification_details": {
+      "horizontal": {
+        "verification": "Premiers mots différents dans la retranscription; Derniers mots différents dans la retranscription",
+        "decodage_integral": "OK",
+        "debut_correspond": false,
+        "fin_correspond": false,
+        "lufs": -14.07,
+        "pic_vrai_db": -1.11,
+        "duree": 22.7,
+        "taille_octets": 15212965,
+        "sha256": "e3de249c7f43e733ab95c4f031b6c323bad4f578e8664cb9ed3f3a8775af603c",
+        "modele": "large-v3"
+      },
+      "vertical": {
+        "verification": "Premiers mots différents dans la retranscription; Derniers mots différents dans la retranscription",
+        "decodage_integral": "OK",
+        "debut_correspond": false,
+        "fin_correspond": false,
+        "lufs": -14.07,
+        "pic_vrai_db": -1.11,
+        "duree": 22.7,
+        "taille_octets": 12900983,
+        "sha256": "0c1ca9223c2fc99baff0ca8a5c803d75fb516db3e37c0f53a20a1cc80920943e",
+        "modele": "large-v3"
+      }
+    }
+  },
+  {
+    "numero": 13,
+    "debut": 1139.83,
+    "fin": 1165.48,
+    "duree": 25.65,
+    "titre_propose": "Je vous laisse 10 minutes",
+    "accroche": "Allez, allez, on lève la tête, on est pas dedans, on est",
+    "theme": "Pression à la mi-temps",
+    "pourquoi_ca_marche": "Un entraîneur fixe un délai très concret avant de changer l'équipe, tout en rappelant le temps restant.",
+    "note_sur_10": 8.9,
+    "texte_complet": "Allez, allez, on lève la tête, on est pas dedans, on est en retard. On n'a pas su y répondre présent, on est un peu trop au sol, en l'air. C’est puni, à ce niveau, t’es puni. Je changerai beaucoup de choses, c'est sûrement ce qu'on va faire. Je vous laisse 10 minutes, 10 minutes pour agir, à mettre, après je change. On ne va pas renverser la table, maintenant. On se dira les choses après, il reste 45 minutes.",
+    "risques": [
+      "Animation d'abonnement YouTube déjà incrustée dans la source et conservée",
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": true,
+    "raison_fond_flou": "Entraîneur, staff et joueurs visibles",
+    "recadrage": "fond flou",
+    "verification": "OK",
+    "type": "extrait court",
+    "tailles_octets": {
+      "horizontal": 14471951,
+      "vertical": 12533620
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Entraîneur, staff et joueurs visibles",
+    "duree_calcul": 67.38,
+    "verification_details": {
+      "horizontal": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.05,
+        "pic_vrai_db": -1.42,
+        "duree": 25.666667,
+        "taille_octets": 14471951,
+        "sha256": "305f5015e9c091d81bad3076e8d749ad2983cb700ae783ab5fa87072940df381",
+        "modele": "turbo"
+      },
+      "vertical": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.05,
+        "pic_vrai_db": -1.42,
+        "duree": 25.666667,
+        "taille_octets": 12533620,
+        "sha256": "8c143221031a53ce9f9c42b06815ce1b9913bca79cda0709f51d01d96d025dc7",
+        "modele": "turbo"
+      }
+    }
+  },
+  {
+    "numero": 14,
+    "debut": 1166.27,
+    "fin": 1191.78,
+    "duree": 25.51,
+    "titre_propose": "Faites-vous violence",
+    "accroche": "Faites-vous violence, trouvez les mots,",
+    "theme": "Remobilisation",
+    "pourquoi_ca_marche": "Des mots, des regards et de petits gestes pour remettre de l'énergie dans une équipe menée.",
+    "note_sur_10": 8.7,
+    "texte_complet": "Faites-vous violence, trouvez les mots, les regards, les petits gestes, il y a eu des situations, on peut marquer un but, il suffit d'un, rendez ce match fou, ça c'est pas possible les gars, c'est pas possible, c'est pas votre visage, c'est pas notre visage, c'est dur, ça fait mal au casque, pour eux c'est acquis, on n'en parle plus les gars, je suis détesté de prendre un but, putain.",
+    "risques": [
+      "Gros mot final : putain",
+      "Une formulation à la fin reste incertaine",
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": true,
+    "raison_fond_flou": "Plusieurs membres du vestiaire visibles",
+    "recadrage": "fond flou",
+    "verification": "OK",
+    "type": "extrait court",
+    "tailles_octets": {
+      "horizontal": 13121754,
+      "vertical": 12223149
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Plusieurs membres du vestiaire visibles",
+    "duree_calcul": 66.42,
+    "verification_details": {
+      "horizontal": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.07,
+        "pic_vrai_db": -0.95,
+        "duree": 25.533333,
+        "taille_octets": 13121754,
+        "sha256": "b3a5eea2fd6d3d69fd3615e174773301965db1ec9f80160ab84a77902cdc01f6",
+        "modele": "large-v3"
+      },
+      "vertical": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.07,
+        "pic_vrai_db": -0.95,
+        "duree": 25.533333,
+        "taille_octets": 12223149,
+        "sha256": "ceba625cee2cee7fe3815919e620ba176edb51446cb0d11f316c93910d0211b5",
+        "modele": "large-v3"
+      }
+    }
+  },
+  {
+    "numero": 15,
+    "debut": 1192.68,
+    "fin": 1218.23,
+    "duree": 25.55,
+    "titre_propose": "On est trop gentil",
+    "accroche": "Oh soyez plus vicieux les mecs, ils font que parler, ils font mes",
+    "theme": "Agressivité et duels",
+    "pourquoi_ca_marche": "Un joueur réclame des duels et de l'impact ; la répétition rend la frustration immédiate.",
+    "note_sur_10": 7.7,
+    "texte_complet": "Oh soyez plus vicieux les mecs, ils font que parler, ils font mes couilles, mettez des coups, rentrez-leur dedans, quand on perd dans l'organe à la surface, ça va, cassez le jeu, et laissez pas partir le contre-attaque aussi les frères. Et en deuxième mi-temps les mecs, on a été déjà gagné les frères, je vous le dis, ça y est là, il est trop gentil, trop gentil, trop gentil, pas d'impact, rien, pas de tirage de maillot, rien, rien les frères, c'est pas normal, mais oui, mais oui.",
+    "risques": [
+      "Gros mot : couilles",
+      "Propos : mettez des coups, rentrez-leur dedans, cassez le jeu ; risque d'être perçu comme une promotion des fautes",
+      "Quelques formulations peu intelligibles",
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": true,
+    "raison_fond_flou": "Plusieurs membres du vestiaire visibles",
+    "recadrage": "fond flou",
+    "verification": "OK",
+    "type": "extrait court",
+    "tailles_octets": {
+      "horizontal": 19056199,
+      "vertical": 16995917
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Plusieurs membres du vestiaire visibles",
+    "duree_calcul": 71.55,
+    "verification_details": {
+      "horizontal": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.1,
+        "pic_vrai_db": -1.76,
+        "duree": 25.566666,
+        "taille_octets": 19056199,
+        "sha256": "66f2d95a180dc23a5569e76766c4dff330cece9dd254da27ffbbb85cfb633f5b",
+        "modele": "turbo"
+      },
+      "vertical": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.1,
+        "pic_vrai_db": -1.76,
+        "duree": 25.566666,
+        "taille_octets": 16995917,
+        "sha256": "c634a3c9640f5c869ade51771757233f3c6e50c36267827500c90829016f2e68",
+        "modele": "turbo"
+      }
+    }
+  },
+  {
+    "numero": 16,
+    "debut": 1218.4,
+    "fin": 1244.33,
+    "duree": 25.93,
+    "titre_propose": "On va les faire trembler",
+    "accroche": "On peut pas dire qu'on s'est ouvert quand on a perdu 2-0.",
+    "theme": "Renverser un match",
+    "pourquoi_ca_marche": "Le groupe se fixe un objectif simple : gagner la seconde mi-temps et marquer rapidement.",
+    "note_sur_10": 8.8,
+    "texte_complet": "On peut pas dire qu'on s'est ouvert quand on a perdu 2-0. Au bout de 0-0, on a fait déjà la face-à-face. Donc mettez bien parti les mecs, on n'a plus rien à perdre, on a juste une deuxième étape à gagner. Et si on a gagné les mecs, on va les faire trembler. C'est marqué dans le premier quart d'heure, vous allez voir. Les dernières situations, on les a eues. On a tapé le ponton, on a tapé la barre, on a fait des arrières-parties. Et les mecs servent les coups, on a besoin que ça en forme. La semaine dernière, on a subi, on a gagné 2-0. C'est à vous d'aller chercher quelque chose les gars.",
+    "risques": [
+      "Références aux occasions déjà vécues dans le match",
+      "Quelques formulations peu intelligibles",
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": true,
+    "raison_fond_flou": "Plusieurs membres du vestiaire visibles",
+    "recadrage": "fond flou",
+    "verification": "OK",
+    "type": "extrait court",
+    "tailles_octets": {
+      "horizontal": 23815811,
+      "vertical": 20068579
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Plusieurs membres du vestiaire visibles",
+    "duree_calcul": 72.64,
+    "verification_details": {
+      "horizontal": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.05,
+        "pic_vrai_db": -2.76,
+        "duree": 25.933333,
+        "taille_octets": 23815811,
+        "sha256": "e0149412deabf2f00173b60d01961f86e017bb6ebfd8e6935a146637a0f1e1e9",
+        "modele": "turbo"
+      },
+      "vertical": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.05,
+        "pic_vrai_db": -2.76,
+        "duree": 25.933333,
+        "taille_octets": 20068579,
+        "sha256": "ecca721d6cc9869b07427e1a3da5909ef5e09ee1ef58de140fcfc803c76a619e",
+        "modele": "turbo"
+      }
+    }
+  },
+  {
+    "numero": 17,
+    "debut": 1249.38,
+    "fin": 1278.22,
+    "duree": 28.84,
+    "titre_propose": "C'est fini les discours",
+    "accroche": "On n'a aucun deuxième ballon !",
+    "theme": "Efforts et deuxième ballon",
+    "pourquoi_ca_marche": "Des reproches précis sur les deuxièmes ballons et les efforts débouchent sur l'idée de passer à l'action.",
+    "note_sur_10": 8.5,
+    "texte_complet": "On n'a aucun deuxième ballon ! On ne gratte pas les deuxièmes ballons au milieu ! On dirait qu'on est morts ! Ce n'est pas fini ! On va montrer qu'on a des couilles, hein ! Parce que là, c'est fini, les discours ! On n'a pas gagné le ballon ! On est trop gentil, on revient en marchant, on fait pas les efforts",
+    "risques": [
+      "Gros mot : couilles",
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": true,
+    "raison_fond_flou": "Plusieurs membres du vestiaire visibles",
+    "recadrage": "fond flou",
+    "verification": "OK",
+    "type": "extrait court",
+    "tailles_octets": {
+      "horizontal": 17168682,
+      "vertical": 14054150
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Plusieurs membres du vestiaire visibles",
+    "duree_calcul": 57.12,
+    "verification_details": {
+      "horizontal": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.03,
+        "pic_vrai_db": -6.84,
+        "duree": 28.866666,
+        "taille_octets": 17168682,
+        "sha256": "4fe89172379eb95b17fd9aaf3f2338558e65dfbc1c46a31997eabdac1d8224e2",
+        "modele": "large-v3"
+      },
+      "vertical": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.03,
+        "pic_vrai_db": -6.84,
+        "duree": 28.866666,
+        "taille_octets": 14054150,
+        "sha256": "dd47ac5574f632991c268bfb9af49dc96f1f36a58fbf16bb8236e8bbb6220b3f",
+        "modele": "large-v3"
+      }
+    }
+  },
+  {
+    "numero": 18,
+    "debut": 1282.88,
+    "fin": 1316.2,
+    "duree": 33.32,
+    "titre_propose": "Est-ce que vous y croyez",
+    "accroche": "Marquez, vous allez voir comment ça va se transformer. Allez,",
+    "theme": "Foi et réaction collective",
+    "pourquoi_ca_marche": "Marquer pour changer le match, demander si le groupe y croit, puis appeler à faire les courses : une montée émotionnelle complète.",
+    "note_sur_10": 9.3,
+    "texte_complet": "Marquez, vous allez voir comment ça va se transformer. Allez, il faut inverser tout ça, les gars, les réseaux, il faut inverser tout ça. Est-ce que vous y croyez ? Oh, regardez-moi ! Est-ce que vous y croyez ? Oh ! Pourquoi ne le ferez pas, vous ? On va essayer ! Je ne dis pas qu'on va y arriver ! Il ne faut pas rêver ! On va mettre un, on va mettre deux ! Allez ça va demander des efforts les gars, faut y aller, faut y aller Faites les courses les petits, et vous allez voir, allez les enfants",
+    "risques": [
+      "Quelques formulations secondaires restent difficiles à distinguer",
+      "Autorisation des personnes visibles et droits de réutilisation de la vidéo non confirmés",
+      "Droits sur la musique éventuelle et statut commercial des marques visibles non confirmés"
+    ],
+    "fond_flou_impose": true,
+    "raison_fond_flou": "Plusieurs membres du vestiaire visibles",
+    "recadrage": "fond flou",
+    "verification": "OK",
+    "type": "extrait court",
+    "tailles_octets": {
+      "horizontal": 24539664,
+      "vertical": 20741993
+    },
+    "debit_reduit": [],
+    "raison_recadrage": "Plusieurs membres du vestiaire visibles",
+    "duree_calcul": 67.25,
+    "verification_details": {
+      "horizontal": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.08,
+        "pic_vrai_db": -2.89,
+        "duree": 33.333333,
+        "taille_octets": 24539664,
+        "sha256": "af6f6a760840a82766c286a387e933d5108a3219938049bfa1aba8395414e668",
+        "modele": "large-v3"
+      },
+      "vertical": {
+        "verification": "OK",
+        "decodage_integral": "OK",
+        "debut_correspond": true,
+        "fin_correspond": true,
+        "lufs": -14.08,
+        "pic_vrai_db": -2.89,
+        "duree": 33.333333,
+        "taille_octets": 20741993,
+        "sha256": "169ab87a6f092a3e5581566491efbf270624172189b0d0acb60affc882a04db9",
+        "modele": "large-v3"
+      }
+    }
+  }
+]

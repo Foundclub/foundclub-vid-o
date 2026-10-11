@@ -1,0 +1,225 @@
+[
+  {
+    "debut": 236.38,
+    "avant": "bokehrois",
+    "apres": "Beaucairois",
+    "preuve": "Sous-titres, logos ou tableau incrustés dans la source"
+  },
+  {
+    "debut": 245.64,
+    "avant": "Rivera.",
+    "apres": "Riviera.",
+    "preuve": "Sous-titres, logos ou tableau incrustés dans la source"
+  },
+  {
+    "debut": 257.62,
+    "avant": "Espali",
+    "apres": "Espaly",
+    "preuve": "Sous-titres, logos ou tableau incrustés dans la source"
+  },
+  {
+    "debut": 259.7,
+    "avant": "Luciana",
+    "apres": "Lucciana",
+    "preuve": "Sous-titres, logos ou tableau incrustés dans la source"
+  },
+  {
+    "debut": 273.56,
+    "avant": "Payad",
+    "apres": "Paillade",
+    "preuve": "Sous-titres, logos ou tableau incrustés dans la source"
+  },
+  {
+    "debut": 275.48,
+    "avant": "Espagie",
+    "apres": "Espaly",
+    "preuve": "Sous-titres, logos ou tableau incrustés dans la source"
+  },
+  {
+    "debut": 423.52,
+    "avant": "Suissard",
+    "apres": "Sussargue",
+    "preuve": "Sous-titres, logos ou tableau incrustés dans la source"
+  },
+  {
+    "debut": 780.1,
+    "avant": "'espectre",
+    "apres": "'instinct",
+    "preuve": "Sous-titres, logos ou tableau incrustés dans la source"
+  },
+  {
+    "debut": 786.92,
+    "avant": "'espectre,",
+    "apres": "'instinct,",
+    "preuve": "Sous-titres, logos ou tableau incrustés dans la source"
+  },
+  {
+    "debut": 795.56,
+    "avant": "'espectre,",
+    "apres": "'instinct,",
+    "preuve": "Sous-titres, logos ou tableau incrustés dans la source"
+  },
+  {
+    "debut": 798.56,
+    "avant": "'espectre,",
+    "apres": "'instinct,",
+    "preuve": "Sous-titres, logos ou tableau incrustés dans la source"
+  },
+  {
+    "debut": 781.9,
+    "avant": "enfance,",
+    "apres": "force",
+    "preuve": "Sous-titre visible vers 13:01"
+  },
+  {
+    "debut": 131.24,
+    "fin": 131.52,
+    "avant": "canne qu",
+    "apres": "CAN qu",
+    "preuve": "Trophée africain visible et mention du Maroc à 02:11"
+  },
+  {
+    "debut": 207.15,
+    "fin": 208.03,
+    "avant": "mhc qui",
+    "apres": "MHSC qui",
+    "preuve": "Logo de Montpellier visible à 03:27"
+  },
+  {
+    "debut": 226.55,
+    "fin": 228.33,
+    "avant": "la s saint etienne qui",
+    "apres": "l’AS Saint-Étienne qui",
+    "preuve": "Logo de Saint-Étienne visible à 03:47"
+  },
+  {
+    "debut": 243.08,
+    "fin": 243.88,
+    "avant": "'US Monde de Lieux,",
+    "apres": "US Mandelieu,",
+    "preuve": "Logo et tableau des adversaires visibles à 04:03"
+  },
+  {
+    "debut": 244.34,
+    "fin": 245.16,
+    "avant": "Canet Rocheville",
+    "apres": "Cannet-Rocheville",
+    "preuve": "Logo du Cannet-Rocheville visible à 04:05"
+  },
+  {
+    "debut": 276.54,
+    "fin": 277.52,
+    "avant": "'US Mondelieu Donc",
+    "apres": "US Mandelieu Donc",
+    "preuve": "Même nom que le logo présenté à 04:03"
+  },
+  {
+    "debut": 624.58,
+    "fin": 624.92,
+    "avant": "procédé.",
+    "apres": "posé.",
+    "preuve": "Sous-titre incrusté vers 10:24"
+  },
+  {
+    "debut": 788.3,
+    "fin": 788.74,
+    "avant": "le matin d'aujourd'hui,",
+    "apres": "un match à domicile,",
+    "preuve": "Sous-titre incrusté à 13:09"
+  },
+  {
+    "debut": 793.64,
+    "fin": 794.16,
+    "avant": "les mots derrière,",
+    "apres": "encore les noms derrière,",
+    "preuve": "Sous-titre incrusté à 13:14"
+  },
+  {
+    "debut": 810.08,
+    "fin": 810.34,
+    "avant": "la face.",
+    "apres": "l’Atlas.",
+    "preuve": "Sous-titre incrusté vers 13:30, nom du club déjà présenté"
+  },
+  {
+    "debut": 1142.12,
+    "fin": 1142.46,
+    "avant": "bien dedans,",
+    "apres": "pas dedans,",
+    "preuve": "Sous-titre à 19:02 : on est pas dedans"
+  },
+  {
+    "debut": 1147.94,
+    "fin": 1148.62,
+    "avant": "C'est fini,",
+    "apres": "T’es puni,",
+    "preuve": "Sous-titre incrusté vers 19:08"
+  },
+  {
+    "debut": 1149.34,
+    "fin": 1149.54,
+    "avant": "c'est fini.",
+    "apres": "t’es puni.",
+    "preuve": "Même répétition à 19:09"
+  },
+  {
+    "debut": 1177.68,
+    "fin": 1177.94,
+    "avant": "court,",
+    "apres": "fou,",
+    "preuve": "Sous-titre incrusté vers 19:38 : rendez ce match fou"
+  },
+  {
+    "debut": 1276.52,
+    "fin": 1277.38,
+    "avant": "marcha, on",
+    "apres": "en marchant, on",
+    "preuve": "Sous-titre incrusté à 21:16"
+  },
+  {
+    "debut": 1309.56,
+    "fin": 1310.3,
+    "avant": "te ramener des étoiles les",
+    "apres": "demander des efforts les",
+    "preuve": "Sous-titre incrusté vers 21:50"
+  },
+  {
+    "debut": 645.48,
+    "fin": 645.92,
+    "avant": "une barre à",
+    "apres": "une dar à",
+    "preuve": "Sous-titre source à 10:46 : une dar à Marrakech"
+  },
+  {
+    "debut": 826.72,
+    "fin": 826.96,
+    "avant": "la face,",
+    "apres": "à Atlas,",
+    "preuve": "Sous-titre source à 13:47 : il est à Atlas"
+  },
+  {
+    "debut": 1147.94,
+    "fin": 1148.62,
+    "avant": "T’es puni,",
+    "apres": "C’est puni,",
+    "preuve": "Sous-titre source à 19:08, première occurrence"
+  },
+  {
+    "debut": 314.91,
+    "avant": "fédéral",
+    "apres": "amateur",
+    "preuve": "Sous-titre visible dans le clip 04 : reclassé amateur"
+  },
+  {
+    "debut": 779.16,
+    "avant": "de : début estimé à 779.16 s",
+    "apres": "de : début estimé à 779.82 s",
+    "preuve": "La retranscription du fichier 11 reconnaît de l’instinct ; sous-titre source visible dans sa première image"
+  },
+  {
+    "debut": 1218.82,
+    "avant": "ne",
+    "apres": "[retiré]",
+    "preuve": "Sous-titre source et retranscription du fichier 16 : On peut pas dire, négation orale sans ne"
+  }
+]

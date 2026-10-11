@@ -1,0 +1,844 @@
+[
+  {
+    "debut": 299.65,
+    "fin": 306.11,
+    "texte": "En tout cas, nous de notre côté, pour le premier match de championnat, ça sera à l'extérieur face à Berre, équipe qui est promue également.",
+    "mots": [
+      {
+        "mot": " En",
+        "debut": 299.65,
+        "fin": 299.85,
+        "probabilite": 0.7803
+      },
+      {
+        "mot": " tout",
+        "debut": 299.85,
+        "fin": 300.01,
+        "probabilite": 0.9917
+      },
+      {
+        "mot": " cas,",
+        "debut": 300.01,
+        "fin": 300.19,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " nous",
+        "debut": 300.45,
+        "fin": 300.51,
+        "probabilite": 0.9812
+      },
+      {
+        "mot": " de",
+        "debut": 300.51,
+        "fin": 300.65,
+        "probabilite": 0.7578
+      },
+      {
+        "mot": " notre",
+        "debut": 300.65,
+        "fin": 300.83,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " côté,",
+        "debut": 300.83,
+        "fin": 301.11,
+        "probabilite": 0.9975
+      },
+      {
+        "mot": " pour",
+        "debut": 301.25,
+        "fin": 301.47,
+        "probabilite": 0.9986
+      },
+      {
+        "mot": " le",
+        "debut": 301.47,
+        "fin": 301.61,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " premier",
+        "debut": 301.61,
+        "fin": 301.85,
+        "probabilite": 0.9412
+      },
+      {
+        "mot": " match",
+        "debut": 301.85,
+        "fin": 302.05,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " de",
+        "debut": 302.05,
+        "fin": 302.19,
+        "probabilite": 0.9911
+      },
+      {
+        "mot": " championnat,",
+        "debut": 302.19,
+        "fin": 302.67,
+        "probabilite": 0.9986
+      },
+      {
+        "mot": " ça",
+        "debut": 302.83,
+        "fin": 303.05,
+        "probabilite": 0.8433
+      },
+      {
+        "mot": " sera",
+        "debut": 303.05,
+        "fin": 303.23,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " à",
+        "debut": 303.23,
+        "fin": 303.35,
+        "probabilite": 0.9887
+      },
+      {
+        "mot": " l",
+        "debut": 303.35,
+        "fin": 303.37,
+        "probabilite": 1.0
+      },
+      {
+        "mot": "'extérieur",
+        "debut": 303.37,
+        "fin": 303.81,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " face",
+        "debut": 303.81,
+        "fin": 304.11,
+        "probabilite": 0.9766
+      },
+      {
+        "mot": " à",
+        "debut": 304.11,
+        "fin": 304.29,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " Berre,",
+        "debut": 304.29,
+        "fin": 304.59,
+        "probabilite": 0.4399
+      },
+      {
+        "mot": " équipe",
+        "debut": 304.67,
+        "fin": 305.01,
+        "probabilite": 0.9766
+      },
+      {
+        "mot": " qui",
+        "debut": 305.01,
+        "fin": 305.19,
+        "probabilite": 0.9977
+      },
+      {
+        "mot": " est",
+        "debut": 305.19,
+        "fin": 305.39,
+        "probabilite": 0.9974
+      },
+      {
+        "mot": " promue",
+        "debut": 305.39,
+        "fin": 305.71,
+        "probabilite": 0.5632
+      },
+      {
+        "mot": " également.",
+        "debut": 305.71,
+        "fin": 306.11,
+        "probabilite": 0.9906
+      }
+    ]
+  },
+  {
+    "debut": 306.41,
+    "fin": 308.49,
+    "texte": "Donc je pense que ça va être un match plutôt intéressant.",
+    "mots": [
+      {
+        "mot": " Donc",
+        "debut": 306.41,
+        "fin": 306.59,
+        "probabilite": 0.7393
+      },
+      {
+        "mot": " je",
+        "debut": 306.59,
+        "fin": 306.69,
+        "probabilite": 0.7669
+      },
+      {
+        "mot": " pense",
+        "debut": 306.69,
+        "fin": 306.83,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " que",
+        "debut": 306.83,
+        "fin": 306.95,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " ça",
+        "debut": 306.95,
+        "fin": 307.05,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " va",
+        "debut": 307.05,
+        "fin": 307.17,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " être",
+        "debut": 307.17,
+        "fin": 307.25,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " un",
+        "debut": 307.25,
+        "fin": 307.39,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " match",
+        "debut": 307.39,
+        "fin": 307.57,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " plutôt",
+        "debut": 307.57,
+        "fin": 307.95,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " intéressant.",
+        "debut": 307.95,
+        "fin": 308.49,
+        "probabilite": 0.9999
+      }
+    ]
+  },
+  {
+    "debut": 308.89,
+    "fin": 315.77,
+    "texte": "Pour ma part, malheureusement, je ne vais pas pouvoir jouer ce premier match parce que l'année dernière, j'étais en fédéral et j'ai été reclassé fédéral cette année.",
+    "mots": [
+      {
+        "mot": " Pour",
+        "debut": 308.89,
+        "fin": 309.13,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " ma",
+        "debut": 309.13,
+        "fin": 309.31,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " part,",
+        "debut": 309.31,
+        "fin": 309.51,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " malheureusement,",
+        "debut": 309.61,
+        "fin": 310.09,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " je",
+        "debut": 310.25,
+        "fin": 310.45,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " ne",
+        "debut": 310.45,
+        "fin": 310.55,
+        "probabilite": 0.964
+      },
+      {
+        "mot": " vais",
+        "debut": 310.55,
+        "fin": 310.55,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " pas",
+        "debut": 310.55,
+        "fin": 310.65,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " pouvoir",
+        "debut": 310.65,
+        "fin": 310.89,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " jouer",
+        "debut": 310.89,
+        "fin": 311.09,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " ce",
+        "debut": 311.09,
+        "fin": 311.27,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " premier",
+        "debut": 311.27,
+        "fin": 311.51,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " match",
+        "debut": 311.51,
+        "fin": 311.79,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " parce",
+        "debut": 311.79,
+        "fin": 312.13,
+        "probabilite": 0.8483
+      },
+      {
+        "mot": " que",
+        "debut": 312.13,
+        "fin": 312.25,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " l",
+        "debut": 312.25,
+        "fin": 312.33,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": "'année",
+        "debut": 312.33,
+        "fin": 312.41,
+        "probabilite": 0.9951
+      },
+      {
+        "mot": " dernière,",
+        "debut": 312.41,
+        "fin": 312.67,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " j",
+        "debut": 312.79,
+        "fin": 312.81,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": "'étais",
+        "debut": 312.81,
+        "fin": 312.91,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " en",
+        "debut": 312.91,
+        "fin": 313.05,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " fédéral",
+        "debut": 313.05,
+        "fin": 313.53,
+        "probabilite": 0.9805
+      },
+      {
+        "mot": " et",
+        "debut": 313.53,
+        "fin": 313.95,
+        "probabilite": 0.9632
+      },
+      {
+        "mot": " j",
+        "debut": 313.95,
+        "fin": 314.07,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": "'ai",
+        "debut": 314.07,
+        "fin": 314.13,
+        "probabilite": 0.99
+      },
+      {
+        "mot": " été",
+        "debut": 314.13,
+        "fin": 314.27,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " reclassé",
+        "debut": 314.27,
+        "fin": 314.91,
+        "probabilite": 0.994
+      },
+      {
+        "mot": " fédéral",
+        "debut": 314.91,
+        "fin": 315.31,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " cette",
+        "debut": 315.31,
+        "fin": 315.55,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " année.",
+        "debut": 315.55,
+        "fin": 315.77,
+        "probabilite": 0.9999
+      }
+    ]
+  },
+  {
+    "debut": 316.01,
+    "fin": 320.69,
+    "texte": "Et vu que mon contrat l'année dernière, je l'avais signé au 1er septembre, je ne pourrais jouer qu'à partir du 1er septembre.",
+    "mots": [
+      {
+        "mot": " Et",
+        "debut": 316.01,
+        "fin": 316.25,
+        "probabilite": 0.973
+      },
+      {
+        "mot": " vu",
+        "debut": 316.25,
+        "fin": 316.45,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " que",
+        "debut": 316.45,
+        "fin": 316.57,
+        "probabilite": 0.9976
+      },
+      {
+        "mot": " mon",
+        "debut": 316.57,
+        "fin": 316.73,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " contrat",
+        "debut": 316.73,
+        "fin": 317.03,
+        "probabilite": 0.9986
+      },
+      {
+        "mot": " l",
+        "debut": 317.03,
+        "fin": 317.15,
+        "probabilite": 0.9303
+      },
+      {
+        "mot": "'année",
+        "debut": 317.15,
+        "fin": 317.23,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " dernière,",
+        "debut": 317.23,
+        "fin": 317.51,
+        "probabilite": 0.9983
+      },
+      {
+        "mot": " je",
+        "debut": 317.57,
+        "fin": 317.65,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " l",
+        "debut": 317.65,
+        "fin": 317.71,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": "'avais",
+        "debut": 317.71,
+        "fin": 317.81,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " signé",
+        "debut": 317.81,
+        "fin": 318.07,
+        "probabilite": 0.9988
+      },
+      {
+        "mot": " au",
+        "debut": 318.07,
+        "fin": 318.17,
+        "probabilite": 0.9966
+      },
+      {
+        "mot": " 1er",
+        "debut": 318.17,
+        "fin": 318.41,
+        "probabilite": 0.9954
+      },
+      {
+        "mot": " septembre,",
+        "debut": 318.41,
+        "fin": 318.89,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " je",
+        "debut": 318.95,
+        "fin": 319.05,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " ne",
+        "debut": 319.05,
+        "fin": 319.21,
+        "probabilite": 0.5821
+      },
+      {
+        "mot": " pourrais",
+        "debut": 319.21,
+        "fin": 319.23,
+        "probabilite": 0.8656
+      },
+      {
+        "mot": " jouer",
+        "debut": 319.23,
+        "fin": 319.45,
+        "probabilite": 0.8277
+      },
+      {
+        "mot": " qu",
+        "debut": 319.45,
+        "fin": 319.57,
+        "probabilite": 0.9983
+      },
+      {
+        "mot": "'à",
+        "debut": 319.57,
+        "fin": 319.63,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " partir",
+        "debut": 319.63,
+        "fin": 319.83,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " du",
+        "debut": 319.83,
+        "fin": 320.01,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " 1er",
+        "debut": 320.01,
+        "fin": 320.33,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " septembre.",
+        "debut": 320.33,
+        "fin": 320.69,
+        "probabilite": 0.9999
+      }
+    ]
+  },
+  {
+    "debut": 320.83,
+    "fin": 323.49,
+    "texte": "Donc il n'y a que ce match-là, malheureusement, que je ne pourrais pas jouer.",
+    "mots": [
+      {
+        "mot": " Donc",
+        "debut": 320.83,
+        "fin": 321.01,
+        "probabilite": 0.9972
+      },
+      {
+        "mot": " il",
+        "debut": 321.01,
+        "fin": 321.13,
+        "probabilite": 0.9876
+      },
+      {
+        "mot": " n",
+        "debut": 321.13,
+        "fin": 321.19,
+        "probabilite": 0.9884
+      },
+      {
+        "mot": "'y",
+        "debut": 321.19,
+        "fin": 321.19,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " a",
+        "debut": 321.19,
+        "fin": 321.23,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " que",
+        "debut": 321.23,
+        "fin": 321.37,
+        "probabilite": 0.999
+      },
+      {
+        "mot": " ce",
+        "debut": 321.37,
+        "fin": 321.57,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " match",
+        "debut": 321.57,
+        "fin": 321.81,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": "-là,",
+        "debut": 321.81,
+        "fin": 321.95,
+        "probabilite": 0.9832
+      },
+      {
+        "mot": " malheureusement,",
+        "debut": 322.03,
+        "fin": 322.43,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " que",
+        "debut": 322.51,
+        "fin": 322.61,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " je",
+        "debut": 322.61,
+        "fin": 322.73,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " ne",
+        "debut": 322.73,
+        "fin": 322.85,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " pourrais",
+        "debut": 322.85,
+        "fin": 323.09,
+        "probabilite": 0.9528
+      },
+      {
+        "mot": " pas",
+        "debut": 323.09,
+        "fin": 323.23,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " jouer.",
+        "debut": 323.23,
+        "fin": 323.49,
+        "probabilite": 0.9996
+      }
+    ]
+  },
+  {
+    "debut": 324.15,
+    "fin": 327.15,
+    "texte": "Et après, ne vous inquiétez pas, on va réintégrer le groupe tranquillement.",
+    "mots": [
+      {
+        "mot": " Et",
+        "debut": 324.15,
+        "fin": 324.23,
+        "probabilite": 0.9953
+      },
+      {
+        "mot": " après,",
+        "debut": 324.23,
+        "fin": 324.51,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " ne",
+        "debut": 324.67,
+        "fin": 324.79,
+        "probabilite": 0.8169
+      },
+      {
+        "mot": " vous",
+        "debut": 324.79,
+        "fin": 324.85,
+        "probabilite": 0.9984
+      },
+      {
+        "mot": " inquiétez",
+        "debut": 324.85,
+        "fin": 325.15,
+        "probabilite": 0.999
+      },
+      {
+        "mot": " pas,",
+        "debut": 325.15,
+        "fin": 325.29,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " on",
+        "debut": 325.35,
+        "fin": 325.43,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " va",
+        "debut": 325.43,
+        "fin": 325.57,
+        "probabilite": 0.9953
+      },
+      {
+        "mot": " réintégrer",
+        "debut": 325.57,
+        "fin": 326.07,
+        "probabilite": 0.9982
+      },
+      {
+        "mot": " le",
+        "debut": 326.07,
+        "fin": 326.19,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " groupe",
+        "debut": 326.19,
+        "fin": 326.43,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " tranquillement.",
+        "debut": 326.43,
+        "fin": 327.15,
+        "probabilite": 0.9929
+      }
+    ]
+  },
+  {
+    "debut": 327.15,
+    "fin": 328.95,
+    "texte": "Bref, je vous laisse le résumé du match",
+    "mots": [
+      {
+        "mot": " Bref,",
+        "debut": 327.15,
+        "fin": 327.53,
+        "probabilite": 0.8687
+      },
+      {
+        "mot": " je",
+        "debut": 327.73,
+        "fin": 327.77,
+        "probabilite": 0.9971
+      },
+      {
+        "mot": " vous",
+        "debut": 327.77,
+        "fin": 327.87,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " laisse",
+        "debut": 327.87,
+        "fin": 328.03,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " le",
+        "debut": 328.03,
+        "fin": 328.15,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " résumé",
+        "debut": 328.15,
+        "fin": 328.53,
+        "probabilite": 0.9986
+      },
+      {
+        "mot": " du",
+        "debut": 328.53,
+        "fin": 328.65,
+        "probabilite": 0.999
+      },
+      {
+        "mot": " match",
+        "debut": 328.65,
+        "fin": 328.95,
+        "probabilite": 0.9998
+      }
+    ]
+  },
+  {
+    "debut": 328.95,
+    "fin": 329.73,
+    "texte": "Faites-vous plaisir",
+    "mots": [
+      {
+        "mot": " Faites",
+        "debut": 328.95,
+        "fin": 329.37,
+        "probabilite": 0.7149
+      },
+      {
+        "mot": "-vous",
+        "debut": 329.37,
+        "fin": 329.43,
+        "probabilite": 0.8602
+      },
+      {
+        "mot": " plaisir",
+        "debut": 329.43,
+        "fin": 329.73,
+        "probabilite": 0.9999
+      }
+    ]
+  }
+]

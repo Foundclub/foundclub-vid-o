@@ -1,0 +1,10 @@
+{
+  "source_debut_analyse": 632,
+  "source_fin_analyse": 638,
+  "filtre": "silencedetect=noise=-27dB:d=0.04",
+  "silence_source_debut": 635.406712,
+  "silence_source_fin": 635.687619,
+  "fin_coupe": 635.56,
+  "marge_apres_debut_silence": 0.153288,
+  "fondu_fin_ms": 30
+}

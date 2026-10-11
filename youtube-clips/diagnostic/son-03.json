@@ -1,0 +1,31 @@
+{
+  "premiere_passe": {
+    "input_i": "-12.99",
+    "input_tp": "-0.04",
+    "input_lra": "2.50",
+    "input_thresh": "-23.18",
+    "output_i": "-16.69",
+    "output_tp": "-6.00",
+    "output_lra": "1.20",
+    "output_thresh": "-26.78",
+    "normalization_type": "dynamic",
+    "target_offset": "2.69"
+  },
+  "seconde_passe": {
+    "input_i": "-12.99",
+    "input_tp": "-0.04",
+    "input_lra": "2.50",
+    "input_thresh": "-23.18",
+    "output_i": "-16.33",
+    "output_tp": "-6.00",
+    "output_lra": "1.30",
+    "output_thresh": "-26.36",
+    "normalization_type": "dynamic",
+    "target_offset": "2.33"
+  },
+  "fondus_ms": 30,
+  "correction_pics": "Marge de -6 dBTP avant encodage AAC, pour absorber les dépassements après conversion",
+  "origine_audio": "Source YouTube téléchargée, sans cascade de réencodages audio",
+  "ajustement_final_gain_db": 2.42,
+  "niveau_aac_avant_ajustement": -16.42
+}

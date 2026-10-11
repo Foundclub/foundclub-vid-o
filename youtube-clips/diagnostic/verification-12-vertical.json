@@ -1,0 +1,571 @@
+{
+  "numero": 12,
+  "format": "vertical",
+  "sha256": "0c1ca9223c2fc99baff0ca8a5c803d75fb516db3e37c0f53a20a1cc80920943e",
+  "texte_prevu_sha256": "3c9db9ddcf2f963b1d947a65858a43ee364c028311591c2b70096ff0cab69002",
+  "verification": "Premiers mots différents dans la retranscription; Derniers mots différents dans la retranscription",
+  "modele_verification": "large-v3",
+  "vad": false,
+  "aide_vestiaire": true,
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "par",
+    "contre",
+    "l",
+    "instinct"
+  ],
+  "derniers_mots_attendus": [
+    "a",
+    "atlas",
+    "ok",
+    "allez"
+  ],
+  "premiers_mots_reconnus": [
+    "par",
+    "contre",
+    "instinct",
+    "ce"
+  ],
+  "derniers_mots_reconnus": [
+    "coeur",
+    "est",
+    "la",
+    "face"
+  ],
+  "debut_correspond": false,
+  "fin_correspond": false,
+  "transcription": [
+    {
+      "debut": 0,
+      "fin": 4.86,
+      "texte": "Par contre, instinct ce n'est pas la tête, c'est le cœur. Le cœur c'est la face.",
+      "mots": [
+        {
+          "mot": " Par",
+          "debut": 0,
+          "fin": 0.2
+        },
+        {
+          "mot": " contre,",
+          "debut": 0.2,
+          "fin": 0.46
+        },
+        {
+          "mot": " instinct",
+          "debut": 0.68,
+          "fin": 1.84
+        },
+        {
+          "mot": " ce",
+          "debut": 1.84,
+          "fin": 2.18
+        },
+        {
+          "mot": " n",
+          "debut": 2.18,
+          "fin": 2.28
+        },
+        {
+          "mot": "'est",
+          "debut": 2.28,
+          "fin": 2.28
+        },
+        {
+          "mot": " pas",
+          "debut": 2.28,
+          "fin": 2.36
+        },
+        {
+          "mot": " la",
+          "debut": 2.36,
+          "fin": 2.44
+        },
+        {
+          "mot": " tête,",
+          "debut": 2.44,
+          "fin": 2.62
+        },
+        {
+          "mot": " c",
+          "debut": 2.78,
+          "fin": 3.12
+        },
+        {
+          "mot": "'est",
+          "debut": 3.12,
+          "fin": 3.24
+        },
+        {
+          "mot": " le",
+          "debut": 3.24,
+          "fin": 3.28
+        },
+        {
+          "mot": " cœur.",
+          "debut": 3.28,
+          "fin": 3.52
+        },
+        {
+          "mot": " Le",
+          "debut": 3.7,
+          "fin": 4.1
+        },
+        {
+          "mot": " cœur",
+          "debut": 4.1,
+          "fin": 4.36
+        },
+        {
+          "mot": " c",
+          "debut": 4.36,
+          "fin": 4.5
+        },
+        {
+          "mot": "'est",
+          "debut": 4.5,
+          "fin": 4.6
+        },
+        {
+          "mot": " la",
+          "debut": 4.6,
+          "fin": 4.62
+        },
+        {
+          "mot": " face.",
+          "debut": 4.62,
+          "fin": 4.86
+        }
+      ]
+    },
+    {
+      "debut": 6.84,
+      "fin": 9.22,
+      "texte": "Personne ne s'emmerde plus dans le jeu.",
+      "mots": [
+        {
+          "mot": " Personne",
+          "debut": 6.84,
+          "fin": 7.24
+        },
+        {
+          "mot": " ne",
+          "debut": 7.24,
+          "fin": 7.28
+        },
+        {
+          "mot": " s",
+          "debut": 7.28,
+          "fin": 7.8
+        },
+        {
+          "mot": "'emmerde",
+          "debut": 7.8,
+          "fin": 8.76
+        },
+        {
+          "mot": " plus",
+          "debut": 8.76,
+          "fin": 8.94
+        },
+        {
+          "mot": " dans",
+          "debut": 8.94,
+          "fin": 9.12
+        },
+        {
+          "mot": " le",
+          "debut": 9.12,
+          "fin": 9.22
+        },
+        {
+          "mot": " jeu.",
+          "debut": 9.22,
+          "fin": 9.22
+        }
+      ]
+    },
+    {
+      "debut": 10.22,
+      "fin": 14.82,
+      "texte": "Personne ne s'emmerde plus dans l'engagement avec le cœur.",
+      "mots": [
+        {
+          "mot": " Personne",
+          "debut": 10.22,
+          "fin": 10.62
+        },
+        {
+          "mot": " ne",
+          "debut": 10.62,
+          "fin": 10.74
+        },
+        {
+          "mot": " s",
+          "debut": 10.74,
+          "fin": 12.82
+        },
+        {
+          "mot": "'emmerde",
+          "debut": 12.82,
+          "fin": 12.92
+        },
+        {
+          "mot": " plus",
+          "debut": 12.92,
+          "fin": 13.14
+        },
+        {
+          "mot": " dans",
+          "debut": 13.14,
+          "fin": 13.56
+        },
+        {
+          "mot": " l",
+          "debut": 13.56,
+          "fin": 13.7
+        },
+        {
+          "mot": "'engagement",
+          "debut": 13.7,
+          "fin": 14.06
+        },
+        {
+          "mot": " avec",
+          "debut": 14.06,
+          "fin": 14.46
+        },
+        {
+          "mot": " le",
+          "debut": 14.46,
+          "fin": 14.62
+        },
+        {
+          "mot": " cœur.",
+          "debut": 14.62,
+          "fin": 14.82
+        }
+      ]
+    },
+    {
+      "debut": 17.6,
+      "fin": 21.46,
+      "texte": "Naït, tu as compris ? Le cœur est la face.",
+      "mots": [
+        {
+          "mot": " Naït,",
+          "debut": 17.6,
+          "fin": 18.0
+        },
+        {
+          "mot": " tu",
+          "debut": 18.0,
+          "fin": 18.4
+        },
+        {
+          "mot": " as",
+          "debut": 18.4,
+          "fin": 18.52
+        },
+        {
+          "mot": " compris",
+          "debut": 18.52,
+          "fin": 18.74
+        },
+        {
+          "mot": " ?",
+          "debut": 18.74,
+          "fin": 18.9
+        },
+        {
+          "mot": " Le",
+          "debut": 18.9,
+          "fin": 19.68
+        },
+        {
+          "mot": " cœur",
+          "debut": 19.68,
+          "fin": 20.22
+        },
+        {
+          "mot": " est",
+          "debut": 20.22,
+          "fin": 21.12
+        },
+        {
+          "mot": " la",
+          "debut": 21.12,
+          "fin": 21.26
+        },
+        {
+          "mot": " face.",
+          "debut": 21.26,
+          "fin": 21.46
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {
+    "debut": [
+      {
+        "debut": 1.46,
+        "fin": 6.76,
+        "texte": "Parcours, esthème, c'est pas la tête, c'est le cœur, le cœur c'est la place, les mains, les genoux, personne.",
+        "mots": [
+          {
+            "mot": " Parcours,",
+            "debut": 1.46,
+            "fin": 1.78
+          },
+          {
+            "mot": " esthème,",
+            "debut": 1.78,
+            "fin": 2.1
+          },
+          {
+            "mot": " c",
+            "debut": 2.12,
+            "fin": 2.2
+          },
+          {
+            "mot": "'est",
+            "debut": 2.2,
+            "fin": 2.26
+          },
+          {
+            "mot": " pas",
+            "debut": 2.26,
+            "fin": 2.34
+          },
+          {
+            "mot": " la",
+            "debut": 2.34,
+            "fin": 2.46
+          },
+          {
+            "mot": " tête,",
+            "debut": 2.46,
+            "fin": 2.62
+          },
+          {
+            "mot": " c",
+            "debut": 2.76,
+            "fin": 3.1
+          },
+          {
+            "mot": "'est",
+            "debut": 3.1,
+            "fin": 3.24
+          },
+          {
+            "mot": " le",
+            "debut": 3.24,
+            "fin": 3.26
+          },
+          {
+            "mot": " cœur,",
+            "debut": 3.26,
+            "fin": 3.54
+          },
+          {
+            "mot": " le",
+            "debut": 3.64,
+            "fin": 4.08
+          },
+          {
+            "mot": " cœur",
+            "debut": 4.08,
+            "fin": 4.38
+          },
+          {
+            "mot": " c",
+            "debut": 4.38,
+            "fin": 4.48
+          },
+          {
+            "mot": "'est",
+            "debut": 4.48,
+            "fin": 4.6
+          },
+          {
+            "mot": " la",
+            "debut": 4.6,
+            "fin": 4.6
+          },
+          {
+            "mot": " place,",
+            "debut": 4.6,
+            "fin": 4.9
+          },
+          {
+            "mot": " les",
+            "debut": 5.0,
+            "fin": 5.26
+          },
+          {
+            "mot": " mains,",
+            "debut": 5.26,
+            "fin": 5.46
+          },
+          {
+            "mot": " les",
+            "debut": 5.68,
+            "fin": 5.86
+          },
+          {
+            "mot": " genoux,",
+            "debut": 5.86,
+            "fin": 6.22
+          },
+          {
+            "mot": " personne.",
+            "debut": 6.38,
+            "fin": 6.76
+          }
+        ]
+      }
+    ],
+    "fin": [
+      {
+        "debut": 1.02,
+        "fin": 7.44,
+        "texte": "Compris tout le monde ? Nassim, c'est compris ? Naïf, c'est compris ? Le cœur, le cœur il est à face, ok ? Naïf.",
+        "mots": [
+          {
+            "mot": " Compris",
+            "debut": 1.02,
+            "fin": 1.34
+          },
+          {
+            "mot": " tout",
+            "debut": 1.34,
+            "fin": 1.42
+          },
+          {
+            "mot": " le",
+            "debut": 1.42,
+            "fin": 1.5
+          },
+          {
+            "mot": " monde",
+            "debut": 1.5,
+            "fin": 1.62
+          },
+          {
+            "mot": " ?",
+            "debut": 1.62,
+            "fin": 1.68
+          },
+          {
+            "mot": " Nassim,",
+            "debut": 1.68,
+            "fin": 2.08
+          },
+          {
+            "mot": " c",
+            "debut": 2.08,
+            "fin": 2.42
+          },
+          {
+            "mot": "'est",
+            "debut": 2.42,
+            "fin": 2.54
+          },
+          {
+            "mot": " compris",
+            "debut": 2.54,
+            "fin": 2.72
+          },
+          {
+            "mot": " ?",
+            "debut": 2.72,
+            "fin": 2.9
+          },
+          {
+            "mot": " Naïf,",
+            "debut": 2.9,
+            "fin": 3.36
+          },
+          {
+            "mot": " c",
+            "debut": 3.42,
+            "fin": 3.78
+          },
+          {
+            "mot": "'est",
+            "debut": 3.78,
+            "fin": 3.86
+          },
+          {
+            "mot": " compris",
+            "debut": 3.86,
+            "fin": 4.06
+          },
+          {
+            "mot": " ?",
+            "debut": 4.06,
+            "fin": 4.88
+          },
+          {
+            "mot": " Le",
+            "debut": 4.88,
+            "fin": 5.24
+          },
+          {
+            "mot": " cœur,",
+            "debut": 5.24,
+            "fin": 5.5
+          },
+          {
+            "mot": " le",
+            "debut": 5.68,
+            "fin": 6.12
+          },
+          {
+            "mot": " cœur",
+            "debut": 6.12,
+            "fin": 6.36
+          },
+          {
+            "mot": " il",
+            "debut": 6.36,
+            "fin": 6.48
+          },
+          {
+            "mot": " est",
+            "debut": 6.48,
+            "fin": 6.58
+          },
+          {
+            "mot": " à",
+            "debut": 6.58,
+            "fin": 6.64
+          },
+          {
+            "mot": " face,",
+            "debut": 6.64,
+            "fin": 6.78
+          },
+          {
+            "mot": " ok",
+            "debut": 6.92,
+            "fin": 7.04
+          },
+          {
+            "mot": " ?",
+            "debut": 7.04,
+            "fin": 7.16
+          },
+          {
+            "mot": " Naïf.",
+            "debut": 7.16,
+            "fin": 7.44
+          }
+        ]
+      }
+    ]
+  },
+  "lufs": -14.07,
+  "pic_vrai_db": -1.11,
+  "duree": 22.7,
+  "taille_octets": 12900983
+}

@@ -1,0 +1,1436 @@
+[
+  {
+    "debut": 159.75,
+    "fin": 167.97,
+    "texte": "On a reçu des poules pour cette année et honnêtement, quoi dire à part que pour moi, c'est la poule la plus dure de National 2.",
+    "mots": [
+      {
+        "mot": " On",
+        "debut": 159.75,
+        "fin": 160.03,
+        "probabilite": 0.6543
+      },
+      {
+        "mot": " a",
+        "debut": 160.03,
+        "fin": 160.31,
+        "probabilite": 0.9959
+      },
+      {
+        "mot": " reçu",
+        "debut": 160.31,
+        "fin": 160.87,
+        "probabilite": 0.9981
+      },
+      {
+        "mot": " des",
+        "debut": 160.87,
+        "fin": 161.15,
+        "probabilite": 0.6067
+      },
+      {
+        "mot": " poules",
+        "debut": 161.15,
+        "fin": 161.49,
+        "probabilite": 0.94
+      },
+      {
+        "mot": " pour",
+        "debut": 161.49,
+        "fin": 161.69,
+        "probabilite": 0.9917
+      },
+      {
+        "mot": " cette",
+        "debut": 161.69,
+        "fin": 161.95,
+        "probabilite": 0.9981
+      },
+      {
+        "mot": " année",
+        "debut": 161.95,
+        "fin": 162.27,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " et",
+        "debut": 162.27,
+        "fin": 162.69,
+        "probabilite": 0.3229
+      },
+      {
+        "mot": " honnêtement,",
+        "debut": 162.69,
+        "fin": 163.21,
+        "probabilite": 0.9891
+      },
+      {
+        "mot": " quoi",
+        "debut": 163.39,
+        "fin": 163.75,
+        "probabilite": 0.9842
+      },
+      {
+        "mot": " dire",
+        "debut": 163.75,
+        "fin": 164.01,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " à",
+        "debut": 164.01,
+        "fin": 164.19,
+        "probabilite": 0.7219
+      },
+      {
+        "mot": " part",
+        "debut": 164.19,
+        "fin": 164.35,
+        "probabilite": 0.9975
+      },
+      {
+        "mot": " que",
+        "debut": 164.35,
+        "fin": 164.57,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " pour",
+        "debut": 164.57,
+        "fin": 164.99,
+        "probabilite": 0.9377
+      },
+      {
+        "mot": " moi,",
+        "debut": 164.99,
+        "fin": 165.29,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " c",
+        "debut": 165.49,
+        "fin": 165.85,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": "'est",
+        "debut": 165.85,
+        "fin": 165.93,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " la",
+        "debut": 165.93,
+        "fin": 166.05,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " poule",
+        "debut": 166.05,
+        "fin": 166.37,
+        "probabilite": 0.9984
+      },
+      {
+        "mot": " la",
+        "debut": 166.37,
+        "fin": 166.55,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " plus",
+        "debut": 166.55,
+        "fin": 166.81,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " dure",
+        "debut": 166.81,
+        "fin": 167.17,
+        "probabilite": 0.9962
+      },
+      {
+        "mot": " de",
+        "debut": 167.17,
+        "fin": 167.35,
+        "probabilite": 0.9982
+      },
+      {
+        "mot": " National",
+        "debut": 167.35,
+        "fin": 167.73,
+        "probabilite": 0.9333
+      },
+      {
+        "mot": " 2.",
+        "debut": 167.73,
+        "fin": 167.97,
+        "probabilite": 0.9713
+      }
+    ]
+  },
+  {
+    "debut": 168.07,
+    "fin": 171.89,
+    "texte": "Ah oui, National 3 n'existe plus. Maintenant, c'est National 2.",
+    "mots": [
+      {
+        "mot": " Ah",
+        "debut": 168.07,
+        "fin": 168.15,
+        "probabilite": 0.9642
+      },
+      {
+        "mot": " oui,",
+        "debut": 168.15,
+        "fin": 168.33,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " National",
+        "debut": 168.81,
+        "fin": 169.19,
+        "probabilite": 0.9969
+      },
+      {
+        "mot": " 3",
+        "debut": 169.19,
+        "fin": 169.47,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " n",
+        "debut": 169.47,
+        "fin": 169.65,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": "'existe",
+        "debut": 169.65,
+        "fin": 169.99,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " plus.",
+        "debut": 169.99,
+        "fin": 170.27,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " Maintenant,",
+        "debut": 170.69,
+        "fin": 170.93,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " c",
+        "debut": 171.09,
+        "fin": 171.13,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": "'est",
+        "debut": 171.13,
+        "fin": 171.19,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " National",
+        "debut": 171.19,
+        "fin": 171.55,
+        "probabilite": 0.9959
+      },
+      {
+        "mot": " 2.",
+        "debut": 171.55,
+        "fin": 171.89,
+        "probabilite": 0.9996
+      }
+    ]
+  },
+  {
+    "debut": 172.03,
+    "fin": 179.09,
+    "texte": "Depuis la réforme avec la Ligue 3 qui est rentrée en vigueur et du coup, la Ligue 3 qui est maintenant professionnelle en France.",
+    "mots": [
+      {
+        "mot": " Depuis",
+        "debut": 172.03,
+        "fin": 172.53,
+        "probabilite": 0.9989
+      },
+      {
+        "mot": " la",
+        "debut": 172.53,
+        "fin": 172.65,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " réforme",
+        "debut": 172.65,
+        "fin": 173.03,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " avec",
+        "debut": 173.03,
+        "fin": 173.35,
+        "probabilite": 0.9985
+      },
+      {
+        "mot": " la",
+        "debut": 173.35,
+        "fin": 173.91,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " Ligue",
+        "debut": 173.91,
+        "fin": 174.05,
+        "probabilite": 0.9846
+      },
+      {
+        "mot": " 3",
+        "debut": 174.05,
+        "fin": 174.27,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " qui",
+        "debut": 174.27,
+        "fin": 174.45,
+        "probabilite": 0.9978
+      },
+      {
+        "mot": " est",
+        "debut": 174.45,
+        "fin": 174.57,
+        "probabilite": 0.9928
+      },
+      {
+        "mot": " rentrée",
+        "debut": 174.57,
+        "fin": 174.81,
+        "probabilite": 0.8742
+      },
+      {
+        "mot": " en",
+        "debut": 174.81,
+        "fin": 174.91,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " vigueur",
+        "debut": 174.91,
+        "fin": 175.33,
+        "probabilite": 0.9901
+      },
+      {
+        "mot": " et",
+        "debut": 175.33,
+        "fin": 176.05,
+        "probabilite": 0.9906
+      },
+      {
+        "mot": " du",
+        "debut": 176.05,
+        "fin": 176.47,
+        "probabilite": 0.7971
+      },
+      {
+        "mot": " coup,",
+        "debut": 176.47,
+        "fin": 176.63,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " la",
+        "debut": 176.71,
+        "fin": 176.81,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " Ligue",
+        "debut": 176.81,
+        "fin": 176.95,
+        "probabilite": 0.9987
+      },
+      {
+        "mot": " 3",
+        "debut": 176.95,
+        "fin": 177.13,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " qui",
+        "debut": 177.13,
+        "fin": 177.27,
+        "probabilite": 0.9987
+      },
+      {
+        "mot": " est",
+        "debut": 177.27,
+        "fin": 177.37,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " maintenant",
+        "debut": 177.37,
+        "fin": 177.75,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " professionnelle",
+        "debut": 177.75,
+        "fin": 178.65,
+        "probabilite": 0.9978
+      },
+      {
+        "mot": " en",
+        "debut": 178.65,
+        "fin": 178.75,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " France.",
+        "debut": 178.75,
+        "fin": 179.09,
+        "probabilite": 0.9999
+      }
+    ]
+  },
+  {
+    "debut": 179.47,
+    "fin": 185.71,
+    "texte": "Voilà, je vous mets un peu l'affiche de comment se constituent aujourd'hui les championnats français.",
+    "mots": [
+      {
+        "mot": " Voilà,",
+        "debut": 179.47,
+        "fin": 179.63,
+        "probabilite": 0.7315
+      },
+      {
+        "mot": " je",
+        "debut": 179.73,
+        "fin": 179.79,
+        "probabilite": 0.9995
+      },
+      {
+        "mot": " vous",
+        "debut": 179.79,
+        "fin": 179.93,
+        "probabilite": 0.9741
+      },
+      {
+        "mot": " mets",
+        "debut": 179.93,
+        "fin": 180.01,
+        "probabilite": 0.9812
+      },
+      {
+        "mot": " un",
+        "debut": 180.01,
+        "fin": 180.13,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " peu",
+        "debut": 180.13,
+        "fin": 180.27,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " l",
+        "debut": 180.27,
+        "fin": 180.93,
+        "probabilite": 0.6299
+      },
+      {
+        "mot": "'affiche",
+        "debut": 180.93,
+        "fin": 181.29,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " de",
+        "debut": 181.29,
+        "fin": 181.47,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " comment",
+        "debut": 181.47,
+        "fin": 182.05,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " se",
+        "debut": 182.05,
+        "fin": 182.25,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " constituent",
+        "debut": 182.25,
+        "fin": 182.83,
+        "probabilite": 0.9571
+      },
+      {
+        "mot": " aujourd",
+        "debut": 182.83,
+        "fin": 183.01,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": "'hui",
+        "debut": 183.01,
+        "fin": 183.31,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " les",
+        "debut": 183.31,
+        "fin": 184.81,
+        "probabilite": 0.9984
+      },
+      {
+        "mot": " championnats",
+        "debut": 184.81,
+        "fin": 185.35,
+        "probabilite": 0.9977
+      },
+      {
+        "mot": " français.",
+        "debut": 185.35,
+        "fin": 185.71,
+        "probabilite": 0.9931
+      }
+    ]
+  },
+  {
+    "debut": 185.71,
+    "fin": 191.49,
+    "texte": "et nous du coup bah on était dans l'ancienne n3 qui est maintenant la national 2 donc dites vous",
+    "mots": [
+      {
+        "mot": " et",
+        "debut": 185.71,
+        "fin": 186.21,
+        "probabilite": 0.3758
+      },
+      {
+        "mot": " nous",
+        "debut": 186.21,
+        "fin": 186.41,
+        "probabilite": 0.9659
+      },
+      {
+        "mot": " du",
+        "debut": 186.41,
+        "fin": 186.73,
+        "probabilite": 0.7718
+      },
+      {
+        "mot": " coup",
+        "debut": 186.73,
+        "fin": 186.91,
+        "probabilite": 0.9986
+      },
+      {
+        "mot": " bah",
+        "debut": 186.91,
+        "fin": 187.09,
+        "probabilite": 0.3623
+      },
+      {
+        "mot": " on",
+        "debut": 187.09,
+        "fin": 187.47,
+        "probabilite": 0.9824
+      },
+      {
+        "mot": " était",
+        "debut": 187.47,
+        "fin": 187.69,
+        "probabilite": 0.9619
+      },
+      {
+        "mot": " dans",
+        "debut": 187.69,
+        "fin": 187.89,
+        "probabilite": 0.9952
+      },
+      {
+        "mot": " l",
+        "debut": 187.89,
+        "fin": 188.07,
+        "probabilite": 0.9919
+      },
+      {
+        "mot": "'ancienne",
+        "debut": 188.07,
+        "fin": 188.61,
+        "probabilite": 0.985
+      },
+      {
+        "mot": " n3",
+        "debut": 188.61,
+        "fin": 189.05,
+        "probabilite": 0.6626
+      },
+      {
+        "mot": " qui",
+        "debut": 189.05,
+        "fin": 189.35,
+        "probabilite": 0.9866
+      },
+      {
+        "mot": " est",
+        "debut": 189.35,
+        "fin": 189.47,
+        "probabilite": 0.9943
+      },
+      {
+        "mot": " maintenant",
+        "debut": 189.47,
+        "fin": 189.71,
+        "probabilite": 0.998
+      },
+      {
+        "mot": " la",
+        "debut": 189.71,
+        "fin": 189.91,
+        "probabilite": 0.9685
+      },
+      {
+        "mot": " national",
+        "debut": 189.91,
+        "fin": 190.31,
+        "probabilite": 0.2645
+      },
+      {
+        "mot": " 2",
+        "debut": 190.31,
+        "fin": 190.57,
+        "probabilite": 0.9229
+      },
+      {
+        "mot": " donc",
+        "debut": 190.57,
+        "fin": 191.09,
+        "probabilite": 0.8612
+      },
+      {
+        "mot": " dites",
+        "debut": 191.09,
+        "fin": 191.33,
+        "probabilite": 0.9671
+      },
+      {
+        "mot": " vous",
+        "debut": 191.33,
+        "fin": 191.49,
+        "probabilite": 0.673
+      }
+    ]
+  },
+  {
+    "debut": 191.49,
+    "fin": 196.69,
+    "texte": "je suis plus qu'à deux niveaux net pro les gars oui bien sûr du coup je vais vous présenter la",
+    "mots": [
+      {
+        "mot": " je",
+        "debut": 191.49,
+        "fin": 191.65,
+        "probabilite": 0.9257
+      },
+      {
+        "mot": " suis",
+        "debut": 191.65,
+        "fin": 191.77,
+        "probabilite": 0.9444
+      },
+      {
+        "mot": " plus",
+        "debut": 191.77,
+        "fin": 191.89,
+        "probabilite": 0.9933
+      },
+      {
+        "mot": " qu",
+        "debut": 191.89,
+        "fin": 192.05,
+        "probabilite": 0.85
+      },
+      {
+        "mot": "'à",
+        "debut": 192.05,
+        "fin": 192.15,
+        "probabilite": 0.8942
+      },
+      {
+        "mot": " deux",
+        "debut": 192.15,
+        "fin": 192.45,
+        "probabilite": 0.8089
+      },
+      {
+        "mot": " niveaux",
+        "debut": 192.45,
+        "fin": 192.81,
+        "probabilite": 0.9524
+      },
+      {
+        "mot": " net",
+        "debut": 192.81,
+        "fin": 192.95,
+        "probabilite": 0.6079
+      },
+      {
+        "mot": " pro",
+        "debut": 192.95,
+        "fin": 193.17,
+        "probabilite": 0.8403
+      },
+      {
+        "mot": " les",
+        "debut": 193.17,
+        "fin": 193.33,
+        "probabilite": 0.9531
+      },
+      {
+        "mot": " gars",
+        "debut": 193.33,
+        "fin": 193.47,
+        "probabilite": 0.9989
+      },
+      {
+        "mot": " oui",
+        "debut": 193.47,
+        "fin": 193.95,
+        "probabilite": 0.7321
+      },
+      {
+        "mot": " bien",
+        "debut": 193.95,
+        "fin": 194.17,
+        "probabilite": 0.9522
+      },
+      {
+        "mot": " sûr",
+        "debut": 194.17,
+        "fin": 194.37,
+        "probabilite": 0.9192
+      },
+      {
+        "mot": " du",
+        "debut": 194.37,
+        "fin": 194.93,
+        "probabilite": 0.9849
+      },
+      {
+        "mot": " coup",
+        "debut": 194.93,
+        "fin": 195.13,
+        "probabilite": 0.9982
+      },
+      {
+        "mot": " je",
+        "debut": 195.13,
+        "fin": 195.43,
+        "probabilite": 0.9574
+      },
+      {
+        "mot": " vais",
+        "debut": 195.43,
+        "fin": 195.55,
+        "probabilite": 0.9989
+      },
+      {
+        "mot": " vous",
+        "debut": 195.55,
+        "fin": 195.69,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " présenter",
+        "debut": 195.69,
+        "fin": 196.23,
+        "probabilite": 0.9885
+      },
+      {
+        "mot": " la",
+        "debut": 196.23,
+        "fin": 196.69,
+        "probabilite": 0.9959
+      }
+    ]
+  },
+  {
+    "debut": 196.69,
+    "fin": 201.55,
+    "texte": "poule de cette année qui est très très sale et on va commencer avec les réserves pro je dis les",
+    "mots": [
+      {
+        "mot": " poule",
+        "debut": 196.69,
+        "fin": 196.97,
+        "probabilite": 0.9448
+      },
+      {
+        "mot": " de",
+        "debut": 196.97,
+        "fin": 197.07,
+        "probabilite": 0.9273
+      },
+      {
+        "mot": " cette",
+        "debut": 197.07,
+        "fin": 197.29,
+        "probabilite": 0.994
+      },
+      {
+        "mot": " année",
+        "debut": 197.29,
+        "fin": 197.53,
+        "probabilite": 0.9988
+      },
+      {
+        "mot": " qui",
+        "debut": 197.53,
+        "fin": 197.73,
+        "probabilite": 0.9943
+      },
+      {
+        "mot": " est",
+        "debut": 197.73,
+        "fin": 197.85,
+        "probabilite": 0.9988
+      },
+      {
+        "mot": " très",
+        "debut": 197.85,
+        "fin": 198.05,
+        "probabilite": 0.9943
+      },
+      {
+        "mot": " très",
+        "debut": 198.05,
+        "fin": 198.25,
+        "probabilite": 0.9026
+      },
+      {
+        "mot": " sale",
+        "debut": 198.25,
+        "fin": 198.61,
+        "probabilite": 0.9721
+      },
+      {
+        "mot": " et",
+        "debut": 198.61,
+        "fin": 199.05,
+        "probabilite": 0.9962
+      },
+      {
+        "mot": " on",
+        "debut": 199.05,
+        "fin": 199.13,
+        "probabilite": 0.9988
+      },
+      {
+        "mot": " va",
+        "debut": 199.13,
+        "fin": 199.23,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " commencer",
+        "debut": 199.23,
+        "fin": 199.59,
+        "probabilite": 0.998
+      },
+      {
+        "mot": " avec",
+        "debut": 199.59,
+        "fin": 199.97,
+        "probabilite": 0.9969
+      },
+      {
+        "mot": " les",
+        "debut": 199.97,
+        "fin": 200.19,
+        "probabilite": 0.9946
+      },
+      {
+        "mot": " réserves",
+        "debut": 200.19,
+        "fin": 200.57,
+        "probabilite": 0.9696
+      },
+      {
+        "mot": " pro",
+        "debut": 200.57,
+        "fin": 200.79,
+        "probabilite": 0.8625
+      },
+      {
+        "mot": " je",
+        "debut": 200.79,
+        "fin": 201.21,
+        "probabilite": 0.9651
+      },
+      {
+        "mot": " dis",
+        "debut": 201.21,
+        "fin": 201.37,
+        "probabilite": 0.8441
+      },
+      {
+        "mot": " les",
+        "debut": 201.37,
+        "fin": 201.55,
+        "probabilite": 0.88
+      }
+    ]
+  },
+  {
+    "debut": 201.55,
+    "fin": 207.15,
+    "texte": "parce que bien évidemment il y en a plusieurs pour commencer bien évidemment la réserve du",
+    "mots": [
+      {
+        "mot": " parce",
+        "debut": 201.55,
+        "fin": 201.99,
+        "probabilite": 0.9831
+      },
+      {
+        "mot": " que",
+        "debut": 201.99,
+        "fin": 202.09,
+        "probabilite": 0.9924
+      },
+      {
+        "mot": " bien",
+        "debut": 202.09,
+        "fin": 202.21,
+        "probabilite": 0.9988
+      },
+      {
+        "mot": " évidemment",
+        "debut": 202.21,
+        "fin": 202.59,
+        "probabilite": 0.997
+      },
+      {
+        "mot": " il",
+        "debut": 202.59,
+        "fin": 202.91,
+        "probabilite": 0.9768
+      },
+      {
+        "mot": " y",
+        "debut": 202.91,
+        "fin": 202.93,
+        "probabilite": 0.9932
+      },
+      {
+        "mot": " en",
+        "debut": 202.93,
+        "fin": 202.99,
+        "probabilite": 0.9975
+      },
+      {
+        "mot": " a",
+        "debut": 202.99,
+        "fin": 203.07,
+        "probabilite": 0.9879
+      },
+      {
+        "mot": " plusieurs",
+        "debut": 203.07,
+        "fin": 203.41,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " pour",
+        "debut": 203.41,
+        "fin": 204.11,
+        "probabilite": 0.9915
+      },
+      {
+        "mot": " commencer",
+        "debut": 204.11,
+        "fin": 204.51,
+        "probabilite": 0.9954
+      },
+      {
+        "mot": " bien",
+        "debut": 204.51,
+        "fin": 205.05,
+        "probabilite": 0.9938
+      },
+      {
+        "mot": " évidemment",
+        "debut": 205.05,
+        "fin": 205.47,
+        "probabilite": 0.9969
+      },
+      {
+        "mot": " la",
+        "debut": 205.47,
+        "fin": 206.13,
+        "probabilite": 0.9969
+      },
+      {
+        "mot": " réserve",
+        "debut": 206.13,
+        "fin": 206.71,
+        "probabilite": 0.9968
+      },
+      {
+        "mot": " du",
+        "debut": 206.71,
+        "fin": 207.15,
+        "probabilite": 0.9562
+      }
+    ]
+  },
+  {
+    "debut": 207.15,
+    "fin": 213.23,
+    "texte": "mhc qui sera présente où on va peut-être rencontrer le frérot napsou qui a signé l'année dernière",
+    "mots": [
+      {
+        "mot": " mhc",
+        "debut": 207.15,
+        "fin": 207.69,
+        "probabilite": 0.8445
+      },
+      {
+        "mot": " qui",
+        "debut": 207.69,
+        "fin": 208.03,
+        "probabilite": 0.951
+      },
+      {
+        "mot": " sera",
+        "debut": 208.03,
+        "fin": 208.27,
+        "probabilite": 0.9894
+      },
+      {
+        "mot": " présente",
+        "debut": 208.27,
+        "fin": 208.79,
+        "probabilite": 0.9938
+      },
+      {
+        "mot": " où",
+        "debut": 208.79,
+        "fin": 209.23,
+        "probabilite": 0.8098
+      },
+      {
+        "mot": " on",
+        "debut": 209.23,
+        "fin": 209.35,
+        "probabilite": 0.9283
+      },
+      {
+        "mot": " va",
+        "debut": 209.35,
+        "fin": 209.47,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " peut",
+        "debut": 209.47,
+        "fin": 209.65,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": "-être",
+        "debut": 209.65,
+        "fin": 209.77,
+        "probabilite": 0.99
+      },
+      {
+        "mot": " rencontrer",
+        "debut": 209.77,
+        "fin": 210.33,
+        "probabilite": 0.9357
+      },
+      {
+        "mot": " le",
+        "debut": 210.33,
+        "fin": 210.89,
+        "probabilite": 0.8813
+      },
+      {
+        "mot": " frérot",
+        "debut": 210.89,
+        "fin": 211.29,
+        "probabilite": 0.9298
+      },
+      {
+        "mot": " napsou",
+        "debut": 211.29,
+        "fin": 211.85,
+        "probabilite": 0.703
+      },
+      {
+        "mot": " qui",
+        "debut": 211.85,
+        "fin": 212.35,
+        "probabilite": 0.989
+      },
+      {
+        "mot": " a",
+        "debut": 212.35,
+        "fin": 212.47,
+        "probabilite": 0.9581
+      },
+      {
+        "mot": " signé",
+        "debut": 212.47,
+        "fin": 212.75,
+        "probabilite": 0.9831
+      },
+      {
+        "mot": " l",
+        "debut": 212.75,
+        "fin": 212.83,
+        "probabilite": 0.9903
+      },
+      {
+        "mot": "'année",
+        "debut": 212.83,
+        "fin": 212.89,
+        "probabilite": 0.9978
+      },
+      {
+        "mot": " dernière",
+        "debut": 212.89,
+        "fin": 213.23,
+        "probabilite": 0.9932
+      }
+    ]
+  },
+  {
+    "debut": 213.23,
+    "fin": 218.59,
+    "texte": "avec la ligue 2 et qui fait quelques apparitions avec l'équipe réserve ensuite on a la réserve",
+    "mots": [
+      {
+        "mot": " avec",
+        "debut": 213.23,
+        "fin": 213.79,
+        "probabilite": 0.7805
+      },
+      {
+        "mot": " la",
+        "debut": 213.79,
+        "fin": 213.95,
+        "probabilite": 0.9753
+      },
+      {
+        "mot": " ligue",
+        "debut": 213.95,
+        "fin": 214.21,
+        "probabilite": 0.8872
+      },
+      {
+        "mot": " 2",
+        "debut": 214.21,
+        "fin": 214.33,
+        "probabilite": 0.8739
+      },
+      {
+        "mot": " et",
+        "debut": 214.33,
+        "fin": 214.79,
+        "probabilite": 0.9274
+      },
+      {
+        "mot": " qui",
+        "debut": 214.79,
+        "fin": 214.93,
+        "probabilite": 0.7806
+      },
+      {
+        "mot": " fait",
+        "debut": 214.93,
+        "fin": 215.09,
+        "probabilite": 0.9064
+      },
+      {
+        "mot": " quelques",
+        "debut": 215.09,
+        "fin": 215.35,
+        "probabilite": 0.9931
+      },
+      {
+        "mot": " apparitions",
+        "debut": 215.35,
+        "fin": 215.89,
+        "probabilite": 0.9941
+      },
+      {
+        "mot": " avec",
+        "debut": 215.89,
+        "fin": 216.05,
+        "probabilite": 0.9785
+      },
+      {
+        "mot": " l",
+        "debut": 216.05,
+        "fin": 216.19,
+        "probabilite": 0.9815
+      },
+      {
+        "mot": "'équipe",
+        "debut": 216.19,
+        "fin": 216.43,
+        "probabilite": 0.9946
+      },
+      {
+        "mot": " réserve",
+        "debut": 216.43,
+        "fin": 216.81,
+        "probabilite": 0.9454
+      },
+      {
+        "mot": " ensuite",
+        "debut": 216.81,
+        "fin": 217.27,
+        "probabilite": 0.6131
+      },
+      {
+        "mot": " on",
+        "debut": 217.27,
+        "fin": 217.83,
+        "probabilite": 0.9825
+      },
+      {
+        "mot": " a",
+        "debut": 217.83,
+        "fin": 217.95,
+        "probabilite": 0.7085
+      },
+      {
+        "mot": " la",
+        "debut": 217.95,
+        "fin": 218.09,
+        "probabilite": 0.9963
+      },
+      {
+        "mot": " réserve",
+        "debut": 218.09,
+        "fin": 218.59,
+        "probabilite": 0.997
+      }
+    ]
+  },
+  {
+    "debut": 218.59,
+    "fin": 224.31,
+    "texte": "de l' olympique marseille qui sera également dans la poule et pour finir en tant que lyonnais",
+    "mots": [
+      {
+        "mot": " de",
+        "debut": 218.59,
+        "fin": 218.77,
+        "probabilite": 0.9886
+      },
+      {
+        "mot": " l'",
+        "debut": 218.77,
+        "fin": 218.91,
+        "probabilite": 0.994
+      },
+      {
+        "mot": " olympique",
+        "debut": 218.97,
+        "fin": 219.35,
+        "probabilite": 0.7946
+      },
+      {
+        "mot": " marseille",
+        "debut": 219.35,
+        "fin": 219.77,
+        "probabilite": 0.9436
+      },
+      {
+        "mot": " qui",
+        "debut": 219.77,
+        "fin": 219.93,
+        "probabilite": 0.9941
+      },
+      {
+        "mot": " sera",
+        "debut": 219.93,
+        "fin": 220.17,
+        "probabilite": 0.9837
+      },
+      {
+        "mot": " également",
+        "debut": 220.17,
+        "fin": 220.57,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " dans",
+        "debut": 220.57,
+        "fin": 221.37,
+        "probabilite": 0.9989
+      },
+      {
+        "mot": " la",
+        "debut": 221.37,
+        "fin": 221.53,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " poule",
+        "debut": 221.53,
+        "fin": 221.89,
+        "probabilite": 0.9843
+      },
+      {
+        "mot": " et",
+        "debut": 221.89,
+        "fin": 222.37,
+        "probabilite": 0.9839
+      },
+      {
+        "mot": " pour",
+        "debut": 222.37,
+        "fin": 222.57,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " finir",
+        "debut": 222.57,
+        "fin": 223.05,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " en",
+        "debut": 223.05,
+        "fin": 223.57,
+        "probabilite": 0.9848
+      },
+      {
+        "mot": " tant",
+        "debut": 223.57,
+        "fin": 223.67,
+        "probabilite": 0.9904
+      },
+      {
+        "mot": " que",
+        "debut": 223.67,
+        "fin": 223.85,
+        "probabilite": 0.9899
+      },
+      {
+        "mot": " lyonnais",
+        "debut": 223.85,
+        "fin": 224.31,
+        "probabilite": 0.9849
+      }
+    ]
+  },
+  {
+    "debut": 224.31,
+    "fin": 229.65,
+    "texte": "bien évidemment la réserve de la s saint etienne qui sera parmi nous aussi",
+    "mots": [
+      {
+        "mot": " bien",
+        "debut": 224.31,
+        "fin": 224.73,
+        "probabilite": 0.9781
+      },
+      {
+        "mot": " évidemment",
+        "debut": 224.73,
+        "fin": 225.19,
+        "probabilite": 0.9961
+      },
+      {
+        "mot": " la",
+        "debut": 225.19,
+        "fin": 225.85,
+        "probabilite": 0.9942
+      },
+      {
+        "mot": " réserve",
+        "debut": 225.85,
+        "fin": 226.41,
+        "probabilite": 0.9973
+      },
+      {
+        "mot": " de",
+        "debut": 226.41,
+        "fin": 226.55,
+        "probabilite": 0.9863
+      },
+      {
+        "mot": " la",
+        "debut": 226.55,
+        "fin": 226.77,
+        "probabilite": 0.4011
+      },
+      {
+        "mot": " s",
+        "debut": 226.77,
+        "fin": 227.09,
+        "probabilite": 0.6554
+      },
+      {
+        "mot": " saint",
+        "debut": 227.09,
+        "fin": 227.47,
+        "probabilite": 0.6301
+      },
+      {
+        "mot": " etienne",
+        "debut": 227.47,
+        "fin": 227.91,
+        "probabilite": 0.8112
+      },
+      {
+        "mot": " qui",
+        "debut": 227.91,
+        "fin": 228.33,
+        "probabilite": 0.9962
+      },
+      {
+        "mot": " sera",
+        "debut": 228.33,
+        "fin": 228.67,
+        "probabilite": 0.9835
+      },
+      {
+        "mot": " parmi",
+        "debut": 228.67,
+        "fin": 229.25,
+        "probabilite": 0.9967
+      },
+      {
+        "mot": " nous",
+        "debut": 229.25,
+        "fin": 229.39,
+        "probabilite": 0.9873
+      },
+      {
+        "mot": " aussi",
+        "debut": 229.39,
+        "fin": 229.65,
+        "probabilite": 0.9945
+      }
+    ]
+  }
+]

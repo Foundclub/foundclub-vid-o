@@ -1,0 +1,11 @@
+{
+  "numero": 6,
+  "recadrage": "visage",
+  "raison_recadrage": "Visage unique",
+  "tailles_octets": {
+    "horizontal": 13315120,
+    "vertical": 27844374
+  },
+  "debit_reduit": [],
+  "duree_calcul": 98.75
+}

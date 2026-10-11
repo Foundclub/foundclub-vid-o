@@ -1,0 +1,739 @@
+{
+  "numero": 7,
+  "format": "horizontal",
+  "sha256": "5f4737a27f5f20f82de730db342f19d00bc16b1973e3a674b439a76a776924aa",
+  "texte_prevu_sha256": "7922e6927d03cadb2ba6e82c2fafb1ae6ad45d3ae3e02d7f2e91fcc29144b4f0",
+  "verification": "Derniers mots différents dans la retranscription",
+  "modele_verification": "turbo",
+  "vad": true,
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "je",
+    "coupe",
+    "ce",
+    "doigt"
+  ],
+  "derniers_mots_attendus": [
+    "200",
+    "patates",
+    "mon",
+    "frere"
+  ],
+  "premiers_mots_reconnus": [
+    "je",
+    "coupe",
+    "ce",
+    "doigt"
+  ],
+  "derniers_mots_reconnus": [
+    "est",
+    "encore",
+    "200",
+    "patates"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": false,
+  "transcription": [
+    {
+      "debut": 0.0,
+      "fin": 1.54,
+      "texte": "Je coupe ce doigt.",
+      "mots": [
+        {
+          "mot": " Je",
+          "debut": 0.0,
+          "fin": 0.24
+        },
+        {
+          "mot": " coupe",
+          "debut": 0.24,
+          "fin": 0.48
+        },
+        {
+          "mot": " ce",
+          "debut": 0.48,
+          "fin": 1.26
+        },
+        {
+          "mot": " doigt.",
+          "debut": 1.26,
+          "fin": 1.54
+        }
+      ]
+    },
+    {
+      "debut": 2.58,
+      "fin": 3.22,
+      "texte": "Justin ?",
+      "mots": [
+        {
+          "mot": " Justin",
+          "debut": 2.58,
+          "fin": 2.9
+        },
+        {
+          "mot": " ?",
+          "debut": 2.9,
+          "fin": 3.22
+        }
+      ]
+    },
+    {
+      "debut": 3.22,
+      "fin": 3.72,
+      "texte": "Lesquels ?",
+      "mots": [
+        {
+          "mot": " Lesquels",
+          "debut": 3.22,
+          "fin": 3.64
+        },
+        {
+          "mot": " ?",
+          "debut": 3.64,
+          "fin": 3.72
+        }
+      ]
+    },
+    {
+      "debut": 3.72,
+      "fin": 4.16,
+      "texte": "Ce doigt.",
+      "mots": [
+        {
+          "mot": " Ce",
+          "debut": 3.72,
+          "fin": 3.88
+        },
+        {
+          "mot": " doigt.",
+          "debut": 3.88,
+          "fin": 4.16
+        }
+      ]
+    },
+    {
+      "debut": 5.1,
+      "fin": 6.38,
+      "texte": "Non, je ne peux plus faire le signe.",
+      "mots": [
+        {
+          "mot": " Non,",
+          "debut": 5.1,
+          "fin": 5.22
+        },
+        {
+          "mot": " je",
+          "debut": 5.36,
+          "fin": 5.5
+        },
+        {
+          "mot": " ne",
+          "debut": 5.5,
+          "fin": 5.64
+        },
+        {
+          "mot": " peux",
+          "debut": 5.64,
+          "fin": 5.64
+        },
+        {
+          "mot": " plus",
+          "debut": 5.64,
+          "fin": 5.8
+        },
+        {
+          "mot": " faire",
+          "debut": 5.8,
+          "fin": 5.96
+        },
+        {
+          "mot": " le",
+          "debut": 5.96,
+          "fin": 6.14
+        },
+        {
+          "mot": " signe.",
+          "debut": 6.14,
+          "fin": 6.38
+        }
+      ]
+    },
+    {
+      "debut": 7.1,
+      "fin": 9.08,
+      "texte": "Rousla coupe les deux là, je dirais comme ça.",
+      "mots": [
+        {
+          "mot": " Rousla",
+          "debut": 7.1,
+          "fin": 7.42
+        },
+        {
+          "mot": " coupe",
+          "debut": 7.42,
+          "fin": 7.64
+        },
+        {
+          "mot": " les",
+          "debut": 7.64,
+          "fin": 7.78
+        },
+        {
+          "mot": " deux",
+          "debut": 7.78,
+          "fin": 7.94
+        },
+        {
+          "mot": " là,",
+          "debut": 7.94,
+          "fin": 8.08
+        },
+        {
+          "mot": " je",
+          "debut": 8.44,
+          "fin": 8.58
+        },
+        {
+          "mot": " dirais",
+          "debut": 8.58,
+          "fin": 8.68
+        },
+        {
+          "mot": " comme",
+          "debut": 8.68,
+          "fin": 8.92
+        },
+        {
+          "mot": " ça.",
+          "debut": 8.92,
+          "fin": 9.08
+        }
+      ]
+    },
+    {
+      "debut": 10.44,
+      "fin": 11.16,
+      "texte": "Coupe là et là.",
+      "mots": [
+        {
+          "mot": " Coupe",
+          "debut": 10.44,
+          "fin": 10.76
+        },
+        {
+          "mot": " là",
+          "debut": 10.76,
+          "fin": 10.9
+        },
+        {
+          "mot": " et",
+          "debut": 10.9,
+          "fin": 11.04
+        },
+        {
+          "mot": " là.",
+          "debut": 11.04,
+          "fin": 11.16
+        }
+      ]
+    },
+    {
+      "debut": 11.44,
+      "fin": 13.0,
+      "texte": "Non, Rousla 200 000, Rousla j'en coupe.",
+      "mots": [
+        {
+          "mot": " Non,",
+          "debut": 11.44,
+          "fin": 11.58
+        },
+        {
+          "mot": " Rousla",
+          "debut": 11.7,
+          "fin": 11.9
+        },
+        {
+          "mot": " 200",
+          "debut": 11.9,
+          "fin": 12.22
+        },
+        {
+          "mot": " 000,",
+          "debut": 12.22,
+          "fin": 12.38
+        },
+        {
+          "mot": " Rousla",
+          "debut": 12.5,
+          "fin": 12.68
+        },
+        {
+          "mot": " j",
+          "debut": 12.68,
+          "fin": 12.8
+        },
+        {
+          "mot": "'en",
+          "debut": 12.8,
+          "fin": 12.84
+        },
+        {
+          "mot": " coupe.",
+          "debut": 12.84,
+          "fin": 13.0
+        }
+      ]
+    },
+    {
+      "debut": 13.34,
+      "fin": 14.82,
+      "texte": "Tu coupe lesquels ? Tu coupes ces deux là ?",
+      "mots": [
+        {
+          "mot": " Tu",
+          "debut": 13.34,
+          "fin": 13.66
+        },
+        {
+          "mot": " coupe",
+          "debut": 13.66,
+          "fin": 13.84
+        },
+        {
+          "mot": " lesquels",
+          "debut": 13.84,
+          "fin": 14.08
+        },
+        {
+          "mot": " ?",
+          "debut": 14.08,
+          "fin": 14.22
+        },
+        {
+          "mot": " Tu",
+          "debut": 14.22,
+          "fin": 14.22
+        },
+        {
+          "mot": " coupes",
+          "debut": 14.22,
+          "fin": 14.32
+        },
+        {
+          "mot": " ces",
+          "debut": 14.32,
+          "fin": 14.42
+        },
+        {
+          "mot": " deux",
+          "debut": 14.42,
+          "fin": 14.54
+        },
+        {
+          "mot": " là",
+          "debut": 14.54,
+          "fin": 14.66
+        },
+        {
+          "mot": " ?",
+          "debut": 14.66,
+          "fin": 14.82
+        }
+      ]
+    },
+    {
+      "debut": 14.82,
+      "fin": 15.88,
+      "texte": "Non, le Toubchi, il ne sert à rien.",
+      "mots": [
+        {
+          "mot": " Non,",
+          "debut": 14.82,
+          "fin": 14.94
+        },
+        {
+          "mot": " le",
+          "debut": 15.08,
+          "fin": 15.2
+        },
+        {
+          "mot": " Toubchi,",
+          "debut": 15.2,
+          "fin": 15.44
+        },
+        {
+          "mot": " il",
+          "debut": 15.54,
+          "fin": 15.58
+        },
+        {
+          "mot": " ne",
+          "debut": 15.58,
+          "fin": 15.62
+        },
+        {
+          "mot": " sert",
+          "debut": 15.62,
+          "fin": 15.66
+        },
+        {
+          "mot": " à",
+          "debut": 15.66,
+          "fin": 15.7
+        },
+        {
+          "mot": " rien.",
+          "debut": 15.7,
+          "fin": 15.88
+        }
+      ]
+    },
+    {
+      "debut": 17.06,
+      "fin": 20.0,
+      "texte": "Rousla, même sur la plaie, il ne sert à rien, il est juste procédé.",
+      "mots": [
+        {
+          "mot": " Rousla,",
+          "debut": 17.06,
+          "fin": 17.38
+        },
+        {
+          "mot": " même",
+          "debut": 17.7,
+          "fin": 17.82
+        },
+        {
+          "mot": " sur",
+          "debut": 17.82,
+          "fin": 18.34
+        },
+        {
+          "mot": " la",
+          "debut": 18.34,
+          "fin": 18.52
+        },
+        {
+          "mot": " plaie,",
+          "debut": 18.52,
+          "fin": 18.74
+        },
+        {
+          "mot": " il",
+          "debut": 18.88,
+          "fin": 19.1
+        },
+        {
+          "mot": " ne",
+          "debut": 19.1,
+          "fin": 19.14
+        },
+        {
+          "mot": " sert",
+          "debut": 19.14,
+          "fin": 19.14
+        },
+        {
+          "mot": " à",
+          "debut": 19.14,
+          "fin": 19.22
+        },
+        {
+          "mot": " rien,",
+          "debut": 19.22,
+          "fin": 19.34
+        },
+        {
+          "mot": " il",
+          "debut": 19.38,
+          "fin": 19.42
+        },
+        {
+          "mot": " est",
+          "debut": 19.42,
+          "fin": 19.5
+        },
+        {
+          "mot": " juste",
+          "debut": 19.5,
+          "fin": 19.62
+        },
+        {
+          "mot": " procédé.",
+          "debut": 19.62,
+          "fin": 20.0
+        }
+      ]
+    },
+    {
+      "debut": 24.6,
+      "fin": 26.14,
+      "texte": "Putain, tu en coupes ça, 200 000 ?",
+      "mots": [
+        {
+          "mot": " Putain,",
+          "debut": 24.6,
+          "fin": 24.92
+        },
+        {
+          "mot": " tu",
+          "debut": 25.02,
+          "fin": 25.06
+        },
+        {
+          "mot": " en",
+          "debut": 25.06,
+          "fin": 25.1
+        },
+        {
+          "mot": " coupes",
+          "debut": 25.1,
+          "fin": 25.3
+        },
+        {
+          "mot": " ça,",
+          "debut": 25.3,
+          "fin": 25.46
+        },
+        {
+          "mot": " 200",
+          "debut": 25.52,
+          "fin": 25.7
+        },
+        {
+          "mot": " 000",
+          "debut": 25.7,
+          "fin": 25.94
+        },
+        {
+          "mot": " ?",
+          "debut": 25.94,
+          "fin": 26.14
+        }
+      ]
+    },
+    {
+      "debut": 26.14,
+      "fin": 27.38,
+      "texte": "Non, jamais, rien de mentir.",
+      "mots": [
+        {
+          "mot": " Non,",
+          "debut": 26.14,
+          "fin": 26.28
+        },
+        {
+          "mot": " jamais,",
+          "debut": 26.6,
+          "fin": 26.6
+        },
+        {
+          "mot": " rien",
+          "debut": 26.72,
+          "fin": 26.82
+        },
+        {
+          "mot": " de",
+          "debut": 26.82,
+          "fin": 27.22
+        },
+        {
+          "mot": " mentir.",
+          "debut": 27.22,
+          "fin": 27.38
+        }
+      ]
+    },
+    {
+      "debut": 27.62,
+      "fin": 28.88,
+      "texte": "Rousla que jamais, frère, tu es fou.",
+      "mots": [
+        {
+          "mot": " Rousla",
+          "debut": 27.62,
+          "fin": 27.94
+        },
+        {
+          "mot": " que",
+          "debut": 27.94,
+          "fin": 28.04
+        },
+        {
+          "mot": " jamais,",
+          "debut": 28.04,
+          "fin": 28.18
+        },
+        {
+          "mot": " frère,",
+          "debut": 28.4,
+          "fin": 28.5
+        },
+        {
+          "mot": " tu",
+          "debut": 28.58,
+          "fin": 28.64
+        },
+        {
+          "mot": " es",
+          "debut": 28.64,
+          "fin": 28.72
+        },
+        {
+          "mot": " fou.",
+          "debut": 28.72,
+          "fin": 28.88
+        }
+      ]
+    },
+    {
+      "debut": 28.88,
+      "fin": 30.08,
+      "texte": "C'est encore 200 patates.",
+      "mots": [
+        {
+          "mot": " C",
+          "debut": 28.88,
+          "fin": 29.34
+        },
+        {
+          "mot": "'est",
+          "debut": 29.34,
+          "fin": 29.4
+        },
+        {
+          "mot": " encore",
+          "debut": 29.4,
+          "fin": 29.64
+        },
+        {
+          "mot": " 200",
+          "debut": 29.64,
+          "fin": 29.64
+        },
+        {
+          "mot": " patates.",
+          "debut": 29.64,
+          "fin": 30.08
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {
+    "fin": [
+      {
+        "debut": 2.06,
+        "fin": 3.5,
+        "texte": "T'en coupe ça à 200 000.",
+        "mots": [
+          {
+            "mot": " T",
+            "debut": 2.06,
+            "fin": 2.38
+          },
+          {
+            "mot": "'en",
+            "debut": 2.38,
+            "fin": 2.62
+          },
+          {
+            "mot": " coupe",
+            "debut": 2.62,
+            "fin": 2.8
+          },
+          {
+            "mot": " ça",
+            "debut": 2.8,
+            "fin": 2.96
+          },
+          {
+            "mot": " à",
+            "debut": 2.96,
+            "fin": 3.06
+          },
+          {
+            "mot": " 200",
+            "debut": 3.06,
+            "fin": 3.28
+          },
+          {
+            "mot": " 000.",
+            "debut": 3.28,
+            "fin": 3.5
+          }
+        ]
+      },
+      {
+        "debut": 3.66,
+        "fin": 4.12,
+        "texte": "Non, jamais.",
+        "mots": [
+          {
+            "mot": " Non,",
+            "debut": 3.66,
+            "fin": 3.82
+          },
+          {
+            "mot": " jamais.",
+            "debut": 3.9,
+            "fin": 4.12
+          }
+        ]
+      },
+      {
+        "debut": 5.08,
+        "fin": 6.1,
+        "texte": "Voilà que jamais, frère.",
+        "mots": [
+          {
+            "mot": " Voilà",
+            "debut": 5.08,
+            "fin": 5.4
+          },
+          {
+            "mot": " que",
+            "debut": 5.4,
+            "fin": 5.56
+          },
+          {
+            "mot": " jamais,",
+            "debut": 5.56,
+            "fin": 5.72
+          },
+          {
+            "mot": " frère.",
+            "debut": 5.94,
+            "fin": 6.1
+          }
+        ]
+      },
+      {
+        "debut": 6.94,
+        "fin": 7.72,
+        "texte": "200 patates, man.",
+        "mots": [
+          {
+            "mot": " 200",
+            "debut": 6.94,
+            "fin": 7.26
+          },
+          {
+            "mot": " patates,",
+            "debut": 7.26,
+            "fin": 7.58
+          },
+          {
+            "mot": " man.",
+            "debut": 7.66,
+            "fin": 7.72
+          }
+        ]
+      }
+    ]
+  },
+  "lufs": -14.01,
+  "pic_vrai_db": -1.26,
+  "duree": 30.466667,
+  "taille_octets": 18292877
+}

@@ -1,0 +1,870 @@
+{
+  "numero": 7,
+  "format": "vertical",
+  "sha256": "686e01209345960f1651b7a6ddf2d5e60c980b3edfce86886565743cf73eb6d8",
+  "texte_prevu_sha256": "ff50f1c8b121b658b44f085e7a4afee4e1312b62e13c5c552b17a57e9b245be1",
+  "verification": "Derniers mots différents dans la retranscription",
+  "modele_verification": "large-v3",
+  "vad": false,
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "je",
+    "coupe",
+    "ce",
+    "doigt"
+  ],
+  "derniers_mots_attendus": [
+    "l",
+    "arrache",
+    "comme",
+    "ca"
+  ],
+  "premiers_mots_reconnus": [
+    "je",
+    "coupe",
+    "ce",
+    "doigt"
+  ],
+  "derniers_mots_reconnus": [
+    "avais",
+    "dit",
+    "je",
+    "commence"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": false,
+  "transcription": [
+    {
+      "debut": 0.0,
+      "fin": 1.46,
+      "texte": "Je coupe ce doigt.",
+      "mots": [
+        {
+          "mot": " Je",
+          "debut": 0.0,
+          "fin": 0.14
+        },
+        {
+          "mot": " coupe",
+          "debut": 0.14,
+          "fin": 0.34
+        },
+        {
+          "mot": " ce",
+          "debut": 0.34,
+          "fin": 1.1
+        },
+        {
+          "mot": " doigt.",
+          "debut": 1.1,
+          "fin": 1.46
+        }
+      ]
+    },
+    {
+      "debut": 2.28,
+      "fin": 2.78,
+      "texte": "Juste un ?",
+      "mots": [
+        {
+          "mot": " Juste",
+          "debut": 2.28,
+          "fin": 2.6
+        },
+        {
+          "mot": " un",
+          "debut": 2.6,
+          "fin": 2.64
+        },
+        {
+          "mot": " ?",
+          "debut": 2.64,
+          "fin": 2.78
+        }
+      ]
+    },
+    {
+      "debut": 3.2,
+      "fin": 3.7,
+      "texte": "Lequel ?",
+      "mots": [
+        {
+          "mot": " Lequel",
+          "debut": 3.2,
+          "fin": 3.52
+        },
+        {
+          "mot": " ?",
+          "debut": 3.52,
+          "fin": 3.7
+        }
+      ]
+    },
+    {
+      "debut": 3.7,
+      "fin": 4.08,
+      "texte": "Et ce doigt.",
+      "mots": [
+        {
+          "mot": " Et",
+          "debut": 3.7,
+          "fin": 3.78
+        },
+        {
+          "mot": " ce",
+          "debut": 3.78,
+          "fin": 3.78
+        },
+        {
+          "mot": " doigt.",
+          "debut": 3.78,
+          "fin": 4.08
+        }
+      ]
+    },
+    {
+      "debut": 4.88,
+      "fin": 6.34,
+      "texte": "Non, je peux plus faire le signal.",
+      "mots": [
+        {
+          "mot": " Non,",
+          "debut": 4.88,
+          "fin": 5.2
+        },
+        {
+          "mot": " je",
+          "debut": 5.2,
+          "fin": 5.46
+        },
+        {
+          "mot": " peux",
+          "debut": 5.46,
+          "fin": 5.6
+        },
+        {
+          "mot": " plus",
+          "debut": 5.6,
+          "fin": 5.78
+        },
+        {
+          "mot": " faire",
+          "debut": 5.78,
+          "fin": 5.96
+        },
+        {
+          "mot": " le",
+          "debut": 5.96,
+          "fin": 6.08
+        },
+        {
+          "mot": " signal.",
+          "debut": 6.08,
+          "fin": 6.34
+        }
+      ]
+    },
+    {
+      "debut": 6.9,
+      "fin": 8.02,
+      "texte": "On la coupe les deux, là.",
+      "mots": [
+        {
+          "mot": " On",
+          "debut": 6.9,
+          "fin": 7.22
+        },
+        {
+          "mot": " la",
+          "debut": 7.22,
+          "fin": 7.32
+        },
+        {
+          "mot": " coupe",
+          "debut": 7.32,
+          "fin": 7.52
+        },
+        {
+          "mot": " les",
+          "debut": 7.52,
+          "fin": 7.72
+        },
+        {
+          "mot": " deux,",
+          "debut": 7.72,
+          "fin": 7.9
+        },
+        {
+          "mot": " là.",
+          "debut": 8.0,
+          "fin": 8.02
+        }
+      ]
+    },
+    {
+      "debut": 8.28,
+      "fin": 8.96,
+      "texte": "Je dirais comme ça.",
+      "mots": [
+        {
+          "mot": " Je",
+          "debut": 8.28,
+          "fin": 8.44
+        },
+        {
+          "mot": " dirais",
+          "debut": 8.44,
+          "fin": 8.66
+        },
+        {
+          "mot": " comme",
+          "debut": 8.66,
+          "fin": 8.82
+        },
+        {
+          "mot": " ça.",
+          "debut": 8.82,
+          "fin": 8.96
+        }
+      ]
+    },
+    {
+      "debut": 9.98,
+      "fin": 11.04,
+      "texte": "Eh ben, coupe-la et là.",
+      "mots": [
+        {
+          "mot": " Eh",
+          "debut": 9.98,
+          "fin": 10.3
+        },
+        {
+          "mot": " ben,",
+          "debut": 10.3,
+          "fin": 10.44
+        },
+        {
+          "mot": " coupe",
+          "debut": 10.46,
+          "fin": 10.62
+        },
+        {
+          "mot": "-la",
+          "debut": 10.62,
+          "fin": 10.82
+        },
+        {
+          "mot": " et",
+          "debut": 10.82,
+          "fin": 10.92
+        },
+        {
+          "mot": " là.",
+          "debut": 10.92,
+          "fin": 11.04
+        }
+      ]
+    },
+    {
+      "debut": 11.28,
+      "fin": 12.94,
+      "texte": "Non, on la, 200 000, on la, j'en coupe.",
+      "mots": [
+        {
+          "mot": " Non,",
+          "debut": 11.28,
+          "fin": 11.56
+        },
+        {
+          "mot": " on",
+          "debut": 11.62,
+          "fin": 11.7
+        },
+        {
+          "mot": " la,",
+          "debut": 11.7,
+          "fin": 11.86
+        },
+        {
+          "mot": " 200",
+          "debut": 11.9,
+          "fin": 12.06
+        },
+        {
+          "mot": " 000,",
+          "debut": 12.06,
+          "fin": 12.34
+        },
+        {
+          "mot": " on",
+          "debut": 12.36,
+          "fin": 12.46
+        },
+        {
+          "mot": " la,",
+          "debut": 12.46,
+          "fin": 12.66
+        },
+        {
+          "mot": " j",
+          "debut": 12.7,
+          "fin": 12.76
+        },
+        {
+          "mot": "'en",
+          "debut": 12.76,
+          "fin": 12.82
+        },
+        {
+          "mot": " coupe.",
+          "debut": 12.82,
+          "fin": 12.94
+        }
+      ]
+    },
+    {
+      "debut": 13.26,
+      "fin": 14.8,
+      "texte": "Tu coupes lesquels ? Tu coupes ces deux-là, là ?",
+      "mots": [
+        {
+          "mot": " Tu",
+          "debut": 13.26,
+          "fin": 13.58
+        },
+        {
+          "mot": " coupes",
+          "debut": 13.58,
+          "fin": 13.84
+        },
+        {
+          "mot": " lesquels",
+          "debut": 13.84,
+          "fin": 14.0
+        },
+        {
+          "mot": " ?",
+          "debut": 14.0,
+          "fin": 14.1
+        },
+        {
+          "mot": " Tu",
+          "debut": 14.1,
+          "fin": 14.18
+        },
+        {
+          "mot": " coupes",
+          "debut": 14.18,
+          "fin": 14.32
+        },
+        {
+          "mot": " ces",
+          "debut": 14.32,
+          "fin": 14.36
+        },
+        {
+          "mot": " deux",
+          "debut": 14.36,
+          "fin": 14.52
+        },
+        {
+          "mot": "-là,",
+          "debut": 14.52,
+          "fin": 14.62
+        },
+        {
+          "mot": " là",
+          "debut": 14.68,
+          "fin": 14.8
+        },
+        {
+          "mot": " ?",
+          "debut": 14.8,
+          "fin": 14.8
+        }
+      ]
+    },
+    {
+      "debut": 14.8,
+      "fin": 16.02,
+      "texte": "Non, le tout petit, il sert à rien, lui.",
+      "mots": [
+        {
+          "mot": " Non,",
+          "debut": 14.8,
+          "fin": 14.94
+        },
+        {
+          "mot": " le",
+          "debut": 14.96,
+          "fin": 15.2
+        },
+        {
+          "mot": " tout",
+          "debut": 15.2,
+          "fin": 15.22
+        },
+        {
+          "mot": " petit,",
+          "debut": 15.22,
+          "fin": 15.38
+        },
+        {
+          "mot": " il",
+          "debut": 15.48,
+          "fin": 15.56
+        },
+        {
+          "mot": " sert",
+          "debut": 15.56,
+          "fin": 15.6
+        },
+        {
+          "mot": " à",
+          "debut": 15.6,
+          "fin": 15.72
+        },
+        {
+          "mot": " rien,",
+          "debut": 15.72,
+          "fin": 15.84
+        },
+        {
+          "mot": " lui.",
+          "debut": 15.92,
+          "fin": 16.02
+        }
+      ]
+    },
+    {
+      "debut": 17.0,
+      "fin": 19.3,
+      "texte": "Il est même sur la plaie et tout, il sert à rien.",
+      "mots": [
+        {
+          "mot": " Il",
+          "debut": 17.0,
+          "fin": 17.32
+        },
+        {
+          "mot": " est",
+          "debut": 17.32,
+          "fin": 17.64
+        },
+        {
+          "mot": " même",
+          "debut": 17.64,
+          "fin": 17.82
+        },
+        {
+          "mot": " sur",
+          "debut": 17.82,
+          "fin": 18.26
+        },
+        {
+          "mot": " la",
+          "debut": 18.26,
+          "fin": 18.42
+        },
+        {
+          "mot": " plaie",
+          "debut": 18.42,
+          "fin": 18.7
+        },
+        {
+          "mot": " et",
+          "debut": 18.7,
+          "fin": 18.78
+        },
+        {
+          "mot": " tout,",
+          "debut": 18.78,
+          "fin": 18.9
+        },
+        {
+          "mot": " il",
+          "debut": 18.94,
+          "fin": 19.04
+        },
+        {
+          "mot": " sert",
+          "debut": 19.04,
+          "fin": 19.12
+        },
+        {
+          "mot": " à",
+          "debut": 19.12,
+          "fin": 19.22
+        },
+        {
+          "mot": " rien.",
+          "debut": 19.22,
+          "fin": 19.3
+        }
+      ]
+    },
+    {
+      "debut": 19.32,
+      "fin": 19.92,
+      "texte": "Il est juste procédé.",
+      "mots": [
+        {
+          "mot": " Il",
+          "debut": 19.32,
+          "fin": 19.42
+        },
+        {
+          "mot": " est",
+          "debut": 19.42,
+          "fin": 19.42
+        },
+        {
+          "mot": " juste",
+          "debut": 19.42,
+          "fin": 19.58
+        },
+        {
+          "mot": " procédé.",
+          "debut": 19.58,
+          "fin": 19.92
+        }
+      ]
+    },
+    {
+      "debut": 24.56,
+      "fin": 26.08,
+      "texte": "Putain, t'en coupes ça, 200 000 ?",
+      "mots": [
+        {
+          "mot": " Putain,",
+          "debut": 24.56,
+          "fin": 24.88
+        },
+        {
+          "mot": " t",
+          "debut": 24.94,
+          "fin": 25.0
+        },
+        {
+          "mot": "'en",
+          "debut": 25.0,
+          "fin": 25.06
+        },
+        {
+          "mot": " coupes",
+          "debut": 25.06,
+          "fin": 25.26
+        },
+        {
+          "mot": " ça,",
+          "debut": 25.26,
+          "fin": 25.36
+        },
+        {
+          "mot": " 200",
+          "debut": 25.42,
+          "fin": 25.58
+        },
+        {
+          "mot": " 000",
+          "debut": 25.58,
+          "fin": 25.92
+        },
+        {
+          "mot": " ?",
+          "debut": 25.92,
+          "fin": 26.08
+        }
+      ]
+    },
+    {
+      "debut": 26.08,
+      "fin": 26.48,
+      "texte": "Non, jamais.",
+      "mots": [
+        {
+          "mot": " Non,",
+          "debut": 26.08,
+          "fin": 26.26
+        },
+        {
+          "mot": " jamais.",
+          "debut": 26.26,
+          "fin": 26.48
+        }
+      ]
+    },
+    {
+      "debut": 26.64,
+      "fin": 27.24,
+      "texte": "Arrête de mentir.",
+      "mots": [
+        {
+          "mot": " Arrête",
+          "debut": 26.64,
+          "fin": 26.94
+        },
+        {
+          "mot": " de",
+          "debut": 26.94,
+          "fin": 27.02
+        },
+        {
+          "mot": " mentir.",
+          "debut": 27.02,
+          "fin": 27.24
+        }
+      ]
+    },
+    {
+      "debut": 27.54,
+      "fin": 29.04,
+      "texte": "On l'a jamais fait, c'est fou, quoi.",
+      "mots": [
+        {
+          "mot": " On",
+          "debut": 27.54,
+          "fin": 27.74
+        },
+        {
+          "mot": " l",
+          "debut": 27.74,
+          "fin": 27.82
+        },
+        {
+          "mot": "'a",
+          "debut": 27.82,
+          "fin": 27.9
+        },
+        {
+          "mot": " jamais",
+          "debut": 27.9,
+          "fin": 28.04
+        },
+        {
+          "mot": " fait,",
+          "debut": 28.04,
+          "fin": 28.38
+        },
+        {
+          "mot": " c",
+          "debut": 28.4,
+          "fin": 28.6
+        },
+        {
+          "mot": "'est",
+          "debut": 28.6,
+          "fin": 28.6
+        },
+        {
+          "mot": " fou,",
+          "debut": 28.6,
+          "fin": 28.86
+        },
+        {
+          "mot": " quoi.",
+          "debut": 28.86,
+          "fin": 29.04
+        }
+      ]
+    },
+    {
+      "debut": 29.04,
+      "fin": 30.42,
+      "texte": "Oh 200 patates mon pote !",
+      "mots": [
+        {
+          "mot": " Oh",
+          "debut": 29.04,
+          "fin": 29.42
+        },
+        {
+          "mot": " 200",
+          "debut": 29.42,
+          "fin": 29.42
+        },
+        {
+          "mot": " patates",
+          "debut": 29.42,
+          "fin": 30.02
+        },
+        {
+          "mot": " mon",
+          "debut": 30.02,
+          "fin": 30.12
+        },
+        {
+          "mot": " pote",
+          "debut": 30.12,
+          "fin": 30.42
+        },
+        {
+          "mot": " !",
+          "debut": 30.42,
+          "fin": 30.42
+        }
+      ]
+    },
+    {
+      "debut": 30.42,
+      "fin": 31.6,
+      "texte": "Oh n'est-ce pas que j'en coupe un ?",
+      "mots": [
+        {
+          "mot": " Oh",
+          "debut": 30.42,
+          "fin": 30.68
+        },
+        {
+          "mot": " n",
+          "debut": 30.68,
+          "fin": 30.86
+        },
+        {
+          "mot": "'est",
+          "debut": 30.86,
+          "fin": 30.98
+        },
+        {
+          "mot": "-ce",
+          "debut": 30.98,
+          "fin": 31.08
+        },
+        {
+          "mot": " pas",
+          "debut": 31.08,
+          "fin": 31.08
+        },
+        {
+          "mot": " que",
+          "debut": 31.08,
+          "fin": 31.1
+        },
+        {
+          "mot": " j",
+          "debut": 31.1,
+          "fin": 31.12
+        },
+        {
+          "mot": "'en",
+          "debut": 31.12,
+          "fin": 31.2
+        },
+        {
+          "mot": " coupe",
+          "debut": 31.2,
+          "fin": 31.32
+        },
+        {
+          "mot": " un",
+          "debut": 31.32,
+          "fin": 31.52
+        },
+        {
+          "mot": " ?",
+          "debut": 31.52,
+          "fin": 31.6
+        }
+      ]
+    },
+    {
+      "debut": 31.96,
+      "fin": 32.56,
+      "texte": "Je te l'avais dit !",
+      "mots": [
+        {
+          "mot": " Je",
+          "debut": 31.96,
+          "fin": 32.2
+        },
+        {
+          "mot": " te",
+          "debut": 32.2,
+          "fin": 32.32
+        },
+        {
+          "mot": " l",
+          "debut": 32.32,
+          "fin": 32.32
+        },
+        {
+          "mot": "'avais",
+          "debut": 32.32,
+          "fin": 32.44
+        },
+        {
+          "mot": " dit",
+          "debut": 32.44,
+          "fin": 32.56
+        },
+        {
+          "mot": " !",
+          "debut": 32.56,
+          "fin": 32.56
+        }
+      ]
+    },
+    {
+      "debut": 32.56,
+      "fin": 32.92,
+      "texte": "Je commence !",
+      "mots": [
+        {
+          "mot": " Je",
+          "debut": 32.56,
+          "fin": 32.58
+        },
+        {
+          "mot": " commence",
+          "debut": 32.58,
+          "fin": 32.78
+        },
+        {
+          "mot": " !",
+          "debut": 32.78,
+          "fin": 32.92
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {
+    "fin": [
+      {
+        "debut": 0.0,
+        "fin": 4.62,
+        "texte": "Sous-titrage Société Radio-Canada",
+        "mots": [
+          {
+            "mot": " Sous",
+            "debut": 0.0,
+            "fin": 0.9
+          },
+          {
+            "mot": "-titrage",
+            "debut": 0.9,
+            "fin": 1.36
+          },
+          {
+            "mot": " Société",
+            "debut": 1.36,
+            "fin": 1.86
+          },
+          {
+            "mot": " Radio",
+            "debut": 1.86,
+            "fin": 4.52
+          },
+          {
+            "mot": "-Canada",
+            "debut": 4.52,
+            "fin": 4.62
+          }
+        ]
+      }
+    ]
+  },
+  "lufs": -14.02,
+  "pic_vrai_db": -1.08,
+  "duree": 33.3,
+  "taille_octets": 20434985
+}

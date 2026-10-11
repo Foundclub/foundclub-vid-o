@@ -1,0 +1,447 @@
+{
+  "numero": 17,
+  "format": "vertical",
+  "sha256": "dd47ac5574f632991c268bfb9af49dc96f1f36a58fbf16bb8236e8bbb6220b3f",
+  "texte_prevu_sha256": "0a4c80b8e16e4cede1e526c5c8959e09520f95bcbf1d0549bae0856caeb98c0f",
+  "verification": "OK",
+  "modele_verification": "large-v3",
+  "vad": false,
+  "aide_vestiaire": false,
+  "aide_dialogue": false,
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "on",
+    "n",
+    "a",
+    "aucun"
+  ],
+  "derniers_mots_attendus": [
+    "fait",
+    "pas",
+    "les",
+    "efforts"
+  ],
+  "premiers_mots_reconnus": [
+    "on",
+    "n",
+    "a",
+    "aucun"
+  ],
+  "derniers_mots_reconnus": [
+    "fait",
+    "pas",
+    "les",
+    "efforts"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": true,
+  "transcription": [
+    {
+      "debut": 0.0,
+      "fin": 5.06,
+      "texte": "On n'a aucun deuxième ballon ! On ne gratte pas les deuxièmes ballons au milieu !",
+      "mots": [
+        {
+          "mot": " On",
+          "debut": 0.0,
+          "fin": 0.5
+        },
+        {
+          "mot": " n",
+          "debut": 0.5,
+          "fin": 0.6
+        },
+        {
+          "mot": "'a",
+          "debut": 0.6,
+          "fin": 0.6
+        },
+        {
+          "mot": " aucun",
+          "debut": 0.6,
+          "fin": 0.8
+        },
+        {
+          "mot": " deuxième",
+          "debut": 0.8,
+          "fin": 1.16
+        },
+        {
+          "mot": " ballon",
+          "debut": 1.16,
+          "fin": 1.54
+        },
+        {
+          "mot": " !",
+          "debut": 1.54,
+          "fin": 1.8
+        },
+        {
+          "mot": " On",
+          "debut": 1.8,
+          "fin": 3.14
+        },
+        {
+          "mot": " ne",
+          "debut": 3.14,
+          "fin": 3.2
+        },
+        {
+          "mot": " gratte",
+          "debut": 3.2,
+          "fin": 3.48
+        },
+        {
+          "mot": " pas",
+          "debut": 3.48,
+          "fin": 3.56
+        },
+        {
+          "mot": " les",
+          "debut": 3.56,
+          "fin": 3.68
+        },
+        {
+          "mot": " deuxièmes",
+          "debut": 3.68,
+          "fin": 4.02
+        },
+        {
+          "mot": " ballons",
+          "debut": 4.02,
+          "fin": 4.3
+        },
+        {
+          "mot": " au",
+          "debut": 4.3,
+          "fin": 4.4
+        },
+        {
+          "mot": " milieu",
+          "debut": 4.4,
+          "fin": 4.62
+        },
+        {
+          "mot": " !",
+          "debut": 4.62,
+          "fin": 5.06
+        }
+      ]
+    },
+    {
+      "debut": 8.94,
+      "fin": 11.0,
+      "texte": "On dirait qu'on est morts !",
+      "mots": [
+        {
+          "mot": " On",
+          "debut": 8.94,
+          "fin": 9.32
+        },
+        {
+          "mot": " dirait",
+          "debut": 9.32,
+          "fin": 9.7
+        },
+        {
+          "mot": " qu",
+          "debut": 9.7,
+          "fin": 9.78
+        },
+        {
+          "mot": "'on",
+          "debut": 9.78,
+          "fin": 9.82
+        },
+        {
+          "mot": " est",
+          "debut": 9.82,
+          "fin": 10.0
+        },
+        {
+          "mot": " morts",
+          "debut": 10.0,
+          "fin": 10.3
+        },
+        {
+          "mot": " !",
+          "debut": 10.3,
+          "fin": 11.0
+        }
+      ]
+    },
+    {
+      "debut": 15.08,
+      "fin": 16.42,
+      "texte": "Ce n'est pas fini !",
+      "mots": [
+        {
+          "mot": " Ce",
+          "debut": 15.08,
+          "fin": 15.46
+        },
+        {
+          "mot": " n",
+          "debut": 15.46,
+          "fin": 15.54
+        },
+        {
+          "mot": "'est",
+          "debut": 15.54,
+          "fin": 15.56
+        },
+        {
+          "mot": " pas",
+          "debut": 15.56,
+          "fin": 15.7
+        },
+        {
+          "mot": " fini",
+          "debut": 15.7,
+          "fin": 15.96
+        },
+        {
+          "mot": " !",
+          "debut": 15.96,
+          "fin": 16.42
+        }
+      ]
+    },
+    {
+      "debut": 18.84,
+      "fin": 22.14,
+      "texte": "On va montrer qu'on a des couilles, parce que là c'est fini les discours !",
+      "mots": [
+        {
+          "mot": " On",
+          "debut": 18.84,
+          "fin": 19.22
+        },
+        {
+          "mot": " va",
+          "debut": 19.22,
+          "fin": 19.34
+        },
+        {
+          "mot": " montrer",
+          "debut": 19.34,
+          "fin": 19.62
+        },
+        {
+          "mot": " qu",
+          "debut": 19.62,
+          "fin": 19.78
+        },
+        {
+          "mot": "'on",
+          "debut": 19.78,
+          "fin": 19.84
+        },
+        {
+          "mot": " a",
+          "debut": 19.84,
+          "fin": 19.94
+        },
+        {
+          "mot": " des",
+          "debut": 19.94,
+          "fin": 20.06
+        },
+        {
+          "mot": " couilles,",
+          "debut": 20.06,
+          "fin": 20.32
+        },
+        {
+          "mot": " parce",
+          "debut": 20.38,
+          "fin": 20.8
+        },
+        {
+          "mot": " que",
+          "debut": 20.8,
+          "fin": 20.98
+        },
+        {
+          "mot": " là",
+          "debut": 20.98,
+          "fin": 21.1
+        },
+        {
+          "mot": " c",
+          "debut": 21.1,
+          "fin": 21.2
+        },
+        {
+          "mot": "'est",
+          "debut": 21.2,
+          "fin": 21.3
+        },
+        {
+          "mot": " fini",
+          "debut": 21.3,
+          "fin": 21.52
+        },
+        {
+          "mot": " les",
+          "debut": 21.52,
+          "fin": 21.62
+        },
+        {
+          "mot": " discours",
+          "debut": 21.62,
+          "fin": 21.86
+        },
+        {
+          "mot": " !",
+          "debut": 21.86,
+          "fin": 22.14
+        }
+      ]
+    },
+    {
+      "debut": 22.14,
+      "fin": 25.0,
+      "texte": "On n'a pas gagné un ballon ! On est trop gentils !",
+      "mots": [
+        {
+          "mot": " On",
+          "debut": 22.14,
+          "fin": 22.88
+        },
+        {
+          "mot": " n",
+          "debut": 22.88,
+          "fin": 22.92
+        },
+        {
+          "mot": "'a",
+          "debut": 22.92,
+          "fin": 22.96
+        },
+        {
+          "mot": " pas",
+          "debut": 22.96,
+          "fin": 23.12
+        },
+        {
+          "mot": " gagné",
+          "debut": 23.12,
+          "fin": 23.46
+        },
+        {
+          "mot": " un",
+          "debut": 23.46,
+          "fin": 23.52
+        },
+        {
+          "mot": " ballon",
+          "debut": 23.52,
+          "fin": 23.74
+        },
+        {
+          "mot": " !",
+          "debut": 23.74,
+          "fin": 24.06
+        },
+        {
+          "mot": " On",
+          "debut": 24.06,
+          "fin": 24.24
+        },
+        {
+          "mot": " est",
+          "debut": 24.24,
+          "fin": 24.34
+        },
+        {
+          "mot": " trop",
+          "debut": 24.34,
+          "fin": 24.5
+        },
+        {
+          "mot": " gentils",
+          "debut": 24.5,
+          "fin": 24.94
+        },
+        {
+          "mot": " !",
+          "debut": 24.94,
+          "fin": 25.13
+        }
+      ]
+    },
+    {
+      "debut": 26.46,
+      "fin": 28.82,
+      "texte": "On veut dire marchand ! On ne fait pas les efforts !",
+      "mots": [
+        {
+          "mot": " On",
+          "debut": 26.46,
+          "fin": 26.84
+        },
+        {
+          "mot": " veut",
+          "debut": 26.84,
+          "fin": 26.92
+        },
+        {
+          "mot": " dire",
+          "debut": 26.92,
+          "fin": 27.12
+        },
+        {
+          "mot": " marchand",
+          "debut": 27.12,
+          "fin": 27.62
+        },
+        {
+          "mot": " !",
+          "debut": 27.62,
+          "fin": 27.82
+        },
+        {
+          "mot": " On",
+          "debut": 27.82,
+          "fin": 28.0
+        },
+        {
+          "mot": " ne",
+          "debut": 28.0,
+          "fin": 28.08
+        },
+        {
+          "mot": " fait",
+          "debut": 28.08,
+          "fin": 28.16
+        },
+        {
+          "mot": " pas",
+          "debut": 28.16,
+          "fin": 28.34
+        },
+        {
+          "mot": " les",
+          "debut": 28.34,
+          "fin": 28.4
+        },
+        {
+          "mot": " efforts",
+          "debut": 28.4,
+          "fin": 28.68
+        },
+        {
+          "mot": " !",
+          "debut": 28.68,
+          "fin": 28.82
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {},
+  "lufs": -14.03,
+  "pic_vrai_db": -6.84,
+  "duree": 28.866666,
+  "taille_octets": 14054150
+}

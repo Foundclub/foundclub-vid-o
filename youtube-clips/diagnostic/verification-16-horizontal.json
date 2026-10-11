@@ -1,0 +1,600 @@
+{
+  "numero": 16,
+  "format": "horizontal",
+  "sha256": "e0149412deabf2f00173b60d01961f86e017bb6ebfd8e6935a146637a0f1e1e9",
+  "texte_prevu_sha256": "ebbb18e8e95d6f8269e996a61a900c29d01707b0cf4d0658d42b0628093967fb",
+  "verification": "OK",
+  "modele_verification": "turbo",
+  "vad": true,
+  "aide_vestiaire": false,
+  "aide_dialogue": false,
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "on",
+    "peut",
+    "pas",
+    "dire"
+  ],
+  "derniers_mots_attendus": [
+    "quelque",
+    "chose",
+    "les",
+    "gars"
+  ],
+  "premiers_mots_reconnus": [
+    "on",
+    "peut",
+    "pas",
+    "dire"
+  ],
+  "derniers_mots_reconnus": [
+    "quelque",
+    "chose",
+    "les",
+    "gars"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": true,
+  "transcription": [
+    {
+      "debut": 0.08,
+      "fin": 2.64,
+      "texte": "On peut pas dire que l'on s'est ouvert quand on perdait 2-0 !",
+      "mots": [
+        {
+          "mot": " On",
+          "debut": 0.08,
+          "fin": 0.46
+        },
+        {
+          "mot": " peut",
+          "debut": 0.46,
+          "fin": 0.54
+        },
+        {
+          "mot": " pas",
+          "debut": 0.54,
+          "fin": 0.66
+        },
+        {
+          "mot": " dire",
+          "debut": 0.66,
+          "fin": 0.82
+        },
+        {
+          "mot": " que",
+          "debut": 0.82,
+          "fin": 0.92
+        },
+        {
+          "mot": " l",
+          "debut": 0.92,
+          "fin": 1.0
+        },
+        {
+          "mot": "'on",
+          "debut": 1.0,
+          "fin": 1.02
+        },
+        {
+          "mot": " s",
+          "debut": 1.02,
+          "fin": 1.08
+        },
+        {
+          "mot": "'est",
+          "debut": 1.08,
+          "fin": 1.14
+        },
+        {
+          "mot": " ouvert",
+          "debut": 1.14,
+          "fin": 1.36
+        },
+        {
+          "mot": " quand",
+          "debut": 1.36,
+          "fin": 1.5
+        },
+        {
+          "mot": " on",
+          "debut": 1.5,
+          "fin": 1.62
+        },
+        {
+          "mot": " perdait",
+          "debut": 1.62,
+          "fin": 1.98
+        },
+        {
+          "mot": " 2",
+          "debut": 1.98,
+          "fin": 2.1
+        },
+        {
+          "mot": "-0",
+          "debut": 2.1,
+          "fin": 2.36
+        },
+        {
+          "mot": " !",
+          "debut": 2.36,
+          "fin": 2.64
+        }
+      ]
+    },
+    {
+      "debut": 5.33,
+      "fin": 8.98,
+      "texte": "Donc mettez bien parti, mec !",
+      "mots": [
+        {
+          "mot": " Donc",
+          "debut": 5.33,
+          "fin": 5.57
+        },
+        {
+          "mot": " mettez",
+          "debut": 5.57,
+          "fin": 5.87
+        },
+        {
+          "mot": " bien",
+          "debut": 5.87,
+          "fin": 6.05
+        },
+        {
+          "mot": " parti,",
+          "debut": 6.05,
+          "fin": 6.33
+        },
+        {
+          "mot": " mec",
+          "debut": 6.35,
+          "fin": 6.53
+        },
+        {
+          "mot": " !",
+          "debut": 8.64,
+          "fin": 8.98
+        }
+      ]
+    },
+    {
+      "debut": 8.98,
+      "fin": 10.54,
+      "texte": "Et si on a gagné les mecs, on va les faire cramper.",
+      "mots": [
+        {
+          "mot": " Et",
+          "debut": 8.98,
+          "fin": 9.18
+        },
+        {
+          "mot": " si",
+          "debut": 9.18,
+          "fin": 9.28
+        },
+        {
+          "mot": " on",
+          "debut": 9.28,
+          "fin": 9.34
+        },
+        {
+          "mot": " a",
+          "debut": 9.34,
+          "fin": 9.44
+        },
+        {
+          "mot": " gagné",
+          "debut": 9.44,
+          "fin": 9.74
+        },
+        {
+          "mot": " les",
+          "debut": 9.74,
+          "fin": 9.76
+        },
+        {
+          "mot": " mecs,",
+          "debut": 9.76,
+          "fin": 9.86
+        },
+        {
+          "mot": " on",
+          "debut": 9.88,
+          "fin": 9.94
+        },
+        {
+          "mot": " va",
+          "debut": 9.94,
+          "fin": 10.02
+        },
+        {
+          "mot": " les",
+          "debut": 10.02,
+          "fin": 10.12
+        },
+        {
+          "mot": " faire",
+          "debut": 10.12,
+          "fin": 10.26
+        },
+        {
+          "mot": " cramper.",
+          "debut": 10.26,
+          "fin": 10.54
+        }
+      ]
+    },
+    {
+      "debut": 10.72,
+      "fin": 11.72,
+      "texte": "C'est marqué dans le premier quart d'heure !",
+      "mots": [
+        {
+          "mot": " C",
+          "debut": 10.72,
+          "fin": 10.76
+        },
+        {
+          "mot": "'est",
+          "debut": 10.76,
+          "fin": 10.82
+        },
+        {
+          "mot": " marqué",
+          "debut": 10.82,
+          "fin": 11.0
+        },
+        {
+          "mot": " dans",
+          "debut": 11.0,
+          "fin": 11.1
+        },
+        {
+          "mot": " le",
+          "debut": 11.1,
+          "fin": 11.18
+        },
+        {
+          "mot": " premier",
+          "debut": 11.18,
+          "fin": 11.36
+        },
+        {
+          "mot": " quart",
+          "debut": 11.36,
+          "fin": 11.54
+        },
+        {
+          "mot": " d",
+          "debut": 11.54,
+          "fin": 11.58
+        },
+        {
+          "mot": "'heure",
+          "debut": 11.58,
+          "fin": 11.62
+        },
+        {
+          "mot": " !",
+          "debut": 11.62,
+          "fin": 11.72
+        }
+      ]
+    },
+    {
+      "debut": 14.54,
+      "fin": 15.84,
+      "texte": "Mais pourquoi on a tapé la barre ?",
+      "mots": [
+        {
+          "mot": " Mais",
+          "debut": 14.54,
+          "fin": 14.6
+        },
+        {
+          "mot": " pourquoi",
+          "debut": 14.6,
+          "fin": 14.82
+        },
+        {
+          "mot": " on",
+          "debut": 14.82,
+          "fin": 15.02
+        },
+        {
+          "mot": " a",
+          "debut": 15.02,
+          "fin": 15.06
+        },
+        {
+          "mot": " tapé",
+          "debut": 15.06,
+          "fin": 15.28
+        },
+        {
+          "mot": " la",
+          "debut": 15.28,
+          "fin": 15.38
+        },
+        {
+          "mot": " barre",
+          "debut": 15.38,
+          "fin": 15.68
+        },
+        {
+          "mot": " ?",
+          "debut": 15.68,
+          "fin": 15.84
+        }
+      ]
+    },
+    {
+      "debut": 15.84,
+      "fin": 17.42,
+      "texte": "On a fait désarrié parti !",
+      "mots": [
+        {
+          "mot": " On",
+          "debut": 15.84,
+          "fin": 15.9
+        },
+        {
+          "mot": " a",
+          "debut": 15.9,
+          "fin": 16.04
+        },
+        {
+          "mot": " fait",
+          "debut": 16.04,
+          "fin": 16.26
+        },
+        {
+          "mot": " désarrié",
+          "debut": 16.26,
+          "fin": 16.84
+        },
+        {
+          "mot": " parti",
+          "debut": 16.84,
+          "fin": 17.1
+        },
+        {
+          "mot": " !",
+          "debut": 17.1,
+          "fin": 17.42
+        }
+      ]
+    },
+    {
+      "debut": 17.42,
+      "fin": 18.44,
+      "texte": "Eh les mecs, servez-vous !",
+      "mots": [
+        {
+          "mot": " Eh",
+          "debut": 17.42,
+          "fin": 17.58
+        },
+        {
+          "mot": " les",
+          "debut": 17.58,
+          "fin": 17.68
+        },
+        {
+          "mot": " mecs,",
+          "debut": 17.68,
+          "fin": 17.86
+        },
+        {
+          "mot": " servez",
+          "debut": 17.88,
+          "fin": 18.16
+        },
+        {
+          "mot": "-vous",
+          "debut": 18.16,
+          "fin": 18.32
+        },
+        {
+          "mot": " !",
+          "debut": 18.32,
+          "fin": 18.44
+        }
+      ]
+    },
+    {
+      "debut": 18.44,
+      "fin": 20.02,
+      "texte": "En gros, ils sont en forme, là-bas !",
+      "mots": [
+        {
+          "mot": " En",
+          "debut": 18.44,
+          "fin": 18.52
+        },
+        {
+          "mot": " gros,",
+          "debut": 18.52,
+          "fin": 18.62
+        },
+        {
+          "mot": " ils",
+          "debut": 18.74,
+          "fin": 18.78
+        },
+        {
+          "mot": " sont",
+          "debut": 18.78,
+          "fin": 18.88
+        },
+        {
+          "mot": " en",
+          "debut": 18.88,
+          "fin": 19.02
+        },
+        {
+          "mot": " forme,",
+          "debut": 19.02,
+          "fin": 19.14
+        },
+        {
+          "mot": " là",
+          "debut": 19.3,
+          "fin": 19.34
+        },
+        {
+          "mot": "-bas",
+          "debut": 19.34,
+          "fin": 19.58
+        },
+        {
+          "mot": " !",
+          "debut": 19.58,
+          "fin": 20.02
+        }
+      ]
+    },
+    {
+      "debut": 21.2,
+      "fin": 23.1,
+      "texte": "La semaine dernière, on a subi, on a gagné 2-0.",
+      "mots": [
+        {
+          "mot": " La",
+          "debut": 21.2,
+          "fin": 21.44
+        },
+        {
+          "mot": " semaine",
+          "debut": 21.44,
+          "fin": 21.54
+        },
+        {
+          "mot": " dernière,",
+          "debut": 21.54,
+          "fin": 21.8
+        },
+        {
+          "mot": " on",
+          "debut": 21.96,
+          "fin": 22.0
+        },
+        {
+          "mot": " a",
+          "debut": 22.0,
+          "fin": 22.08
+        },
+        {
+          "mot": " subi,",
+          "debut": 22.08,
+          "fin": 22.4
+        },
+        {
+          "mot": " on",
+          "debut": 22.46,
+          "fin": 22.52
+        },
+        {
+          "mot": " a",
+          "debut": 22.52,
+          "fin": 22.6
+        },
+        {
+          "mot": " gagné",
+          "debut": 22.6,
+          "fin": 22.7
+        },
+        {
+          "mot": " 2",
+          "debut": 22.7,
+          "fin": 22.86
+        },
+        {
+          "mot": "-0.",
+          "debut": 22.86,
+          "fin": 23.1
+        }
+      ]
+    },
+    {
+      "debut": 23.54,
+      "fin": 25.52,
+      "texte": "Bah, c'est à vous d'aller chercher quelque chose, les gars !",
+      "mots": [
+        {
+          "mot": " Bah,",
+          "debut": 23.54,
+          "fin": 23.78
+        },
+        {
+          "mot": " c",
+          "debut": 23.9,
+          "fin": 23.9
+        },
+        {
+          "mot": "'est",
+          "debut": 23.9,
+          "fin": 24.0
+        },
+        {
+          "mot": " à",
+          "debut": 24.0,
+          "fin": 24.02
+        },
+        {
+          "mot": " vous",
+          "debut": 24.02,
+          "fin": 24.14
+        },
+        {
+          "mot": " d",
+          "debut": 24.14,
+          "fin": 24.22
+        },
+        {
+          "mot": "'aller",
+          "debut": 24.22,
+          "fin": 24.3
+        },
+        {
+          "mot": " chercher",
+          "debut": 24.3,
+          "fin": 24.52
+        },
+        {
+          "mot": " quelque",
+          "debut": 24.52,
+          "fin": 24.74
+        },
+        {
+          "mot": " chose,",
+          "debut": 24.74,
+          "fin": 24.92
+        },
+        {
+          "mot": " les",
+          "debut": 25.0,
+          "fin": 25.12
+        },
+        {
+          "mot": " gars",
+          "debut": 25.12,
+          "fin": 25.24
+        },
+        {
+          "mot": " !",
+          "debut": 25.24,
+          "fin": 25.52
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {},
+  "lufs": -14.05,
+  "pic_vrai_db": -2.76,
+  "duree": 25.933333,
+  "taille_octets": 23815811
+}

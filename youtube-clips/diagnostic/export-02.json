@@ -1,0 +1,11 @@
+{
+  "numero": 2,
+  "recadrage": "fond flou",
+  "raison_recadrage": "Tableau des divisions à préserver",
+  "tailles_octets": {
+    "horizontal": 15213420,
+    "vertical": 14727498
+  },
+  "debit_reduit": [],
+  "duree_calcul": 65.25
+}

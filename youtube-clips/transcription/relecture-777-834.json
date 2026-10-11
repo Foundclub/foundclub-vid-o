@@ -1,0 +1,1351 @@
+[
+  {
+    "debut": 777.0,
+    "fin": 784.4,
+    "texte": "Les gars, je vais parler juste pour finir, de l'instinct et de l'intuition, c'est votre enfance, c'est les joueurs de qualité.",
+    "mots": [
+      {
+        "mot": " Les",
+        "debut": 777.0,
+        "fin": 777.52,
+        "probabilite": 0.6138
+      },
+      {
+        "mot": " gars,",
+        "debut": 777.52,
+        "fin": 777.64,
+        "probabilite": 0.9657
+      },
+      {
+        "mot": " je",
+        "debut": 777.92,
+        "fin": 778.08,
+        "probabilite": 0.9291
+      },
+      {
+        "mot": " vais",
+        "debut": 778.08,
+        "fin": 778.18,
+        "probabilite": 0.8352
+      },
+      {
+        "mot": " parler",
+        "debut": 778.18,
+        "fin": 778.38,
+        "probabilite": 0.9056
+      },
+      {
+        "mot": " juste",
+        "debut": 778.38,
+        "fin": 778.58,
+        "probabilite": 0.8883
+      },
+      {
+        "mot": " pour",
+        "debut": 778.58,
+        "fin": 778.82,
+        "probabilite": 0.9194
+      },
+      {
+        "mot": " finir,",
+        "debut": 778.82,
+        "fin": 779.16,
+        "probabilite": 0.9949
+      },
+      {
+        "mot": " de",
+        "debut": 779.46,
+        "fin": 780.04,
+        "probabilite": 0.9122
+      },
+      {
+        "mot": " l",
+        "debut": 780.04,
+        "fin": 780.12,
+        "probabilite": 0.6542
+      },
+      {
+        "mot": "'instinct",
+        "debut": 780.12,
+        "fin": 780.52,
+        "probabilite": 0.6174
+      },
+      {
+        "mot": " et",
+        "debut": 780.52,
+        "fin": 780.7,
+        "probabilite": 0.941
+      },
+      {
+        "mot": " de",
+        "debut": 780.7,
+        "fin": 780.78,
+        "probabilite": 0.9686
+      },
+      {
+        "mot": " l",
+        "debut": 780.78,
+        "fin": 780.86,
+        "probabilite": 0.9794
+      },
+      {
+        "mot": "'intuition,",
+        "debut": 780.86,
+        "fin": 781.22,
+        "probabilite": 0.8498
+      },
+      {
+        "mot": " c",
+        "debut": 781.48,
+        "fin": 781.74,
+        "probabilite": 0.8602
+      },
+      {
+        "mot": "'est",
+        "debut": 781.74,
+        "fin": 781.8,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " votre",
+        "debut": 781.8,
+        "fin": 781.96,
+        "probabilite": 0.8448
+      },
+      {
+        "mot": " enfance,",
+        "debut": 781.96,
+        "fin": 782.4,
+        "probabilite": 0.7583
+      },
+      {
+        "mot": " c",
+        "debut": 783.02,
+        "fin": 783.42,
+        "probabilite": 0.1579
+      },
+      {
+        "mot": "'est",
+        "debut": 783.42,
+        "fin": 783.8,
+        "probabilite": 0.9985
+      },
+      {
+        "mot": " les",
+        "debut": 783.8,
+        "fin": 783.88,
+        "probabilite": 0.2013
+      },
+      {
+        "mot": " joueurs",
+        "debut": 783.88,
+        "fin": 784.02,
+        "probabilite": 0.6407
+      },
+      {
+        "mot": " de",
+        "debut": 784.02,
+        "fin": 784.1,
+        "probabilite": 0.9623
+      },
+      {
+        "mot": " qualité.",
+        "debut": 784.1,
+        "fin": 784.4,
+        "probabilite": 0.934
+      }
+    ]
+  },
+  {
+    "debut": 785.88,
+    "fin": 787.18,
+    "texte": "Il faut laisser parler l'instinct.",
+    "mots": [
+      {
+        "mot": " Il",
+        "debut": 785.88,
+        "fin": 786.24,
+        "probabilite": 0.8815
+      },
+      {
+        "mot": " faut",
+        "debut": 786.24,
+        "fin": 786.36,
+        "probabilite": 0.9974
+      },
+      {
+        "mot": " laisser",
+        "debut": 786.36,
+        "fin": 786.58,
+        "probabilite": 0.9049
+      },
+      {
+        "mot": " parler",
+        "debut": 786.58,
+        "fin": 786.84,
+        "probabilite": 0.9816
+      },
+      {
+        "mot": " l",
+        "debut": 786.84,
+        "fin": 787.06,
+        "probabilite": 0.2611
+      },
+      {
+        "mot": "'instinct.",
+        "debut": 787.06,
+        "fin": 787.18,
+        "probabilite": 0.9771
+      }
+    ]
+  },
+  {
+    "debut": 787.92,
+    "fin": 791.06,
+    "texte": "C'est le match à domicile qui nous rémène depuis le temps à la maison.",
+    "mots": [
+      {
+        "mot": " C",
+        "debut": 787.92,
+        "fin": 788.28,
+        "probabilite": 0.3345
+      },
+      {
+        "mot": "'est",
+        "debut": 788.28,
+        "fin": 788.32,
+        "probabilite": 0.9931
+      },
+      {
+        "mot": " le",
+        "debut": 788.32,
+        "fin": 788.38,
+        "probabilite": 0.6838
+      },
+      {
+        "mot": " match",
+        "debut": 788.38,
+        "fin": 788.5,
+        "probabilite": 0.9019
+      },
+      {
+        "mot": " à",
+        "debut": 788.5,
+        "fin": 788.62,
+        "probabilite": 0.57
+      },
+      {
+        "mot": " domicile",
+        "debut": 788.62,
+        "fin": 789.02,
+        "probabilite": 0.9045
+      },
+      {
+        "mot": " qui",
+        "debut": 789.02,
+        "fin": 789.44,
+        "probabilite": 0.4247
+      },
+      {
+        "mot": " nous",
+        "debut": 789.44,
+        "fin": 789.6,
+        "probabilite": 0.2839
+      },
+      {
+        "mot": " rémène",
+        "debut": 789.6,
+        "fin": 789.72,
+        "probabilite": 0.4987
+      },
+      {
+        "mot": " depuis",
+        "debut": 789.72,
+        "fin": 790.02,
+        "probabilite": 0.0853
+      },
+      {
+        "mot": " le",
+        "debut": 790.02,
+        "fin": 790.16,
+        "probabilite": 0.7765
+      },
+      {
+        "mot": " temps",
+        "debut": 790.16,
+        "fin": 790.3,
+        "probabilite": 0.9319
+      },
+      {
+        "mot": " à",
+        "debut": 790.3,
+        "fin": 790.78,
+        "probabilite": 0.2313
+      },
+      {
+        "mot": " la",
+        "debut": 790.78,
+        "fin": 790.88,
+        "probabilite": 0.968
+      },
+      {
+        "mot": " maison.",
+        "debut": 790.88,
+        "fin": 791.06,
+        "probabilite": 0.99
+      }
+    ]
+  },
+  {
+    "debut": 791.26,
+    "fin": 794.82,
+    "texte": "Ce n'est pas grave, détournez-moi la maison, vous allez à tourner, vous allez à tourner, vous allez à tourner.",
+    "mots": [
+      {
+        "mot": " Ce",
+        "debut": 791.26,
+        "fin": 791.32,
+        "probabilite": 0.3956
+      },
+      {
+        "mot": " n",
+        "debut": 791.32,
+        "fin": 791.4,
+        "probabilite": 0.9981
+      },
+      {
+        "mot": "'est",
+        "debut": 791.4,
+        "fin": 791.4,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " pas",
+        "debut": 791.4,
+        "fin": 791.5,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " grave,",
+        "debut": 791.5,
+        "fin": 791.78,
+        "probabilite": 0.9938
+      },
+      {
+        "mot": " détournez",
+        "debut": 792.2,
+        "fin": 792.54,
+        "probabilite": 0.5869
+      },
+      {
+        "mot": "-moi",
+        "debut": 792.54,
+        "fin": 792.68,
+        "probabilite": 0.5031
+      },
+      {
+        "mot": " la",
+        "debut": 792.68,
+        "fin": 792.78,
+        "probabilite": 0.831
+      },
+      {
+        "mot": " maison,",
+        "debut": 792.78,
+        "fin": 793.02,
+        "probabilite": 0.9148
+      },
+      {
+        "mot": " vous",
+        "debut": 793.12,
+        "fin": 793.14,
+        "probabilite": 0.6877
+      },
+      {
+        "mot": " allez",
+        "debut": 793.14,
+        "fin": 793.32,
+        "probabilite": 0.6629
+      },
+      {
+        "mot": " à",
+        "debut": 793.32,
+        "fin": 793.6,
+        "probabilite": 0.0763
+      },
+      {
+        "mot": " tourner,",
+        "debut": 793.6,
+        "fin": 793.88,
+        "probabilite": 0.798
+      },
+      {
+        "mot": " vous",
+        "debut": 794.0,
+        "fin": 794.0,
+        "probabilite": 0.8375
+      },
+      {
+        "mot": " allez",
+        "debut": 794.0,
+        "fin": 794.18,
+        "probabilite": 0.7369
+      },
+      {
+        "mot": " à",
+        "debut": 794.18,
+        "fin": 794.18,
+        "probabilite": 0.6021
+      },
+      {
+        "mot": " tourner,",
+        "debut": 794.18,
+        "fin": 794.18,
+        "probabilite": 0.7966
+      },
+      {
+        "mot": " vous",
+        "debut": 794.44,
+        "fin": 794.44,
+        "probabilite": 0.6458
+      },
+      {
+        "mot": " allez",
+        "debut": 794.44,
+        "fin": 794.48,
+        "probabilite": 0.877
+      },
+      {
+        "mot": " à",
+        "debut": 794.48,
+        "fin": 794.64,
+        "probabilite": 0.6084
+      },
+      {
+        "mot": " tourner.",
+        "debut": 794.64,
+        "fin": 794.82,
+        "probabilite": 0.8404
+      }
+    ]
+  },
+  {
+    "debut": 794.98,
+    "fin": 798.06,
+    "texte": "Faites parler l'instinct, parce que c'est un événement coach.",
+    "mots": [
+      {
+        "mot": " Faites",
+        "debut": 794.98,
+        "fin": 795.34,
+        "probabilite": 0.9376
+      },
+      {
+        "mot": " parler",
+        "debut": 795.34,
+        "fin": 795.5,
+        "probabilite": 0.941
+      },
+      {
+        "mot": " l",
+        "debut": 795.5,
+        "fin": 795.66,
+        "probabilite": 0.8228
+      },
+      {
+        "mot": "'instinct,",
+        "debut": 795.66,
+        "fin": 795.98,
+        "probabilite": 0.9912
+      },
+      {
+        "mot": " parce",
+        "debut": 796.28,
+        "fin": 796.4,
+        "probabilite": 0.894
+      },
+      {
+        "mot": " que",
+        "debut": 796.4,
+        "fin": 796.76,
+        "probabilite": 0.9935
+      },
+      {
+        "mot": " c",
+        "debut": 796.76,
+        "fin": 796.92,
+        "probabilite": 0.1418
+      },
+      {
+        "mot": "'est",
+        "debut": 796.92,
+        "fin": 797.06,
+        "probabilite": 0.9974
+      },
+      {
+        "mot": " un",
+        "debut": 797.06,
+        "fin": 797.06,
+        "probabilite": 0.3303
+      },
+      {
+        "mot": " événement",
+        "debut": 797.06,
+        "fin": 797.68,
+        "probabilite": 0.8599
+      },
+      {
+        "mot": " coach.",
+        "debut": 797.68,
+        "fin": 798.06,
+        "probabilite": 0.7862
+      }
+    ]
+  },
+  {
+    "debut": 798.42,
+    "fin": 801.2,
+    "texte": "L'instinct, l'intuition, des fois, c'est des choix qu'on ne prend pas.",
+    "mots": [
+      {
+        "mot": " L",
+        "debut": 798.42,
+        "fin": 798.6,
+        "probabilite": 0.9337
+      },
+      {
+        "mot": "'instinct,",
+        "debut": 798.6,
+        "fin": 798.86,
+        "probabilite": 0.9957
+      },
+      {
+        "mot": " l",
+        "debut": 798.94,
+        "fin": 798.94,
+        "probabilite": 0.9286
+      },
+      {
+        "mot": "'intuition,",
+        "debut": 798.94,
+        "fin": 799.3,
+        "probabilite": 0.9874
+      },
+      {
+        "mot": " des",
+        "debut": 799.46,
+        "fin": 799.5,
+        "probabilite": 0.8045
+      },
+      {
+        "mot": " fois,",
+        "debut": 799.5,
+        "fin": 799.68,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " c",
+        "debut": 799.8,
+        "fin": 799.84,
+        "probabilite": 0.7226
+      },
+      {
+        "mot": "'est",
+        "debut": 799.84,
+        "fin": 799.94,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " des",
+        "debut": 799.94,
+        "fin": 800.32,
+        "probabilite": 0.9602
+      },
+      {
+        "mot": " choix",
+        "debut": 800.32,
+        "fin": 800.48,
+        "probabilite": 0.8383
+      },
+      {
+        "mot": " qu",
+        "debut": 800.48,
+        "fin": 800.64,
+        "probabilite": 0.3827
+      },
+      {
+        "mot": "'on",
+        "debut": 800.64,
+        "fin": 800.7,
+        "probabilite": 0.9942
+      },
+      {
+        "mot": " ne",
+        "debut": 800.7,
+        "fin": 800.82,
+        "probabilite": 0.7691
+      },
+      {
+        "mot": " prend",
+        "debut": 800.82,
+        "fin": 800.88,
+        "probabilite": 0.112
+      },
+      {
+        "mot": " pas.",
+        "debut": 800.88,
+        "fin": 801.2,
+        "probabilite": 0.983
+      }
+    ]
+  },
+  {
+    "debut": 802.02,
+    "fin": 804.56,
+    "texte": "Mais il faut se laisser glisser, ne pas se laisser submerger.",
+    "mots": [
+      {
+        "mot": " Mais",
+        "debut": 802.02,
+        "fin": 802.38,
+        "probabilite": 0.8309
+      },
+      {
+        "mot": " il",
+        "debut": 802.38,
+        "fin": 802.66,
+        "probabilite": 0.9718
+      },
+      {
+        "mot": " faut",
+        "debut": 802.66,
+        "fin": 802.76,
+        "probabilite": 0.9865
+      },
+      {
+        "mot": " se",
+        "debut": 802.76,
+        "fin": 802.86,
+        "probabilite": 0.9807
+      },
+      {
+        "mot": " laisser",
+        "debut": 802.86,
+        "fin": 803.04,
+        "probabilite": 0.9622
+      },
+      {
+        "mot": " glisser,",
+        "debut": 803.04,
+        "fin": 803.28,
+        "probabilite": 0.4243
+      },
+      {
+        "mot": " ne",
+        "debut": 803.42,
+        "fin": 803.52,
+        "probabilite": 0.5309
+      },
+      {
+        "mot": " pas",
+        "debut": 803.52,
+        "fin": 803.6,
+        "probabilite": 0.9932
+      },
+      {
+        "mot": " se",
+        "debut": 803.6,
+        "fin": 803.74,
+        "probabilite": 0.9957
+      },
+      {
+        "mot": " laisser",
+        "debut": 803.74,
+        "fin": 803.94,
+        "probabilite": 0.9981
+      },
+      {
+        "mot": " submerger.",
+        "debut": 803.94,
+        "fin": 804.56,
+        "probabilite": 0.9936
+      }
+    ]
+  },
+  {
+    "debut": 804.56,
+    "fin": 806.18,
+    "texte": "Mais tous ceux qui font part d'autres.",
+    "mots": [
+      {
+        "mot": " Mais",
+        "debut": 804.56,
+        "fin": 804.98,
+        "probabilite": 0.0724
+      },
+      {
+        "mot": " tous",
+        "debut": 804.98,
+        "fin": 805.14,
+        "probabilite": 0.2306
+      },
+      {
+        "mot": " ceux",
+        "debut": 805.14,
+        "fin": 805.3,
+        "probabilite": 0.9786
+      },
+      {
+        "mot": " qui",
+        "debut": 805.3,
+        "fin": 805.44,
+        "probabilite": 0.9701
+      },
+      {
+        "mot": " font",
+        "debut": 805.44,
+        "fin": 805.56,
+        "probabilite": 0.5088
+      },
+      {
+        "mot": " part",
+        "debut": 805.56,
+        "fin": 805.82,
+        "probabilite": 0.0894
+      },
+      {
+        "mot": " d",
+        "debut": 805.82,
+        "fin": 806.02,
+        "probabilite": 0.4275
+      },
+      {
+        "mot": "'autres.",
+        "debut": 806.02,
+        "fin": 806.18,
+        "probabilite": 0.8403
+      }
+    ]
+  },
+  {
+    "debut": 807.16,
+    "fin": 808.2,
+    "texte": "Mais c'est dingue, ce n'est pas la tête.",
+    "mots": [
+      {
+        "mot": " Mais",
+        "debut": 807.16,
+        "fin": 807.28,
+        "probabilite": 0.1219
+      },
+      {
+        "mot": " c",
+        "debut": 807.28,
+        "fin": 807.46,
+        "probabilite": 0.45
+      },
+      {
+        "mot": "'est",
+        "debut": 807.46,
+        "fin": 807.56,
+        "probabilite": 0.9948
+      },
+      {
+        "mot": " dingue,",
+        "debut": 807.56,
+        "fin": 807.6,
+        "probabilite": 0.8343
+      },
+      {
+        "mot": " ce",
+        "debut": 807.7,
+        "fin": 807.72,
+        "probabilite": 0.5773
+      },
+      {
+        "mot": " n",
+        "debut": 807.72,
+        "fin": 807.76,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": "'est",
+        "debut": 807.76,
+        "fin": 807.76,
+        "probabilite": 0.9994
+      },
+      {
+        "mot": " pas",
+        "debut": 807.76,
+        "fin": 807.88,
+        "probabilite": 0.9967
+      },
+      {
+        "mot": " la",
+        "debut": 807.88,
+        "fin": 808.0,
+        "probabilite": 0.9748
+      },
+      {
+        "mot": " tête.",
+        "debut": 808.0,
+        "fin": 808.2,
+        "probabilite": 0.9595
+      }
+    ]
+  },
+  {
+    "debut": 808.42,
+    "fin": 809.04,
+    "texte": "C'est le cœur.",
+    "mots": [
+      {
+        "mot": " C",
+        "debut": 808.42,
+        "fin": 808.7,
+        "probabilite": 0.8824
+      },
+      {
+        "mot": "'est",
+        "debut": 808.7,
+        "fin": 808.74,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " le",
+        "debut": 808.74,
+        "fin": 808.88,
+        "probabilite": 0.9731
+      },
+      {
+        "mot": " cœur.",
+        "debut": 808.88,
+        "fin": 809.04,
+        "probabilite": 0.7459
+      }
+    ]
+  },
+  {
+    "debut": 809.4,
+    "fin": 810.44,
+    "texte": "Le cœur, c'est la face.",
+    "mots": [
+      {
+        "mot": " Le",
+        "debut": 809.4,
+        "fin": 809.7,
+        "probabilite": 0.8948
+      },
+      {
+        "mot": " cœur,",
+        "debut": 809.7,
+        "fin": 809.9,
+        "probabilite": 0.991
+      },
+      {
+        "mot": " c",
+        "debut": 810.04,
+        "fin": 810.06,
+        "probabilite": 0.981
+      },
+      {
+        "mot": "'est",
+        "debut": 810.06,
+        "fin": 810.1,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " la",
+        "debut": 810.1,
+        "fin": 810.24,
+        "probabilite": 0.9337
+      },
+      {
+        "mot": " face.",
+        "debut": 810.24,
+        "fin": 810.44,
+        "probabilite": 0.6158
+      }
+    ]
+  },
+  {
+    "debut": 810.82,
+    "fin": 813.62,
+    "texte": "Et bien nous, je ne veux personne sur ça",
+    "mots": [
+      {
+        "mot": " Et",
+        "debut": 810.82,
+        "fin": 810.82,
+        "probabilite": 0.3928
+      },
+      {
+        "mot": " bien",
+        "debut": 810.82,
+        "fin": 810.98,
+        "probabilite": 0.1706
+      },
+      {
+        "mot": " nous,",
+        "debut": 810.98,
+        "fin": 811.2,
+        "probabilite": 0.2747
+      },
+      {
+        "mot": " je",
+        "debut": 811.34,
+        "fin": 811.58,
+        "probabilite": 0.9765
+      },
+      {
+        "mot": " ne",
+        "debut": 811.58,
+        "fin": 811.74,
+        "probabilite": 0.8748
+      },
+      {
+        "mot": " veux",
+        "debut": 811.74,
+        "fin": 811.88,
+        "probabilite": 0.9627
+      },
+      {
+        "mot": " personne",
+        "debut": 811.88,
+        "fin": 812.64,
+        "probabilite": 0.8963
+      },
+      {
+        "mot": " sur",
+        "debut": 812.64,
+        "fin": 813.34,
+        "probabilite": 0.7679
+      },
+      {
+        "mot": " ça",
+        "debut": 813.34,
+        "fin": 813.62,
+        "probabilite": 0.7744
+      }
+    ]
+  },
+  {
+    "debut": 813.62,
+    "fin": 814.86,
+    "texte": "qu'ils sont meilleurs qu'on doit changer.",
+    "mots": [
+      {
+        "mot": " qu",
+        "debut": 813.62,
+        "fin": 813.9,
+        "probabilite": 0.1558
+      },
+      {
+        "mot": "'ils",
+        "debut": 813.9,
+        "fin": 813.94,
+        "probabilite": 0.8713
+      },
+      {
+        "mot": " sont",
+        "debut": 813.94,
+        "fin": 814.06,
+        "probabilite": 0.8619
+      },
+      {
+        "mot": " meilleurs",
+        "debut": 814.06,
+        "fin": 814.26,
+        "probabilite": 0.6874
+      },
+      {
+        "mot": " qu",
+        "debut": 814.26,
+        "fin": 814.42,
+        "probabilite": 0.1735
+      },
+      {
+        "mot": "'on",
+        "debut": 814.42,
+        "fin": 814.48,
+        "probabilite": 0.6497
+      },
+      {
+        "mot": " doit",
+        "debut": 814.48,
+        "fin": 814.64,
+        "probabilite": 0.3104
+      },
+      {
+        "mot": " changer.",
+        "debut": 814.64,
+        "fin": 814.86,
+        "probabilite": 0.1168
+      }
+    ]
+  },
+  {
+    "debut": 815.34,
+    "fin": 816.08,
+    "texte": "Je ne veux pas être saoulé.",
+    "mots": [
+      {
+        "mot": " Je",
+        "debut": 815.34,
+        "fin": 815.54,
+        "probabilite": 0.1031
+      },
+      {
+        "mot": " ne",
+        "debut": 815.54,
+        "fin": 815.6,
+        "probabilite": 0.6186
+      },
+      {
+        "mot": " veux",
+        "debut": 815.6,
+        "fin": 815.64,
+        "probabilite": 0.8312
+      },
+      {
+        "mot": " pas",
+        "debut": 815.64,
+        "fin": 815.64,
+        "probabilite": 0.9309
+      },
+      {
+        "mot": " être",
+        "debut": 815.64,
+        "fin": 815.74,
+        "probabilite": 0.1685
+      },
+      {
+        "mot": " saoulé.",
+        "debut": 815.74,
+        "fin": 816.08,
+        "probabilite": 0.639
+      }
+    ]
+  },
+  {
+    "debut": 817.18,
+    "fin": 818.82,
+    "texte": "Je ne veux pas faire personne des meilleurs que nous",
+    "mots": [
+      {
+        "mot": " Je",
+        "debut": 817.18,
+        "fin": 817.26,
+        "probabilite": 0.6398
+      },
+      {
+        "mot": " ne",
+        "debut": 817.26,
+        "fin": 817.34,
+        "probabilite": 0.9346
+      },
+      {
+        "mot": " veux",
+        "debut": 817.34,
+        "fin": 817.34,
+        "probabilite": 0.9742
+      },
+      {
+        "mot": " pas",
+        "debut": 817.34,
+        "fin": 817.48,
+        "probabilite": 0.9801
+      },
+      {
+        "mot": " faire",
+        "debut": 817.48,
+        "fin": 817.56,
+        "probabilite": 0.5225
+      },
+      {
+        "mot": " personne",
+        "debut": 817.56,
+        "fin": 818.06,
+        "probabilite": 0.956
+      },
+      {
+        "mot": " des",
+        "debut": 818.06,
+        "fin": 818.32,
+        "probabilite": 0.3826
+      },
+      {
+        "mot": " meilleurs",
+        "debut": 818.32,
+        "fin": 818.5,
+        "probabilite": 0.979
+      },
+      {
+        "mot": " que",
+        "debut": 818.5,
+        "fin": 818.66,
+        "probabilite": 0.663
+      },
+      {
+        "mot": " nous",
+        "debut": 818.66,
+        "fin": 818.82,
+        "probabilite": 0.9706
+      }
+    ]
+  },
+  {
+    "debut": 818.82,
+    "fin": 820.38,
+    "texte": "dans quel chemin avec le cœur.",
+    "mots": [
+      {
+        "mot": " dans",
+        "debut": 818.82,
+        "fin": 819.16,
+        "probabilite": 0.5223
+      },
+      {
+        "mot": " quel",
+        "debut": 819.16,
+        "fin": 819.34,
+        "probabilite": 0.2256
+      },
+      {
+        "mot": " chemin",
+        "debut": 819.34,
+        "fin": 819.62,
+        "probabilite": 0.9483
+      },
+      {
+        "mot": " avec",
+        "debut": 819.62,
+        "fin": 820.02,
+        "probabilite": 0.2781
+      },
+      {
+        "mot": " le",
+        "debut": 820.02,
+        "fin": 820.18,
+        "probabilite": 0.9237
+      },
+      {
+        "mot": " cœur.",
+        "debut": 820.18,
+        "fin": 820.38,
+        "probabilite": 0.9705
+      }
+    ]
+  },
+  {
+    "debut": 821.18,
+    "fin": 821.8,
+    "texte": "Compris tout le monde.",
+    "mots": [
+      {
+        "mot": " Compris",
+        "debut": 821.18,
+        "fin": 821.5,
+        "probabilite": 0.672
+      },
+      {
+        "mot": " tout",
+        "debut": 821.5,
+        "fin": 821.62,
+        "probabilite": 0.957
+      },
+      {
+        "mot": " le",
+        "debut": 821.62,
+        "fin": 821.7,
+        "probabilite": 0.99
+      },
+      {
+        "mot": " monde.",
+        "debut": 821.7,
+        "fin": 821.8,
+        "probabilite": 0.9992
+      }
+    ]
+  },
+  {
+    "debut": 821.96,
+    "fin": 823.22,
+    "texte": "Nassim, vous avez compris ?",
+    "mots": [
+      {
+        "mot": " Nassim,",
+        "debut": 821.96,
+        "fin": 822.28,
+        "probabilite": 0.8694
+      },
+      {
+        "mot": " vous",
+        "debut": 822.52,
+        "fin": 822.68,
+        "probabilite": 0.6461
+      },
+      {
+        "mot": " avez",
+        "debut": 822.68,
+        "fin": 822.7,
+        "probabilite": 0.8836
+      },
+      {
+        "mot": " compris",
+        "debut": 822.7,
+        "fin": 822.98,
+        "probabilite": 0.9979
+      },
+      {
+        "mot": " ?",
+        "debut": 822.98,
+        "fin": 823.22,
+        "probabilite": 0.636
+      }
+    ]
+  },
+  {
+    "debut": 823.22,
+    "fin": 824.56,
+    "texte": "Naïf, vous avez compris ?",
+    "mots": [
+      {
+        "mot": " Naïf,",
+        "debut": 823.22,
+        "fin": 823.62,
+        "probabilite": 0.7056
+      },
+      {
+        "mot": " vous",
+        "debut": 823.82,
+        "fin": 824.02,
+        "probabilite": 0.9737
+      },
+      {
+        "mot": " avez",
+        "debut": 824.02,
+        "fin": 824.02,
+        "probabilite": 0.997
+      },
+      {
+        "mot": " compris",
+        "debut": 824.02,
+        "fin": 824.32,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " ?",
+        "debut": 824.32,
+        "fin": 824.56,
+        "probabilite": 0.9846
+      }
+    ]
+  },
+  {
+    "debut": 825.22,
+    "fin": 826.08,
+    "texte": "Le cœur !",
+    "mots": [
+      {
+        "mot": " Le",
+        "debut": 825.22,
+        "fin": 825.54,
+        "probabilite": 0.9268
+      },
+      {
+        "mot": " cœur",
+        "debut": 825.54,
+        "fin": 825.76,
+        "probabilite": 0.993
+      },
+      {
+        "mot": " !",
+        "debut": 825.76,
+        "fin": 826.08,
+        "probabilite": 0.378
+      }
+    ]
+  },
+  {
+    "debut": 826.08,
+    "fin": 827.02,
+    "texte": "Le cœur, il est la face.",
+    "mots": [
+      {
+        "mot": " Le",
+        "debut": 826.08,
+        "fin": 826.36,
+        "probabilite": 0.9502
+      },
+      {
+        "mot": " cœur,",
+        "debut": 826.36,
+        "fin": 826.56,
+        "probabilite": 0.9973
+      },
+      {
+        "mot": " il",
+        "debut": 826.68,
+        "fin": 826.68,
+        "probabilite": 0.9903
+      },
+      {
+        "mot": " est",
+        "debut": 826.68,
+        "fin": 826.76,
+        "probabilite": 0.9732
+      },
+      {
+        "mot": " la",
+        "debut": 826.76,
+        "fin": 826.84,
+        "probabilite": 0.4712
+      },
+      {
+        "mot": " face.",
+        "debut": 826.84,
+        "fin": 827.02,
+        "probabilite": 0.971
+      }
+    ]
+  },
+  {
+    "debut": 827.16,
+    "fin": 827.42,
+    "texte": "Ok ?",
+    "mots": [
+      {
+        "mot": " Ok",
+        "debut": 827.16,
+        "fin": 827.28,
+        "probabilite": 0.6468
+      },
+      {
+        "mot": " ?",
+        "debut": 827.28,
+        "fin": 827.42,
+        "probabilite": 0.7717
+      }
+    ]
+  },
+  {
+    "debut": 827.42,
+    "fin": 828.04,
+    "texte": "Allez !",
+    "mots": [
+      {
+        "mot": " Allez",
+        "debut": 827.42,
+        "fin": 827.56,
+        "probabilite": 0.4591
+      },
+      {
+        "mot": " !",
+        "debut": 827.56,
+        "fin": 828.04,
+        "probabilite": 0.3452
+      }
+    ]
+  }
+]

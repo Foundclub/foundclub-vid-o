@@ -1,0 +1,414 @@
+{
+  "numero": 1,
+  "format": "vertical",
+  "sha256": "54b5721589f6313d7fc5b6a9ad48b028c44801c9d8784900a9516d10aaacbcda",
+  "texte_prevu_sha256": "434f413aac26dcd2dc4cf873762442b865f2942d3d907e16818004a797a16b2f",
+  "verification": "OK",
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "premier",
+    "match",
+    "officiel",
+    "et"
+  ],
+  "derniers_mots_attendus": [
+    "maintenant",
+    "place",
+    "au",
+    "championnat"
+  ],
+  "premiers_mots_reconnus": [
+    "premier",
+    "match",
+    "officiel",
+    "et"
+  ],
+  "derniers_mots_reconnus": [
+    "maintenant",
+    "place",
+    "au",
+    "championnat"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": true,
+  "transcription": [
+    {
+      "debut": 0.0,
+      "fin": 4.76,
+      "texte": "Premier match officiel et premier trophée déjà, c'est juste incroyable.",
+      "mots": [
+        {
+          "mot": " Premier",
+          "debut": 0.0,
+          "fin": 0.48
+        },
+        {
+          "mot": " match",
+          "debut": 0.48,
+          "fin": 0.72
+        },
+        {
+          "mot": " officiel",
+          "debut": 0.72,
+          "fin": 1.36
+        },
+        {
+          "mot": " et",
+          "debut": 1.36,
+          "fin": 1.74
+        },
+        {
+          "mot": " premier",
+          "debut": 1.74,
+          "fin": 2.32
+        },
+        {
+          "mot": " trophée",
+          "debut": 2.32,
+          "fin": 2.78
+        },
+        {
+          "mot": " déjà,",
+          "debut": 2.78,
+          "fin": 3.04
+        },
+        {
+          "mot": " c",
+          "debut": 3.28,
+          "fin": 3.3
+        },
+        {
+          "mot": "'est",
+          "debut": 3.3,
+          "fin": 3.4
+        },
+        {
+          "mot": " juste",
+          "debut": 3.4,
+          "fin": 3.66
+        },
+        {
+          "mot": " incroyable.",
+          "debut": 3.66,
+          "fin": 4.76
+        }
+      ]
+    },
+    {
+      "debut": 5.06,
+      "fin": 12.88,
+      "texte": "Donc félicitations à l'équipe, félicitations à tout le club, félicitations également à tous les joueurs qui ont participé à cette montée l'année dernière",
+      "mots": [
+        {
+          "mot": " Donc",
+          "debut": 5.06,
+          "fin": 5.16
+        },
+        {
+          "mot": " félicitations",
+          "debut": 5.16,
+          "fin": 5.86
+        },
+        {
+          "mot": " à",
+          "debut": 5.86,
+          "fin": 6.22
+        },
+        {
+          "mot": " l",
+          "debut": 6.22,
+          "fin": 6.3
+        },
+        {
+          "mot": "'équipe,",
+          "debut": 6.3,
+          "fin": 6.6
+        },
+        {
+          "mot": " félicitations",
+          "debut": 6.76,
+          "fin": 7.16
+        },
+        {
+          "mot": " à",
+          "debut": 7.16,
+          "fin": 7.34
+        },
+        {
+          "mot": " tout",
+          "debut": 7.34,
+          "fin": 7.54
+        },
+        {
+          "mot": " le",
+          "debut": 7.54,
+          "fin": 7.7
+        },
+        {
+          "mot": " club,",
+          "debut": 7.7,
+          "fin": 7.9
+        },
+        {
+          "mot": " félicitations",
+          "debut": 8.1,
+          "fin": 8.8
+        },
+        {
+          "mot": " également",
+          "debut": 8.8,
+          "fin": 9.16
+        },
+        {
+          "mot": " à",
+          "debut": 9.16,
+          "fin": 9.5
+        },
+        {
+          "mot": " tous",
+          "debut": 9.5,
+          "fin": 9.8
+        },
+        {
+          "mot": " les",
+          "debut": 9.8,
+          "fin": 9.94
+        },
+        {
+          "mot": " joueurs",
+          "debut": 9.94,
+          "fin": 10.36
+        },
+        {
+          "mot": " qui",
+          "debut": 10.36,
+          "fin": 10.76
+        },
+        {
+          "mot": " ont",
+          "debut": 10.76,
+          "fin": 10.9
+        },
+        {
+          "mot": " participé",
+          "debut": 10.9,
+          "fin": 11.54
+        },
+        {
+          "mot": " à",
+          "debut": 11.54,
+          "fin": 11.78
+        },
+        {
+          "mot": " cette",
+          "debut": 11.78,
+          "fin": 12.0
+        },
+        {
+          "mot": " montée",
+          "debut": 12.0,
+          "fin": 12.3
+        },
+        {
+          "mot": " l",
+          "debut": 12.3,
+          "fin": 12.4
+        },
+        {
+          "mot": "'année",
+          "debut": 12.4,
+          "fin": 12.5
+        },
+        {
+          "mot": " dernière",
+          "debut": 12.5,
+          "fin": 12.88
+        }
+      ]
+    },
+    {
+      "debut": 12.88,
+      "fin": 15.92,
+      "texte": "parce que sans eux, on n'aurait pas pu faire ce match incroyable.",
+      "mots": [
+        {
+          "mot": " parce",
+          "debut": 12.88,
+          "fin": 13.12
+        },
+        {
+          "mot": " que",
+          "debut": 13.12,
+          "fin": 13.24
+        },
+        {
+          "mot": " sans",
+          "debut": 13.24,
+          "fin": 13.42
+        },
+        {
+          "mot": " eux,",
+          "debut": 13.42,
+          "fin": 13.62
+        },
+        {
+          "mot": " on",
+          "debut": 13.76,
+          "fin": 14.1
+        },
+        {
+          "mot": " n",
+          "debut": 14.1,
+          "fin": 14.2
+        },
+        {
+          "mot": "'aurait",
+          "debut": 14.2,
+          "fin": 14.3
+        },
+        {
+          "mot": " pas",
+          "debut": 14.3,
+          "fin": 14.38
+        },
+        {
+          "mot": " pu",
+          "debut": 14.38,
+          "fin": 14.52
+        },
+        {
+          "mot": " faire",
+          "debut": 14.52,
+          "fin": 14.72
+        },
+        {
+          "mot": " ce",
+          "debut": 14.72,
+          "fin": 14.88
+        },
+        {
+          "mot": " match",
+          "debut": 14.88,
+          "fin": 15.06
+        },
+        {
+          "mot": " incroyable.",
+          "debut": 15.06,
+          "fin": 15.92
+        }
+      ]
+    },
+    {
+      "debut": 16.18,
+      "fin": 22.12,
+      "texte": "Mais maintenant voilà, ce trophée, il est à la maison, il restera à la maison et maintenant place au championnat.",
+      "mots": [
+        {
+          "mot": " Mais",
+          "debut": 16.18,
+          "fin": 16.32
+        },
+        {
+          "mot": " maintenant",
+          "debut": 16.32,
+          "fin": 16.64
+        },
+        {
+          "mot": " voilà,",
+          "debut": 16.64,
+          "fin": 16.92
+        },
+        {
+          "mot": " ce",
+          "debut": 17.12,
+          "fin": 17.2
+        },
+        {
+          "mot": " trophée,",
+          "debut": 17.2,
+          "fin": 17.72
+        },
+        {
+          "mot": " il",
+          "debut": 17.72,
+          "fin": 17.98
+        },
+        {
+          "mot": " est",
+          "debut": 17.98,
+          "fin": 18.06
+        },
+        {
+          "mot": " à",
+          "debut": 18.06,
+          "fin": 18.12
+        },
+        {
+          "mot": " la",
+          "debut": 18.12,
+          "fin": 18.26
+        },
+        {
+          "mot": " maison,",
+          "debut": 18.26,
+          "fin": 18.52
+        },
+        {
+          "mot": " il",
+          "debut": 18.62,
+          "fin": 18.7
+        },
+        {
+          "mot": " restera",
+          "debut": 18.7,
+          "fin": 19.06
+        },
+        {
+          "mot": " à",
+          "debut": 19.06,
+          "fin": 19.16
+        },
+        {
+          "mot": " la",
+          "debut": 19.16,
+          "fin": 19.22
+        },
+        {
+          "mot": " maison",
+          "debut": 19.22,
+          "fin": 19.58
+        },
+        {
+          "mot": " et",
+          "debut": 19.58,
+          "fin": 19.9
+        },
+        {
+          "mot": " maintenant",
+          "debut": 19.9,
+          "fin": 20.3
+        },
+        {
+          "mot": " place",
+          "debut": 20.3,
+          "fin": 21.0
+        },
+        {
+          "mot": " au",
+          "debut": 21.0,
+          "fin": 21.38
+        },
+        {
+          "mot": " championnat.",
+          "debut": 21.38,
+          "fin": 22.12
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {},
+  "lufs": -13.94,
+  "pic_vrai_db": -1.67,
+  "duree": 22.366666,
+  "taille_octets": 18981575
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "debut": 642.9,
+    "fin": 649.52,
+    "texte": "Sous-titrage ST' 501",
+    "mots": [
+      {
+        "mot": " Sous",
+        "debut": 642.9,
+        "fin": 644.3,
+        "probabilite": 0.0429
+      },
+      {
+        "mot": "-titrage",
+        "debut": 644.3,
+        "fin": 645.7,
+        "probabilite": 0.5233
+      },
+      {
+        "mot": " ST'",
+        "debut": 645.7,
+        "fin": 645.88,
+        "probabilite": 0.0316
+      },
+      {
+        "mot": " 501",
+        "debut": 648.24,
+        "fin": 649.52,
+        "probabilite": 0.9978
+      }
+    ]
+  },
+  {
+    "debut": 671.02,
+    "fin": 673.36,
+    "texte": "à 95% il sera rien le petit doigt",
+    "mots": [
+      {
+        "mot": " à",
+        "debut": 671.02,
+        "fin": 671.4,
+        "probabilite": 0.0876
+      },
+      {
+        "mot": " 95",
+        "debut": 671.4,
+        "fin": 671.4,
+        "probabilite": 0.6996
+      },
+      {
+        "mot": "%",
+        "debut": 671.4,
+        "fin": 672.26,
+        "probabilite": 0.7417
+      },
+      {
+        "mot": " il",
+        "debut": 672.26,
+        "fin": 672.44,
+        "probabilite": 0.6941
+      },
+      {
+        "mot": " sera",
+        "debut": 672.44,
+        "fin": 672.58,
+        "probabilite": 0.5467
+      },
+      {
+        "mot": " rien",
+        "debut": 672.58,
+        "fin": 672.82,
+        "probabilite": 0.9254
+      },
+      {
+        "mot": " le",
+        "debut": 672.82,
+        "fin": 672.98,
+        "probabilite": 0.8303
+      },
+      {
+        "mot": " petit",
+        "debut": 672.98,
+        "fin": 673.16,
+        "probabilite": 0.7431
+      },
+      {
+        "mot": " doigt",
+        "debut": 673.16,
+        "fin": 673.36,
+        "probabilite": 0.8992
+      }
+    ]
+  }
+]

@@ -1,0 +1,836 @@
+{
+  "numero": 9,
+  "format": "vertical",
+  "sha256": "1eeae7e73e653787a95e16ce80e147fdcb7ce981940c2caf30d9038bf810849d",
+  "texte_prevu_sha256": "dd42a785d796c30d678a156160abd8ea14ef35f3725a8c080872ab4426cacd95",
+  "verification": "OK",
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "quand",
+    "tu",
+    "manges",
+    "tu"
+  ],
+  "derniers_mots_attendus": [
+    "je",
+    "reste",
+    "comme",
+    "ca"
+  ],
+  "premiers_mots_reconnus": [
+    "quand",
+    "tu",
+    "manges",
+    "tu"
+  ],
+  "derniers_mots_reconnus": [
+    "je",
+    "reste",
+    "comme",
+    "ca"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": true,
+  "transcription": [
+    {
+      "debut": 0.0,
+      "fin": 2.46,
+      "texte": "Quand tu manges, tu utilises ces doigts ?",
+      "mots": [
+        {
+          "mot": " Quand",
+          "debut": 0.0,
+          "fin": 0.14
+        },
+        {
+          "mot": " tu",
+          "debut": 0.14,
+          "fin": 1.36
+        },
+        {
+          "mot": " manges,",
+          "debut": 1.36,
+          "fin": 1.68
+        },
+        {
+          "mot": " tu",
+          "debut": 1.74,
+          "fin": 1.84
+        },
+        {
+          "mot": " utilises",
+          "debut": 1.84,
+          "fin": 2.16
+        },
+        {
+          "mot": " ces",
+          "debut": 2.16,
+          "fin": 2.28
+        },
+        {
+          "mot": " doigts",
+          "debut": 2.28,
+          "fin": 2.42
+        },
+        {
+          "mot": " ?",
+          "debut": 2.42,
+          "fin": 2.46
+        }
+      ]
+    },
+    {
+      "debut": 2.46,
+      "fin": 3.84,
+      "texte": "Les trois doigts, là, ici, là, comme ça.",
+      "mots": [
+        {
+          "mot": " Les",
+          "debut": 2.46,
+          "fin": 2.6
+        },
+        {
+          "mot": " trois",
+          "debut": 2.6,
+          "fin": 3.0
+        },
+        {
+          "mot": " doigts,",
+          "debut": 3.0,
+          "fin": 3.16
+        },
+        {
+          "mot": " là,",
+          "debut": 3.24,
+          "fin": 3.26
+        },
+        {
+          "mot": " ici,",
+          "debut": 3.32,
+          "fin": 3.4
+        },
+        {
+          "mot": " là,",
+          "debut": 3.52,
+          "fin": 3.54
+        },
+        {
+          "mot": " comme",
+          "debut": 3.6,
+          "fin": 3.76
+        },
+        {
+          "mot": " ça.",
+          "debut": 3.76,
+          "fin": 3.84
+        }
+      ]
+    },
+    {
+      "debut": 4.24,
+      "fin": 6.12,
+      "texte": "Quand tu manges, peu importe.",
+      "mots": [
+        {
+          "mot": " Quand",
+          "debut": 4.24,
+          "fin": 4.46
+        },
+        {
+          "mot": " tu",
+          "debut": 4.46,
+          "fin": 4.6
+        },
+        {
+          "mot": " manges,",
+          "debut": 4.6,
+          "fin": 4.92
+        },
+        {
+          "mot": " peu",
+          "debut": 5.3,
+          "fin": 5.62
+        },
+        {
+          "mot": " importe.",
+          "debut": 5.62,
+          "fin": 6.12
+        }
+      ]
+    },
+    {
+      "debut": 6.2,
+      "fin": 6.68,
+      "texte": "Trois doigts.",
+      "mots": [
+        {
+          "mot": " Trois",
+          "debut": 6.2,
+          "fin": 6.46
+        },
+        {
+          "mot": " doigts.",
+          "debut": 6.46,
+          "fin": 6.68
+        }
+      ]
+    },
+    {
+      "debut": 7.36,
+      "fin": 9.3,
+      "texte": "Quand tu joues à la play, quatre doigts.",
+      "mots": [
+        {
+          "mot": " Quand",
+          "debut": 7.36,
+          "fin": 7.64
+        },
+        {
+          "mot": " tu",
+          "debut": 7.64,
+          "fin": 7.8
+        },
+        {
+          "mot": " joues",
+          "debut": 7.8,
+          "fin": 7.92
+        },
+        {
+          "mot": " à",
+          "debut": 7.92,
+          "fin": 7.98
+        },
+        {
+          "mot": " la",
+          "debut": 7.98,
+          "fin": 8.06
+        },
+        {
+          "mot": " play,",
+          "debut": 8.06,
+          "fin": 8.2
+        },
+        {
+          "mot": " quatre",
+          "debut": 8.36,
+          "fin": 8.56
+        },
+        {
+          "mot": " doigts.",
+          "debut": 8.56,
+          "fin": 9.3
+        }
+      ]
+    },
+    {
+      "debut": 11.52,
+      "fin": 13.88,
+      "texte": "Quand tu fais l'oreille, deux doigts.",
+      "mots": [
+        {
+          "mot": " Quand",
+          "debut": 11.52,
+          "fin": 11.8
+        },
+        {
+          "mot": " tu",
+          "debut": 11.8,
+          "fin": 12.08
+        },
+        {
+          "mot": " fais",
+          "debut": 12.08,
+          "fin": 12.92
+        },
+        {
+          "mot": " l",
+          "debut": 12.92,
+          "fin": 13.02
+        },
+        {
+          "mot": "'oreille,",
+          "debut": 13.02,
+          "fin": 13.22
+        },
+        {
+          "mot": " deux",
+          "debut": 13.46,
+          "fin": 13.62
+        },
+        {
+          "mot": " doigts.",
+          "debut": 13.62,
+          "fin": 13.88
+        }
+      ]
+    },
+    {
+      "debut": 14.38,
+      "fin": 15.1,
+      "texte": "Non, en vrai, deux doigts.",
+      "mots": [
+        {
+          "mot": " Non,",
+          "debut": 14.38,
+          "fin": 14.56
+        },
+        {
+          "mot": " en",
+          "debut": 14.74,
+          "fin": 14.84
+        },
+        {
+          "mot": " vrai,",
+          "debut": 14.84,
+          "fin": 14.9
+        },
+        {
+          "mot": " deux",
+          "debut": 15.04,
+          "fin": 15.08
+        },
+        {
+          "mot": " doigts.",
+          "debut": 15.08,
+          "fin": 15.1
+        }
+      ]
+    },
+    {
+      "debut": 15.48,
+      "fin": 17.3,
+      "texte": "Faites l'oreille, l'oreille, c'est avec le petit.",
+      "mots": [
+        {
+          "mot": " Faites",
+          "debut": 15.48,
+          "fin": 15.66
+        },
+        {
+          "mot": " l",
+          "debut": 15.66,
+          "fin": 15.76
+        },
+        {
+          "mot": "'oreille,",
+          "debut": 15.76,
+          "fin": 15.94
+        },
+        {
+          "mot": " l",
+          "debut": 16.0,
+          "fin": 16.04
+        },
+        {
+          "mot": "'oreille,",
+          "debut": 16.04,
+          "fin": 16.24
+        },
+        {
+          "mot": " c",
+          "debut": 16.36,
+          "fin": 16.36
+        },
+        {
+          "mot": "'est",
+          "debut": 16.36,
+          "fin": 16.48
+        },
+        {
+          "mot": " avec",
+          "debut": 16.48,
+          "fin": 16.76
+        },
+        {
+          "mot": " le",
+          "debut": 16.76,
+          "fin": 17.16
+        },
+        {
+          "mot": " petit.",
+          "debut": 17.16,
+          "fin": 17.3
+        }
+      ]
+    },
+    {
+      "debut": 17.44,
+      "fin": 18.18,
+      "texte": "Mais t'es un fou, toi.",
+      "mots": [
+        {
+          "mot": " Mais",
+          "debut": 17.44,
+          "fin": 17.56
+        },
+        {
+          "mot": " t",
+          "debut": 17.56,
+          "fin": 17.66
+        },
+        {
+          "mot": "'es",
+          "debut": 17.66,
+          "fin": 17.7
+        },
+        {
+          "mot": " un",
+          "debut": 17.7,
+          "fin": 17.84
+        },
+        {
+          "mot": " fou,",
+          "debut": 17.84,
+          "fin": 17.98
+        },
+        {
+          "mot": " toi.",
+          "debut": 18.08,
+          "fin": 18.18
+        }
+      ]
+    },
+    {
+      "debut": 18.38,
+      "fin": 19.64,
+      "texte": "Non, mais si tu fais avec ton doigt.",
+      "mots": [
+        {
+          "mot": " Non,",
+          "debut": 18.38,
+          "fin": 18.52
+        },
+        {
+          "mot": " mais",
+          "debut": 18.6,
+          "fin": 18.64
+        },
+        {
+          "mot": " si",
+          "debut": 18.64,
+          "fin": 19.0
+        },
+        {
+          "mot": " tu",
+          "debut": 19.0,
+          "fin": 19.1
+        },
+        {
+          "mot": " fais",
+          "debut": 19.1,
+          "fin": 19.2
+        },
+        {
+          "mot": " avec",
+          "debut": 19.2,
+          "fin": 19.32
+        },
+        {
+          "mot": " ton",
+          "debut": 19.32,
+          "fin": 19.44
+        },
+        {
+          "mot": " doigt.",
+          "debut": 19.44,
+          "fin": 19.64
+        }
+      ]
+    },
+    {
+      "debut": 19.72,
+      "fin": 20.26,
+      "texte": "Pour faire l'odo.",
+      "mots": [
+        {
+          "mot": " Pour",
+          "debut": 19.72,
+          "fin": 19.82
+        },
+        {
+          "mot": " faire",
+          "debut": 19.82,
+          "fin": 19.98
+        },
+        {
+          "mot": " l",
+          "debut": 19.98,
+          "fin": 20.1
+        },
+        {
+          "mot": "'odo.",
+          "debut": 20.1,
+          "fin": 20.26
+        }
+      ]
+    },
+    {
+      "debut": 20.84,
+      "fin": 21.28,
+      "texte": "Comme ça.",
+      "mots": [
+        {
+          "mot": " Comme",
+          "debut": 20.84,
+          "fin": 21.12
+        },
+        {
+          "mot": " ça.",
+          "debut": 21.12,
+          "fin": 21.28
+        }
+      ]
+    },
+    {
+      "debut": 24.26,
+      "fin": 26.66,
+      "texte": "On va mettre une patate dans tous les camels.",
+      "mots": [
+        {
+          "mot": " On",
+          "debut": 24.26,
+          "fin": 24.54
+        },
+        {
+          "mot": " va",
+          "debut": 24.54,
+          "fin": 24.68
+        },
+        {
+          "mot": " mettre",
+          "debut": 24.68,
+          "fin": 24.94
+        },
+        {
+          "mot": " une",
+          "debut": 24.94,
+          "fin": 25.9
+        },
+        {
+          "mot": " patate",
+          "debut": 25.9,
+          "fin": 26.18
+        },
+        {
+          "mot": " dans",
+          "debut": 26.18,
+          "fin": 26.3
+        },
+        {
+          "mot": " tous",
+          "debut": 26.3,
+          "fin": 26.4
+        },
+        {
+          "mot": " les",
+          "debut": 26.4,
+          "fin": 26.52
+        },
+        {
+          "mot": " camels.",
+          "debut": 26.52,
+          "fin": 26.66
+        }
+      ]
+    },
+    {
+      "debut": 26.7,
+      "fin": 28.06,
+      "texte": "Du coup, 200 000, 200 000.",
+      "mots": [
+        {
+          "mot": " Du",
+          "debut": 26.7,
+          "fin": 26.98
+        },
+        {
+          "mot": " coup,",
+          "debut": 26.98,
+          "fin": 27.08
+        },
+        {
+          "mot": " 200",
+          "debut": 27.18,
+          "fin": 27.42
+        },
+        {
+          "mot": " 000,",
+          "debut": 27.42,
+          "fin": 27.58
+        },
+        {
+          "mot": " 200",
+          "debut": 27.64,
+          "fin": 27.78
+        },
+        {
+          "mot": " 000.",
+          "debut": 27.78,
+          "fin": 28.06
+        }
+      ]
+    },
+    {
+      "debut": 28.46,
+      "fin": 29.74,
+      "texte": "200 000, les deux petits doigts, alors.",
+      "mots": [
+        {
+          "mot": " 200",
+          "debut": 28.46,
+          "fin": 28.74
+        },
+        {
+          "mot": " 000,",
+          "debut": 28.74,
+          "fin": 28.96
+        },
+        {
+          "mot": " les",
+          "debut": 29.04,
+          "fin": 29.12
+        },
+        {
+          "mot": " deux",
+          "debut": 29.12,
+          "fin": 29.24
+        },
+        {
+          "mot": " petits",
+          "debut": 29.24,
+          "fin": 29.38
+        },
+        {
+          "mot": " doigts,",
+          "debut": 29.38,
+          "fin": 29.54
+        },
+        {
+          "mot": " alors.",
+          "debut": 29.64,
+          "fin": 29.74
+        }
+      ]
+    },
+    {
+      "debut": 30.0,
+      "fin": 31.96,
+      "texte": "Il y en a beaucoup pour 200 000, ils se coupent les petits doigts.",
+      "mots": [
+        {
+          "mot": " Il",
+          "debut": 30.0,
+          "fin": 30.1
+        },
+        {
+          "mot": " y",
+          "debut": 30.1,
+          "fin": 30.14
+        },
+        {
+          "mot": " en",
+          "debut": 30.14,
+          "fin": 30.2
+        },
+        {
+          "mot": " a",
+          "debut": 30.2,
+          "fin": 30.28
+        },
+        {
+          "mot": " beaucoup",
+          "debut": 30.28,
+          "fin": 30.5
+        },
+        {
+          "mot": " pour",
+          "debut": 30.5,
+          "fin": 30.72
+        },
+        {
+          "mot": " 200",
+          "debut": 30.72,
+          "fin": 30.96
+        },
+        {
+          "mot": " 000,",
+          "debut": 30.96,
+          "fin": 31.18
+        },
+        {
+          "mot": " ils",
+          "debut": 31.26,
+          "fin": 31.32
+        },
+        {
+          "mot": " se",
+          "debut": 31.32,
+          "fin": 31.4
+        },
+        {
+          "mot": " coupent",
+          "debut": 31.4,
+          "fin": 31.54
+        },
+        {
+          "mot": " les",
+          "debut": 31.54,
+          "fin": 31.62
+        },
+        {
+          "mot": " petits",
+          "debut": 31.62,
+          "fin": 31.78
+        },
+        {
+          "mot": " doigts.",
+          "debut": 31.78,
+          "fin": 31.96
+        }
+      ]
+    },
+    {
+      "debut": 32.02,
+      "fin": 33.64,
+      "texte": "Les deux petits doigts, alors ?",
+      "mots": [
+        {
+          "mot": " Les",
+          "debut": 32.02,
+          "fin": 32.18
+        },
+        {
+          "mot": " deux",
+          "debut": 32.18,
+          "fin": 32.42
+        },
+        {
+          "mot": " petits",
+          "debut": 32.42,
+          "fin": 32.54
+        },
+        {
+          "mot": " doigts,",
+          "debut": 32.54,
+          "fin": 32.76
+        },
+        {
+          "mot": " alors",
+          "debut": 32.82,
+          "fin": 32.9
+        },
+        {
+          "mot": " ?",
+          "debut": 32.9,
+          "fin": 33.64
+        }
+      ]
+    },
+    {
+      "debut": 33.64,
+      "fin": 34.36,
+      "texte": "400 000.",
+      "mots": [
+        {
+          "mot": " 400",
+          "debut": 33.64,
+          "fin": 34.12
+        },
+        {
+          "mot": " 000.",
+          "debut": 34.12,
+          "fin": 34.36
+        }
+      ]
+    },
+    {
+      "debut": 39.54,
+      "fin": 41.08,
+      "texte": "400 000, c'est presque un demi-million.",
+      "mots": [
+        {
+          "mot": " 400",
+          "debut": 39.54,
+          "fin": 39.86
+        },
+        {
+          "mot": " 000,",
+          "debut": 39.86,
+          "fin": 40.18
+        },
+        {
+          "mot": " c",
+          "debut": 40.22,
+          "fin": 40.22
+        },
+        {
+          "mot": "'est",
+          "debut": 40.22,
+          "fin": 40.32
+        },
+        {
+          "mot": " presque",
+          "debut": 40.32,
+          "fin": 40.46
+        },
+        {
+          "mot": " un",
+          "debut": 40.46,
+          "fin": 40.62
+        },
+        {
+          "mot": " demi",
+          "debut": 40.62,
+          "fin": 40.82
+        },
+        {
+          "mot": "-million.",
+          "debut": 40.82,
+          "fin": 41.08
+        }
+      ]
+    },
+    {
+      "debut": 41.82,
+      "fin": 43.32,
+      "texte": "En vrai, je reste comme ça.",
+      "mots": [
+        {
+          "mot": " En",
+          "debut": 41.82,
+          "fin": 42.14
+        },
+        {
+          "mot": " vrai,",
+          "debut": 42.14,
+          "fin": 42.36
+        },
+        {
+          "mot": " je",
+          "debut": 42.5,
+          "fin": 42.52
+        },
+        {
+          "mot": " reste",
+          "debut": 42.52,
+          "fin": 42.96
+        },
+        {
+          "mot": " comme",
+          "debut": 42.96,
+          "fin": 43.14
+        },
+        {
+          "mot": " ça.",
+          "debut": 43.14,
+          "fin": 43.32
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {},
+  "lufs": -14.0,
+  "pic_vrai_db": -1.66,
+  "duree": 43.5,
+  "taille_octets": 20276823
+}

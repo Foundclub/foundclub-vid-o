@@ -1,0 +1,113 @@
+[
+  {
+    "debut": 592.76,
+    "fin": 601.88,
+    "texte": "Sous-titrage ST' 501",
+    "mots": [
+      {
+        "mot": " Sous",
+        "debut": 592.76,
+        "fin": 594.16,
+        "probabilite": 0.4829
+      },
+      {
+        "mot": "-titrage",
+        "debut": 594.16,
+        "fin": 595.56,
+        "probabilite": 0.6181
+      },
+      {
+        "mot": " ST'",
+        "debut": 595.56,
+        "fin": 596.06,
+        "probabilite": 0.4707
+      },
+      {
+        "mot": " 501",
+        "debut": 596.08,
+        "fin": 601.88,
+        "probabilite": 0.9983
+      }
+    ]
+  },
+  {
+    "debut": 602.88,
+    "fin": 606.48,
+    "texte": "On a 200 000, je coupe ce doigt.",
+    "mots": [
+      {
+        "mot": " On",
+        "debut": 602.88,
+        "fin": 603.4,
+        "probabilite": 0.0723
+      },
+      {
+        "mot": " a",
+        "debut": 603.4,
+        "fin": 603.56,
+        "probabilite": 0.5023
+      },
+      {
+        "mot": " 200",
+        "debut": 603.56,
+        "fin": 604.66,
+        "probabilite": 0.6839
+      },
+      {
+        "mot": " 000,",
+        "debut": 604.66,
+        "fin": 605.0,
+        "probabilite": 0.6364
+      },
+      {
+        "mot": " je",
+        "debut": 605.1,
+        "fin": 605.18,
+        "probabilite": 0.8687
+      },
+      {
+        "mot": " coupe",
+        "debut": 605.18,
+        "fin": 605.36,
+        "probabilite": 0.9939
+      },
+      {
+        "mot": " ce",
+        "debut": 605.36,
+        "fin": 606.14,
+        "probabilite": 0.8929
+      },
+      {
+        "mot": " doigt.",
+        "debut": 606.14,
+        "fin": 606.48,
+        "probabilite": 0.984
+      }
+    ]
+  },
+  {
+    "debut": 607.12,
+    "fin": 607.74,
+    "texte": "Juste un ?",
+    "mots": [
+      {
+        "mot": " Juste",
+        "debut": 607.12,
+        "fin": 607.64,
+        "probabilite": 0.9524
+      },
+      {
+        "mot": " un",
+        "debut": 607.64,
+        "fin": 607.64,
+        "probabilite": 0.8814
+      },
+      {
+        "mot": " ?",
+        "debut": 607.64,
+        "fin": 607.74,
+        "probabilite": 0.623
+      }
+    ]
+  }
+]

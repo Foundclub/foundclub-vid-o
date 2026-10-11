@@ -1,0 +1,643 @@
+{
+  "numero": 6,
+  "format": "horizontal",
+  "sha256": "02080eb3ae8231556fdbe36a8fd2b9b23a3861a6fd3b9390640a689437ee0552",
+  "texte_prevu_sha256": "7851fa4f95a6274cd5ef2bf7a5edde7e8efef435c1115ea0a70042f515ab06f3",
+  "verification": "OK",
+  "modele_verification": "turbo",
+  "vad": true,
+  "aide_vestiaire": false,
+  "aide_dialogue": false,
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "match",
+    "face",
+    "a",
+    "rousset"
+  ],
+  "derniers_mots_attendus": [
+    "tres",
+    "tres",
+    "tres",
+    "important"
+  ],
+  "premiers_mots_reconnus": [
+    "match",
+    "face",
+    "a",
+    "rousset"
+  ],
+  "derniers_mots_reconnus": [
+    "tres",
+    "tres",
+    "tres",
+    "important"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": true,
+  "transcription": [
+    {
+      "debut": 0,
+      "fin": 8.06,
+      "texte": "Match face à Rousset. Équipe qui vient de descendre de National 2. Ce week-end, il va falloir être prêt. C'est un gros choc encore une fois.",
+      "mots": [
+        {
+          "mot": " Match",
+          "debut": 0,
+          "fin": 0.5
+        },
+        {
+          "mot": " face",
+          "debut": 0.5,
+          "fin": 0.78
+        },
+        {
+          "mot": " à",
+          "debut": 0.78,
+          "fin": 0.94
+        },
+        {
+          "mot": " Rousset.",
+          "debut": 0.94,
+          "fin": 1.34
+        },
+        {
+          "mot": " Équipe",
+          "debut": 1.68,
+          "fin": 2.12
+        },
+        {
+          "mot": " qui",
+          "debut": 2.12,
+          "fin": 2.26
+        },
+        {
+          "mot": " vient",
+          "debut": 2.26,
+          "fin": 2.62
+        },
+        {
+          "mot": " de",
+          "debut": 2.62,
+          "fin": 2.82
+        },
+        {
+          "mot": " descendre",
+          "debut": 2.82,
+          "fin": 3.38
+        },
+        {
+          "mot": " de",
+          "debut": 3.38,
+          "fin": 3.84
+        },
+        {
+          "mot": " National",
+          "debut": 3.84,
+          "fin": 4.2
+        },
+        {
+          "mot": " 2.",
+          "debut": 4.2,
+          "fin": 4.5
+        },
+        {
+          "mot": " Ce",
+          "debut": 4.66,
+          "fin": 4.84
+        },
+        {
+          "mot": " week",
+          "debut": 4.84,
+          "fin": 5.04
+        },
+        {
+          "mot": "-end,",
+          "debut": 5.04,
+          "fin": 5.18
+        },
+        {
+          "mot": " il",
+          "debut": 5.28,
+          "fin": 5.3
+        },
+        {
+          "mot": " va",
+          "debut": 5.3,
+          "fin": 5.32
+        },
+        {
+          "mot": " falloir",
+          "debut": 5.32,
+          "fin": 5.54
+        },
+        {
+          "mot": " être",
+          "debut": 5.54,
+          "fin": 5.68
+        },
+        {
+          "mot": " prêt.",
+          "debut": 5.68,
+          "fin": 5.92
+        },
+        {
+          "mot": " C",
+          "debut": 6.34,
+          "fin": 6.6
+        },
+        {
+          "mot": "'est",
+          "debut": 6.6,
+          "fin": 6.7
+        },
+        {
+          "mot": " un",
+          "debut": 6.7,
+          "fin": 6.84
+        },
+        {
+          "mot": " gros",
+          "debut": 6.84,
+          "fin": 7.14
+        },
+        {
+          "mot": " choc",
+          "debut": 7.14,
+          "fin": 7.46
+        },
+        {
+          "mot": " encore",
+          "debut": 7.46,
+          "fin": 7.7
+        },
+        {
+          "mot": " une",
+          "debut": 7.7,
+          "fin": 7.84
+        },
+        {
+          "mot": " fois.",
+          "debut": 7.84,
+          "fin": 8.06
+        }
+      ]
+    },
+    {
+      "debut": 8.56,
+      "fin": 17.9,
+      "texte": "À domicile, malheureusement, on ne va pas pouvoir jouer chez nous à la Mosson. On va jouer à Suissard. C'est un match un peu délocalisé parce que notre terrain n'est pas encore aux normes.",
+      "mots": [
+        {
+          "mot": " À",
+          "debut": 8.56,
+          "fin": 8.68
+        },
+        {
+          "mot": " domicile,",
+          "debut": 8.68,
+          "fin": 9.2
+        },
+        {
+          "mot": " malheureusement,",
+          "debut": 9.32,
+          "fin": 9.76
+        },
+        {
+          "mot": " on",
+          "debut": 9.82,
+          "fin": 9.92
+        },
+        {
+          "mot": " ne",
+          "debut": 9.92,
+          "fin": 10.02
+        },
+        {
+          "mot": " va",
+          "debut": 10.02,
+          "fin": 10.02
+        },
+        {
+          "mot": " pas",
+          "debut": 10.02,
+          "fin": 10.12
+        },
+        {
+          "mot": " pouvoir",
+          "debut": 10.12,
+          "fin": 10.34
+        },
+        {
+          "mot": " jouer",
+          "debut": 10.34,
+          "fin": 10.64
+        },
+        {
+          "mot": " chez",
+          "debut": 10.64,
+          "fin": 10.98
+        },
+        {
+          "mot": " nous",
+          "debut": 10.98,
+          "fin": 11.28
+        },
+        {
+          "mot": " à",
+          "debut": 11.28,
+          "fin": 11.8
+        },
+        {
+          "mot": " la",
+          "debut": 11.8,
+          "fin": 11.98
+        },
+        {
+          "mot": " Mosson.",
+          "debut": 11.98,
+          "fin": 12.36
+        },
+        {
+          "mot": " On",
+          "debut": 12.54,
+          "fin": 12.7
+        },
+        {
+          "mot": " va",
+          "debut": 12.7,
+          "fin": 12.8
+        },
+        {
+          "mot": " jouer",
+          "debut": 12.8,
+          "fin": 13.02
+        },
+        {
+          "mot": " à",
+          "debut": 13.02,
+          "fin": 13.18
+        },
+        {
+          "mot": " Suissard.",
+          "debut": 13.18,
+          "fin": 13.64
+        },
+        {
+          "mot": " C",
+          "debut": 13.82,
+          "fin": 13.88
+        },
+        {
+          "mot": "'est",
+          "debut": 13.88,
+          "fin": 13.92
+        },
+        {
+          "mot": " un",
+          "debut": 13.92,
+          "fin": 14.04
+        },
+        {
+          "mot": " match",
+          "debut": 14.04,
+          "fin": 14.26
+        },
+        {
+          "mot": " un",
+          "debut": 14.26,
+          "fin": 14.4
+        },
+        {
+          "mot": " peu",
+          "debut": 14.4,
+          "fin": 14.56
+        },
+        {
+          "mot": " délocalisé",
+          "debut": 14.56,
+          "fin": 15.36
+        },
+        {
+          "mot": " parce",
+          "debut": 15.36,
+          "fin": 15.62
+        },
+        {
+          "mot": " que",
+          "debut": 15.62,
+          "fin": 15.94
+        },
+        {
+          "mot": " notre",
+          "debut": 15.94,
+          "fin": 16.58
+        },
+        {
+          "mot": " terrain",
+          "debut": 16.58,
+          "fin": 16.88
+        },
+        {
+          "mot": " n",
+          "debut": 16.88,
+          "fin": 17.0
+        },
+        {
+          "mot": "'est",
+          "debut": 17.0,
+          "fin": 17.08
+        },
+        {
+          "mot": " pas",
+          "debut": 17.08,
+          "fin": 17.2
+        },
+        {
+          "mot": " encore",
+          "debut": 17.2,
+          "fin": 17.46
+        },
+        {
+          "mot": " aux",
+          "debut": 17.46,
+          "fin": 17.58
+        },
+        {
+          "mot": " normes.",
+          "debut": 17.58,
+          "fin": 17.9
+        }
+      ]
+    },
+    {
+      "debut": 18.34,
+      "fin": 27.88,
+      "texte": "Ça devrait arriver d'ici peu. Il va falloir rebondir après cette première défaite. Il va falloir vite passer à autre chose et gagner lors de ce premier match à domicile.",
+      "mots": [
+        {
+          "mot": " Ça",
+          "debut": 18.34,
+          "fin": 18.7
+        },
+        {
+          "mot": " devrait",
+          "debut": 18.7,
+          "fin": 18.94
+        },
+        {
+          "mot": " arriver",
+          "debut": 18.94,
+          "fin": 19.32
+        },
+        {
+          "mot": " d",
+          "debut": 19.32,
+          "fin": 19.68
+        },
+        {
+          "mot": "'ici",
+          "debut": 19.68,
+          "fin": 19.78
+        },
+        {
+          "mot": " peu.",
+          "debut": 19.78,
+          "fin": 20.0
+        },
+        {
+          "mot": " Il",
+          "debut": 20.14,
+          "fin": 20.54
+        },
+        {
+          "mot": " va",
+          "debut": 20.54,
+          "fin": 20.58
+        },
+        {
+          "mot": " falloir",
+          "debut": 20.58,
+          "fin": 20.96
+        },
+        {
+          "mot": " rebondir",
+          "debut": 20.96,
+          "fin": 21.6
+        },
+        {
+          "mot": " après",
+          "debut": 21.6,
+          "fin": 21.8
+        },
+        {
+          "mot": " cette",
+          "debut": 21.8,
+          "fin": 22.04
+        },
+        {
+          "mot": " première",
+          "debut": 22.04,
+          "fin": 22.4
+        },
+        {
+          "mot": " défaite.",
+          "debut": 22.4,
+          "fin": 22.76
+        },
+        {
+          "mot": " Il",
+          "debut": 22.88,
+          "fin": 22.9
+        },
+        {
+          "mot": " va",
+          "debut": 22.9,
+          "fin": 23.0
+        },
+        {
+          "mot": " falloir",
+          "debut": 23.0,
+          "fin": 23.28
+        },
+        {
+          "mot": " vite",
+          "debut": 23.28,
+          "fin": 23.68
+        },
+        {
+          "mot": " passer",
+          "debut": 23.68,
+          "fin": 24.04
+        },
+        {
+          "mot": " à",
+          "debut": 24.04,
+          "fin": 24.12
+        },
+        {
+          "mot": " autre",
+          "debut": 24.12,
+          "fin": 24.22
+        },
+        {
+          "mot": " chose",
+          "debut": 24.22,
+          "fin": 24.58
+        },
+        {
+          "mot": " et",
+          "debut": 24.58,
+          "fin": 25.16
+        },
+        {
+          "mot": " gagner",
+          "debut": 25.16,
+          "fin": 25.5
+        },
+        {
+          "mot": " lors",
+          "debut": 25.5,
+          "fin": 25.8
+        },
+        {
+          "mot": " de",
+          "debut": 25.8,
+          "fin": 25.94
+        },
+        {
+          "mot": " ce",
+          "debut": 25.94,
+          "fin": 26.08
+        },
+        {
+          "mot": " premier",
+          "debut": 26.08,
+          "fin": 26.28
+        },
+        {
+          "mot": " match",
+          "debut": 26.28,
+          "fin": 26.56
+        },
+        {
+          "mot": " à",
+          "debut": 26.56,
+          "fin": 27.22
+        },
+        {
+          "mot": " domicile.",
+          "debut": 27.22,
+          "fin": 27.88
+        }
+      ]
+    },
+    {
+      "debut": 27.88,
+      "fin": 32.3,
+      "texte": "et aller chercher les trois points parce que chaque point dans cette poule vont être très très très important.",
+      "mots": [
+        {
+          "mot": " et",
+          "debut": 27.88,
+          "fin": 28.4
+        },
+        {
+          "mot": " aller",
+          "debut": 28.4,
+          "fin": 28.56
+        },
+        {
+          "mot": " chercher",
+          "debut": 28.56,
+          "fin": 28.82
+        },
+        {
+          "mot": " les",
+          "debut": 28.82,
+          "fin": 28.96
+        },
+        {
+          "mot": " trois",
+          "debut": 28.96,
+          "fin": 29.06
+        },
+        {
+          "mot": " points",
+          "debut": 29.06,
+          "fin": 29.28
+        },
+        {
+          "mot": " parce",
+          "debut": 29.28,
+          "fin": 29.5
+        },
+        {
+          "mot": " que",
+          "debut": 29.5,
+          "fin": 29.64
+        },
+        {
+          "mot": " chaque",
+          "debut": 29.64,
+          "fin": 29.92
+        },
+        {
+          "mot": " point",
+          "debut": 29.92,
+          "fin": 30.2
+        },
+        {
+          "mot": " dans",
+          "debut": 30.2,
+          "fin": 30.34
+        },
+        {
+          "mot": " cette",
+          "debut": 30.34,
+          "fin": 30.5
+        },
+        {
+          "mot": " poule",
+          "debut": 30.5,
+          "fin": 30.74
+        },
+        {
+          "mot": " vont",
+          "debut": 30.74,
+          "fin": 30.92
+        },
+        {
+          "mot": " être",
+          "debut": 30.92,
+          "fin": 31.12
+        },
+        {
+          "mot": " très",
+          "debut": 31.12,
+          "fin": 31.46
+        },
+        {
+          "mot": " très",
+          "debut": 31.46,
+          "fin": 31.78
+        },
+        {
+          "mot": " très",
+          "debut": 31.78,
+          "fin": 32.0
+        },
+        {
+          "mot": " important.",
+          "debut": 32.0,
+          "fin": 32.3
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {},
+  "lufs": -14.02,
+  "pic_vrai_db": -0.31,
+  "duree": 32.4,
+  "taille_octets": 13313700
+}

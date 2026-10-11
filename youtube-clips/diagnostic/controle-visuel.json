@@ -1,0 +1,14 @@
+{
+  "planches_source_relues": 13,
+  "intervalle_source_secondes": 5,
+  "planches_horizontal_relues": 18,
+  "planches_vertical_relues": 18,
+  "images_par_extrait": 8,
+  "constats": [
+    "Cadre entier conservé dans les discussions, vestiaires, photos et inserts",
+    "Suivi du visage lissé dans les clips 04 et 06 ; sous-titres source coupés sur les côtés",
+    "Scènes nocturnes 07–09 sombres et caméra mobile dans la source",
+    "Animations d’abonnement déjà présentes dans la source conservées dans 01 et 13"
+  ],
+  "limite": "Relecture par images échantillonnées ; pas une vision humaine continue de toutes les images"
+}

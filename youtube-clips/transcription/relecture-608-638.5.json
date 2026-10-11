@@ -1,0 +1,744 @@
+[
+  {
+    "debut": 608.32,
+    "fin": 608.7,
+    "texte": "Lesquels ?",
+    "mots": [
+      {
+        "mot": " Lesquels",
+        "debut": 608.32,
+        "fin": 608.6,
+        "probabilite": 0.5246
+      },
+      {
+        "mot": " ?",
+        "debut": 608.6,
+        "fin": 608.7,
+        "probabilite": 0.5911
+      }
+    ]
+  },
+  {
+    "debut": 608.7,
+    "fin": 609.08,
+    "texte": "Et ce doigt.",
+    "mots": [
+      {
+        "mot": " Et",
+        "debut": 608.7,
+        "fin": 608.78,
+        "probabilite": 0.2925
+      },
+      {
+        "mot": " ce",
+        "debut": 608.78,
+        "fin": 608.78,
+        "probabilite": 0.7297
+      },
+      {
+        "mot": " doigt.",
+        "debut": 608.78,
+        "fin": 609.08,
+        "probabilite": 0.9772
+      }
+    ]
+  },
+  {
+    "debut": 609.92,
+    "fin": 611.32,
+    "texte": "Non, je peux plus faire le signe.",
+    "mots": [
+      {
+        "mot": " Non,",
+        "debut": 609.92,
+        "fin": 610.2,
+        "probabilite": 0.2598
+      },
+      {
+        "mot": " je",
+        "debut": 610.2,
+        "fin": 610.44,
+        "probabilite": 0.5483
+      },
+      {
+        "mot": " peux",
+        "debut": 610.44,
+        "fin": 610.6,
+        "probabilite": 0.6894
+      },
+      {
+        "mot": " plus",
+        "debut": 610.6,
+        "fin": 610.74,
+        "probabilite": 0.8929
+      },
+      {
+        "mot": " faire",
+        "debut": 610.74,
+        "fin": 610.92,
+        "probabilite": 0.9431
+      },
+      {
+        "mot": " le",
+        "debut": 610.92,
+        "fin": 611.08,
+        "probabilite": 0.8313
+      },
+      {
+        "mot": " signe.",
+        "debut": 611.08,
+        "fin": 611.32,
+        "probabilite": 0.4173
+      }
+    ]
+  },
+  {
+    "debut": 611.98,
+    "fin": 613.02,
+    "texte": "On la coupe les deux, là.",
+    "mots": [
+      {
+        "mot": " On",
+        "debut": 611.98,
+        "fin": 612.26,
+        "probabilite": 0.0816
+      },
+      {
+        "mot": " la",
+        "debut": 612.26,
+        "fin": 612.32,
+        "probabilite": 0.341
+      },
+      {
+        "mot": " coupe",
+        "debut": 612.32,
+        "fin": 612.52,
+        "probabilite": 0.9881
+      },
+      {
+        "mot": " les",
+        "debut": 612.52,
+        "fin": 612.72,
+        "probabilite": 0.8652
+      },
+      {
+        "mot": " deux,",
+        "debut": 612.72,
+        "fin": 612.9,
+        "probabilite": 0.9022
+      },
+      {
+        "mot": " là.",
+        "debut": 613.0,
+        "fin": 613.02,
+        "probabilite": 0.7105
+      }
+    ]
+  },
+  {
+    "debut": 614.86,
+    "fin": 616.04,
+    "texte": "Eh ben, coupe-la et là.",
+    "mots": [
+      {
+        "mot": " Eh",
+        "debut": 614.86,
+        "fin": 615.14,
+        "probabilite": 0.0281
+      },
+      {
+        "mot": " ben,",
+        "debut": 615.14,
+        "fin": 615.42,
+        "probabilite": 0.5845
+      },
+      {
+        "mot": " coupe",
+        "debut": 615.46,
+        "fin": 615.68,
+        "probabilite": 0.9775
+      },
+      {
+        "mot": "-la",
+        "debut": 615.68,
+        "fin": 615.82,
+        "probabilite": 0.7777
+      },
+      {
+        "mot": " et",
+        "debut": 615.82,
+        "fin": 615.94,
+        "probabilite": 0.6378
+      },
+      {
+        "mot": " là.",
+        "debut": 615.94,
+        "fin": 616.04,
+        "probabilite": 0.6057
+      }
+    ]
+  },
+  {
+    "debut": 616.28,
+    "fin": 617.94,
+    "texte": "Non, on la, 200 000, on la, j'en coupe.",
+    "mots": [
+      {
+        "mot": " Non,",
+        "debut": 616.28,
+        "fin": 616.56,
+        "probabilite": 0.7167
+      },
+      {
+        "mot": " on",
+        "debut": 616.62,
+        "fin": 616.7,
+        "probabilite": 0.7714
+      },
+      {
+        "mot": " la,",
+        "debut": 616.7,
+        "fin": 616.86,
+        "probabilite": 0.5095
+      },
+      {
+        "mot": " 200",
+        "debut": 616.9,
+        "fin": 617.04,
+        "probabilite": 0.8924
+      },
+      {
+        "mot": " 000,",
+        "debut": 617.04,
+        "fin": 617.34,
+        "probabilite": 0.8848
+      },
+      {
+        "mot": " on",
+        "debut": 617.4,
+        "fin": 617.48,
+        "probabilite": 0.8433
+      },
+      {
+        "mot": " la,",
+        "debut": 617.48,
+        "fin": 617.66,
+        "probabilite": 0.9813
+      },
+      {
+        "mot": " j",
+        "debut": 617.7,
+        "fin": 617.76,
+        "probabilite": 0.8742
+      },
+      {
+        "mot": "'en",
+        "debut": 617.76,
+        "fin": 617.82,
+        "probabilite": 0.9974
+      },
+      {
+        "mot": " coupe.",
+        "debut": 617.82,
+        "fin": 617.94,
+        "probabilite": 0.9933
+      }
+    ]
+  },
+  {
+    "debut": 618.3,
+    "fin": 619.78,
+    "texte": "Tu coupes lesquels ? Tu coupes ces deux-là, là ?",
+    "mots": [
+      {
+        "mot": " Tu",
+        "debut": 618.3,
+        "fin": 618.58,
+        "probabilite": 0.909
+      },
+      {
+        "mot": " coupes",
+        "debut": 618.58,
+        "fin": 618.86,
+        "probabilite": 0.8036
+      },
+      {
+        "mot": " lesquels",
+        "debut": 618.86,
+        "fin": 619.0,
+        "probabilite": 0.8132
+      },
+      {
+        "mot": " ?",
+        "debut": 619.0,
+        "fin": 619.06,
+        "probabilite": 0.8941
+      },
+      {
+        "mot": " Tu",
+        "debut": 619.06,
+        "fin": 619.18,
+        "probabilite": 0.9798
+      },
+      {
+        "mot": " coupes",
+        "debut": 619.18,
+        "fin": 619.3,
+        "probabilite": 0.997
+      },
+      {
+        "mot": " ces",
+        "debut": 619.3,
+        "fin": 619.36,
+        "probabilite": 0.9932
+      },
+      {
+        "mot": " deux",
+        "debut": 619.36,
+        "fin": 619.52,
+        "probabilite": 0.9887
+      },
+      {
+        "mot": "-là,",
+        "debut": 619.52,
+        "fin": 619.62,
+        "probabilite": 0.9732
+      },
+      {
+        "mot": " là",
+        "debut": 619.68,
+        "fin": 619.76,
+        "probabilite": 0.9956
+      },
+      {
+        "mot": " ?",
+        "debut": 619.76,
+        "fin": 619.78,
+        "probabilite": 0.9771
+      }
+    ]
+  },
+  {
+    "debut": 619.78,
+    "fin": 621.02,
+    "texte": "Non, le tout petit, il sert à rien, lui.",
+    "mots": [
+      {
+        "mot": " Non,",
+        "debut": 619.78,
+        "fin": 619.94,
+        "probabilite": 0.9723
+      },
+      {
+        "mot": " le",
+        "debut": 619.96,
+        "fin": 620.2,
+        "probabilite": 0.9479
+      },
+      {
+        "mot": " tout",
+        "debut": 620.2,
+        "fin": 620.22,
+        "probabilite": 0.9408
+      },
+      {
+        "mot": " petit,",
+        "debut": 620.22,
+        "fin": 620.42,
+        "probabilite": 0.8125
+      },
+      {
+        "mot": " il",
+        "debut": 620.5,
+        "fin": 620.56,
+        "probabilite": 0.5737
+      },
+      {
+        "mot": " sert",
+        "debut": 620.56,
+        "fin": 620.6,
+        "probabilite": 0.8661
+      },
+      {
+        "mot": " à",
+        "debut": 620.6,
+        "fin": 620.72,
+        "probabilite": 0.999
+      },
+      {
+        "mot": " rien,",
+        "debut": 620.72,
+        "fin": 620.84,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " lui.",
+        "debut": 620.92,
+        "fin": 621.02,
+        "probabilite": 0.9983
+      }
+    ]
+  },
+  {
+    "debut": 621.86,
+    "fin": 624.92,
+    "texte": "On la, même sur la plaie et tout, il sert à rien, il est juste procédé.",
+    "mots": [
+      {
+        "mot": " On",
+        "debut": 621.86,
+        "fin": 622.14,
+        "probabilite": 0.1206
+      },
+      {
+        "mot": " la,",
+        "debut": 622.14,
+        "fin": 622.36,
+        "probabilite": 0.9272
+      },
+      {
+        "mot": " même",
+        "debut": 622.44,
+        "fin": 622.64,
+        "probabilite": 0.5904
+      },
+      {
+        "mot": " sur",
+        "debut": 622.64,
+        "fin": 623.24,
+        "probabilite": 0.9942
+      },
+      {
+        "mot": " la",
+        "debut": 623.24,
+        "fin": 623.42,
+        "probabilite": 0.9911
+      },
+      {
+        "mot": " plaie",
+        "debut": 623.42,
+        "fin": 623.7,
+        "probabilite": 0.9626
+      },
+      {
+        "mot": " et",
+        "debut": 623.7,
+        "fin": 623.78,
+        "probabilite": 0.799
+      },
+      {
+        "mot": " tout,",
+        "debut": 623.78,
+        "fin": 623.9,
+        "probabilite": 0.9985
+      },
+      {
+        "mot": " il",
+        "debut": 623.94,
+        "fin": 624.06,
+        "probabilite": 0.9929
+      },
+      {
+        "mot": " sert",
+        "debut": 624.06,
+        "fin": 624.12,
+        "probabilite": 0.9792
+      },
+      {
+        "mot": " à",
+        "debut": 624.12,
+        "fin": 624.24,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " rien,",
+        "debut": 624.24,
+        "fin": 624.3,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " il",
+        "debut": 624.34,
+        "fin": 624.42,
+        "probabilite": 0.9976
+      },
+      {
+        "mot": " est",
+        "debut": 624.42,
+        "fin": 624.44,
+        "probabilite": 0.993
+      },
+      {
+        "mot": " juste",
+        "debut": 624.44,
+        "fin": 624.58,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " procédé.",
+        "debut": 624.58,
+        "fin": 624.92,
+        "probabilite": 0.8561
+      }
+    ]
+  },
+  {
+    "debut": 629.62,
+    "fin": 631.08,
+    "texte": "Putain, t'en coupes ça, 200 000 ?",
+    "mots": [
+      {
+        "mot": " Putain,",
+        "debut": 629.62,
+        "fin": 629.9,
+        "probabilite": 0.7262
+      },
+      {
+        "mot": " t",
+        "debut": 629.92,
+        "fin": 629.98,
+        "probabilite": 0.9231
+      },
+      {
+        "mot": "'en",
+        "debut": 629.98,
+        "fin": 630.04,
+        "probabilite": 0.9996
+      },
+      {
+        "mot": " coupes",
+        "debut": 630.04,
+        "fin": 630.26,
+        "probabilite": 0.9903
+      },
+      {
+        "mot": " ça,",
+        "debut": 630.26,
+        "fin": 630.34,
+        "probabilite": 0.9043
+      },
+      {
+        "mot": " 200",
+        "debut": 630.42,
+        "fin": 630.58,
+        "probabilite": 0.6626
+      },
+      {
+        "mot": " 000",
+        "debut": 630.58,
+        "fin": 630.92,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " ?",
+        "debut": 630.92,
+        "fin": 631.08,
+        "probabilite": 0.9835
+      }
+    ]
+  },
+  {
+    "debut": 631.08,
+    "fin": 631.52,
+    "texte": "Non, jamais.",
+    "mots": [
+      {
+        "mot": " Non,",
+        "debut": 631.08,
+        "fin": 631.26,
+        "probabilite": 0.9866
+      },
+      {
+        "mot": " jamais.",
+        "debut": 631.26,
+        "fin": 631.52,
+        "probabilite": 0.9955
+      }
+    ]
+  },
+  {
+    "debut": 631.7,
+    "fin": 632.24,
+    "texte": "Arrête de mentir.",
+    "mots": [
+      {
+        "mot": " Arrête",
+        "debut": 631.7,
+        "fin": 631.94,
+        "probabilite": 0.7651
+      },
+      {
+        "mot": " de",
+        "debut": 631.94,
+        "fin": 632.02,
+        "probabilite": 0.7664
+      },
+      {
+        "mot": " mentir.",
+        "debut": 632.02,
+        "fin": 632.24,
+        "probabilite": 0.966
+      }
+    ]
+  },
+  {
+    "debut": 632.5,
+    "fin": 633.96,
+    "texte": "On la, jamais, frère, il fout quoi.",
+    "mots": [
+      {
+        "mot": " On",
+        "debut": 632.5,
+        "fin": 632.74,
+        "probabilite": 0.7328
+      },
+      {
+        "mot": " la,",
+        "debut": 632.74,
+        "fin": 632.84,
+        "probabilite": 0.83
+      },
+      {
+        "mot": " jamais,",
+        "debut": 632.94,
+        "fin": 633.06,
+        "probabilite": 0.4535
+      },
+      {
+        "mot": " frère,",
+        "debut": 633.26,
+        "fin": 633.42,
+        "probabilite": 0.9346
+      },
+      {
+        "mot": " il",
+        "debut": 633.5,
+        "fin": 633.58,
+        "probabilite": 0.4441
+      },
+      {
+        "mot": " fout",
+        "debut": 633.58,
+        "fin": 633.76,
+        "probabilite": 0.8011
+      },
+      {
+        "mot": " quoi.",
+        "debut": 633.76,
+        "fin": 633.96,
+        "probabilite": 0.6749
+      }
+    ]
+  },
+  {
+    "debut": 634.1,
+    "fin": 635.3,
+    "texte": "200 patates, mon frère.",
+    "mots": [
+      {
+        "mot": " 200",
+        "debut": 634.1,
+        "fin": 634.38,
+        "probabilite": 0.9771
+      },
+      {
+        "mot": " patates,",
+        "debut": 634.38,
+        "fin": 635.0,
+        "probabilite": 0.9953
+      },
+      {
+        "mot": " mon",
+        "debut": 635.0,
+        "fin": 635.12,
+        "probabilite": 0.9848
+      },
+      {
+        "mot": " frère.",
+        "debut": 635.12,
+        "fin": 635.3,
+        "probabilite": 0.9713
+      }
+    ]
+  },
+  {
+    "debut": 635.56,
+    "fin": 636.5,
+    "texte": "On la, j'en coupe, hein.",
+    "mots": [
+      {
+        "mot": " On",
+        "debut": 635.56,
+        "fin": 635.74,
+        "probabilite": 0.9756
+      },
+      {
+        "mot": " la,",
+        "debut": 635.74,
+        "fin": 636.0,
+        "probabilite": 0.9115
+      },
+      {
+        "mot": " j",
+        "debut": 636.0,
+        "fin": 636.08,
+        "probabilite": 0.788
+      },
+      {
+        "mot": "'en",
+        "debut": 636.08,
+        "fin": 636.2,
+        "probabilite": 1.0
+      },
+      {
+        "mot": " coupe,",
+        "debut": 636.2,
+        "fin": 636.32,
+        "probabilite": 0.9903
+      },
+      {
+        "mot": " hein.",
+        "debut": 636.34,
+        "fin": 636.5,
+        "probabilite": 0.7667
+      }
+    ]
+  },
+  {
+    "debut": 636.5,
+    "fin": 637.96,
+    "texte": "Je te lève la caméra",
+    "mots": [
+      {
+        "mot": " Je",
+        "debut": 636.5,
+        "fin": 637.16,
+        "probabilite": 0.563
+      },
+      {
+        "mot": " te",
+        "debut": 637.16,
+        "fin": 637.28,
+        "probabilite": 0.9696
+      },
+      {
+        "mot": " lève",
+        "debut": 637.28,
+        "fin": 637.46,
+        "probabilite": 0.5865
+      },
+      {
+        "mot": " la",
+        "debut": 637.46,
+        "fin": 637.46,
+        "probabilite": 0.3092
+      },
+      {
+        "mot": " caméra",
+        "debut": 637.46,
+        "fin": 637.96,
+        "probabilite": 0.4041
+      }
+    ]
+  }
+]

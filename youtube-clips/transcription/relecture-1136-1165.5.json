@@ -1,0 +1,567 @@
+[
+  {
+    "debut": 1140.06,
+    "fin": 1142.92,
+    "texte": "Allez, allez, on lève la tête, on est bien dedans, on est en retard.",
+    "mots": [
+      {
+        "mot": " Allez,",
+        "debut": 1140.06,
+        "fin": 1140.42,
+        "probabilite": 0.5334
+      },
+      {
+        "mot": " allez,",
+        "debut": 1140.42,
+        "fin": 1140.58,
+        "probabilite": 0.7552
+      },
+      {
+        "mot": " on",
+        "debut": 1140.58,
+        "fin": 1140.92,
+        "probabilite": 0.8134
+      },
+      {
+        "mot": " lève",
+        "debut": 1140.92,
+        "fin": 1141.28,
+        "probabilite": 0.9472
+      },
+      {
+        "mot": " la",
+        "debut": 1141.28,
+        "fin": 1141.38,
+        "probabilite": 0.9859
+      },
+      {
+        "mot": " tête,",
+        "debut": 1141.38,
+        "fin": 1141.62,
+        "probabilite": 0.9961
+      },
+      {
+        "mot": " on",
+        "debut": 1141.72,
+        "fin": 1142.04,
+        "probabilite": 0.5331
+      },
+      {
+        "mot": " est",
+        "debut": 1142.04,
+        "fin": 1142.12,
+        "probabilite": 0.6056
+      },
+      {
+        "mot": " bien",
+        "debut": 1142.12,
+        "fin": 1142.28,
+        "probabilite": 0.5277
+      },
+      {
+        "mot": " dedans,",
+        "debut": 1142.28,
+        "fin": 1142.46,
+        "probabilite": 0.9692
+      },
+      {
+        "mot": " on",
+        "debut": 1142.62,
+        "fin": 1142.68,
+        "probabilite": 0.4186
+      },
+      {
+        "mot": " est",
+        "debut": 1142.68,
+        "fin": 1142.76,
+        "probabilite": 0.6828
+      },
+      {
+        "mot": " en",
+        "debut": 1142.76,
+        "fin": 1142.92,
+        "probabilite": 0.7918
+      },
+      {
+        "mot": " retard.",
+        "debut": 1142.92,
+        "fin": 1142.92,
+        "probabilite": 0.9998
+      }
+    ]
+  },
+  {
+    "debut": 1143.5,
+    "fin": 1146.64,
+    "texte": "On n'a pas su y répondre présent, on est un peu trop au sol, en l'air.",
+    "mots": [
+      {
+        "mot": " On",
+        "debut": 1143.5,
+        "fin": 1143.86,
+        "probabilite": 0.9798
+      },
+      {
+        "mot": " n",
+        "debut": 1143.86,
+        "fin": 1143.94,
+        "probabilite": 0.7253
+      },
+      {
+        "mot": "'a",
+        "debut": 1143.94,
+        "fin": 1143.96,
+        "probabilite": 0.9984
+      },
+      {
+        "mot": " pas",
+        "debut": 1143.96,
+        "fin": 1144.08,
+        "probabilite": 0.9969
+      },
+      {
+        "mot": " su",
+        "debut": 1144.08,
+        "fin": 1144.18,
+        "probabilite": 0.8703
+      },
+      {
+        "mot": " y",
+        "debut": 1144.18,
+        "fin": 1144.28,
+        "probabilite": 0.3577
+      },
+      {
+        "mot": " répondre",
+        "debut": 1144.28,
+        "fin": 1144.52,
+        "probabilite": 0.9797
+      },
+      {
+        "mot": " présent,",
+        "debut": 1144.52,
+        "fin": 1145.02,
+        "probabilite": 0.5375
+      },
+      {
+        "mot": " on",
+        "debut": 1145.18,
+        "fin": 1145.3,
+        "probabilite": 0.2345
+      },
+      {
+        "mot": " est",
+        "debut": 1145.3,
+        "fin": 1145.36,
+        "probabilite": 0.3988
+      },
+      {
+        "mot": " un",
+        "debut": 1145.36,
+        "fin": 1145.5,
+        "probabilite": 0.2429
+      },
+      {
+        "mot": " peu",
+        "debut": 1145.5,
+        "fin": 1145.54,
+        "probabilite": 0.7078
+      },
+      {
+        "mot": " trop",
+        "debut": 1145.54,
+        "fin": 1145.76,
+        "probabilite": 0.7049
+      },
+      {
+        "mot": " au",
+        "debut": 1145.76,
+        "fin": 1145.98,
+        "probabilite": 0.4842
+      },
+      {
+        "mot": " sol,",
+        "debut": 1145.98,
+        "fin": 1146.26,
+        "probabilite": 0.9688
+      },
+      {
+        "mot": " en",
+        "debut": 1146.3,
+        "fin": 1146.44,
+        "probabilite": 0.7924
+      },
+      {
+        "mot": " l",
+        "debut": 1146.44,
+        "fin": 1146.56,
+        "probabilite": 0.9829
+      },
+      {
+        "mot": "'air.",
+        "debut": 1146.56,
+        "fin": 1146.64,
+        "probabilite": 0.9992
+      }
+    ]
+  },
+  {
+    "debut": 1147.94,
+    "fin": 1149.54,
+    "texte": "C'est fini, à ce niveau, c'est fini.",
+    "mots": [
+      {
+        "mot": " C",
+        "debut": 1147.94,
+        "fin": 1148.3,
+        "probabilite": 0.339
+      },
+      {
+        "mot": "'est",
+        "debut": 1148.3,
+        "fin": 1148.4,
+        "probabilite": 0.9928
+      },
+      {
+        "mot": " fini,",
+        "debut": 1148.4,
+        "fin": 1148.62,
+        "probabilite": 0.9633
+      },
+      {
+        "mot": " à",
+        "debut": 1148.8,
+        "fin": 1148.86,
+        "probabilite": 0.8921
+      },
+      {
+        "mot": " ce",
+        "debut": 1148.86,
+        "fin": 1148.96,
+        "probabilite": 0.9796
+      },
+      {
+        "mot": " niveau,",
+        "debut": 1148.96,
+        "fin": 1149.24,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " c",
+        "debut": 1149.34,
+        "fin": 1149.36,
+        "probabilite": 0.3962
+      },
+      {
+        "mot": "'est",
+        "debut": 1149.36,
+        "fin": 1149.42,
+        "probabilite": 0.9989
+      },
+      {
+        "mot": " fini.",
+        "debut": 1149.42,
+        "fin": 1149.54,
+        "probabilite": 0.9981
+      }
+    ]
+  },
+  {
+    "debut": 1149.94,
+    "fin": 1153.32,
+    "texte": "Je changerai beaucoup de choses, c'est sûrement ce qu'on va faire.",
+    "mots": [
+      {
+        "mot": " Je",
+        "debut": 1149.94,
+        "fin": 1150.3,
+        "probabilite": 0.9581
+      },
+      {
+        "mot": " changerai",
+        "debut": 1150.3,
+        "fin": 1150.66,
+        "probabilite": 0.9226
+      },
+      {
+        "mot": " beaucoup",
+        "debut": 1150.66,
+        "fin": 1150.86,
+        "probabilite": 0.9977
+      },
+      {
+        "mot": " de",
+        "debut": 1150.86,
+        "fin": 1151.02,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " choses,",
+        "debut": 1151.02,
+        "fin": 1151.22,
+        "probabilite": 0.9748
+      },
+      {
+        "mot": " c",
+        "debut": 1151.4,
+        "fin": 1152.44,
+        "probabilite": 0.9465
+      },
+      {
+        "mot": "'est",
+        "debut": 1152.44,
+        "fin": 1152.54,
+        "probabilite": 0.9999
+      },
+      {
+        "mot": " sûrement",
+        "debut": 1152.54,
+        "fin": 1152.72,
+        "probabilite": 0.8837
+      },
+      {
+        "mot": " ce",
+        "debut": 1152.72,
+        "fin": 1152.88,
+        "probabilite": 0.9921
+      },
+      {
+        "mot": " qu",
+        "debut": 1152.88,
+        "fin": 1152.96,
+        "probabilite": 0.9436
+      },
+      {
+        "mot": "'on",
+        "debut": 1152.96,
+        "fin": 1152.98,
+        "probabilite": 0.9997
+      },
+      {
+        "mot": " va",
+        "debut": 1152.98,
+        "fin": 1153.06,
+        "probabilite": 0.9984
+      },
+      {
+        "mot": " faire.",
+        "debut": 1153.06,
+        "fin": 1153.32,
+        "probabilite": 0.9989
+      }
+    ]
+  },
+  {
+    "debut": 1153.9,
+    "fin": 1159.3,
+    "texte": "Je vous laisse 10 minutes, 10 minutes pour agir, à mettre, après je change.",
+    "mots": [
+      {
+        "mot": " Je",
+        "debut": 1153.9,
+        "fin": 1154.26,
+        "probabilite": 0.9892
+      },
+      {
+        "mot": " vous",
+        "debut": 1154.26,
+        "fin": 1154.4,
+        "probabilite": 0.9987
+      },
+      {
+        "mot": " laisse",
+        "debut": 1154.4,
+        "fin": 1154.56,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " 10",
+        "debut": 1154.56,
+        "fin": 1154.82,
+        "probabilite": 0.7238
+      },
+      {
+        "mot": " minutes,",
+        "debut": 1154.82,
+        "fin": 1155.22,
+        "probabilite": 0.9722
+      },
+      {
+        "mot": " 10",
+        "debut": 1155.3,
+        "fin": 1156.84,
+        "probabilite": 0.9305
+      },
+      {
+        "mot": " minutes",
+        "debut": 1156.84,
+        "fin": 1157.16,
+        "probabilite": 0.9977
+      },
+      {
+        "mot": " pour",
+        "debut": 1157.16,
+        "fin": 1157.34,
+        "probabilite": 0.98
+      },
+      {
+        "mot": " agir,",
+        "debut": 1157.34,
+        "fin": 1157.82,
+        "probabilite": 0.9035
+      },
+      {
+        "mot": " à",
+        "debut": 1157.82,
+        "fin": 1158.12,
+        "probabilite": 0.572
+      },
+      {
+        "mot": " mettre,",
+        "debut": 1158.12,
+        "fin": 1158.26,
+        "probabilite": 0.8113
+      },
+      {
+        "mot": " après",
+        "debut": 1158.46,
+        "fin": 1158.86,
+        "probabilite": 0.977
+      },
+      {
+        "mot": " je",
+        "debut": 1158.86,
+        "fin": 1159.06,
+        "probabilite": 0.933
+      },
+      {
+        "mot": " change.",
+        "debut": 1159.06,
+        "fin": 1159.3,
+        "probabilite": 0.9839
+      }
+    ]
+  },
+  {
+    "debut": 1160.04,
+    "fin": 1161.64,
+    "texte": "On ne va pas renverser la table, maintenant.",
+    "mots": [
+      {
+        "mot": " On",
+        "debut": 1160.04,
+        "fin": 1160.4,
+        "probabilite": 0.9957
+      },
+      {
+        "mot": " ne",
+        "debut": 1160.4,
+        "fin": 1160.48,
+        "probabilite": 0.8452
+      },
+      {
+        "mot": " va",
+        "debut": 1160.48,
+        "fin": 1160.52,
+        "probabilite": 0.9967
+      },
+      {
+        "mot": " pas",
+        "debut": 1160.52,
+        "fin": 1160.64,
+        "probabilite": 0.9992
+      },
+      {
+        "mot": " renverser",
+        "debut": 1160.64,
+        "fin": 1161.02,
+        "probabilite": 0.956
+      },
+      {
+        "mot": " la",
+        "debut": 1161.02,
+        "fin": 1161.08,
+        "probabilite": 0.9979
+      },
+      {
+        "mot": " table,",
+        "debut": 1161.08,
+        "fin": 1161.32,
+        "probabilite": 0.999
+      },
+      {
+        "mot": " maintenant.",
+        "debut": 1161.4,
+        "fin": 1161.64,
+        "probabilite": 0.9802
+      }
+    ]
+  },
+  {
+    "debut": 1162.7,
+    "fin": 1165.28,
+    "texte": "On se dira les choses après, il reste 45 minutes.",
+    "mots": [
+      {
+        "mot": " On",
+        "debut": 1162.7,
+        "fin": 1163.06,
+        "probabilite": 0.9982
+      },
+      {
+        "mot": " se",
+        "debut": 1163.06,
+        "fin": 1163.22,
+        "probabilite": 0.4537
+      },
+      {
+        "mot": " dira",
+        "debut": 1163.22,
+        "fin": 1163.36,
+        "probabilite": 0.9943
+      },
+      {
+        "mot": " les",
+        "debut": 1163.36,
+        "fin": 1163.46,
+        "probabilite": 0.9802
+      },
+      {
+        "mot": " choses",
+        "debut": 1163.46,
+        "fin": 1163.64,
+        "probabilite": 0.9998
+      },
+      {
+        "mot": " après,",
+        "debut": 1163.64,
+        "fin": 1163.9,
+        "probabilite": 0.9991
+      },
+      {
+        "mot": " il",
+        "debut": 1164.12,
+        "fin": 1164.42,
+        "probabilite": 0.9993
+      },
+      {
+        "mot": " reste",
+        "debut": 1164.42,
+        "fin": 1164.6,
+        "probabilite": 0.9935
+      },
+      {
+        "mot": " 45",
+        "debut": 1164.6,
+        "fin": 1164.94,
+        "probabilite": 0.9927
+      },
+      {
+        "mot": " minutes.",
+        "debut": 1164.94,
+        "fin": 1165.28,
+        "probabilite": 0.9989
+      }
+    ]
+  }
+]

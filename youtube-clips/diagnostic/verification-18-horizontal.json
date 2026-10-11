@@ -1,0 +1,673 @@
+{
+  "numero": 18,
+  "format": "horizontal",
+  "sha256": "af6f6a760840a82766c286a387e933d5108a3219938049bfa1aba8395414e668",
+  "texte_prevu_sha256": "3d0d911154a9b4ee1e4b79ec365c879a6ca035294b6472d9febd257c9f13ecf4",
+  "verification": "OK",
+  "modele_verification": "large-v3",
+  "vad": false,
+  "aide_vestiaire": false,
+  "aide_dialogue": false,
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "marquez",
+    "vous",
+    "allez",
+    "voir"
+  ],
+  "derniers_mots_attendus": [
+    "voir",
+    "allez",
+    "les",
+    "enfants"
+  ],
+  "premiers_mots_reconnus": [
+    "marquez",
+    "vous",
+    "allez",
+    "voir"
+  ],
+  "derniers_mots_reconnus": [
+    "voir",
+    "allez",
+    "les",
+    "enfants"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": true,
+  "transcription": [
+    {
+      "debut": 0.0,
+      "fin": 2.18,
+      "texte": "Marquez, vous allez voir comment c'est le match qui va se transformer.",
+      "mots": [
+        {
+          "mot": " Marquez,",
+          "debut": 0.0,
+          "fin": 0.54
+        },
+        {
+          "mot": " vous",
+          "debut": 0.62,
+          "fin": 0.7
+        },
+        {
+          "mot": " allez",
+          "debut": 0.7,
+          "fin": 0.88
+        },
+        {
+          "mot": " voir",
+          "debut": 0.88,
+          "fin": 1.12
+        },
+        {
+          "mot": " comment",
+          "debut": 1.12,
+          "fin": 1.28
+        },
+        {
+          "mot": " c",
+          "debut": 1.28,
+          "fin": 1.44
+        },
+        {
+          "mot": "'est",
+          "debut": 1.44,
+          "fin": 1.44
+        },
+        {
+          "mot": " le",
+          "debut": 1.44,
+          "fin": 1.46
+        },
+        {
+          "mot": " match",
+          "debut": 1.46,
+          "fin": 1.64
+        },
+        {
+          "mot": " qui",
+          "debut": 1.64,
+          "fin": 1.76
+        },
+        {
+          "mot": " va",
+          "debut": 1.76,
+          "fin": 1.82
+        },
+        {
+          "mot": " se",
+          "debut": 1.82,
+          "fin": 1.9
+        },
+        {
+          "mot": " transformer.",
+          "debut": 1.9,
+          "fin": 2.18
+        }
+      ]
+    },
+    {
+      "debut": 2.64,
+      "fin": 5.2,
+      "texte": "Allez, il faut inverser tout ça les gars, les réseaux, il faut inverser tout ça.",
+      "mots": [
+        {
+          "mot": " Allez,",
+          "debut": 2.64,
+          "fin": 2.96
+        },
+        {
+          "mot": " il",
+          "debut": 3.0,
+          "fin": 3.08
+        },
+        {
+          "mot": " faut",
+          "debut": 3.08,
+          "fin": 3.16
+        },
+        {
+          "mot": " inverser",
+          "debut": 3.16,
+          "fin": 3.52
+        },
+        {
+          "mot": " tout",
+          "debut": 3.52,
+          "fin": 3.6
+        },
+        {
+          "mot": " ça",
+          "debut": 3.6,
+          "fin": 3.76
+        },
+        {
+          "mot": " les",
+          "debut": 3.76,
+          "fin": 3.9
+        },
+        {
+          "mot": " gars,",
+          "debut": 3.9,
+          "fin": 4.0
+        },
+        {
+          "mot": " les",
+          "debut": 4.04,
+          "fin": 4.18
+        },
+        {
+          "mot": " réseaux,",
+          "debut": 4.18,
+          "fin": 4.42
+        },
+        {
+          "mot": " il",
+          "debut": 4.44,
+          "fin": 4.54
+        },
+        {
+          "mot": " faut",
+          "debut": 4.54,
+          "fin": 4.62
+        },
+        {
+          "mot": " inverser",
+          "debut": 4.62,
+          "fin": 4.94
+        },
+        {
+          "mot": " tout",
+          "debut": 4.94,
+          "fin": 5.06
+        },
+        {
+          "mot": " ça.",
+          "debut": 5.06,
+          "fin": 5.2
+        }
+      ]
+    },
+    {
+      "debut": 5.52,
+      "fin": 8.14,
+      "texte": "Est-ce que vous y croyez ? Oh, regardez-moi !",
+      "mots": [
+        {
+          "mot": " Est",
+          "debut": 5.52,
+          "fin": 5.84
+        },
+        {
+          "mot": "-ce",
+          "debut": 5.84,
+          "fin": 5.92
+        },
+        {
+          "mot": " que",
+          "debut": 5.92,
+          "fin": 5.96
+        },
+        {
+          "mot": " vous",
+          "debut": 5.96,
+          "fin": 6.08
+        },
+        {
+          "mot": " y",
+          "debut": 6.08,
+          "fin": 6.22
+        },
+        {
+          "mot": " croyez",
+          "debut": 6.22,
+          "fin": 6.54
+        },
+        {
+          "mot": " ?",
+          "debut": 6.54,
+          "fin": 6.8
+        },
+        {
+          "mot": " Oh,",
+          "debut": 6.8,
+          "fin": 7.12
+        },
+        {
+          "mot": " regardez",
+          "debut": 7.16,
+          "fin": 7.5
+        },
+        {
+          "mot": "-moi",
+          "debut": 7.5,
+          "fin": 7.78
+        },
+        {
+          "mot": " !",
+          "debut": 7.78,
+          "fin": 8.14
+        }
+      ]
+    },
+    {
+      "debut": 8.14,
+      "fin": 11.56,
+      "texte": "Est-ce que vous y croyez ? Oh !",
+      "mots": [
+        {
+          "mot": " Est",
+          "debut": 8.14,
+          "fin": 8.64
+        },
+        {
+          "mot": "-ce",
+          "debut": 8.64,
+          "fin": 8.72
+        },
+        {
+          "mot": " que",
+          "debut": 8.72,
+          "fin": 8.78
+        },
+        {
+          "mot": " vous",
+          "debut": 8.78,
+          "fin": 8.9
+        },
+        {
+          "mot": " y",
+          "debut": 8.9,
+          "fin": 9.02
+        },
+        {
+          "mot": " croyez",
+          "debut": 9.02,
+          "fin": 9.34
+        },
+        {
+          "mot": " ?",
+          "debut": 9.34,
+          "fin": 9.8
+        },
+        {
+          "mot": " Oh",
+          "debut": 9.8,
+          "fin": 10.56
+        },
+        {
+          "mot": " !",
+          "debut": 10.56,
+          "fin": 11.56
+        }
+      ]
+    },
+    {
+      "debut": 14.42,
+      "fin": 16.66,
+      "texte": "Pourquoi ne le ferez pas à nous ?",
+      "mots": [
+        {
+          "mot": " Pourquoi",
+          "debut": 14.42,
+          "fin": 14.74
+        },
+        {
+          "mot": " ne",
+          "debut": 14.74,
+          "fin": 14.94
+        },
+        {
+          "mot": " le",
+          "debut": 14.94,
+          "fin": 15.0
+        },
+        {
+          "mot": " ferez",
+          "debut": 15.0,
+          "fin": 15.16
+        },
+        {
+          "mot": " pas",
+          "debut": 15.16,
+          "fin": 15.4
+        },
+        {
+          "mot": " à",
+          "debut": 15.4,
+          "fin": 15.48
+        },
+        {
+          "mot": " nous",
+          "debut": 15.48,
+          "fin": 15.64
+        },
+        {
+          "mot": " ?",
+          "debut": 15.64,
+          "fin": 16.66
+        }
+      ]
+    },
+    {
+      "debut": 18.9,
+      "fin": 22.68,
+      "texte": "On va essayer, je ne dis pas qu'on va y arriver, il ne faut pas rêver.",
+      "mots": [
+        {
+          "mot": " On",
+          "debut": 18.9,
+          "fin": 19.22
+        },
+        {
+          "mot": " va",
+          "debut": 19.22,
+          "fin": 19.54
+        },
+        {
+          "mot": " essayer,",
+          "debut": 19.54,
+          "fin": 19.8
+        },
+        {
+          "mot": " je",
+          "debut": 20.18,
+          "fin": 20.68
+        },
+        {
+          "mot": " ne",
+          "debut": 20.68,
+          "fin": 20.76
+        },
+        {
+          "mot": " dis",
+          "debut": 20.76,
+          "fin": 20.86
+        },
+        {
+          "mot": " pas",
+          "debut": 20.86,
+          "fin": 21.04
+        },
+        {
+          "mot": " qu",
+          "debut": 21.04,
+          "fin": 21.1
+        },
+        {
+          "mot": "'on",
+          "debut": 21.1,
+          "fin": 21.2
+        },
+        {
+          "mot": " va",
+          "debut": 21.2,
+          "fin": 21.28
+        },
+        {
+          "mot": " y",
+          "debut": 21.28,
+          "fin": 21.38
+        },
+        {
+          "mot": " arriver,",
+          "debut": 21.38,
+          "fin": 21.64
+        },
+        {
+          "mot": " il",
+          "debut": 21.9,
+          "fin": 22.16
+        },
+        {
+          "mot": " ne",
+          "debut": 22.16,
+          "fin": 22.22
+        },
+        {
+          "mot": " faut",
+          "debut": 22.22,
+          "fin": 22.22
+        },
+        {
+          "mot": " pas",
+          "debut": 22.22,
+          "fin": 22.4
+        },
+        {
+          "mot": " rêver.",
+          "debut": 22.4,
+          "fin": 22.68
+        }
+      ]
+    },
+    {
+      "debut": 23.14,
+      "fin": 25.72,
+      "texte": "On va mettre un, on va mettre deux !",
+      "mots": [
+        {
+          "mot": " On",
+          "debut": 23.14,
+          "fin": 23.46
+        },
+        {
+          "mot": " va",
+          "debut": 23.46,
+          "fin": 23.62
+        },
+        {
+          "mot": " mettre",
+          "debut": 23.62,
+          "fin": 23.82
+        },
+        {
+          "mot": " un,",
+          "debut": 23.82,
+          "fin": 24.04
+        },
+        {
+          "mot": " on",
+          "debut": 24.22,
+          "fin": 24.42
+        },
+        {
+          "mot": " va",
+          "debut": 24.42,
+          "fin": 24.54
+        },
+        {
+          "mot": " mettre",
+          "debut": 24.54,
+          "fin": 24.78
+        },
+        {
+          "mot": " deux",
+          "debut": 24.78,
+          "fin": 24.98
+        },
+        {
+          "mot": " !",
+          "debut": 24.98,
+          "fin": 25.72
+        }
+      ]
+    },
+    {
+      "debut": 26.16,
+      "fin": 29.38,
+      "texte": "Allez, ça va prendre des efforts les gars, il faut y aller, il faut y aller.",
+      "mots": [
+        {
+          "mot": " Allez,",
+          "debut": 26.16,
+          "fin": 26.48
+        },
+        {
+          "mot": " ça",
+          "debut": 26.48,
+          "fin": 26.56
+        },
+        {
+          "mot": " va",
+          "debut": 26.56,
+          "fin": 26.68
+        },
+        {
+          "mot": " prendre",
+          "debut": 26.68,
+          "fin": 26.78
+        },
+        {
+          "mot": " des",
+          "debut": 26.78,
+          "fin": 26.96
+        },
+        {
+          "mot": " efforts",
+          "debut": 26.96,
+          "fin": 27.2
+        },
+        {
+          "mot": " les",
+          "debut": 27.2,
+          "fin": 27.42
+        },
+        {
+          "mot": " gars,",
+          "debut": 27.42,
+          "fin": 27.54
+        },
+        {
+          "mot": " il",
+          "debut": 27.6,
+          "fin": 28.34
+        },
+        {
+          "mot": " faut",
+          "debut": 28.34,
+          "fin": 28.48
+        },
+        {
+          "mot": " y",
+          "debut": 28.48,
+          "fin": 28.54
+        },
+        {
+          "mot": " aller,",
+          "debut": 28.54,
+          "fin": 28.7
+        },
+        {
+          "mot": " il",
+          "debut": 28.88,
+          "fin": 29.08
+        },
+        {
+          "mot": " faut",
+          "debut": 29.08,
+          "fin": 29.18
+        },
+        {
+          "mot": " y",
+          "debut": 29.18,
+          "fin": 29.24
+        },
+        {
+          "mot": " aller.",
+          "debut": 29.24,
+          "fin": 29.38
+        }
+      ]
+    },
+    {
+      "debut": 30.0,
+      "fin": 33.24,
+      "texte": "Faites-les pour ces petits ! Et vous allez voir ! Allez, les enfants !",
+      "mots": [
+        {
+          "mot": " Faites",
+          "debut": 30.0,
+          "fin": 30.38
+        },
+        {
+          "mot": "-les",
+          "debut": 30.38,
+          "fin": 30.46
+        },
+        {
+          "mot": " pour",
+          "debut": 30.46,
+          "fin": 30.66
+        },
+        {
+          "mot": " ces",
+          "debut": 30.66,
+          "fin": 30.82
+        },
+        {
+          "mot": " petits",
+          "debut": 30.82,
+          "fin": 31.02
+        },
+        {
+          "mot": " !",
+          "debut": 31.02,
+          "fin": 31.26
+        },
+        {
+          "mot": " Et",
+          "debut": 31.26,
+          "fin": 31.48
+        },
+        {
+          "mot": " vous",
+          "debut": 31.48,
+          "fin": 31.66
+        },
+        {
+          "mot": " allez",
+          "debut": 31.66,
+          "fin": 31.84
+        },
+        {
+          "mot": " voir",
+          "debut": 31.84,
+          "fin": 32.12
+        },
+        {
+          "mot": " !",
+          "debut": 32.12,
+          "fin": 32.24
+        },
+        {
+          "mot": " Allez,",
+          "debut": 32.24,
+          "fin": 32.8
+        },
+        {
+          "mot": " les",
+          "debut": 32.8,
+          "fin": 32.96
+        },
+        {
+          "mot": " enfants",
+          "debut": 32.96,
+          "fin": 33.02
+        },
+        {
+          "mot": " !",
+          "debut": 33.02,
+          "fin": 33.24
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {},
+  "lufs": -14.08,
+  "pic_vrai_db": -2.89,
+  "duree": 33.333333,
+  "taille_octets": 24539664
+}

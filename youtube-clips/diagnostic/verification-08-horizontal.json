@@ -1,0 +1,591 @@
+{
+  "numero": 8,
+  "format": "horizontal",
+  "sha256": "f4d1af9739adde00794390f12579fc3483eb110e5994399b8a9a9137af5725ff",
+  "texte_prevu_sha256": "51bb83c13323a9fe5c1de4ea2819744c2184c4e9118929b0b26e5d7e806ced48",
+  "verification": "OK",
+  "modele_verification": "turbo",
+  "vad": true,
+  "aide_vestiaire": false,
+  "aide_dialogue": false,
+  "decodage_integral": "OK",
+  "premiers_mots_attendus": [
+    "tu",
+    "fais",
+    "quoi",
+    "avec"
+  ],
+  "derniers_mots_attendus": [
+    "rien",
+    "le",
+    "petit",
+    "doigt"
+  ],
+  "premiers_mots_reconnus": [
+    "et",
+    "tu",
+    "fais",
+    "quoi"
+  ],
+  "derniers_mots_reconnus": [
+    "rien",
+    "le",
+    "petit",
+    "doigt"
+  ],
+  "debut_correspond": true,
+  "fin_correspond": true,
+  "transcription": [
+    {
+      "debut": 1.5,
+      "fin": 3.18,
+      "texte": "Et tu fais quoi avec 200 000 après ?",
+      "mots": [
+        {
+          "mot": " Et",
+          "debut": 1.5,
+          "fin": 1.82
+        },
+        {
+          "mot": " tu",
+          "debut": 1.82,
+          "fin": 1.98
+        },
+        {
+          "mot": " fais",
+          "debut": 1.98,
+          "fin": 2.12
+        },
+        {
+          "mot": " quoi",
+          "debut": 2.12,
+          "fin": 2.2
+        },
+        {
+          "mot": " avec",
+          "debut": 2.2,
+          "fin": 2.32
+        },
+        {
+          "mot": " 200",
+          "debut": 2.32,
+          "fin": 2.56
+        },
+        {
+          "mot": " 000",
+          "debut": 2.56,
+          "fin": 2.72
+        },
+        {
+          "mot": " après",
+          "debut": 2.72,
+          "fin": 2.94
+        },
+        {
+          "mot": " ?",
+          "debut": 2.94,
+          "fin": 3.18
+        }
+      ]
+    },
+    {
+      "debut": 4.14,
+      "fin": 6.68,
+      "texte": "Ça, je prends une part à Marrakech.",
+      "mots": [
+        {
+          "mot": " Ça,",
+          "debut": 4.14,
+          "fin": 4.46
+        },
+        {
+          "mot": " je",
+          "debut": 4.58,
+          "fin": 4.74
+        },
+        {
+          "mot": " prends",
+          "debut": 4.74,
+          "fin": 5.76
+        },
+        {
+          "mot": " une",
+          "debut": 5.76,
+          "fin": 5.92
+        },
+        {
+          "mot": " part",
+          "debut": 5.92,
+          "fin": 6.08
+        },
+        {
+          "mot": " à",
+          "debut": 6.08,
+          "fin": 6.2
+        },
+        {
+          "mot": " Marrakech.",
+          "debut": 6.2,
+          "fin": 6.68
+        }
+      ]
+    },
+    {
+      "debut": 7.04,
+      "fin": 7.92,
+      "texte": "Je pense, voilà.",
+      "mots": [
+        {
+          "mot": " Je",
+          "debut": 7.04,
+          "fin": 7.36
+        },
+        {
+          "mot": " pense,",
+          "debut": 7.36,
+          "fin": 7.62
+        },
+        {
+          "mot": " voilà.",
+          "debut": 7.78,
+          "fin": 7.92
+        }
+      ]
+    },
+    {
+      "debut": 17.69,
+      "fin": 18.95,
+      "texte": "Il ne sert à rien, mon frère.",
+      "mots": [
+        {
+          "mot": " Il",
+          "debut": 17.69,
+          "fin": 18.01
+        },
+        {
+          "mot": " ne",
+          "debut": 18.01,
+          "fin": 18.29
+        },
+        {
+          "mot": " sert",
+          "debut": 18.29,
+          "fin": 18.33
+        },
+        {
+          "mot": " à",
+          "debut": 18.33,
+          "fin": 18.45
+        },
+        {
+          "mot": " rien,",
+          "debut": 18.45,
+          "fin": 18.57
+        },
+        {
+          "mot": " mon",
+          "debut": 18.75,
+          "fin": 18.77
+        },
+        {
+          "mot": " frère.",
+          "debut": 18.77,
+          "fin": 18.95
+        }
+      ]
+    },
+    {
+      "debut": 19.43,
+      "fin": 20.67,
+      "texte": "Ok, petit dos, c'est à rien.",
+      "mots": [
+        {
+          "mot": " Ok,",
+          "debut": 19.43,
+          "fin": 19.75
+        },
+        {
+          "mot": " petit",
+          "debut": 19.95,
+          "fin": 20.13
+        },
+        {
+          "mot": " dos,",
+          "debut": 20.13,
+          "fin": 20.27
+        },
+        {
+          "mot": " c",
+          "debut": 20.43,
+          "fin": 20.43
+        },
+        {
+          "mot": "'est",
+          "debut": 20.43,
+          "fin": 20.53
+        },
+        {
+          "mot": " à",
+          "debut": 20.53,
+          "fin": 20.57
+        },
+        {
+          "mot": " rien.",
+          "debut": 20.57,
+          "fin": 20.67
+        }
+      ]
+    },
+    {
+      "debut": 20.79,
+      "fin": 22.83,
+      "texte": "Mais pour nettoyer l'oreille, tu vas faire comment ?",
+      "mots": [
+        {
+          "mot": " Mais",
+          "debut": 20.79,
+          "fin": 20.99
+        },
+        {
+          "mot": " pour",
+          "debut": 20.99,
+          "fin": 21.17
+        },
+        {
+          "mot": " nettoyer",
+          "debut": 21.17,
+          "fin": 21.63
+        },
+        {
+          "mot": " l",
+          "debut": 21.63,
+          "fin": 21.67
+        },
+        {
+          "mot": "'oreille,",
+          "debut": 21.67,
+          "fin": 21.85
+        },
+        {
+          "mot": " tu",
+          "debut": 21.93,
+          "fin": 21.95
+        },
+        {
+          "mot": " vas",
+          "debut": 21.95,
+          "fin": 22.01
+        },
+        {
+          "mot": " faire",
+          "debut": 22.01,
+          "fin": 22.15
+        },
+        {
+          "mot": " comment",
+          "debut": 22.15,
+          "fin": 22.39
+        },
+        {
+          "mot": " ?",
+          "debut": 22.39,
+          "fin": 22.83
+        }
+      ]
+    },
+    {
+      "debut": 22.83,
+      "fin": 23.23,
+      "texte": "Comme ça.",
+      "mots": [
+        {
+          "mot": " Comme",
+          "debut": 22.83,
+          "fin": 23.07
+        },
+        {
+          "mot": " ça.",
+          "debut": 23.07,
+          "fin": 23.23
+        }
+      ]
+    },
+    {
+      "debut": 24.83,
+      "fin": 26.03,
+      "texte": "C'est ça ou pas ?",
+      "mots": [
+        {
+          "mot": " C",
+          "debut": 24.83,
+          "fin": 25.15
+        },
+        {
+          "mot": "'est",
+          "debut": 25.15,
+          "fin": 25.17
+        },
+        {
+          "mot": " ça",
+          "debut": 25.17,
+          "fin": 25.33
+        },
+        {
+          "mot": " ou",
+          "debut": 25.33,
+          "fin": 25.45
+        },
+        {
+          "mot": " pas",
+          "debut": 25.45,
+          "fin": 25.61
+        },
+        {
+          "mot": " ?",
+          "debut": 25.61,
+          "fin": 26.03
+        }
+      ]
+    },
+    {
+      "debut": 26.03,
+      "fin": 27.01,
+      "texte": "A deux doigts, mon frère.",
+      "mots": [
+        {
+          "mot": " A",
+          "debut": 26.03,
+          "fin": 26.25
+        },
+        {
+          "mot": " deux",
+          "debut": 26.25,
+          "fin": 26.45
+        },
+        {
+          "mot": " doigts,",
+          "debut": 26.45,
+          "fin": 26.63
+        },
+        {
+          "mot": " mon",
+          "debut": 26.81,
+          "fin": 26.83
+        },
+        {
+          "mot": " frère.",
+          "debut": 26.83,
+          "fin": 27.01
+        }
+      ]
+    },
+    {
+      "debut": 28.73,
+      "fin": 29.81,
+      "texte": "Demande, pose la question.",
+      "mots": [
+        {
+          "mot": " Demande,",
+          "debut": 28.73,
+          "fin": 29.05
+        },
+        {
+          "mot": " pose",
+          "debut": 29.21,
+          "fin": 29.35
+        },
+        {
+          "mot": " la",
+          "debut": 29.35,
+          "fin": 29.49
+        },
+        {
+          "mot": " question.",
+          "debut": 29.49,
+          "fin": 29.81
+        }
+      ]
+    },
+    {
+      "debut": 30.03,
+      "fin": 30.65,
+      "texte": "Oh là, frère.",
+      "mots": [
+        {
+          "mot": " Oh",
+          "debut": 30.03,
+          "fin": 30.03
+        },
+        {
+          "mot": " là,",
+          "debut": 30.03,
+          "fin": 30.27
+        },
+        {
+          "mot": " frère.",
+          "debut": 30.39,
+          "fin": 30.65
+        }
+      ]
+    },
+    {
+      "debut": 31.99,
+      "fin": 33.65,
+      "texte": "A 95%, il ne sert à rien, le petit doigt.",
+      "mots": [
+        {
+          "mot": " A",
+          "debut": 31.99,
+          "fin": 32.31
+        },
+        {
+          "mot": " 95%,",
+          "debut": 32.31,
+          "fin": 32.63
+        },
+        {
+          "mot": " il",
+          "debut": 32.63,
+          "fin": 32.79
+        },
+        {
+          "mot": " ne",
+          "debut": 32.79,
+          "fin": 32.87
+        },
+        {
+          "mot": " sert",
+          "debut": 32.87,
+          "fin": 32.93
+        },
+        {
+          "mot": " à",
+          "debut": 32.93,
+          "fin": 32.99
+        },
+        {
+          "mot": " rien,",
+          "debut": 32.99,
+          "fin": 33.17
+        },
+        {
+          "mot": " le",
+          "debut": 33.27,
+          "fin": 33.33
+        },
+        {
+          "mot": " petit",
+          "debut": 33.33,
+          "fin": 33.49
+        },
+        {
+          "mot": " doigt.",
+          "debut": 33.49,
+          "fin": 33.65
+        }
+      ]
+    }
+  ],
+  "relecture_limites": {
+    "debut": [
+      {
+        "debut": 1.48,
+        "fin": 4.14,
+        "texte": "Tu fais quoi avec 200 000 après ?",
+        "mots": [
+          {
+            "mot": " Tu",
+            "debut": 1.48,
+            "fin": 1.94
+          },
+          {
+            "mot": " fais",
+            "debut": 1.94,
+            "fin": 2.08
+          },
+          {
+            "mot": " quoi",
+            "debut": 2.08,
+            "fin": 2.2
+          },
+          {
+            "mot": " avec",
+            "debut": 2.2,
+            "fin": 2.32
+          },
+          {
+            "mot": " 200",
+            "debut": 2.32,
+            "fin": 2.52
+          },
+          {
+            "mot": " 000",
+            "debut": 2.52,
+            "fin": 2.7
+          },
+          {
+            "mot": " après",
+            "debut": 2.7,
+            "fin": 2.96
+          },
+          {
+            "mot": " ?",
+            "debut": 2.96,
+            "fin": 4.14
+          }
+        ]
+      },
+      {
+        "debut": 4.14,
+        "fin": 7.64,
+        "texte": "Je prends une part à Marrakech, je pense.",
+        "mots": [
+          {
+            "mot": " Je",
+            "debut": 4.14,
+            "fin": 4.72
+          },
+          {
+            "mot": " prends",
+            "debut": 4.72,
+            "fin": 5.76
+          },
+          {
+            "mot": " une",
+            "debut": 5.76,
+            "fin": 5.94
+          },
+          {
+            "mot": " part",
+            "debut": 5.94,
+            "fin": 6.08
+          },
+          {
+            "mot": " à",
+            "debut": 6.08,
+            "fin": 6.2
+          },
+          {
+            "mot": " Marrakech,",
+            "debut": 6.2,
+            "fin": 6.72
+          },
+          {
+            "mot": " je",
+            "debut": 7.2,
+            "fin": 7.38
+          },
+          {
+            "mot": " pense.",
+            "debut": 7.38,
+            "fin": 7.64
+          }
+        ]
+      }
+    ]
+  },
+  "lufs": -14.02,
+  "pic_vrai_db": -1.3,
+  "duree": 33.9,
+  "taille_octets": 15131632
+}
