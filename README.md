@@ -170,3 +170,25 @@ Fabriquer : `cd ergysport ; outils/preparer-video.sh ; outils/rendre.sh ergyspor
 À revérifier avant de publier :
 - **Les allégations santé** : ach10 parle de « crampes et courbatures » et de « vitalité ». Ces mots restent dans les sous-titres seulement, et aucun titre ne les reprend. C'est à faire valider par la marque, car les allégations sur les compléments alimentaires sont encadrées.
 - **Les noms de produits** dans les étiquettes (« Protein' », « Bar' », « Natural Boost ») sont lus sur les emballages et sur le site. La marque doit les valider.
+
+## `youtube-clips/` — l'épisode YouTube d'ach10 découpé en clips verticaux
+
+La source est l'épisode **#41 « Des débuts en N2 très compliqués ! »** (AchhLife saison 3, épisode 3, chaîne Achh10, 26:07). Codex l'a analysé et découpé en 18 extraits : voir `youtube-clips/RAPPORT.md` et `extraits.json`.
+
+Les **4 clips habillés**, validés par Adel le 12/10/2026, sont dans `youtube-clips/habillage/rendus/clip-NN-tiktok.mp4` (1080×1920, -14 LUFS) :
+
+| Clip | Accroche | Durée |
+|---|---|---|
+| 18 | Le discours du coach / Est-ce que vous y croyez ? | 36,8 s |
+| 07 | Tu te coupes un doigt / pour 200 000 € ? (partie 1) | 34,0 s |
+| 05 | Mener 2-0… / et perdre 3-2 | 37,0 s |
+| 10 | Ousmane Dembélé nous a tués / à tous mes frères attaquants | 33,2 s |
+
+- **Le gabarit**, dans `youtube-clips/habillage/` :
+  - en haut, l'accroche ;
+  - au milieu, la vidéo en carré. Le cadre suit la personne qui parle et s'arrête au-dessus des sous-titres incrustés de la version YouTube ;
+  - une barre de progression ;
+  - des sous-titres qui passent en jaune mot à mot ;
+  - un carton final : « Allez voir l'épisode complet sur YouTube », avec la vignette de l'épisode.
+- **Les données de chaque clip** sont dans `clips/NN.json` : cadrage, accroche, phrases.
+- **Fabriquer un clip** : `cd youtube-clips/habillage ; outils/rendre-clip.sh 18`.
