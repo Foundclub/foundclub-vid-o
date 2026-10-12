@@ -1,0 +1,35 @@
+      /* Gabarit vertical AchhLife : bandeau noir, titre d'accroche en haut, vidéo carrée, sous-titres dessous */
+      :root { --noir: #0b0b0c; --blanc: #ffffff; --jaune: #ffd60a; --gris: #9a9ba0; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--noir); }
+      body { font-family: "Montserrat", sans-serif; color: var(--blanc); }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--noir); }
+      .plein { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+
+      #etiquettes { position: absolute; left: 0; right: 0; top: 168px; display: flex; justify-content: center; gap: 14px; }
+      .etiq { padding: 9px 20px 10px; border-radius: 999px; font-weight: 800; font-size: 26px; letter-spacing: .06em; text-transform: uppercase; }
+      .etiq.emission { background: rgba(255, 255, 255, .1); color: var(--gris); }
+      .etiq.partie { background: var(--jaune); color: var(--noir); }
+
+      #titre { position: absolute; left: 40px; right: 40px; top: 236px; text-align: center; }
+      #titre .l1 { display: block; font-weight: 900; font-size: 64px; line-height: 1.05; text-transform: uppercase; }
+      #titre .l2 { display: inline-block; margin-top: 10px; padding: 4px 18px 8px; font-weight: 900; font-style: italic; font-size: 60px; line-height: 1.05;
+        text-transform: uppercase; color: var(--noir); background: var(--jaune); border-radius: 10px; }
+
+      #cadre { position: absolute; left: 0; top: 440px; width: 1080px; height: 1080px; overflow: hidden; }
+      #video { width: 1080px; height: 1080px; display: block; }
+      #progression { position: absolute; left: 0; top: 1520px; height: 8px; width: 1080px; background: var(--jaune); transform-origin: 0 50%; }
+
+      .st { position: absolute; left: 50px; right: 50px; top: 1562px; text-align: center; opacity: 0;
+        font-weight: 800; font-size: 56px; line-height: 1.22; }
+      .st .m { color: var(--blanc); }
+      .st .m.dit { color: var(--jaune); }
+
+      #fin { background: var(--noir); }
+      #fin-rond { position: absolute; left: 390px; top: 560px; width: 300px; height: 300px; border-radius: 50%; background: var(--jaune);
+        display: flex; align-items: center; justify-content: center; box-shadow: 0 0 80px rgba(255, 214, 10, .35); }
+      #fin-l1, #fin-l2 { position: absolute; left: 0; right: 0; text-align: center; font-weight: 900; text-transform: uppercase; }
+      #fin-l1 { top: 960px; font-size: 76px; }
+      #fin-l2 { top: 1050px; font-size: 76px; color: var(--jaune); font-style: italic; }
+      #fin-chaine { position: absolute; left: 0; right: 0; top: 1200px; text-align: center; font-weight: 700; font-size: 38px; color: var(--gris); }
+      #fin-chaine b { color: var(--blanc); font-weight: 900; }

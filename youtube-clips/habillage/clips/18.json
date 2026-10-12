@@ -1,0 +1,226 @@
+{
+ "numero": 18,
+ "source": "../horizontal/clip-18.mp4",
+ "emission": "AchhLife · S3 · Ép. 3",
+ "chaine": "Achh10",
+ "coupes": [
+  5.2,
+  9.0,
+  16.37,
+  30.0,
+  32.67
+ ],
+ "cadrage": [
+  [
+   0,
+   560
+  ],
+  [
+   1,
+   640
+  ],
+  [
+   2,
+   690
+  ],
+  [
+   3,
+   690
+  ],
+  [
+   4.6,
+   720
+  ],
+  [
+   5.3,
+   950
+  ],
+  [
+   6,
+   1060
+  ],
+  [
+   7,
+   1200
+  ],
+  [
+   8.5,
+   1150
+  ],
+  [
+   9.05,
+   1450
+  ],
+  [
+   9.8,
+   800
+  ],
+  [
+   10.2,
+   750
+  ],
+  [
+   11,
+   640
+  ],
+  [
+   12,
+   620
+  ],
+  [
+   13,
+   560
+  ],
+  [
+   14,
+   570
+  ],
+  [
+   15.5,
+   580
+  ],
+  [
+   16.45,
+   1450
+  ],
+  [
+   17,
+   1180
+  ],
+  [
+   18,
+   1200
+  ],
+  [
+   19,
+   1290
+  ],
+  [
+   20,
+   1200
+  ],
+  [
+   21,
+   1300
+  ],
+  [
+   22,
+   1270
+  ],
+  [
+   23,
+   1210
+  ],
+  [
+   24,
+   1140
+  ],
+  [
+   25,
+   1060
+  ],
+  [
+   26,
+   940
+  ],
+  [
+   27,
+   880
+  ],
+  [
+   28,
+   1180
+  ],
+  [
+   29,
+   1120
+  ],
+  [
+   30.1,
+   1100
+  ],
+  [
+   31,
+   1110
+  ],
+  [
+   32.5,
+   1120
+  ],
+  [
+   33,
+   1120
+  ]
+ ],
+ "titre": [
+  "Le discours du coach",
+  "Est-ce que vous y croyez ?"
+ ],
+ "partie": null,
+ "carton": [
+  "L'épisode complet",
+  "est sur YouTube"
+ ],
+ "phrases": [
+  [
+   0.13,
+   1.33,
+   "Marquez, vous allez voir"
+  ],
+  [
+   1.33,
+   3.95,
+   "comment le match va se transformer."
+  ],
+  [
+   4.13,
+   6.13,
+   "Il a raison, il faut inverser tout ça !"
+  ],
+  [
+   6.13,
+   8.07,
+   "Est-ce que vous y croyez ? Oh, regardez-moi !"
+  ],
+  [
+   8.07,
+   9.4,
+   "Est-ce que vous y croyez ?"
+  ],
+  [
+   15.0,
+   17.6,
+   "Pourquoi on le ferait pas, nous ?"
+  ],
+  [
+   19.33,
+   20.13,
+   "On va essayer !"
+  ],
+  [
+   20.53,
+   23.0,
+   "Je dis pas qu'on va y arriver, faut pas rêver !"
+  ],
+  [
+   23.33,
+   25.27,
+   "On va mettre un, on va mettre deux !"
+  ],
+  [
+   26.13,
+   28.0,
+   "Allez, ça va demander des efforts, les gars !"
+  ],
+  [
+   28.4,
+   29.6,
+   "Faut y aller, faut y aller !"
+  ],
+  [
+   30.13,
+   32.4,
+   "Faites des courses, les petits, et vous allez voir !"
+  ]
+ ]
+}

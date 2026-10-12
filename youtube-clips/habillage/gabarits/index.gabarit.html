@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="gsap.min.js"></script>
+    <style>
+/*POLICES*/
+/*STYLES*/
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="__DUREE__" data-width="1080" data-height="1920">
+      <div id="cadre">
+        <video id="video" src="medias/video/clip-__NN__-carre.mp4" playsinline
+          data-start="0" data-duration="__DUREE_VIDEO__" data-track-index="0" data-has-audio="true"></video>
+      </div>
+      <div id="habillage" class="clip plein" data-start="0" data-duration="__DUREE_VIDEO__" data-track-index="1">
+        <div id="etiquettes"><span class="etiq emission">__EMISSION__</span>__PARTIE__</div>
+        <div id="titre"><span class="l1">__TITRE1__</span><span class="l2" style="font-size: __TAILLE2__;">__TITRE2__</span></div>
+        <div id="progression"></div>
+<!--SOUSTITRES-->
+      </div>
+      <div id="fin" class="clip plein" data-start="__DEBUT_FIN__" data-duration="__DUREE_FIN__" data-track-index="2">
+        <div id="fin-rond"><svg width="130" height="130" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="#0b0b0c"/></svg></div>
+        <div id="fin-l1">__CARTON1__</div>
+        <div id="fin-l2">__CARTON2__</div>
+        <div id="fin-chaine">Chaîne YouTube <b>__CHAINE__</b></div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const PHRASES = /*PHRASES*/;
+      const DUREE_VIDEO = __DUREE_VIDEO__, DEBUT_FIN = __DEBUT_FIN__;
+/*JS*/
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
