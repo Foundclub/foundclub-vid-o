@@ -26,10 +26,17 @@
       .st .m.dit { color: var(--jaune); }
 
       #fin { background: var(--noir); }
-      #fin-rond { position: absolute; left: 390px; top: 560px; width: 300px; height: 300px; border-radius: 50%; background: var(--jaune);
-        display: flex; align-items: center; justify-content: center; box-shadow: 0 0 80px rgba(255, 214, 10, .35); }
-      #fin-l1, #fin-l2 { position: absolute; left: 0; right: 0; text-align: center; font-weight: 900; text-transform: uppercase; }
-      #fin-l1 { top: 960px; font-size: 76px; }
-      #fin-l2 { top: 1050px; font-size: 76px; color: var(--jaune); font-style: italic; }
-      #fin-chaine { position: absolute; left: 0; right: 0; top: 1200px; text-align: center; font-weight: 700; font-size: 38px; color: var(--gris); }
+      #fin-appel { position: absolute; left: 0; right: 0; top: 250px; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+      #fin-appel span { font-weight: 900; text-transform: uppercase; line-height: 1.05; }
+      #fin-appel .a1, #fin-appel .a3 { font-size: 72px; color: var(--blanc); }
+      #fin-appel .a2 { font-size: 66px; font-style: italic; color: var(--noir); background: var(--jaune); padding: 4px 22px 10px; border-radius: 12px; transform: rotate(-2deg); }
+      #fin-vignette { position: absolute; left: 60px; top: 640px; width: 960px; height: 540px; border-radius: 28px; overflow: hidden;
+        box-shadow: 0 0 0 6px rgba(255, 214, 10, .9), 0 30px 80px rgba(0, 0, 0, .6); }
+      #fin-vignette img { width: 960px; height: 540px; display: block; filter: brightness(.82); }
+      #fin-play { position: absolute; left: 400px; top: 190px; width: 160px; height: 160px; border-radius: 50%; background: var(--jaune);
+        display: flex; align-items: center; justify-content: center; box-shadow: 0 0 60px rgba(255, 214, 10, .45); }
+      #fin-duree { position: absolute; right: 18px; bottom: 16px; padding: 6px 12px; border-radius: 8px; background: rgba(0, 0, 0, .8);
+        font-weight: 800; font-size: 28px; color: var(--blanc); }
+      #fin-titre { position: absolute; left: 70px; right: 70px; top: 1220px; font-weight: 800; font-size: 42px; line-height: 1.2; color: var(--blanc); }
+      #fin-chaine { position: absolute; left: 70px; right: 70px; top: 1340px; font-weight: 700; font-size: 32px; color: var(--gris); }
       #fin-chaine b { color: var(--blanc); font-weight: 900; }

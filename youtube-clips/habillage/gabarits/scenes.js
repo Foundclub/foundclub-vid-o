@@ -14,9 +14,12 @@
         let t = debut;
         poids.forEach((p, k) => { tl.set(sel + "-" + k, { className: "m dit" }, t); t += (fin - debut) * p / total; });
       });
-      // Carton final
-      tl.fromTo("#fin", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "power2.out" }, DEBUT_FIN);
-      tl.fromTo("#fin-rond", { scale: 0.3, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.45, ease: "back.out(2)" }, DEBUT_FIN + 0.15);
-      tl.fromTo("#fin-l1", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, DEBUT_FIN + 0.45);
-      tl.fromTo("#fin-l2", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, DEBUT_FIN + 0.65);
-      tl.fromTo("#fin-chaine", { opacity: 0 }, { opacity: 1, duration: 0.3 }, DEBUT_FIN + 0.95);
+      // Carton final : l'appel, puis la vignette de l'épisode qui monte, le bouton lecture qui bat
+      tl.fromTo("#fin", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, DEBUT_FIN);
+      tl.fromTo("#fin-appel .a1", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, DEBUT_FIN + 0.1);
+      tl.fromTo("#fin-appel .a2", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2.2)" }, DEBUT_FIN + 0.3);
+      tl.fromTo("#fin-appel .a3", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, DEBUT_FIN + 0.5);
+      tl.fromTo("#fin-vignette", { opacity: 0, y: 160, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: "power3.out" }, DEBUT_FIN + 0.6);
+      tl.fromTo("#fin-play", { scale: 0 }, { scale: 1, duration: 0.4, ease: "back.out(2.4)" }, DEBUT_FIN + 0.95);
+      tl.to("#fin-play", { scale: 1.12, duration: 0.25, yoyo: true, repeat: 3, ease: "sine.inOut" }, DEBUT_FIN + 1.45);
+      tl.fromTo(["#fin-titre", "#fin-chaine"], { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, stagger: 0.12, ease: "power2.out" }, DEBUT_FIN + 1.0);
