@@ -193,7 +193,9 @@ Les **4 clips habillés**, validés par Adel le 12/10/2026, sont dans `youtube-c
 - **Les données de chaque clip** sont dans `clips/NN.json` : cadrage, accroche, phrases.
 - **Fabriquer un clip** : `cd youtube-clips/habillage ; outils/rendre-clip.sh 18`.
 
-## `matchs-amicaux-2/` — la vidéo « matchs amicaux » d'ach10 (en cours)
+## `matchs-amicaux-2/` — la vidéo « matchs amicaux » d'ach10
+
+Vidéo verticale de **62,1 s** (1080×1920, 30 images/s, son à -14 LUFS), validée par Adel le 17/10/2026 (« ok on garde », sur la v2) : `matchs-amicaux-2/rendus/matchs-amicaux-2-final.mp4`.
 
 Deuxième vidéo sur les matchs amicaux, tournée par ach10 (`a-monter/matchs-amicaux-ach-1.mov`, 55,3 s). Elle reprend la charte et les scènes de `matchs-amicaux/` (calendrier, licence, téléphone, carton final). Ce qui change :
 - **Les coupures de presse** : les titres sont recopiés mot pour mot. Le nom du média est en texte, sans logo. Le surligneur jaune passe sur les mots qui comptent.
@@ -207,7 +209,7 @@ Deuxième vidéo sur les matchs amicaux, tournée par ach10 (`a-monter/matchs-am
 - **Les excuses des coachs** (« contre qui jouer ? », « s'organiser », « domicile ou extérieur ? ») sont rayées par un tampon vert « Plus d'excuses ».
 - **Les bruitages** : la bibliothèque d'`ach10/` (`outils/sons.py`). `outils/assembler.py` écrit `sons.json` aux mêmes instants que les animations.
 
-Fabriquer : `cd matchs-amicaux-2 ; outils/preparer-video.sh ; outils/rendre.sh <nom> 18`. `calage.json` est dans le temps de la vidéo d'origine : c'est l'assembleur qui décale ce qui vient après l'extrait.
+Fabriquer : `cd matchs-amicaux-2 ; outils/preparer-video.sh ; outils/rendre.sh matchs-amicaux-2-final 18` (`outils/preparer-extrait.sh` seulement si l'extrait doit être refait : il lit la vidéo de référence complète, non versionnée). `calage.json` est dans le temps de la vidéo d'origine : c'est l'assembleur qui décale ce qui vient après l'extrait.
 
 À revérifier avant de publier :
 - **Les droits de l'extrait de référence** : c'est le contenu d'un tiers, dans une vidéo de marque.
