@@ -209,6 +209,8 @@ Deuxième vidéo sur les matchs amicaux, tournée par ach10 (`a-monter/matchs-am
 - **Les excuses des coachs** (« contre qui jouer ? », « s'organiser », « domicile ou extérieur ? ») sont rayées par un tampon vert « Plus d'excuses ».
 - **Les bruitages** : la bibliothèque d'`ach10/` (`outils/sons.py`). `outils/assembler.py` écrit `sons.json` aux mêmes instants que les animations.
 
+**La partie téléphone seule, sans la tête d'ach10** (demande d'Adel du 17/10/2026) : `rendus/matchs-amicaux-2-telephone.mp4` (avec la voix et les bruitages) et `rendus/matchs-amicaux-2-telephone-muet.mp4`. Ils durent 15,8 s, de « Ton coach il a juste à aller sur l'application » à « garder le rythme ». C'est la même image que le final, sans le médaillon en haut à droite. Les fabriquer : `outils/extraire-telephone.sh`, après le final.
+
 Fabriquer : `cd matchs-amicaux-2 ; outils/preparer-video.sh ; outils/rendre.sh matchs-amicaux-2-final 18` (`outils/preparer-extrait.sh` seulement si l'extrait doit être refait : il lit la vidéo de référence complète, non versionnée). `calage.json` est dans le temps de la vidéo d'origine : c'est l'assembleur qui décale ce qui vient après l'extrait.
 
 À revérifier avant de publier :
