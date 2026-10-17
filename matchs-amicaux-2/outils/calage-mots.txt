@@ -1,0 +1,55 @@
+#1
+  professionnels : fini a   0.94 s
+       plaignent : fini a   1.77 s
+           jours : fini a   2.59 s
+#2
+         amateur : fini a   4.55 s
+            mois : fini a   6.05 s
+           coupe : fini a   8.73 s
+        reportes : fini a   9.90 s
+          treves : introuvable dans [3.4, 11.2] -> dites-vous nous en amateur, des fois pendant un mois on joue pas. entre les week-ends, deux matchs de coupe, deux matchs reportes ou de treve.
+#3
+            mois : fini a  12.51 s
+         licence : fini a  14.77 s
+             550 : fini a  15.98 s
+#4
+            mere : fini a  18.94 s
+           jouer : fini a  19.22 s
+          raison : fini a  20.31 s
+           temps : fini a  21.77 s
+#5
+          coachs : fini a  23.15 s
+          excuse : fini a  24.31 s
+             qui : fini a  26.57 s
+       organiser : fini a  26.50 s
+        domicile : fini a  28.01 s
+       exterieur : fini a  28.88 s
+#6
+         excuses : fini a  30.92 s
+           outil : fini a  31.87 s
+           found : fini a  33.25 s
+#7
+     application : fini a  35.25 s
+      disponible : fini a  37.15 s
+            week : fini a  38.00 s
+         choisit : fini a  39.88 s
+        domicile : fini a  40.64 s
+       exterieur : fini a  41.54 s
+#8
+         reporte : fini a  43.40 s
+           coupe : fini a  44.74 s
+           treve : fini a  45.64 s
+         semaine : fini a  46.61 s
+          rythme : fini a  49.23 s
+#9
+           coach : fini a  51.54 s
+         licence : fini a  53.26 s
+            mere : fini a  54.35 s
+           jouer : fini a  54.67 s
+#2b
+            trev : fini a  10.82 s
+#5b
+          contre : fini a  26.35 s
+#8b
+       continuer : fini a  47.62 s
+# contre : 26,35 s rejeté (Whisper entend « quand il joue » jusqu'à 25,6 s puis « contre qui jouer » d'un coup) -> 25,35 s retenu à l'écoute

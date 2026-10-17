@@ -32,3 +32,9 @@ ergysport/medias/video/source.mp4
 ergysport/snapshots/
 ergysport/rendus/*-brut.mp4
 ergysport/rendus/apercu-*.mp4
+# matchs-amicaux-2 : fichiers regenerables (outils/preparer-video.sh, outils/assembler.py)
+matchs-amicaux-2/medias/video/source.mp4
+matchs-amicaux-2/medias/enregistrement/
+matchs-amicaux-2/snapshots/
+matchs-amicaux-2/rendus/*-brut.mp4
+matchs-amicaux-2/rendus/apercu-*.mp4

@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Montserrat"; font-weight: 300; font-display: block; src: url("fonts/montserrat-latin-300-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 400; font-display: block; src: url("fonts/montserrat-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 300; font-display: block; src: url("fonts/montserrat-latin-ext-300-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 400; font-display: block; src: url("fonts/montserrat-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 500; font-display: block; src: url("fonts/montserrat-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 500; font-display: block; src: url("fonts/montserrat-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 600; font-display: block; src: url("fonts/montserrat-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 600; font-display: block; src: url("fonts/montserrat-latin-ext-600-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 700; font-display: block; src: url("fonts/montserrat-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 700; font-display: block; src: url("fonts/montserrat-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 800; font-display: block; src: url("fonts/montserrat-latin-800-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 800; font-display: block; src: url("fonts/montserrat-latin-ext-800-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 900; font-display: block; src: url("fonts/montserrat-latin-900-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 900; font-display: block; src: url("fonts/montserrat-latin-ext-900-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }      @font-face { font-family: "Playfair Display"; font-weight: 700; font-display: block; src: url("fonts/playfair-display-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Playfair Display"; font-weight: 900; font-display: block; src: url("fonts/playfair-display-latin-900-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Playfair Display"; font-weight: 700; font-display: block; src: url("fonts/playfair-display-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Playfair Display"; font-weight: 900; font-display: block; src: url("fonts/playfair-display-latin-ext-900-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+      :root { --bleu: #01b3f4; --nuit: #001218; --nuit-2: #173844; --vert: #27d6a3; --rouge: #f0384e; --orange: #ffa115; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #001218; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: "Montserrat", sans-serif; }
+      .plein { position: absolute; inset: 0; }
+
+      /* Fond du « mode écran » et la vidéo qui rétrécit en médaillon */
+      #fond-halo { position: absolute; inset: 0;
+        background: radial-gradient(900px 700px at 20% 18%, rgba(1,179,244,.16), rgba(1,179,244,0) 70%),
+                    radial-gradient(1000px 900px at 85% 80%, rgba(39,214,163,.08), rgba(39,214,163,0) 70%), #001218; }
+      #cadre-video { position: absolute; inset: 0; transform-origin: 540px 860px; clip-path: circle(2300px at 540px 860px); }
+      .video-orateur { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+      #medaillon-anneau { position: absolute; left: 744px; top: 94px; width: 312px; height: 312px; border-radius: 50%;
+        border: 6px solid var(--bleu); box-shadow: 0 0 40px rgba(1,179,244,.55); opacity: 0; }
+      /* Plein cadre : titres en haut (au-dessus de sa tête), sous-titres en bas (sur le t-shirt) */
+      #degrade-haut { position: absolute; left: 0; right: 0; top: 0; height: 520px;
+        background: linear-gradient(to bottom, rgba(0,18,24,.72) 0%, rgba(0,18,24,.35) 55%, rgba(0,18,24,0) 100%); }
+      #degrade-bas { position: absolute; left: 0; right: 0; top: 1280px; bottom: 0;
+        background: linear-gradient(to bottom, rgba(0,18,24,0) 0%, rgba(0,18,24,.55) 45%, rgba(0,18,24,.8) 100%); }
+
+      /* Titres */
+      .titre { position: absolute; left: 0; right: 0; text-align: center; text-transform: uppercase; font-weight: 900;
+        color: #fff; letter-spacing: -0.01em; line-height: 1; text-shadow: 0 6px 24px rgba(0,18,24,.45); }
+      .ligne { display: block; }
+      .surligne { display: inline-block; position: relative; padding: 8px 24px 10px; color: var(--nuit); text-shadow: none; }
+      .surligne .fond { position: absolute; inset: 0; background: var(--bleu); border-radius: 14px; transform-origin: left center; }
+      .surligne .mot { position: relative; display: inline-block; }
+      .rubrique { position: absolute; left: 70px; top: 128px; font-size: 30px; font-weight: 700; letter-spacing: .22em; color: var(--bleu); text-transform: uppercase; }
+      .titre-g { position: absolute; left: 70px; top: 172px; width: 640px; font-size: 62px; font-weight: 900; line-height: 1.02; color: #fff; text-transform: uppercase; }
+      .titre-g .bleu { color: var(--bleu); } .titre-g .rouge { color: var(--rouge); } .titre-g .vert { color: var(--vert); }
+
+      /* Scènes 1 à 3 : le calendrier du mois */
+      #calendrier { position: absolute; left: 70px; top: 470px; width: 940px; height: 860px; border-radius: 40px;
+        background: linear-gradient(160deg, #173844, #0b2129); border: 2px solid rgba(1,179,244,.4);
+        box-shadow: 0 0 70px rgba(1,179,244,.25), 0 40px 90px rgba(0,0,0,.55); padding: 34px 34px; }
+      #calendrier .mois { color: #fff; font-weight: 800; font-size: 40px; text-transform: uppercase; letter-spacing: .08em; display: flex; justify-content: space-between; align-items: center; }
+      #calendrier .compteur { color: var(--bleu); font-weight: 900; font-size: 40px; }
+      #calendrier .compteur.rouge { color: var(--rouge); display: inline-block; transform-origin: right center; }
+      #calendrier .jours-semaine, #calendrier .grille { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; }
+      #calendrier .jours-semaine { margin-top: 22px; color: #8fb3c0; font-weight: 700; font-size: 24px; text-align: center; }
+      #calendrier .grille { margin-top: 12px; }
+      .case { position: relative; height: 128px; border-radius: 16px; background: rgba(255,255,255,.05); }
+      .case.vide { background: transparent; }
+      .case.we { background: rgba(1,179,244,.10); }
+      .case .num { position: absolute; left: 12px; top: 8px; color: #cfe3ea; font-weight: 700; font-size: 24px; }
+      .ballon { position: absolute; left: 50%; top: 58%; width: 62px; height: 62px; margin: -31px 0 0 -31px; border-radius: 50%;
+        background: var(--bleu); box-shadow: 0 0 22px rgba(1,179,244,.8); opacity: 0; }
+      .ballon::after { content: ""; position: absolute; inset: 17px; border-radius: 50%; border: 5px solid var(--nuit); }
+      .amical { position: absolute; left: 6px; right: 6px; bottom: 10px; border-radius: 10px; background: var(--vert); color: var(--nuit);
+        font-weight: 900; font-size: 17px; text-align: center; padding: 6px 0; text-transform: uppercase; opacity: 0; }
+      .tampon { position: absolute; padding: 10px 22px; border: 6px solid var(--rouge); border-radius: 14px; color: var(--rouge);
+        font-weight: 900; font-size: 46px; text-transform: uppercase; background: rgba(0,18,24,.6); opacity: 0; letter-spacing: .04em; }
+      #sans-match { position: absolute; left: 0; right: 0; top: 1360px; text-align: center; }
+      #sans-match .surligne { font-size: 76px; font-weight: 900; text-transform: uppercase; color: #fff; }
+      #sans-match .surligne .fond { background: var(--rouge); }
+
+      /* Scène 4 : la licence à 350 € et la phrase */
+      #licence { position: absolute; left: 140px; top: 150px; width: 800px; height: 250px; border-radius: 34px;
+        background: linear-gradient(120deg, #173844, #0b2129); border: 3px solid rgba(255,255,255,.25);
+        box-shadow: 0 30px 70px rgba(0,0,0,.5); display: flex; align-items: center; padding: 0 44px; gap: 34px; opacity: 0; }
+      #licence .etiq { color: #8fb3c0; font-weight: 800; font-size: 30px; letter-spacing: .2em; text-transform: uppercase; }
+      #licence .saison { color: #fff; font-weight: 700; font-size: 30px; margin-top: 6px; }
+      #licence .prix { margin-left: auto; color: var(--orange); font-weight: 900; font-size: 120px; letter-spacing: -0.02em; }
+      .bulle-phrase { position: absolute; background: #fff; color: var(--nuit); border-radius: 36px; padding: 26px 36px;
+        font-weight: 900; font-size: 50px; line-height: 1.05; text-transform: uppercase; box-shadow: 0 24px 60px rgba(0,0,0,.45); opacity: 0; }
+      .bulle-phrase::after { content: ""; position: absolute; left: 90px; bottom: -26px; border-width: 28px 22px 0 22px; border-style: solid;
+        border-color: #fff transparent transparent transparent; }
+
+      /* Scène 6 : les deux galères du coach */
+      .galere { position: absolute; left: 110px; width: 860px; height: 108px; border-radius: 26px; background: rgba(0,18,24,.85);
+        border: 3px solid var(--rouge); display: flex; align-items: center; gap: 24px; padding: 0 30px; color: #fff;
+        font-weight: 800; font-size: 40px; text-transform: uppercase; box-shadow: 0 18px 40px rgba(0,0,0,.4); opacity: 0; }
+      .galere .croix { width: 54px; height: 54px; border-radius: 50%; background: var(--rouge); display: flex; align-items: center; justify-content: center; flex: none; }
+
+      /* Scène 7 : le logo */
+      #logo { position: absolute; left: 0; right: 0; top: 120px; display: flex; flex-direction: column; align-items: center; }
+      .icone-fc { width: 180px; height: 180px; border-radius: 42px; background: #000d12; border: 3px solid rgba(255,255,255,.18);
+        display: flex; align-items: center; justify-content: center; font-size: 120px; letter-spacing: -0.09em; line-height: 1;
+        box-shadow: 0 0 60px rgba(1,179,244,.45), 0 24px 60px rgba(0,0,0,.5); }
+      .icone-fc .f { color: var(--bleu); font-weight: 600; } .icone-fc .c { color: #fff; font-weight: 300; }
+      .marque { margin-top: 26px; font-size: 104px; line-height: 1; letter-spacing: 0.01em; position: relative; overflow: hidden; padding: 0 10px; }
+      .marque .found { color: var(--bleu); font-weight: 800; } .marque .club { color: #fff; font-weight: 400; }
+      .marque .reflet { position: absolute; top: -20%; bottom: -20%; width: 180px; left: -220px;
+        background: linear-gradient(100deg, rgba(255,255,255,0), rgba(255,255,255,.55), rgba(255,255,255,0)); }
+
+      /* Scènes 8 à 10 : le téléphone */
+      .tel { position: absolute; left: 276px; top: 290px; width: 528px; height: 1111px; border-radius: 76px; background: #081318; padding: 14px;
+        box-shadow: 0 0 0 2px rgba(1,179,244,.45), 0 0 70px rgba(1,179,244,.28), 0 40px 90px rgba(0,0,0,.6); }
+      .ecran { position: relative; width: 500px; height: 1083px; border-radius: 62px; overflow: hidden; background: #0d1a20; }
+      .capture, .extrait { position: absolute; left: 0; top: 0; width: 500px; height: 1083px; opacity: 0; }
+      .extrait video { width: 500px; height: 1083px; display: block; }
+      .etiquette { position: absolute; display: flex; align-items: center; gap: 14px; padding: 18px 30px; border-radius: 999px; background: #173844;
+        border: 3px solid var(--bleu); color: #fff; font-weight: 800; font-size: 36px; text-transform: uppercase; white-space: nowrap;
+        box-shadow: 0 0 34px rgba(1,179,244,.35), 0 18px 40px rgba(0,0,0,.45); opacity: 0; }
+      .etiquette .point { width: 18px; height: 18px; border-radius: 50%; background: var(--vert); }
+      .appui { position: absolute; width: 110px; height: 110px; margin: -55px 0 0 -55px; border-radius: 50%;
+        background: rgba(255,255,255,.28); border: 4px solid rgba(255,255,255,.85); box-shadow: 0 0 30px rgba(1,179,244,.6); opacity: 0; }
+      #cest-tout { position: absolute; left: 0; right: 0; top: 760px; text-align: center; opacity: 0; }
+      #cest-tout span { display: inline-block; padding: 18px 40px; border: 8px solid var(--vert); border-radius: 22px; color: var(--vert);
+        background: rgba(0,18,24,.82); font-weight: 900; font-size: 96px; text-transform: uppercase; transform: rotate(-8deg); }
+      #compos { position: absolute; left: 40px; top: 600px; width: 1000px; border-radius: 34px; overflow: hidden; opacity: 0;
+        box-shadow: 0 0 0 2px rgba(1,179,244,.45), 0 0 70px rgba(1,179,244,.3), 0 40px 90px rgba(0,0,0,.6); background: #eef3f2; }
+      #compos img { display: block; width: 1000px; height: auto; }
+
+      /* Scène 11 et carton final */
+      #envoie { position: absolute; left: 0; right: 0; top: 190px; display: flex; justify-content: center; }
+      #envoie .pastille { display: flex; align-items: center; gap: 18px; background: #fff; color: var(--nuit); font-weight: 900; font-size: 48px;
+        text-transform: uppercase; padding: 22px 38px; border-radius: 999px; box-shadow: 0 18px 44px rgba(0,18,24,.45); opacity: 0; }
+      #fin-voile { background: #001218; opacity: 0; }
+      #fin { position: absolute; left: 0; right: 0; top: 560px; display: flex; flex-direction: column; align-items: center; }
+      #fin .icone-fc { width: 220px; height: 220px; border-radius: 50px; font-size: 146px; }
+      #fin .marque { margin-top: 40px; font-size: 128px; }
+      #fin .phrase { margin-top: 46px; color: #fff; font-weight: 700; font-size: 50px; }
+      #fin .badges { margin-top: 44px; display: flex; gap: 34px; align-items: center; }
+      #fin .badges img { height: 110px; display: block; }
+      #fin .badges .gp { height: 144px; margin: -17px -10px; }
+      #fin .site { margin-top: 46px; color: var(--bleu); font-weight: 800; font-size: 50px; letter-spacing: .02em; }
+
+      /* Sous-titres */
+      .st { position: absolute; left: 90px; right: 90px; bottom: 290px; text-align: center; color: #fff; font-weight: 700;
+        font-size: 46px; line-height: 1.22; text-shadow: 0 3px 14px rgba(0,18,24,.9), 0 0 3px rgba(0,18,24,.8); opacity: 0; }
+
+      /* Coupures de presse : papier neutre, nom du média en texte (aucun logo), titre recopié mot pour mot */
+      .article { position: absolute; width: 940px; padding: 30px 42px 32px; background: #fbf9f3; color: #141414; border-radius: 6px;
+        box-shadow: 0 2px 0 rgba(0,0,0,.06), 0 30px 70px rgba(0,0,0,.55); opacity: 0; }
+      .article .a-tete { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 14px; border-bottom: 3px solid #141414; }
+      .article .a-media { font: 800 30px/1 "Montserrat", sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+      .article .a-rub { font: 600 22px/1 "Montserrat", sans-serif; letter-spacing: .1em; text-transform: uppercase; color: #6b6b6b; }
+      .article .a-titre { margin-top: 20px; font: 900 70px/1.06 "Playfair Display", serif; letter-spacing: -0.005em; }
+      .article .a-titre .mq { position: relative; display: inline; padding: 0 4px;
+        background: linear-gradient(transparent 58%, rgba(255, 196, 0, .85) 58%) no-repeat 0 0 / 0% 100%; }
+      .article .a-lignes { margin-top: 22px; display: flex; flex-direction: column; gap: 12px; }
+      .article .a-lignes span { display: block; height: 12px; border-radius: 6px; background: #dedbd2; }
+      .article .a-source { margin-top: 18px; font: 600 20px/1 "Montserrat", sans-serif; color: #8a8a8a; letter-spacing: .02em; }
+
+      /* L'extrait de la vidéo de référence, entre « je vais jouer ! » et la suite */
+      #insert { background: #000; }
+      #insert-cadre { position: absolute; left: 40px; right: 40px; top: 600px; height: 560px; border-radius: 28px; overflow: hidden;
+        background: #0b2129; border: 4px dashed rgba(255,255,255,.5); display: flex; flex-direction: column; align-items: center; justify-content: center;
+        text-align: center; color: #fff; gap: 20px; }
+      #insert-cadre .k { font-weight: 800; font-size: 30px; letter-spacing: .2em; text-transform: uppercase; color: var(--orange); }
+      #insert-cadre .t { font-weight: 900; font-size: 54px; line-height: 1.1; text-transform: uppercase; padding: 0 40px; }
+      #insert-cadre .s { font-weight: 600; font-size: 30px; color: #8fb3c0; }
+      #insert-cadre video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #000; }
+
+      /* « Plus d'excuses » : le tampon vert qui raye les excuses */
+      #plus-excuses { position: absolute; left: 0; right: 0; top: 190px; text-align: center; opacity: 0; }
+      #plus-excuses span { display: inline-block; padding: 16px 40px; border: 9px solid var(--vert); border-radius: 22px; color: var(--vert);
+        background: rgba(0,18,24,.88); font-weight: 900; font-size: 92px; text-transform: uppercase; transform: rotate(-7deg); }
+      .galere .barre-rouge { position: absolute; left: 20px; right: 20px; top: 50%; height: 7px; margin-top: -3px; background: var(--vert);
+        border-radius: 4px; transform-origin: left center; transform: scaleX(0); }
+      #excuse-titre { position: absolute; left: 0; right: 0; top: 170px; display: flex; justify-content: center; }
+      #excuse-titre span { display: inline-block; background: #fff; color: var(--nuit); font-weight: 900; font-size: 56px; text-transform: uppercase;
+        padding: 20px 36px; border-radius: 22px; box-shadow: 0 18px 44px rgba(0,18,24,.45); opacity: 0; }
+
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="60.72" data-width="1080" data-height="1920">
+
+      <div id="fond" class="clip plein" data-start="0" data-duration="60.72" data-track-index="0"><div id="fond-halo"></div></div>
+
+      <!-- La vidéo d'ach10, coupée en deux autour de l'extrait de référence (fondus de 12 ms sur le son, aux deux bords de la coupe) -->
+      <div id="cadre-video">
+        <video id="video-a" class="video-orateur" src="medias/video/source.mp4" playsinline data-has-audio="true" data-fade-out="0.012"
+          data-start="0" data-duration="19.2667" data-track-index="1"></video>
+        <video id="video-b" class="video-orateur" src="medias/video/source.mp4" playsinline data-has-audio="true" data-fade-in="0.012"
+          data-start="21.7667" data-media-start="19.4000" data-duration="35.8667" data-track-index="1"></video>
+      </div>
+
+      <div id="degrades" class="clip plein" data-start="0" data-duration="60.72" data-track-index="2">
+        <div id="degrade-haut"></div><div id="degrade-bas"></div>
+      </div>
+      <div id="medaillon-anneau"></div>
+
+      <!-- SCÈNE 1 — « les footballeurs professionnels se plaignent » : deux vrais titres de presse -->
+      <div id="mode-presse" class="plein" style="opacity: 0;">
+        <div id="p-rubrique" class="rubrique">Les pros</div>
+        <div id="p-titre" class="titre-g"><span class="ligne">Un match</span><span class="ligne bleu">tous les 3 jours</span></div>
+        <div id="art-1" class="article" style="left: 70px; top: 370px;">
+          <div class="a-tete"><span class="a-media">Soccerway</span></div>
+          <div class="a-titre">“On est proche” <span class="mq">d&#x27;une grève</span>, dit Rodri à propos des <span class="mq">calendriers surchargés</span></div>
+          <div class="a-lignes"><span style="width: 100%;"></span><span style="width: 92%;"></span><span style="width: 64%;"></span></div>
+          <div class="a-source">fr.soccerway.com</div>
+        </div>
+        <div id="art-2" class="article" style="left: 70px; top: 930px;">
+          <div class="a-tete"><span class="a-media">La DH</span></div>
+          <div class="a-titre">Grève des joueurs : quand <span class="mq">les footballeurs pros</span> crachent dans la soupe</div>
+          <div class="a-lignes"><span style="width: 100%;"></span><span style="width: 92%;"></span></div>
+          <div class="a-source">dhnet.be · éditorial du 19/09/2024</div>
+        </div>
+      </div>
+
+      <!-- SCÈNES 2 ET 3 — le calendrier des amateurs : un mois sans match -->
+      <div id="mode-cal" class="plein" style="opacity: 0;">
+        <div id="c-rubrique-amat" class="rubrique" style="opacity: 0;">Nous, les amateurs</div>
+        <div id="c-titre-amat" class="titre-g" style="opacity: 0;"><span class="ligne">Parfois un mois</span><span class="ligne rouge">sans match</span></div>
+        <div id="calendrier">
+          <div class="mois"><span>Octobre</span><span class="compteur rouge">0 match</span></div>
+          <div class="jours-semaine"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div>
+          <div class="grille">
+            <div class="case vide"></div>
+            <div class="case vide"></div>
+            <div class="case vide"></div>
+            <div class="case"><span class="num">1</span></div>
+            <div class="case"><span class="num">2</span></div>
+            <div class="case we"><span class="num">3</span></div>
+            <div class="case we"><span class="num">4</span></div>
+            <div class="case"><span class="num">5</span></div>
+            <div class="case"><span class="num">6</span></div>
+            <div class="case"><span class="num">7</span></div>
+            <div class="case"><span class="num">8</span></div>
+            <div class="case"><span class="num">9</span></div>
+            <div class="case we"><span class="num">10</span></div>
+            <div class="case we"><span class="num">11</span></div>
+            <div class="case"><span class="num">12</span></div>
+            <div class="case"><span class="num">13</span></div>
+            <div class="case"><span class="num">14</span></div>
+            <div class="case"><span class="num">15</span></div>
+            <div class="case"><span class="num">16</span></div>
+            <div class="case we"><span class="num">17</span></div>
+            <div class="case we"><span class="num">18</span></div>
+            <div class="case"><span class="num">19</span></div>
+            <div class="case"><span class="num">20</span></div>
+            <div class="case"><span class="num">21</span></div>
+            <div class="case"><span class="num">22</span></div>
+            <div class="case"><span class="num">23</span></div>
+            <div class="case we"><span class="num">24</span></div>
+            <div class="case we"><span class="num">25</span></div>
+            <div class="case"><span class="num">26</span></div>
+            <div class="case"><span class="num">27</span></div>
+            <div class="case"><span class="num">28</span></div>
+            <div class="case"><span class="num">29</span></div>
+            <div class="case"><span class="num">30</span></div>
+            <div class="case we"><span class="num">31</span></div>
+          </div>
+          <div id="t-coupe" class="tampon" style="left:785px;top:210px;">Coupe</div>
+          <div id="t-reporte" class="tampon" style="left:785px;top:348px;">Reporté</div>
+          <div id="t-treve" class="tampon" style="left:785px;top:486px;">Trêve</div>
+        </div>
+        <div id="art-3" class="article" style="left: 70px; top: 540px;">
+          <div class="a-tete"><span class="a-media">ICI Limousin</span></div>
+          <div class="a-titre" style="font-size: 60px;">En Corrèze, <span class="mq">le casse-tête des matchs de foot à reprogrammer</span> en raison des intempéries de ces dernières semaines</div>
+          <div class="a-lignes"><span style="width: 100%;"></span><span style="width: 92%;"></span></div>
+          <div class="a-source">ici.fr · Les échos du Limousin</div>
+        </div>
+        <div id="sans-match"><span class="surligne"><span class="fond"></span><span class="mot">Un mois sans match</span></span></div>
+      </div>
+
+      <!-- SCÈNE 4 — « ils payent leur licence jusqu'à 550 € … la vie de ma mère, je vais jouer ! » -->
+      <div id="s4" class="clip plein" data-start="12.810" data-duration="6.457" data-track-index="4">
+        <div id="licence">
+          <div><div class="etiq">Licence</div><div class="saison">Jusqu'à</div></div>
+          <div class="prix"><span id="prix">0</span>&nbsp;€</div>
+        </div>
+        <div id="bulle-1" class="bulle-phrase" style="left: 90px; top: 150px;">« La vie de ma mère,<br />je vais jouer ! »</div>
+      </div>
+
+      <!-- L'EXTRAIT DE RÉFÉRENCE — entre « je vais jouer ! » et « mais c'est quoi la raison ? » -->
+      <div id="insert" class="clip plein" data-start="19.2667" data-duration="2.5000" data-track-index="5">
+        <div id="insert-cadre">
+          <div class="k">Emplacement réservé</div>
+          <div class="t">L'extrait de la vidéo<br />de référence</div>
+          <div class="s">à partir de 0:30 — « la tête de ma mère, je vais jouer »</div>
+        </div>
+      </div>
+
+      <!-- SCÈNE 5 — « mais c'est quoi la raison ? » -->
+      <div id="s5" class="clip plein" data-start="21.7667" data-duration="3.300" data-track-index="6">
+        <div id="s5-titre" class="titre" style="top: 170px; font-size: 80px;">
+          <span class="ligne">C'est quoi</span>
+          <span class="surligne" style="margin-top: 14px;"><span class="fond"></span><span class="mot">la raison ?</span></span>
+        </div>
+      </div>
+
+      <!-- SCÈNES 6 ET 7 — l'excuse des coachs, puis « plus d'excuses » et FoundClub -->
+      <div id="s6" class="clip plein" data-start="25.017" data-duration="11.600" data-track-index="7">
+        <div id="excuse-titre"><span>Toujours la même excuse</span></div>
+        <div id="galere-qui" class="galere" style="top: 120px;"><span class="croix"><svg width="26" height="26" viewBox="0 0 24 24" stroke="#fff" stroke-width="4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></span>Contre qui jouer ?<span class="barre-rouge"></span></div>
+        <div id="galere-orga" class="galere" style="top: 246px;"><span class="croix"><svg width="26" height="26" viewBox="0 0 24 24" stroke="#fff" stroke-width="4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></span>S'organiser<span class="barre-rouge"></span></div>
+        <div id="galere-lieu" class="galere" style="top: 372px;"><span class="croix"><svg width="26" height="26" viewBox="0 0 24 24" stroke="#fff" stroke-width="4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></span>Domicile ou extérieur ?<span class="barre-rouge"></span></div>
+        <div id="plus-excuses"><span>Plus d'excuses</span></div>
+        <div id="logo">
+          <div class="icone-fc" style="width: 150px; height: 150px; border-radius: 36px; font-size: 100px;"><span class="f">F</span><span class="c">C</span></div>
+          <div class="marque" style="font-size: 92px;"><span class="found">FOUND</span><span class="club">CLUB</span><span class="reflet"></span></div>
+        </div>
+      </div>
+
+      <!-- SCÈNES 8 À 10 — le téléphone : l'enregistrement d'écran, puis l'autre coach accepte -->
+      <div id="mode-tel" class="plein" style="opacity: 0;">
+        <div id="t-rubrique-1" class="rubrique" style="opacity: 0;">Le coach</div>
+        <div id="t-titre-1" class="titre-g" style="opacity: 0;"><span id="t1-l1" class="ligne">Trouve un club</span><span id="t1-l2" class="ligne bleu">disponible</span></div>
+        <div id="t-rubrique-2" class="rubrique" style="opacity: 0;">En face, on accepte</div>
+                <div id="tel" class="tel">
+          <div class="ecran">
+            <div id="x-0" class="extrait"><video id="v-x-0" src="medias/enregistrement/x-0.mp4" muted playsinline data-start="37.017" data-duration="1.350" data-track-index="3"></video></div>
+            <div id="x-1" class="extrait"><video id="v-x-1" src="medias/enregistrement/x-1.mp4" muted playsinline data-start="38.367" data-duration="1.500" data-track-index="3"></video></div>
+            <div id="x-2" class="extrait"><video id="v-x-2" src="medias/enregistrement/x-2.mp4" muted playsinline data-start="39.867" data-duration="2.030" data-track-index="3"></video></div>
+            <div id="x-3" class="extrait"><video id="v-x-3" src="medias/enregistrement/x-3.mp4" muted playsinline data-start="41.897" data-duration="2.260" data-track-index="3"></video></div>
+            <div id="x-4" class="extrait"><video id="v-x-4" src="medias/enregistrement/x-4.mp4" muted playsinline data-start="44.157" data-duration="1.410" data-track-index="3"></video></div>
+            <img id="cap-proposition" class="capture" src="medias/captures/proposition-adverse.webp" alt="" />
+            <img id="cap-accepter" class="capture" src="medias/captures/accepter-proposition.webp" alt="" />
+            <img id="cap-planning" class="capture" src="medias/captures/planning-match.webp" alt="" />
+          </div>
+        </div>
+        <div id="t-titre-2" class="titre" style="opacity: 0; top: 780px; font-size: 76px;"><span id="t2-l1" class="ligne">Continuer à jouer</span><span id="t2-l2" class="ligne" style="color: var(--vert); margin-top: 12px;">&amp; garder le rythme</span></div>
+        <div id="tag-weekend" class="etiquette" style="left: 34px; top: 700px;"><span class="point"></span>Le week-end que tu veux</div>
+        <div id="tag-domicile" class="etiquette" style="right: 34px; top: 880px;"><span class="point"></span>À domicile</div>
+        <div id="tag-exterieur" class="etiquette" style="left: 34px; top: 1040px;"><span class="point"></span>Ou à l'extérieur</div>
+        <div id="tag-reporte" class="etiquette" style="left: 34px; top: 560px;"><span class="point"></span>Match reporté</div>
+        <div id="tag-coupe" class="etiquette" style="right: 34px; top: 720px;"><span class="point"></span>Week-end de coupe</div>
+        <div id="tag-treve" class="etiquette" style="left: 34px; top: 880px;"><span class="point"></span>Trêve</div>
+        <div id="tag-semaine" class="etiquette" style="right: 34px; top: 1040px;"><span class="point"></span>Même en semaine</div>
+        <div id="appui-accepter" class="appui" style="left: 544px; top: 1132px;"></div>
+        <div id="appui-confirmer" class="appui" style="left: 540px; top: 872px;"></div>
+      </div>
+
+      <!-- SCÈNE 11 — « envoie la vidéo à ton coach… la tête de ma mère, je vais jouer ! » -->
+      <div id="s11" class="clip plein" data-start="52.197" data-duration="5.720" data-track-index="8">
+        <div id="envoie"><div class="pastille">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#001218" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg>
+          Envoie-la à ton coach</div></div>
+        <div id="bulle-2" class="bulle-phrase" style="left: 70px; top: 150px;">« 550 € la licence…<br />la tête de ma mère,<br />je vais jouer ! »</div>
+      </div>
+
+      <!-- CARTON FINAL -->
+      <div id="carton" class="clip plein" data-start="57.517" data-duration="3.20" data-track-index="9">
+        <div id="fin-voile" class="plein"></div>
+        <div id="fin">
+          <div class="icone-fc"><span class="f">F</span><span class="c">C</span></div>
+          <div class="marque"><span class="found">FOUND</span><span class="club">CLUB</span><span class="reflet"></span></div>
+          <div class="phrase">Télécharge FoundClub</div>
+          <div class="badges">
+            <img src="medias/badges/app-store.svg" alt="Download on the App Store" />
+            <img class="gp" src="medias/badges/google-play.svg" alt="Get it on Google Play" />
+          </div>
+          <div class="site">foundclub.app</div>
+        </div>
+      </div>
+
+      <!-- SOUS-TITRES -->
+      <div id="sous-titres" class="clip plein" data-start="0" data-duration="60.72" data-track-index="10">
+        <p id="st-0" class="st">Les footballeurs professionnels se plaignent parce qu&#x27;ils jouent tous les 3 jours.</p>
+        <p id="st-1" class="st">Dites-vous : nous, en amateur, des fois, pendant un mois, on joue pas.</p>
+        <p id="st-2" class="st">Entre les week-ends de coupe, les matchs reportés ou les trêves…</p>
+        <p id="st-3" class="st">Des fois, pendant un mois, on joue pas.</p>
+        <p id="st-4" class="st">Dites-vous, il y en a, ils payent leur licence jusqu&#x27;à 550 € !</p>
+        <p id="st-5" class="st">À 550 €… la vie de ma mère, je vais jouer !</p>
+        <p id="st-6" class="st">Mais c&#x27;est quoi la raison, en fait ?</p>
+        <p id="st-7" class="st">Pourquoi on joue pas pendant autant de temps, des fois ?</p>
+        <p id="st-8" class="st">Les coachs, ils ont toujours la même excuse.</p>
+        <p id="st-9" class="st">« On sait pas contre qui jouer, faut s&#x27;organiser, est-ce qu&#x27;on joue à domicile ou à l&#x27;extérieur ? »</p>
+        <p id="st-10" class="st">Mais maintenant, plus d&#x27;excuses. J&#x27;ai un outil pour vous, les gars :</p>
+        <p id="st-11" class="st">FoundClub.</p>
+        <p id="st-12" class="st">Ton coach, il a juste à aller sur l&#x27;application,</p>
+        <p id="st-13" class="st">il cherche un club qui est disponible le week-end où il a envie de faire ce match.</p>
+        <p id="st-14" class="st">Et il choisit : à domicile ou à l&#x27;extérieur.</p>
+        <p id="st-15" class="st">Que ce soit pendant un match reporté, un week-end de coupe,</p>
+        <p id="st-16" class="st">pendant la trêve ou même en semaine,</p>
+        <p id="st-17" class="st">vous pouvez continuer à jouer et garder le rythme.</p>
+        <p id="st-18" class="st">Maintenant, t&#x27;as plus qu&#x27;à envoyer la vidéo à ton coach.</p>
+        <p id="st-19" class="st">Et à 550 € la licence… la tête de ma mère, je vais jouer !</p>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const T = {"professionnels": 0.94, "plaignent": 1.77, "jours": 2.59, "amateur": 4.55, "mois": 6.05, "coupe": 8.73, "reportes": 9.9, "treve": 10.82, "mois2": 12.51, "licence": 14.77, "550": 15.98, "mere": 18.94, "jouer": 19.22, "raison": 22.677, "temps": 24.137, "coachs": 25.517, "excuse": 26.677, "contre": 27.717, "organiser": 28.867, "domicile": 30.377, "exterieur": 31.247, "excuses": 33.287, "outil": 34.237, "found": 35.617, "application": 37.617, "disponible": 39.517, "week": 40.367, "choisit": 42.247, "domicile2": 43.007, "exterieur2": 43.907, "reporte2": 45.767, "coupe2": 47.107, "treve2": 48.007, "semaine": 48.977, "continuer": 49.987, "rythme": 51.597, "coach": 53.907, "licence2": 55.627, "mere2": 56.717, "jouer2": 57.037};
+      const SOUS_TITRES = [[0.13, 3.3], [3.65, 6.8], [6.8, 11.1], [11.27, 12.95], [12.95, 16.65], [17.16, 19.267], [21.767, 23.027], [23.027, 24.947], [25.127, 26.967], [27.177, 31.797], [32.037, 35.167], [35.167, 36.117], [36.257, 37.817], [37.817, 41.747], [41.957, 44.277], [44.547, 47.227], [47.457, 49.227], [49.227, 51.767], [52.037, 54.207], [54.207, 57.517]];
+      const EXTRAITS = [{"debut": 37.017, "duree": 1.35}, {"debut": 38.367, "duree": 1.5}, {"debut": 39.867, "duree": 2.03}, {"debut": 41.897, "duree": 2.26}, {"debut": 44.157, "duree": 1.41}];
+      const COUPE = 19.2667, REPRISE_T = 21.7667, FIN = 57.517;
+      // Sous-titres
+      SOUS_TITRES.forEach(([debut, fin], i) => {
+        tl.fromTo(`#st-${i}`, { opacity: 0 }, { opacity: 1, duration: 0.08, ease: "none" }, debut);
+        tl.to(`#st-${i}`, { opacity: 0, duration: 0.08, ease: "none" }, fin - 0.08);
+      });
+
+      // Passage plein cadre ⇄ médaillon (ach10 en haut à droite ; son visage est centré vers y = 860)
+      const versMedaillon = (t) => {
+        tl.to("#degrade-bas", { opacity: 0, duration: 0.4 }, t);
+        tl.to("#cadre-video", { clipPath: "circle(440px at 540px 860px)", scale: 0.35, x: 360, y: -610, duration: 0.8, ease: "power3.inOut" }, t);
+        tl.to("#medaillon-anneau", { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, t + 0.7);
+      };
+      const versPleinCadre = (t) => {
+        tl.to("#medaillon-anneau", { opacity: 0, scale: 0.6, duration: 0.25 }, t);
+        tl.to("#cadre-video", { clipPath: "circle(2300px at 540px 860px)", scale: 1, x: 0, y: 0, duration: 0.7, ease: "power3.inOut" }, t);
+        tl.to("#degrade-bas", { opacity: 1, duration: 0.5 }, t + 0.3);
+      };
+      tl.set("#medaillon-anneau", { scale: 0.6 }, 0);
+      const surligner = (sel, t) => {
+        tl.fromTo(`${sel} .fond`, { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, t);
+        tl.fromTo(`${sel} .mot`, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, t + 0.1);
+      };
+      const apparaitre = (sel, t, de = { y: 40 }) => tl.fromTo(sel, { opacity: 0, ...de }, { opacity: 1, x: 0, y: 0, duration: 0.35, ease: "power3.out" }, t);
+      const etiquette = (sel, t, cote) => tl.fromTo(sel, { opacity: 0, x: cote * 160, scale: 0.8 }, { opacity: 1, x: 0, scale: 1, duration: 0.32, ease: "back.out(1.7)" }, t);
+      const appuyer = (sel, t) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.5 }, { opacity: 1, scale: 0.85, duration: 0.22, ease: "power2.out" }, t);
+        tl.to(sel, { opacity: 0, scale: 1.25, duration: 0.3, ease: "power1.in" }, t + 0.32);
+      };
+      // la coupure de presse tombe sur la table, puis le surligneur passe sur les mots qui comptent
+      const plaquer = (sel, t, rot) => tl.fromTo(sel, { opacity: 0, scale: 1.4, rotation: rot * 3 }, { opacity: 1, scale: 1, rotation: rot, duration: 0.28, ease: "power3.in" }, t);
+      const marquer = (sel, t) => tl.fromTo(sel, { backgroundSize: "0% 100%" }, { backgroundSize: "100% 100%", duration: 0.35, ease: "power2.inOut", stagger: 0.3 }, t);
+
+      // ── SCÈNE 1 : les pros se plaignent — deux vrais titres de presse ──
+      const P0 = 0.15;
+      versMedaillon(P0);
+      tl.to("#mode-presse", { opacity: 1, duration: 0.3 }, P0 + 0.2);
+      apparaitre("#p-rubrique", P0 + 0.3, { x: -40 });
+      plaquer("#art-1", P0 + 0.35, -2.5);
+      tl.to("#mode-presse", { x: 8, duration: 0.04, yoyo: true, repeat: 3, ease: "none" }, P0 + 0.63);
+      marquer("#art-1 .mq", P0 + 0.8);
+      tl.fromTo("#art-2", { opacity: 0, x: 760, rotation: 9 }, { opacity: 1, x: 0, rotation: 2, duration: 0.4, ease: "power3.out" }, T.plaignent - 0.5);
+      marquer("#art-2 .mq", T.plaignent - 0.05);
+      tl.fromTo("#p-titre .ligne", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out", stagger: 0.35 }, T.jours - 0.85);
+
+      // ── SCÈNES 2 ET 3 : le calendrier des amateurs, puis un vrai titre de presse locale ──
+      const CAL = T.jours + 0.55;
+      tl.to(["#art-1", "#art-2"], { opacity: 0, x: -760, rotation: -10, duration: 0.35, ease: "power3.in", stagger: 0.06 }, CAL - 0.15);
+      tl.to(["#p-rubrique", "#p-titre"], { opacity: 0, x: -40, duration: 0.25 }, CAL - 0.15);
+      tl.to("#mode-cal", { opacity: 1, duration: 0.3 }, CAL);
+      apparaitre("#calendrier", CAL + 0.1, { y: 300 });
+      apparaitre("#c-rubrique-amat", T.amateur - 0.75, { x: -40 });
+      apparaitre("#c-titre-amat", T.mois - 0.55);
+      tl.to("#calendrier .compteur", { scale: 1.3, duration: 0.12, yoyo: true, repeat: 1 }, T.mois - 0.1);
+      // Coupe, reportés, trêve : trois tampons sur les week-ends
+      [["#t-coupe", T.coupe], ["#t-reporte", T.reportes], ["#t-treve", T.treve]].forEach(([sel, t]) => {
+        tl.fromTo(sel, { opacity: 0, scale: 2.2, rotation: -20, xPercent: -50, yPercent: -50 }, { opacity: 1, scale: 1, rotation: -8, xPercent: -50, yPercent: -50, duration: 0.22, ease: "power3.in" }, t - 0.35);
+      });
+      tl.to("#calendrier", { x: 8, duration: 0.05, yoyo: true, repeat: 3, ease: "none" }, T.treve - 0.13);
+      // « des fois pendant un mois on joue pas » : la presse locale en parle
+      plaquer("#art-3", T.mois2 - 1.25, -1.5);
+      marquer("#art-3 .mq", T.mois2 - 0.85);
+      surligner("#sans-match", T.mois2 - 0.4);
+      const S4 = T.mois2 + 0.4;
+      tl.to("#mode-cal", { opacity: 0, duration: 0.3 }, S4 - 0.1);
+      versPleinCadre(S4 - 0.1);
+
+      // ── SCÈNE 4 : la licence jusqu'à 550 €, puis « la vie de ma mère, je vais jouer ! » ──
+      apparaitre("#licence", S4 + 0.3, { y: -60 });
+      const prix = { v: 0 }, elPrix = document.getElementById("prix");
+      tl.fromTo(prix, { v: 0 }, { v: 550, duration: 1.1, ease: "power2.out", onUpdate: () => { elPrix.textContent = String(Math.round(prix.v)); } }, T["550"] - 1.1);
+      tl.to("#licence", { scale: 1.06, duration: 0.12, yoyo: true, repeat: 1 }, T["550"]);
+      tl.to("#licence", { scale: 1.06, duration: 0.12, yoyo: true, repeat: 1 }, T.mere - 1.45);
+      tl.to("#licence", { opacity: 0, y: -40, duration: 0.25 }, T.mere - 0.95);
+      tl.fromTo("#bulle-1", { opacity: 0, scale: 0.5, rotation: -6 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.3, ease: "back.out(2)" }, T.mere - 0.8);
+      tl.to("#bulle-1", { x: 10, duration: 0.05, yoyo: true, repeat: 5, ease: "none" }, T.jouer - 0.3);
+
+      // ── L'EXTRAIT DE RÉFÉRENCE (coupe franche, l'image d'ach10 s'arrête) ──
+      tl.fromTo("#insert-cadre", { scale: 0.9 }, { scale: 1, duration: 0.25, ease: "power3.out" }, COUPE);
+
+      // ── SCÈNE 5 : « mais c'est quoi la raison ? » ──
+      apparaitre("#s5-titre .ligne", REPRISE_T + 0.05);
+      surligner("#s5-titre", T.raison - 0.5);
+
+      // ── SCÈNE 6 : toujours la même excuse ──
+      tl.fromTo("#excuse-titre span", { opacity: 0, scale: 0.6, rotation: -5 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.35, ease: "back.out(1.8)" }, T.coachs - 0.35);
+      tl.to("#excuse-titre span", { opacity: 0, y: -30, duration: 0.25 }, T.contre - 0.85);
+      apparaitre("#galere-qui", T.contre - 0.6, { x: -200 });
+      apparaitre("#galere-orga", T.organiser - 0.6, { x: 200 });
+      apparaitre("#galere-lieu", T.exterieur - 1.2, { x: -200 });
+      tl.to("#s6 .croix", { scale: 1.2, duration: 0.12, yoyo: true, repeat: 1, stagger: 0.06 }, T.exterieur);
+
+      // ── SCÈNE 7 : « plus d'excuses » — elles sont rayées, puis FoundClub ──
+      tl.fromTo("#s6 .barre-rouge", { scaleX: 0 }, { scaleX: 1, duration: 0.2, ease: "power2.out", stagger: 0.08 }, T.excuses - 0.8);
+      tl.fromTo("#plus-excuses", { opacity: 0, scale: 2.4 }, { opacity: 1, scale: 1, duration: 0.22, ease: "power3.in" }, T.excuses - 0.45);
+      tl.to("#s6", { x: 10, duration: 0.05, yoyo: true, repeat: 3, ease: "none" }, T.excuses - 0.23);
+      tl.to(["#galere-qui", "#galere-orga", "#galere-lieu", "#plus-excuses"], { opacity: 0, y: -30, duration: 0.25, stagger: 0.03 }, T.outil + 0.3);
+      tl.fromTo("#logo .icone-fc", { opacity: 0, scale: 0.3, rotation: -12 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.45, ease: "back.out(1.8)" }, T.found - 0.6);
+      tl.fromTo("#logo .marque", { opacity: 0, y: 30, scale: 1.15 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "power3.out" }, T.found - 0.3);
+      tl.fromTo("#logo .reflet", { x: 0 }, { x: 900, duration: 0.7, ease: "power2.inOut" }, T.found + 0.15);
+
+      // ── SCÈNES 8 À 10 : le téléphone ─────────────────────────────
+      const TEL = EXTRAITS[0].debut - 0.75;
+      tl.to("#logo", { opacity: 0, duration: 0.3 }, TEL);
+      versMedaillon(TEL);
+      tl.to("#mode-tel", { opacity: 1, duration: 0.3 }, TEL + 0.3);
+      tl.fromTo("#tel", { opacity: 0, y: 500, rotation: 6 }, { opacity: 1, y: 0, rotation: 0, duration: 0.6, ease: "power3.out" }, TEL + 0.45);
+      // Les extraits de l'enregistrement d'écran, l'un après l'autre
+      EXTRAITS.forEach((x, i) => {
+        tl.fromTo(`#x-${i}`, { opacity: 0 }, { opacity: 1, duration: i === 0 ? 0.01 : 0.12 }, x.debut);
+        tl.to(`#x-${i}`, { opacity: 0, duration: 0.01 }, x.debut + x.duree - 0.01);
+      });
+      apparaitre("#t-rubrique-1", TEL + 0.6, { x: -40 });
+      tl.set("#t-titre-1", { opacity: 1 }, TEL + 0.8);
+      apparaitre("#t1-l1", TEL + 0.8);
+      apparaitre("#t1-l2", T.disponible - 0.45);
+      etiquette("#tag-weekend", T.week - 0.35, -1);
+      etiquette("#tag-domicile", T.domicile2 - 0.4, 1);
+      etiquette("#tag-exterieur", T.exterieur2 - 0.4, -1);
+      const FILE = EXTRAITS[EXTRAITS.length - 1];
+      const APRES = FILE.debut + FILE.duree;
+      tl.to(["#tag-weekend", "#tag-domicile", "#tag-exterieur"], { opacity: 0, scale: 0.7, duration: 0.25, stagger: 0.04 }, APRES - 0.6);
+      tl.to(["#t-rubrique-1", "#t-titre-1"], { opacity: 0, x: -40, duration: 0.25 }, APRES - 0.5);
+
+      // Scène 10 : l'autre coach accepte → le match est au planning ; les étiquettes suivent ses mots
+      const montrer = (sel, t) => tl.fromTo(sel, { opacity: 0, x: 500 }, { opacity: 1, x: 0, duration: 0.35, ease: "power2.out" }, t);
+      const cacher = (sel, t) => tl.to(sel, { opacity: 0, duration: 0.25 }, t);
+      montrer("#cap-proposition", APRES);
+      apparaitre("#t-rubrique-2", APRES + 0.1, { x: -40 });
+      appuyer("#appui-accepter", T.coupe2 - 0.1);
+      cacher("#cap-proposition", T.coupe2 + 0.35);
+      montrer("#cap-accepter", T.coupe2 + 0.35);
+      appuyer("#appui-confirmer", T.treve2 - 0.2);
+      cacher("#cap-accepter", T.treve2 + 0.2);
+      montrer("#cap-planning", T.treve2 + 0.2);
+      etiquette("#tag-reporte", T.reporte2 - 0.4, -1);
+      etiquette("#tag-coupe", T.coupe2 - 0.4, 1);
+      etiquette("#tag-treve", T.treve2 - 0.4, -1);
+      etiquette("#tag-semaine", T.semaine - 0.4, 1);
+      // « continuer à jouer et garder le rythme »
+      tl.to(["#tag-reporte", "#tag-coupe", "#tag-treve", "#tag-semaine"], { opacity: 0, scale: 0.7, duration: 0.25, stagger: 0.04 }, T.continuer - 0.6);
+      tl.to("#t-rubrique-2", { opacity: 0, duration: 0.2 }, T.continuer - 0.7);
+      tl.to("#tel", { opacity: 0.18, scale: 0.94, duration: 0.4 }, T.continuer - 0.6);
+      tl.set("#t-titre-2", { opacity: 1 }, T.continuer - 0.5);
+      apparaitre("#t2-l1", T.continuer - 0.5);
+      apparaitre("#t2-l2", T.rythme - 0.5);
+      // Retour plein cadre
+      const SORTIE = T.rythme + 0.5;
+      tl.to("#t-titre-2", { opacity: 0, duration: 0.25 }, SORTIE);
+      tl.to("#tel", { opacity: 0, duration: 0.3 }, SORTIE);
+      tl.to("#mode-tel", { opacity: 0, duration: 0.3 }, SORTIE + 0.25);
+      versPleinCadre(SORTIE);
+
+      // ── SCÈNE 11 : « envoie la vidéo à ton coach… la tête de ma mère, je vais jouer ! » ──
+      tl.fromTo("#envoie .pastille", { opacity: 0, scale: 0.6, rotation: -6 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.4, ease: "back.out(1.8)" }, T.coach - 0.9);
+      tl.to("#envoie .pastille", { opacity: 0, duration: 0.25 }, T.licence2 - 0.95);
+      tl.fromTo("#bulle-2", { opacity: 0, scale: 0.5, rotation: -6 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.3, ease: "back.out(2)" }, T.licence2 - 0.8);
+      tl.to("#bulle-2", { x: 10, duration: 0.05, yoyo: true, repeat: 5, ease: "none" }, T.jouer2 - 0.3);
+
+      // ── CARTON FINAL ──
+      tl.fromTo("#fin-voile", { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "power2.out" }, FIN);
+      tl.fromTo("#fin .icone-fc", { opacity: 0, scale: 0.3, rotation: -12 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(1.8)" }, FIN + 0.25);
+      tl.fromTo("#fin .marque", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, FIN + 0.45);
+      tl.fromTo("#fin .reflet", { x: 0 }, { x: 1100, duration: 0.8, ease: "power2.inOut" }, FIN + 0.9);
+      tl.fromTo("#fin .phrase", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, FIN + 0.8);
+      tl.fromTo("#fin .badges", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, FIN + 1.05);
+      tl.fromTo("#fin .site", { opacity: 0 }, { opacity: 1, duration: 0.4 }, FIN + 1.3);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
