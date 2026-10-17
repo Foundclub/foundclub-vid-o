@@ -54,14 +54,9 @@ SOUS_TITRES = [  # (début, fin, texte), dans le temps de la vidéo d'origine
     (T0["coach"] + 0.3, 55.15, "Et à 550 € la licence… la tête de ma mère, je vais jouer !"),
 ]
 
-# Coupures de presse : titres recopiés mot pour mot (recherches web du 16/10/2026), média en texte, aucun logo.
+# Coupure de presse des amateurs : titre recopié mot pour mot (recherche web du 16/10/2026), média en texte, aucun logo.
+# (Celle des pros est la capture de L'Équipe envoyée par Adel : medias/presse/lequipe-unfp.png.)
 # Les mots entre [crochets] reçoivent le surligneur.
-ARTICLES_PROS = [
-    ("art-1", "left: 70px; top: 370px;", "Soccerway", "fr.soccerway.com",
-     "“On est proche” [d'une grève], dit Rodri à propos des [calendriers surchargés]", 2),
-    ("art-2", "left: 70px; top: 930px;", "La DH", "dhnet.be · éditorial du 19/09/2024",
-     "Grève des joueurs : quand [les footballeurs pros] crachent dans la soupe", 1),
-]
 ARTICLES_AMATEURS = [
     ("art-3", "left: 70px; top: 540px;", "ICI Limousin", "ici.fr · Les échos du Limousin",
      "En Corrèze, [le casse-tête des matchs de foot à reprogrammer] en raison des intempéries de ces dernières semaines", 1),
@@ -159,7 +154,6 @@ lire = lambda f: open("gabarits/" + f, encoding="utf-8").read()
 src = lire("index.gabarit.html")
 src = src.replace("/*POLICES*/", lire("polices.css")).replace("/*STYLES*/", lire("styles.css")).replace("/*JS*/", lire("scenes.js"))
 src = src.replace("<!--CASES-->", cases()).replace("<!--TAMPONS-->", tampons()).replace("<!--EXTRAITS-->", "\n".join(extraits_html))
-src = src.replace("<!--ARTICLES_PROS-->", "\n".join(article(*a) for a in ARTICLES_PROS))
 src = src.replace("<!--ARTICLES_AMATEURS-->", "\n".join(article(*a) for a in ARTICLES_AMATEURS))
 src = src.replace("<!--INSERT-->", insert_html)
 st = [(dec(d) if d >= REPRISE - 0.001 else d, dec(f) if f > REPRISE else f, t) for d, f, t in SOUS_TITRES]
@@ -178,14 +172,13 @@ assert "__" not in src.replace("__timelines", ""), "repère non remplacé"
 open("index.html", "w", encoding="utf-8").write(src)
 
 # ── Bruitages (outils/sons.py) : chaque animation a son son, aux mêmes instants que scenes.js ──
-P0, CAL, S4 = 0.15, T["jours"] + 0.55, T["mois2"] + 0.4
+CAL, S4 = T["jours"] + 0.55, T["mois2"] + 0.4
 TEL = extraits_js[0]["debut"] - 0.75
 APRES = extraits_js[-1]["debut"] + extraits_js[-1]["duree"]
 SORTIE = T["rythme"] + 0.5
 S = [
-    (P0, "whoosh", -3), (P0 + 0.35, "montee", -6), (P0 + 0.63, "impact", -4), (P0 + 0.8, "zip", -2),
-    (T["plaignent"] - 0.5, "swish", 0), (T["plaignent"] - 0.05, "zip", -2), (T["jours"] - 0.85, "pop", -2, 0), (T["jours"] - 0.5, "pop", -2, 4),
-    (CAL - 0.15, "souffle", 2), (CAL + 0.1, "whoosh", -4), (T["amateur"] - 0.75, "swish", -2), (T["mois"] - 0.55, "swish", 0),
+    (0.3, "swish", -6), (0.6, "tap", -8),                                  # la une de L'Équipe : deux sons discrets (« réduit le premier sound design », Adel 17/10)
+    (CAL - 0.35, "souffle", 0), (CAL - 0.2, "whoosh", -6), (T["amateur"] - 0.75, "swish", -2), (T["mois"] - 0.55, "swish", 0),
     (T["mois"] - 0.1, "secousse", 0),
     (T["coupe"] - 0.13, "impact", -6), (T["reportes"] - 0.13, "impact", -6), (T["treve"] - 0.13, "impact", -4), (T["treve"] - 0.13, "secousse", 2),
     (T["mois2"] - 1.25, "montee", -6), (T["mois2"] - 0.97, "impact", -5), (T["mois2"] - 0.85, "zip", -2), (T["mois2"] - 0.4, "zip", 0),

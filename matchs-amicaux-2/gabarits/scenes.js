@@ -30,22 +30,14 @@
       const plaquer = (sel, t, rot) => tl.fromTo(sel, { opacity: 0, scale: 1.4, rotation: rot * 3 }, { opacity: 1, scale: 1, rotation: rot, duration: 0.28, ease: "power3.in" }, t);
       const marquer = (sel, t) => tl.fromTo(sel, { backgroundSize: "0% 100%" }, { backgroundSize: "100% 100%", duration: 0.35, ease: "power2.inOut", stagger: 0.3 }, t);
 
-      // ── SCÈNE 1 : les pros se plaignent — deux vrais titres de presse ──
-      const P0 = 0.15;
-      versMedaillon(P0);
-      tl.to("#mode-presse", { opacity: 1, duration: 0.3 }, P0 + 0.2);
-      apparaitre("#p-rubrique", P0 + 0.3, { x: -40 });
-      plaquer("#art-1", P0 + 0.35, -2.5);
-      tl.to("#mode-presse", { x: 8, duration: 0.04, yoyo: true, repeat: 3, ease: "none" }, P0 + 0.63);
-      marquer("#art-1 .mq", P0 + 0.8);
-      tl.fromTo("#art-2", { opacity: 0, x: 760, rotation: 9 }, { opacity: 1, x: 0, rotation: 2, duration: 0.4, ease: "power3.out" }, T.plaignent - 0.5);
-      marquer("#art-2 .mq", T.plaignent - 0.05);
-      tl.fromTo("#p-titre .ligne", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out", stagger: 0.35 }, T.jours - 0.85);
+      // ── SCÈNE 1 : les pros se plaignent — ach10 reste plein cadre, la une de L'Équipe tombe au-dessus de sa tête ──
+      tl.fromTo("#une", { opacity: 0, y: -70, scale: 1.12, rotation: -3 }, { opacity: 1, y: 0, scale: 1, rotation: -1, duration: 0.35, ease: "power3.out" }, 0.3);
+      tl.to("#une", { scale: 1.035, duration: 2.0, ease: "none" }, 0.65);   // elle avance doucement pendant qu'il parle
 
       // ── SCÈNES 2 ET 3 : le calendrier des amateurs, puis un vrai titre de presse locale ──
       const CAL = T.jours + 0.55;
-      tl.to(["#art-1", "#art-2"], { opacity: 0, x: -760, rotation: -10, duration: 0.35, ease: "power3.in", stagger: 0.06 }, CAL - 0.15);
-      tl.to(["#p-rubrique", "#p-titre"], { opacity: 0, x: -40, duration: 0.25 }, CAL - 0.15);
+      tl.to("#une", { opacity: 0, y: -80, duration: 0.3, ease: "power3.in" }, CAL - 0.35);
+      versMedaillon(CAL - 0.2);
       tl.to("#mode-cal", { opacity: 1, duration: 0.3 }, CAL);
       apparaitre("#calendrier", CAL + 0.1, { y: 300 });
       apparaitre("#c-rubrique-amat", T.amateur - 0.75, { x: -40 });

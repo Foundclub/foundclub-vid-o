@@ -11,19 +11,25 @@ python3 -I outils/assembler.py
 npx hyperframes lint   # bloque sur une erreur de composition (les chevauchements de la scène 2 sont voulus)
 npx hyperframes render -f 30 --crf "$CRF" -o "rendus/$NOM-brut.mp4" --quiet
 # Sound design : si sons.json existe, la piste de bruitages est fabriquée puis mélangée sous la voix
-# (limiteur à -1 dBFS, sans retard), avant le réglage du son à -14 LUFS.
+# avant le réglage du son à -14 LUFS.
 ENTREES=(-i "rendus/$NOM-brut.mp4"); MELANGE="[0:a]"
 if [ -f sons.json ]; then
   mkdir -p medias/sons
   python3 -I outils/sons.py sons.json medias/sons/sons.wav "$(ffprobe -v error -show_entries format=duration -of csv=p=0 "rendus/$NOM-brut.mp4")"
   ENTREES+=(-i medias/sons/sons.wav)
-  MELANGE="[0:a][1:a]amix=inputs=2:normalize=0:duration=first,alimiter=limit=0.891:level=0:latency=1,"
+  MELANGE="[0:a][1:a]amix=inputs=2:normalize=0:duration=first,"
 fi
-MESURE=$(ffmpeg -hide_banner "${ENTREES[@]}" -filter_complex "${MELANGE}loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json" -vn -f null - 2>&1 \
-  | python3 -c "import sys,json; t=sys.stdin.read(); d=json.loads(t[t.rindex('{'):t.rindex('}')+1]); print(f\"measured_I={d['input_i']}:measured_TP={d['input_tp']}:measured_LRA={d['input_lra']}:measured_thresh={d['input_thresh']}:offset={d['target_offset']}\")")
-# La voix de cette vidéo est enregistrée bas (-18,8 LUFS) : loudnorm ne peut pas monter de +4,8 dB d'un bloc et passe en
-# mode dynamique, qui laisse passer des crêtes à -0,1 dBFS (mesuré sur apercu-v2). Un limiteur à -2 dBFS les rattrape après coup.
-ffmpeg -y -v error "${ENTREES[@]}" -filter_complex "${MELANGE}loudnorm=I=-14:TP=-1.5:LRA=11:$MESURE:linear=true,aresample=48000,alimiter=limit=0.794:level=0:latency=1[son]" \
+# Réglage du son à -14 LUFS par un gain FIXE puis un limiteur doux à -3 dBFS, suréchantillonné x4 (crêtes entre échantillons).
+# Pourquoi pas loudnorm : la voix de cette vidéo est enregistrée bas (-18,8 LUFS), loudnorm ne peut pas monter de +4,8 dB
+# d'un bloc et passe en mode dynamique ; il écrase alors les « p » d'ach10 en créneaux que l'encodeur AAC fait déborder
+# (mesuré sur apercu-v3 : -2,0 dBFS avant AAC, +1,4 dBFS après, à 6,42 s). Deux passes : le gain est corrigé de ce que
+# le limiteur retire.
+CHAINE="aresample=192000,alimiter=limit=0.708:attack=2:release=60:level=0:latency=1,aresample=48000"
+mesurer() { ffmpeg -hide_banner "${ENTREES[@]}" -filter_complex "${MELANGE}volume=${1}dB,$CHAINE,ebur128" -f null - 2>&1 | grep -E "^\s+I:" | tail -1 | awk '{print $2}'; }
+G=$(python3 -c "print(round(-14 - ($(mesurer 0)), 2))")
+G=$(python3 -c "print(round($G - 14 - ($(mesurer "$G")), 2))")
+echo "gain du réglage final : +$G dB"
+ffmpeg -y -v error "${ENTREES[@]}" -filter_complex "${MELANGE}volume=${G}dB,$CHAINE[son]" \
   -map 0:v -map "[son]" -c:v copy -c:a aac -b:a 192k -ar 48000 -movflags +faststart "rendus/$NOM.mp4"
 ffprobe -v error -show_entries format=duration,size -of compact "rendus/$NOM.mp4"
-ffmpeg -hide_banner -i "rendus/$NOM.mp4" -vn -af ebur128 -f null - 2>&1 | grep -E "^\s+I:" | tail -1
+ffmpeg -hide_banner -i "rendus/$NOM.mp4" -vn -af ebur128=peak=true -f null - 2>&1 | grep -E "^\s+(I|Peak):" | tail -2

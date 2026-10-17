@@ -178,6 +178,11 @@
       #excuse-titre span { display: inline-block; background: #fff; color: var(--nuit); font-weight: 900; font-size: 56px; text-transform: uppercase;
         padding: 20px 36px; border-radius: 22px; box-shadow: 0 18px 44px rgba(0,18,24,.45); opacity: 0; }
 
+      /* La une de L'Équipe (scène 1) : la capture telle quelle, posée comme une carte au-dessus de la tête d'ach10 */
+      #une { position: absolute; left: 20px; top: 150px; width: 1040px; border-radius: 16px; overflow: hidden; transform-origin: 50% 0%;
+        box-shadow: 0 0 0 2px rgba(255,255,255,.6), 0 30px 70px rgba(0,0,0,.45); }
+      #une img { display: block; width: 1040px; height: auto; }
+
     </style>
   </head>
   <body>
@@ -198,23 +203,9 @@
       </div>
       <div id="medaillon-anneau"></div>
 
-      <!-- SCÈNE 1 — « les footballeurs professionnels se plaignent » : deux vrais titres de presse -->
-      <div id="mode-presse" class="plein" style="opacity: 0;">
-        <div id="p-rubrique" class="rubrique">Les pros</div>
-        <div id="p-titre" class="titre-g"><span class="ligne">Un match</span><span class="ligne bleu">tous les 3 jours</span></div>
-        <div id="art-1" class="article" style="left: 70px; top: 370px;">
-          <div class="a-tete"><span class="a-media">Soccerway</span></div>
-          <div class="a-titre">“On est proche” <span class="mq">d&#x27;une grève</span>, dit Rodri à propos des <span class="mq">calendriers surchargés</span></div>
-          <div class="a-lignes"><span style="width: 100%;"></span><span style="width: 92%;"></span><span style="width: 64%;"></span></div>
-          <div class="a-source">fr.soccerway.com</div>
-        </div>
-        <div id="art-2" class="article" style="left: 70px; top: 930px;">
-          <div class="a-tete"><span class="a-media">La DH</span></div>
-          <div class="a-titre">Grève des joueurs : quand <span class="mq">les footballeurs pros</span> crachent dans la soupe</div>
-          <div class="a-lignes"><span style="width: 100%;"></span><span style="width: 92%;"></span></div>
-          <div class="a-source">dhnet.be · éditorial du 19/09/2024</div>
-        </div>
-      </div>
+      <!-- SCÈNE 1 — « les footballeurs professionnels se plaignent » : ach10 reste plein cadre, la une de L'Équipe
+           (capture envoyée par Adel le 17/10/2026, rognée au titre) tombe au-dessus de sa tête -->
+      <div id="une" style="opacity: 0;"><img src="medias/presse/lequipe-unfp.png" alt="L'Équipe : L'UNFP en appelle à l'État pour stopper la multiplication des matches" /></div>
 
       <!-- SCÈNES 2 ET 3 — le calendrier des amateurs : un mois sans match -->
       <div id="mode-cal" class="plein" style="opacity: 0;">
@@ -423,22 +414,14 @@
       const plaquer = (sel, t, rot) => tl.fromTo(sel, { opacity: 0, scale: 1.4, rotation: rot * 3 }, { opacity: 1, scale: 1, rotation: rot, duration: 0.28, ease: "power3.in" }, t);
       const marquer = (sel, t) => tl.fromTo(sel, { backgroundSize: "0% 100%" }, { backgroundSize: "100% 100%", duration: 0.35, ease: "power2.inOut", stagger: 0.3 }, t);
 
-      // ── SCÈNE 1 : les pros se plaignent — deux vrais titres de presse ──
-      const P0 = 0.15;
-      versMedaillon(P0);
-      tl.to("#mode-presse", { opacity: 1, duration: 0.3 }, P0 + 0.2);
-      apparaitre("#p-rubrique", P0 + 0.3, { x: -40 });
-      plaquer("#art-1", P0 + 0.35, -2.5);
-      tl.to("#mode-presse", { x: 8, duration: 0.04, yoyo: true, repeat: 3, ease: "none" }, P0 + 0.63);
-      marquer("#art-1 .mq", P0 + 0.8);
-      tl.fromTo("#art-2", { opacity: 0, x: 760, rotation: 9 }, { opacity: 1, x: 0, rotation: 2, duration: 0.4, ease: "power3.out" }, T.plaignent - 0.5);
-      marquer("#art-2 .mq", T.plaignent - 0.05);
-      tl.fromTo("#p-titre .ligne", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out", stagger: 0.35 }, T.jours - 0.85);
+      // ── SCÈNE 1 : les pros se plaignent — ach10 reste plein cadre, la une de L'Équipe tombe au-dessus de sa tête ──
+      tl.fromTo("#une", { opacity: 0, y: -70, scale: 1.12, rotation: -3 }, { opacity: 1, y: 0, scale: 1, rotation: -1, duration: 0.35, ease: "power3.out" }, 0.3);
+      tl.to("#une", { scale: 1.035, duration: 2.0, ease: "none" }, 0.65);   // elle avance doucement pendant qu'il parle
 
       // ── SCÈNES 2 ET 3 : le calendrier des amateurs, puis un vrai titre de presse locale ──
       const CAL = T.jours + 0.55;
-      tl.to(["#art-1", "#art-2"], { opacity: 0, x: -760, rotation: -10, duration: 0.35, ease: "power3.in", stagger: 0.06 }, CAL - 0.15);
-      tl.to(["#p-rubrique", "#p-titre"], { opacity: 0, x: -40, duration: 0.25 }, CAL - 0.15);
+      tl.to("#une", { opacity: 0, y: -80, duration: 0.3, ease: "power3.in" }, CAL - 0.35);
+      versMedaillon(CAL - 0.2);
       tl.to("#mode-cal", { opacity: 1, duration: 0.3 }, CAL);
       apparaitre("#calendrier", CAL + 0.1, { y: 300 });
       apparaitre("#c-rubrique-amat", T.amateur - 0.75, { x: -40 });
