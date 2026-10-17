@@ -199,10 +199,11 @@ Deuxième vidéo sur les matchs amicaux, tournée par ach10 (`a-monter/matchs-am
 - **Les coupures de presse** : les titres sont recopiés mot pour mot. Le nom du média est en texte, sans logo. Le surligneur jaune passe sur les mots qui comptent.
   - Pour les pros (0–3 s) : [Soccerway](https://fr.soccerway.com/actualites/football-ligue-des-champions-on-est-proche-d-une-greve-dit-rodri-a-propos-des-calendriers-surcharges/8f4J2InJ) (Rodri, « proche d'une grève ») et [l'éditorial de la DH du 19/09/2024](https://www.dhnet.be/actu/edito/2024/09/19/greve-des-joueurs-quand-les-footballeurs-pros-crachent-dans-la-soupe-S33PAWYK5VBAXGACPHEDBFSL24/).
   - Pour les amateurs (11–13 s) : [ICI Limousin](https://www.ici.fr/emissions/les-echos-du-limousin/en-correze-le-casse-tete-des-matchs-de-foot-a-reprogrammer-en-raison-des-intemperies-de-ces-dernieres-semaines-9543588) (Corrèze, matchs à reprogrammer).
-- **L'extrait de la vidéo de référence** (« la tête de ma mère, je vais jouer », à partir de 0:30). La vidéo d'ach10 est coupée juste après son « je vais jouer ! » (19,267 s, dans un creux de la voix), puis reprend sur « Mais c'est quoi la raison » (19,400 s).
-  - Tant que `medias/reference/extrait.mp4` n'existe pas, un emplacement réservé de 2,5 s le remplace.
-  - Dès que le fichier est posé, `outils/assembler.py` le place, avec son son, et décale toute la suite de sa durée.
-  - Le site de YouTube n'est pas joignable depuis la session cloud.
+- **L'extrait de la vidéo de référence** : « Embrouille Entraîneur et Joueur — Dimanche prochain je vais jouer », envoyée par Adel le 17/10/2026 (`a-monter/reference-dimanche-prochain-je-vais-jouer.mp4`, non versionnée).
+  - Le passage va de 30,50 à 34,23 s : « Et dimanche prochain, je vais jouer ! Je vais jouer, la tête de ma mère, que je vais jouer ! ».
+  - `outils/preparer-extrait.sh` le pose en pleine largeur sur un fond flouté et baisse son son de 4 dB. Le résultat est `medias/reference/extrait.mp4`, versionné.
+  - La vidéo d'ach10 est coupée à 19,400 s, entre son « je vais jouer ! » (gardé en entier) et « Mais c'est quoi la raison ». L'extrait s'y glisse et `outils/assembler.py` décale toute la suite de sa durée.
+  - Sans `extrait.mp4`, un emplacement réservé de 2,5 s le remplace.
 - **Les excuses des coachs** (« contre qui jouer ? », « s'organiser », « domicile ou extérieur ? ») sont rayées par un tampon vert « Plus d'excuses ».
 - **Les bruitages** : la bibliothèque d'`ach10/` (`outils/sons.py`). `outils/assembler.py` écrit `sons.json` aux mêmes instants que les animations.
 

@@ -8,8 +8,11 @@ import json, html, subprocess, os
 
 IPS = 30
 DUREE_SOURCE = 55.2667
-COUPE = 578 / IPS                 # 19,267 s : fin de « jouer ! » (creux de la voix, mesuré au 1/100 s)
-REPRISE = 582 / IPS               # 19,400 s : début de « Mais c'est quoi la raison » ; les 4 images entre les deux sautent
+# Coupe à 19,400 s, entre « jouer ! » et « Mais c'est quoi la raison » (la voix ne s'arrête pas : c'est le point où
+# Whisper entend « … je vais jouer ! » avant et « Mais c'est quoi la raison » après). Aucune image ne saute.
+# (v1 : coupe à 19,267 s et 4 images sautées — le « jouer » était coupé trop tôt, remarque d'Adel du 17/10.)
+COUPE = 582 / IPS
+REPRISE = 582 / IPS
 EXTRAIT = "medias/reference/extrait.mp4"
 if os.path.exists(EXTRAIT):
     INSERT = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", EXTRAIT],
@@ -125,13 +128,16 @@ def tampons():  # centrés sur les colonnes samedi-dimanche des 3 premières sem
     return "\n".join(f'          <div id="{i}" class="tampon" style="left:{cx}px;top:{y0 + r * 138 + 64}px;">{html.escape(t)}</div>'
                      for i, t, r in TAMPONS)
 
-if os.path.exists(EXTRAIT):
-    insert_html = (f'          <video id="v-reference" src="{EXTRAIT}" playsinline data-has-audio="true" '
-                   f'data-start="{COUPE:.4f}" data-duration="{INSERT:.4f}" data-track-index="12"></video>')
+if os.path.exists(EXTRAIT):  # outils/preparer-extrait.sh : déjà mis en page pour l'écran vertical ; la vidéo est minutée elle-même
+    insert_html = (f'      <video id="v-reference" class="insert-contenu" src="{EXTRAIT}" playsinline data-has-audio="true" '
+                   f'data-start="{COUPE:.4f}" data-duration="{INSERT:.4f}" data-track-index="5"></video>')
 else:  # emplacement réservé, tant que l'extrait n'est pas fourni
-    insert_html = ('          <div class="k">Emplacement réservé</div>\n'
+    insert_html = (f'      <div id="insert" class="clip plein" data-start="{COUPE:.4f}" data-duration="{INSERT:.4f}" data-track-index="5">\n'
+                   '        <div id="insert-cadre" class="insert-contenu">\n'
+                   '          <div class="k">Emplacement réservé</div>\n'
                    '          <div class="t">L\'extrait de la vidéo<br />de référence</div>\n'
-                   '          <div class="s">à partir de 0:30 — « la tête de ma mère, je vais jouer »</div>')
+                   '          <div class="s">à partir de 0:30 — « la tête de ma mère, je vais jouer »</div>\n'
+                   '        </div>\n      </div>')
 
 # Scènes à durée fixe (débuts et fins dans le temps final)
 S4_DEBUT = round(T0["mois2"] + 0.3, 3)
@@ -157,7 +163,13 @@ src = src.replace("<!--ARTICLES_PROS-->", "\n".join(article(*a) for a in ARTICLE
 src = src.replace("<!--ARTICLES_AMATEURS-->", "\n".join(article(*a) for a in ARTICLES_AMATEURS))
 src = src.replace("<!--INSERT-->", insert_html)
 st = [(dec(d) if d >= REPRISE - 0.001 else d, dec(f) if f > REPRISE else f, t) for d, f, t in SOUS_TITRES]
-src = src.replace("<!--SOUSTITRES-->", "\n".join(f'        <p id="st-{i}" class="st">{html.escape(t)}</p>' for i, (_, _, t) in enumerate(st)))
+if os.path.exists(EXTRAIT):  # les répliques de l'extrait (son de terrain, peu lisible sans sous-titres), dans le temps final
+    st += [(COUPE + 0.05, COUPE + 1.62, "« Et dimanche prochain, je vais jouer ! »"),
+           (COUPE + 1.62, COUPE + INSERT, "« Je vais jouer, la tête de ma mère, que je vais jouer ! »")]
+    st.sort(key=lambda x: x[0])
+# espaces insécables de la typographie française : « ! », « ? », « : », « € » et les guillemets ne partent jamais seuls à la ligne
+insecable = lambda t: t.replace(" !", "\u00a0!").replace(" ?", "\u00a0?").replace(" :", "\u00a0:").replace(" €", "\u00a0€").replace("« ", "«\u00a0").replace(" »", "\u00a0»")
+src = src.replace("<!--SOUSTITRES-->", "\n".join(f'        <p id="st-{i}" class="st">{html.escape(insecable(t))}</p>' for i, (_, _, t) in enumerate(st)))
 src = src.replace("/*T*/", json.dumps(T)).replace("/*ST*/", json.dumps([[round(d, 3), round(f, 3)] for d, f, _ in st]))
 src = src.replace("/*EXTRAITS*/", json.dumps(extraits_js))
 for k, v in remplacements.items():

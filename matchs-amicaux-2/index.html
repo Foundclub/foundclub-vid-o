@@ -166,7 +166,7 @@
       #insert-cadre .k { font-weight: 800; font-size: 30px; letter-spacing: .2em; text-transform: uppercase; color: var(--orange); }
       #insert-cadre .t { font-weight: 900; font-size: 54px; line-height: 1.1; text-transform: uppercase; padding: 0 40px; }
       #insert-cadre .s { font-weight: 600; font-size: 30px; color: #8fb3c0; }
-      #insert-cadre video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #000; }
+      #v-reference { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
 
       /* « Plus d'excuses » : le tampon vert qui raye les excuses */
       #plus-excuses { position: absolute; left: 0; right: 0; top: 190px; text-align: center; opacity: 0; }
@@ -181,19 +181,19 @@
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="60.72" data-width="1080" data-height="1920">
+    <div id="root" data-composition-id="main" data-start="0" data-duration="62.08" data-width="1080" data-height="1920">
 
-      <div id="fond" class="clip plein" data-start="0" data-duration="60.72" data-track-index="0"><div id="fond-halo"></div></div>
+      <div id="fond" class="clip plein" data-start="0" data-duration="62.08" data-track-index="0"><div id="fond-halo"></div></div>
 
       <!-- La vidéo d'ach10, coupée en deux autour de l'extrait de référence (fondus de 12 ms sur le son, aux deux bords de la coupe) -->
       <div id="cadre-video">
         <video id="video-a" class="video-orateur" src="medias/video/source.mp4" playsinline data-has-audio="true" data-fade-out="0.012"
-          data-start="0" data-duration="19.2667" data-track-index="1"></video>
+          data-start="0" data-duration="19.4000" data-track-index="1"></video>
         <video id="video-b" class="video-orateur" src="medias/video/source.mp4" playsinline data-has-audio="true" data-fade-in="0.012"
-          data-start="21.7667" data-media-start="19.4000" data-duration="35.8667" data-track-index="1"></video>
+          data-start="23.1333" data-media-start="19.4000" data-duration="35.8667" data-track-index="1"></video>
       </div>
 
-      <div id="degrades" class="clip plein" data-start="0" data-duration="60.72" data-track-index="2">
+      <div id="degrades" class="clip plein" data-start="0" data-duration="62.08" data-track-index="2">
         <div id="degrade-haut"></div><div id="degrade-bas"></div>
       </div>
       <div id="medaillon-anneau"></div>
@@ -273,7 +273,7 @@
       </div>
 
       <!-- SCÈNE 4 — « ils payent leur licence jusqu'à 550 € … la vie de ma mère, je vais jouer ! » -->
-      <div id="s4" class="clip plein" data-start="12.810" data-duration="6.457" data-track-index="4">
+      <div id="s4" class="clip plein" data-start="12.810" data-duration="6.590" data-track-index="4">
         <div id="licence">
           <div><div class="etiq">Licence</div><div class="saison">Jusqu'à</div></div>
           <div class="prix"><span id="prix">0</span>&nbsp;€</div>
@@ -282,16 +282,10 @@
       </div>
 
       <!-- L'EXTRAIT DE RÉFÉRENCE — entre « je vais jouer ! » et « mais c'est quoi la raison ? » -->
-      <div id="insert" class="clip plein" data-start="19.2667" data-duration="2.5000" data-track-index="5">
-        <div id="insert-cadre">
-          <div class="k">Emplacement réservé</div>
-          <div class="t">L'extrait de la vidéo<br />de référence</div>
-          <div class="s">à partir de 0:30 — « la tête de ma mère, je vais jouer »</div>
-        </div>
-      </div>
+      <video id="v-reference" class="insert-contenu" src="medias/reference/extrait.mp4" playsinline data-has-audio="true" data-start="19.4000" data-duration="3.7333" data-track-index="5"></video>
 
       <!-- SCÈNE 5 — « mais c'est quoi la raison ? » -->
-      <div id="s5" class="clip plein" data-start="21.7667" data-duration="3.300" data-track-index="6">
+      <div id="s5" class="clip plein" data-start="23.1333" data-duration="3.300" data-track-index="6">
         <div id="s5-titre" class="titre" style="top: 170px; font-size: 80px;">
           <span class="ligne">C'est quoi</span>
           <span class="surligne" style="margin-top: 14px;"><span class="fond"></span><span class="mot">la raison ?</span></span>
@@ -299,7 +293,7 @@
       </div>
 
       <!-- SCÈNES 6 ET 7 — l'excuse des coachs, puis « plus d'excuses » et FoundClub -->
-      <div id="s6" class="clip plein" data-start="25.017" data-duration="11.600" data-track-index="7">
+      <div id="s6" class="clip plein" data-start="26.383" data-duration="11.600" data-track-index="7">
         <div id="excuse-titre"><span>Toujours la même excuse</span></div>
         <div id="galere-qui" class="galere" style="top: 120px;"><span class="croix"><svg width="26" height="26" viewBox="0 0 24 24" stroke="#fff" stroke-width="4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></span>Contre qui jouer ?<span class="barre-rouge"></span></div>
         <div id="galere-orga" class="galere" style="top: 246px;"><span class="croix"><svg width="26" height="26" viewBox="0 0 24 24" stroke="#fff" stroke-width="4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></span>S'organiser<span class="barre-rouge"></span></div>
@@ -318,11 +312,11 @@
         <div id="t-rubrique-2" class="rubrique" style="opacity: 0;">En face, on accepte</div>
                 <div id="tel" class="tel">
           <div class="ecran">
-            <div id="x-0" class="extrait"><video id="v-x-0" src="medias/enregistrement/x-0.mp4" muted playsinline data-start="37.017" data-duration="1.350" data-track-index="3"></video></div>
-            <div id="x-1" class="extrait"><video id="v-x-1" src="medias/enregistrement/x-1.mp4" muted playsinline data-start="38.367" data-duration="1.500" data-track-index="3"></video></div>
-            <div id="x-2" class="extrait"><video id="v-x-2" src="medias/enregistrement/x-2.mp4" muted playsinline data-start="39.867" data-duration="2.030" data-track-index="3"></video></div>
-            <div id="x-3" class="extrait"><video id="v-x-3" src="medias/enregistrement/x-3.mp4" muted playsinline data-start="41.897" data-duration="2.260" data-track-index="3"></video></div>
-            <div id="x-4" class="extrait"><video id="v-x-4" src="medias/enregistrement/x-4.mp4" muted playsinline data-start="44.157" data-duration="1.410" data-track-index="3"></video></div>
+            <div id="x-0" class="extrait"><video id="v-x-0" src="medias/enregistrement/x-0.mp4" muted playsinline data-start="38.383" data-duration="1.350" data-track-index="3"></video></div>
+            <div id="x-1" class="extrait"><video id="v-x-1" src="medias/enregistrement/x-1.mp4" muted playsinline data-start="39.733" data-duration="1.500" data-track-index="3"></video></div>
+            <div id="x-2" class="extrait"><video id="v-x-2" src="medias/enregistrement/x-2.mp4" muted playsinline data-start="41.233" data-duration="2.030" data-track-index="3"></video></div>
+            <div id="x-3" class="extrait"><video id="v-x-3" src="medias/enregistrement/x-3.mp4" muted playsinline data-start="43.263" data-duration="2.260" data-track-index="3"></video></div>
+            <div id="x-4" class="extrait"><video id="v-x-4" src="medias/enregistrement/x-4.mp4" muted playsinline data-start="45.523" data-duration="1.410" data-track-index="3"></video></div>
             <img id="cap-proposition" class="capture" src="medias/captures/proposition-adverse.webp" alt="" />
             <img id="cap-accepter" class="capture" src="medias/captures/accepter-proposition.webp" alt="" />
             <img id="cap-planning" class="capture" src="medias/captures/planning-match.webp" alt="" />
@@ -341,7 +335,7 @@
       </div>
 
       <!-- SCÈNE 11 — « envoie la vidéo à ton coach… la tête de ma mère, je vais jouer ! » -->
-      <div id="s11" class="clip plein" data-start="52.197" data-duration="5.720" data-track-index="8">
+      <div id="s11" class="clip plein" data-start="53.563" data-duration="5.720" data-track-index="8">
         <div id="envoie"><div class="pastille">
           <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#001218" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg>
           Envoie-la à ton coach</div></div>
@@ -349,7 +343,7 @@
       </div>
 
       <!-- CARTON FINAL -->
-      <div id="carton" class="clip plein" data-start="57.517" data-duration="3.20" data-track-index="9">
+      <div id="carton" class="clip plein" data-start="58.883" data-duration="3.20" data-track-index="9">
         <div id="fin-voile" class="plein"></div>
         <div id="fin">
           <div class="icone-fc"><span class="f">F</span><span class="c">C</span></div>
@@ -364,37 +358,39 @@
       </div>
 
       <!-- SOUS-TITRES -->
-      <div id="sous-titres" class="clip plein" data-start="0" data-duration="60.72" data-track-index="10">
+      <div id="sous-titres" class="clip plein" data-start="0" data-duration="62.08" data-track-index="10">
         <p id="st-0" class="st">Les footballeurs professionnels se plaignent parce qu&#x27;ils jouent tous les 3 jours.</p>
-        <p id="st-1" class="st">Dites-vous : nous, en amateur, des fois, pendant un mois, on joue pas.</p>
+        <p id="st-1" class="st">Dites-vous : nous, en amateur, des fois, pendant un mois, on joue pas.</p>
         <p id="st-2" class="st">Entre les week-ends de coupe, les matchs reportés ou les trêves…</p>
         <p id="st-3" class="st">Des fois, pendant un mois, on joue pas.</p>
-        <p id="st-4" class="st">Dites-vous, il y en a, ils payent leur licence jusqu&#x27;à 550 € !</p>
-        <p id="st-5" class="st">À 550 €… la vie de ma mère, je vais jouer !</p>
-        <p id="st-6" class="st">Mais c&#x27;est quoi la raison, en fait ?</p>
-        <p id="st-7" class="st">Pourquoi on joue pas pendant autant de temps, des fois ?</p>
-        <p id="st-8" class="st">Les coachs, ils ont toujours la même excuse.</p>
-        <p id="st-9" class="st">« On sait pas contre qui jouer, faut s&#x27;organiser, est-ce qu&#x27;on joue à domicile ou à l&#x27;extérieur ? »</p>
-        <p id="st-10" class="st">Mais maintenant, plus d&#x27;excuses. J&#x27;ai un outil pour vous, les gars :</p>
-        <p id="st-11" class="st">FoundClub.</p>
-        <p id="st-12" class="st">Ton coach, il a juste à aller sur l&#x27;application,</p>
-        <p id="st-13" class="st">il cherche un club qui est disponible le week-end où il a envie de faire ce match.</p>
-        <p id="st-14" class="st">Et il choisit : à domicile ou à l&#x27;extérieur.</p>
-        <p id="st-15" class="st">Que ce soit pendant un match reporté, un week-end de coupe,</p>
-        <p id="st-16" class="st">pendant la trêve ou même en semaine,</p>
-        <p id="st-17" class="st">vous pouvez continuer à jouer et garder le rythme.</p>
-        <p id="st-18" class="st">Maintenant, t&#x27;as plus qu&#x27;à envoyer la vidéo à ton coach.</p>
-        <p id="st-19" class="st">Et à 550 € la licence… la tête de ma mère, je vais jouer !</p>
+        <p id="st-4" class="st">Dites-vous, il y en a, ils payent leur licence jusqu&#x27;à 550 € !</p>
+        <p id="st-5" class="st">À 550 €… la vie de ma mère, je vais jouer !</p>
+        <p id="st-6" class="st">« Et dimanche prochain, je vais jouer ! »</p>
+        <p id="st-7" class="st">« Je vais jouer, la tête de ma mère, que je vais jouer ! »</p>
+        <p id="st-8" class="st">Mais c&#x27;est quoi la raison, en fait ?</p>
+        <p id="st-9" class="st">Pourquoi on joue pas pendant autant de temps, des fois ?</p>
+        <p id="st-10" class="st">Les coachs, ils ont toujours la même excuse.</p>
+        <p id="st-11" class="st">« On sait pas contre qui jouer, faut s&#x27;organiser, est-ce qu&#x27;on joue à domicile ou à l&#x27;extérieur ? »</p>
+        <p id="st-12" class="st">Mais maintenant, plus d&#x27;excuses. J&#x27;ai un outil pour vous, les gars :</p>
+        <p id="st-13" class="st">FoundClub.</p>
+        <p id="st-14" class="st">Ton coach, il a juste à aller sur l&#x27;application,</p>
+        <p id="st-15" class="st">il cherche un club qui est disponible le week-end où il a envie de faire ce match.</p>
+        <p id="st-16" class="st">Et il choisit : à domicile ou à l&#x27;extérieur.</p>
+        <p id="st-17" class="st">Que ce soit pendant un match reporté, un week-end de coupe,</p>
+        <p id="st-18" class="st">pendant la trêve ou même en semaine,</p>
+        <p id="st-19" class="st">vous pouvez continuer à jouer et garder le rythme.</p>
+        <p id="st-20" class="st">Maintenant, t&#x27;as plus qu&#x27;à envoyer la vidéo à ton coach.</p>
+        <p id="st-21" class="st">Et à 550 € la licence… la tête de ma mère, je vais jouer !</p>
       </div>
     </div>
 
     <script>
       window.__timelines = window.__timelines || {};
       const tl = gsap.timeline({ paused: true });
-      const T = {"professionnels": 0.94, "plaignent": 1.77, "jours": 2.59, "amateur": 4.55, "mois": 6.05, "coupe": 8.73, "reportes": 9.9, "treve": 10.82, "mois2": 12.51, "licence": 14.77, "550": 15.98, "mere": 18.94, "jouer": 19.22, "raison": 22.677, "temps": 24.137, "coachs": 25.517, "excuse": 26.677, "contre": 27.717, "organiser": 28.867, "domicile": 30.377, "exterieur": 31.247, "excuses": 33.287, "outil": 34.237, "found": 35.617, "application": 37.617, "disponible": 39.517, "week": 40.367, "choisit": 42.247, "domicile2": 43.007, "exterieur2": 43.907, "reporte2": 45.767, "coupe2": 47.107, "treve2": 48.007, "semaine": 48.977, "continuer": 49.987, "rythme": 51.597, "coach": 53.907, "licence2": 55.627, "mere2": 56.717, "jouer2": 57.037};
-      const SOUS_TITRES = [[0.13, 3.3], [3.65, 6.8], [6.8, 11.1], [11.27, 12.95], [12.95, 16.65], [17.16, 19.267], [21.767, 23.027], [23.027, 24.947], [25.127, 26.967], [27.177, 31.797], [32.037, 35.167], [35.167, 36.117], [36.257, 37.817], [37.817, 41.747], [41.957, 44.277], [44.547, 47.227], [47.457, 49.227], [49.227, 51.767], [52.037, 54.207], [54.207, 57.517]];
-      const EXTRAITS = [{"debut": 37.017, "duree": 1.35}, {"debut": 38.367, "duree": 1.5}, {"debut": 39.867, "duree": 2.03}, {"debut": 41.897, "duree": 2.26}, {"debut": 44.157, "duree": 1.41}];
-      const COUPE = 19.2667, REPRISE_T = 21.7667, FIN = 57.517;
+      const T = {"professionnels": 0.94, "plaignent": 1.77, "jours": 2.59, "amateur": 4.55, "mois": 6.05, "coupe": 8.73, "reportes": 9.9, "treve": 10.82, "mois2": 12.51, "licence": 14.77, "550": 15.98, "mere": 18.94, "jouer": 19.22, "raison": 24.043, "temps": 25.503, "coachs": 26.883, "excuse": 28.043, "contre": 29.083, "organiser": 30.233, "domicile": 31.743, "exterieur": 32.613, "excuses": 34.653, "outil": 35.603, "found": 36.983, "application": 38.983, "disponible": 40.883, "week": 41.733, "choisit": 43.613, "domicile2": 44.373, "exterieur2": 45.273, "reporte2": 47.133, "coupe2": 48.473, "treve2": 49.373, "semaine": 50.343, "continuer": 51.353, "rythme": 52.963, "coach": 55.273, "licence2": 56.993, "mere2": 58.083, "jouer2": 58.403};
+      const SOUS_TITRES = [[0.13, 3.3], [3.65, 6.8], [6.8, 11.1], [11.27, 12.95], [12.95, 16.65], [17.16, 19.4], [19.45, 21.02], [21.02, 23.133], [23.133, 24.393], [24.393, 26.313], [26.493, 28.333], [28.543, 33.163], [33.403, 36.533], [36.533, 37.483], [37.623, 39.183], [39.183, 43.113], [43.323, 45.643], [45.913, 48.593], [48.823, 50.593], [50.593, 53.133], [53.403, 55.573], [55.573, 58.883]];
+      const EXTRAITS = [{"debut": 38.383, "duree": 1.35}, {"debut": 39.733, "duree": 1.5}, {"debut": 41.233, "duree": 2.03}, {"debut": 43.263, "duree": 2.26}, {"debut": 45.523, "duree": 1.41}];
+      const COUPE = 19.4000, REPRISE_T = 23.1333, FIN = 58.883;
       // Sous-titres
       SOUS_TITRES.forEach(([debut, fin], i) => {
         tl.fromTo(`#st-${i}`, { opacity: 0 }, { opacity: 1, duration: 0.08, ease: "none" }, debut);
@@ -471,8 +467,8 @@
       tl.fromTo("#bulle-1", { opacity: 0, scale: 0.5, rotation: -6 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.3, ease: "back.out(2)" }, T.mere - 0.8);
       tl.to("#bulle-1", { x: 10, duration: 0.05, yoyo: true, repeat: 5, ease: "none" }, T.jouer - 0.3);
 
-      // ── L'EXTRAIT DE RÉFÉRENCE (coupe franche, l'image d'ach10 s'arrête) ──
-      tl.fromTo("#insert-cadre", { scale: 0.9 }, { scale: 1, duration: 0.25, ease: "power3.out" }, COUPE);
+      // ── L'EXTRAIT DE RÉFÉRENCE (coupe franche : l'image d'ach10 s'arrête, l'extrait entre en léger zoom arrière) ──
+      tl.fromTo(".insert-contenu", { scale: 1.08 }, { scale: 1, duration: 0.3, ease: "power3.out" }, COUPE);
 
       // ── SCÈNE 5 : « mais c'est quoi la raison ? » ──
       apparaitre("#s5-titre .ligne", REPRISE_T + 0.05);

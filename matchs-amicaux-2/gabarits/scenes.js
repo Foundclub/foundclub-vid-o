@@ -74,8 +74,8 @@
       tl.fromTo("#bulle-1", { opacity: 0, scale: 0.5, rotation: -6 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.3, ease: "back.out(2)" }, T.mere - 0.8);
       tl.to("#bulle-1", { x: 10, duration: 0.05, yoyo: true, repeat: 5, ease: "none" }, T.jouer - 0.3);
 
-      // ── L'EXTRAIT DE RÉFÉRENCE (coupe franche, l'image d'ach10 s'arrête) ──
-      tl.fromTo("#insert-cadre", { scale: 0.9 }, { scale: 1, duration: 0.25, ease: "power3.out" }, COUPE);
+      // ── L'EXTRAIT DE RÉFÉRENCE (coupe franche : l'image d'ach10 s'arrête, l'extrait entre en léger zoom arrière) ──
+      tl.fromTo(".insert-contenu", { scale: 1.08 }, { scale: 1, duration: 0.3, ease: "power3.out" }, COUPE);
 
       // ── SCÈNE 5 : « mais c'est quoi la raison ? » ──
       apparaitre("#s5-titre .ligne", REPRISE_T + 0.05);

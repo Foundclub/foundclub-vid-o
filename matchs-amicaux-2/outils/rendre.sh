@@ -21,7 +21,9 @@ if [ -f sons.json ]; then
 fi
 MESURE=$(ffmpeg -hide_banner "${ENTREES[@]}" -filter_complex "${MELANGE}loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json" -vn -f null - 2>&1 \
   | python3 -c "import sys,json; t=sys.stdin.read(); d=json.loads(t[t.rindex('{'):t.rindex('}')+1]); print(f\"measured_I={d['input_i']}:measured_TP={d['input_tp']}:measured_LRA={d['input_lra']}:measured_thresh={d['input_thresh']}:offset={d['target_offset']}\")")
-ffmpeg -y -v error "${ENTREES[@]}" -filter_complex "${MELANGE}loudnorm=I=-14:TP=-1.5:LRA=11:$MESURE:linear=true[son]" \
+# La voix de cette vidéo est enregistrée bas (-18,8 LUFS) : loudnorm ne peut pas monter de +4,8 dB d'un bloc et passe en
+# mode dynamique, qui laisse passer des crêtes à -0,1 dBFS (mesuré sur apercu-v2). Un limiteur à -2 dBFS les rattrape après coup.
+ffmpeg -y -v error "${ENTREES[@]}" -filter_complex "${MELANGE}loudnorm=I=-14:TP=-1.5:LRA=11:$MESURE:linear=true,aresample=48000,alimiter=limit=0.794:level=0:latency=1[son]" \
   -map 0:v -map "[son]" -c:v copy -c:a aac -b:a 192k -ar 48000 -movflags +faststart "rendus/$NOM.mp4"
 ffprobe -v error -show_entries format=duration,size -of compact "rendus/$NOM.mp4"
 ffmpeg -hide_banner -i "rendus/$NOM.mp4" -vn -af ebur128 -f null - 2>&1 | grep -E "^\s+I:" | tail -1

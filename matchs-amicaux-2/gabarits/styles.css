@@ -141,7 +141,7 @@
       #insert-cadre .k { font-weight: 800; font-size: 30px; letter-spacing: .2em; text-transform: uppercase; color: var(--orange); }
       #insert-cadre .t { font-weight: 900; font-size: 54px; line-height: 1.1; text-transform: uppercase; padding: 0 40px; }
       #insert-cadre .s { font-weight: 600; font-size: 30px; color: #8fb3c0; }
-      #insert-cadre video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #000; }
+      #v-reference { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
 
       /* « Plus d'excuses » : le tampon vert qui raye les excuses */
       #plus-excuses { position: absolute; left: 0; right: 0; top: 190px; text-align: center; opacity: 0; }

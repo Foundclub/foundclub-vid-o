@@ -38,3 +38,5 @@ matchs-amicaux-2/medias/enregistrement/
 matchs-amicaux-2/snapshots/
 matchs-amicaux-2/rendus/*-brut.mp4
 matchs-amicaux-2/rendus/apercu-*.mp4
+# vidéo de référence d'un tiers : seul l'extrait mis en page (matchs-amicaux-2/medias/reference/extrait.mp4) est versionné
+a-monter/reference-*.mp4
