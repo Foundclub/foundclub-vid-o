@@ -195,7 +195,7 @@ Les **4 clips habillés**, validés par Adel le 12/10/2026, sont dans `youtube-c
 
 ## `matchs-amicaux-2/` — la vidéo « matchs amicaux » d'ach10
 
-Vidéo verticale de **62,1 s** (1080×1920, 30 images/s, son à -14 LUFS), validée par Adel le 17/10/2026 (« ok on garde », sur la v2) : `matchs-amicaux-2/rendus/matchs-amicaux-2-final.mp4`.
+Vidéo verticale de **62,1 s** (1080×1920, 30 images/s, son à -14 LUFS), validée par Adel le 17/10/2026 (« ok », sur la v3) : `matchs-amicaux-2/rendus/matchs-amicaux-2-final.mp4`, identique octet pour octet à `apercu-v3.mp4`. Son à -14,2 LUFS, crête à -2,8 dBFS.
 
 Deuxième vidéo sur les matchs amicaux, tournée par ach10 (`a-monter/matchs-amicaux-ach-1.mov`, 55,3 s). Elle reprend la charte et les scènes de `matchs-amicaux/` (calendrier, licence, téléphone, carton final). Ce qui change :
 - **La presse** :
