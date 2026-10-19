@@ -220,7 +220,9 @@ Fabriquer : `cd matchs-amicaux-2 ; outils/preparer-video.sh ; outils/rendre.sh m
 
 ## `matchs-amicaux-3/` — « Pas de match ce week-end ? » (l'extrait, le joueur au maillot FoundClub, l'appli)
 
-Vidéo verticale courte (environ 17 s), à partir de la vidéo d'Adel `a-monter/matchs-amicaux-ref.mp4` (11,5 s, 2160×3840 à 60 i/s). On y voit l'extrait « Dimanche prochain je vais jouer », puis un joueur en maillot FoundClub qui parle aux coachs. Le montage d'origine portait la légende « Pas de match ce weekend ? On a la solution ! ». Les 5 temps :
+Vidéo verticale de **16,8 s** (1080×1920, 30 images/s, son à -14,1 LUFS), validée par Adel le 19/10/2026 (« ok go rendu », sur la v1) : `matchs-amicaux-3/rendus/matchs-amicaux-3-final.mp4`, identique octet pour octet à `apercu-v1.mp4`.
+
+Elle est faite à partir de la vidéo d'Adel `a-monter/matchs-amicaux-ref.mp4` (11,5 s, 2160×3840 à 60 i/s). On y voit l'extrait « Dimanche prochain je vais jouer », puis un joueur en maillot FoundClub qui parle aux coachs. Le montage d'origine portait la légende « Pas de match ce weekend ? On a la solution ! ». Les 5 temps :
 1. **L'extrait** (0–3,7 s) : celui de `matchs-amicaux-2/medias/reference/extrait.mp4`, avec ses sous-titres. L'accroche « Pas de match ce week-end ? » est dans une bulle blanche en haut.
 2. **Le volet bleu « On a la solution ! »** (3,4–4,3 s), avec l'icône FC. Il couvre le passage au joueur et le fondu au noir de la vidéo d'Adel : on lit le joueur à partir de 4,25 s.
 3. **Le joueur** : « Tu cherches des matchs amicaux ? », puis le logo FoundClub sur « FoundClub, c'est fait pour toi ».
@@ -230,4 +232,6 @@ Vidéo verticale courte (environ 17 s), à partir de la vidéo d'Adel `a-monter/
    - Puis, sans voix : « Proposer un match », le formulaire, et « Félicitations, proposition envoyée ! ».
 5. **Le carton final** FoundClub.
 
-Fabriquer : `cd matchs-amicaux-3 ; outils/preparer-video.sh ; outils/rendre.sh <nom> 18`. `calage.json` est dans le temps de la vidéo d'Adel ; l'assembleur le décale (le joueur commence à 3,733 s dans le montage).
+Fabriquer : `cd matchs-amicaux-3 ; outils/preparer-video.sh ; outils/rendre.sh matchs-amicaux-3-final 18`.
+
+À revérifier avant de publier : l'accord du joueur filmé (il n'est nommé nulle part), et les droits de l'extrait de référence (contenu d'un tiers, filigrane LEHUMOUR.FR). `calage.json` est dans le temps de la vidéo d'Adel ; l'assembleur le décale (le joueur commence à 3,733 s dans le montage).
