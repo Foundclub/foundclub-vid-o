@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Montserrat"; font-weight: 300; font-display: block; src: url("fonts/montserrat-latin-300-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 400; font-display: block; src: url("fonts/montserrat-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 300; font-display: block; src: url("fonts/montserrat-latin-ext-300-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 400; font-display: block; src: url("fonts/montserrat-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 500; font-display: block; src: url("fonts/montserrat-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 500; font-display: block; src: url("fonts/montserrat-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 600; font-display: block; src: url("fonts/montserrat-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 600; font-display: block; src: url("fonts/montserrat-latin-ext-600-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 700; font-display: block; src: url("fonts/montserrat-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 700; font-display: block; src: url("fonts/montserrat-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 800; font-display: block; src: url("fonts/montserrat-latin-800-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 800; font-display: block; src: url("fonts/montserrat-latin-ext-800-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 900; font-display: block; src: url("fonts/montserrat-latin-900-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+      :root { --bleu: #01b3f4; --nuit: #001218; --nuit-2: #173844; --vert: #27d6a3; --rouge: #f0384e; --orange: #ffa115; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #001218; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: "Montserrat", sans-serif; }
+      .plein { position: absolute; inset: 0; }
+
+      /* Fond du « mode écran » ; la vidéo du joueur s'éloigne quand le téléphone arrive (aucune tête dans la partie appli) */
+      #fond-halo { position: absolute; inset: 0;
+        background: radial-gradient(900px 700px at 20% 18%, rgba(1,179,244,.16), rgba(1,179,244,0) 70%),
+                    radial-gradient(1000px 900px at 85% 80%, rgba(39,214,163,.08), rgba(39,214,163,0) 70%), #001218; }
+      #cadre-video { position: absolute; inset: 0; transform-origin: 540px 700px; }
+      .video-plein { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+      /* Plein cadre : titres en haut (au-dessus de sa tête), sous-titres en bas (sur le t-shirt) */
+      #degrade-haut { position: absolute; left: 0; right: 0; top: 0; height: 520px;
+        background: linear-gradient(to bottom, rgba(0,18,24,.72) 0%, rgba(0,18,24,.35) 55%, rgba(0,18,24,0) 100%); }
+      #degrade-bas { position: absolute; left: 0; right: 0; top: 1280px; bottom: 0;
+        background: linear-gradient(to bottom, rgba(0,18,24,0) 0%, rgba(0,18,24,.55) 45%, rgba(0,18,24,.8) 100%); }
+
+      /* Titres */
+      .titre { position: absolute; left: 0; right: 0; text-align: center; text-transform: uppercase; font-weight: 900;
+        color: #fff; letter-spacing: -0.01em; line-height: 1; text-shadow: 0 6px 24px rgba(0,18,24,.45); }
+      .ligne { display: block; }
+      .surligne { display: inline-block; position: relative; padding: 8px 24px 10px; color: var(--nuit); text-shadow: none; }
+      .surligne .fond { position: absolute; inset: 0; background: var(--bleu); border-radius: 14px; transform-origin: left center; }
+      .surligne .mot { position: relative; display: inline-block; }
+      .rubrique { position: absolute; left: 70px; top: 128px; font-size: 30px; font-weight: 700; letter-spacing: .22em; color: var(--bleu); text-transform: uppercase; }
+      .titre-g { position: absolute; left: 70px; top: 172px; width: 640px; font-size: 62px; font-weight: 900; line-height: 1.02; color: #fff; text-transform: uppercase; }
+      .titre-g .bleu { color: var(--bleu); } .titre-g .rouge { color: var(--rouge); } .titre-g .vert { color: var(--vert); }
+
+      /* Scène 7 : le logo */
+      #logo { position: absolute; left: 0; right: 0; top: 120px; display: flex; flex-direction: column; align-items: center; }
+      .icone-fc { width: 180px; height: 180px; border-radius: 42px; background: #000d12; border: 3px solid rgba(255,255,255,.18);
+        display: flex; align-items: center; justify-content: center; font-size: 120px; letter-spacing: -0.09em; line-height: 1;
+        box-shadow: 0 0 60px rgba(1,179,244,.45), 0 24px 60px rgba(0,0,0,.5); }
+      .icone-fc .f { color: var(--bleu); font-weight: 600; } .icone-fc .c { color: #fff; font-weight: 300; }
+      .marque { margin-top: 26px; font-size: 104px; line-height: 1; letter-spacing: 0.01em; position: relative; overflow: hidden; padding: 0 10px; }
+      .marque .found { color: var(--bleu); font-weight: 800; } .marque .club { color: #fff; font-weight: 400; }
+      .marque .reflet { position: absolute; top: -20%; bottom: -20%; width: 180px; left: -220px;
+        background: linear-gradient(100deg, rgba(255,255,255,0), rgba(255,255,255,.55), rgba(255,255,255,0)); }
+
+      /* Scènes 8 à 10 : le téléphone */
+      .tel { position: absolute; left: 276px; top: 350px; width: 528px; height: 1111px; border-radius: 76px; background: #081318; padding: 14px;
+        box-shadow: 0 0 0 2px rgba(1,179,244,.45), 0 0 70px rgba(1,179,244,.28), 0 40px 90px rgba(0,0,0,.6); }
+      .ecran { position: relative; width: 500px; height: 1083px; border-radius: 62px; overflow: hidden; background: #0d1a20; }
+      .capture, .extrait { position: absolute; left: 0; top: 0; width: 500px; height: 1083px; opacity: 0; }
+      .extrait video { width: 500px; height: 1083px; display: block; }
+      .etiquette { position: absolute; display: flex; align-items: center; gap: 14px; padding: 18px 30px; border-radius: 999px; background: #173844;
+        border: 3px solid var(--bleu); color: #fff; font-weight: 800; font-size: 36px; text-transform: uppercase; white-space: nowrap;
+        box-shadow: 0 0 34px rgba(1,179,244,.35), 0 18px 40px rgba(0,0,0,.45); opacity: 0; }
+      .etiquette .point { width: 18px; height: 18px; border-radius: 50%; background: var(--vert); }
+      .appui { position: absolute; width: 110px; height: 110px; margin: -55px 0 0 -55px; border-radius: 50%;
+        background: rgba(255,255,255,.28); border: 4px solid rgba(255,255,255,.85); box-shadow: 0 0 30px rgba(1,179,244,.6); opacity: 0; }
+      #cest-tout { position: absolute; left: 0; right: 0; top: 760px; text-align: center; opacity: 0; }
+      #cest-tout span { display: inline-block; padding: 18px 40px; border: 8px solid var(--vert); border-radius: 22px; color: var(--vert);
+        background: rgba(0,18,24,.82); font-weight: 900; font-size: 96px; text-transform: uppercase; transform: rotate(-8deg); }
+      #compos { position: absolute; left: 40px; top: 600px; width: 1000px; border-radius: 34px; overflow: hidden; opacity: 0;
+        box-shadow: 0 0 0 2px rgba(1,179,244,.45), 0 0 70px rgba(1,179,244,.3), 0 40px 90px rgba(0,0,0,.6); background: #eef3f2; }
+      #compos img { display: block; width: 1000px; height: auto; }
+
+      /* Scène 11 et carton final */
+      #envoie { position: absolute; left: 0; right: 0; top: 190px; display: flex; justify-content: center; }
+      #envoie .pastille { display: flex; align-items: center; gap: 18px; background: #fff; color: var(--nuit); font-weight: 900; font-size: 48px;
+        text-transform: uppercase; padding: 22px 38px; border-radius: 999px; box-shadow: 0 18px 44px rgba(0,18,24,.45); opacity: 0; }
+      #fin-voile { background: #001218; opacity: 0; }
+      #fin { position: absolute; left: 0; right: 0; top: 560px; display: flex; flex-direction: column; align-items: center; }
+      #fin .icone-fc { width: 220px; height: 220px; border-radius: 50px; font-size: 146px; }
+      #fin .marque { margin-top: 40px; font-size: 128px; }
+      #fin .phrase { margin-top: 46px; color: #fff; font-weight: 700; font-size: 50px; }
+      #fin .badges { margin-top: 44px; display: flex; gap: 34px; align-items: center; }
+      #fin .badges img { height: 110px; display: block; }
+      #fin .badges .gp { height: 144px; margin: -17px -10px; }
+      #fin .site { margin-top: 46px; color: var(--bleu); font-weight: 800; font-size: 50px; letter-spacing: .02em; }
+
+      /* Sous-titres */
+      .st { position: absolute; left: 90px; right: 90px; bottom: 290px; text-align: center; color: #fff; font-weight: 700;
+        font-size: 46px; line-height: 1.22; text-shadow: 0 3px 14px rgba(0,18,24,.9), 0 0 3px rgba(0,18,24,.8); opacity: 0; }
+
+
+      /* Scène 1 : « on est en 2026… » — l'année en grand, puis la galère des coachs */
+      #annee { position: absolute; left: 0; right: 0; top: 120px; text-align: center; font-weight: 900; font-size: 190px; line-height: 1;
+        color: #fff; letter-spacing: -0.02em; text-shadow: 0 0 40px rgba(1,179,244,.6), 0 10px 30px rgba(0,18,24,.6); opacity: 0; }
+      #galere .surligne .fond { background: var(--rouge); }
+      #galere .surligne { color: #fff; }
+
+      /* Scène 2 : les vacances de la Toussaint */
+      #toussaint { position: absolute; left: 0; right: 0; top: 170px; display: flex; justify-content: center; }
+      #toussaint .pastille { display: flex; align-items: center; gap: 20px; background: var(--orange); color: var(--nuit); font-weight: 900;
+        font-size: 50px; text-transform: uppercase; padding: 22px 38px; border-radius: 999px; box-shadow: 0 18px 44px rgba(0,18,24,.45); opacity: 0; }
+
+      /* Scène 3 : la nouvelle fonctionnalité */
+      #nouveau { position: absolute; left: 0; right: 0; top: 100px; display: flex; justify-content: center; }
+      #nouveau .pastille { background: var(--vert); color: var(--nuit); font-weight: 900; font-size: 40px; letter-spacing: .06em;
+        text-transform: uppercase; padding: 14px 30px; border-radius: 999px; box-shadow: 0 0 34px rgba(39,214,163,.5), 0 14px 34px rgba(0,18,24,.45); opacity: 0; }
+      #logo { top: 185px; }
+
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="24.45" data-width="1080" data-height="1920">
+
+      <div id="fond" class="clip plein" data-start="0" data-duration="24.45" data-track-index="0"><div id="fond-halo"></div></div>
+
+      <!-- La vidéo d'Adel : deux joueurs en maillot FoundClub, déjà montée (gros plan d'ouverture, coupes) -->
+      <div id="cadre-video">
+        <video id="v-joueurs" class="video-plein" src="medias/video/source.mp4" playsinline data-has-audio="true"
+          data-start="0" data-duration="21.6333" data-track-index="1"></video>
+      </div>
+
+      <div id="degrades" class="clip plein" data-start="0" data-duration="21.6333" data-track-index="2">
+        <div id="degrade-haut"></div><div id="degrade-bas"></div>
+      </div>
+
+      <!-- 1 — « On est en 2026, et il y a encore des coachs qui galèrent pendant des heures à trouver un match amical » -->
+      <div id="annee">2026</div>
+      <div id="galere" class="titre" style="top: 150px; font-size: 62px; opacity: 0;">
+        <span class="ligne">Des coachs qui galèrent</span>
+        <span class="surligne" style="margin-top: 14px;"><span class="fond"></span><span class="mot">pendant des heures</span></span>
+      </div>
+
+      <!-- 2 — « Ça tombe bien, les vacances de la Toussaint arrivent » -->
+      <div id="toussaint"><div class="pastille">
+        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#001218" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>
+        Vacances de la Toussaint</div></div>
+
+      <!-- 3 — « On vient d'ouvrir une nouvelle fonctionnalité sur FoundClub » -->
+      <div id="logo" style="opacity: 0;">
+        <div class="icone-fc" style="width: 120px; height: 120px; border-radius: 30px; font-size: 80px;"><span class="f">F</span><span class="c">C</span></div>
+        <div class="marque" style="font-size: 82px; margin-top: 18px;"><span class="found">FOUND</span><span class="club">CLUB</span><span class="reflet"></span></div>
+      </div>
+      <div id="nouveau"><div class="pastille">Nouvelle fonctionnalité</div></div>
+
+      <!-- 4 — LE TÉLÉPHONE : « trouver des matchs amicaux ou publier ta propre annonce », sans personne à l'écran -->
+      <div id="mode-tel" class="plein" style="opacity: 0;">
+        <div id="t-rubrique" class="rubrique" style="opacity: 0;">Matchs amicaux</div>
+        <div id="t-titre" class="titre-g" style="opacity: 0; width: 940px;"><span id="t-l1" class="ligne">Trouve un adversaire</span><span id="t-l2" class="ligne bleu">pour ton équipe</span></div>
+        <div id="tel" class="tel">
+          <div class="ecran">
+            <div id="x-0" class="extrait"><video id="v-x-0" src="medias/enregistrement/x-0.mp4" muted playsinline data-start="11.610" data-duration="1.700" data-track-index="5"></video></div>
+            <div id="x-1" class="extrait"><video id="v-x-1" src="medias/enregistrement/x-1.mp4" muted playsinline data-start="13.310" data-duration="0.500" data-track-index="5"></video></div>
+            <div id="x-2" class="extrait"><video id="v-x-2" src="medias/enregistrement/x-2.mp4" muted playsinline data-start="14.880" data-duration="0.840" data-track-index="5"></video></div>
+            <img id="cap-creer" class="capture" src="medias/captures/creer-match-amical.png" alt="" />
+          </div>
+        </div>
+        <div id="tag-trouve" class="etiquette" style="left: 34px; top: 1040px;"><span class="point"></span>Trouve des matchs amicaux</div>
+        <div id="tag-publie" class="etiquette" style="right: 34px; top: 1150px;"><span class="point"></span>Publie ta propre annonce</div>
+        <div id="tag-propose" class="etiquette" style="left: 34px; top: 1290px;"><span class="point"></span>Propose un match</div>
+        <div id="appui-amicaux" class="appui" style="left: 650px; top: 1074px;"></div>
+        <div id="appui-creer" class="appui" style="left: 540px; top: 934px;"></div>
+        <div id="appui-proposer" class="appui" style="left: 494px; top: 1152px;"></div>
+      </div>
+
+      <!-- 5 — « Si t'es coach, va sur FoundClub et trouve ton prochain match » -->
+      <div id="coach-titre" class="titre" style="top: 150px; font-size: 62px; opacity: 0;">
+        <span class="ligne">Coach, trouve</span>
+        <span class="surligne" style="margin-top: 14px;"><span class="fond"></span><span class="mot">ton prochain match</span></span>
+      </div>
+
+      <!-- 6 — « Et si t'es joueur, envoie cette vidéo à ton coach » -->
+      <div id="envoie"><div class="pastille">
+        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#001218" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg>
+        Envoie-la à ton coach</div></div>
+
+      <!-- CARTON FINAL -->
+      <div id="carton" class="clip plein" data-start="21.450" data-duration="3.00" data-track-index="9">
+        <div id="fin-voile" class="plein"></div>
+        <div id="fin">
+          <div class="icone-fc"><span class="f">F</span><span class="c">C</span></div>
+          <div class="marque"><span class="found">FOUND</span><span class="club">CLUB</span><span class="reflet"></span></div>
+          <div class="phrase">Télécharge FoundClub</div>
+          <div class="badges">
+            <img src="medias/badges/app-store.svg" alt="Download on the App Store" />
+            <img class="gp" src="medias/badges/google-play.svg" alt="Get it on Google Play" />
+          </div>
+          <div class="site">foundclub.app</div>
+        </div>
+      </div>
+
+      <!-- SOUS-TITRES -->
+      <div id="sous-titres" class="clip plein" data-start="0" data-duration="24.45" data-track-index="10">
+        <p id="st-0" class="st">On est en 2026,</p>
+        <p id="st-1" class="st">et il y a encore des coachs qui galèrent pendant des heures</p>
+        <p id="st-2" class="st">à trouver un match amical.</p>
+        <p id="st-3" class="st">Ça tombe bien : les vacances de la Toussaint arrivent,</p>
+        <p id="st-4" class="st">et on vient d&#x27;ouvrir une nouvelle fonctionnalité sur FoundClub.</p>
+        <p id="st-5" class="st">Maintenant, tu peux directement trouver des matchs amicaux</p>
+        <p id="st-6" class="st">ou publier ta propre annonce pour trouver des adversaires.</p>
+        <p id="st-7" class="st">Donc si t&#x27;es coach, va sur FoundClub et trouve ton prochain match.</p>
+        <p id="st-8" class="st">Et si t&#x27;es joueur, envoie cette vidéo à ton coach.</p>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const T = {"2026": 2.2, "coachs": 3.35, "heures": 4.57, "amical": 6.09, "tombe": 7.5, "toussaint": 8.58, "arrivent": 8.85, "fonctionnalite": 10.54, "club": 11.16, "maintenant": 11.51, "amicaux": 13.56, "annonce": 14.73, "adversaires": 15.47, "coach": 16.77, "club2": 17.46, "match": 18.62, "joueur": 19.55, "video": 20.3, "coach2": 21.0};
+      const SOUS_TITRES = [[0.15, 2.35], [2.35, 4.62], [4.62, 6.24], [6.7, 8.9], [8.9, 11.26], [11.26, 13.71], [13.71, 15.62], [15.85, 18.77], [18.77, 21.35]];
+      const EXTRAITS = [{"debut": 11.61, "duree": 1.7}, {"debut": 13.31, "duree": 0.5}, {"debut": 14.88, "duree": 0.84}];
+      const FIN = 21.450, TEL = 11.310, RETOUR = 15.720;
+      // Sous-titres
+      SOUS_TITRES.forEach(([debut, fin], i) => {
+        tl.fromTo(`#st-${i}`, { opacity: 0 }, { opacity: 1, duration: 0.08, ease: "none" }, debut);
+        tl.to(`#st-${i}`, { opacity: 0, duration: 0.08, ease: "none" }, fin - 0.08);
+      });
+
+      const surligner = (sel, t) => {
+        tl.fromTo(`${sel} .fond`, { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, t);
+        tl.fromTo(`${sel} .mot`, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, t + 0.1);
+      };
+      const apparaitre = (sel, t, de = { y: 40 }) => tl.fromTo(sel, { opacity: 0, ...de }, { opacity: 1, x: 0, y: 0, duration: 0.35, ease: "power3.out" }, t);
+      const etiquette = (sel, t, cote) => tl.fromTo(sel, { opacity: 0, x: cote * 160, scale: 0.8 }, { opacity: 1, x: 0, scale: 1, duration: 0.32, ease: "back.out(1.7)" }, t);
+      const appuyer = (sel, t) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.5 }, { opacity: 1, scale: 0.85, duration: 0.22, ease: "power2.out" }, t);
+        tl.to(sel, { opacity: 0, scale: 1.25, duration: 0.3, ease: "power1.in" }, t + 0.32);
+      };
+      const pastille = (sel, t) => tl.fromTo(sel, { opacity: 0, scale: 0.6, rotation: -6 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.4, ease: "back.out(1.8)" }, t);
+
+      // ── 1 : « On est en 2026… des coachs qui galèrent pendant des heures à trouver un match amical » ──
+      tl.fromTo("#annee", { opacity: 0, scale: 2.2 }, { opacity: 1, scale: 1, duration: 0.24, ease: "power3.in" }, T["2026"] - 0.45);
+      tl.to("#annee", { x: 10, duration: 0.05, yoyo: true, repeat: 3, ease: "none" }, T["2026"] - 0.21);
+      tl.to("#annee", { opacity: 0, y: -40, duration: 0.25 }, T.coachs - 0.7);
+      tl.set("#galere", { opacity: 1 }, T.coachs - 0.6);
+      apparaitre("#galere .ligne", T.coachs - 0.6);
+      surligner("#galere", T.heures - 0.55);
+      tl.to("#galere .surligne", { x: 8, duration: 0.05, yoyo: true, repeat: 3, ease: "none" }, T.amical - 0.3);
+      tl.to("#galere", { opacity: 0, y: -30, duration: 0.25 }, T.tombe - 0.65);
+
+      // ── 2 : « Ça tombe bien, les vacances de la Toussaint arrivent » ──
+      pastille("#toussaint .pastille", T.toussaint - 0.75);
+      tl.to("#toussaint .pastille", { opacity: 0, y: -30, duration: 0.25 }, T.arrivent + 0.45);
+
+      // ── 3 : « on vient d'ouvrir une nouvelle fonctionnalité sur FoundClub » ──
+      tl.fromTo("#nouveau .pastille", { opacity: 0, y: -30, scale: 0.8 }, { opacity: 1, y: 0, scale: 1, duration: 0.3, ease: "back.out(1.8)" }, T.fonctionnalite - 0.75);
+      tl.set("#logo", { opacity: 1 }, T.fonctionnalite - 0.35);
+      tl.fromTo("#logo .icone-fc", { opacity: 0, scale: 0.3, rotation: -12 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.45, ease: "back.out(1.8)" }, T.fonctionnalite - 0.35);
+      tl.fromTo("#logo .marque", { opacity: 0, y: 30, scale: 1.15 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "power3.out" }, T.club - 0.45);
+      tl.fromTo("#logo .reflet", { x: 0 }, { x: 900, duration: 0.7, ease: "power2.inOut" }, T.club - 0.05);
+
+      // ── 4 : LE TÉLÉPHONE — les joueurs s'effacent, l'appli prend tout l'écran ──
+      tl.to(["#logo", "#nouveau .pastille"], { opacity: 0, duration: 0.3 }, TEL);
+      tl.to("#cadre-video", { scale: 0.86, opacity: 0, duration: 0.45, ease: "power2.in" }, TEL);
+      tl.to("#degrades", { opacity: 0, duration: 0.3 }, TEL);
+      tl.to("#mode-tel", { opacity: 1, duration: 0.3 }, TEL + 0.1);
+      tl.fromTo("#tel", { opacity: 0, y: 500, rotation: 6 }, { opacity: 1, y: 0, rotation: 0, duration: 0.6, ease: "power3.out" }, TEL + 0.15);
+      apparaitre("#t-rubrique", TEL + 0.45, { x: -40 });
+      tl.set("#t-titre", { opacity: 1 }, TEL + 0.55);
+      apparaitre("#t-l1", TEL + 0.55);
+      apparaitre("#t-l2", TEL + 0.85);
+      EXTRAITS.forEach((x, i) => {
+        tl.fromTo(`#x-${i}`, { opacity: 0 }, { opacity: 1, duration: 0.01 }, x.debut);
+        tl.to(`#x-${i}`, { opacity: 0, duration: 0.01 }, x.debut + x.duree - 0.01);
+      });
+      tl.set("#cap-creer", { opacity: 1 }, EXTRAITS[1].debut + EXTRAITS[1].duree - 0.02);
+      tl.set("#cap-creer", { opacity: 0 }, EXTRAITS[2].debut + 0.01);
+      // « tu peux directement trouver des matchs amicaux ou publier ta propre annonce pour trouver des adversaires »
+      appuyer("#appui-amicaux", T.amicaux - 0.45);
+      etiquette("#tag-trouve", T.amicaux - 0.5, -1);
+      etiquette("#tag-publie", T.annonce - 0.6, 1);
+      appuyer("#appui-creer", T.annonce - 0.25);
+      tl.to("#cap-creer", { scale: 1.03, duration: 0.12, yoyo: true, repeat: 1, transformOrigin: "50% 52%" }, T.annonce - 0.1);
+      tl.to(["#tag-trouve", "#tag-publie"], { opacity: 0, scale: 0.7, duration: 0.25, stagger: 0.04 }, EXTRAITS[2].debut - 0.1);
+      etiquette("#tag-propose", EXTRAITS[2].debut + 0.1, -1);
+      appuyer("#appui-proposer", EXTRAITS[2].debut + EXTRAITS[2].duree - 0.3);
+      // Retour aux joueurs : « donc si t'es coach… »
+      tl.to("#tel", { opacity: 0, y: 400, duration: 0.35, ease: "power3.in" }, RETOUR);
+      tl.to("#mode-tel", { opacity: 0, duration: 0.3 }, RETOUR + 0.1);
+      tl.fromTo("#cadre-video", { scale: 0.86, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4, ease: "power3.out", immediateRender: false }, RETOUR + 0.1);
+      tl.to("#degrades", { opacity: 1, duration: 0.3 }, RETOUR + 0.2);
+
+      // ── 5 : « si t'es coach, va sur FoundClub et trouve ton prochain match » ──
+      tl.set("#coach-titre", { opacity: 1 }, T.coach - 0.5);
+      apparaitre("#coach-titre .ligne", T.coach - 0.5);
+      surligner("#coach-titre", T.match - 0.6);
+      tl.to("#coach-titre", { opacity: 0, y: -30, duration: 0.25 }, T.joueur - 0.6);
+
+      // ── 6 : « et si t'es joueur, envoie cette vidéo à ton coach » ──
+      pastille("#envoie .pastille", T.video - 0.75);
+      tl.to("#envoie .pastille", { x: 10, duration: 0.05, yoyo: true, repeat: 3, ease: "none" }, T.coach2 - 0.2);
+
+      // ── CARTON FINAL ──
+      tl.fromTo("#fin-voile", { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "power2.out" }, FIN);
+      tl.fromTo("#fin .icone-fc", { opacity: 0, scale: 0.3, rotation: -12 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(1.8)" }, FIN + 0.25);
+      tl.fromTo("#fin .marque", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, FIN + 0.45);
+      tl.fromTo("#fin .reflet", { x: 0 }, { x: 1100, duration: 0.8, ease: "power2.inOut" }, FIN + 0.9);
+      tl.fromTo("#fin .phrase", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, FIN + 0.8);
+      tl.fromTo("#fin .badges", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, FIN + 1.05);
+      tl.fromTo("#fin .site", { opacity: 0 }, { opacity: 1, duration: 0.4 }, FIN + 1.3);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

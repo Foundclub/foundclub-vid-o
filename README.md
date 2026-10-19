@@ -235,3 +235,17 @@ Elle est faite à partir de la vidéo d'Adel `a-monter/matchs-amicaux-ref.mp4` (
 Fabriquer : `cd matchs-amicaux-3 ; outils/preparer-video.sh ; outils/rendre.sh matchs-amicaux-3-final 18`.
 
 À revérifier avant de publier : l'accord du joueur filmé (il n'est nommé nulle part), et les droits de l'extrait de référence (contenu d'un tiers, filigrane LEHUMOUR.FR). `calage.json` est dans le temps de la vidéo d'Adel ; l'assembleur le décale (le joueur commence à 3,733 s dans le montage).
+
+## `matchs-amicaux-4/` — la Toussaint et la nouvelle fonctionnalité (deux joueurs en maillot FoundClub)
+
+Vidéo verticale d'environ 24,5 s, à partir de `a-monter/matchs-amicaux-4.mp4`. C'est la vidéo d'Adel, déjà montée : un gros plan d'ouverture et des coupes entre deux joueurs. Elle a été réduite en 1080×1920 à 30 i/s sur son PC pour passer sous les 100 Mo.
+
+Les 6 temps, calés sur la voix :
+1. « 2026 » en grand, puis « Des coachs qui galèrent pendant des heures » en rouge.
+2. La pastille orange « Vacances de la Toussaint ». Elle ne porte pas de dates : la vidéo dit « arrivent ».
+3. La pastille « Nouvelle fonctionnalité » et le logo FoundClub.
+4. Sur « Maintenant… », les joueurs s'effacent et l'appli prend tout l'écran : appui sur « Matchs amicaux » (« trouver des matchs amicaux »), puis sur « + Créer un match amical » (« publier ta propre annonce »), puis la liste et « Proposer un match ».
+5. Retour aux joueurs : « Coach, trouve ton prochain match ».
+6. « Envoie-la à ton coach », puis le carton final.
+
+Fabriquer : `cd matchs-amicaux-4 ; outils/preparer-video.sh ; outils/rendre.sh <nom> 18`.
