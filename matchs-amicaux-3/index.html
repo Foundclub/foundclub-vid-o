@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Montserrat"; font-weight: 300; font-display: block; src: url("fonts/montserrat-latin-300-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 400; font-display: block; src: url("fonts/montserrat-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 300; font-display: block; src: url("fonts/montserrat-latin-ext-300-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 400; font-display: block; src: url("fonts/montserrat-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 500; font-display: block; src: url("fonts/montserrat-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 500; font-display: block; src: url("fonts/montserrat-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 600; font-display: block; src: url("fonts/montserrat-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 600; font-display: block; src: url("fonts/montserrat-latin-ext-600-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 700; font-display: block; src: url("fonts/montserrat-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 700; font-display: block; src: url("fonts/montserrat-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 800; font-display: block; src: url("fonts/montserrat-latin-800-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+      @font-face { font-family: "Montserrat"; font-weight: 800; font-display: block; src: url("fonts/montserrat-latin-ext-800-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+      @font-face { font-family: "Montserrat"; font-weight: 900; font-display: block; src: url("fonts/montserrat-latin-900-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+      :root { --bleu: #01b3f4; --nuit: #001218; --nuit-2: #173844; --vert: #27d6a3; --rouge: #f0384e; --orange: #ffa115; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #001218; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: "Montserrat", sans-serif; }
+      .plein { position: absolute; inset: 0; }
+
+      /* Fond du « mode écran » ; la vidéo du joueur s'éloigne quand le téléphone arrive (aucune tête dans la partie appli) */
+      #fond-halo { position: absolute; inset: 0;
+        background: radial-gradient(900px 700px at 20% 18%, rgba(1,179,244,.16), rgba(1,179,244,0) 70%),
+                    radial-gradient(1000px 900px at 85% 80%, rgba(39,214,163,.08), rgba(39,214,163,0) 70%), #001218; }
+      #cadre-video { position: absolute; inset: 0; transform-origin: 540px 700px; }
+      .video-plein { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+      /* Plein cadre : titres en haut (au-dessus de sa tête), sous-titres en bas (sur le t-shirt) */
+      #degrade-haut { position: absolute; left: 0; right: 0; top: 0; height: 520px;
+        background: linear-gradient(to bottom, rgba(0,18,24,.72) 0%, rgba(0,18,24,.35) 55%, rgba(0,18,24,0) 100%); }
+      #degrade-bas { position: absolute; left: 0; right: 0; top: 1280px; bottom: 0;
+        background: linear-gradient(to bottom, rgba(0,18,24,0) 0%, rgba(0,18,24,.55) 45%, rgba(0,18,24,.8) 100%); }
+
+      /* Titres */
+      .titre { position: absolute; left: 0; right: 0; text-align: center; text-transform: uppercase; font-weight: 900;
+        color: #fff; letter-spacing: -0.01em; line-height: 1; text-shadow: 0 6px 24px rgba(0,18,24,.45); }
+      .ligne { display: block; }
+      .surligne { display: inline-block; position: relative; padding: 8px 24px 10px; color: var(--nuit); text-shadow: none; }
+      .surligne .fond { position: absolute; inset: 0; background: var(--bleu); border-radius: 14px; transform-origin: left center; }
+      .surligne .mot { position: relative; display: inline-block; }
+      .rubrique { position: absolute; left: 70px; top: 128px; font-size: 30px; font-weight: 700; letter-spacing: .22em; color: var(--bleu); text-transform: uppercase; }
+      .titre-g { position: absolute; left: 70px; top: 172px; width: 640px; font-size: 62px; font-weight: 900; line-height: 1.02; color: #fff; text-transform: uppercase; }
+      .titre-g .bleu { color: var(--bleu); } .titre-g .rouge { color: var(--rouge); } .titre-g .vert { color: var(--vert); }
+
+      /* Scène 7 : le logo */
+      #logo { position: absolute; left: 0; right: 0; top: 120px; display: flex; flex-direction: column; align-items: center; }
+      .icone-fc { width: 180px; height: 180px; border-radius: 42px; background: #000d12; border: 3px solid rgba(255,255,255,.18);
+        display: flex; align-items: center; justify-content: center; font-size: 120px; letter-spacing: -0.09em; line-height: 1;
+        box-shadow: 0 0 60px rgba(1,179,244,.45), 0 24px 60px rgba(0,0,0,.5); }
+      .icone-fc .f { color: var(--bleu); font-weight: 600; } .icone-fc .c { color: #fff; font-weight: 300; }
+      .marque { margin-top: 26px; font-size: 104px; line-height: 1; letter-spacing: 0.01em; position: relative; overflow: hidden; padding: 0 10px; }
+      .marque .found { color: var(--bleu); font-weight: 800; } .marque .club { color: #fff; font-weight: 400; }
+      .marque .reflet { position: absolute; top: -20%; bottom: -20%; width: 180px; left: -220px;
+        background: linear-gradient(100deg, rgba(255,255,255,0), rgba(255,255,255,.55), rgba(255,255,255,0)); }
+
+      /* Scènes 8 à 10 : le téléphone */
+      .tel { position: absolute; left: 276px; top: 350px; width: 528px; height: 1111px; border-radius: 76px; background: #081318; padding: 14px;
+        box-shadow: 0 0 0 2px rgba(1,179,244,.45), 0 0 70px rgba(1,179,244,.28), 0 40px 90px rgba(0,0,0,.6); }
+      .ecran { position: relative; width: 500px; height: 1083px; border-radius: 62px; overflow: hidden; background: #0d1a20; }
+      .capture, .extrait { position: absolute; left: 0; top: 0; width: 500px; height: 1083px; opacity: 0; }
+      .extrait video { width: 500px; height: 1083px; display: block; }
+      .etiquette { position: absolute; display: flex; align-items: center; gap: 14px; padding: 18px 30px; border-radius: 999px; background: #173844;
+        border: 3px solid var(--bleu); color: #fff; font-weight: 800; font-size: 36px; text-transform: uppercase; white-space: nowrap;
+        box-shadow: 0 0 34px rgba(1,179,244,.35), 0 18px 40px rgba(0,0,0,.45); opacity: 0; }
+      .etiquette .point { width: 18px; height: 18px; border-radius: 50%; background: var(--vert); }
+      .appui { position: absolute; width: 110px; height: 110px; margin: -55px 0 0 -55px; border-radius: 50%;
+        background: rgba(255,255,255,.28); border: 4px solid rgba(255,255,255,.85); box-shadow: 0 0 30px rgba(1,179,244,.6); opacity: 0; }
+      #cest-tout { position: absolute; left: 0; right: 0; top: 760px; text-align: center; opacity: 0; }
+      #cest-tout span { display: inline-block; padding: 18px 40px; border: 8px solid var(--vert); border-radius: 22px; color: var(--vert);
+        background: rgba(0,18,24,.82); font-weight: 900; font-size: 96px; text-transform: uppercase; transform: rotate(-8deg); }
+      #compos { position: absolute; left: 40px; top: 600px; width: 1000px; border-radius: 34px; overflow: hidden; opacity: 0;
+        box-shadow: 0 0 0 2px rgba(1,179,244,.45), 0 0 70px rgba(1,179,244,.3), 0 40px 90px rgba(0,0,0,.6); background: #eef3f2; }
+      #compos img { display: block; width: 1000px; height: auto; }
+
+      /* Scène 11 et carton final */
+      #envoie { position: absolute; left: 0; right: 0; top: 190px; display: flex; justify-content: center; }
+      #envoie .pastille { display: flex; align-items: center; gap: 18px; background: #fff; color: var(--nuit); font-weight: 900; font-size: 48px;
+        text-transform: uppercase; padding: 22px 38px; border-radius: 999px; box-shadow: 0 18px 44px rgba(0,18,24,.45); opacity: 0; }
+      #fin-voile { background: #001218; opacity: 0; }
+      #fin { position: absolute; left: 0; right: 0; top: 560px; display: flex; flex-direction: column; align-items: center; }
+      #fin .icone-fc { width: 220px; height: 220px; border-radius: 50px; font-size: 146px; }
+      #fin .marque { margin-top: 40px; font-size: 128px; }
+      #fin .phrase { margin-top: 46px; color: #fff; font-weight: 700; font-size: 50px; }
+      #fin .badges { margin-top: 44px; display: flex; gap: 34px; align-items: center; }
+      #fin .badges img { height: 110px; display: block; }
+      #fin .badges .gp { height: 144px; margin: -17px -10px; }
+      #fin .site { margin-top: 46px; color: var(--bleu); font-weight: 800; font-size: 50px; letter-spacing: .02em; }
+
+      /* Sous-titres */
+      .st { position: absolute; left: 90px; right: 90px; bottom: 290px; text-align: center; color: #fff; font-weight: 700;
+        font-size: 46px; line-height: 1.22; text-shadow: 0 3px 14px rgba(0,18,24,.9), 0 0 3px rgba(0,18,24,.8); opacity: 0; }
+
+
+      /* L'accroche, pendant l'extrait : la bulle blanche, comme une légende de story, mais aux couleurs FoundClub */
+      #accroche { position: absolute; left: 0; right: 0; top: 250px; display: flex; justify-content: center; }
+      #accroche .bulle { position: relative; background: #fff; color: var(--nuit); border-radius: 34px; padding: 26px 44px 28px;
+        font-weight: 900; font-size: 64px; line-height: 1.02; text-transform: uppercase; text-align: center;
+        box-shadow: 0 24px 60px rgba(0,0,0,.5); opacity: 0; }
+      #accroche .bulle .bleu { color: var(--bleu); }
+      #accroche .bulle::after { content: ""; position: absolute; left: 50%; margin-left: -24px; bottom: -28px; border-width: 30px 24px 0 24px;
+        border-style: solid; border-color: #fff transparent transparent transparent; }
+
+      /* Le volet bleu qui couvre le passage de l'extrait au joueur : « On a la solution ! » */
+      #volet { background: var(--bleu); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 34px; }
+      #volet .icone-fc { box-shadow: 0 24px 60px rgba(0,18,24,.35); }
+      #volet .phrase { color: var(--nuit); font-weight: 900; font-size: 104px; line-height: 0.98; text-transform: uppercase; text-align: center; }
+
+      /* Les titres du joueur, en haut, sur le mur */
+      #j-titre .surligne .mot { font-size: 66px; }
+
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="16.77" data-width="1080" data-height="1920">
+
+      <div id="fond" class="clip plein" data-start="0" data-duration="16.77" data-track-index="0"><div id="fond-halo"></div></div>
+
+      <!-- 1 — L'EXTRAIT « Dimanche prochain je vais jouer » (celui de matchs-amicaux-2, déjà mis en page) -->
+      <video id="v-reference" class="video-plein" src="medias/reference/extrait.mp4" playsinline data-has-audio="true"
+        data-start="0" data-duration="3.7333" data-track-index="1"></video>
+
+      <!-- 2 — LE JOUEUR au maillot FoundClub (la vidéo d'Adel, lue à partir de 4,25 s, après son fondu au noir) -->
+      <div id="cadre-video">
+        <video id="v-joueur" class="video-plein" src="medias/video/source.mp4" playsinline data-has-audio="true"
+          data-start="3.7333" data-media-start="4.2500" data-duration="7.2167" data-track-index="2"></video>
+      </div>
+
+      <div id="degrades" class="clip plein" data-start="3.7333" data-duration="7.2167" data-track-index="3">
+        <div id="degrade-haut"></div><div id="degrade-bas"></div>
+      </div>
+
+      <!-- L'accroche, pendant l'extrait -->
+      <div id="accroche" style="opacity: 1;"><div class="bulle">Pas de match<br /><span class="bleu">ce week-end ?</span></div></div>
+
+      <!-- Les titres du joueur -->
+      <div id="j-titre" class="titre" style="top: 150px; font-size: 66px; opacity: 0;">
+        <span class="ligne">Tu cherches</span>
+        <span class="surligne" style="margin-top: 14px;"><span class="fond"></span><span class="mot">des matchs amicaux ?</span></span>
+      </div>
+      <div id="logo" style="opacity: 0;">
+        <div class="icone-fc" style="width: 150px; height: 150px; border-radius: 36px; font-size: 100px;"><span class="f">F</span><span class="c">C</span></div>
+        <div class="marque" style="font-size: 92px;"><span class="found">FOUND</span><span class="club">CLUB</span><span class="reflet"></span></div>
+      </div>
+
+      <!-- 3 — LE TÉLÉPHONE : la navigation des matchs amicaux, sans personne à l'écran -->
+      <div id="mode-tel" class="plein" style="opacity: 0;">
+        <div id="t-rubrique" class="rubrique" style="opacity: 0;">Matchs amicaux</div>
+        <div id="t-titre" class="titre-g" style="opacity: 0; width: 940px;"><span id="t-l1" class="ligne">Trouve un adversaire</span><span id="t-l2" class="ligne bleu">pour ton équipe</span></div>
+        <div id="tel" class="tel">
+          <div class="ecran">
+            <div id="x-0" class="extrait"><video id="v-x-0" src="medias/enregistrement/x-0.mp4" muted playsinline data-start="6.883" data-duration="1.470" data-track-index="5"></video></div>
+            <div id="x-1" class="extrait"><video id="v-x-1" src="medias/enregistrement/x-1.mp4" muted playsinline data-start="8.353" data-duration="0.500" data-track-index="5"></video></div>
+            <div id="x-2" class="extrait"><video id="v-x-2" src="medias/enregistrement/x-2.mp4" muted playsinline data-start="10.623" data-duration="0.600" data-track-index="5"></video></div>
+            <div id="x-3" class="extrait"><video id="v-x-3" src="medias/enregistrement/x-3.mp4" muted playsinline data-start="11.223" data-duration="1.200" data-track-index="5"></video></div>
+            <div id="x-4" class="extrait"><video id="v-x-4" src="medias/enregistrement/x-4.mp4" muted playsinline data-start="12.423" data-duration="1.300" data-track-index="5"></video></div>
+            <img id="cap-creer" class="capture" src="medias/captures/creer-match-amical.png" alt="" />
+          </div>
+        </div>
+        <div id="tag-trouve" class="etiquette" style="left: 34px; top: 1040px;"><span class="point"></span>Trouve des matchs amicaux</div>
+        <div id="tag-publie" class="etiquette" style="right: 34px; top: 1150px;"><span class="point"></span>Publie ta propre annonce</div>
+        <div id="tag-propose" class="etiquette" style="left: 34px; top: 1290px;"><span class="point"></span>Propose un match</div>
+        <div id="tag-envoye" class="etiquette" style="right: 34px; top: 1290px;"><span class="point"></span>Proposition envoyée</div>
+        <div id="appui-amicaux" class="appui" style="left: 650px; top: 1074px;"></div>
+        <div id="appui-creer" class="appui" style="left: 540px; top: 934px;"></div>
+        <div id="appui-proposer" class="appui" style="left: 494px; top: 1152px;"></div>
+      </div>
+
+      <!-- CARTON FINAL -->
+      <div id="carton" class="clip plein" data-start="13.773" data-duration="3.00" data-track-index="9">
+        <div id="fin-voile" class="plein"></div>
+        <div id="fin">
+          <div class="icone-fc"><span class="f">F</span><span class="c">C</span></div>
+          <div class="marque"><span class="found">FOUND</span><span class="club">CLUB</span><span class="reflet"></span></div>
+          <div class="phrase">Télécharge FoundClub</div>
+          <div class="badges">
+            <img src="medias/badges/app-store.svg" alt="Download on the App Store" />
+            <img class="gp" src="medias/badges/google-play.svg" alt="Get it on Google Play" />
+          </div>
+          <div class="site">foundclub.app</div>
+        </div>
+      </div>
+
+      <!-- SOUS-TITRES -->
+      <div id="sous-titres" class="clip plein" data-start="0" data-duration="16.77" data-track-index="10">
+        <p id="st-0" class="st">« Et dimanche prochain, je vais jouer ! »</p>
+        <p id="st-1" class="st">« Je vais jouer, la tête de ma mère, que je vais jouer ! »</p>
+        <p id="st-2" class="st">Si t&#x27;es coach et que tu cherches des matchs amicaux,</p>
+        <p id="st-3" class="st">FoundClub, c&#x27;est fait pour toi.</p>
+        <p id="st-4" class="st">Télécharge l&#x27;app,</p>
+        <p id="st-5" class="st">et tu pourras trouver des matchs amicaux</p>
+        <p id="st-6" class="st">et publier ta propre annonce.</p>
+      </div>
+      <!-- Le volet bleu, entre l'extrait et le joueur : par-dessus les sous-titres, qu'il découvre en partant -->
+      <div id="volet" class="clip plein" data-start="3.400" data-duration="0.9" data-track-index="4">
+        <div class="icone-fc"><span class="f">F</span><span class="c">C</span></div>
+        <div class="phrase">On a la<br />solution !</div>
+      </div>
+
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const T = {"coach": 4.253, "cherches": 4.883, "amicaux": 5.483, "club": 6.163, "toi": 6.633, "telecharge": 7.263, "app": 7.473, "trouver": 8.403, "amicaux2": 9.073, "publier": 9.773, "annonce": 10.373};
+      const SOUS_TITRES = [[0.05, 1.62], [1.62, 3.45], [3.833, 5.633], [5.633, 6.683], [6.833, 7.593], [7.593, 9.193], [9.193, 10.473]];
+      const EXTRAITS = [{"debut": 6.883, "duree": 1.47}, {"debut": 8.353, "duree": 0.5}, {"debut": 10.623, "duree": 0.6}, {"debut": 11.223, "duree": 1.2}, {"debut": 12.423, "duree": 1.3}];
+      const VOLET = 3.400, FIN = 13.773, TEL = 6.583;
+      // Sous-titres
+      SOUS_TITRES.forEach(([debut, fin], i) => {
+        tl.fromTo(`#st-${i}`, { opacity: 0 }, { opacity: 1, duration: 0.08, ease: "none" }, debut);
+        tl.to(`#st-${i}`, { opacity: 0, duration: 0.08, ease: "none" }, fin - 0.08);
+      });
+
+      const surligner = (sel, t) => {
+        tl.fromTo(`${sel} .fond`, { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, t);
+        tl.fromTo(`${sel} .mot`, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, t + 0.1);
+      };
+      const apparaitre = (sel, t, de = { y: 40 }) => tl.fromTo(sel, { opacity: 0, ...de }, { opacity: 1, x: 0, y: 0, duration: 0.35, ease: "power3.out" }, t);
+      const etiquette = (sel, t, cote) => tl.fromTo(sel, { opacity: 0, x: cote * 160, scale: 0.8 }, { opacity: 1, x: 0, scale: 1, duration: 0.32, ease: "back.out(1.7)" }, t);
+      const appuyer = (sel, t) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.5 }, { opacity: 1, scale: 0.85, duration: 0.22, ease: "power2.out" }, t);
+        tl.to(sel, { opacity: 0, scale: 1.25, duration: 0.3, ease: "power1.in" }, t + 0.32);
+      };
+
+      // ── 1 : L'EXTRAIT — l'accroche « Pas de match ce week-end ? » ──
+      tl.fromTo("#accroche .bulle", { opacity: 0, scale: 0.5, rotation: -6 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.35, ease: "back.out(2)" }, 0.25);
+      tl.to("#accroche .bulle", { x: 10, duration: 0.05, yoyo: true, repeat: 5, ease: "none" }, 1.15);
+      tl.to("#accroche .bulle", { scale: 1.05, duration: 0.12, yoyo: true, repeat: 1 }, 3.1);
+      tl.to("#accroche .bulle", { opacity: 0, scale: 0.8, duration: 0.2 }, VOLET);
+
+      // ── LE VOLET BLEU « On a la solution ! » : il couvre le passage de l'extrait au joueur ──
+      tl.fromTo("#volet", { xPercent: 110 }, { xPercent: 0, duration: 0.24, ease: "power3.out" }, VOLET);
+      tl.fromTo("#volet .icone-fc", { opacity: 0, scale: 0.4, rotation: -12 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.3, ease: "back.out(1.8)" }, VOLET + 0.1);
+      tl.fromTo("#volet .phrase", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, VOLET + 0.15);
+      tl.to("#volet", { xPercent: -110, duration: 0.26, ease: "power3.in" }, VOLET + 0.62);
+
+      // ── 2 : LE JOUEUR — « tu cherches des matchs amicaux ? », puis FoundClub ──
+      tl.set("#j-titre", { opacity: 1 }, T.cherches - 0.45);
+      apparaitre("#j-titre .ligne", T.cherches - 0.45);
+      surligner("#j-titre", T.amicaux - 0.55);
+      tl.to("#j-titre", { opacity: 0, y: -30, duration: 0.25 }, T.club - 0.75);
+      tl.set("#logo", { opacity: 1 }, T.club - 0.6);
+      tl.fromTo("#logo .icone-fc", { opacity: 0, scale: 0.3, rotation: -12 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.45, ease: "back.out(1.8)" }, T.club - 0.6);
+      tl.fromTo("#logo .marque", { opacity: 0, y: 30, scale: 1.15 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "power3.out" }, T.club - 0.35);
+      tl.fromTo("#logo .reflet", { x: 0 }, { x: 900, duration: 0.7, ease: "power2.inOut" }, T.club + 0.05);
+
+      // ── 3 : LE TÉLÉPHONE — le joueur s'efface, l'appli prend tout l'écran ──
+      tl.to("#logo", { opacity: 0, duration: 0.3 }, TEL);
+      tl.to("#cadre-video", { scale: 0.86, opacity: 0, duration: 0.45, ease: "power2.in" }, TEL);
+      tl.to("#degrades", { opacity: 0, duration: 0.3 }, TEL);
+      tl.to("#mode-tel", { opacity: 1, duration: 0.3 }, TEL + 0.1);
+      tl.fromTo("#tel", { opacity: 0, y: 500, rotation: 6 }, { opacity: 1, y: 0, rotation: 0, duration: 0.6, ease: "power3.out" }, TEL + 0.15);
+      apparaitre("#t-rubrique", TEL + 0.45, { x: -40 });
+      tl.set("#t-titre", { opacity: 1 }, TEL + 0.55);
+      apparaitre("#t-l1", TEL + 0.55);
+      apparaitre("#t-l2", TEL + 0.85);
+      // les extraits de l'enregistrement d'écran, l'un après l'autre (le 2e finit sur l'écran « Créer un match amical », figé)
+      EXTRAITS.forEach((x, i) => {
+        tl.fromTo(`#x-${i}`, { opacity: 0 }, { opacity: 1, duration: 0.01 }, x.debut);
+        tl.to(`#x-${i}`, { opacity: 0, duration: 0.01 }, x.debut + x.duree - 0.01);
+      });
+      tl.set("#cap-creer", { opacity: 1 }, EXTRAITS[1].debut + EXTRAITS[1].duree - 0.02);
+      tl.set("#cap-creer", { opacity: 0 }, EXTRAITS[2].debut + 0.01);
+      // « tu pourras trouver des matchs amicaux et publier ta propre annonce »
+      appuyer("#appui-amicaux", T.trouver - 0.3);
+      etiquette("#tag-trouve", T.amicaux2 - 0.45, -1);
+      etiquette("#tag-publie", T.publier - 0.35, 1);
+      appuyer("#appui-creer", T.publier - 0.05);
+      tl.to("#cap-creer", { scale: 1.03, duration: 0.12, yoyo: true, repeat: 1, transformOrigin: "50% 52%" }, T.publier + 0.1);
+      // puis, sans voix : on propose un match, et c'est envoyé
+      tl.to(["#tag-trouve", "#tag-publie"], { opacity: 0, scale: 0.7, duration: 0.25, stagger: 0.04 }, EXTRAITS[2].debut - 0.15);
+      etiquette("#tag-propose", EXTRAITS[2].debut + 0.15, -1);
+      appuyer("#appui-proposer", EXTRAITS[3].debut - 0.2);
+      tl.to("#tag-propose", { opacity: 0, scale: 0.7, duration: 0.25 }, EXTRAITS[4].debut - 0.1);
+      etiquette("#tag-envoye", EXTRAITS[4].debut + 0.75, 1);   // quand « Félicitations » s'affiche
+      tl.to("#tel", { scale: 1.04, duration: 0.15, yoyo: true, repeat: 1 }, EXTRAITS[4].debut + 0.75);
+
+      // ── CARTON FINAL ──
+      tl.fromTo("#fin-voile", { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "power2.out" }, FIN);
+      tl.fromTo("#fin .icone-fc", { opacity: 0, scale: 0.3, rotation: -12 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(1.8)" }, FIN + 0.25);
+      tl.fromTo("#fin .marque", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, FIN + 0.45);
+      tl.fromTo("#fin .reflet", { x: 0 }, { x: 1100, duration: 0.8, ease: "power2.inOut" }, FIN + 0.9);
+      tl.fromTo("#fin .phrase", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, FIN + 0.8);
+      tl.fromTo("#fin .badges", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, FIN + 1.05);
+      tl.fromTo("#fin .site", { opacity: 0 }, { opacity: 1, duration: 0.4 }, FIN + 1.3);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

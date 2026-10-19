@@ -40,3 +40,9 @@ matchs-amicaux-2/rendus/*-brut.mp4
 matchs-amicaux-2/rendus/apercu-*.mp4
 # vidéo de référence d'un tiers : seul l'extrait mis en page (matchs-amicaux-2/medias/reference/extrait.mp4) est versionné
 a-monter/reference-*.mp4
+# matchs-amicaux-3 : fichiers regenerables (outils/preparer-video.sh, outils/assembler.py)
+matchs-amicaux-3/medias/video/source.mp4
+matchs-amicaux-3/medias/enregistrement/
+matchs-amicaux-3/snapshots/
+matchs-amicaux-3/rendus/*-brut.mp4
+matchs-amicaux-3/rendus/apercu-*.mp4

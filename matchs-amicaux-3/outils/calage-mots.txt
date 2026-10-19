@@ -1,0 +1,15 @@
+           coach : fini a   4.77 s
+        cherches : fini a   5.40 s
+         amicaux : fini a   6.00 s
+           found : introuvable dans [3.65, 11.47] -> si t'es coach et que tu cherches des matchs amicaux, fan club c'est fait pour toi. telecharge l'app et tu pourras trouver des matchs amicaux et publier ta propre annonce.
+             toi : fini a   7.15 s
+      telecharge : fini a   7.78 s
+             app : fini a   7.99 s
+         trouver : fini a   8.92 s
+         amicaux : fini a   8.37 s
+         publier : fini a  10.29 s
+         annonce : fini a  10.89 s
+fini
+            club : fini a   6.68 s
+         amicaux : fini a   9.59 s
+# amicaux (2e) : la ligne « 8,37 s » est le 1er « amicaux » retrouvé ; le 2e est mesuré à part, 9,59 s. found -> « club » (Whisper entend « fan club »).

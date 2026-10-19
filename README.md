@@ -217,3 +217,17 @@ Fabriquer : `cd matchs-amicaux-2 ; outils/preparer-video.sh ; outils/rendre.sh m
 - **Les droits de l'extrait de référence** : c'est le contenu d'un tiers, dans une vidéo de marque.
 - **« Licence jusqu'à 550 € »** : c'est ach10 qui le dit. La première vidéo disait 350 €.
 - la mention « Collaboration commerciale », si ach10 est rémunéré pour cette vidéo.
+
+## `matchs-amicaux-3/` — « Pas de match ce week-end ? » (l'extrait, le joueur au maillot FoundClub, l'appli)
+
+Vidéo verticale courte (environ 17 s), à partir de la vidéo d'Adel `a-monter/matchs-amicaux-ref.mp4` (11,5 s, 2160×3840 à 60 i/s). On y voit l'extrait « Dimanche prochain je vais jouer », puis un joueur en maillot FoundClub qui parle aux coachs. Le montage d'origine portait la légende « Pas de match ce weekend ? On a la solution ! ». Les 5 temps :
+1. **L'extrait** (0–3,7 s) : celui de `matchs-amicaux-2/medias/reference/extrait.mp4`, avec ses sous-titres. L'accroche « Pas de match ce week-end ? » est dans une bulle blanche en haut.
+2. **Le volet bleu « On a la solution ! »** (3,4–4,3 s), avec l'icône FC. Il couvre le passage au joueur et le fondu au noir de la vidéo d'Adel : on lit le joueur à partir de 4,25 s.
+3. **Le joueur** : « Tu cherches des matchs amicaux ? », puis le logo FoundClub sur « FoundClub, c'est fait pour toi ».
+4. **L'appli, sans personne à l'écran** (à partir de « Télécharge l'app ») : l'enregistrement d'écran de `matchs-amicaux/` dans le téléphone.
+   - « trouver des matchs amicaux » : appui sur la carte « Matchs amicaux ».
+   - « publier ta propre annonce » : appui sur « + Créer un match amical ».
+   - Puis, sans voix : « Proposer un match », le formulaire, et « Félicitations, proposition envoyée ! ».
+5. **Le carton final** FoundClub.
+
+Fabriquer : `cd matchs-amicaux-3 ; outils/preparer-video.sh ; outils/rendre.sh <nom> 18`. `calage.json` est dans le temps de la vidéo d'Adel ; l'assembleur le décale (le joueur commence à 3,733 s dans le montage).

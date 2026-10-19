@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="gsap.min.js"></script>
+    <style>
+/*POLICES*/
+/*STYLES*/
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="__DUREE__" data-width="1080" data-height="1920">
+
+      <div id="fond" class="clip plein" data-start="0" data-duration="__DUREE__" data-track-index="0"><div id="fond-halo"></div></div>
+
+      <!-- 1 — L'EXTRAIT « Dimanche prochain je vais jouer » (celui de matchs-amicaux-2, déjà mis en page) -->
+      <video id="v-reference" class="video-plein" src="medias/reference/extrait.mp4" playsinline data-has-audio="true"
+        data-start="0" data-duration="__DUREE_EXTRAIT__" data-track-index="1"></video>
+
+      <!-- 2 — LE JOUEUR au maillot FoundClub (la vidéo d'Adel, lue à partir de 4,25 s, après son fondu au noir) -->
+      <div id="cadre-video">
+        <video id="v-joueur" class="video-plein" src="medias/video/source.mp4" playsinline data-has-audio="true"
+          data-start="__DEBUT_JOUEUR__" data-media-start="__MEDIA_JOUEUR__" data-duration="__DUREE_JOUEUR__" data-track-index="2"></video>
+      </div>
+
+      <div id="degrades" class="clip plein" data-start="__DEBUT_JOUEUR__" data-duration="__DUREE_JOUEUR__" data-track-index="3">
+        <div id="degrade-haut"></div><div id="degrade-bas"></div>
+      </div>
+
+      <!-- L'accroche, pendant l'extrait -->
+      <div id="accroche" style="opacity: 1;"><div class="bulle">Pas de match<br /><span class="bleu">ce week-end ?</span></div></div>
+
+      <!-- Les titres du joueur -->
+      <div id="j-titre" class="titre" style="top: 150px; font-size: 66px; opacity: 0;">
+        <span class="ligne">Tu cherches</span>
+        <span class="surligne" style="margin-top: 14px;"><span class="fond"></span><span class="mot">des matchs amicaux ?</span></span>
+      </div>
+      <div id="logo" style="opacity: 0;">
+        <div class="icone-fc" style="width: 150px; height: 150px; border-radius: 36px; font-size: 100px;"><span class="f">F</span><span class="c">C</span></div>
+        <div class="marque" style="font-size: 92px;"><span class="found">FOUND</span><span class="club">CLUB</span><span class="reflet"></span></div>
+      </div>
+
+      <!-- 3 — LE TÉLÉPHONE : la navigation des matchs amicaux, sans personne à l'écran -->
+      <div id="mode-tel" class="plein" style="opacity: 0;">
+        <div id="t-rubrique" class="rubrique" style="opacity: 0;">Matchs amicaux</div>
+        <div id="t-titre" class="titre-g" style="opacity: 0; width: 940px;"><span id="t-l1" class="ligne">Trouve un adversaire</span><span id="t-l2" class="ligne bleu">pour ton équipe</span></div>
+        <div id="tel" class="tel">
+          <div class="ecran">
+<!--EXTRAITS-->
+            <img id="cap-creer" class="capture" src="medias/captures/creer-match-amical.png" alt="" />
+          </div>
+        </div>
+        <div id="tag-trouve" class="etiquette" style="left: 34px; top: 1040px;"><span class="point"></span>Trouve des matchs amicaux</div>
+        <div id="tag-publie" class="etiquette" style="right: 34px; top: 1150px;"><span class="point"></span>Publie ta propre annonce</div>
+        <div id="tag-propose" class="etiquette" style="left: 34px; top: 1290px;"><span class="point"></span>Propose un match</div>
+        <div id="tag-envoye" class="etiquette" style="right: 34px; top: 1290px;"><span class="point"></span>Proposition envoyée</div>
+        <div id="appui-amicaux" class="appui" style="left: __APPUI_AMICAUX__;"></div>
+        <div id="appui-creer" class="appui" style="left: __APPUI_CREER__;"></div>
+        <div id="appui-proposer" class="appui" style="left: __APPUI_PROPOSER__;"></div>
+      </div>
+
+      <!-- CARTON FINAL -->
+      <div id="carton" class="clip plein" data-start="__FIN__" data-duration="__DUREE_CARTON__" data-track-index="9">
+        <div id="fin-voile" class="plein"></div>
+        <div id="fin">
+          <div class="icone-fc"><span class="f">F</span><span class="c">C</span></div>
+          <div class="marque"><span class="found">FOUND</span><span class="club">CLUB</span><span class="reflet"></span></div>
+          <div class="phrase">Télécharge FoundClub</div>
+          <div class="badges">
+            <img src="medias/badges/app-store.svg" alt="Download on the App Store" />
+            <img class="gp" src="medias/badges/google-play.svg" alt="Get it on Google Play" />
+          </div>
+          <div class="site">foundclub.app</div>
+        </div>
+      </div>
+
+      <!-- SOUS-TITRES -->
+      <div id="sous-titres" class="clip plein" data-start="0" data-duration="__DUREE__" data-track-index="10">
+<!--SOUSTITRES-->
+      </div>
+      <!-- Le volet bleu, entre l'extrait et le joueur : par-dessus les sous-titres, qu'il découvre en partant -->
+      <div id="volet" class="clip plein" data-start="__VOLET_DEBUT__" data-duration="__VOLET_DUREE__" data-track-index="4">
+        <div class="icone-fc"><span class="f">F</span><span class="c">C</span></div>
+        <div class="phrase">On a la<br />solution !</div>
+      </div>
+
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const T = /*T*/;
+      const SOUS_TITRES = /*ST*/;
+      const EXTRAITS = /*EXTRAITS*/;
+      const VOLET = __VOLET_DEBUT__, FIN = __FIN__, TEL = __TEL__;
+/*JS*/
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
