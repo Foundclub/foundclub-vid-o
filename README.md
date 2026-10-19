@@ -238,7 +238,7 @@ Fabriquer : `cd matchs-amicaux-3 ; outils/preparer-video.sh ; outils/rendre.sh m
 
 ## `matchs-amicaux-4/` — la Toussaint et la nouvelle fonctionnalité (deux joueurs en maillot FoundClub)
 
-Vidéo verticale d'environ 24,5 s, à partir de `a-monter/matchs-amicaux-4.mp4`. C'est la vidéo d'Adel, déjà montée : un gros plan d'ouverture et des coupes entre deux joueurs. Elle a été réduite en 1080×1920 à 30 i/s sur son PC pour passer sous les 100 Mo.
+Vidéo verticale de **24,5 s** (1080×1920, 30 images/s, son à -14,1 LUFS), validée par Adel le 19/10/2026 (« ok go rendu », sur la v1) : `matchs-amicaux-4/rendus/matchs-amicaux-4-final.mp4`, identique octet pour octet à `apercu-v1.mp4`. Elle part de `a-monter/matchs-amicaux-4.mp4`. C'est la vidéo d'Adel, déjà montée : un gros plan d'ouverture et des coupes entre deux joueurs. Elle a été réduite en 1080×1920 à 30 i/s sur son PC pour passer sous les 100 Mo.
 
 Les 6 temps, calés sur la voix :
 1. « 2026 » en grand, puis « Des coachs qui galèrent pendant des heures » en rouge.
@@ -248,4 +248,6 @@ Les 6 temps, calés sur la voix :
 5. Retour aux joueurs : « Coach, trouve ton prochain match ».
 6. « Envoie-la à ton coach », puis le carton final.
 
-Fabriquer : `cd matchs-amicaux-4 ; outils/preparer-video.sh ; outils/rendre.sh <nom> 18`.
+Fabriquer : `cd matchs-amicaux-4 ; outils/preparer-video.sh ; outils/rendre.sh matchs-amicaux-4-final 18`.
+
+À revérifier avant de publier : l'accord des deux joueurs filmés, et que la fonctionnalité matchs amicaux est bien ouverte dans l'app le jour de la publication (« on vient d'ouvrir une nouvelle fonctionnalité »).
