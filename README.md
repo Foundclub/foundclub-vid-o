@@ -251,3 +251,17 @@ Les 6 temps, calés sur la voix :
 Fabriquer : `cd matchs-amicaux-4 ; outils/preparer-video.sh ; outils/rendre.sh matchs-amicaux-4-final 18`.
 
 À revérifier avant de publier : l'accord des deux joueurs filmés, et que la fonctionnalité matchs amicaux est bien ouverte dans l'app le jour de la publication (« on vient d'ouvrir une nouvelle fonctionnalité »).
+
+## `miniatures/bourbier-r3/` — la miniature YouTube « Match bourbier » d'ach10
+
+Miniature de l'épisode « Match bourbier contre cette R3 » (Coupe de France, 3ᵉ tour, chaîne Achh10), validée par Adel le 23/10/2026 (« garde celle de base ») : `miniatures/bourbier-r3/rendus/miniature-bourbier-r3.jpg`, 1280×720, 225 Ko (YouTube accepte jusqu'à 2 Mo). Elle remplace une version faite par ChatGPT, qui faisait « IA » (faux joueurs, faux maillot rouge, logo redessiné). Ici, rien n'est généré par IA : tout vient de l'épisode.
+
+- Fond : la vue de drone à 15:12 (912 s) de l'épisode, recadrée pour enlever le tableau d'affichage. On y voit le terrain pelé.
+- Achraf : détouré dans l'épisode à 7:08 (428 s) avec `npx hyperframes remove-background`. Un bout de fauteuil rouge derrière la nuque a été retiré à la main.
+- Le blason Coupe de France officiel (envoyé par Adel), l'étiquette « CHAMP DE PATATE » et sa flèche, le titre « MATCH BOURBIER » en Anton (licence OFL).
+- Le coin en bas à droite reste libre pour la durée affichée par YouTube. La miniature passe le test de lecture à 120 px de large.
+
+L'épisode est dans `a-monter/bourbier/partie-*.mp4` : 12 morceaux de 2 minutes, pour passer sous la limite de 100 Mo de GitHub. Pour le recoller :
+`for f in a-monter/bourbier/partie-*.mp4; do echo "file '$PWD/$f'"; done > liste.txt ; ffmpeg -f concat -safe 0 -i liste.txt -c copy episode.mp4`.
+
+Fabriquer : `cd miniatures/bourbier-r3 ; node outils/rendre.mjs index.html rendus/miniature.png ; ffmpeg -i rendus/miniature.png -q:v 2 rendus/miniature-bourbier-r3.jpg`.

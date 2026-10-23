@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<style>
+  @font-face { font-family: "Anton"; src: url("polices/anton-latin-400-normal.woff2") format("woff2"); }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 720px; overflow: hidden; background: #111; }
+  #cadre { position: relative; width: 1280px; height: 720px; overflow: hidden; }
+
+  /* Fond : la vue de drone de l'épisode à 15:12 (912 s), le terrain pelé */
+  #match { position: absolute; inset: 0;
+    background: url(medias/fond-terrain.jpg) center / cover; filter: contrast(1.08) saturate(1.12); }
+  /* Assombrit le bas et la gauche : le titre et Achraf se détachent */
+  #voile { position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,.7) 100%),
+                linear-gradient(90deg, rgba(0,0,0,.6) 0%, rgba(0,0,0,0) 38%); }
+
+  /* Achraf, détouré dans l'épisode à 7:08 (428 s), avec le liseré blanc des miniatures */
+  #achraf { position: absolute; left: -696px; top: -79px; width: 1824px; -webkit-mask-image: linear-gradient(180deg, #000 82%, transparent 97%);
+    filter: drop-shadow(5px 0 0 #fff) drop-shadow(-5px 0 0 #fff) drop-shadow(0 5px 0 #fff) drop-shadow(0 -5px 0 #fff)
+            drop-shadow(0 14px 28px rgba(0,0,0,.65)); }
+
+  /* Le titre, sur deux couleurs */
+  #titre { position: absolute; left: 384px; top: 520px; font: 400 128px/1 "Anton"; letter-spacing: 1px; transform: rotate(-2deg);
+    transform-origin: left center; white-space: nowrap;
+    -webkit-text-stroke: 12px #000; paint-order: stroke fill; text-shadow: 0 8px 0 #000; }
+  #titre .blanc { color: #fff; } #titre .jaune { color: #ffd400; }
+
+  /* « Champ de patate » et la flèche qui pointe la pelouse pelée */
+  #etiquette { position: absolute; right: 40px; top: 34px; background: #e30613; color: #fff; padding: 10px 22px 14px;
+    font: 400 62px/1 "Anton"; text-align: center; transform: rotate(3deg); border: 5px solid #fff;
+    box-shadow: 0 10px 24px rgba(0,0,0,.5); }
+  #fleche { position: absolute; left: 0; top: 0; }
+
+  #cdf { position: absolute; left: 650px; top: 22px; height: 130px; filter: drop-shadow(0 8px 18px rgba(0,0,0,.6)); }
+  /* La durée affichée par YouTube : ce coin reste libre */
+  #duree { position: absolute; right: 8px; bottom: 8px; background: rgba(0,0,0,.8); color: #fff; padding: 3px 6px;
+    font: 600 22px/1 sans-serif; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div id="cadre">
+  <div id="match"></div>
+  <div id="voile"></div>
+  <svg id="fleche" width="1280" height="720" viewBox="0 0 1280 720">
+    <path d="M1010 196 C 1000 300, 930 370, 830 390" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" />
+    <path d="M846 354 L 822 391 L 862 418" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M1010 196 C 1000 300, 930 370, 830 390" fill="none" stroke="#e30613" stroke-width="10" stroke-linecap="round" />
+    <path d="M846 354 L 822 391 L 862 418" fill="none" stroke="#e30613" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+  <img id="achraf" src="medias/achraf-ep-net.png" alt="" />
+  <img id="cdf" src="medias/cdf-blason.png" alt="" />
+  <div id="etiquette">CHAMP<br>DE PATATE</div>
+  <div id="titre"><span class="blanc">MATCH </span><span class="jaune">BOURBIER</span></div>
+  <div id="duree">22:39</div>
+</div>
+</body>
+</html>
