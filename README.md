@@ -274,4 +274,11 @@ Même méthode que `youtube-clips/` (épisode #41) : transcription locale, planc
 
 Les extraits 01 à 05 et 12 (l'histoire d'Achraf en Coupe de France) sont faits d'images télé (Eurosport, France 3) : la voix est la sienne, les images non.
 
-Refaire : `cd clips-bourbier ; outils/recoller.sh ; python3 -I outils/exporter.py [numéros]`. Habiller un clip (accroche, sous-titres mot à mot, carton) : reprendre le gabarit de `youtube-clips/habillage/`.
+Refaire les extraits : `cd clips-bourbier ; outils/recoller.sh ; python3 -I outils/exporter.py [numéros]`.
+
+**Les 21 clips habillés** (23/10/2026, Adel : « on va tous les habiller car on va en publier au moins 2 par jour ») : `clips-bourbier/habillage/rendus/clip-NN-tiktok.mp4`, 1080×1920, 19 à 59 s, son entre -14,5 et -14,0 LUFS, crêtes sous -1,5 dBFS. Ordre de publication sur 11 jours : `clips-bourbier/CALENDRIER.md`.
+- Gabarit repris de `youtube-clips/habillage/` : accroche en haut, vidéo carrée, barre de progression, sous-titres jaunes mot à mot, carton final avec la miniature et le titre « #42 Match piège pour notre entrée en Coupe de France ! ».
+- Deux formats (`format` dans `habillage/clips/NN.json`) : `carre` suit la personne qui parle (07, 08, 10, 20, repères posés à la main) ; `large` montre l'image entière en 16:9 sur fond flou (match, drone, montages).
+- Les fiches sont écrites par `habillage/outils/fiches.py` (accroches, phrases corrigées à la main, cadrage). Dans les causeries du coach, seules les phrases reconnues avec certitude sont sous-titrées.
+- Fabriquer : `cd clips-bourbier/habillage ; python3 -I outils/fiches.py ; outils/rendre-tout.sh [NN …]`.
+- Son : un limiteur suréchantillonné à -3 dB et un fondu de 50 ms au début (la première trame claquait à +1,7 dBFS).
