@@ -257,7 +257,7 @@ Fabriquer : `cd matchs-amicaux-4 ; outils/preparer-video.sh ; outils/rendre.sh m
 Miniature de l'épisode « Match bourbier contre cette R3 » (Coupe de France, 3ᵉ tour, chaîne Achh10), validée par Adel le 23/10/2026 (« garde celle de base ») : `miniatures/bourbier-r3/rendus/miniature-bourbier-r3.jpg`, 1280×720, 225 Ko (YouTube accepte jusqu'à 2 Mo). Elle remplace une version faite par ChatGPT, qui faisait « IA » (faux joueurs, faux maillot rouge, logo redessiné). Ici, rien n'est généré par IA : tout vient de l'épisode.
 
 - Fond : la vue de drone à 15:12 (912 s) de l'épisode, recadrée pour enlever le tableau d'affichage. On y voit le terrain pelé.
-- Achraf : détouré dans l'épisode à 7:08 (428 s) avec `npx hyperframes remove-background`. Un bout de fauteuil rouge derrière la nuque a été retiré à la main.
+- Achraf : la photo en maillot Coupe de France envoyée par Adel le 23/10/2026 (`a-monter/bourbier/achraf-maillot-cdf.jpg`), détourée avec `npx hyperframes remove-background`. La première version prenait son visage dans l'épisode à 7:08 (`medias/achraf-ep-net.png`, gardé).
 - Le blason Coupe de France officiel (envoyé par Adel), l'étiquette « CHAMP DE PATATE » et sa flèche, le titre « MATCH BOURBIER » en Anton (licence OFL).
 - Le coin en bas à droite reste libre pour la durée affichée par YouTube. La miniature passe le test de lecture à 120 px de large.
 
