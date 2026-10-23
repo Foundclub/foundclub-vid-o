@@ -13,10 +13,23 @@ VERTICAL = ("[0:v]split=2[bg][fg];[bg]scale=270:480:force_original_aspect_ratio=
 def lancer(cmd):
     return subprocess.run(cmd, check=True, capture_output=True, text=True)
 
+def recoller_morceaux(c):
+    """Un extrait en plusieurs morceaux (les 3 buts) : on les recolle d'abord dans un fichier à part."""
+    brut = RACINE / "source" / f"clip-{c['numero']:02}-morceaux.mkv"
+    entrees = [a for x, y in c["morceaux"] for a in ("-ss", str(x), "-t", str(round(y - x, 3)), "-i", str(SOURCE))]
+    k = len(c["morceaux"])
+    lancer(["ffmpeg", "-v", "error", "-y", *entrees, "-filter_complex", "".join(f"[{i}:v][{i}:a]" for i in range(k)) +
+            f"concat=n={k}:v=1:a=1[v][a]", "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "14", "-preset", "fast",
+            "-c:a", "pcm_s16le", "-f", "matroska", str(brut)])
+    return brut
+
 def exporter(c):
+    source = SOURCE
+    if "morceaux" in c:
+        source, c = recoller_morceaux(c), {**c, "debut": 0, "fin": c["duree"]}
     n, debut, d = c["numero"], c["debut"], round(c["fin"] - c["debut"], 3)
     fondu = f"afade=t=in:st=0:d=0.03,afade=t=out:st={d - .03:.3f}:d=0.03"
-    mesure = lancer(["ffmpeg", "-hide_banner", "-ss", str(debut), "-i", str(SOURCE), "-t", str(d), "-vn", "-af",
+    mesure = lancer(["ffmpeg", "-hide_banner", "-ss", str(debut), "-i", str(source), "-t", str(d), "-vn", "-af",
                      fondu + ",loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json", "-f", "null", "-"]).stderr
     m = json.loads(mesure[mesure.rindex("{"):])
     loud = (f"loudnorm=I=-14:TP=-1.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}"
@@ -24,7 +37,7 @@ def exporter(c):
     for dossier, filtre, nom in (("horizontal", "[0:v]scale=1920:1080,setsar=1[v]", f"clip-{n:02}.mp4"),
                                  ("vertical", VERTICAL, f"clip-{n:02}-9x16.mp4")):
         (RACINE / dossier).mkdir(exist_ok=True)
-        lancer(["ffmpeg", "-v", "error", "-y", "-ss", str(debut), "-i", str(SOURCE), "-t", str(d), "-filter_complex", filtre,
+        lancer(["ffmpeg", "-v", "error", "-y", "-ss", str(debut), "-i", str(source), "-t", str(d), "-filter_complex", filtre,
                 "-map", "[v]", "-map", "0:a:0", "-af", fondu + "," + loud, "-ar", "48000", "-c:a", "aac", "-b:a", "192k",
                 "-c:v", "libx264", "-crf", "18", "-preset", "fast", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
                 str(RACINE / dossier / nom)])
@@ -32,7 +45,7 @@ def exporter(c):
     lancer(["ffmpeg", "-v", "error", "-y", "-i", str(RACINE / "horizontal" / f"clip-{n:02}.mp4"), "-vf",
             f"fps=8/{d},scale=400:225,tile=4x2:nb_frames=8:padding=4:margin=4", "-frames:v", "1", "-q:v", "3",
             str(RACINE / "planches" / f"clip-{n:02}.jpg")])
-    print(f"clip {n:02} : {debut:.2f}-{c['fin']:.2f} s ({d:.1f} s) — {c['titre']}")
+    print(f"clip {n:02} : {d:.1f} s — {c['titre']}")
 
 extraits = json.load(open(RACINE / "extraits.json", encoding="utf-8"))
 voulus = {int(a) for a in sys.argv[1:]}
