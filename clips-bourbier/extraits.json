@@ -193,5 +193,172 @@
    "Accord des personnes visibles et droits de réutilisation : non confirmés"
   ],
   "texte_transcrit": "Pour notre part, victoire assez facile, 3 buts à 0. Direction le 4e tour de la Coupe des France. Et la semaine prochaine, Gros derby face à la réserve du MHSC. Après deux défaites en championnat, Victoire obligatoire pour nous. A suivre au prochain épisode."
+ },
+ {
+  "numero": 12,
+  "debut": 0.0,
+  "fin": 28.85,
+  "duree": 28.85,
+  "titre": "« Unique. Magique. Exceptionnel. »",
+  "accroche": "Unique. Magique. Exceptionnel. Émouvante.",
+  "note_sur_10": 7.0,
+  "theme": "Émotion, ouverture",
+  "pourquoi_ca_marche": "Une suite de mots forts sur des images de légende de la Coupe : bonne accroche visuelle",
+  "risques": [
+   "Images d'archives de diffuseurs télé (France 3, Eurosport, beIN…) : droits non détenus, la voix est celle d'Achraf",
+   "Accord des personnes visibles et droits de réutilisation : non confirmés"
+  ],
+  "texte_transcrit": "unique Magique Exceptionnel. Émouvante. Vibrante bouleversante grandiose Voilà quelques mots qui pourraient définir la coupe de France. Mais en réalité, je crois qu'aucun mot ne suffit à décrire ce que cette compétition peut nous faire ressentir."
+ },
+ {
+  "numero": 13,
+  "debut": 612.2,
+  "fin": 664.8,
+  "duree": 52.6,
+  "titre": "L'entraînement du vendredi",
+  "accroche": "(images d'entraînement, pas de parole)",
+  "note_sur_10": 6.0,
+  "theme": "Coulisses",
+  "pourquoi_ca_marche": "Vue de drone de la séquence de jeu de la veille, puis le groupe réuni",
+  "risques": [
+   "Pas de parole, musique de montage sous les images : droits de la musique à vérifier, il faudra une accroche écrite",
+   "Accord des personnes visibles et droits de réutilisation : non confirmés"
+  ],
+  "texte_transcrit": ""
+ },
+ {
+  "numero": 14,
+  "debut": 779.0,
+  "fin": 831.0,
+  "duree": 52.0,
+  "titre": "L'entrée des joueurs",
+  "accroche": "(couloir, entrée sur le terrain, composition, coup d'envoi)",
+  "note_sur_10": 7.4,
+  "theme": "Coulisses, avant-match",
+  "pourquoi_ca_marche": "Le couloir avec les arbitres, l'entrée avec les enfants, la composition, le coup d'envoi vu du drone",
+  "risques": [
+   "Pas de parole, musique de montage sous les images : droits de la musique à vérifier, il faudra une accroche écrite",
+   "Enfants visibles : accord des parents",
+   "Accord des personnes visibles et droits de réutilisation : non confirmés"
+  ],
+  "texte_transcrit": ""
+ },
+ {
+  "numero": 15,
+  "debut": 874.0,
+  "fin": 914.0,
+  "duree": 40.0,
+  "titre": "Le champ de patate vu du drone",
+  "accroche": "(vue de drone du terrain pelé, pas de parole)",
+  "note_sur_10": 8.2,
+  "theme": "Le terrain, humour",
+  "pourquoi_ca_marche": "La preuve en images du « champ de patate » : à coupler avec la phrase du président (clip 10) ou la miniature",
+  "risques": [
+   "Pas de parole, musique de montage sous les images : droits de la musique à vérifier, il faudra une accroche écrite",
+   "Accord des personnes visibles et droits de réutilisation : non confirmés"
+  ],
+  "texte_transcrit": ""
+ },
+ {
+  "numero": 16,
+  "debut": 1036.0,
+  "fin": 1060.5,
+  "duree": 24.5,
+  "titre": "Le premier but",
+  "accroche": "(action, but, célébration, ralenti)",
+  "note_sur_10": 7.8,
+  "theme": "Action",
+  "pourquoi_ca_marche": "Le 1-0 de Naït Imaghran avec sa célébration et son ralenti",
+  "risques": [
+   "Pas de parole, musique de montage sous les images : droits de la musique à vérifier, il faudra une accroche écrite",
+   "Chevauche le clip 09 (les 3 buts) : ne pas publier les deux ensemble",
+   "Accord des personnes visibles et droits de réutilisation : non confirmés"
+  ],
+  "texte_transcrit": ""
+ },
+ {
+  "numero": 17,
+  "debut": 1066.0,
+  "fin": 1099.5,
+  "duree": 33.5,
+  "titre": "Le deuxième but",
+  "accroche": "(action, but, célébration, ralenti)",
+  "note_sur_10": 7.8,
+  "theme": "Action",
+  "pourquoi_ca_marche": "Le 2-0 avec sa célébration et son ralenti",
+  "risques": [
+   "Pas de parole, musique de montage sous les images : droits de la musique à vérifier, il faudra une accroche écrite",
+   "Chevauche le clip 09 (les 3 buts) : ne pas publier les deux ensemble",
+   "Accord des personnes visibles et droits de réutilisation : non confirmés"
+  ],
+  "texte_transcrit": ""
+ },
+ {
+  "numero": 18,
+  "debut": 1150.0,
+  "fin": 1181.5,
+  "duree": 31.5,
+  "titre": "Le troisième but",
+  "accroche": "(action, but, ralenti)",
+  "note_sur_10": 7.8,
+  "theme": "Action",
+  "pourquoi_ca_marche": "Le 3-0 de Camara qui tue le match, avec son ralenti",
+  "risques": [
+   "Pas de parole, musique de montage sous les images : droits de la musique à vérifier, il faudra une accroche écrite",
+   "Chevauche le clip 09 (les 3 buts) : ne pas publier les deux ensemble",
+   "Accord des personnes visibles et droits de réutilisation : non confirmés"
+  ],
+  "texte_transcrit": ""
+ },
+ {
+  "numero": 19,
+  "debut": 1199.0,
+  "fin": 1223.4,
+  "duree": 24.4,
+  "titre": "Le coup de sifflet final",
+  "accroche": "(fin du match, joueurs et enfants)",
+  "note_sur_10": 7.0,
+  "theme": "Émotion, qualification",
+  "pourquoi_ca_marche": "La qualification pour le 4e tour, les joueurs avec les enfants du club",
+  "risques": [
+   "Pas de parole, musique de montage sous les images : droits de la musique à vérifier, il faudra une accroche écrite",
+   "Enfants visibles : accord des parents",
+   "Accord des personnes visibles et droits de réutilisation : non confirmés"
+  ],
+  "texte_transcrit": ""
+ },
+ {
+  "numero": 20,
+  "debut": 958.7,
+  "fin": 979.3,
+  "duree": 20.6,
+  "titre": "« Pas de panique, 0-0 »",
+  "accroche": "Ça va passer, pas de panique",
+  "note_sur_10": 7.9,
+  "theme": "Causerie de la mi-temps, version courte",
+  "pourquoi_ca_marche": "Les 20 premières secondes de la causerie : format court pour TikTok et Shorts",
+  "risques": [
+   "Chevauche le clip 08 : choisir l'un ou l'autre",
+   "Accord des joueurs visibles dans le vestiaire",
+   "Accord des personnes visibles et droits de réutilisation : non confirmés"
+  ],
+  "texte_transcrit": "Oh, c'est le héros ! ça va passer, pas de panique Toujours en équipe, 26, 27, tu veilles ça ? Allez, 1 minute encore, s'il faut porter le sable, il faut le faire. On retourne chez eux ! Derrière, 0-0. Allez, c'est le premier match pour les gagner comme ça les gars !"
+ },
+ {
+  "numero": 21,
+  "debut": 1283.0,
+  "fin": 1316.0,
+  "duree": 33.0,
+  "titre": "Dans le prochain épisode : le derby",
+  "accroche": "C'est important pour nous",
+  "note_sur_10": 6.5,
+  "theme": "Teaser",
+  "pourquoi_ca_marche": "Annonce le derby contre la réserve du MHSC : à publier juste avant l'épisode suivant",
+  "risques": [
+   "Images du prochain épisode, pas de celui-ci",
+   "Plusieurs phrases peu intelligibles sous la musique",
+   "Accord des personnes visibles et droits de réutilisation : non confirmés"
+  ],
+  "texte_transcrit": "A suivre au prochain épisode. C'est important pour nous à Bayer, pour le mieux. On l'attendait depuis longtemps. Je ne sais pas parler longtemps. C'est un peu plus. Il faut tout donner. La merde, moi. 2 bonhine de ce que je suis là J'en ai rien à foutre si je dois sauter, je m'amboile, je veux quand on joue."
  }
 ]
