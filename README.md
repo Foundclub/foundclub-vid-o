@@ -270,8 +270,8 @@ Fabriquer : `cd miniatures/bourbier-r3 ; node outils/rendre.mjs index.html rendu
 
 Même méthode que `youtube-clips/` (épisode #41) : transcription locale, planches, sélection, découpe. L'épisode (22:39) vient de `a-monter/bourbier/` ; Montpellier Atlas Paillade, l'équipe d'Achraf, y bat Saint-Orens (R3) 3-0 au 3ᵉ tour de la Coupe de France.
 
-**11 extraits** (16 à 56 s), chacun en `horizontal/clip-NN.mp4` (1920×1080) et en brouillon `vertical/clip-NN-9x16.mp4` (1080×1920, fond flou), son à -14 LUFS. Classement, notes et risques dans `clips-bourbier/RAPPORT.md` ; bornes et textes dans `extraits.json`. Les meilleurs : 10 « Un champ de patate ! » (le président), 04 « 10 000 personnes à la Mosson », 08 la causerie de la mi-temps sur l'état du terrain, 07 la causerie d'avant-match, 09 les 3 buts.
+**21 extraits** (16 à 56 s), chacun en `horizontal/clip-NN.mp4` (1920×1080) et en brouillon `vertical/clip-NN-9x16.mp4` (1080×1920, fond flou), son à -14 LUFS. Classement, notes et risques dans `clips-bourbier/RAPPORT.md` ; bornes et textes dans `extraits.json`. Les meilleurs : 10 « Un champ de patate ! » (le président), 04 « 10 000 personnes à la Mosson », 08 la causerie de la mi-temps sur l'état du terrain, 07 la causerie d'avant-match, 09 les 3 buts, 15 le terrain pelé vu du drone. Les 10 derniers (12 à 21) ajoutent les moments sans parole : chaque but seul, l'entrée des joueurs, le coup de sifflet final, l'entraînement, la bande-annonce du prochain épisode.
 
-Les extraits 01 à 05 (l'histoire d'Achraf en Coupe de France) sont faits d'images télé (Eurosport, France 3) : la voix est la sienne, les images non.
+Les extraits 01 à 05 et 12 (l'histoire d'Achraf en Coupe de France) sont faits d'images télé (Eurosport, France 3) : la voix est la sienne, les images non.
 
 Refaire : `cd clips-bourbier ; outils/recoller.sh ; python3 -I outils/exporter.py [numéros]`. Habiller un clip (accroche, sous-titres mot à mot, carton) : reprendre le gabarit de `youtube-clips/habillage/`.
