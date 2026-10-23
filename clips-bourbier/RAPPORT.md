@@ -28,6 +28,8 @@ Le match : Montpellier Atlas Paillade (N2, l'équipe d'Achraf, maillot noir DGL 
 
 Tous les extraits : accord des personnes visibles et droits de réutilisation non confirmés.
 
+Vérifié sur les planches le 23/10/2026 : les extraits 01 à 05 sont faits d'images de diffuseurs (Eurosport, France 3, panneaux KFC et Coupe de France ; le 02 montre le vrai Louhans-Cuiseaux - Dijon filmé par Eurosport). Les extraits 06 à 11 sont des images de la chaîne d'Achraf (vestiaire, match avec le tableau d'affichage 0-1, 0-2, 0-3, le président, les enfants). Les 22 fichiers se décodent sans erreur, tous sous 100 Mo ; son mesuré entre -14,4 et -13,7 LUFS, crête au plus haut à -0,4 dBFS (clip 09).
+
 ## Fichiers
 
 - `horizontal/clip-NN.mp4` : 1920×1080, l'extrait tel quel.

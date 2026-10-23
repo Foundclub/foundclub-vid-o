@@ -265,3 +265,13 @@ L'épisode est dans `a-monter/bourbier/partie-*.mp4` : 12 morceaux de 2 minutes,
 `for f in a-monter/bourbier/partie-*.mp4; do echo "file '$PWD/$f'"; done > liste.txt ; ffmpeg -f concat -safe 0 -i liste.txt -c copy episode.mp4`.
 
 Fabriquer : `cd miniatures/bourbier-r3 ; node outils/rendre.mjs index.html rendus/miniature.png ; ffmpeg -i rendus/miniature.png -q:v 2 rendus/miniature-bourbier-r3.jpg`.
+
+## `clips-bourbier/` — l'épisode « Match bourbier » découpé en clips
+
+Même méthode que `youtube-clips/` (épisode #41) : transcription locale, planches, sélection, découpe. L'épisode (22:39) vient de `a-monter/bourbier/` ; Montpellier Atlas Paillade, l'équipe d'Achraf, y bat Saint-Orens (R3) 3-0 au 3ᵉ tour de la Coupe de France.
+
+**11 extraits** (16 à 56 s), chacun en `horizontal/clip-NN.mp4` (1920×1080) et en brouillon `vertical/clip-NN-9x16.mp4` (1080×1920, fond flou), son à -14 LUFS. Classement, notes et risques dans `clips-bourbier/RAPPORT.md` ; bornes et textes dans `extraits.json`. Les meilleurs : 10 « Un champ de patate ! » (le président), 04 « 10 000 personnes à la Mosson », 08 la causerie de la mi-temps sur l'état du terrain, 07 la causerie d'avant-match, 09 les 3 buts.
+
+Les extraits 01 à 05 (l'histoire d'Achraf en Coupe de France) sont faits d'images télé (Eurosport, France 3) : la voix est la sienne, les images non.
+
+Refaire : `cd clips-bourbier ; outils/recoller.sh ; python3 -I outils/exporter.py [numéros]`. Habiller un clip (accroche, sous-titres mot à mot, carton) : reprendre le gabarit de `youtube-clips/habillage/`.
