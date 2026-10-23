@@ -5,7 +5,7 @@ Une phrase écrite « a | b » est coupée en deux sous-titres, le temps partag�
 Usage : python3 -I outils/fiches.py   (depuis clips-bourbier/habillage/)"""
 import json, os
 
-COMMUN = {"emission": "AchhLife · S3 · Ép. 4", "chaine": "Achh10", "titre_episode": "Match bourbier contre cette R3 !",
+COMMUN = {"emission": "AchhLife · S3 · Ép. 4", "chaine": "Achh10", "titre_episode": "#42 Match piège pour notre entrée en Coupe de France !",
           "duree_episode": "22:39", "emission_longue": "AchhLife · Saison 3 · Épisode 4", "partie": None}
 COUPES = {  # changements de plan détectés (ffmpeg, scene > 0,32), utiles au cadrage et aux bruitages
  1: [1.5, 3.93, 6.1, 8.87, 11.9, 15.97, 21.3, 23.33, 26.3, 28.33, 30.2, 31.9, 33.17, 34.83, 35.9, 37.37, 38.87, 43.1, 47.9, 49.9],
