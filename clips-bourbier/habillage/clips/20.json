@@ -1,0 +1,114 @@
+{
+ "numero": 20,
+ "source": "../horizontal/clip-20.mp4",
+ "emission": "AchhLife · S3 · Ép. 4",
+ "chaine": "Achh10",
+ "titre_episode": "Match bourbier contre cette R3 !",
+ "duree_episode": "22:39",
+ "emission_longue": "AchhLife · Saison 3 · Épisode 4",
+ "partie": null,
+ "titre": [
+  "0-0 à la pause",
+  "« Pas de panique ! »"
+ ],
+ "format": "carre",
+ "coupes": [
+  2.87,
+  10.5,
+  15.87,
+  17.57
+ ],
+ "phrases": [
+  [
+   2.98,
+   3.87,
+   "Ça va passer."
+  ],
+  [
+   3.87,
+   5.99,
+   "Pas de panique, pas de panique."
+  ],
+  [
+   8.23,
+   9.4,
+   "Toujours en équipe !"
+  ],
+  [
+   14.63,
+   16.34,
+   "On retourne chez eux."
+  ],
+  [
+   16.34,
+   17.48,
+   "Derrière, 0-0."
+  ]
+ ],
+ "cadrage": [
+  [
+   0,
+   960
+  ],
+  [
+   2.5,
+   960
+  ],
+  [
+   3,
+   780
+  ],
+  [
+   5,
+   780
+  ],
+  [
+   6,
+   1030
+  ],
+  [
+   8,
+   1000
+  ],
+  [
+   9,
+   900
+  ],
+  [
+   10,
+   960
+  ],
+  [
+   11,
+   300
+  ],
+  [
+   13,
+   300
+  ],
+  [
+   14,
+   1100
+  ],
+  [
+   15.5,
+   1020
+  ],
+  [
+   16.2,
+   500
+  ],
+  [
+   17.3,
+   500
+  ],
+  [
+   18,
+   960
+  ],
+  [
+   20,
+   1080
+  ]
+ ]
+}

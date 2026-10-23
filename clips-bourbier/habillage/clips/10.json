@@ -1,0 +1,197 @@
+{
+ "numero": 10,
+ "source": "../horizontal/clip-10.mp4",
+ "emission": "AchhLife · S3 · Ép. 4",
+ "chaine": "Achh10",
+ "titre_episode": "Match bourbier contre cette R3 !",
+ "duree_episode": "22:39",
+ "emission_longue": "AchhLife · Saison 3 · Épisode 4",
+ "partie": null,
+ "titre": [
+  "Le président a tranché",
+  "« Un champ de patate ! »"
+ ],
+ "format": "carre",
+ "coupes": [
+  19.9,
+  23.97,
+  28.27
+ ],
+ "phrases": [
+  [
+   1.06,
+   3.75,
+   "On a fait un match sérieux"
+  ],
+  [
+   3.75,
+   7.16,
+   "sur une pelouse un peu difficile."
+  ],
+  [
+   7.62,
+   9.0,
+   "Un champ de patate !"
+  ],
+  [
+   9.0,
+   9.71,
+   "Mais bon, voilà,"
+  ],
+  [
+   9.71,
+   10.6,
+   "ils ont été sérieux."
+  ],
+  [
+   10.6,
+   12.14,
+   "On a raté beaucoup en première mi-temps,"
+  ],
+  [
+   12.14,
+   13.14,
+   "mais en deuxième mi-temps,"
+  ],
+  [
+   13.14,
+   13.91,
+   "ils étaient sérieux."
+  ],
+  [
+   14.28,
+   15.24,
+   "3-0 !"
+  ],
+  [
+   15.69,
+   17.52,
+   "L'aventure continue, les amis,"
+  ],
+  [
+   17.52,
+   19.23,
+   "l'aventure continue, allez !"
+  ],
+  [
+   21.3,
+   23.9,
+   "C'est parti, c'est parti !"
+  ]
+ ],
+ "cadrage": [
+  [
+   0,
+   1200
+  ],
+  [
+   1,
+   1200
+  ],
+  [
+   2,
+   1320
+  ],
+  [
+   3,
+   1410
+  ],
+  [
+   4,
+   1380
+  ],
+  [
+   5,
+   1350
+  ],
+  [
+   6,
+   1050
+  ],
+  [
+   7,
+   1050
+  ],
+  [
+   8,
+   990
+  ],
+  [
+   9,
+   1020
+  ],
+  [
+   10,
+   870
+  ],
+  [
+   11,
+   810
+  ],
+  [
+   12,
+   630
+  ],
+  [
+   13,
+   1080
+  ],
+  [
+   14,
+   1170
+  ],
+  [
+   15,
+   1170
+  ],
+  [
+   16,
+   1230
+  ],
+  [
+   17,
+   1290
+  ],
+  [
+   18,
+   1230
+  ],
+  [
+   19.5,
+   990
+  ],
+  [
+   20,
+   900
+  ],
+  [
+   23.5,
+   900
+  ],
+  [
+   24.2,
+   630
+  ],
+  [
+   26,
+   630
+  ],
+  [
+   27,
+   1020
+  ],
+  [
+   28,
+   1000
+  ],
+  [
+   28.4,
+   810
+  ],
+  [
+   29.4,
+   810
+  ]
+ ],
+ "cote": 860
+}

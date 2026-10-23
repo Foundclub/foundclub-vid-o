@@ -1,0 +1,10 @@
+# fichiers regenerables : recadrages, rendus intermediaires, pistes de bruitages, captures, index.html (refait pour chaque clip)
+medias/video/
+medias/sons/
+rendus/*-brut.mp4
+rendus/apercu-*.mp4
+snapshots/
+snap-*/
+index.html
+sons.json
+rendus/journal-*.txt
