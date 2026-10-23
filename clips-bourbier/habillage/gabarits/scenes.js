@@ -9,7 +9,7 @@
       PHRASES.forEach(([debut, fin, poids], i) => {
         const sel = "#st-" + i;
         tl.fromTo(sel, { opacity: 0, y: 16, scale: 0.96 }, { opacity: 1, y: 0, scale: 1, duration: 0.12, ease: "power2.out" }, debut);
-        tl.to(sel, { opacity: 0, duration: 0.08, ease: "none" }, Math.max(debut + 0.2, fin - 0.04));
+        tl.to(sel, { opacity: 0, duration: 0.06, ease: "none" }, Math.max(debut + 0.2, fin - 0.06));  // éteinte avant que la suivante arrive : pas de chevauchement
         const total = poids.reduce((a, b) => a + b, 0);
         let t = debut;
         poids.forEach((p, k) => { tl.set(sel + "-" + k, { className: "m dit" }, t); t += (fin - debut) * p / total; });
