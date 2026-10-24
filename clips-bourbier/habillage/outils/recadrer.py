@@ -10,10 +10,13 @@ import numpy as np
 
 cfg = json.load(open(sys.argv[1], encoding="utf-8"))
 src = cfg["source"]; sortie = f"medias/video/clip-{cfg['numero']:02d}-carre.mp4"
+# "garder" : [début, fin] en secondes de l'extrait (fin None = jusqu'au bout), pour raccourcir un clip
+debut, fin = (cfg.get("garder") or [0, None])
+PLAGE = ["-ss", str(debut)] + (["-t", str(round(fin - debut, 3))] if fin else [])
 SORTIE = ["-c:v", "libx264", "-crf", "16", "-preset", "medium", "-g", "30", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k",
           "-movflags", "+faststart", sortie]
 if cfg.get("format", "large") == "large":
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", src, "-filter_complex",
+    subprocess.run(["ffmpeg", "-v", "error", "-y", *PLAGE, "-i", src, "-filter_complex",
                     "[0:v]split=2[bg][fg];[bg]scale=1080:1080:force_original_aspect_ratio=increase,crop=1080:1080,gblur=sigma=30,"
                     "eq=brightness=-0.12[fond];[fg]scale=1080:608:flags=lanczos[img];[fond][img]overlay=0:236,setsar=1[v]",
                     "-map", "[v]", "-map", "0:a", *SORTIE], check=True)
@@ -21,6 +24,7 @@ if cfg.get("format", "large") == "large":
 W, H, FPS = 1920, 1080, 30
 C = cfg.get("cote", 1080)
 dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", src], capture_output=True, text=True).stdout)
+dur = (fin or dur) - debut
 n = int(round(dur * FPS))
 t = np.arange(n) / FPS
 coupes = [0.0] + cfg.get("coupes", []) + [dur + 1]
@@ -36,9 +40,9 @@ for a, b in zip(coupes[:-1], coupes[1:]):              # chaque plan à part
     k = np.exp(-0.5 * (np.arange(-40, 41) / (0.45 * FPS)) ** 2); k /= k.sum()
     seg = cx[m]; pad = np.pad(seg, 40, mode="edge"); cx[m] = np.convolve(pad, k, mode="same")[40:-40]
 x0 = np.clip(np.round(cx - C / 2), 0, W - C).astype(int)
-dec = subprocess.Popen(["ffmpeg", "-v", "error", "-i", src, "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
+dec = subprocess.Popen(["ffmpeg", "-v", "error", *PLAGE, "-i", src, "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
 enc = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{C}x{C}", "-r", str(FPS), "-i", "-",
-                        "-i", src, "-map", "0:v", "-map", "1:a", "-shortest",
+                        *PLAGE, "-i", src, "-map", "0:v", "-map", "1:a", "-shortest",
                         *([] if C == 1080 else ["-vf", "scale=1080:1080:flags=lanczos"]), *SORTIE], stdin=subprocess.PIPE)
 taille = W * H * 3
 for i in range(n + 5):

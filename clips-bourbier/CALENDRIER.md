@@ -5,7 +5,7 @@ Les fichiers sont dans `habillage/rendus/clip-NN-tiktok.mp4` (1080×1920, son à
 Règles suivies :
 - les meilleurs d'abord, tant que l'épisode est frais ;
 - chaque jour, un clip de parole et un clip d'action ;
-- jamais deux clips qui se répètent le même jour : 09 (les 3 buts) contre 16, 17 et 18 (chaque but seul), et 08 (la causerie de la mi-temps) contre 20 (son début) ;
+- jamais deux clips qui se répètent le même jour : 09 (les 3 buts) contre 16 et 17 (chaque but seul) ; depuis les coupes du 24/10, le 08 (fin de la causerie) et le 20 (son début) ne se répètent plus, et le 18 n'a plus le but ;
 - les clips faits d'images télé (01 à 05 et 12) sont mélangés aux autres (décision d'Adel du 23/10/2026, « 3- B ») ;
 - la bande-annonce (21) part en dernier, juste avant l'épisode suivant.
 

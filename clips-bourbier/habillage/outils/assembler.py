@@ -12,8 +12,8 @@ partie = f'<span class="etiq partie">{html.escape(c["partie"])}</span>' if c.get
 src = lire("index.gabarit.html").replace("/*POLICES*/", lire("polices.css")).replace("/*STYLES*/", lire("styles.css")).replace("/*JS*/", lire("scenes.js"))
 src = src.replace("<!--SOUSTITRES-->", st).replace("/*PHRASES*/", json.dumps([[d, f, [len(m) + 2 for m in t.split()]] for d, f, t in c["phrases"]]))
 for k, v in {"__NN__": NN, "__EMISSION__": html.escape(c["emission"]), "__PARTIE__": partie, "__TITRE1__": html.escape(c["titre"][0]),
-             "__TITRE2__": html.escape(c["titre"][1]), "__TAILLE1__": f'{min(64, int(980 / (0.74 * len(c["titre"][0]))))}px',
-             "__TAILLE2__": f'{min(60, int(960 / (0.76 * len(c["titre"][1]))))}px',  # tailles : une seule ligne chacun
+             "__TITRE2__": html.escape(c["titre"][1]), "__TAILLE1__": f'{min(84, int(1000 / (0.47 * len(c["titre"][0]))))}px',
+             "__TAILLE2__": f'{min(78, int(980 / (0.47 * len(c["titre"][1]))))}px',  # Anton, tailles : une seule ligne chacun
              "__TITRE_EPISODE__": html.escape(c["titre_episode"]), "__DUREE_EPISODE__": c["duree_episode"], "__EMISSION_LONGUE__": html.escape(c["emission_longue"]),
              "__CHAINE__": html.escape(c["chaine"]), "__DUREE_VIDEO__": f"{DUREE_VIDEO:.2f}", "__DEBUT_FIN__": f"{DEBUT_FIN:.2f}",
              "__DUREE_FIN__": f"{DUREE - DEBUT_FIN:.2f}", "__DUREE__": f"{DUREE:.2f}"}.items():

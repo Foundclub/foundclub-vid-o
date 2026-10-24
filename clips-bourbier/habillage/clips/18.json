@@ -8,18 +8,14 @@
  "emission_longue": "AchhLife · Saison 3 · Épisode 4",
  "partie": null,
  "titre": [
-  "Le but du 3-0",
-  "le match est plié"
+  "Beaucoup d'action",
+  "dans ce match de Coupe de France"
  ],
  "format": "large",
- "coupes": [
-  30.17
- ],
- "phrases": [
-  [
-   12.5,
-   15.0,
-   "BUT ! 3-0"
-  ]
+ "coupes": [],
+ "phrases": [],
+ "garder": [
+  0,
+  11.0
  ]
 }

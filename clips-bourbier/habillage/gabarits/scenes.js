@@ -5,14 +5,18 @@
       tl.to("#titre .l2", { scale: 1.06, duration: 0.15, yoyo: true, repeat: 1, ease: "power1.out" }, 1.0);
       // Barre de progression sous la vidéo
       tl.fromTo("#progression", { scaleX: 0 }, { scaleX: 1, duration: DUREE_VIDEO, ease: "none" }, 0);
-      // Sous-titres : la phrase apparaît, chaque mot passe en jaune quand il est dit (répartition au nombre de lettres)
+      // Sous-titres : la phrase apparaît, chaque mot passe dans la pastille jaune quand il est dit (répartition au nombre de lettres)
       PHRASES.forEach(([debut, fin, poids], i) => {
         const sel = "#st-" + i;
         tl.fromTo(sel, { opacity: 0, y: 16, scale: 0.96 }, { opacity: 1, y: 0, scale: 1, duration: 0.12, ease: "power2.out" }, debut);
         tl.to(sel, { opacity: 0, duration: 0.06, ease: "none" }, Math.max(debut + 0.2, fin - 0.06));  // éteinte avant que la suivante arrive : pas de chevauchement
         const total = poids.reduce((a, b) => a + b, 0);
         let t = debut;
-        poids.forEach((p, k) => { tl.set(sel + "-" + k, { className: "m dit" }, t); t += (fin - debut) * p / total; });
+        poids.forEach((p, k) => {   // seul le mot en train d'être dit est dans la pastille jaune
+          tl.set(sel + "-" + k, { className: "m dit" }, t);
+          if (k > 0) tl.set(sel + "-" + (k - 1), { className: "m" }, t);
+          t += (fin - debut) * p / total;
+        });
       });
       // Carton final : l'appel, puis la vignette de l'épisode qui monte, le bouton lecture qui bat
       tl.fromTo("#fin", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, DEBUT_FIN);

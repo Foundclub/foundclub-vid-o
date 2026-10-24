@@ -1,42 +1,48 @@
-      /* Gabarit vertical AchhLife : bandeau noir, titre d'accroche en haut, vidéo carrée, sous-titres dessous */
-      :root { --noir: #0b0b0c; --blanc: #ffffff; --jaune: #ffd60a; --gris: #9a9ba0; }
+      /* Gabarit vertical « Coupe de France » (épisode #42) : les codes de la miniature — titres en Anton blanc et jaune avec
+         un contour noir, pastille rouge, fond bleu nuit ; sous-titres mot à mot, le mot dit passe dans une pastille jaune */
+      :root { --noir: #07080c; --nuit: #0c1638; --blanc: #ffffff; --jaune: #ffd400; --rouge: #e30613; --gris: #b9bdc9; }
       * { margin: 0; padding: 0; box-sizing: border-box; }
       html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--noir); }
       body { font-family: "Montserrat", sans-serif; color: var(--blanc); }
-      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--noir); }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden;
+        background: radial-gradient(ellipse 120% 45% at 50% 0%, var(--nuit) 0%, var(--noir) 70%); }
       .plein { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
 
-      #etiquettes { position: absolute; left: 0; right: 0; top: 168px; display: flex; justify-content: center; gap: 14px; }
-      .etiq { padding: 9px 20px 10px; border-radius: 999px; font-weight: 800; font-size: 26px; letter-spacing: .06em; text-transform: uppercase; }
-      .etiq.emission { background: rgba(255, 255, 255, .1); color: var(--gris); }
+      #etiquettes { position: absolute; left: 0; right: 0; top: 150px; display: flex; justify-content: center; gap: 14px; }
+      .etiq { padding: 8px 22px 9px; border-radius: 8px; font-weight: 900; font-size: 26px; letter-spacing: .08em; text-transform: uppercase; }
+      .etiq.emission { background: var(--rouge); color: var(--blanc); transform: rotate(-2deg); }
       .etiq.partie { background: var(--jaune); color: var(--noir); }
 
-      #titre { position: absolute; left: 40px; right: 40px; top: 236px; text-align: center; }
-      #titre .l1 { display: block; font-weight: 900; font-size: 64px; line-height: 1.05; text-transform: uppercase; }
-      #titre .l2 { display: inline-block; margin-top: 10px; padding: 4px 18px 8px; font-weight: 900; font-style: italic; font-size: 60px; line-height: 1.05;
-        text-transform: uppercase; color: var(--noir); background: var(--jaune); border-radius: 10px; }
+      #titre { position: absolute; left: 30px; right: 30px; top: 214px; text-align: center; font-family: "Anton", sans-serif;
+        text-transform: uppercase; -webkit-text-stroke: 8px #000; paint-order: stroke fill; }
+      #titre .l1 { display: block; font-size: 76px; line-height: 1.04; color: var(--blanc); text-shadow: 0 6px 0 #000; }
+      #titre .l2 { display: inline-block; margin-top: 4px; font-size: 70px; line-height: 1.04; color: var(--jaune);
+        text-shadow: 0 6px 0 #000; transform: rotate(-2deg); }
 
-      #cadre { position: absolute; left: 0; top: 440px; width: 1080px; height: 1080px; overflow: hidden; }
-      #video { width: 1080px; height: 1080px; display: block; }
-      #progression { position: absolute; left: 0; top: 1520px; height: 8px; width: 1080px; background: var(--jaune); transform-origin: 0 50%; }
+      #cadre { position: absolute; left: 0; top: 440px; width: 1080px; height: 1080px; overflow: hidden;
+        border-top: 6px solid var(--blanc); border-bottom: 6px solid var(--blanc); }
+      #video { width: 1080px; height: 1068px; display: block; object-fit: cover; }
+      #progression { position: absolute; left: 0; top: 1520px; height: 10px; width: 1080px; background: var(--rouge); transform-origin: 0 50%; }
 
-      .st { position: absolute; left: 50px; right: 50px; top: 1562px; text-align: center; opacity: 0;
-        font-weight: 800; font-size: 56px; line-height: 1.22; }
-      .st .m { color: var(--blanc); }
-      .st .m.dit { color: var(--jaune); }
+      .st { position: absolute; left: 40px; right: 40px; top: 1572px; text-align: center; opacity: 0;
+        font-weight: 900; font-size: 52px; line-height: 1.3; text-transform: uppercase; }
+      .st .m { color: var(--blanc); padding: 0 6px; border-radius: 10px; -webkit-box-decoration-break: clone; }
+      .st .m.dit { color: var(--noir); background: var(--jaune); }
 
-      #fin { background: var(--noir); }
-      #fin-appel { position: absolute; left: 0; right: 0; top: 250px; display: flex; flex-direction: column; align-items: center; gap: 8px; }
-      #fin-appel span { font-weight: 900; text-transform: uppercase; line-height: 1.05; }
-      #fin-appel .a1, #fin-appel .a3 { font-size: 72px; color: var(--blanc); }
-      #fin-appel .a2 { font-size: 66px; font-style: italic; color: var(--noir); background: var(--jaune); padding: 4px 22px 10px; border-radius: 12px; transform: rotate(-2deg); }
-      #fin-vignette { position: absolute; left: 60px; top: 640px; width: 960px; height: 540px; border-radius: 28px; overflow: hidden;
-        box-shadow: 0 0 0 6px rgba(255, 214, 10, .9), 0 30px 80px rgba(0, 0, 0, .6); }
-      #fin-vignette img { width: 960px; height: 540px; display: block; filter: brightness(.82); }
-      #fin-play { position: absolute; left: 400px; top: 190px; width: 160px; height: 160px; border-radius: 50%; background: var(--jaune);
-        display: flex; align-items: center; justify-content: center; box-shadow: 0 0 60px rgba(255, 214, 10, .45); }
+      #fin { background: radial-gradient(ellipse 120% 45% at 50% 0%, var(--nuit) 0%, var(--noir) 70%); }
+      #fin-appel { position: absolute; left: 0; right: 0; top: 230px; display: flex; flex-direction: column; align-items: center; gap: 6px;
+        font-family: "Anton", sans-serif; -webkit-text-stroke: 8px #000; paint-order: stroke fill; }
+      #fin-appel span { text-transform: uppercase; line-height: 1.04; text-shadow: 0 6px 0 #000; }
+      #fin-appel .a1, #fin-appel .a3 { font-size: 92px; color: var(--blanc); }
+      #fin-appel .a2 { font-size: 88px; color: var(--jaune); transform: rotate(-2deg); }
+      #fin-vignette { position: absolute; left: 60px; top: 680px; width: 960px; height: 540px; border-radius: 24px; overflow: hidden;
+        box-shadow: 0 0 0 8px var(--blanc), 0 30px 80px rgba(0, 0, 0, .7); }
+      #fin-vignette img { width: 960px; height: 540px; display: block; filter: brightness(.85); }
+      #fin-play { position: absolute; left: 400px; top: 190px; width: 160px; height: 160px; border-radius: 50%; background: var(--rouge);
+        display: flex; align-items: center; justify-content: center; box-shadow: 0 0 60px rgba(227, 6, 19, .55); }
+      #fin-play svg path { fill: var(--blanc); }
       #fin-duree { position: absolute; right: 18px; bottom: 16px; padding: 6px 12px; border-radius: 8px; background: rgba(0, 0, 0, .8);
         font-weight: 800; font-size: 28px; color: var(--blanc); }
-      #fin-titre { position: absolute; left: 70px; right: 70px; top: 1220px; font-weight: 800; font-size: 42px; line-height: 1.2; color: var(--blanc); }
-      #fin-chaine { position: absolute; left: 70px; right: 70px; top: 1340px; font-weight: 700; font-size: 32px; color: var(--gris); }
+      #fin-titre { position: absolute; left: 70px; right: 70px; top: 1270px; font-weight: 800; font-size: 42px; line-height: 1.2; color: var(--blanc); }
+      #fin-chaine { position: absolute; left: 70px; right: 70px; top: 1390px; font-weight: 700; font-size: 32px; color: var(--gris); }
       #fin-chaine b { color: var(--blanc); font-weight: 900; }

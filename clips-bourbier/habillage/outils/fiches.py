@@ -29,7 +29,7 @@ CADRAGE = {  # [t, centre_x] : là où se tient celui qui parle (lu sur des plan
 }
 CADRAGE[20] = [p for p in CADRAGE[8] if p[0] <= 21]
 FICHES = {
- 1: ("La Coupe de France", "c'est pas qu'un match", [
+ 1: ("Et si la Coupe de France", "était la meilleure compétition ?", [
    (0.2, 1.39, "Parce que la Coupe de France,"), (1.51, 3.69, "ce n'est pas simplement | une compétition de football."),
    (4.04, 4.91, "C'est une histoire,"), (5.16, 6.06, "une tradition,"), (6.28, 6.9, "un rêve."),
    (7.08, 9.13, "C'est cette compétition où, | le temps d'un match,"), (9.35, 10.92, "les différences de niveau s'effacent."),
@@ -44,7 +44,7 @@ FICHES = {
    (46.31, 47.79, "des rêves qui s'arrêtent brutalement,"), (48.07, 49.83, "des éliminations difficiles à digérer."),
    (50.09, 53.42, "Et c'est justement ce qui rend | cette compétition aussi particulière."), (53.57, 54.57, "Parce qu'en Coupe de France,"),
    (54.92, 55.72, "tout peut arriver.")]),
- 2: ("Face à la Ligue 1", "le match de ma vie", [
+ 2: ("J'ai fait le match de ma vie", "face à une Ligue 1", [
    (0.07, 2.89, "Et croyez-moi, des émotions, | cette compétition m'en a fait vivre."),
    (3.14, 8.12, "Je me souviens notamment | de la saison 2016-2017. | À l'époque, je portais | les couleurs de Louhans-Cuiseaux."),
    (8.49, 12.32, "On réalise un beau parcours | qui nous emmène | jusqu'en 32e de finale,"),
@@ -53,7 +53,7 @@ FICHES = {
    (21.8, 23.75, "Lees-Melou, Marvin Martin,"), (25.09, 25.87, "Balmont,"), (26.25, 27.24, "plein d'autres encore."),
    (27.62, 29.19, "Tous ces joueurs | que je voyais à la télé,"), (29.41, 30.44, "ils étaient en face de moi."),
    (30.73, 32.23, "Ce sont des rencontres | comme celle-là"), (32.61, 36.16, "qui te rappellent | pourquoi tu joues au football | depuis tout petit.")]),
- 3: ("Éliminé en 32e…", "et eux tirent l'OL", [
+ 3: ("Quand j'ai failli jouer", "le match de ma vie contre l'OL", [
    (0.2, 1.29, "Quelques années plus tard,"), (1.45, 3.5, "lors de la saison 2022-2023,"),
    (3.69, 10.84, "vous avez tous suivi notre parcours | avec le Jura Sud Foot | et une élimination au 7e tour | face à la National 2 de Haguenau."),
    (10.98, 12.49, "L'année d'après, en 2023-2024,"), (12.74, 14.99, "je retrouve une nouvelle fois | les 32es de finale."),
@@ -63,7 +63,7 @@ FICHES = {
    (31.24, 34.22, "Car le tour d'après, | Bergerac a eu la chance de tirer…"), (35.24, 36.27, "l'Olympique Lyonnais,"),
    (36.49, 38.51, "l'équipe que je supporte | depuis tout petit."), (38.66, 39.91, "Ils ont failli faire l'exploit."),
    (40.2, 42.09, "Mais bon… on est quand même | l'Olympique Lyonnais.")]),
- 4: ("10 000 personnes", "à la Mosson", [
+ 4: ("Quand j'ai joué devant", "10 000 personnes à la Mosson", [
    (0.13, 1.55, "Et puis plus récemment,"), (1.67, 3.85, "lors de la saison 2025-2026,"), (4.07, 6.06, "j'ai eu la chance | de vivre une nouvelle aventure"),
    (6.34, 7.82, "avec Montpellier Atlas Paillade."), (8.17, 10.03, "Un club de quartier, une équipe,"),
    (10.25, 13.23, "une famille, qui s'est retrouvée | au 7e tour de la Coupe de France"), (13.45, 15.47, "face à Bourg-en-Bresse, | une équipe de National."),
@@ -80,26 +80,26 @@ FICHES = {
    (11.3, 13.55, "et les souvenirs qu'elle nous laisse | pour toute une vie."), (13.8, 16.39, "Et chaque année, | quand cette compétition revient,"),
    (16.81, 17.8, "c'est toujours la même chose."), (18.09, 19.11, "On se remet à rêver."), (19.33, 21.87, "Parce qu'au fond, | peu importe le niveau auquel on joue,"),
    (22.21, 24.96, "tant qu'on est en Coupe de France, | on a toujours le droit de rêver.")]),
- 6: ("La Coupe de France", "expliquée en 30 s", [
+ 6: ("Le système de la Coupe de France", "vous le trouvez juste ?", [
    (0.13, 6.2, "La Coupe de France a déjà commencé | avec l'entrée des clubs de district | au premier tour, | puis des clubs régionaux au deuxième."),
    (6.31, 11.0, "De notre côté, étant en National 2, | on fait notre entrée | directement au 3e tour."),
    (11.0, 16.76, "Pour ce match, on est tombé | face à la R3 de Saint-Orens, | club qui se situe | juste à côté de Toulouse."),
    (17.0, 20.41, "Ensuite, pour le 4e tour, | ce sera au tour des National 1 d'entrer."), (20.58, 22.67, "Au 5e tour, aux Ligue 3 d'entrer,"),
    (23.08, 26.35, "puis directement les Ligue 2 | au 7e tour,"), (26.57, 29.31, "et enfin les Ligue 1, | seulement en 32e de finale.")]),
- 7: ("Le discours d'avant-match", "« J'agresse ! »", [
+ 7: ("Y'a toujours ce collègue…", "qu'il faut pas regarder pendant le discours", [
    (0.2, 0.81, "Allez !"), (4.17, 7.21, "Zéro but, aucune erreur."), (7.43, 10.06, "Concentration, | c'est ça qu'on travaille aujourd'hui."),
    (10.31, 11.6, "Personne passif, les gars !"), (13.93, 17.47, "Non, non, non ! | Je suis proche du duel, | je saute, je combats !"),
    (18.79, 20.01, "J'agresse !"), (33.25, 36.2, "Aujourd'hui, | c'est un match comme ça.")]),
- 8: ("0-0 à la mi-temps", "sur un champ de patate", [
+ 8: ("Mobiliser tout le monde à la mi-temps", "(enfin presque tout le monde)", [
    (2.98, 5.99, "Ça va passer. | Pas de panique, pas de panique."), (8.23, 9.4, "Toujours en équipe !"), (14.63, 17.48, "On retourne chez eux. | Derrière, 0-0."),
    (21.0, 24.54, "Allez, au combat ! | Aucun relâchement derrière !"), (25.0, 28.5, "Avec l'état du terrain, | pas de risque !"),
    (40.5, 43.13, "Tout de suite, on reste | et on agresse ! Allez !"), (45.0, 48.6, "Du monde dans la surface !"), (48.68, 52.22, "Allez, allez, allez !")]),
- 9: ("N2 contre R3", "les 3 buts du match", [(7.0, 9.5, "BUT ! 1-0"), (20.5, 23.0, "BUT ! 2-0"), (43.0, 45.5, "BUT ! 3-0")]),
+ 9: ("Les 3 buts du match", "(et une passe D pour ma part)", [(7.0, 9.5, "BUT ! 1-0"), (20.5, 23.0, "BUT ! 2-0"), (43.0, 45.5, "BUT ! 3-0")]),
  10: ("Le président a tranché", "« Un champ de patate ! »", [
    (1.06, 7.16, "On a fait un match sérieux | sur une pelouse un peu difficile."), (7.62, 9.0, "Un champ de patate !"),
    (9.0, 10.6, "Mais bon, voilà, | ils ont été sérieux."), (10.6, 13.92, "On a raté beaucoup en première mi-temps, | mais en deuxième mi-temps, | ils étaient sérieux."),
    (14.28, 15.24, "3-0 !"), (15.69, 19.23, "L'aventure continue, les amis, | l'aventure continue, allez !"), (21.3, 23.9, "C'est parti, c'est parti !")]),
- 11: ("Victoire 3-0", "direction le 4e tour", [
+ 11: ("Victoire 3-0, direction le 4e tour", "prochain match contre un club de Ligue 1", [
    (0.2, 3.08, "Pour notre part, | victoire assez facile, 3 buts à 0."), (3.24, 5.71, "Direction le 4e tour | de la Coupe de France."),
    (6.02, 7.31, "Et la semaine prochaine,"), (7.49, 10.41, "gros derby | face à la réserve du MHSC."), (10.73, 12.39, "Après deux défaites en championnat,"),
    (12.58, 14.22, "victoire obligatoire pour nous."), (14.6, 16.1, "À suivre au prochain épisode.")]),
@@ -107,17 +107,19 @@ FICHES = {
    (0.13, 1.2, "Unique."), (2.53, 3.5, "Magique."), (4.45, 5.9, "Exceptionnelle."), (7.49, 8.46, "Émouvante."), (10.05, 10.99, "Vibrante."),
    (12.52, 13.83, "Bouleversante."), (16.39, 17.5, "Grandiose."), (19.69, 22.47, "Voilà quelques mots | qui pourraient définir | la Coupe de France."),
    (22.6, 26.28, "Mais en réalité, je crois | qu'aucun mot ne suffit à décrire"), (26.47, 28.68, "ce que cette compétition | peut nous faire ressentir.")]),
- 13: ("Veille de match", "l'entraînement du vendredi", []),
- 14: ("Coupe de France", "l'entrée des joueurs", []),
- 15: ("Vu du drone", "un vrai champ de patate", []),
- 16: ("Le premier but", "Atlas Paillade ouvre", [(11.0, 13.5, "BUT ! 1-0")]),
- 17: ("Le deuxième but", "et de deux !", [(9.5, 12.0, "BUT ! 2-0")]),
- 18: ("Le but du 3-0", "le match est plié", [(12.5, 15.0, "BUT ! 3-0")]),
+ 13: ("Le niveau à l'entraînement", "d'une équipe de National 2", []),
+ 14: ("Notre entrée", "en Coupe de France", []),
+ 15: ("Même sur un champ de patate", "ça met des petits ponts", []),
+ 16: ("Le premier but", "avec une passe D de fou", [(11.0, 13.5, "BUT ! 1-0")]),
+ 17: ("Une passe D de ma part", "pour le 2-0", [(9.5, 12.0, "BUT ! 2-0")]),
+ 18: ("Beaucoup d'action", "dans ce match de Coupe de France", []),
  19: ("Coup de sifflet final", "qualifiés pour le 4e tour !", [(15.6, 18.0, "Qualifiés !")]),
- 20: ("0-0 à la pause", "« Pas de panique ! »", None),
+ 20: ("Le discours du coach", "à la mi-temps", None),
  21: ("Dans le prochain épisode", "le derby face au MHSC", [(8.58, 10.3, "On l'attendait depuis longtemps."), (13.13, 14.8, "Il faut tout donner !")]),
 }
 FORMAT = {n: ("carre" if n in CADRAGE else "large") for n in FICHES}
+# Coupes demandées par Adel le 24/10/2026, en secondes de l'extrait (horizontal/clip-NN.mp4) : on ne garde que [début, fin]
+GARDER = {7: (0, 24.0), 8: (38.0, None), 14: (0, 50.0), 15: (8.0, 28.0), 18: (0, 11.0)}
 def couper(phrases):
     out = []
     for d, f, t in phrases:
@@ -133,6 +135,12 @@ for n, (l1, l2, phrases) in FICHES.items():
     c = {"numero": n, "source": f"../horizontal/clip-{n:02d}.mp4", **COMMUN, "titre": [l1, l2], "format": FORMAT[n],
          "coupes": COUPES[n], "phrases": couper(phrases)}
     if n in CADRAGE: c["cadrage"] = CADRAGE[n]
+    if n in GARDER:   # tout est recalé sur le nouveau début ; ce qui tombe hors de la plage disparaît
+        a, b = GARDER[n]; b = b if b is not None else 999
+        c["garder"] = [a, None if b == 999 else b]
+        c["phrases"] = [[round(d - a, 2), round(min(f, b) - a, 2), t] for d, f, t in c["phrases"] if d >= a - 0.05 and d < b - 0.3]
+        c["coupes"] = [round(t - a, 2) for t in c["coupes"] if a < t < b]
+        if "cadrage" in c: c["cadrage"] = [[round(t - a, 2), x] for t, x in c["cadrage"] if a - 1.5 <= t <= b + 1.5]
     if n == 10: c["cote"] = 860   # le bandeau « BEN ALI Mahfoud, Président » (y > 880) reste dehors
     json.dump(c, open(f"clips/{n:02d}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     longues = [p[2] for p in c["phrases"] if len(p[2]) > 44]

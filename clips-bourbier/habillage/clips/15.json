@@ -8,10 +8,14 @@
  "emission_longue": "AchhLife · Saison 3 · Épisode 4",
  "partie": null,
  "titre": [
-  "Vu du drone",
-  "un vrai champ de patate"
+  "Même sur un champ de patate",
+  "ça met des petits ponts"
  ],
  "format": "large",
  "coupes": [],
- "phrases": []
+ "phrases": [],
+ "garder": [
+  8.0,
+  28.0
+ ]
 }
