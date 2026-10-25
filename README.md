@@ -282,4 +282,5 @@ Refaire les extraits : `cd clips-bourbier ; outils/recoller.sh ; python3 -I outi
 - Deux formats (`format` dans `habillage/clips/NN.json`) : `carre` suit la personne qui parle (07, 08, 10, 20, repères posés à la main) ; `large` montre l'image entière en 16:9 sur fond flou (match, drone, montages).
 - Les fiches sont écrites par `habillage/outils/fiches.py` (accroches, phrases corrigées à la main, cadrage). Dans les causeries du coach, seules les phrases reconnues avec certitude sont sous-titrées.
 - Fabriquer : `cd clips-bourbier/habillage ; python3 -I outils/fiches.py ; outils/rendre-tout.sh [NN …]`.
+- La bulle « suivre » (25/10/2026, Adel : « 1- ok 2- A ») : la photo de profil d'Achh10 (`habillage/medias/profil-achh10.jpg`) et le bouton + qui devient une coche, façon TikTok, 2 s à partir de 3 s, en haut à droite de la vidéo. Réglable par clip avec `"follow"` dans `clips/NN.json` (une autre seconde, ou -1 pour l'enlever).
 - Son : un limiteur suréchantillonné à -3 dB et un fondu de 50 ms au début (la première trame claquait à +1,7 dBFS).
