@@ -18,6 +18,14 @@
       <div id="habillage" class="clip plein" data-start="0" data-duration="__DUREE_VIDEO__" data-track-index="1">
         <div id="etiquettes"><span class="etiq emission">__EMISSION__</span>__PARTIE__</div>
         <div id="titre"><span class="l1" style="font-size: __TAILLE1__;">__TITRE1__</span><span class="l2" style="font-size: __TAILLE2__;">__TITRE2__</span></div>
+        <!-- Bulle « suivre » (façon TikTok) : la photo de profil, le bouton + qui devient une coche -->
+        <div id="follow">
+          <div class="avatar"><img src="medias/profil-achh10.jpg" alt="" /></div>
+          <div class="bouton">
+            <svg class="plus" width="54" height="54" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/></svg>
+            <svg class="coche" width="58" height="58" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fe2c55" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/></svg>
+          </div>
+        </div>
         <div id="progression"></div>
 <!--SOUSTITRES-->
       </div>
@@ -40,7 +48,7 @@
       window.__timelines = window.__timelines || {};
       const tl = gsap.timeline({ paused: true });
       const PHRASES = /*PHRASES*/;
-      const DUREE_VIDEO = __DUREE_VIDEO__, DEBUT_FIN = __DEBUT_FIN__;
+      const DUREE_VIDEO = __DUREE_VIDEO__, DEBUT_FIN = __DEBUT_FIN__, FOLLOW = __FOLLOW__;
 /*JS*/
       window.__timelines["main"] = tl;
       tl.seek(0);

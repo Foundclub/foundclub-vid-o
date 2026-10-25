@@ -27,3 +27,16 @@
       tl.fromTo("#fin-play", { scale: 0 }, { scale: 1, duration: 0.4, ease: "back.out(2.4)" }, DEBUT_FIN + 0.95);
       tl.to("#fin-play", { scale: 1.12, duration: 0.25, yoyo: true, repeat: 3, ease: "sine.inOut" }, DEBUT_FIN + 1.45);
       tl.fromTo(["#fin-titre", "#fin-chaine"], { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, stagger: 0.12, ease: "power2.out" }, DEBUT_FIN + 1.0);
+      // Bulle « suivre » : la photo arrive, le bouton + apparaît, on appuie, il devient une coche, tout repart (≈ 2 s)
+      if (FOLLOW >= 0) {
+        tl.set("#follow", { opacity: 1 }, FOLLOW);
+        tl.fromTo("#follow .avatar", { scale: 0.3, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.32, ease: "back.out(1.8)" }, FOLLOW);
+        tl.fromTo("#follow .bouton", { scale: 0 }, { scale: 1, duration: 0.26, ease: "back.out(2.6)" }, FOLLOW + 0.18);
+        tl.to("#follow .bouton", { scale: 0.82, duration: 0.08, yoyo: true, repeat: 1, ease: "power1.inOut" }, FOLLOW + 0.62);
+        tl.to("#follow .plus", { rotation: 90, opacity: 0, duration: 0.16, ease: "power2.in", transformOrigin: "50% 50%" }, FOLLOW + 0.66);
+        tl.to("#follow .bouton", { backgroundColor: "#ffffff", duration: 0.16, ease: "none" }, FOLLOW + 0.68);
+        tl.to("#follow .coche path", { strokeDashoffset: 0, duration: 0.24, ease: "power2.out" }, FOLLOW + 0.8);
+        tl.to("#follow .bouton", { scale: 0, duration: 0.2, ease: "back.in(2)" }, FOLLOW + 1.35);
+        tl.to("#follow .avatar", { scale: 0.5, opacity: 0, duration: 0.24, ease: "power2.in" }, FOLLOW + 1.68);
+        tl.set("#follow", { opacity: 0 }, FOLLOW + 1.95);
+      }
