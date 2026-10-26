@@ -1,26 +1,31 @@
-# Ordre de publication — clips « Match bourbier » (2 par jour)
+# Calendrier de publication — clips « Match bourbier » (épisode #42)
 
-Les fichiers sont dans `habillage/rendus/clip-NN-tiktok.mp4` (1080×1920, son à -14 LUFS).
+Au moins 2 clips par jour. Rien qui dévoile le score avant la fin : ce qui en montre un peu est publié les derniers jours.
+Heures : 12:30 et 19:00 en semaine, 11:30 et 18:00 le week-end.
 
-Règles suivies :
-- les meilleurs d'abord, tant que l'épisode est frais ;
-- chaque jour, un clip de parole et un clip d'action ;
-- jamais deux clips qui se répètent le même jour : 09 (les 3 buts) contre 16 et 17 (chaque but seul) ; depuis les coupes du 24/10, le 08 (fin de la causerie) et le 20 (son début) ne se répètent plus, et le 18 n'a plus le but ;
-- les clips faits d'images télé (01 à 05 et 12) sont mélangés aux autres (décision d'Adel du 23/10/2026, « 3- B ») ;
-- la bande-annonce (21) part en dernier, juste avant l'épisode suivant.
+| Jour | Date | Heure | Clip | Titre | Spoil |
+|---|---|---|---|---|---|
+| 1 | Lundi 26 octobre | publié | 01 | Et si la Coupe de France était la meilleure compétition ? | — |
+| 1 | Lundi 26 octobre | 19:00 | 14 | Notre entrée en Coupe de France | — |
+| 2 | Mardi 27 octobre | 12:30 | 04 | Quand j'ai joué devant 10 000 personnes à la Mosson | — |
+| 2 | Mardi 27 octobre | 19:00 | 07 | Y'a toujours ce collègue qu'il faut pas regarder pendant le discours | — |
+| 3 | Mercredi 28 octobre | 12:30 | 02 | J'ai fait le match de ma vie face à une Ligue 1 | — |
+| 3 | Mercredi 28 octobre | 19:00 | 15 | Même sur un champ de patate, ça met des petits ponts | — |
+| 4 | Jeudi 29 octobre | 12:30 | 03 | Quand j'ai failli jouer le match de ma vie contre l'OL | — |
+| 4 | Jeudi 29 octobre | 19:00 | 13 | Le niveau à l'entraînement d'une équipe de National 2 | — |
+| 5 | Vendredi 30 octobre | 12:30 | 06 | Le système de la Coupe de France, vous le trouvez juste ? | — |
+| 5 | Vendredi 30 octobre | 19:00 | 20 | Le discours du coach à la mi-temps | — |
+| 6 | Samedi 31 octobre | 11:30 | 12 | Unique. Magique. La Coupe de France | — |
+| 6 | Samedi 31 octobre | 18:00 | 08 | Mobiliser tout le monde à la mi-temps (enfin presque) | — |
+| 7 | Dimanche 1 novembre | 11:30 | 05 | En Coupe de France, on a le droit de rêver | — |
+| 7 | Dimanche 1 novembre | 18:00 | 18 | Beaucoup d'action dans ce match de Coupe de France | — |
+| 8 | Lundi 2 novembre | 12:30 | 16 | Le premier but, avec une passe D de fou | un but |
+| 8 | Lundi 2 novembre | 19:00 | 17 | Une passe D de ma part en Coupe de France | un but |
+| 9 | Mardi 3 novembre | 12:30 | 10 | Le président a tranché : « Un champ de patate ! » | on devine que ça s'est bien passé |
+| 9 | Mardi 3 novembre | 19:00 | 19 | Coup de sifflet final en Coupe de France | la fin du match |
+| 10 | Mercredi 4 novembre | 12:30 | 09 | Combien de buts dans ce match de Coupe ? | deux buts |
+| 10 | Mercredi 4 novembre | 19:00 | 21 | Dans le prochain épisode : le derby face au MHSC | — |
 
-| Jour | Clip 1 | Clip 2 |
-|---|---|---|
-| 1 | 10 « Un champ de patate ! » (le président) | 04 10 000 personnes à la Mosson |
-| 2 | 08 La causerie de la mi-temps | 16 Le premier but |
-| 3 | 07 Le discours d'avant-match | 15 Le champ de patate vu du drone |
-| 4 | 02 Face à Dijon, le match de sa vie | 17 Le deuxième but |
-| 5 | 06 La Coupe de France expliquée | 09 Les 3 buts |
-| 6 | 03 Éliminé par Bergerac, qui tire l'OL | 18 Le but du 3-0 |
-| 7 | 20 « Pas de panique ! » | 05 On a le droit de rêver |
-| 8 | 01 La Coupe de France, pas qu'un match | 14 L'entrée des joueurs |
-| 9 | 12 « Unique. Magique. » | 19 Le coup de sifflet final |
-| 10 | 11 Victoire 3-0, direction le 4e tour | 13 L'entraînement du vendredi |
-| 11 | 21 Dans le prochain épisode : le derby | — |
-
-À confirmer avant de publier : les noms des clips 02 (Lees-Melou, Marvin Martin, Balmont) et 03 (Jura Sud Foot, Haguenau, FC Les Bournes) ; l'accord des personnes filmées (joueurs, président, enfants : accord des parents).
+Le 21 (bande-annonce) se cale la veille ou le jour du prochain épisode ; s'il sort plus tard, décaler le jour 10.
+Pas encore publiable : le 11 (Achraf annonce « victoire 3-0 »), à garder pour quand l'épisode aura bien tourné.
+Avant de publier le 02 et le 03 : faire confirmer par Achraf les noms des joueurs et des clubs.

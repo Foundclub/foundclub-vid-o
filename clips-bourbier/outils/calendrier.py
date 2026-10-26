@@ -61,10 +61,10 @@ h1 {{ font-size: 18pt; margin: 0 0 4px; }} .sous {{ color: #555; margin: 0 0 10p
 .regles li {{ margin: 2px 0; }}
 table {{ width: 100%; border-collapse: collapse; }}
 th {{ text-align: left; font-size: 9pt; color: #555; border-bottom: 2px solid #141414; padding: 4px; }}
-td {{ padding: 4px; vertical-align: middle; border-bottom: 1px solid #e3e3e3; }}
+td {{ padding: 3px 4px; vertical-align: middle; border-bottom: 1px solid #e3e3e3; }}
 tr.nouveau-jour td {{ border-top: 2px solid #141414; }}
 td.jour {{ width: 92px; font-size: 9.5pt; }} td.heure {{ width: 46px; font-weight: bold; font-size: 11pt; }}
-td img {{ width: 52px; border-radius: 4px; display: block; }}
+td img {{ width: 40px; border-radius: 4px; display: block; }}
 .num {{ display: inline-block; background: #141414; color: #fff; border-radius: 4px; padding: 0 5px; font-weight: bold; margin-right: 4px; }}
 .fichier {{ color: #888; font-size: 8pt; margin-top: 2px; }} td.etat {{ width: 120px; font-size: 9pt; }}
 tr.fait td {{ color: #888; }} tr {{ page-break-inside: avoid; }}
