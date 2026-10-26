@@ -94,7 +94,7 @@ FICHES = {
    (2.98, 5.99, "Ça va passer. | Pas de panique, pas de panique."), (8.23, 9.4, "Toujours en équipe !"), (14.63, 17.48, "On retourne chez eux. | Derrière, 0-0."),
    (21.0, 24.54, "Allez, au combat ! | Aucun relâchement derrière !"), (25.0, 28.5, "Avec l'état du terrain, | pas de risque !"),
    (40.5, 43.13, "Tout de suite, on reste | et on agresse ! Allez !"), (45.0, 48.6, "Du monde dans la surface !"), (48.68, 52.22, "Allez, allez, allez !")]),
- 9: ("Les 3 buts du match", "(et une passe D pour ma part)", [(7.0, 9.5, "BUT ! 1-0"), (20.5, 23.0, "BUT ! 2-0"), (43.0, 45.5, "BUT ! 3-0")]),
+ 9: ("Combien de buts", "dans ce match de Coupe ?", [(7.0, 9.5, "BUT !"), (20.5, 23.0, "BUT !"), (40.3, 42.2, "La suite dans l'épisode…")]),
  10: ("Le président a tranché", "« Un champ de patate ! »", [
    (1.06, 7.16, "On a fait un match sérieux | sur une pelouse un peu difficile."), (7.62, 9.0, "Un champ de patate !"),
    (9.0, 10.6, "Mais bon, voilà, | ils ont été sérieux."), (10.6, 13.92, "On a raté beaucoup en première mi-temps, | mais en deuxième mi-temps, | ils étaient sérieux."),
@@ -110,16 +110,18 @@ FICHES = {
  13: ("Le niveau à l'entraînement", "d'une équipe de National 2", []),
  14: ("Notre entrée", "en Coupe de France", []),
  15: ("Même sur un champ de patate", "ça met des petits ponts", []),
- 16: ("Le premier but", "avec une passe D de fou", [(11.0, 13.5, "BUT ! 1-0")]),
- 17: ("Une passe D de ma part", "pour le 2-0", [(9.5, 12.0, "BUT ! 2-0")]),
+ 16: ("Le premier but", "avec une passe D de fou", [(11.0, 13.5, "BUT !")]),
+ 17: ("Une passe D de ma part", "en Coupe de France", [(9.5, 12.0, "BUT !")]),
  18: ("Beaucoup d'action", "dans ce match de Coupe de France", []),
- 19: ("Coup de sifflet final", "qualifiés pour le 4e tour !", [(15.6, 18.0, "Qualifiés !")]),
+ 19: ("Coup de sifflet final", "en Coupe de France", []),
  20: ("Le discours du coach", "à la mi-temps", None),
  21: ("Dans le prochain épisode", "le derby face au MHSC", [(8.58, 10.3, "On l'attendait depuis longtemps."), (13.13, 14.8, "Il faut tout donner !")]),
 }
 FORMAT = {n: ("carre" if n in CADRAGE else "large") for n in FICHES}
 # Coupes demandées par Adel le 24/10/2026, en secondes de l'extrait (horizontal/clip-NN.mp4) : on ne garde que [début, fin]
-GARDER = {7: (0, 24.0), 8: (38.0, None), 14: (0, 50.0), 15: (8.0, 28.0), 18: (0, 11.0)}
+GARDER = {7: (0, 24.0), 8: (38.0, None), 14: (0, 50.0), 15: (8.0, 28.0), 18: (0, 11.0),
+          9: (0, 42.3), 10: (0, 14.15)}   # 26/10 : le 09 s'arrête avant le 3e but, le 10 avant « 3-0 ! » (pas de spoil)
+FLOUTER_SCORE = {9, 15, 16, 17, 18, 19}   # tableau d'affichage flouté (26/10)
 def couper(phrases):
     out = []
     for d, f, t in phrases:
@@ -141,6 +143,7 @@ for n, (l1, l2, phrases) in FICHES.items():
         c["phrases"] = [[round(d - a, 2), round(min(f, b) - a, 2), t] for d, f, t in c["phrases"] if d >= a - 0.05 and d < b - 0.3]
         c["coupes"] = [round(t - a, 2) for t in c["coupes"] if a < t < b]
         if "cadrage" in c: c["cadrage"] = [[round(t - a, 2), x] for t, x in c["cadrage"] if a - 1.5 <= t <= b + 1.5]
+    if n in FLOUTER_SCORE: c["flouter_score"] = True
     if n == 10: c["cote"] = 860   # le bandeau « BEN ALI Mahfoud, Président » (y > 880) reste dehors
     json.dump(c, open(f"clips/{n:02d}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     longues = [p[2] for p in c["phrases"] if len(p[2]) > 44]

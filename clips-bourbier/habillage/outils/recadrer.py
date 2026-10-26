@@ -13,12 +13,15 @@ src = cfg["source"]; sortie = f"medias/video/clip-{cfg['numero']:02d}-carre.mp4"
 # "garder" : [début, fin] en secondes de l'extrait (fin None = jusqu'au bout), pour raccourcir un clip
 debut, fin = (cfg.get("garder") or [0, None])
 PLAGE = ["-ss", str(debut)] + (["-t", str(round(fin - debut, 3))] if fin else [])
+# "flouter_score" : le tableau d'affichage incrusté (en haut à gauche, x 20-530, y 55-145 sur 1920×1080) est flouté,
+# pour ne pas dévoiler le score (demande d'Adel du 26/10/2026)
+FLOU = (",split=2[net][f];[f]crop=330:80:0:18,boxblur=14:2[fl];[net][fl]overlay=0:18") if cfg.get("flouter_score") else ""
 SORTIE = ["-c:v", "libx264", "-crf", "16", "-preset", "medium", "-g", "30", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k",
           "-movflags", "+faststart", sortie]
 if cfg.get("format", "large") == "large":
     subprocess.run(["ffmpeg", "-v", "error", "-y", *PLAGE, "-i", src, "-filter_complex",
                     "[0:v]split=2[bg][fg];[bg]scale=1080:1080:force_original_aspect_ratio=increase,crop=1080:1080,gblur=sigma=30,"
-                    "eq=brightness=-0.12[fond];[fg]scale=1080:608:flags=lanczos[img];[fond][img]overlay=0:236,setsar=1[v]",
+                    "eq=brightness=-0.12[fond];[fg]scale=1080:608:flags=lanczos" + FLOU + "[img];[fond][img]overlay=0:236,setsar=1[v]",
                     "-map", "[v]", "-map", "0:a", *SORTIE], check=True)
     print(f"{sortie} : image entière sur fond flou"); sys.exit()
 W, H, FPS = 1920, 1080, 30
