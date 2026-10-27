@@ -1,6 +1,10 @@
 # Publication YouTube — AchhLife S3 EP5, Moussa
 
-Préparé le 27/10/2026 (Adel : « 9- A », Achraf ne s'en occupe pas). À relire avant de publier : rien n'est en ligne.
+Préparé le 27/10/2026 (Adel : « 9- A », Achraf ne s'en occupe pas). Rien n'est en ligne : Adel publie.
+
+**Choix d'Adel (27/10)** : épisode validé tel quel (`TRAVAIL/final/episode.mp4`, 15:27.6) ; **titre 1** ;
+**miniature 1** (`TRAVAIL/final/miniatures/miniature-1.jpg`). Le logo et la carte de saison du début seront refaits
+plus tard (seul le début de l'épisode sera alors à refaire).
 
 ## Titre (un au choix)
 
