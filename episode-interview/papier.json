@@ -1,0 +1,156 @@
+{
+  "titre": "AchhLife — Moussa, de la D5 à la National 2 (titre provisoire)",
+  "notes": [
+    "Instants en secondes dans chaque rush (son d'origine). Les plans de coupe remplacent l'image, la voix continue.",
+    "Habillage commun (style de l'épisode #42) : sous-titres blancs en bas sans fond, bandeaux de nom blancs à deux lignes en bas à gauche, pop-up « like / abonné », logo AchhLife et carton de fin repris de l'épisode #42 lui-même (rien n'est redessiné)."
+  ],
+  "sequences": [
+    {
+      "titre": "0. Accroche",
+      "but": "Cinq phrases fortes en rafale, puis le logo AchhLife sur la Paillade vue du drone.",
+      "habillage": "Sous-titres. Coupes sèches avec un souffle entre les phrases.",
+      "paroles": [
+        {"rush": "DJI_20261026201400_0016_D", "debut": 435.40, "fin": 437.30, "qui": "un ancien coéquipier"},
+        {"rush": "3", "debut": 562.97, "fin": 567.45, "qui": "Moussa"},
+        {"rush": "DJI_20261026190240_0010_D", "debut": 308.85, "fin": 312.60, "qui": "Moussa"},
+        {"rush": "DJI_20261026190240_0010_D", "debut": 234.02, "fin": 235.70, "qui": "Moussa"},
+        {"rush": "DJI_20261026201400_0016_D", "debut": 557.80, "fin": 562.95, "qui": "Achraf"}
+      ],
+      "images": [
+        {"rush": "DJI_20260909191311_0048_D", "debut": 0.0, "fin": 6.0, "quoi": "drone : la Mosson et les immeubles, logo AchhLife par-dessus (repris de l'épisode #42 vers 10:00)"}
+      ]
+    },
+    {
+      "titre": "1. Ouverture",
+      "but": "Achraf annonce l'épisode face caméra.",
+      "habillage": "Carte « SAISON 3 · ÉPISODE N » façon glitch juste après (numéro à confirmer).",
+      "paroles": [
+        {"rush": "1", "debut": 0.00, "fin": 19.30, "qui": "Achraf",
+         "plans": [{"rush": "DJI_20260909191438_0049_D", "debut": 4.0, "fin": 7.0, "a": 4.6, "quoi": "drone : les immeubles de la Paillade, sur « 5e division de district… National 2 »"}]}
+      ]
+    },
+    {
+      "titre": "2. La boulangerie",
+      "but": "Moussa chez lui : sa boulangerie, son quartier, ses potes d'enfance.",
+      "habillage": "Sous-titres. Bandeau « MOUSSA · Montpellier Atlas Paillade » à sa première apparition.",
+      "paroles": [
+        {"rush": "2", "debut": 3.20, "fin": 11.82, "qui": "Achraf, puis Moussa"},
+        {"rush": "2", "debut": 20.85, "fin": 26.35, "qui": "Achraf, Moussa"},
+        {"rush": "2", "debut": 38.83, "fin": 48.23, "qui": "Moussa, puis Achraf",
+         "plans": [{"rush": "DJI_20260909191704_0050_D", "debut": 2.0, "fin": 5.0, "a": 3.8, "quoi": "drone : les barres de la Paillade, sur « l'enfant de la Paillade »"}]},
+        {"rush": "2", "debut": 58.88, "fin": 66.54, "qui": "Achraf, Moussa",
+         "plans": [{"rush": "2", "debut": 52.0, "fin": 56.0, "a": 3.0, "quoi": "le comptoir et les vitrines"}]},
+        {"rush": "2", "debut": 260.49, "fin": 272.13, "qui": "Moussa, Achraf", "note": "Ryan, camarade du CP : vérifier à l'image que le groupe qui ne veut pas apparaître (vers 4:44) n'est pas dans le cadre"},
+        {"rush": "2", "debut": 320.14, "fin": 331.54, "qui": "Achraf, puis Moussa"}
+      ]
+    },
+    {
+      "titre": "3. Le club",
+      "but": "Le bureau, les trophées, et l'histoire du mur : « dans quelques mois je jouerai en une ».",
+      "habillage": "Sous-titres. Plus tard : les anciennes vidéos TikTok de Moussa sur « on vous mettra ça » (à fournir).",
+      "paroles": [
+        {"rush": "3", "debut": 0.96, "fin": 7.02, "qui": "Achraf", "plans": [{"rush": "3", "debut": 8.0, "fin": 12.0, "a": 1.0, "quoi": "l'arrivée au stade"}]},
+        {"rush": "3", "debut": 259.40, "fin": 268.20, "qui": "un dirigeant",
+         "plans": [{"rush": "3", "debut": 236.0, "fin": 242.0, "a": 1.5, "quoi": "les trophées du bureau"}]},
+        {"rush": "3", "debut": 530.74, "fin": 585.15, "qui": "Achraf, Moussa, Slimane",
+         "plans": [{"rush": "3", "debut": 310.0, "fin": 316.0, "a": 30.0, "quoi": "les vieilles photos d'équipe au mur, sur « remplaçant en D4 »"}]}
+      ]
+    },
+    {
+      "titre": "4. En tribune : qui est Moussa",
+      "but": "L'interview assise au coucher du soleil : sa présentation, son surnom, ses débuts sur TikTok.",
+      "habillage": "Bandeau de nom. Pop-up « like / abonné » sur « abonnez-vous ». Sous-titres.",
+      "paroles": [
+        {"rush": "DJI_20261026185942_0009_D", "debut": 0.75, "fin": 21.59, "qui": "Achraf, puis Moussa"},
+        {"rush": "DJI_20261026185942_0009_D", "debut": 23.65, "fin": 34.45, "qui": "Achraf"},
+        {"rush": "DJI_20261026185942_0009_D", "debut": 51.91, "fin": 72.75, "qui": "Achraf, puis Moussa"},
+        {"rush": "DJI_20261026185942_0009_D", "debut": 73.79, "fin": 98.65, "qui": "Achraf, puis Moussa", "note": "À TRANCHER : la pique au « meilleur défenseur d'Île-de-France » (une personne réelle, moquée)"},
+        {"rush": "DJI_20261026185942_0009_D", "debut": 128.21, "fin": 157.37, "qui": "Achraf, puis Moussa"}
+      ]
+    },
+    {
+      "titre": "5. En tribune : le parcours",
+      "but": "De gardien à 7 ans à la National 2, avec la Suisse, le Portugal et l'Algérie.",
+      "habillage": "Sous-titres. Une petite carte du parcours possible (Montpellier → Genève → Lisbonne → Algérie → Montpellier), sans logo de club.",
+      "paroles": [
+        {"rush": "DJI_20261026190240_0010_D", "debut": 0.14, "fin": 41.22, "qui": "Achraf, puis Moussa",
+         "plans": [{"rush": "DJI_20261026191432_0011_D", "debut": 45.0, "fin": 55.0, "a": 8.0, "quoi": "le terrain de son premier club, des enfants qui jouent"}]},
+        {"rush": "DJI_20261026190240_0010_D", "debut": 55.50, "fin": 64.85, "qui": "Moussa"},
+        {"rush": "DJI_20261026190240_0010_D", "debut": 83.32, "fin": 88.15, "qui": "Moussa"},
+        {"rush": "DJI_20261026190240_0010_D", "debut": 112.78, "fin": 114.60, "qui": "Moussa"},
+        {"rush": "DJI_20261026190240_0010_D", "debut": 118.78, "fin": 122.21, "qui": "Moussa"},
+        {"rush": "DJI_20261026190240_0010_D", "debut": 137.40, "fin": 142.28, "qui": "Moussa"},
+        {"rush": "DJI_20261026190240_0010_D", "debut": 152.20, "fin": 250.14, "qui": "Moussa (et Achraf : « le monteur, il coupera »)"},
+        {"rush": "DJI_20261026190240_0010_D", "debut": 251.14, "fin": 277.94, "qui": "Moussa"},
+        {"rush": "DJI_20261026190240_0010_D", "debut": 304.02, "fin": 316.40, "qui": "Moussa"},
+        {"rush": "DJI_20261026190240_0010_D", "debut": 344.24, "fin": 365.22, "qui": "Moussa"},
+        {"rush": "DJI_20261026190240_0010_D", "debut": 399.74, "fin": 415.14, "qui": "Moussa",
+         "plans": [{"rush": "DJI_20260909192059_0053_D", "debut": 8.0, "fin": 22.0, "a": 0.5, "quoi": "drone : on passe les arbres et on découvre le terrain et la Mosson"}]}
+      ]
+    },
+    {
+      "titre": "6. Le terrain de son enfance",
+      "but": "Achraf filme le terrain de Paillade Mercure et le stade du MHSC collé au leur.",
+      "habillage": "Sous-titres.",
+      "paroles": [
+        {"rush": "DJI_20261026191432_0011_D", "debut": 1.39, "fin": 29.57, "qui": "Achraf, puis Moussa"},
+        {"rush": "DJI_20261026191432_0011_D", "debut": 68.92, "fin": 92.58, "qui": "Achraf",
+         "plans": [{"rush": "DJI_20260909192215_0054_D", "debut": 3.0, "fin": 9.0, "a": 12.0, "quoi": "drone : leur terrain et la Mosson juste derrière"}]}
+      ]
+    },
+    {
+      "titre": "7. Le thé au clubhouse (digression gardée courte)",
+      "but": "Le thé marocain, « la beauté de l'Atlas », et le mois au Maroc.",
+      "habillage": "Sous-titres.",
+      "paroles": [
+        {"rush": "DJI_20261026191749_0013_D", "debut": 29.52, "fin": 38.50, "qui": "Achraf",
+         "plans": [{"rush": "DJI_20261026191749_0013_D", "debut": 0.0, "fin": 5.0, "a": 0.0, "quoi": "le thé qu'on verse"}]},
+        {"rush": "DJI_20261026191749_0013_D", "debut": 79.40, "fin": 95.54, "qui": "Achraf, Moussa"}
+      ]
+    },
+    {
+      "titre": "8. Le soir : le carton rouge (si le son passe)",
+      "but": "On le chambre sur son carton rouge.",
+      "habillage": "Sous-titres.",
+      "paroles": [
+        {"rush": "DJI_20261026195058_0014_D", "debut": 128.95, "fin": 176.69, "qui": "le groupe, Moussa", "note": "SON SATURÉ de 2:19 à 2:29 : à écouter, sinon on coupe la séquence"}
+      ]
+    },
+    {
+      "titre": "9. La Paillade la nuit",
+      "but": "Son quartier, puis les anciens coéquipiers : « il était toujours remplaçant avec nous ».",
+      "habillage": "Sous-titres. Rien de nommé pour les anciens coéquipiers (noms non vérifiés).",
+      "paroles": [
+        {"rush": "DJI_20261026201400_0016_D", "debut": 0.00, "fin": 29.92, "qui": "Achraf, Moussa",
+         "plans": [{"rush": "DJI_20260909192509_0055_D", "debut": 4.0, "fin": 9.0, "a": 15.0, "quoi": "drone : la Paillade, sur « 50 000 habitants »"}]},
+        {"rush": "DJI_20261026201400_0016_D", "debut": 31.34, "fin": 62.48, "qui": "Moussa, Achraf"},
+        {"rush": "DJI_20261026201400_0016_D", "debut": 87.50, "fin": 96.70, "qui": "Achraf, Moussa"},
+        {"rush": "DJI_20261026201400_0016_D", "debut": 344.28, "fin": 377.90, "qui": "un ancien coéquipier, Achraf"},
+        {"rush": "DJI_20261026201400_0016_D", "debut": 410.64, "fin": 437.30, "qui": "l'ancien coéquipier, Moussa, Achraf"},
+        {"rush": "DJI_20261026201400_0016_D", "debut": 454.80, "fin": 456.40, "qui": "Achraf"}
+      ]
+    },
+    {
+      "titre": "10. Les deux dernières questions",
+      "but": "Au Moussa de 10 ans, aux jeunes de D5, et le travail le matin pendant que les autres allaient à l'intérim.",
+      "habillage": "Sous-titres. On peut ralentir la musique ici.",
+      "paroles": [
+        {"rush": "DJI_20261026201400_0016_D", "debut": 506.88, "fin": 538.72, "qui": "Achraf"},
+        {"rush": "DJI_20261026201400_0016_D", "debut": 546.60, "fin": 574.50, "qui": "Moussa, puis Achraf", "note": "la reprise après « Attends, recommence »"},
+        {"rush": "DJI_20261026201400_0016_D", "debut": 591.64, "fin": 613.90, "qui": "Moussa"},
+        {"rush": "DJI_20261026201400_0016_D", "debut": 640.50, "fin": 671.44, "qui": "Moussa, puis Achraf"}
+      ]
+    },
+    {
+      "titre": "11. Fin",
+      "but": "Achraf conclut et demande des commentaires pour Moussa.",
+      "habillage": "Réseaux de Moussa à l'écran (à fournir), puis le carton de fin AchhLife de l'épisode #42.",
+      "paroles": [
+        {"rush": "DJI_20261026201400_0016_D", "debut": 671.44, "fin": 697.78, "qui": "Achraf"}
+      ],
+      "images": [
+        {"source": "épisode #42", "debut": 1320.0, "fin": 1326.0, "quoi": "carton de fin AchhLife « Suivez-moi sur tous mes réseaux »"}
+      ]
+    }
+  ]
+}
