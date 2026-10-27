@@ -95,6 +95,7 @@ Fabriqué par `outils/papier.py` à partir de `papier.json` : on modifie le JSON
 **1:50.7** · rush 3 8:50.7–9:45.1 (54.4 s) · Achraf, Moussa, Slimane
 > « Oh Moussa, avant d'arriver là-bas et qu'on parle un peu de tout ça, il n'y a pas une histoire ici où on a raconté tu peux raconter l'histoire ? Regardez là-bas là. Je vais vous expliquer simple et rapide les gars, simple et rapide. Je venais de signer à l'Atlas Payot en équipe 3. Non tu voulais signer. Non je venais Il a menti, il avait menti, je venais de signer la vraie histoire, il l'a rajouté pour faire rire les gens, la vraie histoire je venais de signer et le coach c'était celui que vous avez vu juste avant Slimen qui est le vice-président du club et je faisais des passes contre le mur et je disais à tout le monde vous allez voir dans quelques mois je jouera en une. Et à ce moment là tu joues en combien ? En équipe 3, en D4. Et les gens ils rigolaient ? Ouais les gens ils se foutaient de ma gueule, je venais de commencer les TikTok tout ça et les gens ils se moquaient de moi, ils me disaient ah c'est lui qui est remplaçant en D4 et tout. Et tu les as encore les vidéos ? Ouais je les ai encore, je pourrais les trouver. Je pense qu'elles sont sur TikTok. Mais on va trouver les vidéos, je vais vous mettre ça. On vous mettra, on vous mettra ça. »
 > ↳ plan de coupe à +30.0 s : les vieilles photos d'équipe au mur, sur « remplaçant en D4 » (rush 3 5:10.0–5:16.0)
+> ↳ plan de coupe à +43.0 s : TikTok : sa 1re vidéo (11/07/2022), « celui qui jouera pour l'Algérie », sur « les gens se moquaient de moi » (tiktok/20220711_7119236617642069253.mp4 0:00.0–0:10.0)
 
 ## 4. En tribune : qui est Moussa
 
@@ -115,6 +116,7 @@ Fabriqué par `outils/papier.py` à partir de `papier.json` : on modifie le JSON
 
 **4:02.5** · rush 0009 2:08.2–2:37.4 (29.2 s) · Achraf, puis Moussa
 > « comment ça se fait que tu t'es lancé sur les réseaux quand est-ce que tu t'es lancé sur les réseaux et c'est quoi qui t'a fait péter moi c'est simple j'ai commencé il y a 4 ans en gros je sortais du Portugal jouer (?) au foot là-bas en réserve de ligue 2 et quand je suis rentré en France je me suis retrouvé sans club j'avais rien à faire et d'un coup j'ai commencé à filmer mes entraînements etc j'ai fait un peu de vidéos d'humour sur le foot et c'est comme ça petit à petit j'ai posté ça a commencé à prendre forme et c'est comme ça que ma chaîne TikTok a commencé à marcher »
+> ↳ plan de coupe à +17.8 s : TikTok (01/08/2022) : ses images de match, sur « j'ai commencé à filmer mes entraînements » (tiktok/20220801_7127011293533326597.mp4 0:06.0–0:15.0)
 
 ## 5. En tribune : le parcours
 
@@ -144,16 +146,20 @@ Fabriqué par `outils/papier.py` à partir de `papier.json` : on modifie le JSON
 
 **7:15.0** · rush 0010 4:11.1–4:37.9 (26.8 s) · Moussa
 > « Ensuite je suis allé à Saint-Martin justement J'ai commencé là-bas en D5 Parce que je n'avais pas de club Il fallait se remettre dans le rythme J'ai fait quelques mois, ensuite (?) je suis venu à l'Atlas Payad, d'abord en équipe 3, c'est là que je t'ai raconté par rapport à Slimane, tout ça, c'était lui l'entraîneur. Slimane avec Ilyes, il tournait un peu. Ilyes qui est le préparateur physique de la une. C'était les deux coachs. Voilà, c'était les deux coachs, ils tournaient. Donc (?) j'ai commencé avec un D4, petit à petit, j'ai fait deux mois, je suis monté avec l'équipe réserve. »
+> ↳ plan de coupe à +2.5 s : TikTok « Mon parcours » : D5 (tiktok/20260426_7633147028314459394.mp4 0:06.0–0:12.0)
+> ↳ plan de coupe à +22.8 s : TikTok « Mon parcours » : D4 (tiktok/20260426_7633147028314459394.mp4 0:12.0–0:16.0)
 
 **7:41.8** · rush 0010 5:04.0–5:16.4 (12.4 s) · Moussa
 > « Donc, à cette fin d'année, je me fais virer de l'équipe 1. L'entraîneur, il décide de ne pas me conserver. Je me rappelle qu'il me disait que j'étais trop frêle pour la R1, il me sortait des phrases comme ça, il m'a dit ouais (?) va prouvre un R3 après reviens me voir, »
 
 **7:54.2** · rush 0010 5:44.2–6:05.2 (21.0 s) · Moussa
 > « La réserve était en R1, ils étaient plus jeunes que moi les joueurs, ils avaient 2-3 ans de moins que moi la plupart des joueurs, après j'ai fait le choix, je suis revenu là, je devais commencer en réserve sauf qu'à la prépa il manquait des joueurs, je me suis incrusté et avec mes prestations je suis resté en équipe 1, au final j'ai fini par m'imposer et depuis jusqu'à là je suis resté en équipe 1. »
+> ↳ plan de coupe à +0.6 s : TikTok « Mon parcours » : R1, sur « la réserve était en R1 » (tiktok/20260426_7633147028314459394.mp4 0:26.0–0:32.0)
 
 **8:15.1** · rush 0010 6:39.7–6:55.1 (15.4 s) · Moussa
 > « Depuis, tout se passe bien, on est monté, National 2. Maintenant, tout se passe bien, je suis au tituleur en National 2, défenseur central. Pour vous dire que les gars, le foot, même si vous êtes dans les bas niveaux, ça peut aller très très vite. Mais ça peut être l'inverse aussi, vous pouvez être très très haut et finir tout en bas aussi. »
-> ↳ plan de coupe à +0.5 s : drone : on passe les arbres et on découvre le terrain et la Mosson (rush 0053 0:08.0–0:22.0)
+> ↳ plan de coupe à +1.0 s : TikTok « Mon parcours » : l'accession en N2, sur « on est monté, National 2 » (tiktok/20260426_7633147028314459394.mp4 0:54.0–1:00.0)
+> ↳ plan de coupe à +7.0 s : drone : on passe les arbres et on découvre le terrain et la Mosson (rush 0053 0:08.0–0:16.0)
 
 ## 6. Le terrain de son enfance
 
