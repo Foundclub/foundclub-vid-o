@@ -18,13 +18,16 @@ def write(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def transcribe(model, source, out, stem, beam=5):
+PROMPT = "Football. Achh10, AchhLife, National 2, Berre SC, FC Rousset, FoundClub, Ergysport."
+
+
+def transcribe(model, source, out, stem, beam=5, prompt=PROMPT):
     out.mkdir(parents=True, exist_ok=True)
     begin = time.monotonic()
     segments, info = model.transcribe(
         str(source), language="fr", beam_size=beam, word_timestamps=True,
         vad_filter=True, condition_on_previous_text=False,
-        initial_prompt="Football. Achh10, AchhLife, National 2, Berre SC, FC Rousset, FoundClub, Ergysport.",
+        initial_prompt=prompt,
     )
     rows, words, subtitles = [], [], []
     for i, s in enumerate(segments, 1):
