@@ -91,11 +91,16 @@ for n in choisies:
                                  "qui": _voix[p["rush"]].get(f"{n}-{piece['parole']}", {}).get(str(k), "achraf")})
             if p.get("bandeau"):
                 debut = t + p["debut"] - piece["coupe"] + p["bandeau"]["a"]
-                bandeaux.append((HABILLAGE / f"bandeau-{p['bandeau']['nom']}.png", debut, debut + BANDEAU_DUREE))
+                bandeaux.append((HABILLAGE / f"bandeau-{p['bandeau']['nom']}.png", debut,
+                                 debut + p["bandeau"].get("duree", BANDEAU_DUREE)))
             fin_paroles = t + piece["duree"]
         t += piece["duree"]
     if seq.get("effet") == "noir et blanc":
         noir_et_blanc.append((HABILLAGE / "dans-cet-episode.png", j["debut"] - t0 + 0.3, fin_paroles - 0.1))
+    for r in papier.get("rappels", []):  # pop-up « like / abonné » : « S'ABONNER », puis aimé et « ABONNÉ »
+        if r["sequence"] == n:
+            a = j["debut"] - t0 + r["a"]
+            bandeaux += [(HABILLAGE / "abonne-1.png", a, a + 1.9), (HABILLAGE / "abonne-2.png", a + 1.6, a + 4.5)]
 
 
 # qui parle (outils/voix.py) : la ponctuation suit le mot d'avant, et un changement de voix se cale sur la
@@ -133,6 +138,8 @@ def decouper(g):
         return [g]
     meilleur, cout = None, None
     for k in range(1, len(g)):
+        if not g[k]["mot"].startswith(" "):  # morceau collé au mot d'avant (« n » + « 'y ») : pas de coupure là
+            continue
         a, b = longueur(g[:k]), longueur(g[k:])
         fin = g[k - 1]["mot"].strip()
         c = abs(a - b) - (25 if fin.endswith(",") else 0) + (40 if fin.lower() in FAIBLES or re.match(r"\d", fin) else 0)

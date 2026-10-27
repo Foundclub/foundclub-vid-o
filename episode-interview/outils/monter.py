@@ -47,6 +47,13 @@ def duree(chemin):
                                  str(chemin)], capture_output=True, text=True, check=True).stdout)
 
 
+def taille(chemin):
+    """(largeur, hauteur) de la première image d'une vidéo ou d'une photo."""
+    sortie = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height",
+                             "-of", "csv=p=0", str(chemin)], capture_output=True, text=True, check=True).stdout
+    return tuple(int(v) for v in sortie.strip().split(",")[:2])
+
+
 def proxy(rush):
     return TRAVAIL / "proxies" / f"{rush}.mp4"
 
@@ -166,16 +173,25 @@ def piece_parole(p, nom, effet=None):
         decal = c["a"] + (p["debut"] - d)
         quand = f"between(t,{decal:.3f},{decal + lc:.3f})"
         avant = base if i == 1 else f"v{i - 1}"
-        if c.get("telephone"):  # vidéo verticale (TikTok) au milieu, sur l'image floutée, avec le compte à côté
-            entrees += ["-ss", f"{c['debut']:.3f}", "-t", f"{lc:.3f}", "-i", str(TRAVAIL / c["source"])]
-            hv = round(H * 0.84 / 2) * 2
+        if c.get("telephone") or c.get("photo"):  # TikTok vertical ou photo au milieu, sur l'image floutée, légende à côté
+            media = TRAVAIL / (c.get("photo") or c["source"])
+            entrees += (["-loop", "1", "-framerate", IPS, "-t", f"{lc:.3f}", "-i", str(media)] if c.get("photo")
+                        else ["-ss", f"{c['debut']:.3f}", "-t", f"{lc:.3f}", "-i", str(media)])
+            hv = round(H * (0.72 if c.get("photo") else 0.84) / 2) * 2
+            lm, hm = taille(media)
+            texte = ""
+            for k, ligne in enumerate(c.get("legende", ["TikTok @moussaldz34"])):
+                (PIECES / f"{nom}-{i}-{k}.txt").write_text(ligne, encoding="utf-8")
+                corps = round(H / 24) if k == 0 else round(H / 34)
+                texte += (f",drawtext=fontfile='{POLICE}':textfile='{echappe(PIECES / f'{nom}-{i}-{k}.txt')}'"
+                          f":fontcolor=white:fontsize={corps}:x=w/2+{round(hv * lm / hm / 2) + 40}"
+                          f":y=h*0.42+{k * round(H / 15)}:borderw=3:bordercolor=black:enable='{quand}'")
             graphe += [f"[{i}:v]scale=-2:{hv},setsar=1,fps={IPS},pad=iw+12:ih+12:6:6:white,"
                        f"setpts=PTS-STARTPTS+{decal:.3f}/TB[c{i}]",
                        f"[{avant}]split[n{i}][b{i}]", f"[b{i}]gblur=sigma=30,eq=brightness=-0.15[f{i}]",
                        f"[n{i}][f{i}]overlay=enable='{quand}'[g{i}]",
-                       f"[g{i}][c{i}]overlay=x=(W-w)/2:y=(H-h)/2-{round(H * 0.04)}:eof_action=pass:enable='{quand}',"
-                       f"drawtext=fontfile='{POLICE}':text='TikTok @moussaldz34':fontcolor=white:fontsize={round(H / 24)}"
-                       f":x=w/2+{round(hv * 9 / 32) + 40}:y=h*0.42:borderw=3:bordercolor=black:enable='{quand}'[v{i}]"]
+                       f"[g{i}][c{i}]overlay=x=(W-w)/2:y=(H-h)/2-{round(H * 0.04)}:eof_action=pass:enable='{quand}'"
+                       f"{texte}[v{i}]"]
             continue
         entrees += entree(c["rush"], c["debut"], lc)
         graphe += [f"[{i}:v]scale={L}:{H},setsar=1,fps={IPS},setpts=PTS-STARTPTS+{decal:.3f}/TB[c{i}]",

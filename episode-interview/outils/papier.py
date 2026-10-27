@@ -49,7 +49,7 @@ for seq in papier["sequences"]:
         bloc.append(f"**{hms(t)}** · rush {nom(p['rush'])} {hms(p['debut'])}–{hms(p['fin'])} ({d:.1f} s) · {p['qui']}")
         bloc.append(f"> « {texte(p['rush'], p['debut'], p['fin'])} »")
         for c in p.get("plans", []):
-            origine = f"rush {nom(c['rush'])}" if "rush" in c else c["source"]
+            origine = f"rush {nom(c['rush'])}" if "rush" in c else c.get("source") or c["photo"]
             bloc.append(f"> ↳ plan de coupe à +{c['a']:.1f} s : {c['quoi']} ({origine} {hms(c['debut'])}–{hms(c['fin'])})")
         if p.get("note"):
             bloc.append(f"> ⚠ {p['note']}")

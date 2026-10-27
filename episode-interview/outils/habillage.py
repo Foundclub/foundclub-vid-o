@@ -5,6 +5,8 @@
 - habillage/logo-provisoire.mp4 : la neige télé puis le logo AchhLife du #42 (10:01.2 et 10:08.9), tels quels.
 - habillage/bandeau-<n>.png : bandeau de nom (deux cadres blancs, texte noir), comme « BEN ALI Mahfoud » du #42.
 - habillage/dans-cet-episode.png : « Dans cet épisode.. » en bas à droite, comme « Dans l'épisode précédent.. ».
+- habillage/abonne-1.png, abonne-2.png : le pop-up « like / abonné » du #42, redessiné avec la photo d'achh10.
+- habillage/bandeau-reseaux-moussa.png : ses comptes, avec les icônes du carton de fin du #42.
 
 python outils/habillage.py      (Pillow : lancer avec `python`, pas `python -I`)
 """
@@ -118,13 +120,66 @@ def dans_cet_episode():
     im.save(SORTIE / "dans-cet-episode.png")
 
 
+def reseaux(comptes, nom):
+    """Bandeau des réseaux : les icônes du carton de fin du #42 (22:04) et le compte, sur un cadre noir en bas à gauche."""
+    fin42 = SORTIE / "_fin42.png"
+    ffmpeg("-ss", "1324", "-i", str(EP42), "-frames:v", "1", str(fin42))
+    icones = {"tiktok": (128, 683, 220, 780), "snapchat": (1532, 686, 1628, 782)}  # mesurés sur cette image
+    source = Image.open(fin42).convert("RGBA")
+    police = ImageFont.truetype(str(POLICES / "segoeuib.ttf"), 50)
+    largeurs = [96 + 18 + police.getbbox(c)[2] for _, c in comptes]
+    im = Image.new("RGBA", (L, H))
+    d = ImageDraw.Draw(im)
+    x, y = 198, 900
+    d.rounded_rectangle((x, y, x + sum(largeurs) + 56 * len(comptes), y + 124), 18, fill=(0, 0, 0, 225))
+    x += 28
+    for (reseau, compte), w in zip(comptes, largeurs):
+        icone = source.crop(icones[reseau]).resize((96, 96))
+        im.alpha_composite(icone, (x, y + 14))
+        d.text((x + 96 + 18, y + 62), compte, font=police, fill=(255, 255, 255, 255), anchor="lm")
+        x += w + 56
+    im.save(SORTIE / f"bandeau-{nom}.png")
+    fin42.unlink()
+
+
+def abonne():
+    """Pop-up « like / abonné » du #42, redessiné : cadre blanc liseré d'or en bas au centre, photo d'achh10,
+    pouce, pouce baissé, bouton, cloche ; abonne-1 = « S'ABONNER » en rouge, abonne-2 = aimé et « ABONNÉ »."""
+    icones = ImageFont.truetype(str(POLICES / "segmdl2.ttf"), 64)
+    texte = ImageFont.truetype(str(POLICES / "segoeuib.ttf"), 34)
+    profil = Image.open(ICI.parent / "clips-bourbier" / "habillage" / "medias" / "profil-achh10.jpg").convert("RGBA")
+    profil = profil.resize((104, 104))
+    rond = Image.new("L", (104, 104))
+    ImageDraw.Draw(rond).ellipse((0, 0, 103, 103), fill=255)
+    x0, y0, x1, y1 = 560, 878, 1360, 1028
+    for etat in (1, 2):
+        im = Image.new("RGBA", (L, H))
+        d = ImageDraw.Draw(im)
+        d.rounded_rectangle((x0, y0, x1, y1), 22, fill=(255, 255, 255, 255), outline=(222, 184, 70, 255), width=5)
+        im.paste(profil, (x0 + 28, y0 + 23), rond)
+        aime = (20, 20, 20, 255) if etat == 2 else (120, 120, 120, 255)
+        d.text((x0 + 215, y0 + 75), "", font=icones, fill=aime, anchor="mm")
+        if etat == 2:
+            d.rectangle((x0 + 175, y0 + 118, x0 + 255, y0 + 124), fill=(20, 20, 20, 255))
+        d.text((x0 + 315, y0 + 75), "", font=icones, fill=(120, 120, 120, 255), anchor="mm")
+        bouton, couleur, ecrit = (x0 + 390, y0 + 45, x0 + 660, y0 + 105), *(
+            ((204, 0, 0, 255), (255, 255, 255, 255)) if etat == 1 else ((228, 228, 228, 255), (96, 96, 96, 255)))
+        d.rounded_rectangle(bouton, 8, fill=couleur)
+        d.text(((bouton[0] + bouton[2]) / 2, y0 + 75), "S'ABONNER" if etat == 1 else "ABONNÉ", font=texte,
+               fill=ecrit, anchor="mm")
+        d.text((x0 + 730, y0 + 75), "", font=icones, fill=(20, 20, 20, 255), anchor="mm")
+        im.save(SORTIE / f"abonne-{etat}.png")
+
+
 SORTIE.mkdir(parents=True, exist_ok=True)
 carte_saison()
 logo_provisoire()
 dans_cet_episode()
+abonne()
+reseaux([("tiktok", "moussaldz34"), ("snapchat", "moussa.arim")], "reseaux-moussa")
 papier = json.loads((ICI / "papier.json").read_text(encoding="utf-8"))
 for seq in papier["sequences"]:
     for p in seq["paroles"]:
-        if p.get("bandeau"):
+        if p.get("bandeau", {}).get("lignes"):  # « reseaux-moussa » est fait plus haut
             bandeau(p["bandeau"]["lignes"], p["bandeau"]["nom"])
 print("habillage :", ", ".join(sorted(f.name for f in SORTIE.glob("*.*"))))

@@ -43,7 +43,7 @@ Les instants sont en min:s **dans chaque rush**.
   - les anciennes vidéos TikTok de Moussa (« on vous mettra ça ») ;
   - ses réseaux « juste en dessous » ;
   - une photo de lui en gardien (il dit ne pas en avoir).
-- **Personnes qui ne veulent pas apparaître** :
+- **Personnes qui ne veulent pas apparaître** (Adel, 27/10 : elles acceptent d'être filmées, rien à flouter) :
   - « On n'est pas dans la vidéo » (`2`, vers 4:44) ;
   - « tu vas pas passer, t'inquiète » (`0016`, vers 1:53) ;
   - « le boss de l'Atlas… il ne va jamais parler à la caméra » (`3`, vers 2:26).
@@ -57,7 +57,10 @@ Les instants sont en min:s **dans chaque rush**.
     TikTok donne le Snapchat « moussa.arim ») ; TikTok **@moussaldz34**, nom affiché « MOUSSA LDZ », 129,1 k abonnés,
     4,8 M j'aime (page lue le 27/10) ;
   - son Instagram, « MousselDZ34 » (« 1 500 » ?), reste à vérifier ;
-  - Slimane (vice-président, ancien entraîneur de l'équipe 3) et Ilyes (préparateur physique) ;
+  - CONFIRMÉ par Adel le 27/10 : **Slimane** (vice-président, ancien entraîneur de l'équipe 3) ; Ilyes (préparateur
+    physique) reste à vérifier ;
+  - « Chaouchi, un gardien emblématique de l'Algérie » (`0010` 3:36) : **Faouzi Chaouchi** (Coupe du monde 2010,
+    fiche Wikipédia lue le 27/10) ; photo Wikimedia Commons « Fawzi_Chawchi.jpg », Azoul, CC0 ;
   - les entraîneurs « Sandrick » et « Geoffrey Dernis » ;
   - les figures du club « Suleyman Lella », « Mohamed Taoubi » et « Khalid Fekraoui » ;
   - les coéquipiers Nate, Samir, Bakhti, Adri ou Adriano, « Wahsin » ou « Mohsin », Malik, « Zahman » et Ryan ;

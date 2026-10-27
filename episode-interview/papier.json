@@ -11,6 +11,7 @@
     "par_sequence": {"0": "hype-drill", "1": "hype-drill", "2": "cinematic", "3": "cinematic", "4": "sad-soul", "5": "sad-soul",
                      "6": "sad-soul", "7": "cinematic", "8": "hype-drill", "9": "cinematic", "10": "sad-soul"}
   },
+  "rappels": [{"sequence": 9, "a": 84.0, "note": "pop-up « like / abonné » vers 12:00 (Adel, 27/10, « 8- A »)"}],
   "sequences": [
     {
       "titre": "0. Accroche",
@@ -75,7 +76,8 @@
       "habillage": "Bandeau de nom. Pop-up « like / abonné » sur « abonnez-vous ». Sous-titres.",
       "paroles": [
         {"rush": "DJI_20261026185942_0009_D", "debut": 0.75, "fin": 21.59, "qui": "Achraf, puis Moussa"},
-        {"rush": "DJI_20261026185942_0009_D", "debut": 23.65, "fin": 34.45, "qui": "Achraf"},
+        {"rush": "DJI_20261026185942_0009_D", "debut": 23.65, "fin": 34.45, "qui": "Achraf",
+         "bandeau": {"nom": "reseaux-moussa", "a": 4.1, "duree": 6.5}},
         {"rush": "DJI_20261026185942_0009_D", "debut": 51.91, "fin": 72.75, "qui": "Achraf, puis Moussa"},
         {"rush": "DJI_20261026185942_0009_D", "debut": 73.79, "fin": 98.65, "qui": "Achraf, puis Moussa", "note": "la pique au « meilleur défenseur d'Île-de-France » : gardée (Adel, 27/10, « 1- B »)"},
         {"rush": "DJI_20261026185942_0009_D", "debut": 128.21, "fin": 157.37, "qui": "Achraf, puis Moussa",
@@ -94,7 +96,10 @@
         {"rush": "DJI_20261026190240_0010_D", "debut": 112.78, "fin": 114.60, "qui": "Moussa"},
         {"rush": "DJI_20261026190240_0010_D", "debut": 118.78, "fin": 122.21, "qui": "Moussa"},
         {"rush": "DJI_20261026190240_0010_D", "debut": 137.40, "fin": 142.28, "qui": "Moussa"},
-        {"rush": "DJI_20261026190240_0010_D", "debut": 152.20, "fin": 250.14, "qui": "Moussa (et Achraf : « le monteur, il coupera »)"},
+        {"rush": "DJI_20261026190240_0010_D", "debut": 152.20, "fin": 250.14, "qui": "Moussa (et Achraf : « le monteur, il coupera »)",
+         "plans": [{"photo": "illustrations/chaouchi.jpg", "debut": 0.0, "fin": 6.5, "a": 64.0,
+                    "legende": ["Faouzi Chaouchi", "gardien de l'équipe d'Algérie", "Coupe du monde 2010"],
+                    "quoi": "photo de Faouzi Chaouchi (Wikimedia Commons, Azoul, CC0) sur « il y avait Chaouchi »"}]},
         {"rush": "DJI_20261026190240_0010_D", "debut": 251.14, "fin": 277.94, "qui": "Moussa",
          "plans": [{"source": "tiktok/20260426_7633147028314459394.mp4", "debut": 6.0, "fin": 12.0, "a": 2.5, "telephone": true, "quoi": "TikTok « Mon parcours » : D5"},
                    {"source": "tiktok/20260426_7633147028314459394.mp4", "debut": 12.0, "fin": 16.0, "a": 22.8, "telephone": true, "quoi": "TikTok « Mon parcours » : D4"}]},
@@ -164,7 +169,8 @@
       "but": "Achraf conclut et demande des commentaires pour Moussa.",
       "habillage": "Réseaux de Moussa à l'écran (à fournir), puis le carton de fin AchhLife de l'épisode #42.",
       "paroles": [
-        {"rush": "DJI_20261026201400_0016_D", "debut": 671.44, "fin": 697.78, "qui": "Achraf"}
+        {"rush": "DJI_20261026201400_0016_D", "debut": 671.44, "fin": 697.78, "qui": "Achraf",
+         "bandeau": {"nom": "reseaux-moussa", "a": 13.4, "duree": 7.0}}
       ],
       "images": [
         {"source": "reference/episode-42.mp4", "debut": 1321.0, "fin": 1328.0, "quoi": "carton de fin AchhLife « Suivez-moi sur tous mes réseaux », repris tel quel de l'épisode #42 (22:01)"}

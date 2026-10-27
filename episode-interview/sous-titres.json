@@ -9,11 +9,18 @@
     ["en 5ème", "en 5e"],
     ["de la paillade", "de la Paillade"],
     ["Vous faisiez du coup d'ensemble", "Vous faisiez du foot ensemble"],
-    ["capricienne", "capricieuse"]
+    ["capricienne", "capricieuse"],
+    ["je suis au tituleur", "je suis titulaire"],
+    ["remplacant", "remplaçant"],
+    ["dans les h life", "dans AchhLife"],
+    ["dites nous en commentaire parce que vous aimeriez dire à moussa",
+     "dites-nous en commentaire ce que vous aimeriez dire à Moussa"]
   ],
   "a_verifier": [
     "« Vous faisiez du foot ensemble » : Whisper a entendu « du coup d'ensemble »",
     "« pizza capricieuse » : Whisper a entendu « capricienne »",
-    "« Ryan » : prénom du camarade de CP, entendu par Whisper"
+    "« Ryan » : prénom du camarade de CP, entendu par Whisper",
+    "« je suis titulaire » : Whisper a entendu « je suis au tituleur »",
+    "non corrigés, sens incertain : « Haussine l'a croqué » (9:58), « Tu l'as mangé rouge ? » (10:00), « en notre prime » (12:09), « Voir pas convoquer » (12:12), « O'Lak » (12:46)"
   ]
 }
