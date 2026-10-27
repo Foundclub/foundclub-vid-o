@@ -5,6 +5,12 @@
     "Instants en secondes dans chaque rush (son d'origine). Les plans de coupe remplacent l'image, la voix continue.",
     "Habillage commun (style de l'épisode #42) : sous-titres blancs en bas sans fond, bandeaux de nom blancs à deux lignes en bas à gauche, pop-up « like / abonné », logo AchhLife et carton de fin repris de l'épisode #42 lui-même (rien n'est redessiné)."
   ],
+  "musique": {
+    "note": "Morceaux Pixabay (licence Pixabay) dans D:/App/video/rushs/interview/musique, choisis par Claude le 27/10 (Adel : « fais auto », il changera ceux qui ne vont pas). Une séquence sans entrée n'a pas de musique.",
+    "morceaux": {"hype-drill": "Hype | Drill Music — kontraa (pixabay 438398)", "sad-soul": "Sad Soul Hip Hop — AlexGrohl (pixabay 185750)", "cinematic": "Experimental Cinematic Hip-Hop — Rockot (pixabay 315904)"},
+    "par_sequence": {"0": "hype-drill", "1": "hype-drill", "2": "cinematic", "3": "cinematic", "4": "sad-soul", "5": "sad-soul",
+                     "6": "sad-soul", "7": "cinematic", "8": "hype-drill", "9": "cinematic", "10": "sad-soul"}
+  },
   "sequences": [
     {
       "titre": "0. Accroche",
@@ -40,7 +46,7 @@
       "habillage": "Sous-titres. Bandeau « MOUSSA · Montpellier Atlas Paillade » à sa première apparition.",
       "paroles": [
         {"rush": "2", "debut": 3.20, "fin": 11.82, "qui": "Achraf, puis Moussa",
-         "bandeau": {"nom": "moussa", "lignes": ["MOUSSA", "Joueur de Montpellier Atlas Paillade"], "a": 4.0}},
+         "bandeau": {"nom": "moussa", "lignes": ["ARIM Moussa", "Défenseur central Montpellier Atlas Paillade"], "a": 4.0}},
         {"rush": "2", "debut": 20.85, "fin": 26.35, "qui": "Achraf, Moussa"},
         {"rush": "2", "debut": 38.83, "fin": 48.23, "qui": "Moussa, puis Achraf",
          "plans": [{"rush": "DJI_20260909191704_0050_D", "debut": 2.0, "fin": 5.0, "a": 3.8, "quoi": "drone : les barres de la Paillade, sur « l'enfant de la Paillade »"}]},
@@ -59,7 +65,8 @@
         {"rush": "3", "debut": 259.40, "fin": 268.20, "qui": "un dirigeant",
          "plans": [{"rush": "3", "debut": 236.0, "fin": 242.0, "a": 1.5, "quoi": "les trophées du bureau"}]},
         {"rush": "3", "debut": 530.74, "fin": 585.15, "qui": "Achraf, Moussa, Slimane",
-         "plans": [{"rush": "3", "debut": 310.0, "fin": 316.0, "a": 30.0, "quoi": "les vieilles photos d'équipe au mur, sur « remplaçant en D4 »"}]}
+         "plans": [{"rush": "3", "debut": 310.0, "fin": 316.0, "a": 30.0, "quoi": "les vieilles photos d'équipe au mur, sur « remplaçant en D4 »"},
+                   {"source": "tiktok/20220711_7119236617642069253.mp4", "debut": 0.0, "fin": 10.0, "a": 43.0, "telephone": true, "quoi": "TikTok : sa 1re vidéo (11/07/2022), « celui qui jouera pour l'Algérie », sur « les gens se moquaient de moi »"}]}
       ]
     },
     {
@@ -71,7 +78,8 @@
         {"rush": "DJI_20261026185942_0009_D", "debut": 23.65, "fin": 34.45, "qui": "Achraf"},
         {"rush": "DJI_20261026185942_0009_D", "debut": 51.91, "fin": 72.75, "qui": "Achraf, puis Moussa"},
         {"rush": "DJI_20261026185942_0009_D", "debut": 73.79, "fin": 98.65, "qui": "Achraf, puis Moussa", "note": "la pique au « meilleur défenseur d'Île-de-France » : gardée (Adel, 27/10, « 1- B »)"},
-        {"rush": "DJI_20261026185942_0009_D", "debut": 128.21, "fin": 157.37, "qui": "Achraf, puis Moussa"}
+        {"rush": "DJI_20261026185942_0009_D", "debut": 128.21, "fin": 157.37, "qui": "Achraf, puis Moussa",
+         "plans": [{"source": "tiktok/20220801_7127011293533326597.mp4", "debut": 6.0, "fin": 15.0, "a": 17.8, "telephone": true, "quoi": "TikTok (01/08/2022) : ses images de match, sur « j'ai commencé à filmer mes entraînements »"}]}
       ]
     },
     {
@@ -87,11 +95,15 @@
         {"rush": "DJI_20261026190240_0010_D", "debut": 118.78, "fin": 122.21, "qui": "Moussa"},
         {"rush": "DJI_20261026190240_0010_D", "debut": 137.40, "fin": 142.28, "qui": "Moussa"},
         {"rush": "DJI_20261026190240_0010_D", "debut": 152.20, "fin": 250.14, "qui": "Moussa (et Achraf : « le monteur, il coupera »)"},
-        {"rush": "DJI_20261026190240_0010_D", "debut": 251.14, "fin": 277.94, "qui": "Moussa"},
+        {"rush": "DJI_20261026190240_0010_D", "debut": 251.14, "fin": 277.94, "qui": "Moussa",
+         "plans": [{"source": "tiktok/20260426_7633147028314459394.mp4", "debut": 6.0, "fin": 12.0, "a": 2.5, "telephone": true, "quoi": "TikTok « Mon parcours » : D5"},
+                   {"source": "tiktok/20260426_7633147028314459394.mp4", "debut": 12.0, "fin": 16.0, "a": 22.8, "telephone": true, "quoi": "TikTok « Mon parcours » : D4"}]},
         {"rush": "DJI_20261026190240_0010_D", "debut": 304.02, "fin": 316.40, "qui": "Moussa"},
-        {"rush": "DJI_20261026190240_0010_D", "debut": 344.24, "fin": 365.22, "qui": "Moussa"},
+        {"rush": "DJI_20261026190240_0010_D", "debut": 344.24, "fin": 365.22, "qui": "Moussa",
+         "plans": [{"source": "tiktok/20260426_7633147028314459394.mp4", "debut": 26.0, "fin": 32.0, "a": 0.6, "telephone": true, "quoi": "TikTok « Mon parcours » : R1, sur « la réserve était en R1 »"}]},
         {"rush": "DJI_20261026190240_0010_D", "debut": 399.74, "fin": 415.14, "qui": "Moussa",
-         "plans": [{"rush": "DJI_20260909192059_0053_D", "debut": 8.0, "fin": 22.0, "a": 0.5, "quoi": "drone : on passe les arbres et on découvre le terrain et la Mosson"}]}
+         "plans": [{"source": "tiktok/20260426_7633147028314459394.mp4", "debut": 54.0, "fin": 60.0, "a": 1.0, "telephone": true, "quoi": "TikTok « Mon parcours » : l'accession en N2, sur « on est monté, National 2 »"},
+                   {"rush": "DJI_20260909192059_0053_D", "debut": 8.0, "fin": 16.0, "a": 7.0, "quoi": "drone : on passe les arbres et on découvre le terrain et la Mosson"}]}
       ]
     },
     {

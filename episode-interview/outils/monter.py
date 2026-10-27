@@ -101,19 +101,87 @@ def carte_texte(texte, nom):
             ":x=(w-text_w)/2:y=(h-text_h)/2:box=1:boxcolor=black@0.55:boxborderw=24")
 
 
+# Zooms en tribune (plan fixe) : cadre serré 1,25× sur celui qui parle, coin haut-gauche en pixels 1920×1080
+ZOOM = 1.25
+CADRES = {"DJI_20261026185942_0009_D": {"moussa": (48, 130), "achraf": (384, 197)},
+          "DJI_20261026190240_0010_D": {"moussa": (125, 169), "achraf": (384, 121)}}
+PLAN_MIN, SERRE_MAX, LARGE_PAUSE = 2.0, 7.0, 4.0
+_voix = {}
+
+
+def plans_serres(rush, d, f):
+    """[(début, fin, qui)] en temps de la pièce : serré sur qui parle ≥ 2 s ; une longue réponse respire en large."""
+    if rush not in _voix:
+        par_phrase = json.loads((TRAVAIL / "voix" / f"{rush}.json").read_text(encoding="utf-8"))
+        _voix[rush] = {k: q for voix in par_phrase.values() for k, q in voix.items()}
+    tours = []
+    for k, m in enumerate(_mots[rush]):
+        qui = _voix[rush].get(str(k))
+        if qui in ("achraf", "moussa") and d <= m["debut"] < f:
+            if tours and tours[-1][2] == qui and m["debut"] - tours[-1][1] < 1.0:
+                tours[-1][1] = m["fin"]
+            else:
+                tours.append([m["debut"], m["fin"], qui])
+    plans = []
+    for a, b, qui in tours:
+        t = a
+        while b - t >= PLAN_MIN:
+            fin = min(b, t + SERRE_MAX) if b - t > SERRE_MAX + PLAN_MIN else b
+            plans.append((t - d, fin - d, qui))
+            t = fin + LARGE_PAUSE
+    return plans
+
+
+def zooms(rush, d, f):
+    """Morceau de graphe qui remplace [v0] par [v0z] avec les plans serrés ; « » s'il n'y a rien à zoomer."""
+    plans = plans_serres(rush, d, f) if rush in CADRES else []
+    if not plans:
+        return [], "v0"
+    k = L / 1920
+    w, h = round(L / ZOOM / 2) * 2, round(H / ZOOM / 2) * 2
+    g = ["[v0]split=3[zl][zm][za]"]
+    avant = "zl"
+    for qui in ("moussa", "achraf"):
+        fen = "+".join(f"between(t,{a:.3f},{b:.3f})" for a, b, q in plans if q == qui)
+        if not fen:
+            g.append(f"[z{qui[0]}]nullsink")
+            continue
+        x, y = (round(v * k) for v in CADRES[rush][qui])
+        g += [f"[z{qui[0]}]crop={w}:{h}:{x}:{y},scale={L}:{H},setsar=1[c{qui[0]}]",
+              f"[{avant}][c{qui[0]}]overlay=enable='{fen}'[s{qui[0]}]"]
+        avant = f"s{qui[0]}"
+    g.append(f"[{avant}]null[v0z]")
+    return g, "v0z"
+
+
 def piece_parole(p, nom, effet=None):
     d, f = bornes(p["rush"], p["debut"], p["fin"])
     longueur = f - d
     entrees = entree(p["rush"], d, longueur)
     graphe = [f"[0:v]scale={L}:{H},setsar=1,setpts=PTS-STARTPTS[v0]"]
+    g, base = zooms(p["rush"], d, f)
+    graphe += g
     for i, c in enumerate(p.get("plans", []), 1):
         lc = c["fin"] - c["debut"]
         decal = c["a"] + (p["debut"] - d)
+        quand = f"between(t,{decal:.3f},{decal + lc:.3f})"
+        avant = base if i == 1 else f"v{i - 1}"
+        if c.get("telephone"):  # vidéo verticale (TikTok) au milieu, sur l'image floutée, avec le compte à côté
+            entrees += ["-ss", f"{c['debut']:.3f}", "-t", f"{lc:.3f}", "-i", str(TRAVAIL / c["source"])]
+            hv = round(H * 0.84 / 2) * 2
+            graphe += [f"[{i}:v]scale=-2:{hv},setsar=1,fps={IPS},pad=iw+12:ih+12:6:6:white,"
+                       f"setpts=PTS-STARTPTS+{decal:.3f}/TB[c{i}]",
+                       f"[{avant}]split[n{i}][b{i}]", f"[b{i}]gblur=sigma=30,eq=brightness=-0.15[f{i}]",
+                       f"[n{i}][f{i}]overlay=enable='{quand}'[g{i}]",
+                       f"[g{i}][c{i}]overlay=x=(W-w)/2:y=(H-h)/2-{round(H * 0.04)}:eof_action=pass:enable='{quand}',"
+                       f"drawtext=fontfile='{POLICE}':text='TikTok @moussaldz34':fontcolor=white:fontsize={round(H / 24)}"
+                       f":x=w/2+{round(hv * 9 / 32) + 40}:y=h*0.42:borderw=3:bordercolor=black:enable='{quand}'[v{i}]"]
+            continue
         entrees += entree(c["rush"], c["debut"], lc)
         graphe += [f"[{i}:v]scale={L}:{H},setsar=1,fps={IPS},setpts=PTS-STARTPTS+{decal:.3f}/TB[c{i}]",
-                   f"[v{i - 1}][c{i}]overlay=eof_action=pass:enable='between(t,{decal:.3f},{decal + lc:.3f})'[v{i}]"]
+                   f"[{avant}][c{i}]overlay=eof_action=pass:enable='{quand}'[v{i}]"]
     n = len(p.get("plans", []))
-    graphe.append(f"[v{n}]{NOIR_ET_BLANC if effet == 'noir et blanc' else 'null'}[vo]")
+    graphe.append(f"[{f'v{n}' if n else base}]{NOIR_ET_BLANC if effet == 'noir et blanc' else 'null'}[vo]")
     graphe.append(f"[0:a]aresample=48000,volume={gain(p['rush']):.1f}dB,afade=t=in:d=0.02,"
                   f"afade=t=out:st={longueur - 0.03:.3f}:d=0.03,alimiter=limit=0.89:level=0[a]")
     sortie = PIECES / f"{nom}.mkv"
