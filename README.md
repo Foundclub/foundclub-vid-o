@@ -2,6 +2,8 @@
 
 Projets vidéo de FoundClub montés avec [HyperFrames](https://github.com/heygen-com/hyperframes) : la vidéo est une page HTML animée avec GSAP, filmée image par image dans Chrome, puis encodée par ffmpeg.
 
+**Avant de monter quoi que ce soit, lire [METHODE_MONTAGE.md](METHODE_MONTAGE.md)** : la façon de travailler avec Adel, les outils, le style validé et les pièges déjà payés. Pour un épisode long monté sur le PC d'Adel : [PROMPT_EPISODE_LOCAL.md](PROMPT_EPISODE_LOCAL.md).
+
 ## Démarrer une session cloud
 
 ```bash
