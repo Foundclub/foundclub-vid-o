@@ -1,0 +1,19 @@
+{
+  "notes": [
+    "Corrections appliquées au texte de chaque sous-titre par outils/finir.py (remplacement exact, dans l'ordre).",
+    "« à vérifier » : corrigé au plus probable, à confirmer par Adel à l'écoute (jamais un nom propre inventé)."
+  ],
+  "remplacer": [
+    ["je jouera en une", "je jouerai en une"],
+    ["A la fin je rentre chez moi J'avais", "À la fin, je rentre chez moi, j'avais"],
+    ["en 5ème", "en 5e"],
+    ["de la paillade", "de la Paillade"],
+    ["Vous faisiez du coup d'ensemble", "Vous faisiez du foot ensemble"],
+    ["capricienne", "capricieuse"]
+  ],
+  "a_verifier": [
+    "« Vous faisiez du foot ensemble » : Whisper a entendu « du coup d'ensemble »",
+    "« pizza capricieuse » : Whisper a entendu « capricienne »",
+    "« Ryan » : prénom du camarade de CP, entendu par Whisper"
+  ]
+}

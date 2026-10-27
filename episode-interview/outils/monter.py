@@ -9,7 +9,10 @@ carte provisoire (« carte » : texte blanc sur l'image ou sur fond noir, rempla
 Sortie : TRAVAIL/montage/seq-NN.mp4 (l'instant de l'épisode écrit en haut à droite), seq-NN.jpg (planche),
 brouillon.mp4 (tout l'épisode) et montage.json (où commence chaque séquence).
 
-python -I outils/monter.py [numéros de séquences…]      (sans numéro : toutes)
+Avec --final : depuis les rushs d'origine, en 1920×1080, dans TRAVAIL/final ; pas d'aperçu ni d'instant écrit,
+seulement les séquences sNN.mkv et montage.json (où tombe chaque pièce), que outils/finir.py habille.
+
+python -I outils/monter.py [--final] [numéros de séquences…]      (sans numéro : toutes)
 """
 import json
 import re
@@ -19,10 +22,14 @@ from pathlib import Path
 
 ICI = Path(__file__).resolve().parents[1]
 TRAVAIL = Path(r"D:\App\video\rushs\interview\travail")
-SORTIE = TRAVAIL / "montage"
+RUSHS = Path(r"D:\Foundclub média\ACh")
+FINAL = "--final" in sys.argv
+SORTIE = TRAVAIL / ("final" if FINAL else "montage")
 PIECES = SORTIE / "pieces"
-L, H, IPS = 1280, 720, "30000/1001"
-VIDEO = ["-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-r", IPS]
+L, H, IPS = (1920, 1080, "30000/1001") if FINAL else (1280, 720, "30000/1001")
+VIDEO = ["-c:v", "libx264", "-preset", "fast" if FINAL else "veryfast", "-crf", "17" if FINAL else "20",
+         "-pix_fmt", "yuv420p", "-r", IPS]
+NOIR_ET_BLANC = "hue=s=0,eq=contrast=1.12"
 SON = ["-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2"]
 POLICE = "C\\:/Windows/Fonts/arialbd.ttf"
 CIBLE_LUFS = -16.0
@@ -42,6 +49,16 @@ def duree(chemin):
 
 def proxy(rush):
     return TRAVAIL / "proxies" / f"{rush}.mp4"
+
+
+def source(rush):
+    """Le fichier lu pour l'image et le son : la copie légère, ou le rush d'origine en --final."""
+    return next(RUSHS.glob(f"{rush}.*")) if FINAL else proxy(rush)
+
+
+def entree(rush, debut, longueur):
+    decode = ["-hwaccel", "cuda"] if FINAL else []
+    return [*decode, "-ss", f"{debut:.3f}", "-t", f"{longueur:.3f}", "-i", str(source(rush))]
 
 
 def echappe(chemin):
@@ -84,32 +101,34 @@ def carte_texte(texte, nom):
             ":x=(w-text_w)/2:y=(h-text_h)/2:box=1:boxcolor=black@0.55:boxborderw=24")
 
 
-def piece_parole(p, nom):
+def piece_parole(p, nom, effet=None):
     d, f = bornes(p["rush"], p["debut"], p["fin"])
     longueur = f - d
-    entrees = ["-ss", f"{d:.3f}", "-t", f"{longueur:.3f}", "-i", str(proxy(p["rush"]))]
+    entrees = entree(p["rush"], d, longueur)
     graphe = [f"[0:v]scale={L}:{H},setsar=1,setpts=PTS-STARTPTS[v0]"]
     for i, c in enumerate(p.get("plans", []), 1):
         lc = c["fin"] - c["debut"]
         decal = c["a"] + (p["debut"] - d)
-        entrees += ["-ss", f"{c['debut']:.3f}", "-t", f"{lc:.3f}", "-i", str(proxy(c["rush"]))]
-        graphe += [f"[{i}:v]scale={L}:{H},setsar=1,setpts=PTS-STARTPTS+{decal:.3f}/TB[c{i}]",
+        entrees += entree(c["rush"], c["debut"], lc)
+        graphe += [f"[{i}:v]scale={L}:{H},setsar=1,fps={IPS},setpts=PTS-STARTPTS+{decal:.3f}/TB[c{i}]",
                    f"[v{i - 1}][c{i}]overlay=eof_action=pass:enable='between(t,{decal:.3f},{decal + lc:.3f})'[v{i}]"]
     n = len(p.get("plans", []))
+    graphe.append(f"[v{n}]{NOIR_ET_BLANC if effet == 'noir et blanc' else 'null'}[vo]")
     graphe.append(f"[0:a]aresample=48000,volume={gain(p['rush']):.1f}dB,afade=t=in:d=0.02,"
                   f"afade=t=out:st={longueur - 0.03:.3f}:d=0.03,alimiter=limit=0.89:level=0[a]")
     sortie = PIECES / f"{nom}.mkv"
-    ffmpeg(*entrees, "-filter_complex", ";".join(graphe), "-map", f"[v{n}]", "-map", "[a]",
+    ffmpeg(*entrees, "-filter_complex", ";".join(graphe), "-map", "[vo]", "-map", "[a]",
            "-t", f"{longueur:.3f}", *VIDEO, *SON, str(sortie))
-    return sortie
+    return sortie, d
 
 
 def piece_image(im, nom):
     longueur = im["fin"] - im["debut"]
     texte = f",{carte_texte(im['carte'], nom)}" if im.get("carte") else ""
-    if "rush" in im or "source" in im:
-        fichier = proxy(im["rush"]) if "rush" in im else TRAVAIL / im["source"]
-        entrees = ["-ss", f"{im['debut']:.3f}", "-t", f"{longueur:.3f}", "-i", str(fichier)]
+    if "rush" in im:
+        entrees = entree(im["rush"], im["debut"], longueur)
+    elif "source" in im:
+        entrees = ["-ss", f"{im['debut']:.3f}", "-t", f"{longueur:.3f}", "-i", str(TRAVAIL / im["source"])]
     else:
         entrees = ["-f", "lavfi", "-t", f"{longueur:.3f}", "-i", f"color=black:s={L}x{H}:r={IPS}"]
     a_son = "source" in im  # les drones et les cartes sont muets ; un extrait garde son son
@@ -128,20 +147,26 @@ def hms(s):
 
 SORTIE.mkdir(parents=True, exist_ok=True)
 PIECES.mkdir(exist_ok=True)
-choisies = {int(x) for x in sys.argv[1:]}
+choisies = {int(x) for x in sys.argv[1:] if x != "--final"}
 journal_f = SORTIE / "montage.json"
 journal = json.loads(journal_f.read_text(encoding="utf-8")) if journal_f.exists() else {}
 
-# fabriquer les pièces des séquences demandées
+# fabriquer les pièces des séquences demandées ; noter où tombe chaque phrase (pour les sous-titres et bandeaux)
 for n, seq in enumerate(papier["sequences"]):
     if choisies and n not in choisies:
         continue
-    pieces = [piece_parole(p, f"s{n:02}-p{i:02}") for i, p in enumerate(seq["paroles"])]
-    pieces += [piece_image(im, f"s{n:02}-i{i:02}") for i, im in enumerate(seq.get("images", []))]
+    pieces, faites = [], []
+    for i, p in enumerate(seq["paroles"]):
+        fichier, d = piece_parole(p, f"s{n:02}-p{i:02}", seq.get("effet"))
+        pieces.append(fichier)
+        faites.append({"parole": i, "rush": p["rush"], "coupe": round(d, 3), "duree": round(duree(fichier), 3)})
+    for i, im in enumerate(seq.get("images", [])):
+        pieces.append(piece_image(im, f"s{n:02}-i{i:02}"))
+        faites.append({"image": i, "duree": round(duree(pieces[-1]), 3)})
     liste = PIECES / f"s{n:02}.txt"
     liste.write_text("".join(f"file '{p.as_posix()}'\n" for p in pieces), encoding="utf-8")
     ffmpeg("-f", "concat", "-safe", "0", "-i", str(liste), "-c", "copy", str(PIECES / f"s{n:02}.mkv"))
-    journal[str(n)] = {"titre": seq["titre"], "duree": round(duree(PIECES / f"s{n:02}.mkv"), 3)}
+    journal[str(n)] = {"titre": seq["titre"], "duree": round(duree(PIECES / f"s{n:02}.mkv"), 3), "pieces": faites}
     print(f"séquence {n} : {journal[str(n)]['duree']:.1f} s", flush=True)
 
 # l'instant de chaque séquence dans l'épisode, puis les aperçus avec l'instant écrit dessus
@@ -150,7 +175,7 @@ for n in range(len(papier["sequences"])):
     if str(n) not in journal:
         break
     journal[str(n)]["debut"] = round(t, 3)
-    if not choisies or n in choisies:
+    if not FINAL and (not choisies or n in choisies):
         src, apercu = PIECES / f"s{n:02}.mkv", SORTIE / f"seq-{n:02}.mp4"
         ffmpeg("-i", str(src), "-vf",
                f"drawtext=fontfile='{POLICE}':text='%{{pts\\:hms\\:{t:.3f}}}':x=w-text_w-16:y=12:fontsize=26"
@@ -165,7 +190,7 @@ for n in range(len(papier["sequences"])):
 journal_f.write_text(json.dumps(journal, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 complet = [SORTIE / f"seq-{n:02}.mp4" for n in range(len(papier["sequences"])) if (SORTIE / f"seq-{n:02}.mp4").exists()]
-if len(complet) == len(papier["sequences"]):
+if not FINAL and len(complet) == len(papier["sequences"]):
     liste = SORTIE / "brouillon.txt"
     liste.write_text("".join(f"file '{p.as_posix()}'\n" for p in complet), encoding="utf-8")
     ffmpeg("-f", "concat", "-safe", "0", "-i", str(liste), "-c", "copy", "-movflags", "+faststart",

@@ -9,7 +9,8 @@
     {
       "titre": "0. Accroche",
       "but": "Cinq phrases fortes en rafale, puis le logo AchhLife sur la Paillade vue du drone.",
-      "habillage": "Sous-titres. Coupes sèches avec un souffle entre les phrases.",
+      "habillage": "Noir et blanc, « Dans cet épisode.. » en bas à droite, sous-titres. Coupes sèches avec un souffle entre les phrases (Adel, 27/10, « 4- A »).",
+      "effet": "noir et blanc",
       "paroles": [
         {"rush": "DJI_20261026201400_0016_D", "debut": 435.40, "fin": 437.30, "qui": "un ancien coéquipier"},
         {"rush": "3", "debut": 562.97, "fin": 567.45, "qui": "Moussa"},
@@ -18,7 +19,7 @@
         {"rush": "DJI_20261026201400_0016_D", "debut": 557.80, "fin": 562.95, "qui": "Achraf"}
       ],
       "images": [
-        {"rush": "DJI_20260909191311_0048_D", "debut": 0.0, "fin": 6.0, "carte": "LOGO ACHHLIFE", "quoi": "drone : la Mosson et les immeubles, logo AchhLife par-dessus (comme dans l'épisode #42 à 10:01 : neige télé, puis le logo dans la fumée)"}
+        {"source": "habillage/logo-provisoire.mp4", "debut": 0.0, "fin": 3.0, "quoi": "neige télé puis logo AchhLife, repris du #42 (10:01.2 et 10:08.9) ; PROVISOIRE : remplacé par le fichier d'intro d'Achraf (« 3- A »)"}
       ]
     },
     {
@@ -30,7 +31,7 @@
          "plans": [{"rush": "DJI_20260909191438_0049_D", "debut": 4.0, "fin": 7.0, "a": 4.6, "quoi": "drone : les immeubles de la Paillade, sur « 5e division de district… National 2 »"}]}
       ],
       "images": [
-        {"debut": 0.0, "fin": 2.5, "carte": "SAISON 3 · ÉPISODE 5", "quoi": "carte « SAISON 3 · ÉPISODE 5 »"}
+        {"source": "habillage/carte-saison.mp4", "debut": 0.0, "fin": 2.4, "quoi": "carte « SAISON 3 / EPISODE 5 » : fond du #42, texte refait ; PROVISOIRE (« 3- A »)"}
       ]
     },
     {
@@ -38,7 +39,8 @@
       "but": "Moussa chez lui : sa boulangerie, son quartier, ses potes d'enfance.",
       "habillage": "Sous-titres. Bandeau « MOUSSA · Montpellier Atlas Paillade » à sa première apparition.",
       "paroles": [
-        {"rush": "2", "debut": 3.20, "fin": 11.82, "qui": "Achraf, puis Moussa"},
+        {"rush": "2", "debut": 3.20, "fin": 11.82, "qui": "Achraf, puis Moussa",
+         "bandeau": {"nom": "moussa", "lignes": ["MOUSSA", "Joueur de Montpellier Atlas Paillade"], "a": 4.0}},
         {"rush": "2", "debut": 20.85, "fin": 26.35, "qui": "Achraf, Moussa"},
         {"rush": "2", "debut": 38.83, "fin": 48.23, "qui": "Moussa, puis Achraf",
          "plans": [{"rush": "DJI_20260909191704_0050_D", "debut": 2.0, "fin": 5.0, "a": 3.8, "quoi": "drone : les barres de la Paillade, sur « l'enfant de la Paillade »"}]},
