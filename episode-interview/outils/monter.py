@@ -1,0 +1,174 @@
+"""Monte l'épisode à partir de papier.json, séquence par séquence.
+
+Pour chaque phrase : l'image et le son du rush entre ses deux instants, élargis d'une respiration prise dans le
+silence (jamais sur le mot d'avant ou d'après), les plans de coupe posés par-dessus (la voix continue), le son
+ramené à -16 LUFS par rush (le réglage fin à -14 LUFS se fait à la finition).
+Les « images » sont un plan sans parole (drone), un extrait d'un fichier (« source », relatif à TRAVAIL) ou une
+carte provisoire (« carte » : texte blanc sur l'image ou sur fond noir, remplacé à la finition).
+
+Sortie : TRAVAIL/montage/seq-NN.mp4 (l'instant de l'épisode écrit en haut à droite), seq-NN.jpg (planche),
+brouillon.mp4 (tout l'épisode) et montage.json (où commence chaque séquence).
+
+python -I outils/monter.py [numéros de séquences…]      (sans numéro : toutes)
+"""
+import json
+import re
+import subprocess
+import sys
+from pathlib import Path
+
+ICI = Path(__file__).resolve().parents[1]
+TRAVAIL = Path(r"D:\App\video\rushs\interview\travail")
+SORTIE = TRAVAIL / "montage"
+PIECES = SORTIE / "pieces"
+L, H, IPS = 1280, 720, "30000/1001"
+VIDEO = ["-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-r", IPS]
+SON = ["-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2"]
+POLICE = "C\\:/Windows/Fonts/arialbd.ttf"
+CIBLE_LUFS = -16.0
+RESPIRE_AVANT, RESPIRE_APRES = 0.12, 0.25
+
+papier = json.loads((ICI / "papier.json").read_text(encoding="utf-8"))
+
+
+def ffmpeg(*args):
+    subprocess.run(["ffmpeg", "-hide_banner", "-v", "error", "-y", *args], check=True)
+
+
+def duree(chemin):
+    return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
+                                 str(chemin)], capture_output=True, text=True, check=True).stdout)
+
+
+def proxy(rush):
+    return TRAVAIL / "proxies" / f"{rush}.mp4"
+
+
+def echappe(chemin):
+    return str(chemin).replace("\\", "/").replace(":", "\\:")
+
+
+_mots, _niveaux = {}, None
+
+
+def bornes(rush, debut, fin):
+    """Élargit la coupe d'une respiration, sans mordre sur le mot voisin."""
+    if rush not in _mots:
+        _mots[rush] = json.loads((TRAVAIL / "transcriptions" / f"{rush}-mots.json").read_text(encoding="utf-8"))
+    avant = [m["fin"] for m in _mots[rush] if m["fin"] <= debut + 0.02]
+    apres = [m["debut"] for m in _mots[rush] if m["debut"] >= fin - 0.02]
+    d = max(debut - RESPIRE_AVANT, (max(avant) + 0.02) if avant else 0.0, 0.0)
+    f = min(fin + RESPIRE_APRES, (min(apres) - 0.03) if apres else fin + RESPIRE_APRES, duree(proxy(rush)))
+    return min(d, debut), max(f, fin)
+
+
+def gain(rush):
+    """dB à appliquer au rush pour l'amener vers -16 LUFS (mesure intégrée, gardée en cache)."""
+    global _niveaux
+    cache = TRAVAIL / "niveaux.json"
+    if _niveaux is None:
+        _niveaux = json.loads(cache.read_text(encoding="utf-8")) if cache.exists() else {}
+    if rush not in _niveaux:
+        err = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", str(TRAVAIL / "son48" / f"{rush}.wav"),
+                              "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True,
+                             encoding="utf-8", errors="replace").stderr
+        _niveaux[rush] = float(re.findall(r"I:\s+(-?[\d.]+) LUFS", err)[-1])
+        cache.write_text(json.dumps(_niveaux, indent=2) + "\n", encoding="utf-8")
+    return max(-12.0, min(10.0, CIBLE_LUFS - _niveaux[rush]))
+
+
+def carte_texte(texte, nom):
+    f = PIECES / f"{nom}.txt"
+    f.write_text(texte, encoding="utf-8")
+    return (f"drawtext=fontfile='{POLICE}':textfile='{echappe(f)}':fontcolor=white:fontsize=64"
+            ":x=(w-text_w)/2:y=(h-text_h)/2:box=1:boxcolor=black@0.55:boxborderw=24")
+
+
+def piece_parole(p, nom):
+    d, f = bornes(p["rush"], p["debut"], p["fin"])
+    longueur = f - d
+    entrees = ["-ss", f"{d:.3f}", "-t", f"{longueur:.3f}", "-i", str(proxy(p["rush"]))]
+    graphe = [f"[0:v]scale={L}:{H},setsar=1,setpts=PTS-STARTPTS[v0]"]
+    for i, c in enumerate(p.get("plans", []), 1):
+        lc = c["fin"] - c["debut"]
+        decal = c["a"] + (p["debut"] - d)
+        entrees += ["-ss", f"{c['debut']:.3f}", "-t", f"{lc:.3f}", "-i", str(proxy(c["rush"]))]
+        graphe += [f"[{i}:v]scale={L}:{H},setsar=1,setpts=PTS-STARTPTS+{decal:.3f}/TB[c{i}]",
+                   f"[v{i - 1}][c{i}]overlay=eof_action=pass:enable='between(t,{decal:.3f},{decal + lc:.3f})'[v{i}]"]
+    n = len(p.get("plans", []))
+    graphe.append(f"[0:a]aresample=48000,volume={gain(p['rush']):.1f}dB,afade=t=in:d=0.02,"
+                  f"afade=t=out:st={longueur - 0.03:.3f}:d=0.03,alimiter=limit=0.89:level=0[a]")
+    sortie = PIECES / f"{nom}.mkv"
+    ffmpeg(*entrees, "-filter_complex", ";".join(graphe), "-map", f"[v{n}]", "-map", "[a]",
+           "-t", f"{longueur:.3f}", *VIDEO, *SON, str(sortie))
+    return sortie
+
+
+def piece_image(im, nom):
+    longueur = im["fin"] - im["debut"]
+    texte = f",{carte_texte(im['carte'], nom)}" if im.get("carte") else ""
+    if "rush" in im or "source" in im:
+        fichier = proxy(im["rush"]) if "rush" in im else TRAVAIL / im["source"]
+        entrees = ["-ss", f"{im['debut']:.3f}", "-t", f"{longueur:.3f}", "-i", str(fichier)]
+    else:
+        entrees = ["-f", "lavfi", "-t", f"{longueur:.3f}", "-i", f"color=black:s={L}x{H}:r={IPS}"]
+    a_son = "source" in im  # les drones et les cartes sont muets ; un extrait garde son son
+    entrees += [] if a_son else ["-f", "lavfi", "-t", f"{longueur:.3f}", "-i", "anullsrc=r=48000:cl=stereo"]
+    graphe = (f"[0:v]scale={L}:{H},setsar=1,fps={IPS},setpts=PTS-STARTPTS{texte}[v];"
+              + ("[0:a]aresample=48000,afade=t=in:d=0.05[a]" if a_son else "[1:a]anull[a]"))
+    sortie = PIECES / f"{nom}.mkv"
+    ffmpeg(*entrees, "-filter_complex", graphe, "-map", "[v]", "-map", "[a]", "-t", f"{longueur:.3f}",
+           *VIDEO, *SON, str(sortie))
+    return sortie
+
+
+def hms(s):
+    return f"{int(s // 3600)}:{int(s // 60) % 60:02}:{s % 60:04.1f}"
+
+
+SORTIE.mkdir(parents=True, exist_ok=True)
+PIECES.mkdir(exist_ok=True)
+choisies = {int(x) for x in sys.argv[1:]}
+journal_f = SORTIE / "montage.json"
+journal = json.loads(journal_f.read_text(encoding="utf-8")) if journal_f.exists() else {}
+
+# fabriquer les pièces des séquences demandées
+for n, seq in enumerate(papier["sequences"]):
+    if choisies and n not in choisies:
+        continue
+    pieces = [piece_parole(p, f"s{n:02}-p{i:02}") for i, p in enumerate(seq["paroles"])]
+    pieces += [piece_image(im, f"s{n:02}-i{i:02}") for i, im in enumerate(seq.get("images", []))]
+    liste = PIECES / f"s{n:02}.txt"
+    liste.write_text("".join(f"file '{p.as_posix()}'\n" for p in pieces), encoding="utf-8")
+    ffmpeg("-f", "concat", "-safe", "0", "-i", str(liste), "-c", "copy", str(PIECES / f"s{n:02}.mkv"))
+    journal[str(n)] = {"titre": seq["titre"], "duree": round(duree(PIECES / f"s{n:02}.mkv"), 3)}
+    print(f"séquence {n} : {journal[str(n)]['duree']:.1f} s", flush=True)
+
+# l'instant de chaque séquence dans l'épisode, puis les aperçus avec l'instant écrit dessus
+t = 0.0
+for n in range(len(papier["sequences"])):
+    if str(n) not in journal:
+        break
+    journal[str(n)]["debut"] = round(t, 3)
+    if not choisies or n in choisies:
+        src, apercu = PIECES / f"s{n:02}.mkv", SORTIE / f"seq-{n:02}.mp4"
+        ffmpeg("-i", str(src), "-vf",
+               f"drawtext=fontfile='{POLICE}':text='%{{pts\\:hms\\:{t:.3f}}}':x=w-text_w-16:y=12:fontsize=26"
+               ":fontcolor=yellow:box=1:boxcolor=black@0.6:boxborderw=6",
+               "-c:v", "libx264", "-preset", "veryfast", "-crf", "23", "-pix_fmt", "yuv420p",
+               "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", str(apercu))
+        pas = max(2.0, journal[str(n)]["duree"] / 40)
+        lignes = max(1, -(-int(journal[str(n)]["duree"] // pas + 1) // 8))
+        ffmpeg("-i", str(apercu), "-vf", f"fps=1/{pas:.3f},scale=320:-2,tile=8x{lignes}:padding=4",
+               "-frames:v", "1", "-q:v", "4", str(SORTIE / f"seq-{n:02}.jpg"))
+    t += journal[str(n)]["duree"]
+journal_f.write_text(json.dumps(journal, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+complet = [SORTIE / f"seq-{n:02}.mp4" for n in range(len(papier["sequences"])) if (SORTIE / f"seq-{n:02}.mp4").exists()]
+if len(complet) == len(papier["sequences"]):
+    liste = SORTIE / "brouillon.txt"
+    liste.write_text("".join(f"file '{p.as_posix()}'\n" for p in complet), encoding="utf-8")
+    ffmpeg("-f", "concat", "-safe", "0", "-i", str(liste), "-c", "copy", "-movflags", "+faststart",
+           str(SORTIE / "brouillon.mp4"))
+    print(f"brouillon.mp4 : {hms(duree(SORTIE / 'brouillon.mp4'))}")
+print(f"épisode : {hms(t)}")

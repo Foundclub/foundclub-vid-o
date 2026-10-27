@@ -1,6 +1,7 @@
 {
-  "titre": "AchhLife — Moussa, de la D5 à la National 2 (titre provisoire)",
+  "titre": "AchhLife saison 3 épisode 5 — Moussa (format YouTube 16:9, 1920×1080)",
   "notes": [
+    "Décisions d'Adel du 27/10/2026 : 12-15 min ; ordre de la journée ; quelques digressions gardées ; on monte sans les vidéos TikTok ni les réseaux (à ajouter plus tard) ; la pique au « meilleur défenseur d'Île-de-France » est gardée ; le carton rouge se décide à l'écoute de l'aperçu ; pas de « Dans l'épisode précédent… » ; AchhLife S3 EP5, format YouTube.",
     "Instants en secondes dans chaque rush (son d'origine). Les plans de coupe remplacent l'image, la voix continue.",
     "Habillage commun (style de l'épisode #42) : sous-titres blancs en bas sans fond, bandeaux de nom blancs à deux lignes en bas à gauche, pop-up « like / abonné », logo AchhLife et carton de fin repris de l'épisode #42 lui-même (rien n'est redessiné)."
   ],
@@ -17,16 +18,19 @@
         {"rush": "DJI_20261026201400_0016_D", "debut": 557.80, "fin": 562.95, "qui": "Achraf"}
       ],
       "images": [
-        {"rush": "DJI_20260909191311_0048_D", "debut": 0.0, "fin": 6.0, "quoi": "drone : la Mosson et les immeubles, logo AchhLife par-dessus (repris de l'épisode #42 vers 10:00)"}
+        {"rush": "DJI_20260909191311_0048_D", "debut": 0.0, "fin": 6.0, "carte": "LOGO ACHHLIFE", "quoi": "drone : la Mosson et les immeubles, logo AchhLife par-dessus (comme dans l'épisode #42 à 10:01 : neige télé, puis le logo dans la fumée)"}
       ]
     },
     {
       "titre": "1. Ouverture",
       "but": "Achraf annonce l'épisode face caméra.",
-      "habillage": "Carte « SAISON 3 · ÉPISODE N » façon glitch juste après (numéro à confirmer).",
+      "habillage": "Carte « SAISON 3 · ÉPISODE 5 » juste après, dans le style de celle de l'épisode #42 (10:10).",
       "paroles": [
         {"rush": "1", "debut": 0.00, "fin": 19.30, "qui": "Achraf",
          "plans": [{"rush": "DJI_20260909191438_0049_D", "debut": 4.0, "fin": 7.0, "a": 4.6, "quoi": "drone : les immeubles de la Paillade, sur « 5e division de district… National 2 »"}]}
+      ],
+      "images": [
+        {"debut": 0.0, "fin": 2.5, "carte": "SAISON 3 · ÉPISODE 5", "quoi": "carte « SAISON 3 · ÉPISODE 5 »"}
       ]
     },
     {
@@ -64,7 +68,7 @@
         {"rush": "DJI_20261026185942_0009_D", "debut": 0.75, "fin": 21.59, "qui": "Achraf, puis Moussa"},
         {"rush": "DJI_20261026185942_0009_D", "debut": 23.65, "fin": 34.45, "qui": "Achraf"},
         {"rush": "DJI_20261026185942_0009_D", "debut": 51.91, "fin": 72.75, "qui": "Achraf, puis Moussa"},
-        {"rush": "DJI_20261026185942_0009_D", "debut": 73.79, "fin": 98.65, "qui": "Achraf, puis Moussa", "note": "À TRANCHER : la pique au « meilleur défenseur d'Île-de-France » (une personne réelle, moquée)"},
+        {"rush": "DJI_20261026185942_0009_D", "debut": 73.79, "fin": 98.65, "qui": "Achraf, puis Moussa", "note": "la pique au « meilleur défenseur d'Île-de-France » : gardée (Adel, 27/10, « 1- B »)"},
         {"rush": "DJI_20261026185942_0009_D", "debut": 128.21, "fin": 157.37, "qui": "Achraf, puis Moussa"}
       ]
     },
@@ -113,7 +117,7 @@
       "but": "On le chambre sur son carton rouge.",
       "habillage": "Sous-titres.",
       "paroles": [
-        {"rush": "DJI_20261026195058_0014_D", "debut": 128.95, "fin": 176.69, "qui": "le groupe, Moussa", "note": "SON SATURÉ de 2:19 à 2:29 : à écouter, sinon on coupe la séquence"}
+        {"rush": "DJI_20261026195058_0014_D", "debut": 128.95, "fin": 176.69, "qui": "le groupe, Moussa", "note": "SON SATURÉ de 2:19 à 2:29 : Adel l'écoute dans l'aperçu, puis on garde ou on coupe (« 2- A », 27/10)"}
       ]
     },
     {
@@ -149,7 +153,7 @@
         {"rush": "DJI_20261026201400_0016_D", "debut": 671.44, "fin": 697.78, "qui": "Achraf"}
       ],
       "images": [
-        {"source": "épisode #42", "debut": 1320.0, "fin": 1326.0, "quoi": "carton de fin AchhLife « Suivez-moi sur tous mes réseaux »"}
+        {"source": "reference/episode-42.mp4", "debut": 1321.0, "fin": 1328.0, "quoi": "carton de fin AchhLife « Suivez-moi sur tous mes réseaux », repris tel quel de l'épisode #42 (22:01)"}
       ]
     }
   ]
