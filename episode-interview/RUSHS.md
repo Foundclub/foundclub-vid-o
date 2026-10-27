@@ -53,8 +53,10 @@ Les instants sont en min:s **dans chaque rush**.
 ## Noms propres à vérifier (entendus par Whisper, non confirmés)
 
 - **Personnes** :
-  - Moussa « Arim » (nom de famille) ;
-  - ses comptes « MoussalDZ » (TikTok, 129 000 abonnés) et « MousselDZ34 » (Instagram, « 1 500 » ?) ;
+  - CONFIRMÉ le 27/10 : **Moussa Arim** (il le dit en `0009` 0:30, sa vidéo TikTok du 11/07/2022 l'écrit, sa bio
+    TikTok donne le Snapchat « moussa.arim ») ; TikTok **@moussaldz34**, nom affiché « MOUSSA LDZ », 129,1 k abonnés,
+    4,8 M j'aime (page lue le 27/10) ;
+  - son Instagram, « MousselDZ34 » (« 1 500 » ?), reste à vérifier ;
   - Slimane (vice-président, ancien entraîneur de l'équipe 3) et Ilyes (préparateur physique) ;
   - les entraîneurs « Sandrick » et « Geoffrey Dernis » ;
   - les figures du club « Suleyman Lella », « Mohamed Taoubi » et « Khalid Fekraoui » ;
