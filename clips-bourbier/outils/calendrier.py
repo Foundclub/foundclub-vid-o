@@ -1,11 +1,11 @@
 """Écrit le calendrier de publication des clips « Match bourbier » : CALENDRIER.md et CALENDRIER.html (rendu en PDF
 par outils/pdf.mjs), avec une vignette de chaque clip tirée de son rendu final.
 Ordre décidé avec Adel le 26/10/2026 : rien qui dévoile le score avant la fin, au moins 2 clips par jour ; le 01 a été
-publié par Achraf le 26/10, l'ancien jour 4 devient le jour 1.
+publié par Achraf le 26/10 ; rien d'autre n'est sorti depuis : le 27/10, Adel refait la liste à partir du mercredi 28/10.
 Usage : python3 -I outils/calendrier.py   (depuis clips-bourbier/)"""
 import datetime as dt, subprocess, os, html
 
-DEBUT = dt.date(2026, 10, 26)
+DEBUT = dt.date(2026, 10, 28)
 HEURES = {"semaine": ("12:30", "19:00"), "week-end": ("11:30", "18:00")}
 JOURS_FR = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
 MOIS_FR = ["", "janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
@@ -22,8 +22,8 @@ TITRES = {
  20: "Le discours du coach à la mi-temps", 21: "Dans le prochain épisode : le derby face au MHSC",
 }
 SPOIL = {16: "un but", 17: "un but", 10: "on devine que ça s'est bien passé", 9: "deux buts", 19: "la fin du match"}
-ORDRE = [(1, 14), (4, 7), (2, 15), (3, 13), (6, 20), (12, 8), (5, 18), (16, 17), (10, 19), (9, 21)]
-PUBLIE = {1}
+ORDRE = [(4, 7), (6, 14), (12, 15), (2, 13), (3, 20), (5, 8), (18, 16), (17, 10), (19, 9), (21,)]   # 02 et 03 plus tard : noms à confirmer
+PUBLIE = set()   # le 01 est déjà sorti le 26/10, hors de cette liste
 
 os.makedirs("calendrier", exist_ok=True)
 for jour in ORDRE:
@@ -38,14 +38,14 @@ lignes, md = [], ["# Calendrier de publication — clips « Match bourbier » (�
 for i, jour in enumerate(ORDRE):
     date = DEBUT + dt.timedelta(i)
     heures = HEURES["week-end" if date.weekday() >= 5 else "semaine"]
-    if i == 0: heures = ("publié", "19:00")
+    if len(jour) == 1: heures = (heures[1],)
     libelle = f"{JOURS_FR[date.weekday()].capitalize()} {date.day} {MOIS_FR[date.month]}"
     for k, (n, h) in enumerate(zip(jour, heures)):
         statut = "✅ publié par Achraf" if n in PUBLIE else ""
         spoil = SPOIL.get(n, "")
         md.append(f"| {i + 1} | {libelle} | {h} | {n:02d} | {TITRES[n]} | {spoil or '—'} |")
         lignes.append(f'''<tr class="{'fait' if n in PUBLIE else ''} {'nouveau-jour' if k == 0 else ''}">
-  {'<td class="jour" rowspan="2"><b>Jour ' + str(i + 1) + '</b><br>' + libelle + '</td>' if k == 0 else ''}
+  {'<td class="jour" rowspan="' + str(len(jour)) + '"><b>Jour ' + str(i + 1) + '</b><br>' + libelle + '</td>' if k == 0 else ''}
   <td class="heure">{h}</td><td><img src="calendrier/clip-{n:02d}.jpg"></td>
   <td><span class="num">{n:02d}</span> {html.escape(TITRES[n])}<div class="fichier">clip-{n:02d}-tiktok.mp4</div></td>
   <td class="etat">{statut or (('🟠 ' + spoil) if spoil else '🟢 aucun')}</td></tr>''')
@@ -71,7 +71,7 @@ tr.fait td {{ color: #888; }} tr {{ page-break-inside: avoid; }}
 .notes {{ margin-top: 12px; font-size: 9.5pt; }}
 </style></head><body>
 <h1>Calendrier des clips — « Match bourbier »</h1>
-<p class="sous">Épisode #42 « Match piège pour notre entrée en Coupe de France ! » · AchhLife saison 3 · du lundi 26 octobre au mercredi 4 novembre 2026</p>
+<p class="sous">Épisode #42 « Match piège pour notre entrée en Coupe de France ! » · AchhLife saison 3 · du mercredi 28 octobre au vendredi 6 novembre 2026 · déjà publié : 01 « Et si la Coupe de France était la meilleure compétition ? » (26/10)</p>
 <div class="regles"><ul>
 <li><b>Au moins 2 clips par jour</b> : 12:30 et 19:00 en semaine, 11:30 et 18:00 le week-end.</li>
 <li><b>Rien qui dévoile le score avant la fin</b> : le tableau d'affichage est flouté sur les clips de match, les buts n'ont plus de score, ce qui en montre un peu (🟠) passe les derniers jours.</li>
