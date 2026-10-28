@@ -1,0 +1,20 @@
+         semaine : fini a   4.18 s
+             but : fini a   5.00 s
+     celebration : fini a   6.20 s
+         reseaux : fini a   8.10 s
+           repos : fini a  11.00 s
+          encore : fini a  11.57 s
+             sac : fini a  14.26 s
+         frappes : fini a  15.28 s
+         arreter : fini a  16.81 s
+          amical : fini a  19.40 s
+           match : fini a  19.06 s
+            club : fini a  22.45 s
+     disponibles : fini a  25.51 s
+           creer : fini a  26.35 s
+           match : fini a  25.78 s
+           video : fini a  28.92 s
+          canape : fini a  30.34 s
+          saigne : fini a  31.14 s
+           jouer : introuvable dans [27.6, 32.3] -> envoie lui la video s'il te plait parce que ca y est le canape, je l'ai saigne, j'ai envie de
+             peu : introuvable dans [27.6, 32.3] -> envoie lui la video s'il te plait parce que ca y est le canape, je l'ai saigne, j'ai envie de
