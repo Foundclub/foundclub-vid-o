@@ -278,7 +278,7 @@ Les extraits 01 à 05 et 12 (l'histoire d'Achraf en Coupe de France) sont faits 
 
 Refaire les extraits : `cd clips-bourbier ; outils/recoller.sh ; python3 -I outils/exporter.py [numéros]`.
 
-**Les 21 clips habillés** (23/10/2026, Adel : « on va tous les habiller car on va en publier au moins 2 par jour ») : `clips-bourbier/habillage/rendus/clip-NN-tiktok.mp4`, 1080×1920, 14 à 59 s, son entre -14,5 et -14,0 LUFS, crêtes sous -1,5 dBFS. Ordre de publication sur 11 jours : `clips-bourbier/CALENDRIER.md`.
+**Les 21 clips habillés** (23/10/2026, Adel : « on va tous les habiller car on va en publier au moins 2 par jour ») : `clips-bourbier/habillage/rendus/clip-NN-tiktok.mp4`, 1080×1920, 14 à 59 s, son entre -14,5 et -14,0 LUFS, crêtes sous -1,5 dBFS. Ordre de publication : le calendrier complet des publications, `publications/CALENDRIER.md` (et `.pdf`).
 - Gabarit repris de `youtube-clips/habillage/`, restylé le 24/10/2026 à la demande d'Adel avec les codes de la miniature : titres en Anton blanc et jaune à contour noir, pastille rouge, fond bleu nuit, vidéo encadrée de blanc, barre de progression rouge, le mot dit dans une pastille jaune ; carton final avec la nouvelle miniature et le titre « #42 Match piège pour notre entrée en Coupe de France ! ».
 - Retours d'Adel du 24/10 : nouveaux titres sur 16 clips, coupes du 07 (24 s), 08 (à partir de 38 s), 14 (50 s), 15 (de 8 à 28 s) et 18 (11 s), décrites dans `habillage/outils/fiches.py` (`GARDER`).
 - Deux formats (`format` dans `habillage/clips/NN.json`) : `carre` suit la personne qui parle (07, 08, 10, 20, repères posés à la main) ; `large` montre l'image entière en 16:9 sur fond flou (match, drone, montages).

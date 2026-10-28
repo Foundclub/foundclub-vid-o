@@ -54,8 +54,8 @@ matchs-amicaux-4/rendus/*-brut.mp4
 matchs-amicaux-4/rendus/apercu-*.mp4
 # clips-bourbier : episode recolle par outils/recoller.sh
 clips-bourbier/source/
-clips-bourbier/CALENDRIER.html
-clips-bourbier/calendrier/
+publications/CALENDRIER.html
+publications/vignettes/
 # week-end-gache : fichiers regenerables (outils/preparer-video.sh, outils/assembler.py)
 week-end-gache/medias/video/
 week-end-gache/medias/enregistrement/

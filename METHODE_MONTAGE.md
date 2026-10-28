@@ -108,3 +108,9 @@ de l'épisode #41 et de l'épisode #42 « Match bourbier », et la miniature #42
 puis `python3 -I scripts-foundclub/outils/suivi.py` (sous Windows : `python scripts-foundclub\outils\suivi.py`) refait
 `bibliotheque-20-scripts-suivi.pdf` (page de suivi en tête, pastille devant chaque ligne de la liste, bandeau d'état sur la
 page du script), et on commite les trois fichiers ensemble. Il faut `pip install pypdf reportlab`.
+
+**Le calendrier des publications** (clips AchhLife et vidéos FoundClub, un seul document) : `publications/CALENDRIER.pdf`,
+écrit par `publications/calendrier.py` (les cases FoundClub sont dans `FOUNDCLUB` : une date → un numéro de script, `None`
+pour une case qui attend la prochaine vidéo tournée ; titres et états lus dans `scripts-foundclub/suivi.json`). Quand une
+vidéo est validée, la session la place dans la prochaine case vide, puis
+`python3 -I publications/calendrier.py && node publications/pdf.mjs publications/CALENDRIER.html publications/CALENDRIER.pdf`.

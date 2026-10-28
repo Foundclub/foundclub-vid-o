@@ -1,4 +1,4 @@
-// Rend une page HTML en PDF A4. Usage : node outils/pdf.mjs CALENDRIER.html CALENDRIER.pdf   (depuis clips-bourbier/)
+// Rend une page HTML en PDF A4. Usage : node publications/pdf.mjs publications/CALENDRIER.html publications/CALENDRIER.pdf
 import { resolve } from "node:path";
 import puppeteer from "puppeteer-core";
 

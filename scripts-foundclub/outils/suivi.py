@@ -83,13 +83,14 @@ def bandeau(n):
         c.setFillColor(white); c.setFont("Helvetica-Bold", 8.5); c.drawString(68, H - 85, simpleSplit(texte, "Helvetica-Bold", 8.5, W - 136)[0])
     return dessin
 
-origine = PdfReader(ICI / "bibliotheque-20-scripts.pdf")
-sortie = PdfWriter()
-sortie.add_page(calque(page_suivi))
-for i, page in enumerate(origine.pages):
-    if i == 1: page.merge_page(calque(marques_liste))
-    if 2 <= i <= 21: page.merge_page(calque(bandeau(i - 1)))   # la vidéo N est à la page N + 2
-    sortie.add_page(page)
-with open(ICI / "bibliotheque-20-scripts-suivi.pdf", "wb") as f: sortie.write(f)
-print(f"bibliotheque-20-scripts-suivi.pdf : {len(sortie.pages)} pages ;",
-      ", ".join(f"{k} {v['etat']}" for k, v in sorted(suivi.items()) if not k.startswith("_")))
+if __name__ == "__main__":   # importé par publications/calendrier.py pour les titres et les états
+    origine = PdfReader(ICI / "bibliotheque-20-scripts.pdf")
+    sortie = PdfWriter()
+    sortie.add_page(calque(page_suivi))
+    for i, page in enumerate(origine.pages):
+        if i == 1: page.merge_page(calque(marques_liste))
+        if 2 <= i <= 21: page.merge_page(calque(bandeau(i - 1)))   # la vidéo N est à la page N + 2
+        sortie.add_page(page)
+    with open(ICI / "bibliotheque-20-scripts-suivi.pdf", "wb") as f: sortie.write(f)
+    print(f"bibliotheque-20-scripts-suivi.pdf : {len(sortie.pages)} pages ;",
+          ", ".join(f"{k} {v['etat']}" for k, v in sorted(suivi.items()) if not k.startswith("_")))
