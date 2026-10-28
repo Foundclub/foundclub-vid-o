@@ -286,3 +286,17 @@ Refaire les extraits : `cd clips-bourbier ; outils/recoller.sh ; python3 -I outi
 - Fabriquer : `cd clips-bourbier/habillage ; python3 -I outils/fiches.py ; outils/rendre-tout.sh [NN …]`.
 - La bulle « suivre » (25/10/2026, Adel : « 1- ok 2- A ») : la photo de profil d'Achh10 (`habillage/medias/profil-achh10.jpg`) et le bouton + qui devient une coche, façon TikTok, 2 s à partir de 3 s, en haut à droite de la vidéo. Réglable par clip avec `"follow"` dans `clips/NN.json` (une autre seconde, ou -1 pour l'enlever).
 - Son : un limiteur suréchantillonné à -3 dB et un fondu de 50 ms au début (la première trame claquait à +1,7 dBFS).
+
+## `week-end-gache/` — vidéo FoundClub 03/20 « Le week-end gâché »
+
+Vidéo verticale de **32,3 s** (1080×1920, 30 i/s, son à -14,3 LUFS, crête -2,7 dBFS), validée par Adel le 28/10/2026 (« ok », sur la v5) : `week-end-gache/rendus/week-end-gache-final.mp4`, identique octet pour octet à `apercu-v5.mp4`. Script 03/20 de la bibliothèque « 20 scripts one shot ». Rushs : 5 prises d'ach10 en selfie sur son canapé (`a-monter/week-end-gache/`, réduites en 1080p sur le PC d'Adel), coupées au ras des silences par `outils/preparer-video.sh`. Il a improvisé autour du script : les sous-titres suivent ce qu'il dit.
+
+1. « Toute la semaine j'ai visualisé… » : trois stickers (Mon but, Ma célébration, Le post sur les réseaux), puis le tampon « REPOS. ».
+2. « Encore. » : trois dimanches du calendrier tamponnés « REPOS » l'un après l'autre ; « Meilleur pour préparer mon sac / que pour frapper ».
+3. « Pas de match ce week-end ? / Un match amical ».
+4. L'appli en motion (l'enregistrement d'écran des vidéos matchs amicaux 3 et 4) : la liste des matchs, « + Créer un match amical » ; étiquettes **hors du téléphone**.
+5. « Envoie-la à ton coach », puis le carton FoundClub.
+
+**Nouveau style, à la demande d'Adel (28/10)** : plus d'intro en motion ; des **stickers façon story** (fond blanc, texte noir, penchés, sans icône ni halo) au lieu des pastilles lumineuses à icône ; **peu de sons, et des bruits réels** (sticker, tampon, bande qui s'arrête, vibration de téléphone, clic) ajoutés à `week-end-gache/outils/sons.py` ; les titres n'ont pas de son. Adel trouvait les pastilles à icône et les mêmes pops et whooshs partout trop « IA ».
+
+Fabriquer : `cd week-end-gache ; outils/preparer-video.sh ; outils/rendre.sh week-end-gache-final 18`.

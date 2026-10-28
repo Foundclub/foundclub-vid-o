@@ -40,6 +40,10 @@ de l'épisode #41 et de l'épisode #42 « Match bourbier », et la miniature #42
   légère rotation sur la 2ᵉ ligne. **Pastille rouge** `#e30613`, fond bleu nuit, vidéo encadrée de blanc.
 - **Sous-titres** : le mot en train d'être dit dans une pastille jaune. **Typographie française** : espace insécable avant
   `! ? : »` et après `«` (fonction `insecable()` dans les assembleurs).
+- **Vidéos FoundClub, depuis le 28/10 (Adel)** : pas d'intro en motion ; des **stickers façon story** (fond blanc, texte noir,
+  penchés, sans icône ni halo) plutôt que des pastilles lumineuses à icône ; **peu de sons, des bruits réels** (sticker, tampon,
+  bande qui s'arrête, vibration, clic : `week-end-gache/outils/sons.py`), rien sur les titres ; **jamais d'étiquette posée sur
+  l'écran de l'appli** (c'est ce qu'on montre). Les mêmes pops et whooshs partout font « IA ».
 - **Bulle « suivre »** façon TikTok (photo de profil `clips-bourbier/habillage/medias/profil-achh10.jpg`, bouton + qui devient
   une coche), 2 s, à 3 s du début.
 - **Rien qui fasse « IA »** : pas de faux joueurs, de faux maillots ni de logos redessinés. Le blason officiel de la Coupe de
