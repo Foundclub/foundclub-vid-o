@@ -98,3 +98,13 @@ de l'épisode #41 et de l'épisode #42 « Match bourbier », et la miniature #42
 4. **Finition** : habillage dans le style d'Achraf (§3), sous-titres corrigés, musique, son à -14 LUFS, rendu final depuis
    les rushs d'origine. Vérifier : décodage complet (`ffmpeg -v error -i x -f null -`), son (`ebur128`), planche d'images.
 5. Ensuite seulement : la miniature (`miniatures/`) et les clips verticaux (`clips-bourbier/` comme modèle).
+
+## 7. Le suivi des 20 scripts (bibliothèque de tournage)
+
+`scripts-foundclub/bibliotheque-20-scripts.pdf` est le PDF d'origine (jamais modifié). Le suivi est dans
+`scripts-foundclub/suivi.json` : une ligne par vidéo (`"03": {"etat": "fait", "date": …, "detail": …, "fichier": …}`) ;
+`etat` vaut `fait` (monté et validé par Adel) ou `en cours` (tourné ou en montage) ; une vidéo absente est « à tourner ».
+**Toute session qui monte une de ces vidéos coche sa ligne** : `en cours` au début, `fait` quand Adel a validé le rendu,
+puis `python3 -I scripts-foundclub/outils/suivi.py` (sous Windows : `python scripts-foundclub\outils\suivi.py`) refait
+`bibliotheque-20-scripts-suivi.pdf` (page de suivi en tête, pastille devant chaque ligne de la liste, bandeau d'état sur la
+page du script), et on commite les trois fichiers ensemble. Il faut `pip install pypdf reportlab`.

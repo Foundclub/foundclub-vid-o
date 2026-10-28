@@ -1,0 +1,15 @@
+{
+ "_mode_d_emploi": "Une ligne par vidéo de la bibliothèque. etat : « fait » (monté, validé par Adel), « en cours » (tourné ou en montage), absent = à tourner. Après chaque changement : python3 -I scripts-foundclub/outils/suivi.py (refait bibliotheque-20-scripts-suivi.pdf), puis commit.",
+ "02": {
+  "etat": "en cours",
+  "date": "28/10/2026",
+  "detail": "Tourné par Achraf, montage en cours (session locale)",
+  "fichier": ""
+ },
+ "03": {
+  "etat": "fait",
+  "date": "28/10/2026",
+  "detail": "Monté, v5 validée par Adel (32 s)",
+  "fichier": "week-end-gache/rendus/week-end-gache-final.mp4"
+ }
+}

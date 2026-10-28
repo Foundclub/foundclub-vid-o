@@ -68,4 +68,6 @@ CE QUE TU FAIS, DANS CET ORDRE, ET TU T'ARRÊTES À CHAQUE VALIDATION :
 Je pilote et je ne relis pas le code : parle-moi en écrans et en secondes de la vidéo, pas en fichiers. À chaque
 message de fond, termine par « ⚖️ CE QUE TU DOIS DÉCIDER » (numéroté, avec ta recommandation et le format de réponse).
 Avant un long rendu, montre-moi d'abord un aperçu court.
+Quand j'ai validé la vidéo, coche-la dans le suivi des 20 scripts (METHODE_MONTAGE.md §7 : la ligne "02" de
+scripts-foundclub\suivi.json passe à "fait" avec le chemin du rendu, puis tu refais le PDF de suivi et tu le commites).
 ```
