@@ -91,7 +91,8 @@ X = extraits_js
 # Les titres n'ont pas de son.
 S = [
     (T["but"] - 0.55, "sticker", 0), (T["celebration"] - 0.75, "sticker", -1), (T["reseaux"] - 1.4, "sticker", -2),
-    (T["repos"] - 0.42, "arret", 0), (T["repos"] - 0.3, "tampon", 0), (T["encore"] - 0.15, "tampon", -2),
+    (T["repos"] - 0.42, "arret", 0), (T["repos"] - 0.3, "tampon", 0),
+    (T["encore"] - 0.3, "tampon", -3), (T["encore"] + 0.05, "tampon", -4), (T["encore"] + 0.4, "tampon", -2),   # les trois dimanches
     (TEL - 0.05, "vibre", 0),
     (X[0]["debut"] + X[0]["duree"] - 0.45, "clic", 0), (X[1]["debut"] + 0.25, "sticker", -3), (X[2]["debut"], "sticker", -3),
     (T["creer"] - 0.3, "clic", 0),

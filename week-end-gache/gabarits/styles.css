@@ -47,6 +47,8 @@
       .etiquette { position: absolute; display: flex; align-items: center; padding: 10px 22px 12px; border-radius: 10px; background: #fff;
         color: #0b0b0c; font-weight: 900; font-size: 42px; white-space: nowrap; box-shadow: 0 6px 0 rgba(0,0,0,.25); opacity: 0; }
       .etiquette .point { display: none; }
+      /* à côté du téléphone (qui va de x = 276 à 804) : deux lignes, 250 px de large au plus */
+      .etiquette.cote { white-space: normal; max-width: 250px; font-size: 38px; line-height: 1.12; text-align: center; padding: 10px 16px 12px; }
       .appui { position: absolute; width: 110px; height: 110px; margin: -55px 0 0 -55px; border-radius: 50%;
         background: rgba(255,255,255,.28); border: 4px solid rgba(255,255,255,.85); box-shadow: 0 0 30px rgba(1,179,244,.6); opacity: 0; }
       #cest-tout { position: absolute; left: 0; right: 0; top: 760px; text-align: center; opacity: 0; }
@@ -84,7 +86,15 @@
       #tampon { position: absolute; left: 0; right: 0; top: 330px; text-align: center; opacity: 0; }
       #tampon span { display: inline-block; padding: 14px 44px 18px; border: 10px solid var(--rouge); border-radius: 24px; color: var(--rouge);
         background: rgba(0,18,24,.78); font-weight: 900; font-size: 150px; line-height: 1; text-transform: uppercase; transform: rotate(-8deg); }
-      #tampon .encore { position: absolute; left: 0; right: 0; top: 0; opacity: 0; }
+      #dimanches { position: absolute; left: 0; right: 0; top: 230px; display: flex; justify-content: center; gap: 34px; }
+      #dimanches .jour { position: relative; width: 230px; height: 250px; border-radius: 18px; background: #fff; overflow: hidden; opacity: 0;
+        box-shadow: 0 8px 0 rgba(0,0,0,.25); display: flex; flex-direction: column; align-items: center; }
+      #dimanches .entete { width: 100%; background: var(--rouge); color: #fff; text-align: center; font-weight: 900; font-size: 40px;
+        text-transform: uppercase; padding: 8px 0 10px; }
+      #dimanches .num { color: #0b0b0c; font-weight: 900; font-size: 120px; line-height: 1.25; }
+      #dimanches .cachet { position: absolute; left: 50%; top: 58%; margin: -40px 0 0 -112px; width: 224px; text-align: center;
+        border: 6px solid var(--rouge); border-radius: 10px; color: var(--rouge); background: rgba(255,255,255,.85); font-weight: 900;
+        font-size: 52px; line-height: 1.2; text-transform: uppercase; opacity: 0; }
 
       /* Scènes 2 et 3 : les titres */
       #sac .surligne .fond, #amical .surligne .fond { background: var(--bleu); }

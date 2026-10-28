@@ -18,6 +18,7 @@
       const tremble = (sel, t) => tl.to(sel, { x: 10, duration: 0.05, yoyo: true, repeat: 3, ease: "none" }, t);
 
       // ── 1 : tout ce qu'il a visualisé… et là : repos. ──
+      const DIM = [T.encore - 0.3, T.encore + 0.05, T.encore + 0.4];   // les trois coups de tampon des dimanches
       // les stickers se plaquent (un peu penchés, comme collés à la main)
       const coller = (sel, t, r) => tl.fromTo(sel, { opacity: 0, scale: 1.5, rotation: r * 2 }, { opacity: 1, scale: 1, rotation: r, duration: 0.14, ease: "power3.in" }, t);
       coller("#reve-but", T.but - 0.55, -3);
@@ -27,11 +28,14 @@
       tl.set("#tampon", { opacity: 1 }, T.repos - 0.5);
       tl.fromTo("#tampon .repos", { opacity: 0, scale: 2.2 }, { opacity: 1, scale: 1, duration: 0.2, ease: "power3.in" }, T.repos - 0.5);
       tremble("#tampon", T.repos - 0.3);
-      // « Encore. » : le tampon retombe une deuxième fois
-      tl.to("#tampon .repos", { opacity: 0, duration: 0.06 }, T.encore - 0.35);
-      tl.fromTo("#tampon .encore", { opacity: 0, scale: 2.2 }, { opacity: 1, scale: 1, duration: 0.2, ease: "power3.in" }, T.encore - 0.35);
-      tremble("#tampon", T.encore - 0.15);
-      tl.to("#tampon", { opacity: 0, y: -30, duration: 0.25 }, T.encore + 0.5);
+      // « Encore. » : le tampon laisse la place à trois dimanches du calendrier, tamponnés « REPOS » l'un après l'autre
+      tl.to("#tampon", { opacity: 0, scale: 0.6, duration: 0.15, ease: "power2.in" }, DIM[0] - 0.2);
+      ["#dim-1", "#dim-2", "#dim-3"].forEach((sel, k) => {
+        tl.fromTo(sel, { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.18, ease: "power3.out" }, DIM[0] - 0.12 + k * 0.05);
+        tl.fromTo(`${sel} .cachet`, { opacity: 0, scale: 2, rotation: -14 }, { opacity: 1, scale: 1, rotation: -14, duration: 0.11, ease: "power3.in" }, DIM[k]);
+        tl.to(sel, { x: 6, duration: 0.04, yoyo: true, repeat: 1, ease: "none" }, DIM[k] + 0.11);
+      });
+      tl.to("#dimanches .jour", { opacity: 0, y: -30, duration: 0.2, stagger: 0.04 }, T.sac - 1.45);
 
       // ── 2 : meilleur pour préparer mon sac que pour frapper ──
       tl.set("#sac", { opacity: 1 }, T.sac - 1.2);

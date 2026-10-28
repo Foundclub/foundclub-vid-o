@@ -68,6 +68,8 @@
       .etiquette { position: absolute; display: flex; align-items: center; padding: 10px 22px 12px; border-radius: 10px; background: #fff;
         color: #0b0b0c; font-weight: 900; font-size: 42px; white-space: nowrap; box-shadow: 0 6px 0 rgba(0,0,0,.25); opacity: 0; }
       .etiquette .point { display: none; }
+      /* à côté du téléphone (qui va de x = 276 à 804) : deux lignes, 250 px de large au plus */
+      .etiquette.cote { white-space: normal; max-width: 250px; font-size: 38px; line-height: 1.12; text-align: center; padding: 10px 16px 12px; }
       .appui { position: absolute; width: 110px; height: 110px; margin: -55px 0 0 -55px; border-radius: 50%;
         background: rgba(255,255,255,.28); border: 4px solid rgba(255,255,255,.85); box-shadow: 0 0 30px rgba(1,179,244,.6); opacity: 0; }
       #cest-tout { position: absolute; left: 0; right: 0; top: 760px; text-align: center; opacity: 0; }
@@ -105,7 +107,15 @@
       #tampon { position: absolute; left: 0; right: 0; top: 330px; text-align: center; opacity: 0; }
       #tampon span { display: inline-block; padding: 14px 44px 18px; border: 10px solid var(--rouge); border-radius: 24px; color: var(--rouge);
         background: rgba(0,18,24,.78); font-weight: 900; font-size: 150px; line-height: 1; text-transform: uppercase; transform: rotate(-8deg); }
-      #tampon .encore { position: absolute; left: 0; right: 0; top: 0; opacity: 0; }
+      #dimanches { position: absolute; left: 0; right: 0; top: 230px; display: flex; justify-content: center; gap: 34px; }
+      #dimanches .jour { position: relative; width: 230px; height: 250px; border-radius: 18px; background: #fff; overflow: hidden; opacity: 0;
+        box-shadow: 0 8px 0 rgba(0,0,0,.25); display: flex; flex-direction: column; align-items: center; }
+      #dimanches .entete { width: 100%; background: var(--rouge); color: #fff; text-align: center; font-weight: 900; font-size: 40px;
+        text-transform: uppercase; padding: 8px 0 10px; }
+      #dimanches .num { color: #0b0b0c; font-weight: 900; font-size: 120px; line-height: 1.25; }
+      #dimanches .cachet { position: absolute; left: 50%; top: 58%; margin: -40px 0 0 -112px; width: 224px; text-align: center;
+        border: 6px solid var(--rouge); border-radius: 10px; color: var(--rouge); background: rgba(255,255,255,.85); font-weight: 900;
+        font-size: 52px; line-height: 1.2; text-transform: uppercase; opacity: 0; }
 
       /* Scènes 2 et 3 : les titres */
       #sac .surligne .fond, #amical .surligne .fond { background: var(--bleu); }
@@ -134,7 +144,13 @@
         <div class="sticker" id="reve-celebration">Ma célébration</div>
         <div class="sticker" id="reve-post">Le post sur les réseaux</div>
       </div>
-      <div id="tampon"><span class="repos">Repos.</span><span class="encore"><span>Encore.</span></span></div>
+      <div id="tampon"><span class="repos">Repos.</span></div>
+      <!-- « Encore. » : trois dimanches du calendrier, tamponnés « REPOS » l'un après l'autre -->
+      <div id="dimanches">
+        <div class="jour" id="dim-1"><span class="entete">Dim.</span><span class="num">18</span><span class="cachet">Repos</span></div>
+        <div class="jour" id="dim-2"><span class="entete">Dim.</span><span class="num">25</span><span class="cachet">Repos</span></div>
+        <div class="jour" id="dim-3"><span class="entete">Dim.</span><span class="num">1</span><span class="cachet">Repos</span></div>
+      </div>
 
       <!-- 2 — « Bientôt je vais être meilleur à préparer mon sac de foot qu'à faire des frappes » -->
       <div id="sac" class="titre" style="top: 150px; font-size: 62px; opacity: 0;">
@@ -160,8 +176,9 @@
             <img id="cap-creer" class="capture" src="medias/captures/creer-match-amical.png" alt="" />
           </div>
         </div>
-        <div id="tag-trouve" class="etiquette" style="left: 34px; top: 1040px;"><span class="point"></span>Les matchs disponibles</div>
-        <div id="tag-publie" class="etiquette" style="right: 34px; top: 1150px;"><span class="point"></span>Ou crée le tien</div>
+        <!-- Les étiquettes restent hors du téléphone : l'écran (l'annonce, le bouton) est ce qu'on montre (Adel, 28/10) -->
+        <div id="tag-trouve" class="etiquette cote" style="left: 18px; top: 980px;">Les matchs<br>disponibles</div>
+        <div id="tag-publie" class="etiquette cote" style="right: 18px; top: 860px;">Ou crée<br>le tien</div>
         <div id="appui-amicaux" class="appui" style="left: 650px; top: 1074px;"></div>
         <div id="appui-creer" class="appui" style="left: 540px; top: 934px;"></div>
       </div>
@@ -233,6 +250,7 @@
       const tremble = (sel, t) => tl.to(sel, { x: 10, duration: 0.05, yoyo: true, repeat: 3, ease: "none" }, t);
 
       // ── 1 : tout ce qu'il a visualisé… et là : repos. ──
+      const DIM = [T.encore - 0.3, T.encore + 0.05, T.encore + 0.4];   // les trois coups de tampon des dimanches
       // les stickers se plaquent (un peu penchés, comme collés à la main)
       const coller = (sel, t, r) => tl.fromTo(sel, { opacity: 0, scale: 1.5, rotation: r * 2 }, { opacity: 1, scale: 1, rotation: r, duration: 0.14, ease: "power3.in" }, t);
       coller("#reve-but", T.but - 0.55, -3);
@@ -242,11 +260,14 @@
       tl.set("#tampon", { opacity: 1 }, T.repos - 0.5);
       tl.fromTo("#tampon .repos", { opacity: 0, scale: 2.2 }, { opacity: 1, scale: 1, duration: 0.2, ease: "power3.in" }, T.repos - 0.5);
       tremble("#tampon", T.repos - 0.3);
-      // « Encore. » : le tampon retombe une deuxième fois
-      tl.to("#tampon .repos", { opacity: 0, duration: 0.06 }, T.encore - 0.35);
-      tl.fromTo("#tampon .encore", { opacity: 0, scale: 2.2 }, { opacity: 1, scale: 1, duration: 0.2, ease: "power3.in" }, T.encore - 0.35);
-      tremble("#tampon", T.encore - 0.15);
-      tl.to("#tampon", { opacity: 0, y: -30, duration: 0.25 }, T.encore + 0.5);
+      // « Encore. » : le tampon laisse la place à trois dimanches du calendrier, tamponnés « REPOS » l'un après l'autre
+      tl.to("#tampon", { opacity: 0, scale: 0.6, duration: 0.15, ease: "power2.in" }, DIM[0] - 0.2);
+      ["#dim-1", "#dim-2", "#dim-3"].forEach((sel, k) => {
+        tl.fromTo(sel, { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.18, ease: "power3.out" }, DIM[0] - 0.12 + k * 0.05);
+        tl.fromTo(`${sel} .cachet`, { opacity: 0, scale: 2, rotation: -14 }, { opacity: 1, scale: 1, rotation: -14, duration: 0.11, ease: "power3.in" }, DIM[k]);
+        tl.to(sel, { x: 6, duration: 0.04, yoyo: true, repeat: 1, ease: "none" }, DIM[k] + 0.11);
+      });
+      tl.to("#dimanches .jour", { opacity: 0, y: -30, duration: 0.2, stagger: 0.04 }, T.sac - 1.45);
 
       // ── 2 : meilleur pour préparer mon sac que pour frapper ──
       tl.set("#sac", { opacity: 1 }, T.sac - 1.2);

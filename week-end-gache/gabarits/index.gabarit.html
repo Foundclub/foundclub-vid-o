@@ -31,7 +31,13 @@
         <div class="sticker" id="reve-celebration">Ma célébration</div>
         <div class="sticker" id="reve-post">Le post sur les réseaux</div>
       </div>
-      <div id="tampon"><span class="repos">Repos.</span><span class="encore"><span>Encore.</span></span></div>
+      <div id="tampon"><span class="repos">Repos.</span></div>
+      <!-- « Encore. » : trois dimanches du calendrier, tamponnés « REPOS » l'un après l'autre -->
+      <div id="dimanches">
+        <div class="jour" id="dim-1"><span class="entete">Dim.</span><span class="num">18</span><span class="cachet">Repos</span></div>
+        <div class="jour" id="dim-2"><span class="entete">Dim.</span><span class="num">25</span><span class="cachet">Repos</span></div>
+        <div class="jour" id="dim-3"><span class="entete">Dim.</span><span class="num">1</span><span class="cachet">Repos</span></div>
+      </div>
 
       <!-- 2 — « Bientôt je vais être meilleur à préparer mon sac de foot qu'à faire des frappes » -->
       <div id="sac" class="titre" style="top: 150px; font-size: 62px; opacity: 0;">
@@ -55,8 +61,9 @@
             <img id="cap-creer" class="capture" src="medias/captures/creer-match-amical.png" alt="" />
           </div>
         </div>
-        <div id="tag-trouve" class="etiquette" style="left: 34px; top: 1040px;"><span class="point"></span>Les matchs disponibles</div>
-        <div id="tag-publie" class="etiquette" style="right: 34px; top: 1150px;"><span class="point"></span>Ou crée le tien</div>
+        <!-- Les étiquettes restent hors du téléphone : l'écran (l'annonce, le bouton) est ce qu'on montre (Adel, 28/10) -->
+        <div id="tag-trouve" class="etiquette cote" style="left: 18px; top: 980px;">Les matchs<br>disponibles</div>
+        <div id="tag-publie" class="etiquette cote" style="right: 18px; top: 860px;">Ou crée<br>le tien</div>
         <div id="appui-amicaux" class="appui" style="left: __APPUI_AMICAUX__;"></div>
         <div id="appui-creer" class="appui" style="left: __APPUI_CREER__;"></div>
       </div>
