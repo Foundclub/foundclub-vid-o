@@ -110,13 +110,38 @@ def secousse(d=0.32):                                               # le texte t
     t = t_(d); x = bande(bruit(d), 160, 120, 1.2) * (0.6 + 0.4 * np.sin(2 * np.pi * 22 * t)) * enveloppe(len(t), 0.1, 1.0, 1.4)
     return reverb(stereo(normer(x)), 0.3, 0.1)
 
+# ---- sons ajoutés pour « Le week-end gâché » (28/10/2026) : Adel trouvait les mêmes pops et whooshs partout trop « IA ».
+# Peu de sons, et seulement des bruits du monde réel : un tampon, un sticker, une vibration, un clic, une bande qui s'arrête.
+def tampon(d=0.28):                                                 # tampon encreur qui s'écrase sur le papier
+    t = t_(d); coup = sinus_glisse(110, 48, d, 0.03) * np.exp(-t / 0.05)
+    bois = bande(bruit(d), 700, 380, 1.4) * np.exp(-t / 0.018)
+    return reverb(stereo(normer(coup + 0.55 * normer(bois))), 0.25, 0.08)
+def sticker(d=0.09):                                                # autocollant plaqué : un claquement de papier, sec
+    t = t_(d); x = bande(bruit(d), 2600, 1700, 1.2) * np.exp(-t / 0.012) + 0.35 * np.sin(2 * np.pi * 95 * t) * np.exp(-t / 0.02)
+    return stereo(normer(x))
+def vibre(d=0.95):                                                  # téléphone qui vibre : deux bourdonnements
+    t = t_(d); porte = ((t % 0.5) < 0.32).astype(float)
+    x = np.sign(np.sin(2 * np.pi * 172 * t)) * (0.6 + 0.4 * np.sin(2 * np.pi * 31 * t)) * porte
+    x = bande(x, 260, 260, 2.0); x *= np.convolve(porte, np.ones(240) / 240, mode="same")
+    return stereo(normer(x))
+def clic(d=0.03):                                                   # doigt sur l'écran : un petit clic net
+    t = t_(d); x = bande(bruit(d), 4200, 3000, 1.0) * np.exp(-t / 0.003) + 0.3 * np.sin(2 * np.pi * 1900 * t) * np.exp(-t / 0.006)
+    return stereo(normer(x))
+def arret(d=0.75):                                                  # bande qui s'arrête (« tape stop ») : tout retombe
+    t = t_(d); f = 210 * (1 - t / d) ** 1.6 + 22
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    x = (np.sin(ph) + 0.45 * np.sin(2 * ph) + 0.25 * np.sign(np.sin(3 * ph))) * (1 - (t / d) ** 3)
+    return reverb(stereo(normer(np.tanh(1.6 * x))), 0.3, 0.1)
+
 SONS = {"whoosh": whoosh, "swish": swish, "souffle": souffle, "zip": zip_, "pop": pop, "bulle": bulle, "tick": tick,
-        "tap": tap, "impact": impact, "scintille": scintille, "montee": montee, "coupe": coupe, "choix": choix, "secousse": secousse}
+        "tap": tap, "impact": impact, "scintille": scintille, "montee": montee, "coupe": coupe, "choix": choix, "secousse": secousse,
+        "tampon": tampon, "sticker": sticker, "vibre": vibre, "clic": clic, "arret": arret}
 AVEC_NOTE = {"pop", "bulle", "choix"}
 # Niveau de crête de chaque famille (dBFS, avant la normalisation finale à -14 LUFS), réglé à la mesure (outils/mesurer-sons.py)
 # pour tomber, au plus fort, de 8 dB (impact) à 18 dB (tick, souffle) sous la voix qui parle au même moment
 NIVEAU = {"whoosh": -6, "swish": -10, "souffle": -17, "zip": -12, "pop": -9, "bulle": -10, "tick": -8, "tap": -7,
-          "impact": -8, "scintille": -14, "montee": -9, "coupe": -16, "choix": -9, "secousse": -16}
+          "impact": -8, "scintille": -14, "montee": -9, "coupe": -16, "choix": -9, "secousse": -16,
+          "tampon": -9, "sticker": -13, "vibre": -15, "clic": -12, "arret": -12}
 # Ce qui doit tomber pile sur l'image : la montée finit à l'instant donné, les autres commencent à l'instant donné
 FINIT_A_T = {"montee"}
 

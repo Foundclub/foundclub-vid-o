@@ -17,20 +17,13 @@
       const pastille = (sel, t) => tl.fromTo(sel, { opacity: 0, scale: 0.6, rotation: -6 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.4, ease: "back.out(1.8)" }, t);
       const tremble = (sel, t) => tl.to(sel, { x: 10, duration: 0.05, yoyo: true, repeat: 3, ease: "none" }, t);
 
-      // ── OUVERTURE : le mème (sur l'image fixe d'ach10, sans voix) ──
-      tl.fromTo("#cadre-video", { scale: 1.12 }, { scale: 1.0, duration: 3.0, ease: "power1.out" }, 0);
-      tl.to("#ouverture-voile", { opacity: 1, duration: 0.2 }, 0);
-      tl.fromTo("#meme-vendredi", { opacity: 0, y: -40 }, { opacity: 1, y: 0, duration: 0.3, ease: "back.out(1.8)" }, 0.15);
-      tl.fromTo("#meme-dimanche", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.3, ease: "back.out(1.8)" }, 1.45);
-      tl.fromTo("#meme-dimanche .barre", { scaleX: 0 }, { scaleX: 1, duration: 0.25, ease: "power2.out" }, 2.15);
-      tremble("#meme-dimanche", 2.35);
-      tl.to(["#meme-vendredi", "#meme-dimanche", "#ouverture-voile"], { opacity: 0, duration: 0.2 }, T.a - 0.2);
-
       // ── 1 : tout ce qu'il a visualisé… et là : repos. ──
-      pastille("#reve-but", T.but - 0.55);
-      pastille("#reve-celebration", T.celebration - 0.75);
-      pastille("#reve-post", T.reseaux - 1.4);
-      tl.to("#reves .pastille", { opacity: 0, y: -20, duration: 0.2, stagger: 0.05 }, T.repos - 1.1);
+      // les stickers se plaquent (un peu penchés, comme collés à la main)
+      const coller = (sel, t, r) => tl.fromTo(sel, { opacity: 0, scale: 1.5, rotation: r * 2 }, { opacity: 1, scale: 1, rotation: r, duration: 0.14, ease: "power3.in" }, t);
+      coller("#reve-but", T.but - 0.55, -3);
+      coller("#reve-celebration", T.celebration - 0.75, 2);
+      coller("#reve-post", T.reseaux - 1.4, -1.5);
+      tl.to("#reves .sticker", { opacity: 0, duration: 0.15, stagger: 0.04 }, T.repos - 1.1);
       tl.set("#tampon", { opacity: 1 }, T.repos - 0.5);
       tl.fromTo("#tampon .repos", { opacity: 0, scale: 2.2 }, { opacity: 1, scale: 1, duration: 0.2, ease: "power3.in" }, T.repos - 0.5);
       tremble("#tampon", T.repos - 0.3);
@@ -67,8 +60,8 @@
       });
       tl.set("#cap-creer", { opacity: 1 }, EXTRAITS[2].debut + EXTRAITS[2].duree - 0.02);
       appuyer("#appui-amicaux", EXTRAITS[0].debut + EXTRAITS[0].duree - 0.45);
-      etiquette("#tag-trouve", EXTRAITS[1].debut + 0.25, -1);
-      etiquette("#tag-publie", EXTRAITS[2].debut, 1);
+      coller("#tag-trouve", EXTRAITS[1].debut + 0.25, -2);
+      coller("#tag-publie", EXTRAITS[2].debut, 2);
       appuyer("#appui-creer", T.creer - 0.3);
       tl.to("#cap-creer", { scale: 1.03, duration: 0.12, yoyo: true, repeat: 1, transformOrigin: "50% 52%" }, T.creer - 0.15);
       // Retour à ach10 : « envoie-lui la vidéo… »
@@ -79,7 +72,7 @@
       tl.to("#degrades", { opacity: 1, duration: 0.3 }, RETOUR + 0.2);
 
       // ── 5 : « envoie-lui la vidéo » ──
-      pastille("#envoie .pastille", T.video - 0.7);
+      coller("#envoie .pastille", T.video - 0.7, -2);
       tremble("#envoie .pastille", T.jouer - 0.2);
 
       // ── CARTON FINAL ──

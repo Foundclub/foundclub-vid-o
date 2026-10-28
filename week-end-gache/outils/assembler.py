@@ -1,10 +1,10 @@
-"""Assemble index.html (vidéo FoundClub 03/20 « Le week-end gâché » : ach10 sur son canapé, le mème d'ouverture,
-l'appli des matchs amicaux dans le téléphone, le carton final) à partir de gabarits/ et de calage.json, découpe les extraits
+"""Assemble index.html (vidéo FoundClub 03/20 « Le week-end gâché » : ach10 sur son canapé,
+l'appli des matchs amicaux dans le téléphone, le carton final ; l'ouverture en mème a été retirée le 28/10) à partir de gabarits/ et de calage.json, découpe les extraits
 de l'enregistrement d'écran à la bonne vitesse, et écrit sons.json (bruitages).
 Usage : python3 -I outils/assembler.py   (depuis le dossier du projet, après outils/preparer-video.sh)"""
 import json, html, subprocess, os
 
-DUREE_VIDEO = 32.2667
+DUREE_VIDEO = 29.2667
 T = json.load(open("calage.json", encoding="utf-8"))
 TEL = T["d"]                 # le téléphone arrive sur « Sur FoundClub »
 RETOUR = T["e"]              # retour à ach10 sur « Envoie-lui la vidéo »
@@ -86,20 +86,17 @@ open("index.html", "w", encoding="utf-8").write(src)
 
 # ── Bruitages (outils/sons.py), aux mêmes instants que scenes.js ──
 X = extraits_js
+# Peu de sons, et des bruits du monde réel (Adel, 28/10 : les mêmes pops et whooshs partout faisaient « IA ») :
+# un sticker qui se plaque, le tampon et la bande qui s'arrête sur « repos », la vibration du téléphone, les clics de l'appli.
+# Les titres n'ont pas de son.
 S = [
-    (0.15, "pop", 0, 0), (0.2, "swish", -2), (1.45, "pop", 0, 4), (1.5, "swish", -2), (2.15, "zip", 0), (2.35, "secousse", -2),
-    (T["a"] - 0.2, "souffle", -2),
-    (T["but"] - 0.55, "pop", 0, 0), (T["celebration"] - 0.75, "pop", 0, 4), (T["reseaux"] - 1.4, "pop", 0, 7),
-    (T["repos"] - 1.1, "souffle", 0), (T["repos"] - 0.3, "impact", -4), (T["repos"] - 0.3, "secousse", 0),
-    (T["encore"] - 0.15, "impact", -6), (T["encore"] - 0.15, "secousse", -2),
-    (T["sac"] - 1.2, "swish", 0), (T["frappes"] - 0.7, "zip", 0),
-    (T["arreter"] + 0.6, "swish", 0), (T["amical"] - 0.7, "zip", 0),
-    (TEL, "whoosh", -3), (TEL + 0.15, "swish", 0), (TEL + 0.45, "swish", -3), (TEL + 0.85, "swish", -4),
-] + [(x["debut"], "tick", 0) for x in X[1:]] + [
-    (X[0]["debut"] + X[0]["duree"] - 0.45, "tap", 0), (X[1]["debut"] + 0.25, "pop", 0, 0), (X[2]["debut"], "pop", 0, 4),
-    (T["creer"] - 0.3, "tap", 0),
-    (RETOUR, "whoosh", -4), (T["video"] - 0.7, "pop", 0, 2), (T["jouer"] - 0.2, "secousse", 0),
-    (FIN, "whoosh", -2), (FIN + 0.25, "impact", -3), (FIN + 0.9, "scintille", 0), (FIN + 1.05, "pop", -2, 4),
+    (T["but"] - 0.55, "sticker", 0), (T["celebration"] - 0.75, "sticker", -1), (T["reseaux"] - 1.4, "sticker", -2),
+    (T["repos"] - 0.42, "arret", 0), (T["repos"] - 0.3, "tampon", 0), (T["encore"] - 0.15, "tampon", -2),
+    (TEL - 0.05, "vibre", 0),
+    (X[0]["debut"] + X[0]["duree"] - 0.45, "clic", 0), (X[1]["debut"] + 0.25, "sticker", -3), (X[2]["debut"], "sticker", -3),
+    (T["creer"] - 0.3, "clic", 0),
+    (T["video"] - 0.7, "sticker", 0),
+    (FIN + 0.25, "tampon", -6),
 ]
 # La voix est enregistrée à -21,5 LUFS, 9,8 dB sous celle d'ach10 sur laquelle les niveaux ont été validés
 GAIN_SONS = -9.5
