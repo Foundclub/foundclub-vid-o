@@ -11,13 +11,17 @@ duree, sortie = float(sys.argv[1]), sys.argv[2]
 n = int(duree * SR)
 m = lire("medias/musique/fond.wav")[:n]
 m = np.r_[m, np.zeros((n - len(m), 2))]
-m *= 10 ** (-6 / 20)                                   # la musique reste un fond : les bruitages passent devant
+m *= 10 ** (-2 / 20)                                   # la musique porte la vidéo ; les bruitages ponctuent
 f = int(1.6 * SR); m[-f:] *= np.linspace(1, 0, f)[:, None] ** 1.5       # elle s'éteint sur le carton
 m[:int(0.05 * SR)] *= np.linspace(0, 1, int(0.05 * SR))[:, None]
 piste = m.copy()
 for r in json.load(open("sons.json", encoding="utf-8")):
     if r["son"].endswith(".mp3"):
         x = lire("medias/sfx/" + r["son"]); x = x / (np.abs(x).max() + 1e-9) * 10 ** (-1 / 20)
+        # « saute » : secondes du fichier qu'on ne joue pas ; « duree » : on coupe ensuite, avec un fondu de 40 ms
+        x = x[int(r.get("saute", 0) * SR):]
+        if "duree" in r:
+            x = x[:int(r["duree"] * SR)].copy(); k = min(len(x), int(0.04 * SR)); x[-k:] *= np.linspace(1, 0, k)[:, None]
     else:
         x = B.SONS[r["son"]](); x = x * 10 ** ((B.NIVEAU[r["son"]] + 9) / 20)
     x = x * 10 ** (r["db"] / 20); i = int(r["t"] * SR); j = min(n, i + len(x))

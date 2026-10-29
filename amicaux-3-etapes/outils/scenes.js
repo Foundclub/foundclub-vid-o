@@ -23,11 +23,16 @@
       };
 
       // ── ACCROCHE : un vrai match ──
+      // L'ouverture frappe : éclair blanc, le plan arrive de très près en tournant, tremble, puis avance doucement
       montrer("#b-duel", 0);
-      tl.fromTo("#b-duel", { scale: 1.08 }, { scale: 1, duration: T.tel, ease: "none" }, 0);
+      tl.fromTo("#eclair", { opacity: 1 }, { opacity: 0, duration: 0.28, ease: "power2.out" }, 0);
+      tl.fromTo("#b-duel", { scale: 1.45, rotation: -4 }, { scale: 1.06, rotation: 0, duration: 0.32, ease: "power4.out" }, 0);
+      tl.to("#b-duel", { x: 14, y: -8, duration: 0.035, yoyo: true, repeat: 5, ease: "none" }, 0.3);
+      tl.to("#b-duel", { scale: 1, duration: T.tel - 0.5, ease: "none" }, 0.5);
       tl.to("#b-duel", { scale: 0.86, opacity: 0, duration: 0.4, ease: "power2.in" }, T.tel - 0.1);
 
       // ── LE TÉLÉPHONE ──
+      tl.fromTo("#eclair-bleu", { opacity: 0.55 }, { opacity: 0, duration: 0.35, ease: "power2.out", immediateRender: false }, T.tel + 0.08);
       tl.fromTo("#tel", { opacity: 0, y: 900, rotation: 8 }, { opacity: 1, y: 0, rotation: 0, duration: 0.5, ease: "power3.out" }, T.tel);
       etape(1, T.tel + 0.05);
       montrer("#vue-e1", T.e1);
@@ -68,10 +73,12 @@
       sortir(3, T.celeb - 0.15);
       tl.to("#tel", { y: 1000, rotation: -8, opacity: 0, duration: 0.35, ease: "power3.in" }, T.celeb - 0.2);
       montrer("#b-celeb", T.celeb);
+      tl.fromTo("#eclair", { opacity: 0.8 }, { opacity: 0, duration: 0.25, ease: "power2.out", immediateRender: false }, T.celeb);
       tl.fromTo("#b-celeb", { scale: 1.25 }, { scale: 1, duration: 0.5, ease: "power3.out" }, T.celeb);
 
       STICKERS.forEach((s, i) => {
-        coller(`#sticker-${i}`, s.debut, s.penche);
+        if (i === 0) tl.fromTo(`#sticker-${i}`, { opacity: 0, scale: 2.6, rotation: s.penche * 4 }, { opacity: 1, scale: 1, rotation: s.penche, duration: 0.16, ease: "power4.in" }, s.debut);
+        else coller(`#sticker-${i}`, s.debut, s.penche);
         tl.to(`#sticker-${i}`, { opacity: 0, y: -20, duration: 0.18, ease: "power2.in" }, s.fin - 0.18);
       });
 

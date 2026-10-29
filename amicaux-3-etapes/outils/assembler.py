@@ -40,13 +40,29 @@ for k, v in {"__E1__": f'{T["e1"]:.3f}', "__DUREE_E1__": "10.8", "__CELEB__": f'
 assert "__" not in src.replace("__timelines", ""), "repère non remplacé"
 open("index.html", "w", encoding="utf-8").write(src)
 
-# Bruitages : peu, et réels (Adel, 28/10) — clics de l'écran, la notification qui arrive et le téléphone qui vibre,
-# les stickers qui se plaquent. Les fichiers .mp3 viennent de la bibliothèque Pixabay (medias/sfx/CREDITS.md) ; « sticker »,
-# « vibre » et « tampon » sont synthétisés (outils/sons.py du « week-end gâché »). db : réglage par rapport à la musique.
-S = [(d + 0.14, "sticker", -2) for d, _, _, _, _ in STICKERS]
-S += [(t + 0.05, "click-soft.mp3", -4) for t, _, _ in APPUIS] + [(APPUI_NOTIF + 0.05, "click-soft.mp3", -4)]
-S += [(T["notif"], "notification.mp3", -11), (T["notif"], "vibre", -9), (T["fin"] + 0.15, "tampon", -6)]
-json.dump([{"t": round(t, 3), "son": s, "db": d} for t, s, d in sorted(S)], open("sons.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+# Sound design (Adel, 29/10 : « trouve de meilleurs sons ») : la bibliothèque HyperFrames (sons Pixabay, medias/sfx/CREDITS.md),
+# autre série que la vidéo compo (qui a click-soft, notification, whoosh-short). Le « sticker » et la vibration restent
+# synthétisés (outils/sons.py). (instant, son, db, réglages) — l'instant est celui où le son doit « tomber » (son pic).
+PIC = {"riser.mp3": 3.02, "whoosh-cinematic.mp3": 2.91, "impact-bass-2.mp3": 1.83}
+S = [(0.0, "impact-bass-1.mp3", -5, {}),                                   # l'ouverture frappe
+     (STICKERS[0][0] + 0.12, "sticker", 0, {}), (STICKERS[1][0] + 0.12, "sticker", -2, {}),
+     (T["tel"] + 0.05, "riser.mp3", -7, {"saute": 3.02 - 1.35, "duree": 1.45}),        # la montée vers le téléphone
+     (T["tel"] + 0.1, "whoosh-cinematic.mp3", -4, {"saute": 2.0, "duree": 1.8}),
+     (T["tel"] + 0.3, "impact-bass-1.mp3", -6, {})]                         # le « 1 » se pose
+for e in ("e2", "e3"):
+    S += [(T[e] - 0.08, "whoosh.mp3", -6, {}), (T[e] + 0.12, "impact-bass-1.mp3", -10, {})]
+S += [(t, "key-press.mp3", -14, {}) for t in T["sous1"][1:]]               # les sous-étapes qui s'allument
+S += [(t + 0.05, "click.mp3", -6, {}) for t, _, _ in APPUIS] + [(APPUI_NOTIF + 0.05, "click.mp3", -6, {})]
+S += [(T["notif"] + 0.1, "ping.mp3", -6, {}), (T["notif"], "vibre", -8, {}),
+      (T["plan"] + 0.05, "chime.mp3", -8, {}),                                # le match est dans le planning
+      (T["celeb"] - 0.05, "whoosh.mp3", -8, {}), (T["celeb"] + 0.05, "impact-bass-1.mp3", -8, {}),
+      (STICKERS[2][0] + 0.12, "sticker", 0, {}),
+      (T["fin"] + 0.45, "impact-bass-2.mp3", -9, {}), (T["fin"] + 0.85, "sparkle.mp3", -10, {})]
+sons = []
+for t, son, db, opt in sorted(S, key=lambda s: s[0]):
+    debut = t - (PIC.get(son, 0) - opt.get("saute", 0) if son in PIC else 0)
+    sons.append({"t": round(max(0, debut), 3), "son": son, "db": db, **opt})
+json.dump(sons, open("sons.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 
 lignes = ["Trouver un match amical en 3 étapes — vidéo verticale 1080 × 1920, %.1f s (vendredi 30/10)" % DUREE, "",
           "Texte visible à l'écran, dans l'ordre :", ""]
@@ -58,8 +74,8 @@ lignes += [f'{T["tel"]:5.2f} s  1 — Publie ton annonce (Ton équipe · Tes dat
 lignes.append(f"{STICKERS[2][0]:5.2f} s  sticker : {STICKERS[2][4]}")
 lignes.append(f'{T["fin"]:5.2f} s  carton : FoundClub — Trouve ton prochain match amical — Accueil → Matchs amicaux — App Store, Google Play — foundclub.app')
 lignes += ["", "Images : écrans de l'app de recette (données fictives : Montrivage Olympique, Valbrune U13), plans tournés par FoundClub.",
-           "Musique : « Race The Sun », Scott Buckley — licence CC BY 4.0 : le crédit est OBLIGATOIRE dans la description de chaque post :",
-           "  Race The Sun by Scott Buckley – released under CC-BY 4.0. www.scottbuckley.com.au",
-           "Bruitages : bibliothèque Pixabay (clic, notification), et sons synthétisés (sticker, vibration, tampon)."]
+           "Musique : « Groovy Upbeat Drums and Percussions », SOFRA via Pixabay (Pixabay Content License : usage commercial, crédit facultatif ;",
+           "  pas inscrite à Content ID le 30/09 — à revérifier sur sa fiche le jour de la publication). Crédit possible : « Musique : SOFRA via Pixabay ».",
+           "Bruitages : bibliothèque HyperFrames, sons Pixabay (Pixabay Content License), et deux sons synthétisés (sticker, vibration)."]
 open("rendus/texte-a-l-ecran.txt", "w", encoding="utf-8").write("\n".join(lignes) + "\n")
-print(f"index.html : durée {DUREE} s, {len(appuis_js)} appuis, {len(STICKERS)} stickers, {len(S)} bruitages")
+print(f"index.html : durée {DUREE} s, {len(appuis_js)} appuis, {len(STICKERS)} stickers, {len(sons)} bruitages")
