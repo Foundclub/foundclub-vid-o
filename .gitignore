@@ -69,3 +69,11 @@ carrousels-video/rendus/brouillon-*.mp4
 carrousels-video/snapshots/
 carrousels-video/medias/sons/*.wav
 carrousels-video/musique.json
+# amicaux-3-etapes : fichiers regenerables (outils/preparer.sh, outils/rendre.sh) ; musique Pixabay non versionnee (comme complexes/)
+amicaux-3-etapes/rendus/*-brut.mp4
+amicaux-3-etapes/rendus/brouillon-*.mp4
+amicaux-3-etapes/snapshots/
+amicaux-3-etapes/medias/sons/
+amicaux-3-etapes/medias/musique/
+amicaux-3-etapes/medias/broll/
+amicaux-3-etapes/medias/ecran/
