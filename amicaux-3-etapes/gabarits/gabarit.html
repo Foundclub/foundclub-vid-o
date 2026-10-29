@@ -41,6 +41,12 @@
       .vue video, img.vue { width: 560px; height: 1257px; display: block; object-fit: cover; }
       .appui { position: absolute; width: 92px; height: 92px; margin: -46px 0 0 -46px; border-radius: 50%;
         background: rgba(255,255,255,.3); border: 4px solid rgba(255,255,255,.9); opacity: 0; }
+      /* Le bouton qui réagit à l'appui : il s'éclaire et s'enfonce, une onde part du doigt (comme les boutons de l'app) */
+      .bouton { position: absolute; border-radius: 24px; overflow: hidden; opacity: 0; background: rgba(255,255,255,.16); transform-origin: 50% 50%; }
+      .bouton .onde { position: absolute; width: 60px; height: 60px; margin: -30px 0 0 -30px; border-radius: 50%; background: rgba(255,255,255,.45); }
+      /* Les « deux solutions » : un halo autour du bouton, sans appui */
+      .halo { position: absolute; border-radius: 26px; border: 4px solid #fff; box-shadow: 0 0 30px rgba(1,179,244,.9), inset 0 0 18px rgba(1,179,244,.5); opacity: 0; }
+
       /* La notification qui tombe du haut, comme une vraie (capture recadrée : rien d'autre de l'écran d'accueil) */
       #notif { position: absolute; left: 150px; top: 520px; width: 780px; border-radius: 30px; overflow: hidden; opacity: 0;
         box-shadow: 0 0 0 2px rgba(1,179,244,.6), 0 30px 80px rgba(0,0,0,.65); }
@@ -142,6 +148,7 @@
       const VUES = /*VUESJS*/;
       const ZOOMS = /*ZOOMSJS*/;
       const ACTIFS = /*ACTIFSJS*/;
+      const HALOS = /*HALOSJS*/;
       const APPUIS = /*APPUISJS*/;
       const STICKERS = /*STICKERSJS*/;
 /*JS*/

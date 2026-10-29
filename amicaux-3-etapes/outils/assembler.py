@@ -22,23 +22,28 @@ ACTIFS = [("#et-1 .sous", 1, T["e1"]), ("#et-1 .sous", 2, T["e1"] + 1.55)]
 ACTIFS += [("#sous-2a", k + 1, t) for k, t in enumerate(SOUS_A)]
 ACTIFS += [("#sous-2b", 1, T["filtres"]), ("#sous-2b", 2, T["retour"]), ("#sous-2b", 3, T["retour"] + 0.85)]
 ACTIFS += [("#et-3 .sous", 1, T["notif"]), ("#et-3 .sous", 2, T["ouvre"]), ("#et-3 .sous", 3, T["plan"])]
-# Appuis : (instant, x, y) en pixels de la capture (1080 × 2424), lus sur les images
-APPUIS = [(T["e1"] + 1.5, 291, 1531),       # la case « Matchs amicaux » de l'accueil (enregistrement d'Adel)
-          (T["e2"] + 0.7, 540, 1174),       # « deux solutions » : « + Créer un match amical »…
-          (T["e2"] + 1.4, 918, 1343),       # …ou la recherche et ses filtres
-          (T["creer"] + 0.1, 540, 1228),    # « + Créer un match amical »
-          (SOUS_A[3] + 1.45, 540, 2264),    # « Publier l'annonce »
-          (T["filtres"] - 0.3, 918, 1343),  # les filtres
-          (T["retour"] + 0.95, 425, 2075),  # « Proposer un match » sur la carte d'une annonce
-          (T["plan"] - 0.4, 541, 1960)]     # « Accepter » dans la discussion
+# Appuis : (instant, x, y, largeur, hauteur du bouton) en pixels de la capture (1080 × 2424), lus sur les images.
+# Le bouton réagit à l'appui (il s'enfonce, une onde part du doigt), comme dans l'app (Adel, 29/10 : « y'a pas l'animation
+# du bouton cliqué »). Un seul appui par geste : plus d'appuis pour montrer les « deux solutions » (« beaucoup trop de clics »).
+APPUIS = [(T["e1"] + 1.5, 291, 1531, 470, 300),     # la case « Matchs amicaux » de l'accueil (enregistrement d'Adel)
+          (T["creer"] + 0.1, 540, 1228, 976, 150),  # « + Créer un match amical »
+          (SOUS_A[3] + 1.45, 540, 2264, 1000, 110), # « Publier l'annonce »
+          (T["filtres"] - 0.3, 975, 1448, 110, 110),  # les filtres
+          (T["retour"] + 0.95, 445, 2118, 694, 100),  # « Proposer un match » sur la carte d'une annonce
+          (T["plan"] - 0.4, 541, 1960, 760, 100)]   # « Accepter » dans la discussion
+# « Deux solutions » : un halo sur chaque bouton, l'un après l'autre, sans appui ni son
+HALOS = [(T["e2"] + 0.55, 540, 1261, 1000, 150), (T["e2"] + 1.25, 975, 1448, 110, 110)]
 APPUI_NOTIF = T["ouvre"] - 0.25           # le doigt touche la notification (posée hors du téléphone)
 STICKERS = [(0.2, 2.45, 300, -3, "Pas de match ce week-end ?"),
             (1.0, 2.45, 420, 2, "Trouve un match amical\nen 3 étapes"),
             (25.05, 26.75, 820, -2, "Il ne reste qu'à jouer.")]
 
 insecable = lambda t: t.replace(" !", " !").replace(" ?", " ?").replace(" :", " :").replace("« ", "« ").replace(" »", " »")
-appuis_html = [f'        <div id="appui-{i}" class="appui" style="left: {x * K:.0f}px; top: {y * K:.0f}px;"></div>' for i, (_, x, y) in enumerate(APPUIS)]
-appuis_js = [{"t": t} for t, _, _ in APPUIS]
+boite = lambda x, y, w, h: f"left: {(x - w / 2) * K:.0f}px; top: {(y - h / 2) * K:.0f}px; width: {w * K:.0f}px; height: {h * K:.0f}px;"
+appuis_html = [f'        <div id="bouton-{i}" class="bouton" style="{boite(x, y, w, h)}"><div class="onde" style="left: {w * K / 2:.0f}px; top: {h * K / 2:.0f}px;"></div></div>\n'
+               f'        <div id="appui-{i}" class="appui" style="left: {x * K:.0f}px; top: {y * K:.0f}px;"></div>' for i, (_, x, y, w, h) in enumerate(APPUIS)]
+appuis_html += [f'        <div id="halo-{i}" class="halo" style="{boite(x, y, w, h)}"></div>' for i, (_, x, y, w, h) in enumerate(HALOS)]
+appuis_js = [{"t": a[0], "bouton": True} for a in APPUIS]
 stickers_html = [f'      <div id="sticker-{i}" class="sticker" style="top: {h}px;"><span>{html.escape(insecable(txt)).replace(chr(10), "<br>")}</span></div>'
                  for i, (_, _, h, _, txt) in enumerate(STICKERS)]
 stickers_js = [{"debut": d, "fin": f, "penche": p} for d, f, _, p, _ in STICKERS]
@@ -49,6 +54,7 @@ src = src.replace("<!--APPUIS-->", "\n".join(appuis_html)).replace("<!--STICKERS
 # l'appui sur la notification est posé dans la notification elle-même
 src = src.replace('<div id="notif"><img', f'<div id="notif"><div id="appui-{len(APPUIS)}" class="appui" style="left: 390px; top: 190px;"></div><img')
 appuis_js.append({"t": APPUI_NOTIF})
+src = src.replace("/*HALOSJS*/", json.dumps([{"t": h[0]} for h in HALOS]))
 src = src.replace("/*VUESJS*/", json.dumps([{"id": i, "debut": d} for i, d in VUES]))
 src = src.replace("/*ZOOMSJS*/", json.dumps([{"debut": d, "fin": f, "s": z, "ox": x, "oy": y} for d, f, z, x, y in ZOOMS]))
 src = src.replace("/*ACTIFSJS*/", json.dumps([{"sel": s, "k": k, "t": t} for s, k, t in ACTIFS]))
@@ -71,11 +77,10 @@ S = [(0.0, "impact-bass-1.mp3", -5, {}),                                   # l'o
      (T["tel"] + 0.05, "riser.mp3", -7, {"saute": 3.02 - 1.35, "duree": 1.45}),        # la montée vers le téléphone
      (T["tel"] + 0.1, "whoosh-cinematic.mp3", -4, {"saute": 2.0, "duree": 1.8}),
      (T["tel"] + 0.3, "impact-bass-1.mp3", -6, {})]                         # le « 1 » se pose
-S += [(t, "key-press.mp3", -14, {}) for _, _, t in ACTIFS[1:]]          # les sous-étapes qui s'allument
 S += [(T["chercher"] - 0.08, "whoosh.mp3", -9, {})]                          # on passe à « ou cherche-en un »
 for e in ("e2", "e3"):
     S += [(T[e] - 0.08, "whoosh.mp3", -6, {}), (T[e] + 0.12, "impact-bass-1.mp3", -10, {})]
-S += [(t + 0.05, "click.mp3", -6, {}) for t, _, _ in APPUIS] + [(APPUI_NOTIF + 0.05, "click.mp3", -6, {})]
+S += [(a[0] + 0.05, "click.mp3", -6, {}) for a in APPUIS] + [(APPUI_NOTIF + 0.05, "click.mp3", -6, {})]
 S += [(T["notif"] + 0.1, "ping.mp3", -6, {}), (T["notif"], "vibre", -8, {}),
       (T["plan"] + 0.05, "chime.mp3", -8, {}),                                # le match est dans le planning
       (T["celeb"] - 0.05, "whoosh.mp3", -8, {}), (T["celeb"] + 0.05, "impact-bass-1.mp3", -8, {}),

@@ -54,6 +54,12 @@
       .vue video, img.vue { width: 560px; height: 1257px; display: block; object-fit: cover; }
       .appui { position: absolute; width: 92px; height: 92px; margin: -46px 0 0 -46px; border-radius: 50%;
         background: rgba(255,255,255,.3); border: 4px solid rgba(255,255,255,.9); opacity: 0; }
+      /* Le bouton qui réagit à l'appui : il s'éclaire et s'enfonce, une onde part du doigt (comme les boutons de l'app) */
+      .bouton { position: absolute; border-radius: 24px; overflow: hidden; opacity: 0; background: rgba(255,255,255,.16); transform-origin: 50% 50%; }
+      .bouton .onde { position: absolute; width: 60px; height: 60px; margin: -30px 0 0 -30px; border-radius: 50%; background: rgba(255,255,255,.45); }
+      /* Les « deux solutions » : un halo autour du bouton, sans appui */
+      .halo { position: absolute; border-radius: 26px; border: 4px solid #fff; box-shadow: 0 0 30px rgba(1,179,244,.9), inset 0 0 18px rgba(1,179,244,.5); opacity: 0; }
+
       /* La notification qui tombe du haut, comme une vraie (capture recadrée : rien d'autre de l'écran d'accueil) */
       #notif { position: absolute; left: 150px; top: 520px; width: 780px; border-radius: 30px; overflow: hidden; opacity: 0;
         box-shadow: 0 0 0 2px rgba(1,179,244,.6), 0 30px 80px rgba(0,0,0,.65); }
@@ -118,16 +124,22 @@
         <div id="vue-filtres" class="vue"><video id="v-filtres" src="medias/ecran/filtres.mp4" muted playsinline data-start="14.900" data-duration="3.200" data-track-index="4"></video></div>
         <img id="vue-disc" class="vue" src="medias/captures/17b_discussion_vue_annonceur_valbrune.png" alt="" />
         <img id="vue-plan" class="vue" src="medias/captures/24b_planning_montrivage_carte_du_match.png" alt="" />
+        <div id="bouton-0" class="bouton" style="left: 29px; top: 716px; width: 244px; height: 156px;"><div class="onde" style="left: 122px; top: 78px;"></div></div>
         <div id="appui-0" class="appui" style="left: 151px; top: 794px;"></div>
-        <div id="appui-1" class="appui" style="left: 280px; top: 609px;"></div>
-        <div id="appui-2" class="appui" style="left: 476px; top: 696px;"></div>
-        <div id="appui-3" class="appui" style="left: 280px; top: 637px;"></div>
-        <div id="appui-4" class="appui" style="left: 280px; top: 1174px;"></div>
-        <div id="appui-5" class="appui" style="left: 476px; top: 696px;"></div>
-        <div id="appui-6" class="appui" style="left: 220px; top: 1076px;"></div>
-        <div id="appui-7" class="appui" style="left: 281px; top: 1016px;"></div>
+        <div id="bouton-1" class="bouton" style="left: 27px; top: 598px; width: 506px; height: 78px;"><div class="onde" style="left: 253px; top: 39px;"></div></div>
+        <div id="appui-1" class="appui" style="left: 280px; top: 637px;"></div>
+        <div id="bouton-2" class="bouton" style="left: 21px; top: 1145px; width: 519px; height: 57px;"><div class="onde" style="left: 259px; top: 29px;"></div></div>
+        <div id="appui-2" class="appui" style="left: 280px; top: 1174px;"></div>
+        <div id="bouton-3" class="bouton" style="left: 477px; top: 722px; width: 57px; height: 57px;"><div class="onde" style="left: 29px; top: 29px;"></div></div>
+        <div id="appui-3" class="appui" style="left: 506px; top: 751px;"></div>
+        <div id="bouton-4" class="bouton" style="left: 51px; top: 1072px; width: 360px; height: 52px;"><div class="onde" style="left: 180px; top: 26px;"></div></div>
+        <div id="appui-4" class="appui" style="left: 231px; top: 1098px;"></div>
+        <div id="bouton-5" class="bouton" style="left: 83px; top: 990px; width: 394px; height: 52px;"><div class="onde" style="left: 197px; top: 26px;"></div></div>
+        <div id="appui-5" class="appui" style="left: 281px; top: 1016px;"></div>
+        <div id="halo-0" class="halo" style="left: 21px; top: 615px; width: 519px; height: 78px;"></div>
+        <div id="halo-1" class="halo" style="left: 477px; top: 722px; width: 57px; height: 57px;"></div>
       </div></div></div>
-      <div id="notif"><div id="appui-8" class="appui" style="left: 390px; top: 190px;"></div><img src="medias/captures/16_notification_un_adversaire_se_propose_recadre.png" alt="" /></div>
+      <div id="notif"><div id="appui-6" class="appui" style="left: 390px; top: 190px;"></div><img src="medias/captures/16_notification_un_adversaire_se_propose_recadre.png" alt="" /></div>
 
       <!-- FIN : un vrai match, « Il ne reste qu'à jouer. » -->
       <div id="b-celeb" class="cadre-broll">
@@ -164,7 +176,8 @@
       const VUES = [{"id": "vue-accueil", "debut": 2.6}, {"id": "vue-liste", "debut": 4.7}, {"id": "vue-e1", "debut": 6.7}, {"id": "vue-liste", "debut": 14.3}, {"id": "vue-filtres", "debut": 14.9}, {"id": "vue-liste", "debut": 18.1}, {"id": "vue-disc", "debut": 19.5}, {"id": "vue-plan", "debut": 22.1}];
       const ZOOMS = [{"debut": 13.1, "fin": 14.25, "s": 1.2, "ox": 280, "oy": 1174}, {"debut": 18.200000000000003, "fin": 19.35, "s": 1.3, "ox": 280, "oy": 1000}, {"debut": 20.8, "fin": 21.85, "s": 1.3, "ox": 280, "oy": 820}, {"debut": 22.450000000000003, "fin": 25.3, "s": 1.22, "ox": 280, "oy": 600}];
       const ACTIFS = [{"sel": "#et-1 .sous", "k": 1, "t": 2.6}, {"sel": "#et-1 .sous", "k": 2, "t": 4.15}, {"sel": "#sous-2a", "k": 1, "t": 6.7}, {"sel": "#sous-2a", "k": 2, "t": 8.3}, {"sel": "#sous-2a", "k": 3, "t": 10.7}, {"sel": "#sous-2a", "k": 4, "t": 12.5}, {"sel": "#sous-2b", "k": 1, "t": 14.9}, {"sel": "#sous-2b", "k": 2, "t": 18.1}, {"sel": "#sous-2b", "k": 3, "t": 18.950000000000003}, {"sel": "#et-3 .sous", "k": 1, "t": 19.75}, {"sel": "#et-3 .sous", "k": 2, "t": 20.6}, {"sel": "#et-3 .sous", "k": 3, "t": 22.1}];
-      const APPUIS = [{"t": 4.1}, {"t": 5.4}, {"t": 6.1}, {"t": 6.8}, {"t": 13.95}, {"t": 14.6}, {"t": 19.05}, {"t": 21.700000000000003}, {"t": 20.35}];
+      const HALOS = [{"t": 5.25}, {"t": 5.95}];
+      const APPUIS = [{"t": 4.1, "bouton": true}, {"t": 6.8, "bouton": true}, {"t": 13.95, "bouton": true}, {"t": 14.6, "bouton": true}, {"t": 19.05, "bouton": true}, {"t": 21.700000000000003, "bouton": true}, {"t": 20.35}];
       const STICKERS = [{"debut": 0.2, "fin": 2.45, "penche": -3}, {"debut": 1.0, "fin": 2.45, "penche": 2}, {"debut": 25.05, "fin": 26.75, "penche": -2}];
       // ── outils ──
       const apparaitre = (sel, t, de = { y: 40 }) => tl.fromTo(sel, { opacity: 0, ...de }, { opacity: 1, x: 0, y: 0, duration: 0.3, ease: "power3.out" }, t);
@@ -229,6 +242,17 @@
       APPUIS.forEach((a, i) => {
         tl.fromTo(`#appui-${i}`, { opacity: 0, scale: 1.5 }, { opacity: 1, scale: 0.85, duration: 0.18, ease: "power2.out" }, a.t);
         tl.to(`#appui-${i}`, { opacity: 0, scale: 1.25, duration: 0.25, ease: "power1.in" }, a.t + 0.25);
+        if (!a.bouton) return;
+        // le bouton s'éclaire et s'enfonce quand le doigt touche, puis revient ; l'onde s'étale dans le bouton
+        const b = `#bouton-${i}`, t = a.t + 0.12;
+        tl.fromTo(b, { opacity: 0, scale: 1 }, { opacity: 1, scale: 0.95, duration: 0.08, ease: "power2.out" }, t);
+        tl.to(b, { opacity: 0, scale: 1, duration: 0.3, ease: "power2.out" }, t + 0.14);
+        tl.fromTo(`${b} .onde`, { scale: 0, opacity: 1 }, { scale: 14, opacity: 0, duration: 0.45, ease: "power2.out" }, t);
+      });
+      HALOS.forEach((h, i) => {
+        tl.fromTo(`#halo-${i}`, { opacity: 0, scale: 1.12 }, { opacity: 1, scale: 1, duration: 0.25, ease: "power2.out" }, h.t);
+        tl.to(`#halo-${i}`, { opacity: 0.35, duration: 0.25, yoyo: true, repeat: 1, ease: "sine.inOut" }, h.t + 0.3);
+        tl.to(`#halo-${i}`, { opacity: 0, duration: 0.2 }, T.creer - 0.15);
       });
 
       // ── FIN : on joue ──

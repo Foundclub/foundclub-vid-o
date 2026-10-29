@@ -61,6 +61,17 @@
       APPUIS.forEach((a, i) => {
         tl.fromTo(`#appui-${i}`, { opacity: 0, scale: 1.5 }, { opacity: 1, scale: 0.85, duration: 0.18, ease: "power2.out" }, a.t);
         tl.to(`#appui-${i}`, { opacity: 0, scale: 1.25, duration: 0.25, ease: "power1.in" }, a.t + 0.25);
+        if (!a.bouton) return;
+        // le bouton s'éclaire et s'enfonce quand le doigt touche, puis revient ; l'onde s'étale dans le bouton
+        const b = `#bouton-${i}`, t = a.t + 0.12;
+        tl.fromTo(b, { opacity: 0, scale: 1 }, { opacity: 1, scale: 0.95, duration: 0.08, ease: "power2.out" }, t);
+        tl.to(b, { opacity: 0, scale: 1, duration: 0.3, ease: "power2.out" }, t + 0.14);
+        tl.fromTo(`${b} .onde`, { scale: 0, opacity: 1 }, { scale: 14, opacity: 0, duration: 0.45, ease: "power2.out" }, t);
+      });
+      HALOS.forEach((h, i) => {
+        tl.fromTo(`#halo-${i}`, { opacity: 0, scale: 1.12 }, { opacity: 1, scale: 1, duration: 0.25, ease: "power2.out" }, h.t);
+        tl.to(`#halo-${i}`, { opacity: 0.35, duration: 0.25, yoyo: true, repeat: 1, ease: "sine.inOut" }, h.t + 0.3);
+        tl.to(`#halo-${i}`, { opacity: 0, duration: 0.2 }, T.creer - 0.15);
       });
 
       // ── FIN : on joue ──
