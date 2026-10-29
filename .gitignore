@@ -63,3 +63,9 @@ week-end-gache/medias/sons/
 week-end-gache/snapshots/
 week-end-gache/rendus/*-brut.mp4
 week-end-gache/rendus/apercu-*.mp4
+# carrousels-video : fichiers regenerables (outils/rendre.sh)
+carrousels-video/rendus/*-brut.mp4
+carrousels-video/rendus/brouillon-*.mp4
+carrousels-video/snapshots/
+carrousels-video/medias/sons/*.wav
+carrousels-video/musique.json

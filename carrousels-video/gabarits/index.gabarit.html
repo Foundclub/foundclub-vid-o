@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="gsap.min.js"></script>
+    <style>
+/*POLICES*/
+/*STYLES*/
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="__DUREE__" data-width="1080" data-height="1920">
+
+      <div id="fond" class="clip plein" data-start="0" data-duration="__DUREE__" data-track-index="0"><div id="fond-halo"></div></div>
+
+      <!-- Les pages du carrousel, telles qu'elles sont parties en images : elles défilent comme un carrousel qu'on fait glisser -->
+      <div id="pages" class="clip plein" data-start="0" data-duration="__DUREE__" data-track-index="1">
+<!--PAGES-->
+      </div>
+
+      <!-- Stickers façon story, au-dessus de la page : jamais posés sur l'écran de l'appli (Adel, 28/10) -->
+      <div id="stickers" class="clip plein" data-start="0" data-duration="__DUREE__" data-track-index="2">
+<!--STICKERS-->
+      </div>
+
+      <!-- CARTON FINAL -->
+      <div id="carton" class="clip plein" data-start="__FIN__" data-duration="__DUREE_CARTON__" data-track-index="9">
+        <div id="fin-voile" class="plein"></div>
+        <div id="fin">
+          <div class="icone-fc"><span class="f">F</span><span class="c">C</span></div>
+          <div class="marque"><span class="found">FOUND</span><span class="club">CLUB</span><span class="reflet"></span></div>
+          <div class="phrase">Télécharge FoundClub</div>
+          <div class="badges">
+            <img src="medias/badges/app-store.svg" alt="Download on the App Store" />
+            <img class="gp" src="medias/badges/google-play.svg" alt="Get it on Google Play" />
+          </div>
+          <div class="site">foundclub.app</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const PAGES = /*PAGESJS*/;
+      const STICKERS = /*STICKERSJS*/;
+      const FIN = __FIN__;
+/*JS*/
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

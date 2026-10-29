@@ -1,0 +1,46 @@
+      :root { --bleu: #01b3f4; --nuit: #0f191e; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--nuit); }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: "Montserrat", sans-serif; }
+      .plein { position: absolute; inset: 0; }
+
+      /* Le fond reprend la couleur du bord des pages (≈ #0f191e), pour que la page se fonde dans le cadre vertical */
+      #fond-halo { position: absolute; inset: 0;
+        background: radial-gradient(900px 700px at 85% 20%, rgba(1,179,244,.10), rgba(1,179,244,0) 70%),
+                    radial-gradient(900px 800px at 10% 85%, rgba(1,179,244,.07), rgba(1,179,244,0) 70%), var(--nuit); }
+
+      /* Une page de 1080 × 1350, réduite à 0,88 : 950 × 1188, de y = 360 à 1548. Au-dessus : la place des stickers ;
+         en dessous : la légende des réseaux. À droite, 65 px pour la colonne de boutons de TikTok et des Reels. */
+      .page { position: absolute; left: 32px; top: 360px; width: 950px; height: 1188px; opacity: 0; transform-origin: 50% 50%; }
+      .page .appuyer, .page .zoom { position: absolute; inset: 0; transform-origin: 50% 50%; }
+      .page img { display: block; width: 950px; height: 1188px;
+        -webkit-mask-image: linear-gradient(to right, transparent 0, #000 36px, #000 calc(100% - 36px), transparent 100%),
+                            linear-gradient(to bottom, transparent 0, #000 36px, #000 calc(100% - 36px), transparent 100%);
+        -webkit-mask-composite: source-in; mask-composite: intersect; }
+      /* L'appui du doigt sur un bouton (un cercle, pas une étiquette) */
+      .appui { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%;
+        background: rgba(255,255,255,.28); border: 4px solid rgba(255,255,255,.85); opacity: 0; }
+
+      /* Stickers façon story : fond blanc, texte noir, un peu penchés, sans icône ni halo (Adel, 28/10) */
+      .sticker { position: absolute; left: 0; right: 0; display: flex; justify-content: center; opacity: 0; }
+      .sticker span { display: inline-block; background: #fff; color: #0b0b0c; font-weight: 900; font-size: 54px; line-height: 1.1;
+        padding: 10px 24px 12px; border-radius: 10px; box-shadow: 0 6px 0 rgba(0,0,0,.25); }
+
+      /* Carton final (repris du « week-end gâché ») */
+      .icone-fc { width: 180px; height: 180px; border-radius: 42px; background: #000d12; border: 3px solid rgba(255,255,255,.18);
+        display: flex; align-items: center; justify-content: center; font-size: 120px; letter-spacing: -0.09em; line-height: 1;
+        box-shadow: 0 0 60px rgba(1,179,244,.45), 0 24px 60px rgba(0,0,0,.5); }
+      .icone-fc .f { color: var(--bleu); font-weight: 600; } .icone-fc .c { color: #fff; font-weight: 300; }
+      .marque { margin-top: 26px; font-size: 104px; line-height: 1; letter-spacing: 0.01em; position: relative; overflow: hidden; padding: 0 10px; }
+      .marque .found { color: var(--bleu); font-weight: 800; } .marque .club { color: #fff; font-weight: 400; }
+      .marque .reflet { position: absolute; top: -20%; bottom: -20%; width: 180px; left: -220px;
+        background: linear-gradient(100deg, rgba(255,255,255,0), rgba(255,255,255,.55), rgba(255,255,255,0)); }
+      #fin-voile { background: #001218; opacity: 0; }
+      #fin { position: absolute; left: 0; right: 0; top: 560px; display: flex; flex-direction: column; align-items: center; }
+      #fin .icone-fc { width: 220px; height: 220px; border-radius: 50px; font-size: 146px; }
+      #fin .marque { margin-top: 40px; font-size: 128px; }
+      #fin .phrase { margin-top: 46px; color: #fff; font-weight: 700; font-size: 50px; }
+      #fin .badges { margin-top: 44px; display: flex; gap: 34px; align-items: center; }
+      #fin .badges img { height: 110px; display: block; }
+      #fin .badges .gp { height: 144px; margin: -17px -10px; }
+      #fin .site { margin-top: 46px; color: var(--bleu); font-weight: 800; font-size: 50px; letter-spacing: .02em; }
