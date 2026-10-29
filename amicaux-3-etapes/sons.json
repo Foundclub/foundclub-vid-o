@@ -34,107 +34,142 @@
 "db": -6
 },
 {
-"t": 3.0,
+"t": 4.15,
 "son": "click.mp3",
 "db": -6
 },
 {
-"t": 4.9,
+"t": 4.15,
 "son": "key-press.mp3",
 "db": -14
 },
 {
-"t": 7.5,
-"son": "key-press.mp3",
-"db": -14
-},
-{
-"t": 9.5,
-"son": "key-press.mp3",
-"db": -14
-},
-{
-"t": 11.2,
-"son": "click.mp3",
-"db": -6
-},
-{
-"t": 11.42,
+"t": 4.62,
 "son": "whoosh.mp3",
 "db": -6
 },
 {
-"t": 11.62,
+"t": 4.82,
 "son": "impact-bass-1.mp3",
 "db": -10
 },
 {
-"t": 12.25,
+"t": 5.45,
 "son": "click.mp3",
 "db": -6
 },
 {
-"t": 12.4,
-"son": "key-press.mp3",
-"db": -14
-},
-{
-"t": 16.4,
-"son": "key-press.mp3",
-"db": -14
-},
-{
-"t": 17.4,
+"t": 6.15,
 "son": "click.mp3",
 "db": -6
 },
 {
-"t": 17.92,
+"t": 6.7,
+"son": "key-press.mp3",
+"db": -14
+},
+{
+"t": 6.85,
+"son": "click.mp3",
+"db": -6
+},
+{
+"t": 8.3,
+"son": "key-press.mp3",
+"db": -14
+},
+{
+"t": 10.7,
+"son": "key-press.mp3",
+"db": -14
+},
+{
+"t": 12.5,
+"son": "key-press.mp3",
+"db": -14
+},
+{
+"t": 14.0,
+"son": "click.mp3",
+"db": -6
+},
+{
+"t": 14.22,
+"son": "whoosh.mp3",
+"db": -9
+},
+{
+"t": 14.65,
+"son": "click.mp3",
+"db": -6
+},
+{
+"t": 14.9,
+"son": "key-press.mp3",
+"db": -14
+},
+{
+"t": 18.1,
+"son": "key-press.mp3",
+"db": -14
+},
+{
+"t": 18.95,
+"son": "key-press.mp3",
+"db": -14
+},
+{
+"t": 19.1,
+"son": "click.mp3",
+"db": -6
+},
+{
+"t": 19.42,
 "son": "whoosh.mp3",
 "db": -6
 },
 {
-"t": 18.12,
+"t": 19.62,
 "son": "impact-bass-1.mp3",
 "db": -10
 },
 {
-"t": 18.3,
+"t": 19.75,
+"son": "key-press.mp3",
+"db": -14
+},
+{
+"t": 19.75,
 "son": "vibre",
 "db": -8
 },
 {
-"t": 18.4,
+"t": 19.85,
 "son": "ping.mp3",
 "db": -6
 },
 {
-"t": 19.35,
+"t": 20.4,
 "son": "click.mp3",
 "db": -6
 },
 {
-"t": 19.55,
+"t": 20.6,
 "son": "key-press.mp3",
 "db": -14
 },
 {
-"t": 20.95,
+"t": 21.75,
 "son": "click.mp3",
 "db": -6
 },
 {
-"t": 22.35,
-"son": "click.mp3",
-"db": -6
-},
-{
-"t": 22.7,
+"t": 22.1,
 "son": "key-press.mp3",
 "db": -14
 },
 {
-"t": 22.75,
+"t": 22.15,
 "son": "chime.mp3",
 "db": -8
 },

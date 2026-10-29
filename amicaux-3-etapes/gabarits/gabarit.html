@@ -86,21 +86,24 @@
 
       <!-- LES 3 ÉTAPES -->
       <div id="et-1" class="etape"><div class="num">1</div>
-        <div class="titre"><span class="mot">Publie</span> <span class="mot">ton</span> <span class="mot bleu">annonce</span></div>
-        <div class="sous"><span>Ton équipe</span><span>Tes dates</span><span>L'adversaire</span><span>Publier</span></div></div>
+        <div class="titre"><span class="mot">Va</span> <span class="mot">dans</span> <span class="mot bleu">Matchs</span> <span class="mot bleu">amicaux</span></div>
+        <div class="sous"><span>Accueil</span><span>Matchs amicaux</span></div></div>
+      <!-- Adel (29/10) : « tu as deux solutions : soit tu cherches, soit tu crées ton match amical » -->
       <div id="et-2" class="etape"><div class="num">2</div>
-        <div class="titre"><span class="mot">Une</span> <span class="mot">équipe</span> <span class="mot">cherche</span> <span class="mot bleu">un</span> <span class="mot bleu">match</span></div>
-        <div class="sous"><span>Les annonces</span><span>Les filtres</span><span>Proposer un match</span></div></div>
+        <div class="titre"><span class="moitie a"><span class="mot">Crée</span> <span class="mot">ton</span> <span class="mot bleu">match,</span></span>
+          <span class="moitie b"><span class="mot">ou</span> <span class="mot">cherche-en</span> <span class="mot bleu">un</span></span></div>
+        <div id="sous-2a" class="sous"><span>Ton équipe</span><span>Tes dates</span><span>L'adversaire</span><span>Publier</span></div>
+        <div id="sous-2b" class="sous" style="opacity: 0;"><span>Les filtres</span><span>Les annonces</span><span>Proposer un match</span></div></div>
       <div id="et-3" class="etape"><div class="num">3</div>
-        <div class="titre"><span class="mot">Tu</span> <span class="mot">acceptes,</span> <span class="mot">c'est</span> <span class="mot bleu">dans</span> <span class="mot bleu">le</span> <span class="mot bleu">planning</span></div>
-        <div class="sous"><span>Tu es prévenu</span><span>Accepter</span><span>Le planning</span></div></div>
+        <div class="titre"><span class="mot">L'autre</span> <span class="mot">accepte :</span> <span class="mot bleu">c'est</span> <span class="mot bleu">dans</span> <span class="mot bleu">le</span> <span class="mot bleu">planning</span></div>
+        <div class="sous"><span>Prévenu</span><span>Accepter</span><span>Le planning</span></div></div>
 
       <div id="tel"><div id="ecran"><div id="camera">
-        <div id="vue-e1" class="vue"><video id="v-e1" src="medias/ecran/etape1.mp4" muted playsinline data-start="__E1__" data-duration="__DUREE_E1__" data-track-index="3"></video></div>
+        <div id="vue-accueil" class="vue"><video id="v-accueil" src="medias/ecran/accueil.mp4" muted playsinline data-start="__ACCUEIL__" data-duration="__DUREE_ACCUEIL__" data-track-index="5"></video></div>
         <img id="vue-liste" class="vue" src="medias/captures/02_liste.png" alt="" />
+        <div id="vue-e1" class="vue"><video id="v-e1" src="medias/ecran/etape1.mp4" muted playsinline data-start="__E1__" data-duration="__DUREE_E1__" data-track-index="3"></video></div>
         <div id="vue-filtres" class="vue"><video id="v-filtres" src="medias/ecran/filtres.mp4" muted playsinline data-start="__FILTRES__" data-duration="__DUREE_FILTRES__" data-track-index="4"></video></div>
         <img id="vue-disc" class="vue" src="medias/captures/17b_discussion_vue_annonceur_valbrune.png" alt="" />
-        <img id="vue-acc" class="vue" src="medias/captures/23a_accepter_cette_proposition.png" alt="" />
         <img id="vue-plan" class="vue" src="medias/captures/24b_planning_montrivage_carte_du_match.png" alt="" />
 <!--APPUIS-->
       </div></div></div>
@@ -136,6 +139,9 @@
       window.__timelines = window.__timelines || {};
       const tl = gsap.timeline({ paused: true });
       const T = /*T*/;
+      const VUES = /*VUESJS*/;
+      const ZOOMS = /*ZOOMSJS*/;
+      const ACTIFS = /*ACTIFSJS*/;
       const APPUIS = /*APPUISJS*/;
       const STICKERS = /*STICKERSJS*/;
 /*JS*/

@@ -15,11 +15,11 @@
         tl.fromTo(`#et-${n} .sous span`, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.2, ease: "power2.out", stagger: 0.05 }, t + 0.3);
       };
       const sortir = (n, t) => tl.to(`#et-${n}`, { opacity: 0, x: -80, duration: 0.2, ease: "power2.in" }, t);
-      const actif = (n, k, t) => {
+      const actif = (sel, k, t) => {
         // (GSAP 3 ne pose plus de classe : on pose les couleurs de .actif à la main)
-        tl.set(`#et-${n} .sous span`, { color: "rgba(255,255,255,.45)", backgroundColor: "rgba(255,255,255,0)", borderColor: "rgba(255,255,255,.18)" }, t);
-        tl.set(`#et-${n} .sous span:nth-child(${k})`, { color: "#001218", backgroundColor: "#ffffff", borderColor: "#ffffff" }, t);
-        tl.fromTo(`#et-${n} .sous span:nth-child(${k})`, { scale: 1.15 }, { scale: 1, duration: 0.2, ease: "power2.out" }, t);
+        tl.set(`${sel} span`, { color: "rgba(255,255,255,.45)", backgroundColor: "rgba(255,255,255,0)", borderColor: "rgba(255,255,255,.18)" }, t);
+        tl.set(`${sel} span:nth-child(${k})`, { color: "#001218", backgroundColor: "#ffffff", borderColor: "#ffffff" }, t);
+        tl.fromTo(`${sel} span:nth-child(${k})`, { scale: 1.15 }, { scale: 1, duration: 0.2, ease: "power2.out" }, t);
       };
 
       // ── ACCROCHE : un vrai match ──
@@ -35,39 +35,27 @@
       tl.fromTo("#eclair-bleu", { opacity: 0.55 }, { opacity: 0, duration: 0.35, ease: "power2.out", immediateRender: false }, T.tel + 0.08);
       tl.fromTo("#tel", { opacity: 0, y: 900, rotation: 8 }, { opacity: 1, y: 0, rotation: 0, duration: 0.5, ease: "power3.out" }, T.tel);
       etape(1, T.tel + 0.05);
-      montrer("#vue-e1", T.e1);
-      T.sous1.forEach((t, k) => actif(1, k + 1, t));
-      zoom(T.e2 - 1.2, T.e2 - 0.05, 1.2, 280, 1174);       // « Publier l'annonce »
-
-      // ── ÉTAPE 2 : une autre équipe cherche (Adel, 29/10 : « il faut montrer la recherche, avec les annonces où ils filtrent ») ──
-      sortir(1, T.e2 - 0.1);
-      etape(2, T.e2);
-      cacher("#vue-e1", T.e2); montrer("#vue-liste", T.e2);
-      actif(2, 1, T.e2);
-      cacher("#vue-liste", T.filtres); montrer("#vue-filtres", T.filtres);
-      actif(2, 2, T.filtres);
-      cacher("#vue-filtres", T.retour); montrer("#vue-liste", T.retour);
-      actif(2, 3, T.retour);
-      zoom(T.retour + 0.1, T.e3 - 0.15, 1.3, 280, 1000);     // la carte de l'annonce et « Proposer un match »
-
-      // ── ÉTAPE 3 : prévenu, accepter, le planning ──
-      sortir(2, T.e3 - 0.1);
-      etape(3, T.e3);
-      cacher("#vue-liste", T.e3); montrer("#vue-disc", T.e3);
+      sortir(1, T.e2 - 0.1); etape(2, T.e2);
+      sortir(2, T.e3 - 0.1); etape(3, T.e3);
+      // Étape 2, « deux solutions » : la moitié du titre qui ne joue pas s'efface
+      tl.set("#et-2 .b", { opacity: 0.3 }, T.creer); tl.set("#et-2 .a", { opacity: 1 }, T.creer);
+      tl.set("#et-2 .a", { opacity: 0.3 }, T.chercher); tl.set("#et-2 .b", { opacity: 1 }, T.chercher);
+      tl.set("#sous-2a", { opacity: 0 }, T.chercher); tl.set("#sous-2b", { opacity: 1 }, T.chercher);
+      tl.fromTo("#sous-2b span", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.2, stagger: 0.05, immediateRender: false }, T.chercher);
+      // Les écrans du téléphone : chacun reste jusqu'au suivant
+      VUES.forEach((v, i) => {
+        montrer(`#${v.id}`, v.debut);
+        if (i + 1 < VUES.length) cacher(`#${v.id}`, VUES[i + 1].debut);
+      });
+      ZOOMS.forEach(z => zoom(z.debut, z.fin, z.s, z.ox, z.oy));
+      ACTIFS.forEach(a => actif(a.sel, a.k, a.t));
+      // Étape 3 : la notification tombe sur la discussion assombrie
       tl.set("#vue-disc", { filter: "brightness(0.35)" }, T.e3);
       tl.fromTo("#notif", { opacity: 0, y: -420 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.4)" }, T.notif);
       tl.to("#tel", { x: 8, duration: 0.045, yoyo: true, repeat: 9, ease: "none" }, T.notif);   // le téléphone vibre
-      actif(3, 1, T.notif);
       tl.to("#notif", { opacity: 0, scale: 0.85, y: -60, duration: 0.22, ease: "power2.in" }, T.ouvre);
       tl.to("#vue-disc", { filter: "brightness(1)", duration: 0.25 }, T.ouvre);
-      actif(3, 2, T.ouvre);
-      zoom(T.ouvre + 0.25, T.acc - 0.3, 1.3, 280, 820);       // la proposition, « Accepter » / « Refuser »
-      cacher("#vue-disc", T.acc); montrer("#vue-acc", T.acc);
-      zoom(T.acc + 0.1, T.plan - 0.25, 1.3, 280, 727);       // « Accepter cette proposition ? »
-      cacher("#vue-acc", T.plan); montrer("#vue-plan", T.plan);
-      tl.fromTo("#vue-plan", { scale: 1.06 }, { scale: 1, duration: 0.3, ease: "power2.out" }, T.plan);
-      actif(3, 3, T.plan);
-      zoom(T.plan + 0.35, T.celeb + 0.5, 1.22, 280, 600);     // la carte du match : Valbrune U13, samedi, 14:00, Stade du Moulin
+      tl.fromTo("#vue-plan", { scale: 1.06 }, { scale: 1, duration: 0.3, ease: "power2.out", immediateRender: false }, T.plan);
 
       // ── Les appuis du doigt (un rond, pas une étiquette) ──
       APPUIS.forEach((a, i) => {
