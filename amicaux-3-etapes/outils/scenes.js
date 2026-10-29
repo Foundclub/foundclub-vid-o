@@ -39,28 +39,34 @@
       T.sous1.forEach((t, k) => actif(1, k + 1, t));
       zoom(T.e2 - 1.2, T.e2 - 0.05, 1.2, 280, 1174);       // « Publier l'annonce »
 
-      // ── ÉTAPE 2 : une équipe propose ──
+      // ── ÉTAPE 2 : une autre équipe cherche (Adel, 29/10 : « il faut montrer la recherche, avec les annonces où ils filtrent ») ──
       sortir(1, T.e2 - 0.1);
       etape(2, T.e2);
-      cacher("#vue-e1", T.e2); montrer("#vue-disc", T.e2);
-      tl.set("#vue-disc", { filter: "brightness(0.35)" }, T.e2);
-      tl.fromTo("#notif", { opacity: 0, y: -420 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.4)" }, T.notif);
-      tl.to("#tel", { x: 8, duration: 0.045, yoyo: true, repeat: 9, ease: "none" }, T.notif);   // le téléphone vibre
-      actif(2, 1, T.notif);
-      tl.to("#notif", { opacity: 0, scale: 0.85, y: -60, duration: 0.22, ease: "power2.in" }, T.ouvre);
-      tl.to("#vue-disc", { filter: "brightness(1)", duration: 0.25 }, T.ouvre);
-      actif(2, 2, T.ouvre);
-      zoom(T.ouvre + 0.3, T.e3 - 0.35, 1.3, 280, 820);       // la proposition, « Accepter » / « Refuser »
+      cacher("#vue-e1", T.e2); montrer("#vue-liste", T.e2);
+      actif(2, 1, T.e2);
+      cacher("#vue-liste", T.filtres); montrer("#vue-filtres", T.filtres);
+      actif(2, 2, T.filtres);
+      cacher("#vue-filtres", T.retour); montrer("#vue-liste", T.retour);
+      actif(2, 3, T.retour);
+      zoom(T.retour + 0.1, T.e3 - 0.15, 1.3, 280, 1000);     // la carte de l'annonce et « Proposer un match »
 
-      // ── ÉTAPE 3 : accepter, le planning ──
+      // ── ÉTAPE 3 : prévenu, accepter, le planning ──
       sortir(2, T.e3 - 0.1);
       etape(3, T.e3);
-      cacher("#vue-disc", T.e3); montrer("#vue-acc", T.e3);
-      actif(3, 1, T.e3);
-      zoom(T.e3 + 0.2, T.plan - 0.3, 1.3, 280, 727);      // « Accepter cette proposition ? »
+      cacher("#vue-liste", T.e3); montrer("#vue-disc", T.e3);
+      tl.set("#vue-disc", { filter: "brightness(0.35)" }, T.e3);
+      tl.fromTo("#notif", { opacity: 0, y: -420 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.4)" }, T.notif);
+      tl.to("#tel", { x: 8, duration: 0.045, yoyo: true, repeat: 9, ease: "none" }, T.notif);   // le téléphone vibre
+      actif(3, 1, T.notif);
+      tl.to("#notif", { opacity: 0, scale: 0.85, y: -60, duration: 0.22, ease: "power2.in" }, T.ouvre);
+      tl.to("#vue-disc", { filter: "brightness(1)", duration: 0.25 }, T.ouvre);
+      actif(3, 2, T.ouvre);
+      zoom(T.ouvre + 0.25, T.acc - 0.3, 1.3, 280, 820);       // la proposition, « Accepter » / « Refuser »
+      cacher("#vue-disc", T.acc); montrer("#vue-acc", T.acc);
+      zoom(T.acc + 0.1, T.plan - 0.25, 1.3, 280, 727);       // « Accepter cette proposition ? »
       cacher("#vue-acc", T.plan); montrer("#vue-plan", T.plan);
       tl.fromTo("#vue-plan", { scale: 1.06 }, { scale: 1, duration: 0.3, ease: "power2.out" }, T.plan);
-      actif(3, 2, T.plan);
+      actif(3, 3, T.plan);
       zoom(T.plan + 0.35, T.celeb + 0.5, 1.22, 280, 600);     // la carte du match : Valbrune U13, samedi, 14:00, Stade du Moulin
 
       // ── Les appuis du doigt (un rond, pas une étiquette) ──

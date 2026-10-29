@@ -4,9 +4,9 @@ Texte visible à l'écran, dans l'ordre :
 
  0.20 s  sticker : Pas de match ce week-end ?
  1.00 s  sticker : Trouve un match amical en 3 étapes
- 2.45 s  1 — Publie ton annonce (Ton équipe · Tes dates · L'adversaire · Un mot · Publier)
-13.50 s  2 — Une équipe te propose un match (Tu es prévenu · Vous en parlez)
-19.00 s  3 — Tu acceptes, c'est dans le planning (Accepter · Le planning des deux équipes)
+ 2.45 s  1 — Publie ton annonce (Ton équipe · Tes dates · L'adversaire · Publier)
+11.50 s  2 — Une équipe cherche un match (Les annonces · Les filtres · Proposer un match)
+18.00 s  3 — Tu acceptes, c'est dans le planning (Tu es prévenu · Accepter · Le planning)
 25.05 s  sticker : Il ne reste qu'à jouer.
 26.80 s  carton : FoundClub — Trouve ton prochain match amical — Accueil → Matchs amicaux — App Store, Google Play — foundclub.app
 

@@ -17,7 +17,7 @@ for b in "duel 0.9" "celebration 0"; do
 done
 # passage : début, fin (s de l'enregistrement), durée à l'écran (s)
 # Adel (29/10) : « ça va trop vite » ⇒ passages plus courts dans l'enregistrement, moins accélérés (×1,3 à ×3,2 au lieu de ×2 à ×10)
-PASSAGES=("0.6 3.4 2.2" "6.5 12.1 3.0" "35.7 41.0 2.0" "46.1 51.2 1.6" "55.4 58.7 2.0")
+PASSAGES=("0.6 3.4 2.2" "6.5 12.1 2.6" "35.7 41.0 2.0" "55.4 58.7 2.0")
 F=""; L=""; i=0
 for p in "${PASSAGES[@]}"; do
   set -- $p; v=$(python -c "print(round(($2-$1)/$3, 4))")
@@ -25,6 +25,11 @@ for p in "${PASSAGES[@]}"; do
 done
 ffmpeg -v error -y -i "$CAP/04-10_assistant_video_vitesse_reelle.mp4" -filter_complex "${F}${L}concat=n=$i:v=1:a=0,format=yuv420p[v]" \
   -map "[v]" -c:v libx264 -crf 16 -g 15 -an medias/ecran/etape1.mp4
+# - medias/ecran/filtres.mp4 : l'enregistrement d'Adel sur son iPhone (29/10), SEULEMENT le panneau « Filtres » (4,4 -> 16,0 s) :
+#   on n'y voit aucun club. Avant et après, sa liste montre de vrais clubs : on montre la liste de recette (02_liste.png).
+#   La barre d'état (heure, point rouge d'enregistrement) est coupée.
+ffmpeg -v error -y -ss 4.4 -t 11.6 -i "/c/Users/adelf/Downloads/ScreenRecording_10-29-2026 17-33-46_1.mp4" -an \
+  -vf "crop=1180:2436:0:120,setpts=PTS/2.9,fps=30,scale=1080:-2,format=yuv420p" -t 4.0 -c:v libx264 -crf 16 -g 15 medias/ecran/filtres.mp4
 ffmpeg -v error -y -ss 31.78 -t 31 -i /d/App/video/collectivites/assets/musique/sofra-groovy-upbeat-drums-and-percussions-130592.mp3 \
   -ar 48000 -ac 2 medias/musique/fond.wav
-for f in medias/broll/*.mp4 medias/ecran/etape1.mp4 medias/musique/fond.wav; do echo "$f $(ffprobe -v error -show_entries format=duration -of csv=p=0 $f)"; done
+for f in medias/broll/*.mp4 medias/ecran/*.mp4 medias/musique/fond.wav; do echo "$f $(ffprobe -v error -show_entries format=duration -of csv=p=0 $f)"; done

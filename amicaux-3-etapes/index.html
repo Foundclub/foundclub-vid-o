@@ -100,25 +100,29 @@
       <!-- LES 3 ÉTAPES -->
       <div id="et-1" class="etape"><div class="num">1</div>
         <div class="titre"><span class="mot">Publie</span> <span class="mot">ton</span> <span class="mot bleu">annonce</span></div>
-        <div class="sous"><span>Ton équipe</span><span>Tes dates</span><span>L'adversaire</span><span>Un mot</span><span>Publier</span></div></div>
+        <div class="sous"><span>Ton équipe</span><span>Tes dates</span><span>L'adversaire</span><span>Publier</span></div></div>
       <div id="et-2" class="etape"><div class="num">2</div>
-        <div class="titre"><span class="mot">Une</span> <span class="mot">équipe</span> <span class="mot">te</span> <span class="mot bleu">propose</span> <span class="mot bleu">un</span> <span class="mot bleu">match</span></div>
-        <div class="sous"><span>Tu es prévenu</span><span>Vous en parlez</span></div></div>
+        <div class="titre"><span class="mot">Une</span> <span class="mot">équipe</span> <span class="mot">cherche</span> <span class="mot bleu">un</span> <span class="mot bleu">match</span></div>
+        <div class="sous"><span>Les annonces</span><span>Les filtres</span><span>Proposer un match</span></div></div>
       <div id="et-3" class="etape"><div class="num">3</div>
         <div class="titre"><span class="mot">Tu</span> <span class="mot">acceptes,</span> <span class="mot">c'est</span> <span class="mot bleu">dans</span> <span class="mot bleu">le</span> <span class="mot bleu">planning</span></div>
-        <div class="sous"><span>Accepter</span><span>Le planning des deux équipes</span></div></div>
+        <div class="sous"><span>Tu es prévenu</span><span>Accepter</span><span>Le planning</span></div></div>
 
       <div id="tel"><div id="ecran"><div id="camera">
-        <div id="vue-e1" class="vue"><video id="v-e1" src="medias/ecran/etape1.mp4" muted playsinline data-start="2.700" data-duration="10.8" data-track-index="3"></video></div>
+        <div id="vue-e1" class="vue"><video id="v-e1" src="medias/ecran/etape1.mp4" muted playsinline data-start="2.700" data-duration="8.8" data-track-index="3"></video></div>
+        <img id="vue-liste" class="vue" src="medias/captures/02_liste.png" alt="" />
+        <div id="vue-filtres" class="vue"><video id="v-filtres" src="medias/ecran/filtres.mp4" muted playsinline data-start="12.400" data-duration="4.000" data-track-index="4"></video></div>
         <img id="vue-disc" class="vue" src="medias/captures/17b_discussion_vue_annonceur_valbrune.png" alt="" />
         <img id="vue-acc" class="vue" src="medias/captures/23a_accepter_cette_proposition.png" alt="" />
         <img id="vue-plan" class="vue" src="medias/captures/24b_planning_montrivage_carte_du_match.png" alt="" />
         <div id="appui-0" class="appui" style="left: 280px; top: 637px;"></div>
         <div id="appui-1" class="appui" style="left: 280px; top: 1174px;"></div>
-        <div id="appui-2" class="appui" style="left: 281px; top: 1016px;"></div>
-        <div id="appui-3" class="appui" style="left: 279px; top: 727px;"></div>
+        <div id="appui-2" class="appui" style="left: 476px; top: 696px;"></div>
+        <div id="appui-3" class="appui" style="left: 220px; top: 1076px;"></div>
+        <div id="appui-4" class="appui" style="left: 281px; top: 1016px;"></div>
+        <div id="appui-5" class="appui" style="left: 279px; top: 727px;"></div>
       </div></div></div>
-      <div id="notif"><div id="appui-4" class="appui" style="left: 390px; top: 190px;"></div><img src="medias/captures/16_notification_un_adversaire_se_propose_recadre.png" alt="" /></div>
+      <div id="notif"><div id="appui-6" class="appui" style="left: 390px; top: 190px;"></div><img src="medias/captures/16_notification_un_adversaire_se_propose_recadre.png" alt="" /></div>
 
       <!-- FIN : un vrai match, « Il ne reste qu'à jouer. » -->
       <div id="b-celeb" class="cadre-broll">
@@ -151,8 +155,8 @@
     <script>
       window.__timelines = window.__timelines || {};
       const tl = gsap.timeline({ paused: true });
-      const T = {"tel": 2.45, "e1": 2.7, "e2": 13.5, "notif": 13.85, "ouvre": 15.4, "e3": 19.0, "plan": 21.0, "celeb": 24.8, "fin": 26.8, "sous1": [2.7, 4.9, 7.9, 9.9, 11.5]};
-      const APPUIS = [{"t": 2.95}, {"t": 13.15}, {"t": 18.4}, {"t": 20.55}, {"t": 15.15}];
+      const T = {"tel": 2.45, "e1": 2.7, "e2": 11.5, "filtres": 12.4, "retour": 16.4, "e3": 18.0, "notif": 18.3, "ouvre": 19.55, "acc": 21.3, "plan": 22.7, "celeb": 24.8, "fin": 26.8, "sous1": [2.7, 4.9, 7.5, 9.5]};
+      const APPUIS = [{"t": 2.95}, {"t": 11.15}, {"t": 12.2}, {"t": 17.35}, {"t": 20.9}, {"t": 22.3}, {"t": 19.3}];
       const STICKERS = [{"debut": 0.2, "fin": 2.45, "penche": -3}, {"debut": 1.0, "fin": 2.45, "penche": 2}, {"debut": 25.05, "fin": 26.75, "penche": -2}];
       // ── outils ──
       const apparaitre = (sel, t, de = { y: 40 }) => tl.fromTo(sel, { opacity: 0, ...de }, { opacity: 1, x: 0, y: 0, duration: 0.3, ease: "power3.out" }, t);
@@ -195,28 +199,34 @@
       T.sous1.forEach((t, k) => actif(1, k + 1, t));
       zoom(T.e2 - 1.2, T.e2 - 0.05, 1.2, 280, 1174);       // « Publier l'annonce »
 
-      // ── ÉTAPE 2 : une équipe propose ──
+      // ── ÉTAPE 2 : une autre équipe cherche (Adel, 29/10 : « il faut montrer la recherche, avec les annonces où ils filtrent ») ──
       sortir(1, T.e2 - 0.1);
       etape(2, T.e2);
-      cacher("#vue-e1", T.e2); montrer("#vue-disc", T.e2);
-      tl.set("#vue-disc", { filter: "brightness(0.35)" }, T.e2);
-      tl.fromTo("#notif", { opacity: 0, y: -420 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.4)" }, T.notif);
-      tl.to("#tel", { x: 8, duration: 0.045, yoyo: true, repeat: 9, ease: "none" }, T.notif);   // le téléphone vibre
-      actif(2, 1, T.notif);
-      tl.to("#notif", { opacity: 0, scale: 0.85, y: -60, duration: 0.22, ease: "power2.in" }, T.ouvre);
-      tl.to("#vue-disc", { filter: "brightness(1)", duration: 0.25 }, T.ouvre);
-      actif(2, 2, T.ouvre);
-      zoom(T.ouvre + 0.3, T.e3 - 0.35, 1.3, 280, 820);       // la proposition, « Accepter » / « Refuser »
+      cacher("#vue-e1", T.e2); montrer("#vue-liste", T.e2);
+      actif(2, 1, T.e2);
+      cacher("#vue-liste", T.filtres); montrer("#vue-filtres", T.filtres);
+      actif(2, 2, T.filtres);
+      cacher("#vue-filtres", T.retour); montrer("#vue-liste", T.retour);
+      actif(2, 3, T.retour);
+      zoom(T.retour + 0.1, T.e3 - 0.15, 1.3, 280, 1000);     // la carte de l'annonce et « Proposer un match »
 
-      // ── ÉTAPE 3 : accepter, le planning ──
+      // ── ÉTAPE 3 : prévenu, accepter, le planning ──
       sortir(2, T.e3 - 0.1);
       etape(3, T.e3);
-      cacher("#vue-disc", T.e3); montrer("#vue-acc", T.e3);
-      actif(3, 1, T.e3);
-      zoom(T.e3 + 0.2, T.plan - 0.3, 1.3, 280, 727);      // « Accepter cette proposition ? »
+      cacher("#vue-liste", T.e3); montrer("#vue-disc", T.e3);
+      tl.set("#vue-disc", { filter: "brightness(0.35)" }, T.e3);
+      tl.fromTo("#notif", { opacity: 0, y: -420 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.4)" }, T.notif);
+      tl.to("#tel", { x: 8, duration: 0.045, yoyo: true, repeat: 9, ease: "none" }, T.notif);   // le téléphone vibre
+      actif(3, 1, T.notif);
+      tl.to("#notif", { opacity: 0, scale: 0.85, y: -60, duration: 0.22, ease: "power2.in" }, T.ouvre);
+      tl.to("#vue-disc", { filter: "brightness(1)", duration: 0.25 }, T.ouvre);
+      actif(3, 2, T.ouvre);
+      zoom(T.ouvre + 0.25, T.acc - 0.3, 1.3, 280, 820);       // la proposition, « Accepter » / « Refuser »
+      cacher("#vue-disc", T.acc); montrer("#vue-acc", T.acc);
+      zoom(T.acc + 0.1, T.plan - 0.25, 1.3, 280, 727);       // « Accepter cette proposition ? »
       cacher("#vue-acc", T.plan); montrer("#vue-plan", T.plan);
       tl.fromTo("#vue-plan", { scale: 1.06 }, { scale: 1, duration: 0.3, ease: "power2.out" }, T.plan);
-      actif(3, 2, T.plan);
+      actif(3, 3, T.plan);
       zoom(T.plan + 0.35, T.celeb + 0.5, 1.22, 280, 600);     // la carte du match : Valbrune U13, samedi, 14:00, Stade du Moulin
 
       // ── Les appuis du doigt (un rond, pas une étiquette) ──
