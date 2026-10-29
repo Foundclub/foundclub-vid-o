@@ -11,4 +11,6 @@ Texte visible à l'écran, dans l'ordre :
 22.00 s  carton : FoundClub — Trouve ton prochain match amical — Accueil → Matchs amicaux — App Store, Google Play — foundclub.app
 
 Images : écrans de l'app de recette (données fictives : Montrivage Olympique, Valbrune U13), plans tournés par FoundClub.
-Musique : « Upbeat Acoustic », Stockaudios (Pixabay Content License).
+Musique : « Race The Sun », Scott Buckley — licence CC BY 4.0 : le crédit est OBLIGATOIRE dans la description de chaque post :
+  Race The Sun by Scott Buckley – released under CC-BY 4.0. www.scottbuckley.com.au
+Bruitages : bibliothèque Pixabay (clic, notification), et sons synthétisés (sticker, vibration, tampon).

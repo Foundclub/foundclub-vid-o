@@ -43,8 +43,8 @@ open("index.html", "w", encoding="utf-8").write(src)
 # les stickers qui se plaquent. Les fichiers .mp3 viennent de la bibliothèque Pixabay (medias/sfx/CREDITS.md) ; « sticker »,
 # « vibre » et « tampon » sont synthétisés (outils/sons.py du « week-end gâché »). db : réglage par rapport à la musique.
 S = [(d + 0.14, "sticker", -2) for d, _, _, _, _ in STICKERS]
-S += [(t + 0.05, "click-soft.mp3", 0) for t, _, _ in APPUIS] + [(APPUI_NOTIF + 0.05, "click-soft.mp3", 0)]
-S += [(T["notif"], "notification.mp3", -4), (T["notif"], "vibre", -2), (T["fin"] + 0.15, "tampon", -6)]
+S += [(t + 0.05, "click-soft.mp3", -4) for t, _, _ in APPUIS] + [(APPUI_NOTIF + 0.05, "click-soft.mp3", -4)]
+S += [(T["notif"], "notification.mp3", -11), (T["notif"], "vibre", -9), (T["fin"] + 0.15, "tampon", -6)]
 json.dump([{"t": round(t, 3), "son": s, "db": d} for t, s, d in sorted(S)], open("sons.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 
 lignes = ["Trouver un match amical en 3 étapes — vidéo verticale 1080 × 1920, %.1f s (vendredi 30/10)" % DUREE, "",
@@ -57,6 +57,8 @@ lignes += [f'{T["tel"]:5.2f} s  1 — Publie ton annonce (Ton équipe · Tes dat
 lignes.append(f"{STICKERS[2][0]:5.2f} s  sticker : {STICKERS[2][4]}")
 lignes.append(f'{T["fin"]:5.2f} s  carton : FoundClub — Trouve ton prochain match amical — Accueil → Matchs amicaux — App Store, Google Play — foundclub.app')
 lignes += ["", "Images : écrans de l'app de recette (données fictives : Montrivage Olympique, Valbrune U13), plans tournés par FoundClub.",
-           "Musique : « Upbeat Acoustic », Stockaudios (Pixabay Content License)."]
+           "Musique : « Race The Sun », Scott Buckley — licence CC BY 4.0 : le crédit est OBLIGATOIRE dans la description de chaque post :",
+           "  Race The Sun by Scott Buckley – released under CC-BY 4.0. www.scottbuckley.com.au",
+           "Bruitages : bibliothèque Pixabay (clic, notification), et sons synthétisés (sticker, vibration, tampon)."]
 open("rendus/texte-a-l-ecran.txt", "w", encoding="utf-8").write("\n".join(lignes) + "\n")
 print(f"index.html : durée {DUREE} s, {len(appuis_js)} appuis, {len(STICKERS)} stickers, {len(S)} bruitages")

@@ -3,7 +3,8 @@
 # - medias/broll/ : 2 plans du tournage d'Adel et Clément (déjà recadrés en vertical pour la vidéo collectivités), en 30 i/s ;
 # - medias/ecran/etape1.mp4 : l'enregistrement de l'assistant (recette, données fictives : Montrivage), 5 passages accélérés,
 #   sans l'étape 2 ni l'étape 4 (leurs petites phrases promettent ce que l'app ne fait pas : captures/LISEZMOI.md §1) ;
-# - medias/musique/fond.wav : « Upbeat Acoustic », Stockaudios (Pixabay), prise à partir de 16 s, là où elle monte.
+# - medias/musique/fond.wav : « Race The Sun », Scott Buckley (CC BY 4.0, crédit obligatoire dans la description), prise à partir de
+#   22,5 s : la montée tombe à 2 s, quand le téléphone arrive. (« Upbeat Acoustic » abandonnée le 29/10 : la vidéo compo s'en sert.)
 set -euo pipefail
 cd "$(dirname "$0")/.."
 CAP=/d/App/fc-social/posts/amicaux/captures
@@ -20,6 +21,6 @@ for p in "${PASSAGES[@]}"; do
 done
 ffmpeg -v error -y -i "$CAP/04-10_assistant_video_vitesse_reelle.mp4" -filter_complex "${F}${L}concat=n=$i:v=1:a=0,format=yuv420p[v]" \
   -map "[v]" -c:v libx264 -crf 16 -g 15 -an medias/ecran/etape1.mp4
-ffmpeg -v error -y -ss 16 -t 26 -i /d/App/video/complexes/assets/musique/candidates/L_upbeat-acoustic_stockaudios_113986.mp3 \
+ffmpeg -v error -y -ss 22.5 -t 26 -i /d/App/video/collectivites/assets/musique/candidates/U_race-the-sun_scott-buckley_2022.mp3 \
   -ar 48000 -ac 2 medias/musique/fond.wav
 for f in medias/broll/*.mp4 medias/ecran/etape1.mp4 medias/musique/fond.wav; do echo "$f $(ffprobe -v error -show_entries format=duration -of csv=p=0 $f)"; done

@@ -12,37 +12,37 @@
 {
 "t": 2.43,
 "son": "click-soft.mp3",
-"db": 0
+"db": -4
 },
 {
 "t": 9.7,
 "son": "click-soft.mp3",
-"db": 0
-},
-{
-"t": 10.35,
-"son": "notification.mp3",
 "db": -4
 },
 {
 "t": 10.35,
+"son": "notification.mp3",
+"db": -11
+},
+{
+"t": 10.35,
 "son": "vibre",
-"db": -2
+"db": -9
 },
 {
 "t": 11.55,
 "son": "click-soft.mp3",
-"db": 0
+"db": -4
 },
 {
 "t": 14.5,
 "son": "click-soft.mp3",
-"db": 0
+"db": -4
 },
 {
 "t": 16.25,
 "son": "click-soft.mp3",
-"db": 0
+"db": -4
 },
 {
 "t": 20.39,
