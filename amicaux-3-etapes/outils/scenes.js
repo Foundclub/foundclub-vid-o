@@ -24,7 +24,7 @@
 
       // ── ACCROCHE : un vrai match ──
       montrer("#b-duel", 0);
-      tl.fromTo("#b-duel", { scale: 1.08 }, { scale: 1, duration: 2.0, ease: "none" }, 0);
+      tl.fromTo("#b-duel", { scale: 1.08 }, { scale: 1, duration: T.tel, ease: "none" }, 0);
       tl.to("#b-duel", { scale: 0.86, opacity: 0, duration: 0.4, ease: "power2.in" }, T.tel - 0.1);
 
       // ── LE TÉLÉPHONE ──
@@ -32,7 +32,7 @@
       etape(1, T.tel + 0.05);
       montrer("#vue-e1", T.e1);
       T.sous1.forEach((t, k) => actif(1, k + 1, t));
-      zoom(T.e1 + 6.6, T.e2 - 0.05, 1.2, 280, 1174);       // « Publier l'annonce »
+      zoom(T.e2 - 1.2, T.e2 - 0.05, 1.2, 280, 1174);       // « Publier l'annonce »
 
       // ── ÉTAPE 2 : une équipe propose ──
       sortir(1, T.e2 - 0.1);

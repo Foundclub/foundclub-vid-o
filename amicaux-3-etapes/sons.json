@@ -1,56 +1,56 @@
 [
 {
-"t": 0.29,
+"t": 0.34,
 "son": "sticker",
 "db": -2
 },
 {
-"t": 0.99,
+"t": 1.14,
 "son": "sticker",
 "db": -2
 },
 {
-"t": 2.43,
+"t": 3.0,
 "son": "click-soft.mp3",
 "db": -4
 },
 {
-"t": 9.7,
+"t": 13.2,
 "son": "click-soft.mp3",
 "db": -4
 },
 {
-"t": 10.35,
+"t": 13.85,
 "son": "notification.mp3",
 "db": -11
 },
 {
-"t": 10.35,
+"t": 13.85,
 "son": "vibre",
 "db": -9
 },
 {
-"t": 11.55,
+"t": 15.2,
 "son": "click-soft.mp3",
 "db": -4
 },
 {
-"t": 14.5,
+"t": 18.45,
 "son": "click-soft.mp3",
 "db": -4
 },
 {
-"t": 16.25,
+"t": 20.6,
 "son": "click-soft.mp3",
 "db": -4
 },
 {
-"t": 20.39,
+"t": 25.19,
 "son": "sticker",
 "db": -2
 },
 {
-"t": 22.15,
+"t": 26.95,
 "son": "tampon",
 "db": -6
 }

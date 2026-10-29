@@ -4,20 +4,21 @@ Usage : python outils/assembler.py   (depuis le dossier du projet, après outils
 import json, html
 
 # Les instants (s). La musique (120 temps/min) bat la mesure toutes les 2 s : les étapes changent sur une mesure.
-T = {"tel": 1.95, "e1": 2.2, "e2": 10.0, "notif": 10.35, "ouvre": 11.75, "e3": 15.0, "plan": 16.6, "celeb": 20.0, "fin": 22.0}
-T["sous1"] = [2.2, 3.6, 6.2, 7.6, 8.6]          # les 5 passages de medias/ecran/etape1.mp4 (outils/preparer.sh)
+# Allongée le 29/10 (« ça va trop vite ») : 25 -> 29,8 s, chaque étape reste plus longtemps
+T = {"tel": 2.45, "e1": 2.7, "e2": 13.5, "notif": 13.85, "ouvre": 15.4, "e3": 19.0, "plan": 21.0, "celeb": 24.8, "fin": 26.8}
+T["sous1"] = [2.7, 4.9, 7.9, 9.9, 11.5]          # les 5 passages de medias/ecran/etape1.mp4 (outils/preparer.sh)
 DUREE_CARTON = 3.0
 DUREE = T["fin"] + DUREE_CARTON
 K = 560 / 1080                                    # pixels de la capture -> pixels de l'écran du téléphone
 # Appuis : (instant, x, y) en pixels de la capture d'origine (1080 × 2424), lus sur les images
-APPUIS = [(2.38, 540, 1228),     # « + Créer un match amical »
-          (9.65, 540, 2264),     # « Publier l'annonce »
-          (14.45, 541, 1960),    # « Accepter » dans la discussion
-          (16.2, 538, 1403)]     # « Accepter » de « Accepter cette proposition ? »
-APPUI_NOTIF = 11.5               # le doigt touche la notification (posée hors du téléphone)
-STICKERS = [(0.15, 1.95, 300, -3, "Pas de match ce week-end ?"),
-            (0.85, 1.95, 420, 2, "Trouve un match amical\nen 3 étapes"),
-            (20.25, 21.95, 820, -2, "Il ne reste qu'à jouer.")]
+APPUIS = [(2.95, 540, 1228),     # « + Créer un match amical »
+          (13.15, 540, 2264),     # « Publier l'annonce »
+          (18.4, 541, 1960),    # « Accepter » dans la discussion
+          (20.55, 538, 1403)]     # « Accepter » de « Accepter cette proposition ? »
+APPUI_NOTIF = 15.15               # le doigt touche la notification (posée hors du téléphone)
+STICKERS = [(0.2, 2.45, 300, -3, "Pas de match ce week-end ?"),
+            (1.0, 2.45, 420, 2, "Trouve un match amical\nen 3 étapes"),
+            (25.05, 26.75, 820, -2, "Il ne reste qu'à jouer.")]
 
 insecable = lambda t: t.replace(" !", " !").replace(" ?", " ?").replace(" :", " :").replace("« ", "« ").replace(" »", " »")
 appuis_html = [f'        <div id="appui-{i}" class="appui" style="left: {x * K:.0f}px; top: {y * K:.0f}px;"></div>' for i, (_, x, y) in enumerate(APPUIS)]
@@ -30,10 +31,10 @@ src = open("gabarits/gabarit.html", encoding="utf-8").read()
 src = src.replace("/*POLICES*/", open("outils/polices.css", encoding="utf-8").read()).replace("/*JS*/", open("outils/scenes.js", encoding="utf-8").read())
 src = src.replace("<!--APPUIS-->", "\n".join(appuis_html)).replace("<!--STICKERS-->", "\n".join(stickers_html))
 # l'appui sur la notification est posé dans la notification elle-même
-src = src.replace('<div id="notif"><img', f'<div id="notif"><div id="appui-{len(APPUIS)}" class="appui" style="left: 390px; top: 105px;"></div><img')
+src = src.replace('<div id="notif"><img', f'<div id="notif"><div id="appui-{len(APPUIS)}" class="appui" style="left: 390px; top: 190px;"></div><img')
 appuis_js.append({"t": APPUI_NOTIF})
 src = src.replace("/*T*/", json.dumps(T)).replace("/*APPUISJS*/", json.dumps(appuis_js)).replace("/*STICKERSJS*/", json.dumps(stickers_js))
-for k, v in {"__E1__": f'{T["e1"]:.3f}', "__CELEB__": f'{T["celeb"]:.3f}', "__FIN__": f'{T["fin"]:.3f}',
+for k, v in {"__E1__": f'{T["e1"]:.3f}', "__DUREE_E1__": "10.8", "__CELEB__": f'{T["celeb"]:.3f}', "__FIN__": f'{T["fin"]:.3f}',
              "__DUREE_CARTON__": f"{DUREE_CARTON:.3f}", "__DUREE__": f"{DUREE:.3f}"}.items():
     src = src.replace(k, v)
 assert "__" not in src.replace("__timelines", ""), "repère non remplacé"

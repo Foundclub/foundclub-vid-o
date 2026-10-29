@@ -84,12 +84,12 @@
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="25.000" data-width="1080" data-height="1920">
-      <div id="fond" class="clip plein" data-start="0" data-duration="25.000" data-track-index="0"><div id="fond-halo"></div></div>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="29.800" data-width="1080" data-height="1920">
+      <div id="fond" class="clip plein" data-start="0" data-duration="29.800" data-track-index="0"><div id="fond-halo"></div></div>
 
       <!-- ACCROCHE : un vrai match (tournage FoundClub), « Pas de match ce week-end ? » -->
       <div id="b-duel" class="cadre-broll">
-        <video id="v-duel" src="medias/broll/duel.mp4" muted playsinline data-start="0" data-duration="2.6" data-track-index="1"></video>
+        <video id="v-duel" src="medias/broll/duel.mp4" muted playsinline data-start="0" data-duration="3.0" data-track-index="1"></video>
         <div class="voile"></div>
       </div>
 
@@ -105,7 +105,7 @@
         <div class="sous"><span>Accepter</span><span>Le planning des deux équipes</span></div></div>
 
       <div id="tel"><div id="ecran"><div id="camera">
-        <div id="vue-e1" class="vue"><video id="v-e1" src="medias/ecran/etape1.mp4" muted playsinline data-start="2.200" data-duration="7.8" data-track-index="3"></video></div>
+        <div id="vue-e1" class="vue"><video id="v-e1" src="medias/ecran/etape1.mp4" muted playsinline data-start="2.700" data-duration="10.8" data-track-index="3"></video></div>
         <img id="vue-disc" class="vue" src="medias/captures/17b_discussion_vue_annonceur_valbrune.png" alt="" />
         <img id="vue-acc" class="vue" src="medias/captures/23a_accepter_cette_proposition.png" alt="" />
         <img id="vue-plan" class="vue" src="medias/captures/24b_planning_montrivage_carte_du_match.png" alt="" />
@@ -114,11 +114,11 @@
         <div id="appui-2" class="appui" style="left: 281px; top: 1016px;"></div>
         <div id="appui-3" class="appui" style="left: 279px; top: 727px;"></div>
       </div></div></div>
-      <div id="notif"><div id="appui-4" class="appui" style="left: 390px; top: 105px;"></div><img src="medias/captures/16_notification_un_adversaire_se_propose_recadre.png" alt="" /></div>
+      <div id="notif"><div id="appui-4" class="appui" style="left: 390px; top: 190px;"></div><img src="medias/captures/16_notification_un_adversaire_se_propose_recadre.png" alt="" /></div>
 
       <!-- FIN : un vrai match, « Il ne reste qu'à jouer. » -->
       <div id="b-celeb" class="cadre-broll">
-        <video id="v-celeb" src="medias/broll/celebration.mp4" muted playsinline data-start="20.000" data-duration="2.6" data-track-index="2"></video>
+        <video id="v-celeb" src="medias/broll/celebration.mp4" muted playsinline data-start="24.800" data-duration="2.6" data-track-index="2"></video>
         <div class="voile"></div>
       </div>
 
@@ -126,7 +126,7 @@
       <div id="sticker-1" class="sticker" style="top: 420px;"><span>Trouve un match amical<br>en 3 étapes</span></div>
       <div id="sticker-2" class="sticker" style="top: 820px;"><span>Il ne reste qu&#x27;à jouer.</span></div>
 
-      <div id="carton" class="clip plein" data-start="22.000" data-duration="3.000" data-track-index="9">
+      <div id="carton" class="clip plein" data-start="26.800" data-duration="3.000" data-track-index="9">
         <div id="fin-voile" class="plein"></div>
         <div id="fin">
           <div class="icone-fc"><span class="f">F</span><span class="c">C</span></div>
@@ -145,9 +145,9 @@
     <script>
       window.__timelines = window.__timelines || {};
       const tl = gsap.timeline({ paused: true });
-      const T = {"tel": 1.95, "e1": 2.2, "e2": 10.0, "notif": 10.35, "ouvre": 11.75, "e3": 15.0, "plan": 16.6, "celeb": 20.0, "fin": 22.0, "sous1": [2.2, 3.6, 6.2, 7.6, 8.6]};
-      const APPUIS = [{"t": 2.38}, {"t": 9.65}, {"t": 14.45}, {"t": 16.2}, {"t": 11.5}];
-      const STICKERS = [{"debut": 0.15, "fin": 1.95, "penche": -3}, {"debut": 0.85, "fin": 1.95, "penche": 2}, {"debut": 20.25, "fin": 21.95, "penche": -2}];
+      const T = {"tel": 2.45, "e1": 2.7, "e2": 13.5, "notif": 13.85, "ouvre": 15.4, "e3": 19.0, "plan": 21.0, "celeb": 24.8, "fin": 26.8, "sous1": [2.7, 4.9, 7.9, 9.9, 11.5]};
+      const APPUIS = [{"t": 2.95}, {"t": 13.15}, {"t": 18.4}, {"t": 20.55}, {"t": 15.15}];
+      const STICKERS = [{"debut": 0.2, "fin": 2.45, "penche": -3}, {"debut": 1.0, "fin": 2.45, "penche": 2}, {"debut": 25.05, "fin": 26.75, "penche": -2}];
       // ── outils ──
       const apparaitre = (sel, t, de = { y: 40 }) => tl.fromTo(sel, { opacity: 0, ...de }, { opacity: 1, x: 0, y: 0, duration: 0.3, ease: "power3.out" }, t);
       const coller = (sel, t, r) => tl.fromTo(sel, { opacity: 0, scale: 1.5, rotation: r * 2 }, { opacity: 1, scale: 1, rotation: r, duration: 0.14, ease: "power3.in" }, t);
@@ -174,7 +174,7 @@
 
       // ── ACCROCHE : un vrai match ──
       montrer("#b-duel", 0);
-      tl.fromTo("#b-duel", { scale: 1.08 }, { scale: 1, duration: 2.0, ease: "none" }, 0);
+      tl.fromTo("#b-duel", { scale: 1.08 }, { scale: 1, duration: T.tel, ease: "none" }, 0);
       tl.to("#b-duel", { scale: 0.86, opacity: 0, duration: 0.4, ease: "power2.in" }, T.tel - 0.1);
 
       // ── LE TÉLÉPHONE ──
@@ -182,7 +182,7 @@
       etape(1, T.tel + 0.05);
       montrer("#vue-e1", T.e1);
       T.sous1.forEach((t, k) => actif(1, k + 1, t));
-      zoom(T.e1 + 6.6, T.e2 - 0.05, 1.2, 280, 1174);       // « Publier l'annonce »
+      zoom(T.e2 - 1.2, T.e2 - 0.05, 1.2, 280, 1174);       // « Publier l'annonce »
 
       // ── ÉTAPE 2 : une équipe propose ──
       sortir(1, T.e2 - 0.1);
